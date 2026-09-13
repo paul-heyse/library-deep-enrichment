@@ -22,7 +22,7 @@ def test_input_forms_and_eof_do_not_inherit_negated_or_appended_contracts(
     """Exact upstream clauses activate; polarity, EOF and new exceptions matter."""
     corpus = Corpus(tmp_path)
     Coordinator(corpus, WriterIdentity(principal="fixture")).commit(foundation(), expected="")
-    pack = Path(__file__).parents[1] / f"library_deep_enrichment/assets/packs/{kind}_contracts.json"
+    pack = Path(__file__).parents[1] / f"src/library_deep_enrichment/assets/packs/{kind}_contracts.json"
     install(
         corpus,
         pack,

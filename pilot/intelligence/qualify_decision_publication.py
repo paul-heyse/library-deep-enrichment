@@ -19,6 +19,7 @@ from library_deep_enrichment.semantics.contracts import Comparison, Interpretati
 from library_deep_enrichment.semantics.decision_contracts import Objective, PreferencePolicy
 from library_deep_enrichment.semantics.task_matching import compare
 from library_deep_enrichment.semantics.vocabulary import text_value
+from library_deep_enrichment.paths import default_corpus, intelligence_root
 
 
 def _publish(corpus: Corpus, comparison: Comparison, name: str) -> dict[str, object]:
@@ -30,7 +31,7 @@ def _publish(corpus: Corpus, comparison: Comparison, name: str) -> dict[str, obj
     Path(f"tooling/library_deep_enrichment/pilot/intelligence/guides/{name}.md").write_text(
         guide, encoding="utf-8"
     )
-    destination = Path(".cache/library-guides-intelligence/decision-publication") / uuid4().hex
+    destination = intelligence_root() / "decision-publication" / uuid4().hex
     export_view(reader, destination)
     restored = Corpus(destination.with_name(destination.name + "-restored"))
     assert import_view(restored, destination) == manifest
@@ -48,7 +49,7 @@ def _publish(corpus: Corpus, comparison: Comparison, name: str) -> dict[str, obj
 
 def main() -> None:
     """Retain both hard overflow constraints and a separately declared soft preference."""
-    corpus = Corpus(Path(".cache/library-guides-intelligence/pilot-v4/corpus"), max_rows=2_500_000)
+    corpus = Corpus(default_corpus(), max_rows=2_500_000)
     reader = corpus.reader()
     original = reader.lookup("tasks", "task:integer-add-error", "python-installed-54-25")
     assert isinstance(original, Task)

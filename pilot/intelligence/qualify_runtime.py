@@ -24,6 +24,7 @@ from library_deep_enrichment.publication.closure import _source_links
 from library_deep_enrichment.runtime import RuntimeConfig, embedding_client
 from library_deep_enrichment.workflows.discovery import definition
 from library_deep_enrichment.workflows.engine import run_stage
+from library_deep_enrichment.paths import default_corpus, intelligence_root, runtime_root
 
 if TYPE_CHECKING:
     from collections.abc import Iterator, Sequence
@@ -59,7 +60,7 @@ class ObservedClient(EmbeddingClient):
 
 def _seed(corpus: Corpus) -> str:
     reader = Corpus(
-        Path(".cache/library-guides-intelligence/pilot-v4/corpus"), max_rows=2_500_000
+        default_corpus(), max_rows=2_500_000
     ).reader()
     operations = tuple(
         item
@@ -150,12 +151,12 @@ def _qualify(corpus: Corpus, client: ObservedClient) -> dict[str, object]:
 def main() -> None:
     """Qualify initial, additive, unchanged, and changed-recipe inference without fake inputs."""
     started = perf_counter()
-    corpus = Corpus(Path(".cache/library-guides-intelligence/resume-runtime-reuse") / uuid4().hex)
+    corpus = Corpus(intelligence_root() / "resume-runtime-reuse" / uuid4().hex)
     source_manifest = _seed(corpus)
     client = ObservedClient(
         embedding_client(
             RuntimeConfig(
-                root=Path("/home/paul/.cache/library-guides-intelligence"),
+                root=runtime_root(),
             )
         )
     )

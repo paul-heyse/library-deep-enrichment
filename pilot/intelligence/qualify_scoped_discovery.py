@@ -15,6 +15,7 @@ from library_deep_enrichment.discovery.scopes import current, units
 from library_deep_enrichment.discovery.search import search
 from library_deep_enrichment.runtime import RuntimeConfig, embedding_client
 from library_deep_enrichment.workflows.discovery import build_embeddings, build_graphs, build_retrieval
+from library_deep_enrichment.paths import default_corpus, runtime_root
 
 LOGGER = logging.getLogger(__name__)
 
@@ -22,7 +23,7 @@ LOGGER = logging.getLogger(__name__)
 def main() -> None:
     """Build source views, real vectors, and graph projections for one exact native artifact."""
     logging.basicConfig(level=logging.INFO)
-    corpus = Corpus(Path(".cache/library-guides-intelligence/pilot-v4/corpus"), max_rows=2_500_000)
+    corpus = Corpus(default_corpus(), max_rows=2_500_000)
     selection = DiscoveryScope(
         logical_id="arrow-schema-docsrs-native",
         profiles=("rust-docsrs-54.1-58.4",),
@@ -44,7 +45,7 @@ def main() -> None:
         for item in before.records("operations")
     )
     client = embedding_client(
-        RuntimeConfig(root=Path("/home/paul/.cache/library-guides-intelligence"))
+        RuntimeConfig(root=runtime_root())
     )
     stages = [build_retrieval(corpus, selection)]
     LOGGER.info("retrieval: %s", stages[-1])

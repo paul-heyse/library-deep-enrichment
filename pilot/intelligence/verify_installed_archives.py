@@ -18,6 +18,7 @@ from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.publication.releases import read_guide
 from library_deep_enrichment.semantics.contracts import Comparison
 from library_deep_enrichment.workflows.shapes import build
+from library_deep_enrichment.paths import runtime_root
 
 PAGE_SIZE = 5
 
@@ -140,8 +141,8 @@ def verify(item: dict[str, str], root: Path) -> dict[str, object]:
 def main() -> None:
     """Prove source-independent reading and one installed analytical worker."""
     root = Path.cwd()
-    assert not Path("/home/paul/smartref/tooling/library_deep_enrichment/library_deep_enrichment").exists()
-    assert not Path("/home/paul/.cache/library-guides-intelligence").exists()
+    assert not (Path.home() / "library-deep-enrichment/src/library_deep_enrichment").exists()
+    assert not runtime_root().exists()
     assert not Path("/dev/nvidia0").exists()
     assert not Path("/home/paul/.cargo/registry").exists()
     with socket.socket() as connection:

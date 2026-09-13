@@ -13,7 +13,7 @@ from library_deep_enrichment.semantic_packs import install
 from library_deep_enrichment.semantics.contracts import Rule
 from library_deep_enrichment.semantics.rules import matching_text
 
-PACK = Path(__file__).parents[1] / "library_deep_enrichment/assets/packs/arithmetic_contracts.json"
+PACK = Path(__file__).parents[1] / "src/library_deep_enrichment/assets/packs/arithmetic_contracts.json"
 
 
 def _source(text: str) -> Passage:

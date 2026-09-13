@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import json
 import logging
-from pathlib import Path
 from time import perf_counter
 
 from attrs import asdict
@@ -21,6 +20,7 @@ from library_deep_enrichment.workflows.discovery import (
     build_labels,
     build_retrieval,
 )
+from library_deep_enrichment.paths import default_corpus, runtime_root
 
 from pilot.intelligence.qualify_reuse import REPORTS, ROOT, verify_freeze
 
@@ -39,7 +39,7 @@ def _build(corpus: Corpus) -> dict[str, object]:
         DiscoveryScope,
     )
     client = embedding_client(
-        RuntimeConfig(root=Path("/home/paul/.cache/library-guides-intelligence"))
+        RuntimeConfig(root=runtime_root())
     )
     stages = []
     for name, build in (
@@ -67,7 +67,7 @@ def run() -> None:
     """Qualify scoped FCA/labels, unchanged base products, and exact maintained membership."""
     freeze = verify_freeze()
     corpus = Corpus(
-        ROOT.parents[1] / ".cache/library-guides-intelligence/pilot-v4/corpus", max_rows=2_500_000
+        default_corpus(), max_rows=2_500_000
     )
     before = corpus.reader()
     source_members = tuple(before.members("native_artifacts"))

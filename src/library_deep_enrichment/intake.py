@@ -18,10 +18,11 @@ from library_deep_enrichment.adapters.acquire import fetch_cached
 from library_deep_enrichment.adapters.python import semantic as python_api
 from library_deep_enrichment.adapters.rust import semantic as rust_api
 from library_deep_enrichment.collection import CollectionError, confined, save, subjects
-from library_deep_enrichment.knowledge import Evidence, Knowledge, Obligation, Profile, Source
+from library_deep_enrichment.knowledge import Knowledge, Obligation, Profile, Source
 from library_deep_enrichment.linking import link
 from library_deep_enrichment.processes import execute
 from library_deep_enrichment.store.digests import canonical_bytes, digest_bytes, digest_file
+from library_deep_enrichment.paths import acquired_root
 from library_deep_enrichment.store.staging import write_atomic
 
 
@@ -30,7 +31,7 @@ class IntakeEntry:
     """An explicit acquisition job for one package and applicability profile."""
 
     id: str
-    adapter: Literal["rustdoc", "python_static", "python_native", "registry", "markdown"]
+    adapter: Literal["rustdoc", "python_static", "python_native", "registry"]
     package: str
     version: str
     profile: str
@@ -86,7 +87,7 @@ def _acquire(entry: IntakeEntry, directory: Path) -> bytes:
             message = f"crate version mismatch: {entry.id}"
             raise CollectionError(message)
         return result.stdout
-    if adapter in {"registry", "markdown"}:
+    if adapter == "registry":
         return payload
     message = f"unknown intake adapter: {adapter}"
     raise CollectionError(message)
@@ -140,26 +141,8 @@ def _normalize(entry: IntakeEntry, source: Source, path: Path) -> Knowledge:
         from library_deep_enrichment.adapters import registry
 
         return registry.extract(path, source, package=entry.package, version=entry.version)
-    from library_deep_enrichment.adapters.docs.markdown_sections import index_markdown
-
-    sections = index_markdown(path.read_text(encoding="utf-8"), document_path=source.path)
-    evidence = tuple(
-        Evidence(
-            id=f"evidence:{source.id}:{section.section_id}",
-            source=source.id,
-            selector=f"bytes:{section.byte_start}:{section.byte_end}",
-            subject=section.heading_text,
-            kind="statement",
-            digest=digest_bytes(path.read_bytes()[section.byte_start : section.byte_end]),
-        )
-        for section in sections.sections
-    )
-    return Knowledge(
-        schema_version="library-guides.knowledge.v2",
-        collection_id=source.id,
-        sources=(source,),
-        evidence=evidence,
-    )
+    message = f"unknown intake adapter: {adapter}"
+    raise CollectionError(message)
 
 
 def ingest(manifest_path: Path, destination: Path) -> dict[str, object]:
@@ -252,7 +235,7 @@ def _resolve_entry(entry: IntakeEntry, directory: Path) -> IntakeEntry:
         return (
             value.replace("{python}", sys.executable)
             .replace("{manifest}", str(directory))
-            .replace("{cache}", str(Path.home() / ".cache" / "library-deep-enrichment" / "acquired"))
+            .replace("{cache}", str(acquired_root()))
         )
 
     return evolve(
@@ -269,7 +252,7 @@ def _resolve_entry(entry: IntakeEntry, directory: Path) -> IntakeEntry:
 def _ingest_one(entry: IntakeEntry, destination: Path, work: Path) -> Knowledge:
     payload = _acquire(entry, work)
     digest = digest_bytes(payload)
-    relative = f"sources/{digest}.json" if entry.adapter != "markdown" else f"sources/{digest}.md"
+    relative = f"sources/{digest}.json"
     path = confined(destination, relative)
     write_atomic(path, payload)
     origin: dict[
@@ -279,7 +262,6 @@ def _ingest_one(entry: IntakeEntry, destination: Path, work: Path) -> Knowledge:
         "python_static": "static_api",
         "python_native": "runtime_api",
         "registry": "registry",
-        "markdown": "documentation",
     }
     source = Source(
         id=entry.id,

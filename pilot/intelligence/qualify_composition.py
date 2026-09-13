@@ -37,6 +37,7 @@ from library_deep_enrichment.semantics.experiments import run_witness
 from library_deep_enrichment.semantics.planning import PlanBudget, compose
 from library_deep_enrichment.semantics.vocabulary import approve_rules, foundation, text_value
 from library_deep_enrichment.workflows import semantics, shapes
+from library_deep_enrichment.paths import default_corpus, intelligence_root
 
 if TYPE_CHECKING:
     from library_deep_enrichment.corpus.contracts import Record
@@ -75,7 +76,7 @@ def _writer(corpus: Corpus) -> Coordinator:
 
 def _seed(corpus: Corpus) -> str:
     reader = Corpus(
-        Path(".cache/library-guides-intelligence/pilot-v4/corpus"), max_rows=2_500_000
+        default_corpus(), max_rows=2_500_000
     ).reader()
     operations = tuple(
         item
@@ -294,7 +295,7 @@ def _run_programs(
 
 def main() -> None:
     """Execute the full source-to-generated-plan-to-contrastive-witness chain."""
-    corpus = Corpus(Path(".cache/library-guides-intelligence/composition-pilot") / uuid4().hex)
+    corpus = Corpus(intelligence_root() / "composition-pilot" / uuid4().hex)
     source_manifest = _seed(corpus)
     task = _task()
     goal = _install_models(corpus, task)

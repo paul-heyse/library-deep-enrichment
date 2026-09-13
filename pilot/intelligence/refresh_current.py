@@ -15,6 +15,7 @@ from library_deep_enrichment.workflows import enrichment, semantics, shapes
 from library_deep_enrichment.workflows.python_boundaries import build as boundary
 from library_deep_enrichment.workflows.python_documents import build as documents
 from library_deep_enrichment.workflows.python_interfaces import build as interfaces
+from library_deep_enrichment.paths import default_corpus
 
 if TYPE_CHECKING:
     from collections.abc import Callable
@@ -87,6 +88,6 @@ def run(root: Path, report_path: Path) -> None:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     run(
-        Path("/home/paul/smartref/.cache/library-guides-intelligence/pilot-v4/corpus"),
+        default_corpus(),
         Path(__file__).with_name("reports") / "completion-current-projections.json",
     )

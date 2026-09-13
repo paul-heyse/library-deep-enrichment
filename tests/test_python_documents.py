@@ -67,7 +67,7 @@ def test_python_document_owner_and_portable_replay(tmp_path: Path) -> None:
     assert "\nKeep" in passage.text
     install(
         corpus,
-        Path(__file__).parents[1] / "library_deep_enrichment/assets/packs/input_contracts.json",
+        Path(__file__).parents[1] / "src/library_deep_enrichment/assets/packs/input_contracts.json",
         authority="fixture-author",
     )
     assert build(corpus, revision).reused

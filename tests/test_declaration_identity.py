@@ -10,6 +10,8 @@ import pytest
 from library_deep_enrichment.facts.contracts import Budget
 from library_deep_enrichment.source_pipeline import SourceJob, extract
 
+from tests.support.workers import worker_binary
+
 TOOLING = Path(__file__).parents[1]
 ID_FIELDS = {
     "id",
@@ -53,9 +55,9 @@ def _extract(root: Path, name: str, document: object) -> dict[int, dict]:
             id=name,
             kind="declarations",
             input=str(source),
-            helper=str(TOOLING / "rustdoc-helper/target/debug/lde-rustdoc-facts"),
+            helper=str(worker_binary("rustdoc-facts")),
             profile="declaration-identity-control",
-            schema=str(TOOLING / "library_deep_enrichment/assets/schemas/declaration.v1.schema.json"),
+            schema=str(TOOLING / "src/library_deep_enrichment/assets/schemas/declaration.v1.schema.json"),
         ),
         Budget(),
     )

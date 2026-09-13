@@ -32,6 +32,7 @@ from library_deep_enrichment.semantics.contracts import (
 from library_deep_enrichment.semantics.task_matching import compare, replay
 from library_deep_enrichment.semantics.vocabulary import text_value
 from library_deep_enrichment.workflows.semantics import build as build_semantics
+from library_deep_enrichment.paths import default_corpus
 
 from pilot.intelligence.qualify_reuse import REPORTS, ROOT, RUN, verify_freeze
 
@@ -327,7 +328,7 @@ def run() -> None:
     """Compare all 22 retained main-library tasks and release their union closure."""
     freeze = verify_freeze()
     corpus = Corpus(
-        ROOT.parents[1] / ".cache/library-guides-intelligence/pilot-v4/corpus", max_rows=2_500_000
+        default_corpus(), max_rows=2_500_000
     )
     catalog = CONVERTER.structure(
         yaml.safe_load((ROOT / "pilot/tasks.yaml").read_bytes())["tasks"], list[TaskSpec]

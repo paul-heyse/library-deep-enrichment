@@ -10,6 +10,8 @@ from library_deep_enrichment.facts.contracts import Budget
 from library_deep_enrichment.processes import execute
 from library_deep_enrichment.source_pipeline import SourceJob, extract
 
+from tests.support.workers import worker_binary
+
 TOOLING = Path(__file__).parents[1]
 pytestmark = pytest.mark.native_lanes
 
@@ -62,9 +64,9 @@ def _metadata(root: Path, manifest: Path, *, no_deps: bool) -> tuple[list[dict],
             id="metadata-no-deps" if no_deps else "metadata",
             kind="cargo",
             input=str(path),
-            helper=str(TOOLING / "rustdoc-helper/target/debug/lde-rustdoc-facts"),
+            helper=str(worker_binary("rustdoc-facts")),
             profile="cargo-fixture",
-            schema=str(TOOLING / "library_deep_enrichment/assets/schemas/cargo.v1.schema.json"),
+            schema=str(TOOLING / "src/library_deep_enrichment/assets/schemas/cargo.v1.schema.json"),
         ),
         Budget(),
     )

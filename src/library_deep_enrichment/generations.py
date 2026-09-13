@@ -17,6 +17,7 @@ from library_deep_enrichment.examples import run as run_example
 from library_deep_enrichment.examples import verify as verify_examples
 from library_deep_enrichment.knowledge import Knowledge
 from library_deep_enrichment.knowledge_v3 import KnowledgeV3
+from library_deep_enrichment.paths import examples_root
 from library_deep_enrichment.qualification import coverage, validate
 from library_deep_enrichment.reader import index, render
 from library_deep_enrichment.store.digests import canonical_bytes, digest_bytes, digest_file
@@ -101,7 +102,7 @@ def build(root: Path, store: Path) -> Path:
     graph = EvidenceGraph(candidate, snapshot)
     # A build job can produce an executable consumed by later jobs. Keep the
     # complete sequence exclusive while using the documented shared cache.
-    execution_lock = Path.home() / ".cache/library-deep-enrichment/examples/execution.lock"
+    execution_lock = examples_root() / "execution.lock"
     execution_lock.parent.mkdir(parents=True, exist_ok=True)
     with FileLock(str(execution_lock), timeout=60):
         for example in snapshot.examples:

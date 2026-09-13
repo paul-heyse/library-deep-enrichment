@@ -13,6 +13,7 @@ from attrs import asdict
 from library_deep_enrichment.collection import CollectionError, confined
 from library_deep_enrichment.evidence_graph import EvidenceGraph
 from library_deep_enrichment.knowledge import Example, Knowledge
+from library_deep_enrichment.paths import examples_root
 from library_deep_enrichment.processes import execute
 from library_deep_enrichment.store.digests import canonical_bytes, digest_bytes, digest_file
 from library_deep_enrichment.store.staging import write_atomic
@@ -25,7 +26,7 @@ def arguments(example: Example) -> tuple[str, ...]:
         The exact argument vector used for execution.
 
     """
-    cache = Path.home() / ".cache" / "library-deep-enrichment" / "examples"
+    cache = examples_root()
     cache_placeholder = "{" + "cache" + "}"
     return tuple(
         argument.replace("{python}", sys.executable).replace(cache_placeholder, str(cache))

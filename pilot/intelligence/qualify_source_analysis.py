@@ -13,6 +13,7 @@ from library_deep_enrichment.corpus.store import Corpus
 from library_deep_enrichment.publication.closure import evidence_closure
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.workflows.source_analysis import build
+from library_deep_enrichment.paths import default_corpus, intelligence_root
 
 OWNERS = (
     "3fc60a92b3ec67c9aeb2d24f0a5a7befd146c23d8212bef87784e3ce2b377e31",
@@ -26,9 +27,9 @@ OWNERS = (
 def main() -> None:
     """Replay retained source-model consequences without legacy stores or native extraction."""
     reader = Corpus(
-        Path(".cache/library-guides-intelligence/pilot-v4/corpus"), max_rows=2_500_000
+        default_corpus(), max_rows=2_500_000
     ).reader()
-    corpus = Corpus(Path(".cache/library-guides-intelligence/source-analysis") / uuid4().hex)
+    corpus = Corpus(intelligence_root() / "source-analysis" / uuid4().hex)
     records = evidence_closure(reader, tuple(("native_facts", owner) for owner in OWNERS))
     Coordinator(corpus, WriterIdentity(principal="retained-MIR-slice", role="migration")).commit(
         records, expected=""

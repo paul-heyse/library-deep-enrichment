@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 
 from attrs import asdict
 from library_deep_enrichment.analyses.fabric_contracts import AnalysisRequest, SourceAnalysis
@@ -17,6 +16,7 @@ from library_deep_enrichment.corpus.store import Corpus
 from library_deep_enrichment.publication.closure import evidence_closure
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.workflows.source_analysis import build
+from library_deep_enrichment.paths import default_corpus
 
 from pilot.intelligence.qualify_reuse import REPORTS, RUN, verify_freeze
 
@@ -35,7 +35,7 @@ def run() -> None:
     """Replay actual retained DataFusion bodies and preserve their open boundaries."""
     freeze = verify_freeze()
     reader = Corpus(
-        Path("/home/paul/smartref/.cache/library-guides-intelligence/pilot-v4/corpus"),
+        default_corpus(),
         max_rows=2_500_000,
     ).reader()
     owners = [

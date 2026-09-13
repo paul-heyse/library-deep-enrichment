@@ -21,16 +21,14 @@ from library_deep_enrichment.source_pipeline import SourceJob, extract
 from library_deep_enrichment.store.digests import canonical_bytes, digest_file
 from library_deep_enrichment.worker_runtime import WorkerRequest, run
 
+from tests.support.workers import SCHEMAS, worker_binary
+
 TOOLING = Path(__file__).parents[1]
-SCHEMAS = TOOLING / "library_deep_enrichment/assets/schemas"
 pytestmark = pytest.mark.native_lanes
 
 
 def _binary(name: str) -> Path:
-    directory = "rustdoc-helper" if name == "rustdoc" else f"native/{name}"
-    path = TOOLING / directory / "target/debug" / f"library-guides-{name}"
-    assert path.is_file(), f"Build the standalone {directory} workspace first"
-    return path.resolve()
+    return worker_binary("rustdoc-facts" if name == "rustdoc" else name)
 
 
 def _records(root: Path, artifact: FactArtifact) -> list[dict]:

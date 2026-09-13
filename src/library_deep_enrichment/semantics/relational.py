@@ -11,6 +11,7 @@ from typing import TYPE_CHECKING
 from library_deep_enrichment.corpus.backend import BudgetExceededError, CorpusError
 from library_deep_enrichment.corpus.contracts import Operation, Passage, RegistryEntry, TypeUse
 from library_deep_enrichment.corpus.encoding import bytes_digest, digest
+from library_deep_enrichment.paths import runtime_root
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.facts.contracts import Budget
 from library_deep_enrichment.processes import execute
@@ -43,8 +44,7 @@ def executable() -> Path:
     path = (
         Path(configured)
         if configured
-        else Path.home()
-        / ".cache/library-guides-intelligence/tools/souffle-2.5/runtime/usr/bin/souffle"
+        else runtime_root() / "tools/souffle-2.5/runtime/usr/bin/souffle"
     )
     if not path.is_file() or bytes_digest(path.read_bytes()) != SOFTWARE_DIGEST:
         message = "qualified Souffle 2.5 runtime is unavailable; configure LDE_SOUFFLE after verified acquisition"

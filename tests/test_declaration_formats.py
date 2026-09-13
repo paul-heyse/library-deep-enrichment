@@ -15,6 +15,8 @@ from library_deep_enrichment.corpus.store import Corpus
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.workflows.native import build
 
+from tests.support.workers import worker_binary
+
 TOOLING = Path(__file__).parents[1]
 FAMILIES = {
     "module",
@@ -111,10 +113,10 @@ def test_all_declaration_and_type_variants_survive_portable_native_admission(
                         "profile": f"synthetic-format-{version}",
                         "input": str(source),
                         "helper": str(
-                            TOOLING / "rustdoc-helper/target/debug/lde-rustdoc-facts"
+                            worker_binary("rustdoc-facts")
                         ),
                         "schema": str(
-                            TOOLING / "library_deep_enrichment/assets/schemas/declaration.v1.schema.json"
+                            TOOLING / "src/library_deep_enrichment/assets/schemas/declaration.v1.schema.json"
                         ),
                     }
                 ],

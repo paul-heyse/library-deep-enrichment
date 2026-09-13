@@ -26,9 +26,10 @@ from library_deep_enrichment.semantics.vocabulary import approve_rules, foundati
 from library_deep_enrichment.workflows import enrichment, semantics, shapes
 from library_deep_enrichment.workflows.python_documents import build as documents
 from library_deep_enrichment.workflows.python_interfaces import build as interfaces
+from library_deep_enrichment.paths import implementation_root
 
 ROOT = Path(__file__).resolve().parents[2]
-RUN = ROOT.parents[1] / ".cache/library-guides-implementation/completion-20260912T220757Z"
+RUN = implementation_root() / "completion-20260912T220757Z"
 REPORTS = Path(__file__).with_name("reports")
 LOG = logging.getLogger(__name__)
 
