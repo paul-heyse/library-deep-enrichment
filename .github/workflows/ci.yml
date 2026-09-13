@@ -19,7 +19,7 @@ jobs:
   gate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       # rust-toolchain.toml is the single toolchain authority; installing from it keeps CI and
       # local builds on the same compiler by construction.
