@@ -7,11 +7,13 @@ import logging
 from time import perf_counter
 
 from attrs import asdict
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
 from library_deep_enrichment.corpus.store import Corpus
 from library_deep_enrichment.discovery.contracts import DiscoveryScope
 from library_deep_enrichment.discovery.scopes import current
+from library_deep_enrichment.paths import default_corpus, runtime_root
 from library_deep_enrichment.runtime import RuntimeConfig, embedding_client
 from library_deep_enrichment.workflows.discovery import (
     build_embeddings,
@@ -20,8 +22,6 @@ from library_deep_enrichment.workflows.discovery import (
     build_labels,
     build_retrieval,
 )
-from library_deep_enrichment.paths import default_corpus, runtime_root
-
 from pilot.intelligence.qualify_reuse import REPORTS, ROOT, verify_freeze
 
 LOG = logging.getLogger(__name__)
@@ -38,9 +38,7 @@ def _build(corpus: Corpus) -> dict[str, object]:
         json.loads((ROOT / "pilot/intelligence/scopes/arrow-schema-native.json").read_bytes()),
         DiscoveryScope,
     )
-    client = embedding_client(
-        RuntimeConfig(root=runtime_root())
-    )
+    client = embedding_client(RuntimeConfig(root=runtime_root()))
     stages = []
     for name, build in (
         ("retrieval", lambda: build_retrieval(corpus, scope)),
@@ -66,9 +64,7 @@ def _build(corpus: Corpus) -> dict[str, object]:
 def run() -> None:
     """Qualify scoped FCA/labels, unchanged base products, and exact maintained membership."""
     freeze = verify_freeze()
-    corpus = Corpus(
-        default_corpus(), max_rows=2_500_000
-    )
+    corpus = Corpus(default_corpus(), max_rows=2_500_000)
     before = corpus.reader()
     source_members = tuple(before.members("native_artifacts"))
     started = perf_counter()

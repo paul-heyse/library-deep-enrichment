@@ -17,7 +17,11 @@ from library_deep_enrichment.semantics.contracts import (
     Value,
     ValueKind,
 )
-from library_deep_enrichment.semantics.decision_contracts import Counterfactual, Objective, PreferencePolicy
+from library_deep_enrichment.semantics.decision_contracts import (
+    Counterfactual,
+    Objective,
+    PreferencePolicy,
+)
 
 if TYPE_CHECKING:
     from collections.abc import Iterator, Mapping

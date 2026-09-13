@@ -1,6 +1,7 @@
 """Explicit worker calibration is captured rather than silently falling back."""
 
 import pytest
+
 from library_deep_enrichment.corpus.backend import CorpusError
 from library_deep_enrichment.workflows.remote import memory_budget
 

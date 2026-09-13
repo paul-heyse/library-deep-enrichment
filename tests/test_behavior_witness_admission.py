@@ -8,7 +8,12 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary, Outcome
+
+from library_deep_enrichment.analyses.behavior.contracts import (
+    BehaviorRequest,
+    BehaviorSummary,
+    Outcome,
+)
 from library_deep_enrichment.analyses.behavior.witness_contracts import (
     BehaviorWitnessCheck,
     BehaviorWitnessRequest,
@@ -31,7 +36,6 @@ from library_deep_enrichment.processes import execute
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.workflows.behavior import build as summarize
 from library_deep_enrichment.workflows.behavior_witnesses import build as compare
-
 from tests import test_behavior_python as python_controls
 
 source_case = python_controls.source_case

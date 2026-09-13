@@ -13,9 +13,13 @@ from library_deep_enrichment.corpus.store import Corpus
 from library_deep_enrichment.discovery.contracts import DiscoveryScope, SearchSelection
 from library_deep_enrichment.discovery.scopes import current, units
 from library_deep_enrichment.discovery.search import search
-from library_deep_enrichment.runtime import RuntimeConfig, embedding_client
-from library_deep_enrichment.workflows.discovery import build_embeddings, build_graphs, build_retrieval
 from library_deep_enrichment.paths import default_corpus, runtime_root
+from library_deep_enrichment.runtime import RuntimeConfig, embedding_client
+from library_deep_enrichment.workflows.discovery import (
+    build_embeddings,
+    build_graphs,
+    build_retrieval,
+)
 
 LOGGER = logging.getLogger(__name__)
 
@@ -44,9 +48,7 @@ def main() -> None:
         and item.package in selection.packages
         for item in before.records("operations")
     )
-    client = embedding_client(
-        RuntimeConfig(root=runtime_root())
-    )
+    client = embedding_client(RuntimeConfig(root=runtime_root()))
     stages = [build_retrieval(corpus, selection)]
     LOGGER.info("retrieval: %s", stages[-1])
     stages.append(build_embeddings(corpus, client, selection))

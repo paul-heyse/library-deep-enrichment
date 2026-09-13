@@ -213,6 +213,7 @@ def test_missing_second_input_does_not_become_a_free_solver_assignment(tmp_path:
 def test_intermediate_state_is_replayed_and_a_compatible_loss_is_rejected(tmp_path: Path) -> None:
     """Equal final carriers cannot conceal a property lost at an intermediate operation."""
     from attrs import evolve
+
     from library_deep_enrichment.corpus.contracts import Policy, Record
     from library_deep_enrichment.corpus.evidence import select
     from library_deep_enrichment.semantics.composition_models import evaluate_composition
@@ -341,6 +342,7 @@ def _tamper_controls(
 ) -> None:
     import pytest
     from attrs import evolve
+
     from library_deep_enrichment.corpus.backend import CorpusError
     from library_deep_enrichment.corpus.validation import validate_records
     from library_deep_enrichment.semantics.composition_programs import render

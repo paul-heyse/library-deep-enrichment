@@ -8,7 +8,12 @@ from attrs import frozen
 
 from library_deep_enrichment.analyses.behavior.integrity import require
 from library_deep_enrichment.analyses.behavior.witness_checks import check
-from library_deep_enrichment.analyses.behavior.witness_contracts import Cell, Input, Observation, Verdict
+from library_deep_enrichment.analyses.behavior.witness_contracts import (
+    Cell,
+    Input,
+    Observation,
+    Verdict,
+)
 
 if TYPE_CHECKING:
     from collections.abc import Callable

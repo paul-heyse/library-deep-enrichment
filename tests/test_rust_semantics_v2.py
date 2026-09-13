@@ -6,10 +6,10 @@ import json
 from pathlib import Path
 
 from attrs import evolve
+
 from library_deep_enrichment.adapters.rust.semantic import extract
 from library_deep_enrichment.evidence_graph import EvidenceGraph
 from library_deep_enrichment.linking import link
-
 from tests.support.knowledge import _sample
 
 

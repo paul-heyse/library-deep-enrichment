@@ -3,7 +3,11 @@
 import pyarrow as pa
 
 from library_deep_enrichment.corpus.schemas import NUMBER, TEXT, TEXTS, fields, register
-from library_deep_enrichment.workflows.contracts import ExecutionReceipt, InputReceipt, StageDefinition
+from library_deep_enrichment.workflows.contracts import (
+    ExecutionReceipt,
+    InputReceipt,
+    StageDefinition,
+)
 from library_deep_enrichment.workflows.failure_records import FailureReceipt
 
 INPUT = pa.struct(

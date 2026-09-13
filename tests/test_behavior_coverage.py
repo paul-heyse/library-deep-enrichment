@@ -4,7 +4,12 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary, Limits
+
+from library_deep_enrichment.analyses.behavior.contracts import (
+    BehaviorRequest,
+    BehaviorSummary,
+    Limits,
+)
 from library_deep_enrichment.analyses.behavior.coverage import BehaviorCoverage, State, analyze
 from library_deep_enrichment.analyses.behavior.service import validate
 from library_deep_enrichment.corpus.backend import CorpusError
@@ -15,7 +20,6 @@ from library_deep_enrichment.facts.contracts import FactArtifact
 from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.workflows.behavior import build
-
 from tests import test_behavior_python as python_controls
 from tests.test_behavior_engine import builder
 

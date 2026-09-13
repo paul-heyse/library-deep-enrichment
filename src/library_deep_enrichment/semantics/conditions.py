@@ -8,7 +8,13 @@ import z3
 from attrs import frozen
 
 from library_deep_enrichment.corpus.backend import BudgetExceededError, CorpusError
-from library_deep_enrichment.semantics.contracts import Assignment, Expression, State, Value, ValueKind
+from library_deep_enrichment.semantics.contracts import (
+    Assignment,
+    Expression,
+    State,
+    Value,
+    ValueKind,
+)
 
 if TYPE_CHECKING:
     from collections.abc import Mapping

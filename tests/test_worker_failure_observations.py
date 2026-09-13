@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.collection import CollectionError
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.backend import CorpusError
@@ -22,7 +23,6 @@ from library_deep_enrichment.workflows.discovery import definition
 from library_deep_enrichment.workflows.engine import run_stage
 from library_deep_enrichment.workflows.failure_records import FailureReceipt
 from library_deep_enrichment.workflows.remote import BUDGET_EXIT
-
 from tests.test_source_protocol import _stream
 
 if TYPE_CHECKING:

@@ -16,7 +16,10 @@ from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.facts.compiler_invocation import Arguments
 
 if TYPE_CHECKING:
-    from library_deep_enrichment.analyses.compilation_contracts import CompilationRequest, ContextInput
+    from library_deep_enrichment.analyses.compilation_contracts import (
+        CompilationRequest,
+        ContextInput,
+    )
     from library_deep_enrichment.analyses.compilation_inputs import CompilationCatalog
     from library_deep_enrichment.facts.compiler_invocation import CompilerInvocation
 

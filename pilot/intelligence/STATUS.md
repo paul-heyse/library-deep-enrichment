@@ -64,7 +64,7 @@ Status: **in progress**. This records executable checkpoints, not completion of 
 
 The post-reboot runtime and bulk shape checkpoint is verified. Reboot-checkpoint verification: **267 tests passed**, Ruff lint and formatting passed, and Pyrefly reported **zero diagnostics** at warning severity; see [verification receipt](reports/resume-verification.json) and [JUnit results](reports/resume-final-tests.xml). Continue using [the updated handover](RESUME_AFTER_REBOOT.md).
 
-The active target is [the unified fabric and semantic intelligence design](../../../../docs/library_ref/library_guide_programmatic_semantic_intelligence_target_design_2026-09-12.md). The implementation replaces the evidence/publication authority; legacy import compatibility is temporary. The original source-semantic pilot and all cached source bytes remain intact.
+The active target is [the unified fabric and semantic intelligence design](../../docs/design/library_guide_programmatic_semantic_intelligence_target_design_2026-09-12.md). The implementation replaces the evidence/publication authority; legacy import compatibility is temporary. The original source-semantic pilot and all cached source bytes remain intact.
 
 ## Post-reboot checkpoint (2026-09-12)
 

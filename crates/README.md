@@ -1,24 +1,24 @@
 # Standalone evidence producers
 
-These workers belong to `library_deep_enrichment`. They do not import a SMARTREF code-intelligence extractor, require its server, or join the application Cargo workspace. The Python wheel contains portable schemas, rules and queries; native source builds remain separate.
+These workers belong to `library_deep_enrichment`. They are standalone binaries: no shared server, no network, no dependency on the Python package at build time. The Python wheel contains portable schemas, rules and queries; native source builds remain separate.
 
-`bash native/build.sh` prints a plan. `bash native/build.sh --apply` fetches the two pinned upstream source checkouts, verifies their revisions and exact owned patches, builds all workers from their separate locks and installs binaries into `native/bin`. Use `--prefix DIRECTORY` to select another location. Acquisition needs network access; normalization of retained inputs and published reading do not.
+`scripts/native-build.sh` prints a plan. `scripts/native-build.sh --apply` (or `just native-build`) fetches the two pinned upstream source checkouts, verifies their revisions and exact owned patches, builds all workers from their separate locks and installs binaries into `.dev-state/bin`. Use `--prefix DIRECTORY` to select another location. Acquisition needs network access; normalization of retained inputs and published reading do not.
 
-Install `rustup toolchain install nightly-2026-08-18 --component rustc-dev --component rust-src --component llvm-tools-preview` for MIR. The worker build checks compiler commit `8fa1c96cfd489e4c27654c144ae871ce2c4db6c6`. The stable helpers have been built with rustc 1.98.1. Use `+stable` explicitly from this checkout: the application toolchain is a separate selection.
+Install `rustup toolchain install nightly-2026-08-18 --component rustc-dev --component rust-src --component llvm-tools-preview` for MIR. The worker build checks compiler commit `8fa1c96cfd489e4c27654c144ae871ce2c4db6c6`. The stable workers build on the toolchain pinned by the root `rust-toolchain.toml` (1.98.1); `crates/mir-facts/rust-toolchain.toml` selects the dated nightly automatically.
 
 | Worker | Owned integration | Upstream identity |
 | --- | --- | --- |
-| `rustdoc-helper/` | Strict typed format decoding, declaration normalization, Cargo metadata/messages | rustdoc-types 57.4/59/60/61; cargo_metadata 0.23.1; public-api 0.52.1; separate Cargo.lock |
+| `rustdoc-facts/` (root workspace) | Strict typed format decoding, declaration normalization, Cargo metadata/messages | rustdoc-types 57.4/59/60/61; cargo_metadata 0.23.1; public-api 0.52.1; separate Cargo.lock |
 | `source-facts/` | Tree-sitter structural coordinates and an actual Ruff Checker traversal facade | Ruff 0.16.1, commit `80790b348b5188e7fc253665540f442c6ec7dd05`; Tree-sitter 0.26.12; Rust 0.24.2, Python 0.25.0, Markdown 0.5.3 |
 | `python-semantics/` | Frozen module loading, bulk types/calls, targeted computed/declared/expected TSP queries | Pyrefly 1.2.0, commit `1933169ad8ee9e4d4114112eb56ef0811fb0a094`; bundled TSP protocol 0.4.1 and typeshed |
 | `mir-facts/` | Cargo-compatible wrapper using the pinned compiler's rustc_public body surface and owned projections | nightly-2026-08-18; actual generic definition bodies, not a promise of monomorphized whole-program effects |
 | `protocol/` | Length-prefixed frames, ordered digest commitment, duplicate-key checks and replay | Owned library shared through path dependencies; independently tested |
 
-The Ruff and Pyrefly checkouts are separate dependency trains. Their facade patches are deliberately small and retained in each worker directory. `bootstrap.sh --apply` is idempotent only when the checkout equals HEAD plus that exact patch. Additional tracked or untracked source changes are rejected. No clean/reset operation is used.
+The Ruff and Pyrefly checkouts are separate dependency trains. Their facade patches are deliberately small and retained in each worker directory. `scripts/bootstrap-upstream.sh <ruff|pyrefly> --apply` is idempotent only when the checkout equals HEAD plus that exact patch. Additional tracked or untracked source changes are rejected. No clean/reset operation is used.
 
-The workers expose `schema` and (where relevant) `request-schema`; the generated JSON schemas under `library_deep_enrichment/assets/schemas/` are their wire contracts. MIR also exposes `toolchain`. Normalization accepts literal file arguments and emits only the framed protocol on stdout; diagnostics go to stderr. The Python supervisor enforces process, source, frame, output and time budgets and only attaches complete validated artifacts.
+The workers expose `schema` and (where relevant) `request-schema`; the generated JSON schemas under `src/library_deep_enrichment/assets/schemas/` are their wire contracts. MIR also exposes `toolchain`. Normalization accepts literal file arguments and emits only the framed protocol on stdout; diagnostics go to stderr. The Python supervisor enforces process, source, frame, output and time budgets and only attaches complete validated artifacts.
 
-Quality checks use each worker's toolchain and lock. `cargo +stable clippy --locked --no-deps --manifest-path native/python-semantics/Cargo.toml --all-targets -- -D warnings` checks the owned Pyrefly worker without treating upstream lint evolution as owned code. No lint/type suppressions or patches to unrelated upstream diagnostics are required.
+Quality checks use each worker's toolchain and lock. `just native-check` (clippy with `-D warnings` per worker workspace) checks the owned workers without treating upstream lint evolution as owned code. No lint/type suppressions or patches to unrelated upstream diagnostics are required.
 
 A complete extraction receipt says the declared input was enumerated. Native calls, dynamic dispatch, generic instantiation, unmodeled effects and non-hermetic build inputs retain separate frontiers. See the implementation status report before treating any plan gate as complete.
 

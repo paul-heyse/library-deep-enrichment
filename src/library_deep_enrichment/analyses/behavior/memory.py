@@ -8,7 +8,11 @@ from attrs import define, evolve, field
 
 from library_deep_enrichment.analyses.behavior import regions
 from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, Instruction, Term
-from library_deep_enrichment.analyses.behavior.locations import overlaps, replace_path, stack_destination
+from library_deep_enrichment.analyses.behavior.locations import (
+    overlaps,
+    replace_path,
+    stack_destination,
+)
 
 if TYPE_CHECKING:
     from library_deep_enrichment.analyses.behavior.state import State

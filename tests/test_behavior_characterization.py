@@ -8,6 +8,7 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, Limits
 from library_deep_enrichment.analyses.characterization import costs
 from library_deep_enrichment.analyses.characterization.contracts import (
@@ -25,7 +26,6 @@ from library_deep_enrichment.processes import execute
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.workflows.behavior import build as build_behavior
 from library_deep_enrichment.workflows.characterization import build
-
 from tests import test_behavior_python as python_controls
 
 source_case = python_controls.source_case

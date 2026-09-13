@@ -2,11 +2,19 @@
 
 from attrs import frozen
 
-from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, BehaviorSummary, Outcome
+from library_deep_enrichment.analyses.behavior.contracts import (
+    BehaviorProgram,
+    BehaviorSummary,
+    Outcome,
+)
 from library_deep_enrichment.analyses.behavior.integrity import require
 from library_deep_enrichment.analyses.behavior.origins import BehaviorOrigins
 from library_deep_enrichment.analyses.behavior.witness_context import context
-from library_deep_enrichment.analyses.behavior.witness_contracts import CaseCheck, Observation, Verdict
+from library_deep_enrichment.analyses.behavior.witness_contracts import (
+    CaseCheck,
+    Observation,
+    Verdict,
+)
 from library_deep_enrichment.analyses.behavior.witness_eval import Evaluation
 from library_deep_enrichment.analyses.behavior.witness_inputs import validate as validate_inputs
 from library_deep_enrichment.analyses.behavior.witness_operators import context as operator_context

@@ -8,7 +8,12 @@ from typing import TYPE_CHECKING
 from attrs import define, field
 
 from library_deep_enrichment.analyses.behavior.contracts import Term
-from library_deep_enrichment.analyses.behavior.numeric import bounds, ieee_literal, integer_width, wrap
+from library_deep_enrichment.analyses.behavior.numeric import (
+    bounds,
+    ieee_literal,
+    integer_width,
+    wrap,
+)
 from library_deep_enrichment.analyses.behavior.sequence_values import fold as fold_sequence
 from library_deep_enrichment.corpus.backend import BudgetExceededError
 

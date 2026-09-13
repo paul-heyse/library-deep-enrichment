@@ -7,6 +7,7 @@ import logging
 from typing import TYPE_CHECKING
 
 from attrs import asdict, evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.contracts import AdmissionBatch, Operation, Qualification
 from library_deep_enrichment.corpus.encoding import canonical
@@ -14,10 +15,15 @@ from library_deep_enrichment.corpus.identities import identify, join
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.corpus.store import Corpus
 from library_deep_enrichment.publication.export import import_view
-from library_deep_enrichment.semantics.contracts import Assertion, Capability, Comparison, Proof, Task
+from library_deep_enrichment.semantics.contracts import (
+    Assertion,
+    Capability,
+    Comparison,
+    Proof,
+    Task,
+)
 from library_deep_enrichment.semantics.task_matching import compare
 from library_deep_enrichment.semantics.vocabulary import text_value
-
 from pilot.intelligence.qualify_reuse import REPORTS, RUN, verify_freeze
 
 if TYPE_CHECKING:

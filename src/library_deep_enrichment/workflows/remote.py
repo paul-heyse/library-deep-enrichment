@@ -18,7 +18,12 @@ from library_deep_enrichment.corpus.schemas import REGISTRY, revision_of
 from library_deep_enrichment.corpus.validation import AdmissionReader
 from library_deep_enrichment.discovery.contracts import DiscoveryScope
 from library_deep_enrichment.facts.contracts import Budget
-from library_deep_enrichment.worker_runtime import WorkerExecutionError, WorkerLimitError, WorkerRequest, run
+from library_deep_enrichment.worker_runtime import (
+    WorkerExecutionError,
+    WorkerLimitError,
+    WorkerRequest,
+    run,
+)
 from library_deep_enrichment.workflows.contracts import ExecutionReceipt, StageDefinition
 
 BUDGET_EXIT = 75

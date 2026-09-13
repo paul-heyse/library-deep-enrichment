@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 import pytest
+
 from library_deep_enrichment.models import ApiBinding, ApiIdentity, Ecosystem, EvidenceOrigin
 from library_deep_enrichment.models.enums import StageCompletion
 from library_deep_enrichment.models.records import ExtractionReceipt, UnprocessedInput

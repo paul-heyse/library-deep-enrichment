@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.analyses.behavior.builder import GraphBuilder, Origin
 from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,

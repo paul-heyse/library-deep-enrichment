@@ -11,6 +11,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from attrs import frozen
+
 from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest
 from library_deep_enrichment.analyses.characterization.contracts import (
     BehaviorCharacterization,

@@ -28,7 +28,11 @@ if TYPE_CHECKING:
 
     from library_deep_enrichment.corpus.contracts import Record
     from library_deep_enrichment.corpus.store import Corpus, CorpusReader
-    from library_deep_enrichment.facts.contracts import FactArtifact, SemanticProfile, SourceSnapshot
+    from library_deep_enrichment.facts.contracts import (
+        FactArtifact,
+        SemanticProfile,
+        SourceSnapshot,
+    )
     from library_deep_enrichment.workflows.engine import StageResult
 
 MAX_NATIVE_RECORDS = 1_500_000

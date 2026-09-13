@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.backend import CorpusError, PredecessorConflictError
 from library_deep_enrichment.corpus.contracts import ByteRange, Disposition, Job, Policy
@@ -104,6 +105,7 @@ def test_append_updates_index_deltas_without_rebuilding_existing_indexes(
 ) -> None:
     """An append retains old versions and covers new rows without recreating an index."""
     from lancedb.table import LanceTable
+
     from library_deep_enrichment.corpus.backend import Backend
 
     corpus = Corpus(tmp_path / "fabric")

@@ -9,6 +9,7 @@ from pathlib import Path
 import pytest
 import yaml
 from attrs import asdict, evolve
+
 from library_deep_enrichment import authoring, generations
 from library_deep_enrichment.adapters import registry
 from library_deep_enrichment.adapters.docs.markdown_sections import index_markdown
@@ -21,7 +22,6 @@ from library_deep_enrichment.knowledge import Knowledge
 from library_deep_enrichment.qualification import coverage, validate
 from library_deep_enrichment.schemas import validate_document
 from library_deep_enrichment.store.digests import canonical_bytes, digest_bytes
-
 from tests.support.knowledge import _sample
 
 

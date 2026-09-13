@@ -6,6 +6,7 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.backend import CorpusError
 from library_deep_enrichment.corpus.contracts import Argument, Operation, Passage, Policy
@@ -14,7 +15,13 @@ from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.corpus.staging import ObservationBuilder
 from library_deep_enrichment.corpus.store import Corpus
 from library_deep_enrichment.corpus.validation import validate_records
-from library_deep_enrichment.semantics.contracts import Assignment, Interpretation, Rule, Value, ValueKind
+from library_deep_enrichment.semantics.contracts import (
+    Assignment,
+    Interpretation,
+    Rule,
+    Value,
+    ValueKind,
+)
 from library_deep_enrichment.semantics.documents import literal, parameters, statements
 from library_deep_enrichment.semantics.enrichment_contracts import (
     TransferMapping,

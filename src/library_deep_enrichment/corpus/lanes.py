@@ -9,7 +9,13 @@ from typing import TYPE_CHECKING
 from library_deep_enrichment.collection import confined
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.backend import CorpusError
-from library_deep_enrichment.corpus.contracts import ByteRange, Disposition, Job, LegacyRecord, SourceFile
+from library_deep_enrichment.corpus.contracts import (
+    ByteRange,
+    Disposition,
+    Job,
+    LegacyRecord,
+    SourceFile,
+)
 from library_deep_enrichment.corpus.declarations import normalize_declaration
 from library_deep_enrichment.corpus.encoding import bytes_digest
 from library_deep_enrichment.corpus.migration import LegacyImporter, MigrationReceipt

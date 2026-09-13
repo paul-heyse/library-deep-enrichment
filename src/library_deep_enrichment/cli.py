@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 from typing import TYPE_CHECKING, Annotated
 
@@ -24,19 +25,29 @@ MAX_PAGE_ROWS = 200
 def configure(
     ctx: typer.Context,
     corpus: Annotated[
-        Path,
+        Path | None,
         typer.Option(
             "--corpus",
             "--collection",
-            help="Explicit admitted corpus root; legacy collections are import inputs.",
+            help=(
+                "Admitted corpus root; defaults to $LDE_CORPUS, else "
+                "$LDE_HOME/intelligence/pilot-v4/corpus. Legacy collections are import inputs."
+            ),
         ),
-    ],
-    runtime_root: Path | None = None,
+    ] = None,
+    runtime_root: Annotated[
+        Path | None,
+        typer.Option(help="Embedding runtime root; defaults to $LDE_RUNTIME_ROOT when set."),
+    ] = None,
     runtime_port: int = 18080,
     max_records: int = 2_500_000,
 ) -> None:
-    """Bind an explicit corpus without workspace inference or legacy generation fallback."""
-    ctx.obj = corpus.resolve()
+    """Bind one corpus and one optional runtime root from flags or LDE_* environment."""
+    from library_deep_enrichment.paths import default_corpus
+
+    ctx.obj = (corpus or default_corpus()).resolve()
+    if runtime_root is None and os.environ.get("LDE_RUNTIME_ROOT"):
+        runtime_root = Path(os.environ["LDE_RUNTIME_ROOT"])
     ctx.meta.update(runtime_root=runtime_root, runtime_port=runtime_port, max_records=max_records)
 
 

@@ -8,6 +8,7 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.collection import CollectionError
 from library_deep_enrichment.facts.contracts import Budget
 from library_deep_enrichment.facts.protocol import Frames

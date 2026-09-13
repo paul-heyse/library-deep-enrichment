@@ -6,7 +6,12 @@ import json
 from pathlib import Path
 
 import pytest
-from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary, Outcome
+
+from library_deep_enrichment.analyses.behavior.contracts import (
+    BehaviorRequest,
+    BehaviorSummary,
+    Outcome,
+)
 from library_deep_enrichment.corpus.evidence import resolve_bytes
 from library_deep_enrichment.corpus.native_contracts import NativeFact
 from library_deep_enrichment.corpus.schemas import revision_of
@@ -17,7 +22,6 @@ from library_deep_enrichment.processes import execute
 from library_deep_enrichment.source_pipeline import SourceJob, extract
 from library_deep_enrichment.store.digests import digest_file
 from library_deep_enrichment.workflows.behavior import build
-
 from tests.test_native_lanes import SCHEMAS, _binary, _records
 
 DEPENDENCY = """

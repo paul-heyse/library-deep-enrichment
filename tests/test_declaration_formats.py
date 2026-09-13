@@ -8,13 +8,13 @@ from pathlib import Path
 
 import pytest
 import yaml
+
 from library_deep_enrichment.corpus.evidence import read_field
 from library_deep_enrichment.corpus.native_contracts import NativeFact
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.corpus.store import Corpus
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.workflows.native import build
-
 from tests.support.workers import worker_binary
 
 TOOLING = Path(__file__).parents[1]
@@ -112,11 +112,10 @@ def test_all_declaration_and_type_variants_survive_portable_native_admission(
                         "kind": "declarations",
                         "profile": f"synthetic-format-{version}",
                         "input": str(source),
-                        "helper": str(
-                            worker_binary("rustdoc-facts")
-                        ),
+                        "helper": str(worker_binary("rustdoc-facts")),
                         "schema": str(
-                            TOOLING / "src/library_deep_enrichment/assets/schemas/declaration.v1.schema.json"
+                            TOOLING
+                            / "src/library_deep_enrichment/assets/schemas/declaration.v1.schema.json"
                         ),
                     }
                 ],

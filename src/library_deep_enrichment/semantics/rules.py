@@ -7,7 +7,13 @@ from typing import TYPE_CHECKING
 import regex as re
 
 from library_deep_enrichment.corpus.backend import BudgetExceededError, CorpusError
-from library_deep_enrichment.corpus.contracts import Operation, Passage, Record, RegistryEntry, TypeUse
+from library_deep_enrichment.corpus.contracts import (
+    Operation,
+    Passage,
+    Record,
+    RegistryEntry,
+    TypeUse,
+)
 from library_deep_enrichment.corpus.encoding import digest, payload
 from library_deep_enrichment.corpus.evidence import field_value, select
 from library_deep_enrichment.corpus.schemas import codec_for, revision_of

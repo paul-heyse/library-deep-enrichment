@@ -9,9 +9,18 @@ from typing import Literal
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.analyses.compilation import analyze, validate
-from library_deep_enrichment.analyses.compilation_contracts import CompilationPopulation, CompilationRequest
-from library_deep_enrichment.analyses.compilation_inputs import absolute, catalogs, inputs, invocation
+from library_deep_enrichment.analyses.compilation_contracts import (
+    CompilationPopulation,
+    CompilationRequest,
+)
+from library_deep_enrichment.analyses.compilation_inputs import (
+    absolute,
+    catalogs,
+    inputs,
+    invocation,
+)
 from library_deep_enrichment.analyses.compilation_join import JoinInput, candidates, features
 from library_deep_enrichment.collection import CollectionError
 from library_deep_enrichment.corpus.backend import CorpusError
@@ -27,7 +36,6 @@ from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.source_pipeline import SourceJob, extract
 from library_deep_enrichment.store.digests import digest_file
 from library_deep_enrichment.workflows.compilation import build
-
 from tests.test_native_lanes import SCHEMAS, _binary
 
 

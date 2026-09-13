@@ -13,7 +13,10 @@ from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.corpus.validation import validate_records
 from library_deep_enrichment.publication.closure import evidence_closure
 from library_deep_enrichment.semantics.contracts import Capability, Composition, Task
-from library_deep_enrichment.semantics.enrichment_contracts import CompositionEvaluation, CompositionWitness
+from library_deep_enrichment.semantics.enrichment_contracts import (
+    CompositionEvaluation,
+    CompositionWitness,
+)
 
 if TYPE_CHECKING:
     from library_deep_enrichment.corpus.store import Corpus, CorpusReader

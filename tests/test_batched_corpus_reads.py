@@ -6,6 +6,7 @@ from typing import TYPE_CHECKING, TypedDict, Unpack
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.backend import Backend, CorpusError
 from library_deep_enrichment.corpus.contracts import Disposition, Job, Member, Operation

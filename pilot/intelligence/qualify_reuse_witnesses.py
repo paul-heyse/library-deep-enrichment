@@ -20,7 +20,6 @@ from library_deep_enrichment.semantics.enrichment_contracts import (
     WitnessRun,
 )
 from library_deep_enrichment.semantics.experiments import run_witness
-
 from pilot.intelligence.qualify_reuse import REPORTS, RUN, verify_freeze
 
 

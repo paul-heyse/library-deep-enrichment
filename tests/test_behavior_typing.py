@@ -7,6 +7,7 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest
 from library_deep_enrichment.analyses.behavior.service import validate
 from library_deep_enrichment.analyses.behavior.typing_contracts import BehaviorTyping
@@ -22,7 +23,6 @@ from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.source_pipeline import SourceJob, extract
 from library_deep_enrichment.store.digests import canonical_bytes, digest_file
 from library_deep_enrichment.workflows.behavior import build
-
 from tests.test_native_lanes import SCHEMAS, _binary
 
 

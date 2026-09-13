@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import pytest
+
 from library_deep_enrichment.collection import CollectionError
 from library_deep_enrichment.source_maps import (
     example_view,

@@ -1,3 +1,5 @@
+> **Migrated 2026-09-13** from `smartref/tooling/library_guides/docs/foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md`. Frozen provenance: paths inside refer to the pre-migration layout (`library_guides/` is now `src/library_deep_enrichment/`, `native/` and `rustdoc-helper/` are now `crates/`).
+
 # Foundational behavior characterization — implementation plan v1
 
 Date: 2026-09-13. State: **implementation in progress; G0 baseline/reservation accepted, G1–G7 open**.

@@ -51,11 +51,11 @@ dependencies = [
 
 [project.optional-dependencies]
 # Tokenizer and model-snapshot acquisition for the managed embedding runtime. The runtime
-# itself is a pinned vLLM container; nothing here executes a model in-process.
+# itself is a pinned vLLM container; nothing here executes a model in-process, so torch is
+# deliberately absent (verified 2026-09-13: no module imports it).
 embed = [
   "huggingface-hub==1.31.0",
   "transformers==5.17.0",
-  "torch==2.14.0",
 ]
 pilot = [
   "datafusion==54.0.0",
@@ -97,13 +97,7 @@ module-name = "library_deep_enrichment"
 [tool.uv]
 environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
 
-[[tool.uv.index]]
-name = "pytorch"
-url = "https://download.pytorch.org/whl/cu132"
-explicit = true
-
 [tool.uv.sources]
-torch = { index = "pytorch" }
 scikit-mine = { path = "vendor/scikit_mine-1.0.0+lde.1-py3-none-any.whl" }
 
 # ---------------------------------------------------------------------------- ruff

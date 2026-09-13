@@ -8,6 +8,7 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.analyses.behavior import mir_lifecycle
 from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,
@@ -16,7 +17,12 @@ from library_deep_enrichment.analyses.behavior.contracts import (
     Outcome,
 )
 from library_deep_enrichment.analyses.behavior.witness_checks import CheckPolicy, compare
-from library_deep_enrichment.analyses.behavior.witness_contracts import Cell, Input, Observation, Verdict
+from library_deep_enrichment.analyses.behavior.witness_contracts import (
+    Cell,
+    Input,
+    Observation,
+    Verdict,
+)
 from library_deep_enrichment.analyses.call_graph.contracts import (
     CallClosureRequest,
     CallIndexRequest,
@@ -38,7 +44,6 @@ from library_deep_enrichment.source_pipeline import SourceJob, extract
 from library_deep_enrichment.store.digests import digest_file
 from library_deep_enrichment.workflows.behavior import build
 from library_deep_enrichment.workflows.call_graph import build as build_calls
-
 from tests.test_behavior_callables import _summaries
 from tests.test_call_graph import _index
 from tests.test_native_lanes import SCHEMAS, _binary, _records

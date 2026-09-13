@@ -7,14 +7,21 @@ import json
 from pathlib import Path
 
 import pytest
+
 from library_deep_enrichment.analyses.behavior import mir_instances
 from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,
     BehaviorRequest,
     BehaviorSummary,
 )
-from library_deep_enrichment.analyses.call_graph.contracts import CallClosureRequest, CallIndexRequest
-from library_deep_enrichment.analyses.compilation_contracts import CompilationPopulation, CompilationRequest
+from library_deep_enrichment.analyses.call_graph.contracts import (
+    CallClosureRequest,
+    CallIndexRequest,
+)
+from library_deep_enrichment.analyses.compilation_contracts import (
+    CompilationPopulation,
+    CompilationRequest,
+)
 from library_deep_enrichment.corpus.backend import CorpusError
 from library_deep_enrichment.corpus.native_contracts import NativeFact
 from library_deep_enrichment.corpus.schemas import revision_of
@@ -28,7 +35,6 @@ from library_deep_enrichment.source_pipeline import SourceJob, extract
 from library_deep_enrichment.store.digests import digest_file
 from library_deep_enrichment.workflows.behavior import build as build_behavior
 from library_deep_enrichment.workflows.compilation import build as build_compilation
-
 from tests.test_call_graph import _index, _selection
 from tests.test_native_lanes import SCHEMAS, _binary, _records
 

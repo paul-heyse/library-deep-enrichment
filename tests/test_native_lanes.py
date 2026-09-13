@@ -9,6 +9,7 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.analyses.declarations import neighborhood, nominate
 from library_deep_enrichment.authoring import accept, packet
 from library_deep_enrichment.collection import CollectionError, load, save
@@ -20,7 +21,6 @@ from library_deep_enrichment.processes import execute
 from library_deep_enrichment.source_pipeline import SourceJob, extract
 from library_deep_enrichment.store.digests import canonical_bytes, digest_file
 from library_deep_enrichment.worker_runtime import WorkerRequest, run
-
 from tests.support.workers import SCHEMAS, worker_binary
 
 TOOLING = Path(__file__).parents[1]
@@ -87,6 +87,7 @@ def _declaration_job(path: Path) -> SourceJob:
 
 def _attach(root: Path, artifact: FactArtifact) -> KnowledgeV3:
     from cattrs import Converter
+
     from library_deep_enrichment.facts.contracts import SemanticProfile
 
     receipt = json.loads((root / artifact.receipt_path).read_bytes())
@@ -321,6 +322,7 @@ def test_review_equivalence_and_contract_mutation(tmp_path: Path, rustdoc: Path)
 
 def _revision(root: Path, source: Path) -> FactArtifact:
     from cattrs import Converter
+
     from library_deep_enrichment.facts.contracts import SemanticProfile
 
     artifact = extract(root, _declaration_job(source), Budget())
@@ -501,6 +503,7 @@ def test_independent_universe_detects_added_competitor(tmp_path: Path, rustdoc: 
     import yaml
     from attrs import asdict
     from cattrs import Converter
+
     from library_deep_enrichment.analyses.universes import enumerate_candidates, policy_errors
     from library_deep_enrichment.facts.contracts import (
         CandidateUniverse,

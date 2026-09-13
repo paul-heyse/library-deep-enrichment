@@ -7,6 +7,7 @@ import sys
 from pathlib import Path
 
 import pytest
+
 from library_deep_enrichment.analyses.behavior.builder import Origin
 from library_deep_enrichment.analyses.behavior.contracts import Language, Limits, Outcome
 from library_deep_enrichment.analyses.behavior.engine import Interpreter
@@ -14,7 +15,6 @@ from library_deep_enrichment.analyses.behavior.python import normalize
 from library_deep_enrichment.analyses.behavior.python_nodes import read
 from library_deep_enrichment.facts.contracts import FactArtifact
 from library_deep_enrichment.processes import execute
-
 from tests import test_behavior_python as python_controls
 from tests.test_native_lanes import TOOLING, _records
 

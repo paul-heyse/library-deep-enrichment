@@ -6,8 +6,20 @@ import json
 from collections.abc import Iterator
 from pathlib import Path
 
-from library_deep_enrichment.adapters.rust.shapes import RustBody, RustDocument, RustItem, RustSignature
-from library_deep_enrichment.knowledge import Binding, Evidence, Knowledge, Parameter, Relation, Source
+from library_deep_enrichment.adapters.rust.shapes import (
+    RustBody,
+    RustDocument,
+    RustItem,
+    RustSignature,
+)
+from library_deep_enrichment.knowledge import (
+    Binding,
+    Evidence,
+    Knowledge,
+    Parameter,
+    Relation,
+    Source,
+)
 from library_deep_enrichment.store.digests import canonical_bytes, digest_bytes
 
 

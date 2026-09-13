@@ -5,11 +5,18 @@ from __future__ import annotations
 from collections import defaultdict
 from typing import TYPE_CHECKING
 
-from library_deep_enrichment.analyses.characterization.contracts import DependencySource, DependencyUse
+from library_deep_enrichment.analyses.characterization.contracts import (
+    DependencySource,
+    DependencyUse,
+)
 from library_deep_enrichment.corpus.backend import BudgetExceededError
 
 if TYPE_CHECKING:
-    from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, BehaviorSummary, Term
+    from library_deep_enrichment.analyses.behavior.contracts import (
+        BehaviorProgram,
+        BehaviorSummary,
+        Term,
+    )
 
 SOURCE_KINDS = {"global": "module_binding", "call": "unresolved_call_result"}
 

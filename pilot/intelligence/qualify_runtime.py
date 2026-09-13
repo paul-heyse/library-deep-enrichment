@@ -9,6 +9,7 @@ from typing import TYPE_CHECKING
 from uuid import uuid4
 
 from attrs import evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.contracts import Operation, Passage
 from library_deep_enrichment.corpus.encoding import CONVERTER, canonical, digest
@@ -20,11 +21,11 @@ from library_deep_enrichment.discovery.embeddings import EmbeddingClient
 from library_deep_enrichment.discovery.reuse import embed_current
 from library_deep_enrichment.discovery.search import search
 from library_deep_enrichment.discovery.units import build_units
+from library_deep_enrichment.paths import default_corpus, intelligence_root, runtime_root
 from library_deep_enrichment.publication.closure import _source_links
 from library_deep_enrichment.runtime import RuntimeConfig, embedding_client
 from library_deep_enrichment.workflows.discovery import definition
 from library_deep_enrichment.workflows.engine import run_stage
-from library_deep_enrichment.paths import default_corpus, intelligence_root, runtime_root
 
 if TYPE_CHECKING:
     from collections.abc import Iterator, Sequence
@@ -59,9 +60,7 @@ class ObservedClient(EmbeddingClient):
 
 
 def _seed(corpus: Corpus) -> str:
-    reader = Corpus(
-        default_corpus(), max_rows=2_500_000
-    ).reader()
+    reader = Corpus(default_corpus(), max_rows=2_500_000).reader()
     operations = tuple(
         item
         for item in reader.records("operations")

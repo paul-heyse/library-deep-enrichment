@@ -6,7 +6,11 @@ import json
 from typing import TYPE_CHECKING
 
 from library_deep_enrichment.analyses import effects, flow
-from library_deep_enrichment.analyses.fabric_contracts import AnalysisRequest, ControlEdge, SourceAnalysis
+from library_deep_enrichment.analyses.fabric_contracts import (
+    AnalysisRequest,
+    ControlEdge,
+    SourceAnalysis,
+)
 from library_deep_enrichment.corpus.backend import BudgetExceededError, CorpusError
 from library_deep_enrichment.corpus.evidence import resolve_bytes, select
 from library_deep_enrichment.corpus.native_contracts import NativeArtifact, NativeFact
@@ -36,9 +40,15 @@ def references(record: Record) -> tuple[tuple[str, str], ...]:
     if isinstance(record, SourceAnalysis):
         return (("analysis_requests", record.request), ("native_facts", record.owner))
     from library_deep_enrichment.analyses.behavior.service import references as behavior_references
-    from library_deep_enrichment.analyses.behavior.witness_service import references as witness_references
-    from library_deep_enrichment.analyses.call_graph.service import references as call_graph_references
-    from library_deep_enrichment.analyses.callable_population import references as callable_references
+    from library_deep_enrichment.analyses.behavior.witness_service import (
+        references as witness_references,
+    )
+    from library_deep_enrichment.analyses.call_graph.service import (
+        references as call_graph_references,
+    )
+    from library_deep_enrichment.analyses.callable_population import (
+        references as callable_references,
+    )
     from library_deep_enrichment.analyses.characterization.service import (
         references as characterization_references,
     )
@@ -145,7 +155,9 @@ def validate(reader: CorpusReader, records: tuple[Record, ...]) -> None:
 
     """
     from library_deep_enrichment.analyses.behavior.service import validate as validate_behavior
-    from library_deep_enrichment.analyses.behavior.witness_service import validate as validate_witness
+    from library_deep_enrichment.analyses.behavior.witness_service import (
+        validate as validate_witness,
+    )
     from library_deep_enrichment.analyses.call_graph.service import validate as validate_call_graph
     from library_deep_enrichment.analyses.callable_population import validate as validate_callables
     from library_deep_enrichment.analyses.characterization.service import (

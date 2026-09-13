@@ -7,7 +7,13 @@ from pathlib import Path
 
 from attrs import asdict
 
-from library_deep_enrichment.collection import CollectionError, confined, dependencies, select, subjects
+from library_deep_enrichment.collection import (
+    CollectionError,
+    confined,
+    dependencies,
+    select,
+    subjects,
+)
 from library_deep_enrichment.knowledge import Evidence, Knowledge
 from library_deep_enrichment.store.digests import canonical_bytes, digest_bytes
 

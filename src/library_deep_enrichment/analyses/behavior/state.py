@@ -4,7 +4,13 @@ from __future__ import annotations
 
 from attrs import define, evolve, field, frozen
 
-from library_deep_enrichment.analyses.behavior.contracts import Effect, Frontier, Guard, Outcome, Region
+from library_deep_enrichment.analyses.behavior.contracts import (
+    Effect,
+    Frontier,
+    Guard,
+    Outcome,
+    Region,
+)
 
 
 @define

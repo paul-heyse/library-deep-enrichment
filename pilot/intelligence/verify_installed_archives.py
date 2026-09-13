@@ -14,11 +14,11 @@ import library_deep_enrichment
 from library_deep_enrichment.corpus.contracts import Release
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.paths import runtime_root
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.publication.releases import read_guide
 from library_deep_enrichment.semantics.contracts import Comparison
 from library_deep_enrichment.workflows.shapes import build
-from library_deep_enrichment.paths import runtime_root
 
 PAGE_SIZE = 5
 

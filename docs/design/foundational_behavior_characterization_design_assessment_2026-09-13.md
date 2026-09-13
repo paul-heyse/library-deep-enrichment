@@ -1,3 +1,5 @@
+> **Migrated 2026-09-13** from `smartref/tooling/library_guides/docs/foundational_behavior_characterization_design_assessment_2026-09-13.md`. Frozen provenance: paths inside refer to the pre-migration layout (`library_guides/` is now `src/library_deep_enrichment/`, `native/` and `rustdoc-helper/` are now `crates/`).
+
 # Foundational library behavior characterization: design assessment
 
 Date: 2026-09-13. Status: proposed design, based on inspected implementation and pinned provider sources. This assessment does not implement the proposal or change the pilot's support judgments. Author and reviewer are the same agent; no independent review is claimed.

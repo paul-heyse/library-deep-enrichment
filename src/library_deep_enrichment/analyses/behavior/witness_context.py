@@ -7,7 +7,12 @@ from attrs import frozen
 from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, Term
 from library_deep_enrichment.analyses.behavior.integrity import require
 from library_deep_enrichment.analyses.behavior.witness_contracts import Observation
-from library_deep_enrichment.analyses.behavior.witness_values import Concrete, Unresolved, Value, equality
+from library_deep_enrichment.analyses.behavior.witness_values import (
+    Concrete,
+    Unresolved,
+    Value,
+    equality,
+)
 
 
 @frozen

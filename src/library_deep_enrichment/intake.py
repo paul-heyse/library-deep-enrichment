@@ -20,9 +20,9 @@ from library_deep_enrichment.adapters.rust import semantic as rust_api
 from library_deep_enrichment.collection import CollectionError, confined, save, subjects
 from library_deep_enrichment.knowledge import Knowledge, Obligation, Profile, Source
 from library_deep_enrichment.linking import link
+from library_deep_enrichment.paths import acquired_root
 from library_deep_enrichment.processes import execute
 from library_deep_enrichment.store.digests import canonical_bytes, digest_bytes, digest_file
-from library_deep_enrichment.paths import acquired_root
 from library_deep_enrichment.store.staging import write_atomic
 
 

@@ -7,7 +7,12 @@ from unittest.mock import patch
 
 import pytest
 from attrs import evolve
-from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary, Limits
+
+from library_deep_enrichment.analyses.behavior.contracts import (
+    BehaviorRequest,
+    BehaviorSummary,
+    Limits,
+)
 from library_deep_enrichment.analyses.call_graph.contracts import (
     CallClosure,
     CallClosureRequest,
@@ -25,7 +30,6 @@ from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.source_pipeline import SourceJob, extract
 from library_deep_enrichment.workflows.behavior import build as build_behavior
 from library_deep_enrichment.workflows.call_graph import build
-
 from tests import test_behavior_mir as native_controls
 
 native_cases = native_controls.native_cases
@@ -109,7 +113,8 @@ def test_complete_call_index_selects_helpers_and_replays_portably(
         for item in summaries
     )
     with patch(
-        "library_deep_enrichment.workflows.remote.RemoteProducer.__call__", side_effect=AssertionError
+        "library_deep_enrichment.workflows.remote.RemoteProducer.__call__",
+        side_effect=AssertionError,
     ):
         assert build(corpus, index_request).reused
         assert build(corpus, request).reused

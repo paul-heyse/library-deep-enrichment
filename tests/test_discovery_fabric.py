@@ -6,13 +6,19 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.backend import CorpusError
 from library_deep_enrichment.corpus.contracts import Disposition, Job, Operation
 from library_deep_enrichment.corpus.encoding import digest
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.corpus.store import Corpus
-from library_deep_enrichment.discovery.contracts import Attribute, Concept, EmbeddingRecipe, GraphNode
+from library_deep_enrichment.discovery.contracts import (
+    Attribute,
+    Concept,
+    EmbeddingRecipe,
+    GraphNode,
+)
 from library_deep_enrichment.discovery.embeddings import validate_vector
 from library_deep_enrichment.discovery.fca import SupportContext
 from library_deep_enrichment.discovery.graphs import project_graphs
@@ -187,8 +193,9 @@ def test_cli_retains_lexical_results_when_runtime_initialization_fails(
     """An unavailable local snapshot must not block the independently usable corpus."""
     import json
 
-    from library_deep_enrichment.cli import app
     from typer.testing import CliRunner
+
+    from library_deep_enrichment.cli import app
 
     corpus = _corpus(tmp_path)
     build_retrieval(corpus)

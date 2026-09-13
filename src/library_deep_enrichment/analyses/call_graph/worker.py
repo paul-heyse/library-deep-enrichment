@@ -5,7 +5,10 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from library_deep_enrichment.analyses.call_graph import closure, index
-from library_deep_enrichment.analyses.call_graph.contracts import CallClosureRequest, CallIndexRequest
+from library_deep_enrichment.analyses.call_graph.contracts import (
+    CallClosureRequest,
+    CallIndexRequest,
+)
 
 if TYPE_CHECKING:
     from collections.abc import Iterable

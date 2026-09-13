@@ -18,11 +18,10 @@ def worker_binary(name: str) -> Path:
     Returns:
         The absolute path of ``lde-<name>``.
 
-    Raises:
-        pytest.fail: ``LDE_REQUIRE_WORKERS=1`` and the worker is not built.
-
-    A missing worker is reported as *blocked* (a skip naming the prerequisite), never as a pass.
+    With ``LDE_REQUIRE_WORKERS=1`` an unbuilt worker fails the test outright.
+    A missing worker is otherwise reported as *blocked* (a skip naming the prerequisite), never as a pass.
     ``just test-native`` sets ``LDE_REQUIRE_WORKERS=1`` so an unbuilt worker fails there.
+
     """
     override = os.environ.get("LDE_WORKER_DIR")
     candidates = (

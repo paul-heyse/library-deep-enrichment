@@ -11,12 +11,14 @@ from typing import TYPE_CHECKING
 
 import yaml
 from attrs import frozen
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.contracts import Disposition, Operation, Qualification, Release
 from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
 from library_deep_enrichment.corpus.evidence import stage_blob
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.paths import default_corpus
 from library_deep_enrichment.publication.closure import evidence_closure
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.publication.releases import read_guide
@@ -32,8 +34,6 @@ from library_deep_enrichment.semantics.contracts import (
 from library_deep_enrichment.semantics.task_matching import compare, replay
 from library_deep_enrichment.semantics.vocabulary import text_value
 from library_deep_enrichment.workflows.semantics import build as build_semantics
-from library_deep_enrichment.paths import default_corpus
-
 from pilot.intelligence.qualify_reuse import REPORTS, ROOT, RUN, verify_freeze
 
 if TYPE_CHECKING:
@@ -327,9 +327,7 @@ def _summarize(
 def run() -> None:
     """Compare all 22 retained main-library tasks and release their union closure."""
     freeze = verify_freeze()
-    corpus = Corpus(
-        default_corpus(), max_rows=2_500_000
-    )
+    corpus = Corpus(default_corpus(), max_rows=2_500_000)
     catalog = CONVERTER.structure(
         yaml.safe_load((ROOT / "pilot/tasks.yaml").read_bytes())["tasks"], list[TaskSpec]
     )

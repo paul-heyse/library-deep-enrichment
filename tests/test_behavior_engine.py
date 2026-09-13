@@ -5,6 +5,7 @@ from __future__ import annotations
 import pytest
 from hypothesis import given
 from hypothesis import strategies as st
+
 from library_deep_enrichment.analyses.behavior import schemas
 from library_deep_enrichment.analyses.behavior.builder import GraphBuilder, Origin
 from library_deep_enrichment.analyses.behavior.contracts import (

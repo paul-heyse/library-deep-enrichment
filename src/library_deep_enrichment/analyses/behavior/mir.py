@@ -4,7 +4,12 @@ from __future__ import annotations
 
 from attrs import evolve
 
-from library_deep_enrichment.analyses.behavior import mir_abi, mir_callables, mir_instances, mir_lifecycle
+from library_deep_enrichment.analyses.behavior import (
+    mir_abi,
+    mir_callables,
+    mir_instances,
+    mir_lifecycle,
+)
 from library_deep_enrichment.analyses.behavior.builder import GraphBuilder, Origin
 from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, Limits
 from library_deep_enrichment.analyses.behavior.integrity import program_valid

@@ -6,6 +6,7 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.backend import CorpusError
 from library_deep_enrichment.corpus.schemas import revision_of
@@ -14,7 +15,6 @@ from library_deep_enrichment.semantics.applicability import inputs
 from library_deep_enrichment.semantics.contracts import Capability, Slot, State, Task
 from library_deep_enrichment.semantics.task_matching import compare, replay
 from library_deep_enrichment.semantics.task_matching_v1 import compare as historical_compare
-
 from tests.test_semantic_intelligence import _operation, _setup, _task
 
 if TYPE_CHECKING:

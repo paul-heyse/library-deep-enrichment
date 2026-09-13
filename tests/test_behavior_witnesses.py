@@ -6,6 +6,7 @@ import operator
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.analyses.behavior.builder import GraphBuilder, Origin
 from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,
@@ -18,7 +19,12 @@ from library_deep_enrichment.analyses.behavior.contracts import (
 )
 from library_deep_enrichment.analyses.behavior.engine import Interpreter
 from library_deep_enrichment.analyses.behavior.witness_checks import check
-from library_deep_enrichment.analyses.behavior.witness_contracts import Cell, Input, Observation, Verdict
+from library_deep_enrichment.analyses.behavior.witness_contracts import (
+    Cell,
+    Input,
+    Observation,
+    Verdict,
+)
 from library_deep_enrichment.analyses.behavior.witness_eval import Evaluation
 from library_deep_enrichment.analyses.behavior.witness_generation import (
     GeneratedInput,

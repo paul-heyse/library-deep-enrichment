@@ -6,7 +6,6 @@ from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram,
 from library_deep_enrichment.analyses.behavior.engine import Interpreter
 from library_deep_enrichment.analyses.behavior.fixedpoints import Atom, solve
 from library_deep_enrichment.corpus.schemas import revision_of
-
 from tests.test_behavior_engine import builder
 
 

@@ -11,9 +11,9 @@ from typing import TYPE_CHECKING
 from library_deep_enrichment.corpus.backend import BudgetExceededError, CorpusError
 from library_deep_enrichment.corpus.contracts import Operation, Passage, RegistryEntry, TypeUse
 from library_deep_enrichment.corpus.encoding import bytes_digest, digest
-from library_deep_enrichment.paths import runtime_root
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.facts.contracts import Budget
+from library_deep_enrichment.paths import runtime_root
 from library_deep_enrichment.processes import execute
 from library_deep_enrichment.semantics.contracts import Rule
 from library_deep_enrichment.semantics.enrichment_contracts import WitnessObservation

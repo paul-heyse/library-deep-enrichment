@@ -7,6 +7,7 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.analyses.callable_contracts import CallablePopulation, CallableRequest
 from library_deep_enrichment.analyses.callable_population import analyze, validate
 from library_deep_enrichment.analyses.callable_sources import RetainedSource
@@ -25,7 +26,6 @@ from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.source_pipeline import SourceJob, extract
 from library_deep_enrichment.store.digests import digest_file
 from library_deep_enrichment.workflows.callables import build
-
 from tests import test_behavior_mir as mir_controls
 from tests.test_declaration_identity import _rekey
 from tests.test_native_lanes import SCHEMAS, _binary

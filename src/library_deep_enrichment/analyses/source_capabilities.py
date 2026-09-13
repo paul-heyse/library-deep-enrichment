@@ -11,7 +11,12 @@ from filelock import FileLock
 
 from library_deep_enrichment import source_maps
 from library_deep_enrichment.collection import CollectionError, confined, load, save, select
-from library_deep_enrichment.facts.contracts import ClaimSupport, FacetSeed, FactArtifact, FactSelection
+from library_deep_enrichment.facts.contracts import (
+    ClaimSupport,
+    FacetSeed,
+    FactArtifact,
+    FactSelection,
+)
 from library_deep_enrichment.facts.support import SupportGraph
 from library_deep_enrichment.knowledge import Binding, Capability, Claim, Evidence, Facet, Source
 from library_deep_enrichment.knowledge_v3 import KnowledgeV3

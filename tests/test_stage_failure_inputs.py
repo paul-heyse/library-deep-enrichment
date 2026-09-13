@@ -6,6 +6,7 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.backend import BudgetExceededError, CorpusError
 from library_deep_enrichment.corpus.contracts import Disposition, Gap, Job
@@ -16,7 +17,6 @@ from library_deep_enrichment.workflows.contracts import FamilySelector, InputRec
 from library_deep_enrichment.workflows.discovery import definition
 from library_deep_enrichment.workflows.engine import run_stage
 from library_deep_enrichment.workflows.failure_records import FailureReceipt
-
 from tests.test_stage_inputs import _operation
 
 if TYPE_CHECKING:

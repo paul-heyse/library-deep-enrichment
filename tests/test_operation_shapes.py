@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.backend import CorpusError
 from library_deep_enrichment.corpus.contracts import LegacyRecord, Operation, TypeUse

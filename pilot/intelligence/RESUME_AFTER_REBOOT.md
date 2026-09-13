@@ -43,7 +43,7 @@ Never overlap writers to the same corpus.
 
 Checkpoint: 2026-09-12, after reboot. **The NVIDIA runtime is qualified and the implementation has advanced; the complete target remains in progress.** The earlier driver/library mismatch and zero-bulk-shape state are historical, not current blockers.
 
-Active authority: [target design](../../../../docs/library_ref/library_guide_programmatic_semantic_intelligence_target_design_2026-09-12.md). Preserve the user's correction: one coherent evidence, semantic, and publication fabric. Evaluation is attributed and qualitative; no automated generative-model runner or API key is required. [STATUS.md](STATUS.md) records current and historical checkpoints.
+Active authority: [target design](../../docs/design/library_guide_programmatic_semantic_intelligence_target_design_2026-09-12.md). Preserve the user's correction: one coherent evidence, semantic, and publication fabric. Evaluation is attributed and qualitative; no automated generative-model runner or API key is required. [STATUS.md](STATUS.md) records current and historical checkpoints.
 
 ## Preserve these paths and boundaries
 

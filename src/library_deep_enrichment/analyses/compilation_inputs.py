@@ -9,7 +9,12 @@ from typing import TYPE_CHECKING
 from attrs import frozen
 
 from library_deep_enrichment.analyses.behavior.integrity import require
-from library_deep_enrichment.analyses.callable_sources import MAX_BYTES, RetainedSource, paths, sources
+from library_deep_enrichment.analyses.callable_sources import (
+    MAX_BYTES,
+    RetainedSource,
+    paths,
+    sources,
+)
 from library_deep_enrichment.analyses.compilation_contracts import (
     CargoCommand,
     CompilationRequest,

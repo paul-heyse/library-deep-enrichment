@@ -7,7 +7,12 @@ from typing import TYPE_CHECKING
 import networkx as nx
 from attrs import define, frozen
 
-from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, Effect, Outcome, Term
+from library_deep_enrichment.analyses.behavior.contracts import (
+    BehaviorProgram,
+    Effect,
+    Outcome,
+    Term,
+)
 from library_deep_enrichment.analyses.behavior.integrity import require
 from library_deep_enrichment.corpus.backend import BudgetExceededError
 from library_deep_enrichment.corpus.schemas import revision_of

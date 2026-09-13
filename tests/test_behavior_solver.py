@@ -8,6 +8,7 @@ import struct
 import pytest
 from hypothesis import given
 from hypothesis import strategies as st
+
 from library_deep_enrichment.analyses.behavior.contracts import Guard, Term
 from library_deep_enrichment.analyses.behavior.numeric import integer_width
 from library_deep_enrichment.analyses.behavior.predicates import PredicateChecks

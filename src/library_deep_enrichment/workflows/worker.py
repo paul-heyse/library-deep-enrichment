@@ -36,7 +36,10 @@ def _produce(reader: CorpusReader, request: AnalyticalRequest) -> Iterable[Recor
         return behavior(reader, subject)
 
     from library_deep_enrichment.analyses.fabric import analyze as mir_analysis
-    from library_deep_enrichment.analyses.fabric_contracts import AnalysisRequest, PythonBoundaryRequest
+    from library_deep_enrichment.analyses.fabric_contracts import (
+        AnalysisRequest,
+        PythonBoundaryRequest,
+    )
     from library_deep_enrichment.analyses.python_fabric import analyze as python_boundary
     from library_deep_enrichment.corpus.python_documents import project as python_documents
     from library_deep_enrichment.corpus.python_interfaces import project as python_interfaces
@@ -87,8 +90,12 @@ def _produce_checked(reader: CorpusReader, request: AnalyticalRequest) -> Iterab
         return produce(reader, request)
 
     if request.route == "behavior-characterization":
-        from library_deep_enrichment.analyses.characterization.contracts import CharacterizationRequest
-        from library_deep_enrichment.analyses.characterization.service import analyze as characterize
+        from library_deep_enrichment.analyses.characterization.contracts import (
+            CharacterizationRequest,
+        )
+        from library_deep_enrichment.analyses.characterization.service import (
+            analyze as characterize,
+        )
 
         subject = reader.get("characterization_requests", request.subject)
         if not isinstance(subject, CharacterizationRequest):

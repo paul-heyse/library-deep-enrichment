@@ -10,7 +10,14 @@ from attrs import asdict
 
 from library_deep_enrichment.collection import Subject, dependencies, subjects
 from library_deep_enrichment.evidence_graph import EvidenceGraph
-from library_deep_enrichment.knowledge import Binding, Capability, Claim, Decision, Integration, Knowledge
+from library_deep_enrichment.knowledge import (
+    Binding,
+    Capability,
+    Claim,
+    Decision,
+    Integration,
+    Knowledge,
+)
 from library_deep_enrichment.knowledge_v3 import KnowledgeV3
 from library_deep_enrichment.store.digests import canonical_bytes
 

@@ -7,6 +7,7 @@ from pathlib import Path
 
 import yaml
 from attrs import asdict, evolve
+
 from library_deep_enrichment.collection import save
 from library_deep_enrichment.evidence_graph import EvidenceGraph
 from library_deep_enrichment.knowledge import (
@@ -170,5 +171,3 @@ def _sample(root: Path) -> Knowledge:
     )
     save(root, knowledge)
     return knowledge
-
-

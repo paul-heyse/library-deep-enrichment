@@ -5,7 +5,15 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from library_deep_enrichment.knowledge import Binding, Capability, Claim, Evidence, Facet, Knowledge, Source
+from library_deep_enrichment.knowledge import (
+    Binding,
+    Capability,
+    Claim,
+    Evidence,
+    Facet,
+    Knowledge,
+    Source,
+)
 from library_deep_enrichment.store.digests import canonical_bytes, digest_bytes
 
 

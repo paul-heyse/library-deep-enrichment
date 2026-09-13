@@ -29,7 +29,9 @@ from library_deep_enrichment.discovery.validation import validate as validate_di
 from library_deep_enrichment.semantics import contracts as s
 from library_deep_enrichment.semantics.decision_validation import references as decision_references
 from library_deep_enrichment.semantics.decision_validation import validate as validate_decision
-from library_deep_enrichment.semantics.enrichment_validation import references as enrichment_references
+from library_deep_enrichment.semantics.enrichment_validation import (
+    references as enrichment_references,
+)
 from library_deep_enrichment.semantics.enrichment_validation import validate as validate_enrichment
 from library_deep_enrichment.semantics.proofs import check_consequence
 from library_deep_enrichment.semantics.realization import realize
@@ -348,7 +350,9 @@ def _validate_realizations(
     ]
     if proposed_realizations:
         from library_deep_enrichment.corpus.checker_epochs import CURRENT, HISTORICAL, fingerprint
-        from library_deep_enrichment.semantics.historical_realization import realize as historical_realize
+        from library_deep_enrichment.semantics.historical_realization import (
+            realize as historical_realize,
+        )
 
         fingerprint(checker)
         produce = historical_realize if checker == HISTORICAL else realize
@@ -363,7 +367,9 @@ def validate_records(
     reader: CorpusReader, records: tuple[c.Record, ...], *, checker: str = "current"
 ) -> None:
     """Validate exact support, source normalization, and generated assurance receipts."""
-    from library_deep_enrichment.corpus.python_documents import validate as validate_python_documents
+    from library_deep_enrichment.corpus.python_documents import (
+        validate as validate_python_documents,
+    )
 
     validate_python_documents(reader, records)
     _validate_realizations(reader, records, checker)

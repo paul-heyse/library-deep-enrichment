@@ -8,7 +8,13 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, Limits, Outcome, Term
+
+from library_deep_enrichment.analyses.behavior.contracts import (
+    BehaviorProgram,
+    Limits,
+    Outcome,
+    Term,
+)
 from library_deep_enrichment.analyses.behavior.engine import Interpreter
 from library_deep_enrichment.analyses.behavior.witness_checks import check
 from library_deep_enrichment.analyses.behavior.witness_contracts import (
@@ -25,7 +31,6 @@ from library_deep_enrichment.analyses.behavior.witness_values import Concrete, U
 from library_deep_enrichment.corpus.backend import CorpusError
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.processes import execute
-
 from tests import test_behavior_python as python_controls
 from tests.test_behavior_comprehensions import execute_script
 from tests.test_behavior_witnesses import identity

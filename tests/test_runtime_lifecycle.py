@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 
 import pytest
+
 from library_deep_enrichment.corpus.backend import CorpusError
 from library_deep_enrichment.processes import ProcessResult
 from library_deep_enrichment.runtime import RuntimeConfig, lifecycle

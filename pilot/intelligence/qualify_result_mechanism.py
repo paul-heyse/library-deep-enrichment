@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 
 from attrs import asdict
+
 from library_deep_enrichment.analyses.fabric_contracts import AnalysisRequest, SourceAnalysis
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.encoding import canonical
@@ -13,11 +14,10 @@ from library_deep_enrichment.corpus.identities import identify, join
 from library_deep_enrichment.corpus.native_contracts import NativeFact
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.paths import default_corpus
 from library_deep_enrichment.publication.closure import evidence_closure
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.workflows.source_analysis import build
-from library_deep_enrichment.paths import default_corpus
-
 from pilot.intelligence.qualify_reuse import REPORTS, RUN, verify_freeze
 
 ARTIFACT = "9273f84c75cc267e5e2a773e1092d57acf67d85a9e7f02c122a3a13b43e5e4ad"

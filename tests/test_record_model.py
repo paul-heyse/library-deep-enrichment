@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import pytest
+
 from library_deep_enrichment.models import (
     ApiBinding,
     ApiIdentity,

@@ -9,7 +9,13 @@ from library_deep_enrichment.corpus.contracts import Policy
 from library_deep_enrichment.corpus.encoding import CONVERTER, digest
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.semantics.conditions import check_condition
-from library_deep_enrichment.semantics.contracts import Assignment, Expression, State, Value, ValueKind
+from library_deep_enrichment.semantics.contracts import (
+    Assignment,
+    Expression,
+    State,
+    Value,
+    ValueKind,
+)
 from library_deep_enrichment.semantics.enrichment_contracts import (
     StateTransfer,
     TransferMapping,

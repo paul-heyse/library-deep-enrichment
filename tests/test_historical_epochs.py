@@ -6,12 +6,12 @@ import json
 from typing import TYPE_CHECKING
 
 import pytest
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.backend import CorpusError
 from library_deep_enrichment.corpus.checker_epochs import HISTORICAL, fingerprint
 from library_deep_enrichment.corpus.store import Corpus
 from library_deep_enrichment.publication.export import export_view, import_view
-
 from tests.test_corpus_fabric import _job
 
 if TYPE_CHECKING:

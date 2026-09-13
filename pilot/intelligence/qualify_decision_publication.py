@@ -6,11 +6,13 @@ from pathlib import Path
 from uuid import uuid4
 
 from attrs import evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.contracts import Release
 from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.paths import default_corpus, intelligence_root
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.publication.objectives import deltas, evidence
 from library_deep_enrichment.publication.releases import publish, read_guide
@@ -19,7 +21,6 @@ from library_deep_enrichment.semantics.contracts import Comparison, Interpretati
 from library_deep_enrichment.semantics.decision_contracts import Objective, PreferencePolicy
 from library_deep_enrichment.semantics.task_matching import compare
 from library_deep_enrichment.semantics.vocabulary import text_value
-from library_deep_enrichment.paths import default_corpus, intelligence_root
 
 
 def _publish(corpus: Corpus, comparison: Comparison, name: str) -> dict[str, object]:

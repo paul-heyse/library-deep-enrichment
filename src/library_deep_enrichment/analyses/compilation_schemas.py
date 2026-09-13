@@ -2,7 +2,10 @@
 
 import pyarrow as pa
 
-from library_deep_enrichment.analyses.compilation_contracts import CompilationPopulation, CompilationRequest
+from library_deep_enrichment.analyses.compilation_contracts import (
+    CompilationPopulation,
+    CompilationRequest,
+)
 from library_deep_enrichment.corpus.schemas import NUMBER, SELECTIONS, TEXT, TEXTS, fields, register
 
 SETTINGS = pa.list_(

@@ -12,6 +12,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from attrs import evolve, frozen
+
 from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary
 from library_deep_enrichment.analyses.behavior.coverage import BehaviorCoverage
 from library_deep_enrichment.analyses.call_graph.contracts import (
@@ -101,7 +102,8 @@ def _qualify(options: Options) -> dict:
     report["interpretation_stage"] = CONVERTER.unstructure(build_behavior(corpus, behavior))
     after = _outcomes(corpus, behavior)
     with patch(
-        "library_deep_enrichment.workflows.remote.RemoteProducer.__call__", side_effect=AssertionError
+        "library_deep_enrichment.workflows.remote.RemoteProducer.__call__",
+        side_effect=AssertionError,
     ):
         assert build(corpus, index_request).reused
         assert build(corpus, request).reused

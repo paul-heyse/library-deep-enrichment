@@ -7,8 +7,8 @@ import json
 from collections import Counter
 
 import yaml
-from library_deep_enrichment.corpus.encoding import canonical
 
+from library_deep_enrichment.corpus.encoding import canonical
 from pilot.intelligence.qualify_reuse import REPORTS, ROOT, verify_freeze
 
 ORIGINAL_GAP_COUNT = 9

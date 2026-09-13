@@ -78,7 +78,7 @@ def _interpreter_roots() -> tuple[Path, ...]:
             found.append(root)
         if not current.is_symlink():
             return tuple(found)
-        target = Path(os.readlink(current))
+        target = current.readlink()
         current = target if target.is_absolute() else current.parent / target
 
 

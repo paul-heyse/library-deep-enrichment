@@ -4,6 +4,7 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, Limits
 from library_deep_enrichment.analyses.behavior.coverage import BehaviorCoverage, State
 from library_deep_enrichment.analyses.behavior.projection_budget import ProjectionBudgetError
@@ -21,7 +22,6 @@ from library_deep_enrichment.native_admission import NativeInputs, admit_artifac
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.workflows.behavior import build
 from library_deep_enrichment.workflows.characterization import build as characterize
-
 from tests import test_behavior_python as python_controls
 
 source_case = python_controls.source_case

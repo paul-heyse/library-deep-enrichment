@@ -6,10 +6,10 @@ import json
 from pathlib import Path
 
 import pytest
+
 from library_deep_enrichment.facts.contracts import Budget
 from library_deep_enrichment.processes import execute
 from library_deep_enrichment.source_pipeline import SourceJob, extract
-
 from tests.support.workers import worker_binary
 
 TOOLING = Path(__file__).parents[1]

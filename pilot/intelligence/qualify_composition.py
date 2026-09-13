@@ -9,6 +9,7 @@ from typing import TYPE_CHECKING
 from uuid import uuid4
 
 from attrs import evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.contracts import Operation, Passage, Policy, TypeUse
 from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
@@ -17,11 +18,18 @@ from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.corpus.staging import ObservationBuilder
 from library_deep_enrichment.corpus.store import Corpus
 from library_deep_enrichment.corpus.validation import references
+from library_deep_enrichment.paths import default_corpus, intelligence_root
 from library_deep_enrichment.publication.closure import _source_links
 from library_deep_enrichment.publication.export import export_view
 from library_deep_enrichment.semantics.composition_models import evaluate_composition
 from library_deep_enrichment.semantics.composition_programs import render, witness_disposition
-from library_deep_enrichment.semantics.contracts import Assignment, Capability, Composition, Slot, Task
+from library_deep_enrichment.semantics.contracts import (
+    Assignment,
+    Capability,
+    Composition,
+    Slot,
+    Task,
+)
 from library_deep_enrichment.semantics.enrichment_contracts import (
     CompositionGoal,
     CompositionProgram,
@@ -37,7 +45,6 @@ from library_deep_enrichment.semantics.experiments import run_witness
 from library_deep_enrichment.semantics.planning import PlanBudget, compose
 from library_deep_enrichment.semantics.vocabulary import approve_rules, foundation, text_value
 from library_deep_enrichment.workflows import semantics, shapes
-from library_deep_enrichment.paths import default_corpus, intelligence_root
 
 if TYPE_CHECKING:
     from library_deep_enrichment.corpus.contracts import Record
@@ -75,9 +82,7 @@ def _writer(corpus: Corpus) -> Coordinator:
 
 
 def _seed(corpus: Corpus) -> str:
-    reader = Corpus(
-        default_corpus(), max_rows=2_500_000
-    ).reader()
+    reader = Corpus(default_corpus(), max_rows=2_500_000).reader()
     operations = tuple(
         item
         for item in reader.records("operations")

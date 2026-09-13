@@ -38,7 +38,12 @@ def home() -> Path:
 
 
 def intelligence_root() -> Path:
-    """Return the root holding admitted corpora and qualification pilots."""
+    """Return the root holding admitted corpora and qualification pilots.
+
+    Returns:
+        ``intelligence`` under the state root.
+
+    """
     return home() / "intelligence"
 
 
@@ -69,20 +74,40 @@ def runtime_root() -> Path:
 
 
 def implementation_root() -> Path:
-    """Return the root of retained implementation qualification runs."""
+    """Return the root of retained implementation qualification runs.
+
+    Returns:
+        ``implementation`` under the state root.
+
+    """
     return home() / "implementation"
 
 
 def foundational_root() -> Path:
-    """Return the root of retained foundational-characterization runs."""
+    """Return the root of retained foundational-characterization runs.
+
+    Returns:
+        ``foundational`` under the state root.
+
+    """
     return home() / "foundational"
 
 
 def acquired_root() -> Path:
-    """Return the cache of acquired upstream source and documentation payloads."""
+    """Return the cache of acquired upstream source and documentation payloads.
+
+    Returns:
+        ``acquired`` under the state root.
+
+    """
     return home() / "acquired"
 
 
 def examples_root() -> Path:
-    """Return the cache used by declared verification examples."""
+    """Return the cache used by declared verification examples.
+
+    Returns:
+        ``examples`` under the state root.
+
+    """
     return home() / "examples"

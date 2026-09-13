@@ -7,9 +7,15 @@ import sys
 from pathlib import Path
 
 import pytest
+
 from library_deep_enrichment.analyses.behavior import schemas
 from library_deep_enrichment.analyses.behavior.builder import Origin
-from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, Language, Limits, Outcome
+from library_deep_enrichment.analyses.behavior.contracts import (
+    BehaviorProgram,
+    Language,
+    Limits,
+    Outcome,
+)
 from library_deep_enrichment.analyses.behavior.engine import Interpreter
 from library_deep_enrichment.analyses.behavior.python import normalize
 from library_deep_enrichment.analyses.behavior.python_nodes import read
@@ -17,7 +23,6 @@ from library_deep_enrichment.facts.contracts import Budget, FactArtifact, FileEn
 from library_deep_enrichment.processes import execute
 from library_deep_enrichment.source_pipeline import SourceJob, extract
 from library_deep_enrichment.store.digests import canonical_bytes, digest_file
-
 from tests.test_native_lanes import SCHEMAS, TOOLING, _binary, _records
 
 
@@ -179,6 +184,7 @@ def test_behavior_admission_replay_and_warm_reuse(
 ) -> None:
     """Admit real-source consequences, reject a forged result, and reuse unchanged work."""
     from attrs import evolve
+
     from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary
     from library_deep_enrichment.analyses.behavior.service import validate
     from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity

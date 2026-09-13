@@ -125,7 +125,10 @@ def _model(record: Record) -> None:
 
 def _composition(reader: CorpusReader, record: Record) -> None:
     from library_deep_enrichment.semantics.composition_models import evaluate_composition
-    from library_deep_enrichment.semantics.composition_programs import validate_program, witness_disposition
+    from library_deep_enrichment.semantics.composition_programs import (
+        validate_program,
+        witness_disposition,
+    )
 
     if isinstance(record, c.InvocationContract):
         capability = reader.get("capabilities", record.capability)

@@ -7,6 +7,8 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
+from typer.testing import CliRunner
+
 from library_deep_enrichment.application import admit, page
 from library_deep_enrichment.cli import app
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
@@ -15,7 +17,6 @@ from library_deep_enrichment.corpus.contracts import Gap, Operation
 from library_deep_enrichment.corpus.store import Corpus
 from library_deep_enrichment.workflows.discovery import definition
 from library_deep_enrichment.workflows.engine import run_stage
-from typer.testing import CliRunner
 
 if TYPE_CHECKING:
     from pathlib import Path

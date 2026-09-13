@@ -25,7 +25,9 @@ def model_identity(snapshot: Path) -> dict[str, object]:
 
     """
     manifest = json.loads(
-        files("library_deep_enrichment").joinpath("assets/runtime/qwen3-embedding-8b.json").read_bytes()
+        files("library_deep_enrichment")
+        .joinpath("assets/runtime/qwen3-embedding-8b.json")
+        .read_bytes()
     )
     expected = manifest["files"]
     actual = {str(path.relative_to(snapshot)) for path in snapshot.rglob("*") if path.is_file()}

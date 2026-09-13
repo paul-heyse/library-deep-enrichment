@@ -5,7 +5,13 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from library_deep_enrichment.corpus.backend import CorpusError
-from library_deep_enrichment.corpus.contracts import Disposition, Operation, Policy, Qualification, Scope
+from library_deep_enrichment.corpus.contracts import (
+    Disposition,
+    Operation,
+    Policy,
+    Qualification,
+    Scope,
+)
 from library_deep_enrichment.corpus.evidence import resolve, select
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.semantics.contracts import Assertion, Predicate, Proof, Rule

@@ -4,7 +4,10 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from library_deep_enrichment.analyses.characterization.contracts import OrderingObligation, ResourceRelation
+from library_deep_enrichment.analyses.characterization.contracts import (
+    OrderingObligation,
+    ResourceRelation,
+)
 
 if TYPE_CHECKING:
     from library_deep_enrichment.analyses.behavior.contracts import BehaviorSummary

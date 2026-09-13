@@ -7,9 +7,9 @@ import json
 from pathlib import Path
 
 import pytest
+
 from library_deep_enrichment.facts.contracts import Budget
 from library_deep_enrichment.source_pipeline import SourceJob, extract
-
 from tests.support.workers import worker_binary
 
 TOOLING = Path(__file__).parents[1]
@@ -57,7 +57,9 @@ def _extract(root: Path, name: str, document: object) -> dict[int, dict]:
             input=str(source),
             helper=str(worker_binary("rustdoc-facts")),
             profile="declaration-identity-control",
-            schema=str(TOOLING / "src/library_deep_enrichment/assets/schemas/declaration.v1.schema.json"),
+            schema=str(
+                TOOLING / "src/library_deep_enrichment/assets/schemas/declaration.v1.schema.json"
+            ),
         ),
         Budget(),
     )

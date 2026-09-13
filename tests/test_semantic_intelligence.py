@@ -7,9 +7,17 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.backend import CorpusError
-from library_deep_enrichment.corpus.contracts import ByteRange, Disposition, Job, Operation, Passage, Release
+from library_deep_enrichment.corpus.contracts import (
+    ByteRange,
+    Disposition,
+    Job,
+    Operation,
+    Passage,
+    Release,
+)
 from library_deep_enrichment.corpus.encoding import bytes_digest
 from library_deep_enrichment.corpus.evidence import stage_blob
 from library_deep_enrichment.corpus.schemas import revision_of

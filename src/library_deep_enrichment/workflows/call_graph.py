@@ -5,7 +5,10 @@ from __future__ import annotations
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-from library_deep_enrichment.analyses.call_graph.contracts import CallClosureRequest, CallIndexRequest
+from library_deep_enrichment.analyses.call_graph.contracts import (
+    CallClosureRequest,
+    CallIndexRequest,
+)
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
 from library_deep_enrichment.corpus.schemas import revision_of
 from library_deep_enrichment.workflows.discovery import definition

@@ -8,6 +8,7 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.analyses.behavior import mir_callables
 from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,
@@ -47,7 +48,6 @@ from library_deep_enrichment.store.digests import digest_file
 from library_deep_enrichment.workflows.behavior import build
 from library_deep_enrichment.workflows.behavior_witnesses import build as build_witnesses
 from library_deep_enrichment.workflows.call_graph import build as build_calls
-
 from tests.test_call_graph import _index
 from tests.test_native_lanes import SCHEMAS, _binary, _records
 

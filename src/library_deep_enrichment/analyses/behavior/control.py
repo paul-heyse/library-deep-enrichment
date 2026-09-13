@@ -12,7 +12,11 @@ from library_deep_enrichment.analyses.behavior.predicates import PredicateChecks
 from library_deep_enrichment.analyses.behavior.state import Result
 
 if TYPE_CHECKING:
-    from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, Edge, Instruction
+    from library_deep_enrichment.analyses.behavior.contracts import (
+        BehaviorProgram,
+        Edge,
+        Instruction,
+    )
     from library_deep_enrichment.analyses.behavior.memory import Locations
     from library_deep_enrichment.analyses.behavior.state import State
 

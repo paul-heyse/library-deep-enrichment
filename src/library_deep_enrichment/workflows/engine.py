@@ -9,13 +9,21 @@ from typing import TYPE_CHECKING
 from attrs import frozen
 
 from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
-from library_deep_enrichment.corpus.backend import BudgetExceededError, CorpusError, PredecessorConflictError
+from library_deep_enrichment.corpus.backend import (
+    BudgetExceededError,
+    CorpusError,
+    PredecessorConflictError,
+)
 from library_deep_enrichment.corpus.contracts import AdmissionBatch, Disposition, Job, Member
 from library_deep_enrichment.corpus.encoding import canonical, digest, payload
 from library_deep_enrichment.corpus.evidence import select
 from library_deep_enrichment.corpus.schemas import codec_for, revision_of
 from library_deep_enrichment.corpus.validation import AdmissionReader
-from library_deep_enrichment.workflows.contracts import FamilySelector, InputReceipt, StageDefinition
+from library_deep_enrichment.workflows.contracts import (
+    FamilySelector,
+    InputReceipt,
+    StageDefinition,
+)
 from library_deep_enrichment.workflows.failure_records import (
     StageProgress,
     coordinator_high_water_bytes,

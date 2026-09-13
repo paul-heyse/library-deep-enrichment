@@ -8,6 +8,7 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
+
 from library_deep_enrichment.corpus.backend import CorpusError
 from library_deep_enrichment.corpus.encoding import bytes_digest, canonical
 from library_deep_enrichment.corpus.evidence import read_field

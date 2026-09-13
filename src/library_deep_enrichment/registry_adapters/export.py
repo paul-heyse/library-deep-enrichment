@@ -6,7 +6,9 @@ import importlib.metadata
 import json
 import sys
 
-from library_deep_enrichment.registry_adapters.datafusion_functions import probe_datafusion_functions
+from library_deep_enrichment.registry_adapters.datafusion_functions import (
+    probe_datafusion_functions,
+)
 from library_deep_enrichment.registry_adapters.datafusion_settings import probe_datafusion_settings
 from library_deep_enrichment.registry_adapters.pyarrow_compute import probe_pyarrow_compute
 

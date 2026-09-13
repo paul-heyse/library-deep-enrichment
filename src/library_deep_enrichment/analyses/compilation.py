@@ -10,7 +10,12 @@ from library_deep_enrichment.analyses.compilation_contracts import (
     CompilationRequest,
     CompilationUnit,
 )
-from library_deep_enrichment.analyses.compilation_inputs import catalogs, commands, inputs, invocation
+from library_deep_enrichment.analyses.compilation_inputs import (
+    catalogs,
+    commands,
+    inputs,
+    invocation,
+)
 from library_deep_enrichment.analyses.compilation_join import JoinInput, candidates, settings
 from library_deep_enrichment.corpus.evidence import select
 from library_deep_enrichment.corpus.schemas import revision_of

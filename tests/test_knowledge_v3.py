@@ -8,13 +8,13 @@ from pathlib import Path
 import pytest
 from attrs import asdict
 from jsonschema.exceptions import ValidationError
+
 from library_deep_enrichment.collection import load
 from library_deep_enrichment.facts.contracts import FactSelection
 from library_deep_enrichment.knowledge_v3 import KnowledgeV3
 from library_deep_enrichment.migrations.knowledge_v2_to_v3 import migrate
 from library_deep_enrichment.schemas import schema_for, validate_document
 from library_deep_enrichment.store.digests import canonical_bytes, digest_file
-
 from tests.support.knowledge import _sample
 
 

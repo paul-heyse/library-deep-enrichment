@@ -8,6 +8,7 @@ from typing import TYPE_CHECKING, Literal
 
 import pytest
 from attrs import asdict, evolve
+
 from library_deep_enrichment.analyses.fabric_contracts import PythonBoundary, PythonBoundaryRequest
 from library_deep_enrichment.analyses.python_fabric import analyze, validate
 from library_deep_enrichment.corpus.backend import CorpusError
@@ -19,7 +20,6 @@ from library_deep_enrichment.facts.contracts import FactArtifact, FactShard, Fil
 from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
 from library_deep_enrichment.publication.export import export_view, import_view
 from library_deep_enrichment.workflows.python_boundaries import build
-
 from tests.test_native_fabric import _artifact
 
 if TYPE_CHECKING:
