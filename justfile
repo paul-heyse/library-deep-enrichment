@@ -54,6 +54,11 @@ sync-embed:
 doctor:
     @"{{ root }}/scripts/doctor.sh"
 
+[doc("Acquire and verify the qualified Souffle 2.5 rule runtime under $LDE_HOME/runtime (network).")]
+[group('environment')]
+souffle-provision:
+    python -c "from library_deep_enrichment.paths import runtime_root; from library_deep_enrichment.runtime import provision_souffle; print(provision_souffle(runtime_root()))"
+
 [doc("Delete the agent-session state sandbox (.dev-state/). Real corpora under LDE_HOME are untouched.")]
 [group('mutating')]
 state-reset:

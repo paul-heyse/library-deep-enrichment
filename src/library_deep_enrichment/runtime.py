@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import subprocess
 from datetime import UTC, datetime
 from pathlib import Path
 from uuid import uuid4
@@ -184,12 +185,21 @@ def canary(config: RuntimeConfig) -> dict[str, object]:
     return report
 
 
-def _provision(config: RuntimeConfig) -> None:
-    from huggingface_hub import snapshot_download
+def provision_souffle(root: Path) -> Path:
+    """Acquire and verify the qualified Souffle 2.5 rule runtime under a runtime root.
 
+    Idempotent: an executable that already matches the qualified digest is left alone.
+
+    Returns:
+        The verified ``souffle`` executable.
+
+    Raises:
+        CorpusError: The download exceeded its size boundary or a checksum did not match.
+
+    """
     from library_deep_enrichment.semantics.relational import SOFTWARE_DIGEST
 
-    destination = config.root / "tools/souffle-2.5"
+    destination = root / "tools/souffle-2.5"
     executable = destination / "runtime/usr/bin/souffle"
     if not executable.is_file() or bytes_digest(executable.read_bytes()) != SOFTWARE_DIGEST:
         destination.mkdir(parents=True, exist_ok=True)
@@ -211,10 +221,17 @@ def _provision(config: RuntimeConfig) -> None:
         if checksum.hexdigest() != SOUFFLE_SHA512:
             message = "Souffle release checksum mismatch"
             raise CorpusError(message)
-        _run(config, ("dpkg-deb", "-x", str(package), str(destination / "runtime")))
+        subprocess.run(("dpkg-deb", "-x", str(package), str(destination / "runtime")), check=True)
         if bytes_digest(executable.read_bytes()) != SOFTWARE_DIGEST:
             message = "Souffle executable differs from the qualified runtime"
             raise CorpusError(message)
+    return executable
+
+
+def _provision(config: RuntimeConfig) -> None:
+    from huggingface_hub import snapshot_download
+
+    provision_souffle(config.root)
     snapshot_download(
         repo_id="Qwen/Qwen3-Embedding-8B",
         revision=MODEL_REVISION,

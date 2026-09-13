@@ -37,10 +37,19 @@ jobs:
           tool: cargo-nextest,cargo-deny,just,ast-grep,taplo-cli,typos-cli
 
       - name: Install bubblewrap (worker sandbox)
-        run: sudo apt-get update -q && sudo apt-get install -y -q bubblewrap
+        # Ubuntu 24.04 restricts unprivileged user namespaces by default; the workers and
+        # witnesses run under bwrap --unshare-net, which needs them. If the runner still
+        # refuses, the isolation-dependent tests report `blocked`, never a fake pass.
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q bubblewrap
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 || true
 
       - name: Sync the Python environment from the lockfile
         run: uv sync --frozen --all-groups --all-extras
+
+      # The semantic-rule tests need the qualified Souffle 2.5 runtime (a ~10 MB .deb,
+      # SHA-512 verified). Without it those tests report `blocked`.
+      - run: just souffle-provision
 
       # Same order as `just ci`. If you add a step to one, add it to the other.
       - run: just toolchain-check
