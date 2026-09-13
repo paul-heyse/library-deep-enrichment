@@ -9,6 +9,6 @@ fn round_trip<'py>(py: Python<'py>, capsule: &Bound<'py, PyCapsule>) -> PyResult
 }
 
 #[pymodule]
-fn library_guides_interop(module: &Bound<'_, PyModule>) -> PyResult<()> {
+fn lde_interop(module: &Bound<'_, PyModule>) -> PyResult<()> {
     module.add_function(wrap_pyfunction!(round_trip, module)?)
 }

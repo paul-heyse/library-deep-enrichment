@@ -9,18 +9,18 @@ from pathlib import Path
 import pytest
 import yaml
 from attrs import asdict, evolve
-from library_guides import authoring, generations
-from library_guides.adapters import registry
-from library_guides.adapters.docs.markdown_sections import index_markdown
-from library_guides.adapters.python.semantic import extract as extract_python
-from library_guides.adapters.search.structured import ast_scan
-from library_guides.collection import CollectionError, load, save
-from library_guides.evidence_graph import EvidenceGraph
-from library_guides.intake import ingest
-from library_guides.knowledge import Knowledge
-from library_guides.qualification import coverage, validate
-from library_guides.schemas import validate_document
-from library_guides.store.digests import canonical_bytes, digest_bytes
+from library_deep_enrichment import authoring, generations
+from library_deep_enrichment.adapters import registry
+from library_deep_enrichment.adapters.docs.markdown_sections import index_markdown
+from library_deep_enrichment.adapters.python.semantic import extract as extract_python
+from library_deep_enrichment.adapters.search.structured import ast_scan
+from library_deep_enrichment.collection import CollectionError, load, save
+from library_deep_enrichment.evidence_graph import EvidenceGraph
+from library_deep_enrichment.intake import ingest
+from library_deep_enrichment.knowledge import Knowledge
+from library_deep_enrichment.qualification import coverage, validate
+from library_deep_enrichment.schemas import validate_document
+from library_deep_enrichment.store.digests import canonical_bytes, digest_bytes
 
 from .test_knowledge_v2 import _sample
 
@@ -193,9 +193,9 @@ def test_source_rule_excludes_comment_and_string_lookalikes(tmp_path: Path) -> N
 
 def test_nomination_rules_have_positive_and_negative_controls() -> None:
     """Every declared classifier must pass its paired semantic text controls."""
-    import library_guides
+    import library_deep_enrichment
 
-    assets = Path(library_guides.__file__).parent / "assets"
+    assets = Path(library_deep_enrichment.__file__).parent / "assets"
     rules = yaml.safe_load((assets / "rules/candidates.yaml").read_text(encoding="utf-8"))[
         "families"
     ]

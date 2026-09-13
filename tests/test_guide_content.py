@@ -5,12 +5,12 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from library_guides.decisions import DecisionBrief, load_decisions
-from library_guides.manifest import known_stack_ids
-from library_guides.models.enums import ReviewState
-from library_guides.obligations import load_obligations
-from library_guides.principles import load_principles
-from library_guides.retrieve.index_build import build_index
+from library_deep_enrichment.decisions import DecisionBrief, load_decisions
+from library_deep_enrichment.manifest import known_stack_ids
+from library_deep_enrichment.models.enums import ReviewState
+from library_deep_enrichment.obligations import load_obligations
+from library_deep_enrichment.principles import load_principles
+from library_deep_enrichment.retrieve.index_build import build_index
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
 

@@ -6,25 +6,25 @@ from typing import TYPE_CHECKING, TypedDict, Unpack
 
 import pytest
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import Backend, CorpusError
-from library_guides.corpus.contracts import Disposition, Job, Member, Operation
-from library_guides.corpus.evidence import select
-from library_guides.corpus.schemas import REGISTRY, revision_of
-from library_guides.corpus.sequence_pages import SequenceRequest
-from library_guides.corpus.sequence_pages import read as read_sequence
-from library_guides.corpus.store import Corpus
-from library_guides.corpus.validation import AdmissionReader, validate_records
-from library_guides.publication.closure import evidence_closure
-from library_guides.semantics.contracts import Task
-from library_guides.semantics.task_matching import compare
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import Backend, CorpusError
+from library_deep_enrichment.corpus.contracts import Disposition, Job, Member, Operation
+from library_deep_enrichment.corpus.evidence import select
+from library_deep_enrichment.corpus.schemas import REGISTRY, revision_of
+from library_deep_enrichment.corpus.sequence_pages import SequenceRequest
+from library_deep_enrichment.corpus.sequence_pages import read as read_sequence
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.corpus.validation import AdmissionReader, validate_records
+from library_deep_enrichment.publication.closure import evidence_closure
+from library_deep_enrichment.semantics.contracts import Task
+from library_deep_enrichment.semantics.task_matching import compare
 
 if TYPE_CHECKING:
     from collections.abc import Iterable, Iterator
     from pathlib import Path
 
-    from library_guides.corpus.contracts import Record
-    from library_guides.corpus.store import CorpusReader
+    from library_deep_enrichment.corpus.contracts import Record
+    from library_deep_enrichment.corpus.store import CorpusReader
 
 QUERY_WINDOW_CEILING = 100
 

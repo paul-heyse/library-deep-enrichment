@@ -13,7 +13,7 @@ from pathlib import Path
 URL = "https://files.pythonhosted.org/packages/c3/90/bf149bccebdc19b21197ee779663564c4d8573923023efc26ca89b0da3c8/scikit_mine-1.0.0-py3-none-any.whl"
 UPSTREAM = "74b3b8104882280eb8fc254399b541f652d03c2a0f2ca55d0e97993b7e72938e"
 OLD = "scikit_mine-1.0.0.dist-info"
-NEW = "scikit_mine-1.0.0+smartref.1.dist-info"
+NEW = "scikit_mine-1.0.0+lde.1.dist-info"
 
 
 def main() -> None:
@@ -45,7 +45,7 @@ def main() -> None:
                     message = "upstream metadata patch precondition changed"
                     raise ValueError(message)
                 contents = (
-                    text.replace("Version: 1.0.0\n", "Version: 1.0.0+smartref.1\n", 1)
+                    text.replace("Version: 1.0.0\n", "Version: 1.0.0+lde.1\n", 1)
                     .replace(matches[0], matches[0].rstrip("\n") + '; python_version < "3.7"\n', 1)
                     .encode()
                 )
@@ -64,7 +64,7 @@ def main() -> None:
     output = io.StringIO()
     csv.writer(output, lineterminator="\n").writerows(rows)
     entries[record] = output.getvalue().encode()
-    path = Path(__file__).with_name("scikit_mine-1.0.0+smartref.1-py3-none-any.whl")
+    path = Path(__file__).with_name("scikit_mine-1.0.0+lde.1-py3-none-any.whl")
     with zipfile.ZipFile(path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
         for name, contents in sorted(entries.items()):
             info = zipfile.ZipInfo(name, (2026, 9, 12, 0, 0, 0))

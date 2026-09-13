@@ -1,9 +1,27 @@
+# Rust
+**/target/
+**/*.rs.bk
+# Vendored upstream clones, re-acquired by scripts/bootstrap-upstream.sh
+crates/source-facts/upstream/
+crates/python-semantics/upstream/
+
+# Python
 .venv/
-*.egg-info/
 __pycache__/
+*.py[cod]
+*.egg-info/
 dist/
 build/
-**/target/
+.pytest_cache/
+.ruff_cache/
+.pyrefly/
+.hypothesis/
+
+# Development service state (LDE_HOME inside agent sessions and tests)
+/.dev-state/
+
+# Pilot: reproducible extraction stores and generated reports; manifests and
+# authored packets are retained.
 pilot/collection/
 pilot/intake.local.yaml
 pilot/qualified/build/
@@ -12,16 +30,26 @@ pilot/qualified/packets/
 pilot/reports/document-map/
 pilot/reports/nominations.json
 pilot/reports/*.sqlite
-native/python-semantics/upstream/
-native/source-facts/upstream/
 pilot/source_semantics/collection/
 pilot/source_semantics/build/
-# Reproducible extraction stores and native binaries; retain manifests/reports and authored packets.
-native/bin/
 pilot/source_semantics/python/facts/
 pilot/source_semantics/python/snapshots/
 pilot/source_semantics/python/requests/
 pilot/source_semantics/python/discovery/
-pilot/source_semantics/python/*.local.yaml
 pilot/source_semantics/m1/facts/
 pilot/source_semantics/m1/snapshots/
+pilot/**/*.local.yaml
+
+# Personal, per-machine overrides
+CLAUDE.local.md
+/.claude/settings.local.json
+.envrc.local
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.DS_Store
+*.swp
+.idea/
+.vscode/

@@ -9,12 +9,12 @@ from pathlib import Path
 from typing import TYPE_CHECKING
 
 from attrs import asdict
-from library_guides.analyses.fabric_contracts import PythonBoundaryRequest
-from library_guides.corpus.store import Corpus
-from library_guides.workflows import enrichment, semantics, shapes
-from library_guides.workflows.python_boundaries import build as boundary
-from library_guides.workflows.python_documents import build as documents
-from library_guides.workflows.python_interfaces import build as interfaces
+from library_deep_enrichment.analyses.fabric_contracts import PythonBoundaryRequest
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.workflows import enrichment, semantics, shapes
+from library_deep_enrichment.workflows.python_boundaries import build as boundary
+from library_deep_enrichment.workflows.python_documents import build as documents
+from library_deep_enrichment.workflows.python_interfaces import build as interfaces
 
 if TYPE_CHECKING:
     from collections.abc import Callable

@@ -6,8 +6,8 @@ import operator
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.behavior.builder import GraphBuilder, Origin
-from library_guides.analyses.behavior.contracts import (
+from library_deep_enrichment.analyses.behavior.builder import GraphBuilder, Origin
+from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,
     BehaviorSummary,
     Guard,
@@ -16,18 +16,18 @@ from library_guides.analyses.behavior.contracts import (
     Outcome,
     Term,
 )
-from library_guides.analyses.behavior.engine import Interpreter
-from library_guides.analyses.behavior.witness_checks import check
-from library_guides.analyses.behavior.witness_contracts import Cell, Input, Observation, Verdict
-from library_guides.analyses.behavior.witness_eval import Evaluation
-from library_guides.analyses.behavior.witness_generation import (
+from library_deep_enrichment.analyses.behavior.engine import Interpreter
+from library_deep_enrichment.analyses.behavior.witness_checks import check
+from library_deep_enrichment.analyses.behavior.witness_contracts import Cell, Input, Observation, Verdict
+from library_deep_enrichment.analyses.behavior.witness_eval import Evaluation
+from library_deep_enrichment.analyses.behavior.witness_generation import (
     GeneratedInput,
     GenerationLimits,
     run,
 )
-from library_guides.analyses.behavior.witness_values import Concrete, decode, equality
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.schemas import revision_of
+from library_deep_enrichment.analyses.behavior.witness_values import Concrete, decode, equality
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.schemas import revision_of
 
 
 def identity() -> tuple[BehaviorProgram, BehaviorSummary]:

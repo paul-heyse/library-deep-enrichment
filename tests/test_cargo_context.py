@@ -6,9 +6,9 @@ import json
 from pathlib import Path
 
 import pytest
-from library_guides.facts.contracts import Budget
-from library_guides.processes import execute
-from library_guides.source_pipeline import SourceJob, extract
+from library_deep_enrichment.facts.contracts import Budget
+from library_deep_enrichment.processes import execute
+from library_deep_enrichment.source_pipeline import SourceJob, extract
 
 TOOLING = Path(__file__).parents[1]
 pytestmark = pytest.mark.native_lanes
@@ -62,9 +62,9 @@ def _metadata(root: Path, manifest: Path, *, no_deps: bool) -> tuple[list[dict],
             id="metadata-no-deps" if no_deps else "metadata",
             kind="cargo",
             input=str(path),
-            helper=str(TOOLING / "rustdoc-helper/target/debug/library-guides-rustdoc"),
+            helper=str(TOOLING / "rustdoc-helper/target/debug/lde-rustdoc-facts"),
             profile="cargo-fixture",
-            schema=str(TOOLING / "library_guides/assets/schemas/cargo.v1.schema.json"),
+            schema=str(TOOLING / "library_deep_enrichment/assets/schemas/cargo.v1.schema.json"),
         ),
         Budget(),
     )

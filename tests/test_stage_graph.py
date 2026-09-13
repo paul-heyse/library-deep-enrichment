@@ -5,7 +5,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 import pytest
-from library_guides.stages.graph import (
+from library_deep_enrichment.stages.graph import (
     CyclicStageGraphError,
     StageDefinition,
     StageGraph,
@@ -14,7 +14,7 @@ from library_guides.stages.graph import (
 )
 
 if TYPE_CHECKING:
-    from library_guides.stages.graph import StageContext, StageResult
+    from library_deep_enrichment.stages.graph import StageContext, StageResult
 
 
 def _unused_runner(context: StageContext) -> StageResult:

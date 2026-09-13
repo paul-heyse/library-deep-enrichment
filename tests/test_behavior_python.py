@@ -7,16 +7,16 @@ import sys
 from pathlib import Path
 
 import pytest
-from library_guides.analyses.behavior import schemas
-from library_guides.analyses.behavior.builder import Origin
-from library_guides.analyses.behavior.contracts import BehaviorProgram, Language, Limits, Outcome
-from library_guides.analyses.behavior.engine import Interpreter
-from library_guides.analyses.behavior.python import normalize
-from library_guides.analyses.behavior.python_nodes import read
-from library_guides.facts.contracts import Budget, FactArtifact, FileEntry
-from library_guides.processes import execute
-from library_guides.source_pipeline import SourceJob, extract
-from library_guides.store.digests import canonical_bytes, digest_file
+from library_deep_enrichment.analyses.behavior import schemas
+from library_deep_enrichment.analyses.behavior.builder import Origin
+from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, Language, Limits, Outcome
+from library_deep_enrichment.analyses.behavior.engine import Interpreter
+from library_deep_enrichment.analyses.behavior.python import normalize
+from library_deep_enrichment.analyses.behavior.python_nodes import read
+from library_deep_enrichment.facts.contracts import Budget, FactArtifact, FileEntry
+from library_deep_enrichment.processes import execute
+from library_deep_enrichment.source_pipeline import SourceJob, extract
+from library_deep_enrichment.store.digests import canonical_bytes, digest_file
 
 from tests.test_native_lanes import SCHEMAS, TOOLING, _binary, _records
 
@@ -179,15 +179,15 @@ def test_behavior_admission_replay_and_warm_reuse(
 ) -> None:
     """Admit real-source consequences, reject a forged result, and reuse unchanged work."""
     from attrs import evolve
-    from library_guides.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary
-    from library_guides.analyses.behavior.service import validate
-    from library_guides.corpus.admission import Coordinator, WriterIdentity
-    from library_guides.corpus.backend import CorpusError
-    from library_guides.corpus.native_contracts import NativeFact
-    from library_guides.corpus.schemas import revision_of
-    from library_guides.corpus.store import Corpus
-    from library_guides.native_admission import NativeInputs, admit_artifacts
-    from library_guides.workflows.behavior import build
+    from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary
+    from library_deep_enrichment.analyses.behavior.service import validate
+    from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+    from library_deep_enrichment.corpus.backend import CorpusError
+    from library_deep_enrichment.corpus.native_contracts import NativeFact
+    from library_deep_enrichment.corpus.schemas import revision_of
+    from library_deep_enrichment.corpus.store import Corpus
+    from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+    from library_deep_enrichment.workflows.behavior import build
 
     root, artifact = source_case
     corpus = Corpus(tmp_path / "corpus")

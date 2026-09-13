@@ -1,9 +1,9 @@
 """Independent builtin iterator lifecycle controls, including mutation and exhaustion."""
 
-from library_guides.analyses.behavior import iterators, regions
-from library_guides.analyses.behavior.contracts import Term
-from library_guides.analyses.behavior.state import State
-from library_guides.analyses.behavior.values import Values
+from library_deep_enrichment.analyses.behavior import iterators, regions
+from library_deep_enrichment.analyses.behavior.contracts import Term
+from library_deep_enrichment.analyses.behavior.state import State
+from library_deep_enrichment.analyses.behavior.values import Values
 
 
 def test_exhausted_iterator_stays_exhausted_after_source_growth() -> None:

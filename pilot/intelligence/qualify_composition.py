@@ -9,20 +9,20 @@ from typing import TYPE_CHECKING
 from uuid import uuid4
 
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.contracts import Operation, Passage, Policy, TypeUse
-from library_guides.corpus.encoding import CONVERTER, canonical
-from library_guides.corpus.evidence import select
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.staging import ObservationBuilder
-from library_guides.corpus.store import Corpus
-from library_guides.corpus.validation import references
-from library_guides.publication.closure import _source_links
-from library_guides.publication.export import export_view
-from library_guides.semantics.composition_models import evaluate_composition
-from library_guides.semantics.composition_programs import render, witness_disposition
-from library_guides.semantics.contracts import Assignment, Capability, Composition, Slot, Task
-from library_guides.semantics.enrichment_contracts import (
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.contracts import Operation, Passage, Policy, TypeUse
+from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
+from library_deep_enrichment.corpus.evidence import select
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.staging import ObservationBuilder
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.corpus.validation import references
+from library_deep_enrichment.publication.closure import _source_links
+from library_deep_enrichment.publication.export import export_view
+from library_deep_enrichment.semantics.composition_models import evaluate_composition
+from library_deep_enrichment.semantics.composition_programs import render, witness_disposition
+from library_deep_enrichment.semantics.contracts import Assignment, Capability, Composition, Slot, Task
+from library_deep_enrichment.semantics.enrichment_contracts import (
     CompositionGoal,
     CompositionProgram,
     CompositionWitness,
@@ -33,13 +33,13 @@ from library_guides.semantics.enrichment_contracts import (
     WitnessRecipe,
     WitnessRun,
 )
-from library_guides.semantics.experiments import run_witness
-from library_guides.semantics.planning import PlanBudget, compose
-from library_guides.semantics.vocabulary import approve_rules, foundation, text_value
-from library_guides.workflows import semantics, shapes
+from library_deep_enrichment.semantics.experiments import run_witness
+from library_deep_enrichment.semantics.planning import PlanBudget, compose
+from library_deep_enrichment.semantics.vocabulary import approve_rules, foundation, text_value
+from library_deep_enrichment.workflows import semantics, shapes
 
 if TYPE_CHECKING:
-    from library_guides.corpus.contracts import Record
+    from library_deep_enrichment.corpus.contracts import Record
 
 PROFILE = "rust-docsrs-54.1-58.4"
 EXPECTED_PLANS = 2
@@ -263,7 +263,7 @@ def _programs(
             language="rust",
             program=program.program,
             manifest=builder.own_bytes(
-                files("library_guides")
+                files("library_deep_enrichment")
                 .joinpath("assets/witnesses/arrow_schema_projection.toml")
                 .read_bytes(),
                 media_type="text/toml",
@@ -366,7 +366,7 @@ def main() -> None:
         "interpretation": "Both exact generated programs compiled and executed. Their different metadata results corroborate the model for these retained inputs only.",
     }
     Path(
-        "tooling/library_guides/pilot/intelligence/reports/resume-generated-composition.json"
+        "tooling/library_deep_enrichment/pilot/intelligence/reports/resume-generated-composition.json"
     ).write_bytes(canonical(report) + b"\n")
 
 

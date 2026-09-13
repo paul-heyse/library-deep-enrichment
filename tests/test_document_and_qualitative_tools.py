@@ -7,10 +7,10 @@ from pathlib import Path
 
 import pytest
 import yaml
-from library_guides.adapters.docs.structured import rst_sections, sphinx_inventory
-from library_guides.collection import CollectionError
-from library_guides.evidence_graph import EvidenceGraph
-from library_guides.qualitative import audit
+from library_deep_enrichment.adapters.docs.structured import rst_sections, sphinx_inventory
+from library_deep_enrichment.collection import CollectionError
+from library_deep_enrichment.evidence_graph import EvidenceGraph
+from library_deep_enrichment.qualitative import audit
 
 from .test_knowledge_v2 import _sample
 

@@ -12,21 +12,21 @@ from pathlib import Path
 from unittest.mock import patch
 
 from attrs import evolve, frozen
-from library_guides.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary
-from library_guides.analyses.behavior.coverage import BehaviorCoverage
-from library_guides.analyses.call_graph.contracts import (
+from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary
+from library_deep_enrichment.analyses.behavior.coverage import BehaviorCoverage
+from library_deep_enrichment.analyses.call_graph.contracts import (
     CallClosure,
     CallClosureRequest,
     CallIndex,
     CallIndexRequest,
 )
-from library_guides.analyses.call_graph.service import validate
-from library_guides.corpus.encoding import CONVERTER, canonical
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.export import export_view, import_view
-from library_guides.workflows.behavior import build as build_behavior
-from library_guides.workflows.call_graph import build
+from library_deep_enrichment.analyses.call_graph.service import validate
+from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.workflows.behavior import build as build_behavior
+from library_deep_enrichment.workflows.call_graph import build
 
 
 @frozen(kw_only=True)
@@ -101,7 +101,7 @@ def _qualify(options: Options) -> dict:
     report["interpretation_stage"] = CONVERTER.unstructure(build_behavior(corpus, behavior))
     after = _outcomes(corpus, behavior)
     with patch(
-        "library_guides.workflows.remote.RemoteProducer.__call__", side_effect=AssertionError
+        "library_deep_enrichment.workflows.remote.RemoteProducer.__call__", side_effect=AssertionError
     ):
         assert build(corpus, index_request).reused
         assert build(corpus, request).reused

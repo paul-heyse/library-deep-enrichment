@@ -5,21 +5,21 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.contracts import Operation
-from library_guides.corpus.encoding import digest
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.discovery.contracts import Embedding, EmbeddingRecipe
-from library_guides.discovery.reuse import embed_current
-from library_guides.workflows.discovery import build_retrieval, definition
-from library_guides.workflows.engine import run_stage
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.contracts import Operation
+from library_deep_enrichment.corpus.encoding import digest
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.discovery.contracts import Embedding, EmbeddingRecipe
+from library_deep_enrichment.discovery.reuse import embed_current
+from library_deep_enrichment.workflows.discovery import build_retrieval, definition
+from library_deep_enrichment.workflows.engine import run_stage
 
 if TYPE_CHECKING:
     from collections.abc import Iterator, Sequence
     from pathlib import Path
 
-    from library_guides.discovery.contracts import RetrievalUnit
+    from library_deep_enrichment.discovery.contracts import RetrievalUnit
 
 
 class FixtureProvider:

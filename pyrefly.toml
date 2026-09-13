@@ -1,3 +1,3 @@
-project-includes = ["library_guides/**/*.py", "tests/**/*.py", "pilot/*.py", "pilot/qualified/examples/*.py"]
+project-includes = ["library_deep_enrichment/**/*.py", "tests/**/*.py", "pilot/*.py", "pilot/qualified/examples/*.py"]
 search-path = ["."]
 python-interpreter = ".venv/bin/python"

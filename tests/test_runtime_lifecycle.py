@@ -6,9 +6,9 @@ import json
 from pathlib import Path
 
 import pytest
-from library_guides.corpus.backend import CorpusError
-from library_guides.processes import ProcessResult
-from library_guides.runtime import RuntimeConfig, lifecycle
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.processes import ProcessResult
+from library_deep_enrichment.runtime import RuntimeConfig, lifecycle
 
 
 def test_plan_does_not_create_cache_or_run_docker(tmp_path: Path) -> None:
@@ -31,13 +31,13 @@ def test_unowned_container_cannot_be_stopped(
     def execute(arguments: tuple[str, ...], **_options: object) -> ProcessResult:
         calls.append(arguments)
         stdout = (
-            b"library-guides-embeddings\n"
+            b"lde-embeddings\n"
             if arguments[1] == "container"
             else json.dumps([{"Config": {"Labels": {}}, "Id": "foreign"}]).encode()
         )
         return ProcessResult(returncode=0, stdout=stdout, stderr=b"", elapsed_seconds=0.0)
 
-    monkeypatch.setattr("library_guides.runtime.execute", execute)
+    monkeypatch.setattr("library_deep_enrichment.runtime.execute", execute)
     with pytest.raises(CorpusError, match="unqualified configuration"):
         lifecycle(RuntimeConfig(root=tmp_path), "stop", apply=True)
     assert all("stop" not in command for command in calls)
@@ -56,7 +56,7 @@ def test_model_identity_detects_same_size_corruption(
     """Actual model bytes, including small git objects, must match the committed inventory."""
     import hashlib
 
-    from library_guides.runtime_identity import model_identity
+    from library_deep_enrichment.runtime_identity import model_identity
 
     snapshot = tmp_path / "revision"
     snapshot.mkdir()
@@ -87,7 +87,7 @@ def test_model_identity_detects_same_size_corruption(
             }
         )
     )
-    monkeypatch.setattr("library_guides.runtime_identity.files", lambda _package: tmp_path)
+    monkeypatch.setattr("library_deep_enrichment.runtime_identity.files", lambda _package: tmp_path)
     assert model_identity(snapshot)["bytes"] == len(config) + len(weights)
     (snapshot / "model.safetensors").write_bytes(b"changed")
     with pytest.raises(CorpusError, match="model content differs"):

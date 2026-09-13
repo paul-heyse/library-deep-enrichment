@@ -9,24 +9,24 @@ from typing import Literal
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.compilation import analyze, validate
-from library_guides.analyses.compilation_contracts import CompilationPopulation, CompilationRequest
-from library_guides.analyses.compilation_inputs import absolute, catalogs, inputs, invocation
-from library_guides.analyses.compilation_join import JoinInput, candidates, features
-from library_guides.collection import CollectionError
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.native_contracts import NativeArtifact
-from library_guides.corpus.schemas import REGISTRY, revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.corpus.validation import AdmissionReader
-from library_guides.facts.compiler_invocation import arguments, read
-from library_guides.facts.contracts import Budget, FactArtifact, FileEntry
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.processes import execute
-from library_guides.publication.export import export_view, import_view
-from library_guides.source_pipeline import SourceJob, extract
-from library_guides.store.digests import digest_file
-from library_guides.workflows.compilation import build
+from library_deep_enrichment.analyses.compilation import analyze, validate
+from library_deep_enrichment.analyses.compilation_contracts import CompilationPopulation, CompilationRequest
+from library_deep_enrichment.analyses.compilation_inputs import absolute, catalogs, inputs, invocation
+from library_deep_enrichment.analyses.compilation_join import JoinInput, candidates, features
+from library_deep_enrichment.collection import CollectionError
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.native_contracts import NativeArtifact
+from library_deep_enrichment.corpus.schemas import REGISTRY, revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.corpus.validation import AdmissionReader
+from library_deep_enrichment.facts.compiler_invocation import arguments, read
+from library_deep_enrichment.facts.contracts import Budget, FactArtifact, FileEntry
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.processes import execute
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.source_pipeline import SourceJob, extract
+from library_deep_enrichment.store.digests import digest_file
+from library_deep_enrichment.workflows.compilation import build
 
 from tests.test_native_lanes import SCHEMAS, _binary
 
@@ -90,16 +90,16 @@ def compilation_case(
     artifacts = []
     with pytest.MonkeyPatch.context() as patch:
         patch.setenv("RUSTC_WRAPPER", str(_binary("mir-facts")))
-        patch.setenv("LIBRARY_GUIDES_MIR_BEHAVIOR", "1")
-        patch.setenv("LIBRARY_GUIDES_MIR_PACKAGES", "compilation_fixture@0.1.0")
+        patch.setenv("LDE_MIR_BEHAVIOR", "1")
+        patch.setenv("LDE_MIR_PACKAGES", "compilation_fixture@0.1.0")
         patch.setenv("CARGO_BUILD_JOBS", "1")
         for label, flags in (
             ("default", ()),
             ("alternate", ("--no-default-features", "--features", "alternate")),
         ):
             frames = root / (label + "-frames")
-            patch.setenv("LIBRARY_GUIDES_MIR_CONTEXT", "context:" + label)
-            patch.setenv("LIBRARY_GUIDES_MIR_OUTPUT", str(frames))
+            patch.setenv("LDE_MIR_CONTEXT", "context:" + label)
+            patch.setenv("LDE_MIR_OUTPUT", str(frames))
             result = execute(
                 (
                     "cargo",
@@ -290,10 +290,10 @@ def test_real_legacy_invocation_keeps_context_unobserved(
     )
     output = root / "legacy-frames"
     with pytest.MonkeyPatch.context() as patch:
-        patch.setenv("LIBRARY_GUIDES_MIR_OUTPUT", str(output))
-        patch.setenv("LIBRARY_GUIDES_MIR_CONTEXT", "legacy-control")
-        patch.delenv("LIBRARY_GUIDES_MIR_BEHAVIOR", raising=False)
-        patch.delenv("LIBRARY_GUIDES_MIR_PACKAGES", raising=False)
+        patch.setenv("LDE_MIR_OUTPUT", str(output))
+        patch.setenv("LDE_MIR_CONTEXT", "legacy-control")
+        patch.delenv("LDE_MIR_BEHAVIOR", raising=False)
+        patch.delenv("LDE_MIR_PACKAGES", raising=False)
         result = execute(
             (
                 str(_binary("mir-facts")),

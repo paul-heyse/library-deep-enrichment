@@ -5,7 +5,7 @@ the `dataclasses` backport, whose latest release supports only Python 3.6. Pytho
 3.14 supplies `dataclasses` in its standard library.
 
 The retained wheel adds `python_version < "3.7"` to that dependency and identifies
-the correction with local version `1.0.0+smartref.1`. All package code and license
+the correction with local version `1.0.0+lde.1`. All package code and license
 bytes remain identical to the SHA-256-pinned upstream wheel. The provenance
 receipt records both digests. No scientific algorithm or warning is patched.
 

@@ -7,21 +7,21 @@ import logging
 from typing import TYPE_CHECKING
 
 from attrs import asdict, evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.contracts import AdmissionBatch, Operation, Qualification
-from library_guides.corpus.encoding import canonical
-from library_guides.corpus.identities import identify, join
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.export import import_view
-from library_guides.semantics.contracts import Assertion, Capability, Comparison, Proof, Task
-from library_guides.semantics.task_matching import compare
-from library_guides.semantics.vocabulary import text_value
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.contracts import AdmissionBatch, Operation, Qualification
+from library_deep_enrichment.corpus.encoding import canonical
+from library_deep_enrichment.corpus.identities import identify, join
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.export import import_view
+from library_deep_enrichment.semantics.contracts import Assertion, Capability, Comparison, Proof, Task
+from library_deep_enrichment.semantics.task_matching import compare
+from library_deep_enrichment.semantics.vocabulary import text_value
 
 from pilot.intelligence.qualify_reuse import REPORTS, RUN, verify_freeze
 
 if TYPE_CHECKING:
-    from library_guides.corpus.store import CorpusReader
+    from library_deep_enrichment.corpus.store import CorpusReader
 
 LOG = logging.getLogger(__name__)
 CASES = (

@@ -6,16 +6,16 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import BudgetExceededError, CorpusError
-from library_guides.corpus.contracts import Disposition, Gap, Job
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.export import export_view, import_view
-from library_guides.workflows.contracts import FamilySelector, InputReceipt
-from library_guides.workflows.discovery import definition
-from library_guides.workflows.engine import run_stage
-from library_guides.workflows.failure_records import FailureReceipt
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import BudgetExceededError, CorpusError
+from library_deep_enrichment.corpus.contracts import Disposition, Gap, Job
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.workflows.contracts import FamilySelector, InputReceipt
+from library_deep_enrichment.workflows.discovery import definition
+from library_deep_enrichment.workflows.engine import run_stage
+from library_deep_enrichment.workflows.failure_records import FailureReceipt
 
 from tests.test_stage_inputs import _operation
 
@@ -23,8 +23,8 @@ if TYPE_CHECKING:
     from collections.abc import Iterable
     from pathlib import Path
 
-    from library_guides.corpus.contracts import Record
-    from library_guides.corpus.store import CorpusReader
+    from library_deep_enrichment.corpus.contracts import Record
+    from library_deep_enrichment.corpus.store import CorpusReader
 
 
 def _portable_failure(

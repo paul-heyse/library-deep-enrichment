@@ -8,13 +8,13 @@ from pathlib import Path
 from time import perf_counter
 
 from attrs import asdict
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.encoding import CONVERTER, canonical
-from library_guides.corpus.store import Corpus
-from library_guides.discovery.contracts import DiscoveryScope
-from library_guides.discovery.scopes import current
-from library_guides.runtime import RuntimeConfig, embedding_client
-from library_guides.workflows.discovery import (
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.discovery.contracts import DiscoveryScope
+from library_deep_enrichment.discovery.scopes import current
+from library_deep_enrichment.runtime import RuntimeConfig, embedding_client
+from library_deep_enrichment.workflows.discovery import (
     build_embeddings,
     build_fca,
     build_graphs,

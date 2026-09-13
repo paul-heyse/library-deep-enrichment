@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 from attrs import evolve
-from library_guides.analyses.behavior.contracts import Language, Limits, Outcome
-from library_guides.analyses.behavior.engine import Interpreter
-from library_guides.analyses.behavior.values import scalar
+from library_deep_enrichment.analyses.behavior.contracts import Language, Limits, Outcome
+from library_deep_enrichment.analyses.behavior.engine import Interpreter
+from library_deep_enrichment.analyses.behavior.values import scalar
 
 from tests.test_behavior_engine import builder
 

@@ -7,24 +7,24 @@ from unittest.mock import patch
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary, Limits
-from library_guides.analyses.call_graph.contracts import (
+from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary, Limits
+from library_deep_enrichment.analyses.call_graph.contracts import (
     CallClosure,
     CallClosureRequest,
     CallIndex,
     CallIndexRequest,
 )
-from library_guides.analyses.call_graph.service import validate
-from library_guides.corpus.backend import BudgetExceededError, CorpusError
-from library_guides.corpus.native_contracts import NativeArtifact, NativeFact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.facts.contracts import Budget, FactArtifact
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.publication.export import export_view, import_view
-from library_guides.source_pipeline import SourceJob, extract
-from library_guides.workflows.behavior import build as build_behavior
-from library_guides.workflows.call_graph import build
+from library_deep_enrichment.analyses.call_graph.service import validate
+from library_deep_enrichment.corpus.backend import BudgetExceededError, CorpusError
+from library_deep_enrichment.corpus.native_contracts import NativeArtifact, NativeFact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.facts.contracts import Budget, FactArtifact
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.source_pipeline import SourceJob, extract
+from library_deep_enrichment.workflows.behavior import build as build_behavior
+from library_deep_enrichment.workflows.call_graph import build
 
 from tests import test_behavior_mir as native_controls
 
@@ -109,7 +109,7 @@ def test_complete_call_index_selects_helpers_and_replays_portably(
         for item in summaries
     )
     with patch(
-        "library_guides.workflows.remote.RemoteProducer.__call__", side_effect=AssertionError
+        "library_deep_enrichment.workflows.remote.RemoteProducer.__call__", side_effect=AssertionError
     ):
         assert build(corpus, index_request).reused
         assert build(corpus, request).reused

@@ -7,21 +7,21 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
-from library_guides.collection import CollectionError
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.contracts import Gap, Job
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.facts.contracts import Budget
-from library_guides.publication.export import export_view, import_view
-from library_guides.worker_observations import failure_observations
-from library_guides.worker_runtime import WorkerRequest, run
-from library_guides.workflows.contracts import StageDefinition
-from library_guides.workflows.discovery import definition
-from library_guides.workflows.engine import run_stage
-from library_guides.workflows.failure_records import FailureReceipt
-from library_guides.workflows.remote import BUDGET_EXIT
+from library_deep_enrichment.collection import CollectionError
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.contracts import Gap, Job
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.facts.contracts import Budget
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.worker_observations import failure_observations
+from library_deep_enrichment.worker_runtime import WorkerRequest, run
+from library_deep_enrichment.workflows.contracts import StageDefinition
+from library_deep_enrichment.workflows.discovery import definition
+from library_deep_enrichment.workflows.engine import run_stage
+from library_deep_enrichment.workflows.failure_records import FailureReceipt
+from library_deep_enrichment.workflows.remote import BUDGET_EXIT
 
 from tests.test_source_protocol import _stream
 
@@ -29,8 +29,8 @@ if TYPE_CHECKING:
     from collections.abc import Iterable
     from pathlib import Path
 
-    from library_guides.corpus.contracts import Record
-    from library_guides.corpus.store import CorpusReader
+    from library_deep_enrichment.corpus.contracts import Record
+    from library_deep_enrichment.corpus.store import CorpusReader
 
 
 def _worker(tmp_path: Path, fault: str) -> tuple[WorkerRequest, int]:

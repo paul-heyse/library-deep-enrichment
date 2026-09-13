@@ -2,11 +2,11 @@
 
 from __future__ import annotations
 
-from library_guides.analyses.behavior.contracts import BehaviorProgram, Limits, Outcome, Term
-from library_guides.analyses.behavior.engine import Interpreter
-from library_guides.analyses.behavior.values import Values
-from library_guides.analyses.behavior.witness_eval import Evaluation
-from library_guides.analyses.behavior.witness_values import Concrete, Value
+from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, Limits, Outcome, Term
+from library_deep_enrichment.analyses.behavior.engine import Interpreter
+from library_deep_enrichment.analyses.behavior.values import Values
+from library_deep_enrichment.analyses.behavior.witness_eval import Evaluation
+from library_deep_enrichment.analyses.behavior.witness_values import Concrete, Value
 
 from tests import test_behavior_comprehensions as concrete_controls
 from tests import test_behavior_python as python_controls

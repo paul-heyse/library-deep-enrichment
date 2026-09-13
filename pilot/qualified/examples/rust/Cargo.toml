@@ -1,5 +1,5 @@
 [package]
-name = "library-guides-columnar-pilot"
+name = "lde-columnar-pilot"
 version = "0.1.0"
 edition = "2024"
 publish = false
@@ -7,7 +7,7 @@ publish = false
 [workspace]
 
 [lib]
-name = "library_guides_interop"
+name = "lde_interop"
 crate-type = ["cdylib"]
 
 [dependencies]

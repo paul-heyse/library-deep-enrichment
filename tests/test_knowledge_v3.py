@@ -8,12 +8,12 @@ from pathlib import Path
 import pytest
 from attrs import asdict
 from jsonschema.exceptions import ValidationError
-from library_guides.collection import load
-from library_guides.facts.contracts import FactSelection
-from library_guides.knowledge_v3 import KnowledgeV3
-from library_guides.migrations.knowledge_v2_to_v3 import migrate
-from library_guides.schemas import schema_for, validate_document
-from library_guides.store.digests import canonical_bytes, digest_file
+from library_deep_enrichment.collection import load
+from library_deep_enrichment.facts.contracts import FactSelection
+from library_deep_enrichment.knowledge_v3 import KnowledgeV3
+from library_deep_enrichment.migrations.knowledge_v2_to_v3 import migrate
+from library_deep_enrichment.schemas import schema_for, validate_document
+from library_deep_enrichment.store.digests import canonical_bytes, digest_file
 
 from .test_knowledge_v2 import _sample
 

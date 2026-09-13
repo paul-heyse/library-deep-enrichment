@@ -6,17 +6,17 @@ import json
 from pathlib import Path
 
 from attrs import asdict
-from library_guides.analyses.fabric_contracts import AnalysisRequest, SourceAnalysis
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.encoding import canonical
-from library_guides.corpus.evidence import resolve_bytes
-from library_guides.corpus.identities import identify, join
-from library_guides.corpus.native_contracts import NativeFact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.closure import evidence_closure
-from library_guides.publication.export import export_view, import_view
-from library_guides.workflows.source_analysis import build
+from library_deep_enrichment.analyses.fabric_contracts import AnalysisRequest, SourceAnalysis
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.encoding import canonical
+from library_deep_enrichment.corpus.evidence import resolve_bytes
+from library_deep_enrichment.corpus.identities import identify, join
+from library_deep_enrichment.corpus.native_contracts import NativeFact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.closure import evidence_closure
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.workflows.source_analysis import build
 
 from pilot.intelligence.qualify_reuse import REPORTS, RUN, verify_freeze
 

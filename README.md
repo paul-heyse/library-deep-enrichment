@@ -14,7 +14,7 @@ publication authorities.
 
 ## Environment and current corpus
 
-Use `tooling/library_guides/.venv/bin` explicitly from the repository root.
+Use `tooling/library_deep_enrichment/.venv/bin` explicitly from the repository root.
 Do not synchronize the root environment to run this tool. The present tooling
 `pyproject.toml` and lockfile include concurrent dependency work; do not rewrite
 them incidentally during continuation.
@@ -29,7 +29,7 @@ environment. The lock selects the declared PyTorch index and the retained
 alongside an offline wheelhouse because its local version is not on public PyPI.
 
 Analytical requests retain their resolved worker memory budget. The optional
-`LIBRARY_GUIDES_ANALYTICAL_MEMORY_BYTES` setting accepts a positive integer up to
+`LDE_ANALYTICAL_MEMORY_BYTES` setting accepts a positive integer up to
 64 GiB; malformed values fail explicitly. The full-corpus refresh uses an
 explicit 8 GiB worker limit. This bounds supervised worker RSS, not the
 coordinator's admission memory. Failure receipts remain distinct from admitted
@@ -41,16 +41,16 @@ The current main corpus is
 for the expanded main corpus; the constructor otherwise defaults to 250,000.
 
 ```bash
-tooling/library_guides/.venv/bin/library-guides \
+tooling/library_deep_enrichment/.venv/bin/library-deep-enrichment \
   --corpus .cache/library-guides-intelligence/pilot-v4/corpus status
 
-tooling/library_guides/.venv/bin/library-guides \
+tooling/library_deep_enrichment/.venv/bin/library-deep-enrichment \
   --corpus .cache/library-guides-intelligence/pilot-v4/corpus records operations --limit 10
 
-tooling/library_guides/.venv/bin/library-guides \
+tooling/library_deep_enrichment/.venv/bin/library-deep-enrichment \
   --corpus .cache/library-guides-intelligence/pilot-v4/corpus build --stage shapes
 
-tooling/library_guides/.venv/bin/library-guides \
+tooling/library_deep_enrichment/.venv/bin/library-deep-enrichment \
   --corpus .cache/library-guides-intelligence/pilot-v4/corpus build --stage semantics
 ```
 
@@ -67,12 +67,12 @@ The existing container must have the exact ownership label before it can be
 started or stopped. The service binds loopback port 18080.
 
 ```bash
-tooling/library_guides/.venv/bin/library-guides \
+tooling/library_deep_enrichment/.venv/bin/library-deep-enrichment \
   --corpus .cache/library-guides-intelligence/pilot-v4/corpus \
   --runtime-root /home/paul/.cache/library-guides-intelligence \
   runtime --action start
 
-tooling/library_guides/.venv/bin/library-guides \
+tooling/library_deep_enrichment/.venv/bin/library-deep-enrichment \
   --corpus .cache/library-guides-intelligence/pilot-v4/corpus \
   --runtime-root /home/paul/.cache/library-guides-intelligence \
   runtime --action start --apply
@@ -143,14 +143,14 @@ The retained native scope is
 `pilot/intelligence/scopes/arrow-schema-native.json`. For example:
 
 ```bash
-tooling/library_guides/.venv/bin/library-guides \
+tooling/library_deep_enrichment/.venv/bin/library-deep-enrichment \
   --corpus .cache/library-guides-intelligence/pilot-v4/corpus \
-  build --stage retrieval --scope tooling/library_guides/pilot/intelligence/scopes/arrow-schema-native.json
+  build --stage retrieval --scope tooling/library_deep_enrichment/pilot/intelligence/scopes/arrow-schema-native.json
 
-tooling/library_guides/.venv/bin/library-guides \
+tooling/library_deep_enrichment/.venv/bin/library-deep-enrichment \
   --corpus .cache/library-guides-intelligence/pilot-v4/corpus \
   --runtime-root /home/paul/.cache/library-guides-intelligence \
-  discover-scoped 'preserve schema metadata' tooling/library_guides/pilot/intelligence/scopes/arrow-schema-native.json
+  discover-scoped 'preserve schema metadata' tooling/library_deep_enrichment/pilot/intelligence/scopes/arrow-schema-native.json
 ```
 
 Scope receipts retain exact independent populations and separate output ownership.
@@ -170,10 +170,10 @@ The typed `publication.compositions.publish` entry point uses the same closure
 and coordinator to publish modeled plans and finite witnesses.
 
 ```bash
-tooling/library_guides/.venv/bin/library-guides \
+tooling/library_deep_enrichment/.venv/bin/library-deep-enrichment \
   --corpus /path/to/corpus export /path/to/new-export
 
-tooling/library_guides/.venv/bin/library-guides \
+tooling/library_deep_enrichment/.venv/bin/library-deep-enrichment \
   --corpus /path/to/clean-corpus import /path/to/new-export
 ```
 
@@ -202,10 +202,10 @@ Final qualification used the isolated all-extras environment recorded in
 below require those declared dependencies and the documented native binaries.
 
 ```bash
-tooling/library_guides/.venv/bin/pytest tooling/library_guides/tests -q --tb=short
-tooling/library_guides/.venv/bin/ruff check tooling/library_guides/library_guides tooling/library_guides/tests tooling/library_guides/pilot/intelligence
-tooling/library_guides/.venv/bin/ruff format --check tooling/library_guides/library_guides tooling/library_guides/tests tooling/library_guides/pilot/intelligence
-# Run from tooling/library_guides:
+tooling/library_deep_enrichment/.venv/bin/pytest tooling/library_deep_enrichment/tests -q --tb=short
+tooling/library_deep_enrichment/.venv/bin/ruff check tooling/library_deep_enrichment/library_deep_enrichment tooling/library_deep_enrichment/tests tooling/library_deep_enrichment/pilot/intelligence
+tooling/library_deep_enrichment/.venv/bin/ruff format --check tooling/library_deep_enrichment/library_deep_enrichment tooling/library_deep_enrichment/tests tooling/library_deep_enrichment/pilot/intelligence
+# Run from tooling/library_deep_enrichment:
 .venv/bin/pyrefly check --min-severity warn --output-format min-text
 ```
 

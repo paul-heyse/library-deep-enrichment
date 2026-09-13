@@ -6,15 +6,15 @@ import logging
 from pathlib import Path
 from time import perf_counter
 
-from library_guides.corpus.contracts import Operation
-from library_guides.corpus.encoding import CONVERTER, canonical
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.discovery.contracts import DiscoveryScope, SearchSelection
-from library_guides.discovery.scopes import current, units
-from library_guides.discovery.search import search
-from library_guides.runtime import RuntimeConfig, embedding_client
-from library_guides.workflows.discovery import build_embeddings, build_graphs, build_retrieval
+from library_deep_enrichment.corpus.contracts import Operation
+from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.discovery.contracts import DiscoveryScope, SearchSelection
+from library_deep_enrichment.discovery.scopes import current, units
+from library_deep_enrichment.discovery.search import search
+from library_deep_enrichment.runtime import RuntimeConfig, embedding_client
+from library_deep_enrichment.workflows.discovery import build_embeddings, build_graphs, build_retrieval
 
 LOGGER = logging.getLogger(__name__)
 
@@ -30,7 +30,7 @@ def main() -> None:
         artifacts=("6c2a693b89f5e45f72a3347ffe0a17d9e5b1aaed4eee65171b3b0aab4e5b46d0",),
         max_units=1000,
     )
-    root = Path("tooling/library_guides/pilot/intelligence")
+    root = Path("tooling/library_deep_enrichment/pilot/intelligence")
     (root / "scopes").mkdir(exist_ok=True)
     (root / "scopes/arrow-schema-native.json").write_bytes(
         canonical(CONVERTER.unstructure(selection)) + b"\n"

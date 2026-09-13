@@ -6,11 +6,11 @@ import json
 from collections import Counter
 
 from attrs import asdict
-from library_guides.corpus.encoding import canonical
-from library_guides.corpus.evidence import resolve_bytes
-from library_guides.corpus.native_contracts import NativeArtifact
-from library_guides.corpus.store import Corpus
-from library_guides.workflows.native import build
+from library_deep_enrichment.corpus.encoding import canonical
+from library_deep_enrichment.corpus.evidence import resolve_bytes
+from library_deep_enrichment.corpus.native_contracts import NativeArtifact
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.workflows.native import build
 
 from pilot.intelligence.qualify_reuse import REPORTS, ROOT, RUN, verify_freeze
 

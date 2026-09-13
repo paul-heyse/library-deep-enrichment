@@ -12,24 +12,24 @@ import json
 from pathlib import Path
 
 import pytest
-from library_guides.adapters.docs.behaviors import (
+from library_deep_enrichment.adapters.docs.behaviors import (
     BehaviorKind,
     IdentifierShape,
     identifier_shape,
     index_behaviors,
 )
-from library_guides.manifest import known_stack_ids, load_library_manifest, load_stack_manifest
-from library_guides.models.enums import Ecosystem, EvidenceOrigin, ResolutionState
-from library_guides.models.records import ApiBinding, Observation
-from library_guides.packets import PacketBudget, PacketRequest, build_packets
-from library_guides.retrieve.index_build import build_index
-from library_guides.stages.extract_documentation import (
+from library_deep_enrichment.manifest import known_stack_ids, load_library_manifest, load_stack_manifest
+from library_deep_enrichment.models.enums import Ecosystem, EvidenceOrigin, ResolutionState
+from library_deep_enrichment.models.records import ApiBinding, Observation
+from library_deep_enrichment.packets import PacketBudget, PacketRequest, build_packets
+from library_deep_enrichment.retrieve.index_build import build_index
+from library_deep_enrichment.stages.extract_documentation import (
     DOC_PREDICATE,
     harvest_rustdoc_documentation,
 )
-from library_guides.stages.paths import api_path, documentation_path
-from library_guides.stages.resolve import ResolutionPass, resolve_behaviors
-from library_guides.store.jsonl import read_records
+from library_deep_enrichment.stages.paths import api_path, documentation_path
+from library_deep_enrichment.stages.resolve import ResolutionPass, resolve_behaviors
+from library_deep_enrichment.store.jsonl import read_records
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
 

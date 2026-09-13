@@ -7,24 +7,24 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.callable_contracts import CallablePopulation, CallableRequest
-from library_guides.analyses.callable_population import analyze, validate
-from library_guides.analyses.callable_sources import RetainedSource
-from library_guides.collection import CollectionError
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.encoding import digest
-from library_guides.corpus.native_contracts import NativeArtifact
-from library_guides.corpus.schemas import REGISTRY, revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.corpus.validation import AdmissionReader
-from library_guides.facts.contracts import Budget, FactArtifact, FileEntry
-from library_guides.facts.witness_origins import read as read_origins
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.processes import execute
-from library_guides.publication.export import export_view, import_view
-from library_guides.source_pipeline import SourceJob, extract
-from library_guides.store.digests import digest_file
-from library_guides.workflows.callables import build
+from library_deep_enrichment.analyses.callable_contracts import CallablePopulation, CallableRequest
+from library_deep_enrichment.analyses.callable_population import analyze, validate
+from library_deep_enrichment.analyses.callable_sources import RetainedSource
+from library_deep_enrichment.collection import CollectionError
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.encoding import digest
+from library_deep_enrichment.corpus.native_contracts import NativeArtifact
+from library_deep_enrichment.corpus.schemas import REGISTRY, revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.corpus.validation import AdmissionReader
+from library_deep_enrichment.facts.contracts import Budget, FactArtifact, FileEntry
+from library_deep_enrichment.facts.witness_origins import read as read_origins
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.processes import execute
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.source_pipeline import SourceJob, extract
+from library_deep_enrichment.store.digests import digest_file
+from library_deep_enrichment.workflows.callables import build
 
 from tests import test_behavior_mir as mir_controls
 from tests.test_declaration_identity import _rekey

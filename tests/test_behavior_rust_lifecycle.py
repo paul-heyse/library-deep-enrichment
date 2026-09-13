@@ -8,36 +8,36 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.behavior import mir_lifecycle
-from library_guides.analyses.behavior.contracts import (
+from library_deep_enrichment.analyses.behavior import mir_lifecycle
+from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,
     BehaviorRequest,
     BehaviorSummary,
     Outcome,
 )
-from library_guides.analyses.behavior.witness_checks import CheckPolicy, compare
-from library_guides.analyses.behavior.witness_contracts import Cell, Input, Observation, Verdict
-from library_guides.analyses.call_graph.contracts import (
+from library_deep_enrichment.analyses.behavior.witness_checks import CheckPolicy, compare
+from library_deep_enrichment.analyses.behavior.witness_contracts import Cell, Input, Observation, Verdict
+from library_deep_enrichment.analyses.call_graph.contracts import (
     CallClosureRequest,
     CallIndexRequest,
     LifecycleClosure,
 )
-from library_guides.collection import CollectionError
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.native_contracts import NativeFact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.facts.compiler_invocation import read as read_invocation
-from library_guides.facts.contracts import Budget, FactArtifact, FileEntry
-from library_guides.facts.mir_sources import witnesses
-from library_guides.facts.protocol import Frames
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.processes import execute
-from library_guides.publication.export import export_view, import_view
-from library_guides.source_pipeline import SourceJob, extract
-from library_guides.store.digests import digest_file
-from library_guides.workflows.behavior import build
-from library_guides.workflows.call_graph import build as build_calls
+from library_deep_enrichment.collection import CollectionError
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.native_contracts import NativeFact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.facts.compiler_invocation import read as read_invocation
+from library_deep_enrichment.facts.contracts import Budget, FactArtifact, FileEntry
+from library_deep_enrichment.facts.mir_sources import witnesses
+from library_deep_enrichment.facts.protocol import Frames
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.processes import execute
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.source_pipeline import SourceJob, extract
+from library_deep_enrichment.store.digests import digest_file
+from library_deep_enrichment.workflows.behavior import build
+from library_deep_enrichment.workflows.call_graph import build as build_calls
 
 from tests.test_behavior_callables import _summaries
 from tests.test_call_graph import _index
@@ -86,8 +86,8 @@ def lifecycle_cases(tmp_path_factory: pytest.TempPathFactory) -> tuple[Path, Fac
             "CALLABLES": "1",
             "LIFECYCLE": "1",
         }.items():
-            patch.setenv("LIBRARY_GUIDES_MIR_" + name, value)
-        patch.delenv("LIBRARY_GUIDES_MIR_PACKAGES", raising=False)
+            patch.setenv("LDE_MIR_" + name, value)
+        patch.delenv("LDE_MIR_PACKAGES", raising=False)
         result = execute(
             (
                 str(_binary("mir-facts")),
@@ -366,8 +366,8 @@ def _demand_capture(root: Path, definition: str) -> tuple[list[dict], dict]:
             "LIFECYCLE": "1",
             "INSTANCE_ROOTS": json.dumps([definition]),
         }.items():
-            patch.setenv("LIBRARY_GUIDES_MIR_" + name, value)
-        patch.delenv("LIBRARY_GUIDES_MIR_PACKAGES", raising=False)
+            patch.setenv("LDE_MIR_" + name, value)
+        patch.delenv("LDE_MIR_PACKAGES", raising=False)
         result = execute(
             (
                 str(_binary("mir-facts")),

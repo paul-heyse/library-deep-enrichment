@@ -8,17 +8,17 @@ from typing import TYPE_CHECKING, Literal
 
 import pytest
 from attrs import asdict, evolve
-from library_guides.analyses.fabric_contracts import PythonBoundary, PythonBoundaryRequest
-from library_guides.analyses.python_fabric import analyze, validate
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.encoding import bytes_digest, canonical
-from library_guides.corpus.native_contracts import NativeArtifact, NativeFact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.facts.contracts import FactArtifact, FactShard, FileEntry
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.publication.export import export_view, import_view
-from library_guides.workflows.python_boundaries import build
+from library_deep_enrichment.analyses.fabric_contracts import PythonBoundary, PythonBoundaryRequest
+from library_deep_enrichment.analyses.python_fabric import analyze, validate
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.encoding import bytes_digest, canonical
+from library_deep_enrichment.corpus.native_contracts import NativeArtifact, NativeFact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.facts.contracts import FactArtifact, FactShard, FileEntry
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.workflows.python_boundaries import build
 
 from tests.test_native_fabric import _artifact
 

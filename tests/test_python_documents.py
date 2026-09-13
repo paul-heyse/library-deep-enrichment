@@ -6,19 +6,19 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.contracts import Passage
-from library_guides.corpus.encoding import bytes_digest
-from library_guides.corpus.native_contracts import NativeArtifact
-from library_guides.corpus.python_documents import literals, validate
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.publication.export import export_view, import_view
-from library_guides.semantic_packs import install
-from library_guides.workflows.python_documents import build
-from library_guides.workflows.python_interfaces import build as interfaces
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.contracts import Passage
+from library_deep_enrichment.corpus.encoding import bytes_digest
+from library_deep_enrichment.corpus.native_contracts import NativeArtifact
+from library_deep_enrichment.corpus.python_documents import literals, validate
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.semantic_packs import install
+from library_deep_enrichment.workflows.python_documents import build
+from library_deep_enrichment.workflows.python_interfaces import build as interfaces
 
 from tests.test_python_boundaries import _lane
 
@@ -67,7 +67,7 @@ def test_python_document_owner_and_portable_replay(tmp_path: Path) -> None:
     assert "\nKeep" in passage.text
     install(
         corpus,
-        Path(__file__).parents[1] / "library_guides/assets/packs/input_contracts.json",
+        Path(__file__).parents[1] / "library_deep_enrichment/assets/packs/input_contracts.json",
         authority="fixture-author",
     )
     assert build(corpus, revision).reused

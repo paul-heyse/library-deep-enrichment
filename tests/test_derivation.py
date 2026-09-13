@@ -5,17 +5,17 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from library_guides.derivation import (
+from library_deep_enrichment.derivation import (
     Agreement,
     DerivationBatch,
     evidence_is_known,
     load_derived_behaviors,
     validate_proposal,
 )
-from library_guides.divergence import compare
-from library_guides.manifest import load_library_manifest
-from library_guides.stages.packet_io import evidence_reference_ids, packets_for_library
-from library_guides.validate.authored import AuthoredRecordError
+from library_deep_enrichment.divergence import compare
+from library_deep_enrichment.manifest import load_library_manifest
+from library_deep_enrichment.stages.packet_io import evidence_reference_ids, packets_for_library
+from library_deep_enrichment.validate.authored import AuthoredRecordError
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
 _LIBRARY = "datafusion-rust"

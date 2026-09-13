@@ -1,0 +1,50 @@
+diff --git a/crates/ruff_linter/src/checkers/ast/mod.rs b/crates/ruff_linter/src/checkers/ast/mod.rs
+index 59a5a53..8945882 100644
+--- a/crates/ruff_linter/src/checkers/ast/mod.rs
++++ b/crates/ruff_linter/src/checkers/ast/mod.rs
+@@ -3807,3 +3807,34 @@ impl Drop for DiagnosticGuard<'_, '_> {
+         }
+     }
+ }
++
++/// Observe the fully populated upstream model; no compiler-owned objects escape.
++pub fn lde_semantic<R>(
++    source: &str,
++    path: &Path,
++    version: ruff_python_ast::PythonVersion,
++    observe: impl for<'model> FnOnce(&SemanticModel<'model>, &'model [ruff_python_ast::Stmt]) -> R,
++) -> Result<R, String> {
++    let parsed = ruff_python_parser::parse_module(source).map_err(|e| e.to_string())?;
++    let locator = Locator::new(source);
++    let stylist = Stylist::from_tokens(parsed.tokens(), source);
++    let indexer = Indexer::from_tokens(parsed.tokens(), source);
++    let settings = LinterSettings { rules: RuleTable::empty(), ..LinterSettings::default() };
++    let context = LintContext::new(path, source, &settings);
++    let module = Module { kind: ModuleKind::Module, name: path.file_stem().and_then(|x| x.to_str()),
++        source: ModuleSource::File(path), python_ast: parsed.suite() };
++    let allocator = typed_arena::Arena::new();
++    let mapping = NoqaMapping::default();
++    let source_type = if path.extension().is_some_and(|x| x == "pyi") { PySourceType::Stub } else { PySourceType::Python };
++    let mut checker = Checker::new(&parsed, &allocator, &settings, &mapping, flags::Noqa::Disabled,
++        path, None, module, &locator, &stylist, &indexer, source_type, None, None,
++        TargetVersion(Some(version)), &context);
++    checker.visit_module(parsed.suite());
++    checker.visit_body(parsed.suite());
++    checker.visit_deferred();
++    checker.visit_exports();
++    if !checker.semantic_errors.borrow().is_empty() {
++        return Err(format!("{:?}", checker.semantic_errors.borrow()));
++    }
++    Ok(observe(&checker.semantic, parsed.suite()))
++}
+diff --git a/crates/ruff_linter/src/lib.rs b/crates/ruff_linter/src/lib.rs
+index f971c43..e2689ce 100644
+--- a/crates/ruff_linter/src/lib.rs
++++ b/crates/ruff_linter/src/lib.rs
+@@ -94,3 +94,6 @@ mod tests {
+         assert_eq!(fixed.source_code(), code);
+     }
+ }
++
++/// Library-guides pinned traversal facade.
++pub use checkers::ast::lde_semantic;

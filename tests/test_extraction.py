@@ -6,16 +6,16 @@ import json
 from pathlib import Path
 
 import pytest
-from library_guides.adapters.rust.rustdoc_json import (
+from library_deep_enrichment.adapters.rust.rustdoc_json import (
     SUPPORTED_FORMAT_VERSIONS,
     UnsupportedRustdocFormatError,
     parse_rustdoc_json,
 )
-from library_guides.manifest import known_stack_ids, load_library_manifest, load_stack_manifest
-from library_guides.models.enums import ResolutionState
-from library_guides.models.records import ApiBinding, SurfaceEntry
-from library_guides.stages.paths import api_path, surfaces_path
-from library_guides.store.jsonl import read_records
+from library_deep_enrichment.manifest import known_stack_ids, load_library_manifest, load_stack_manifest
+from library_deep_enrichment.models.enums import ResolutionState
+from library_deep_enrichment.models.records import ApiBinding, SurfaceEntry
+from library_deep_enrichment.stages.paths import api_path, surfaces_path
+from library_deep_enrichment.store.jsonl import read_records
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[3]
 

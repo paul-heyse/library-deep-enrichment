@@ -11,18 +11,18 @@ from pathlib import Path
 from unittest.mock import patch
 
 from attrs import frozen
-from library_guides.analyses.behavior.contracts import BehaviorRequest
-from library_guides.analyses.characterization.contracts import (
+from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest
+from library_deep_enrichment.analyses.characterization.contracts import (
     BehaviorCharacterization,
     CharacterizationRequest,
 )
-from library_guides.analyses.characterization.service import analyze
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.encoding import CONVERTER, canonical
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.export import export_view, import_view
-from library_guides.workflows.characterization import build
+from library_deep_enrichment.analyses.characterization.service import analyze
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.workflows.characterization import build
 
 
 @frozen(kw_only=True)
@@ -53,11 +53,11 @@ def _qualify(options: Options) -> dict:
     warm_started = time.monotonic()
     with (
         patch(
-            "library_guides.workflows.remote.RemoteProducer.__call__",
+            "library_deep_enrichment.workflows.remote.RemoteProducer.__call__",
             side_effect=AssertionError("unchanged request invoked a producer"),
         ),
         patch(
-            "library_guides.analyses.characterization.service.analyze",
+            "library_deep_enrichment.analyses.characterization.service.analyze",
             side_effect=AssertionError("unchanged request recomputed dimensions"),
         ),
     ):

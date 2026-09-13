@@ -11,17 +11,17 @@ from typing import TYPE_CHECKING
 
 import yaml
 from attrs import frozen
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.contracts import Disposition, Operation, Qualification, Release
-from library_guides.corpus.encoding import CONVERTER, canonical
-from library_guides.corpus.evidence import stage_blob
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.closure import evidence_closure
-from library_guides.publication.export import export_view, import_view
-from library_guides.publication.releases import read_guide
-from library_guides.publication.render import RENDERER, render_comparison
-from library_guides.semantics.contracts import (
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.contracts import Disposition, Operation, Qualification, Release
+from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
+from library_deep_enrichment.corpus.evidence import stage_blob
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.closure import evidence_closure
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.publication.releases import read_guide
+from library_deep_enrichment.publication.render import RENDERER, render_comparison
+from library_deep_enrichment.semantics.contracts import (
     Comparison,
     Interpretation,
     Predicate,
@@ -29,14 +29,14 @@ from library_guides.semantics.contracts import (
     Task,
     ValueKind,
 )
-from library_guides.semantics.task_matching import compare, replay
-from library_guides.semantics.vocabulary import text_value
-from library_guides.workflows.semantics import build as build_semantics
+from library_deep_enrichment.semantics.task_matching import compare, replay
+from library_deep_enrichment.semantics.vocabulary import text_value
+from library_deep_enrichment.workflows.semantics import build as build_semantics
 
 from pilot.intelligence.qualify_reuse import REPORTS, ROOT, RUN, verify_freeze
 
 if TYPE_CHECKING:
-    from library_guides.corpus.store import CorpusReader
+    from library_deep_enrichment.corpus.store import CorpusReader
 
 LOG = logging.getLogger(__name__)
 PYTHON = "python-installed-54-25"

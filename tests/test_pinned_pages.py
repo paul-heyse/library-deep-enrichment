@@ -5,10 +5,10 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 import pytest
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.contracts import Disposition, Job
-from library_guides.corpus.store import Corpus
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.contracts import Disposition, Job
+from library_deep_enrichment.corpus.store import Corpus
 
 if TYPE_CHECKING:
     from pathlib import Path

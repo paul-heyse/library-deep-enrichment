@@ -2,10 +2,10 @@
 
 from __future__ import annotations
 
-from library_guides.analyses.behavior.contracts import BehaviorProgram, Limits, Outcome
-from library_guides.analyses.behavior.engine import Interpreter
-from library_guides.analyses.behavior.fixedpoints import Atom, solve
-from library_guides.corpus.schemas import revision_of
+from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, Limits, Outcome
+from library_deep_enrichment.analyses.behavior.engine import Interpreter
+from library_deep_enrichment.analyses.behavior.fixedpoints import Atom, solve
+from library_deep_enrichment.corpus.schemas import revision_of
 
 from tests.test_behavior_engine import builder
 

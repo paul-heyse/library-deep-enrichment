@@ -10,22 +10,22 @@ from collections import Counter
 from pathlib import Path
 
 from attrs import asdict, evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.contracts import Operation, Release
-from library_guides.corpus.encoding import canonical
-from library_guides.corpus.native_contracts import NativeArtifact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.export import export_view, import_view
-from library_guides.publication.releases import publish, read_guide
-from library_guides.semantic_packs import install
-from library_guides.semantics.comparison import counterfactuals
-from library_guides.semantics.contracts import Comparison, Interpretation, Requirement, Task
-from library_guides.semantics.task_matching import compare
-from library_guides.semantics.vocabulary import approve_rules, foundation, text_value
-from library_guides.workflows import enrichment, semantics, shapes
-from library_guides.workflows.python_documents import build as documents
-from library_guides.workflows.python_interfaces import build as interfaces
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.contracts import Operation, Release
+from library_deep_enrichment.corpus.encoding import canonical
+from library_deep_enrichment.corpus.native_contracts import NativeArtifact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.publication.releases import publish, read_guide
+from library_deep_enrichment.semantic_packs import install
+from library_deep_enrichment.semantics.comparison import counterfactuals
+from library_deep_enrichment.semantics.contracts import Comparison, Interpretation, Requirement, Task
+from library_deep_enrichment.semantics.task_matching import compare
+from library_deep_enrichment.semantics.vocabulary import approve_rules, foundation, text_value
+from library_deep_enrichment.workflows import enrichment, semantics, shapes
+from library_deep_enrichment.workflows.python_documents import build as documents
+from library_deep_enrichment.workflows.python_interfaces import build as interfaces
 
 ROOT = Path(__file__).resolve().parents[2]
 RUN = ROOT.parents[1] / ".cache/library-guides-implementation/completion-20260912T220757Z"
@@ -70,7 +70,7 @@ def run(name: str) -> None:
     )
     pack = install(
         corpus,
-        ROOT / "library_guides/assets/packs/input_contracts.json",
+        ROOT / "library_deep_enrichment/assets/packs/input_contracts.json",
         authority="implementation-agent",
         approve=True,
     )

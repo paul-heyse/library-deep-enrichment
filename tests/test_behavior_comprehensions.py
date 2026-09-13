@@ -6,9 +6,9 @@ import json
 import sys
 from pathlib import Path
 
-from library_guides.analyses.behavior.contracts import BehaviorProgram, Limits, Outcome, Term
-from library_guides.analyses.behavior.engine import Interpreter
-from library_guides.processes import execute
+from library_deep_enrichment.analyses.behavior.contracts import BehaviorProgram, Limits, Outcome, Term
+from library_deep_enrichment.analyses.behavior.engine import Interpreter
+from library_deep_enrichment.processes import execute
 
 from tests import test_behavior_python as python_controls
 

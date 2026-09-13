@@ -7,22 +7,22 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.contracts import LegacyRecord, Operation, TypeUse
-from library_guides.corpus.declarations import normalize_declaration
-from library_guides.corpus.encoding import canonical
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.native_admission import NativeBuilder
-from library_guides.publication.export import export_view, import_view
-from library_guides.publication.releases import publish
-from library_guides.semantics.contracts import Task
-from library_guides.semantics.shape_validation import validate_shapes
-from library_guides.semantics.task_matching import compare
-from library_guides.semantics.type_shapes import OperationShape, operation_shape
-from library_guides.semantics.vocabulary import approve_rules, foundation
-from library_guides.workflows import semantics, shapes
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.contracts import LegacyRecord, Operation, TypeUse
+from library_deep_enrichment.corpus.declarations import normalize_declaration
+from library_deep_enrichment.corpus.encoding import canonical
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.native_admission import NativeBuilder
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.publication.releases import publish
+from library_deep_enrichment.semantics.contracts import Task
+from library_deep_enrichment.semantics.shape_validation import validate_shapes
+from library_deep_enrichment.semantics.task_matching import compare
+from library_deep_enrichment.semantics.type_shapes import OperationShape, operation_shape
+from library_deep_enrichment.semantics.vocabulary import approve_rules, foundation
+from library_deep_enrichment.workflows import semantics, shapes
 
 if TYPE_CHECKING:
     from pathlib import Path
@@ -139,7 +139,7 @@ def test_shaped_capability_release_replays_without_source_transport(tmp_path: Pa
     corpus, _, _ = _fixture(tmp_path / "corpus")
     assert not shapes.build(corpus).reused
     assert shapes.build(corpus).reused
-    from library_guides.workflows.contracts import ExecutionReceipt
+    from library_deep_enrichment.workflows.contracts import ExecutionReceipt
 
     execution = corpus.reader().lookup("stage_executions", "stage-execution:operation-shapes.v1")
     assert isinstance(execution, ExecutionReceipt)

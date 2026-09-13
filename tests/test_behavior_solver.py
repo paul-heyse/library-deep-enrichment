@@ -8,12 +8,12 @@ import struct
 import pytest
 from hypothesis import given
 from hypothesis import strategies as st
-from library_guides.analyses.behavior.contracts import Guard, Term
-from library_guides.analyses.behavior.numeric import integer_width
-from library_guides.analyses.behavior.predicates import PredicateChecks
-from library_guides.analyses.behavior.solver import Check, feasible
-from library_guides.analyses.behavior.state import State
-from library_guides.analyses.behavior.values import Values, integral_type, scalar
+from library_deep_enrichment.analyses.behavior.contracts import Guard, Term
+from library_deep_enrichment.analyses.behavior.numeric import integer_width
+from library_deep_enrichment.analyses.behavior.predicates import PredicateChecks
+from library_deep_enrichment.analyses.behavior.solver import Check, feasible
+from library_deep_enrichment.analyses.behavior.state import State
+from library_deep_enrichment.analyses.behavior.values import Values, integral_type, scalar
 
 _BYTE_MAX = 255
 

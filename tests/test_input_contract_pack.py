@@ -6,13 +6,13 @@ import json
 from pathlib import Path
 
 import pytest
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.contracts import ByteRange, Passage
-from library_guides.corpus.store import Corpus
-from library_guides.semantic_packs import install
-from library_guides.semantics.contracts import Rule
-from library_guides.semantics.rules import matching_text
-from library_guides.semantics.vocabulary import foundation
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.contracts import ByteRange, Passage
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.semantic_packs import install
+from library_deep_enrichment.semantics.contracts import Rule
+from library_deep_enrichment.semantics.rules import matching_text
+from library_deep_enrichment.semantics.vocabulary import foundation
 
 
 @pytest.mark.parametrize("kind", ["input", "result"])
@@ -22,7 +22,7 @@ def test_input_forms_and_eof_do_not_inherit_negated_or_appended_contracts(
     """Exact upstream clauses activate; polarity, EOF and new exceptions matter."""
     corpus = Corpus(tmp_path)
     Coordinator(corpus, WriterIdentity(principal="fixture")).commit(foundation(), expected="")
-    pack = Path(__file__).parents[1] / f"library_guides/assets/packs/{kind}_contracts.json"
+    pack = Path(__file__).parents[1] / f"library_deep_enrichment/assets/packs/{kind}_contracts.json"
     install(
         corpus,
         pack,

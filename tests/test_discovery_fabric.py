@@ -6,20 +6,20 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.contracts import Disposition, Job, Operation
-from library_guides.corpus.encoding import digest
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.discovery.contracts import Attribute, Concept, EmbeddingRecipe, GraphNode
-from library_guides.discovery.embeddings import validate_vector
-from library_guides.discovery.fca import SupportContext
-from library_guides.discovery.graphs import project_graphs
-from library_guides.discovery.search import search
-from library_guides.semantics.relational import evaluate
-from library_guides.workflows.discovery import build_retrieval
-from library_guides.workflows.engine import run_stage
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.contracts import Disposition, Job, Operation
+from library_deep_enrichment.corpus.encoding import digest
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.discovery.contracts import Attribute, Concept, EmbeddingRecipe, GraphNode
+from library_deep_enrichment.discovery.embeddings import validate_vector
+from library_deep_enrichment.discovery.fca import SupportContext
+from library_deep_enrichment.discovery.graphs import project_graphs
+from library_deep_enrichment.discovery.search import search
+from library_deep_enrichment.semantics.relational import evaluate
+from library_deep_enrichment.workflows.discovery import build_retrieval
+from library_deep_enrichment.workflows.engine import run_stage
 
 if TYPE_CHECKING:
     from pathlib import Path
@@ -135,7 +135,7 @@ def test_failed_changed_stage_cannot_reuse_previous_success(tmp_path: Path) -> N
     corpus = _corpus(tmp_path)
     build_retrieval(corpus)
     definition = corpus.reader().lookup("stage_definitions", "retrieval-units.v1")
-    from library_guides.workflows.contracts import StageDefinition
+    from library_deep_enrichment.workflows.contracts import StageDefinition
 
     assert isinstance(definition, StageDefinition)
     changed = evolve(definition, implementation="changed-producer")
@@ -187,7 +187,7 @@ def test_cli_retains_lexical_results_when_runtime_initialization_fails(
     """An unavailable local snapshot must not block the independently usable corpus."""
     import json
 
-    from library_guides.cli import app
+    from library_deep_enrichment.cli import app
     from typer.testing import CliRunner
 
     corpus = _corpus(tmp_path)
@@ -197,7 +197,7 @@ def test_cli_retains_lexical_results_when_runtime_initialization_fails(
         message = "missing tokenizer snapshot"
         raise OSError(message)
 
-    monkeypatch.setattr("library_guides.runtime.embedding_client", unavailable)
+    monkeypatch.setattr("library_deep_enrichment.runtime.embedding_client", unavailable)
     result = CliRunner().invoke(
         app,
         [

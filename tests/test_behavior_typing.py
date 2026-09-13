@@ -7,21 +7,21 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.behavior.contracts import BehaviorRequest
-from library_guides.analyses.behavior.service import validate
-from library_guides.analyses.behavior.typing_contracts import BehaviorTyping
-from library_guides.analyses.behavior.typing_locations import RetainedFiles, utf16_offset
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.evidence import resolve_bytes
-from library_guides.corpus.native_contracts import NativeArtifact, NativeFact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.facts.contracts import Budget, FileEntry
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.publication.export import export_view, import_view
-from library_guides.source_pipeline import SourceJob, extract
-from library_guides.store.digests import canonical_bytes, digest_file
-from library_guides.workflows.behavior import build
+from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest
+from library_deep_enrichment.analyses.behavior.service import validate
+from library_deep_enrichment.analyses.behavior.typing_contracts import BehaviorTyping
+from library_deep_enrichment.analyses.behavior.typing_locations import RetainedFiles, utf16_offset
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.evidence import resolve_bytes
+from library_deep_enrichment.corpus.native_contracts import NativeArtifact, NativeFact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.facts.contracts import Budget, FileEntry
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.source_pipeline import SourceJob, extract
+from library_deep_enrichment.store.digests import canonical_bytes, digest_file
+from library_deep_enrichment.workflows.behavior import build
 
 from tests.test_native_lanes import SCHEMAS, _binary
 

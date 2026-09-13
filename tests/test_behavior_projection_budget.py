@@ -4,23 +4,23 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.behavior.contracts import BehaviorRequest, Limits
-from library_guides.analyses.behavior.coverage import BehaviorCoverage, State
-from library_guides.analyses.behavior.projection_budget import ProjectionBudgetError
-from library_guides.analyses.behavior.service import programs, validate
-from library_guides.analyses.characterization.contracts import (
+from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, Limits
+from library_deep_enrichment.analyses.behavior.coverage import BehaviorCoverage, State
+from library_deep_enrichment.analyses.behavior.projection_budget import ProjectionBudgetError
+from library_deep_enrichment.analyses.behavior.service import programs, validate
+from library_deep_enrichment.analyses.characterization.contracts import (
     BehaviorCharacterization,
     CharacterizationRequest,
 )
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.native_contracts import NativeFact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.facts.contracts import FactArtifact
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.publication.export import export_view, import_view
-from library_guides.workflows.behavior import build
-from library_guides.workflows.characterization import build as characterize
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.native_contracts import NativeFact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.facts.contracts import FactArtifact
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.workflows.behavior import build
+from library_deep_enrichment.workflows.characterization import build as characterize
 
 from tests import test_behavior_python as python_controls
 

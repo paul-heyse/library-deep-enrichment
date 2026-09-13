@@ -8,8 +8,8 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary, Outcome
-from library_guides.analyses.behavior.witness_contracts import (
+from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary, Outcome
+from library_deep_enrichment.analyses.behavior.witness_contracts import (
     BehaviorWitnessCheck,
     BehaviorWitnessRequest,
     Cell,
@@ -17,20 +17,20 @@ from library_guides.analyses.behavior.witness_contracts import (
     Observation,
     ObservationSet,
 )
-from library_guides.analyses.behavior.witness_service import validate
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.encoding import CONVERTER
-from library_guides.corpus.native_contracts import NativeFact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.staging import ObservationBuilder
-from library_guides.corpus.store import Corpus
-from library_guides.facts.contracts import FactArtifact
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.processes import execute
-from library_guides.publication.export import export_view, import_view
-from library_guides.workflows.behavior import build as summarize
-from library_guides.workflows.behavior_witnesses import build as compare
+from library_deep_enrichment.analyses.behavior.witness_service import validate
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.encoding import CONVERTER
+from library_deep_enrichment.corpus.native_contracts import NativeFact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.staging import ObservationBuilder
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.facts.contracts import FactArtifact
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.processes import execute
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.workflows.behavior import build as summarize
+from library_deep_enrichment.workflows.behavior_witnesses import build as compare
 
 from tests import test_behavior_python as python_controls
 

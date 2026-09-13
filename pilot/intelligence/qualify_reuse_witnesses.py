@@ -5,21 +5,21 @@ from __future__ import annotations
 from collections import deque
 from pathlib import Path
 
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.contracts import Operation, Policy, Record
-from library_guides.corpus.encoding import canonical
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.staging import ObservationBuilder
-from library_guides.corpus.store import Corpus
-from library_guides.corpus.validation import references
-from library_guides.publication.closure import _source_links
-from library_guides.publication.export import export_view, import_view
-from library_guides.semantics.enrichment_contracts import (
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.contracts import Operation, Policy, Record
+from library_deep_enrichment.corpus.encoding import canonical
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.staging import ObservationBuilder
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.corpus.validation import references
+from library_deep_enrichment.publication.closure import _source_links
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.semantics.enrichment_contracts import (
     WitnessObservation,
     WitnessRecipe,
     WitnessRun,
 )
-from library_guides.semantics.experiments import run_witness
+from library_deep_enrichment.semantics.experiments import run_witness
 
 from pilot.intelligence.qualify_reuse import REPORTS, RUN, verify_freeze
 

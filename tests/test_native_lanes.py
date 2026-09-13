@@ -9,20 +9,20 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.declarations import neighborhood, nominate
-from library_guides.authoring import accept, packet
-from library_guides.collection import CollectionError, load, save
-from library_guides.evidence_graph import EvidenceGraph
-from library_guides.facts.contracts import Budget, FactArtifact, FactHead
-from library_guides.knowledge import Profile
-from library_guides.knowledge_v3 import KnowledgeV3
-from library_guides.processes import execute
-from library_guides.source_pipeline import SourceJob, extract
-from library_guides.store.digests import canonical_bytes, digest_file
-from library_guides.worker_runtime import WorkerRequest, run
+from library_deep_enrichment.analyses.declarations import neighborhood, nominate
+from library_deep_enrichment.authoring import accept, packet
+from library_deep_enrichment.collection import CollectionError, load, save
+from library_deep_enrichment.evidence_graph import EvidenceGraph
+from library_deep_enrichment.facts.contracts import Budget, FactArtifact, FactHead
+from library_deep_enrichment.knowledge import Profile
+from library_deep_enrichment.knowledge_v3 import KnowledgeV3
+from library_deep_enrichment.processes import execute
+from library_deep_enrichment.source_pipeline import SourceJob, extract
+from library_deep_enrichment.store.digests import canonical_bytes, digest_file
+from library_deep_enrichment.worker_runtime import WorkerRequest, run
 
 TOOLING = Path(__file__).parents[1]
-SCHEMAS = TOOLING / "library_guides/assets/schemas"
+SCHEMAS = TOOLING / "library_deep_enrichment/assets/schemas"
 pytestmark = pytest.mark.native_lanes
 
 
@@ -89,7 +89,7 @@ def _declaration_job(path: Path) -> SourceJob:
 
 def _attach(root: Path, artifact: FactArtifact) -> KnowledgeV3:
     from cattrs import Converter
-    from library_guides.facts.contracts import SemanticProfile
+    from library_deep_enrichment.facts.contracts import SemanticProfile
 
     receipt = json.loads((root / artifact.receipt_path).read_bytes())
     context = Converter(forbid_extra_keys=True).structure(
@@ -184,7 +184,7 @@ def test_worker_reuse_and_corruption_are_observed(
     tmp_path: Path, rustdoc: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     """Count real worker launches across warm reuse and corrupt-shard recovery."""
-    from library_guides import source_pipeline
+    from library_deep_enrichment import source_pipeline
 
     calls = []
     original = source_pipeline.run
@@ -269,9 +269,9 @@ def _worker(root: Path, name: str, request: dict) -> list[dict]:
 
 def test_review_equivalence_and_contract_mutation(tmp_path: Path, rustdoc: Path) -> None:
     """Presentation-only bytes refresh; an unsafe obligation reopens the same review."""
-    from library_guides.declaration_refresh import refresh
-    from library_guides.qualification import Qualification
-    from library_guides.revalidation import record
+    from library_deep_enrichment.declaration_refresh import refresh
+    from library_deep_enrichment.qualification import Qualification
+    from library_deep_enrichment.revalidation import record
 
     root = tmp_path / "current"
     first = extract(root, _declaration_job(rustdoc), Budget())
@@ -323,7 +323,7 @@ def test_review_equivalence_and_contract_mutation(tmp_path: Path, rustdoc: Path)
 
 def _revision(root: Path, source: Path) -> FactArtifact:
     from cattrs import Converter
-    from library_guides.facts.contracts import SemanticProfile
+    from library_deep_enrichment.facts.contracts import SemanticProfile
 
     artifact = extract(root, _declaration_job(source), Budget())
     knowledge = load(root)
@@ -439,8 +439,8 @@ def test_targeted_declaration_resolves_unicode_name_through_reexport(tmp_path: P
 
 def test_source_examples_use_documentation_roles_and_exact_maps(tmp_path: Path) -> None:
     """Ordinary string lookalikes are excluded; prompts and hidden Rust lines retain maps."""
-    from library_guides.example_discovery import discover
-    from library_guides.source_snapshots import Acquisition, freeze, source_request
+    from library_deep_enrichment.example_discovery import discover
+    from library_deep_enrichment.source_snapshots import Acquisition, freeze, source_request
 
     upstream = tmp_path / "upstream"
     upstream.mkdir()
@@ -503,8 +503,8 @@ def test_independent_universe_detects_added_competitor(tmp_path: Path, rustdoc: 
     import yaml
     from attrs import asdict
     from cattrs import Converter
-    from library_guides.analyses.universes import enumerate_candidates, policy_errors
-    from library_guides.facts.contracts import (
+    from library_deep_enrichment.analyses.universes import enumerate_candidates, policy_errors
+    from library_deep_enrichment.facts.contracts import (
         CandidateUniverse,
         SemanticProfile,
         UniverseDependency,
@@ -577,8 +577,8 @@ def test_independent_universe_detects_added_competitor(tmp_path: Path, rustdoc: 
 
 def test_source_capability_preserves_documentation_and_nested_call_ids(tmp_path: Path) -> None:
     """Actual docstrings produce purpose claims; ordinary literals do not gain that authority."""
-    from library_guides.analyses.source_capabilities import nominate as source_nominate
-    from library_guides.source_snapshots import Acquisition, freeze, source_request
+    from library_deep_enrichment.analyses.source_capabilities import nominate as source_nominate
+    from library_deep_enrichment.source_snapshots import Acquisition, freeze, source_request
 
     upstream = tmp_path / "upstream"
     upstream.mkdir()
@@ -631,7 +631,7 @@ def test_source_capability_preserves_documentation_and_nested_call_ids(tmp_path:
         )
     current = load(root)
     assert isinstance(current, KnowledgeV3)
-    from library_guides.facts.support import SupportGraph
+    from library_deep_enrichment.facts.support import SupportGraph
 
     assert SupportGraph(root, evolve(current, claim_support=())).errors(current.claims[-1])
 
@@ -644,7 +644,7 @@ def mir_fixture(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> tuple[Path, 
         Collection and source-attached body artifact.
 
     """
-    from library_guides.source_snapshots import Acquisition, freeze
+    from library_deep_enrichment.source_snapshots import Acquisition, freeze
 
     upstream = tmp_path / "upstream"
     upstream.mkdir()
@@ -658,9 +658,9 @@ def mir_fixture(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> tuple[Path, 
         ),
     )
     output = tmp_path / "units"
-    monkeypatch.setenv("LIBRARY_GUIDES_MIR_OUTPUT", str(output))
-    monkeypatch.setenv("LIBRARY_GUIDES_MIR_CONTEXT", "compiler-control")
-    monkeypatch.delenv("LIBRARY_GUIDES_MIR_PACKAGES", raising=False)
+    monkeypatch.setenv("LDE_MIR_OUTPUT", str(output))
+    monkeypatch.setenv("LDE_MIR_CONTEXT", "compiler-control")
+    monkeypatch.delenv("LDE_MIR_PACKAGES", raising=False)
     toolchain = json.loads(execute((str(_binary("mir-facts")), "toolchain"), cwd=tmp_path).stdout)
     result = execute(
         (
@@ -702,9 +702,9 @@ def test_mir_real_dispatch_and_derived_input_closure(
     mir_fixture: tuple[Path, FactArtifact],
 ) -> None:
     """Compiler item identity differs from generic/dynamic/indirect resolution and body closure."""
-    from library_guides.analyses.pipeline import derive
-    from library_guides.facts.support import SupportGraph
-    from library_guides.scope import facts_scope
+    from library_deep_enrichment.analyses.pipeline import derive
+    from library_deep_enrichment.facts.support import SupportGraph
+    from library_deep_enrichment.scope import facts_scope
 
     root, artifact = mir_fixture
     rows = {r["symbol"].split("::")[-1]: r for r in _records(root, artifact)}
@@ -747,7 +747,7 @@ def test_mir_real_dispatch_and_derived_input_closure(
 
 def test_trait_checklist_and_nested_composition(tmp_path: Path, rustdoc: Path) -> None:
     """Required, provided and associated defaults remain separate; wrappers stay candidates."""
-    from library_guides.analyses.contracts import composition, extension_contract
+    from library_deep_enrichment.analyses.contracts import composition, extension_contract
 
     artifact = extract(tmp_path, _declaration_job(rustdoc), Budget())
     _attach(tmp_path, artifact)
@@ -782,7 +782,7 @@ def test_derived_warm_reuse_executes_no_analysis(
     mir_fixture: tuple[Path, FactArtifact], monkeypatch: pytest.MonkeyPatch
 ) -> None:
     """An unchanged derived request verifies bytes and skips the actual analysis passes."""
-    from library_guides.analyses import pipeline
+    from library_deep_enrichment.analyses import pipeline
 
     root, artifact = mir_fixture
     row = next(r for r in _records(root, artifact) if r["symbol"].endswith("::identity"))

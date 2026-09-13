@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.behavior.builder import GraphBuilder, Origin
-from library_guides.analyses.behavior.contracts import (
+from library_deep_enrichment.analyses.behavior.builder import GraphBuilder, Origin
+from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,
     BehaviorRequest,
     Edge,
@@ -14,9 +14,9 @@ from library_guides.analyses.behavior.contracts import (
     Limits,
     Term,
 )
-from library_guides.analyses.behavior.integrity import limits_valid, program_valid
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.encoding import CONVERTER, payload
+from library_deep_enrichment.analyses.behavior.integrity import limits_valid, program_valid
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.encoding import CONVERTER, payload
 
 
 def program() -> BehaviorProgram:
@@ -102,8 +102,8 @@ def test_term_interning_and_program_points_are_deterministic() -> None:
 
 def test_arrow_codec_retains_guard_and_frontier_fields() -> None:
     """The owned portable schema preserves the whole typed body."""
-    from library_guides.analyses.behavior import schemas
-    from library_guides.corpus.schemas import REGISTRY
+    from library_deep_enrichment.analyses.behavior import schemas
+    from library_deep_enrichment.corpus.schemas import REGISTRY
 
     assert schemas.TERMS is not None
     codec = REGISTRY["behavior_programs"]

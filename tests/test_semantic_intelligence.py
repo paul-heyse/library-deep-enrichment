@@ -7,17 +7,17 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.contracts import ByteRange, Disposition, Job, Operation, Passage, Release
-from library_guides.corpus.encoding import bytes_digest
-from library_guides.corpus.evidence import stage_blob
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.export import export_view, import_view
-from library_guides.publication.releases import publish, read_guide
-from library_guides.semantics.conditions import check_condition
-from library_guides.semantics.contracts import (
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.contracts import ByteRange, Disposition, Job, Operation, Passage, Release
+from library_deep_enrichment.corpus.encoding import bytes_digest
+from library_deep_enrichment.corpus.evidence import stage_blob
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.publication.releases import publish, read_guide
+from library_deep_enrichment.semantics.conditions import check_condition
+from library_deep_enrichment.semantics.contracts import (
     Assertion,
     Assignment,
     Expression,
@@ -28,12 +28,12 @@ from library_guides.semantics.contracts import (
     State,
     Task,
 )
-from library_guides.semantics.proofs import check_consequence
-from library_guides.semantics.realization import realize
-from library_guides.semantics.rules import consequence, derive
-from library_guides.semantics.task_matching import compare
-from library_guides.semantics.vocabulary import approve_rules, foundation, text_value
-from library_guides.workflows.semantics import STAGE, build
+from library_deep_enrichment.semantics.proofs import check_consequence
+from library_deep_enrichment.semantics.realization import realize
+from library_deep_enrichment.semantics.rules import consequence, derive
+from library_deep_enrichment.semantics.task_matching import compare
+from library_deep_enrichment.semantics.vocabulary import approve_rules, foundation, text_value
+from library_deep_enrichment.workflows.semantics import STAGE, build
 
 if TYPE_CHECKING:
     from pathlib import Path
@@ -224,9 +224,9 @@ def test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta(
     tmp_path: Path,
 ) -> None:
     """Changing delivery has a checked comparison delta, not a prose reversal trigger."""
-    from library_guides.semantics.comparison import counterfactuals
-    from library_guides.semantics.decision_contracts import Counterfactual
-    from library_guides.semantics.decision_validation import validate
+    from library_deep_enrichment.semantics.comparison import counterfactuals
+    from library_deep_enrichment.semantics.decision_contracts import Counterfactual
+    from library_deep_enrichment.semantics.decision_validation import validate
 
     corpus = Corpus(tmp_path / "fabric")
     _setup(corpus)
@@ -244,7 +244,7 @@ def test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta(
     with pytest.raises(CorpusError, match="recomputed"):
         validate(corpus.reader(), evolve(delta, became_eligible=()))
     comparison = corpus.reader().get("comparisons", delta.baseline)
-    from library_guides.semantics.contracts import Comparison
+    from library_deep_enrichment.semantics.contracts import Comparison
 
     assert isinstance(comparison, Comparison)
     manifest = publish(corpus, comparison, expected="")
@@ -261,9 +261,9 @@ def test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta(
 
 def test_preferences_do_not_assign_favorable_cost_to_unknown_candidates(tmp_path: Path) -> None:
     """An explicit preference can select known values but must retain unknown tradeoffs."""
-    from library_guides.semantics.comparison import choose
-    from library_guides.semantics.decision_contracts import Objective, PreferencePolicy
-    from library_guides.semantics.realization import qualified_assertions
+    from library_deep_enrichment.semantics.comparison import choose
+    from library_deep_enrichment.semantics.decision_contracts import Objective, PreferencePolicy
+    from library_deep_enrichment.semantics.realization import qualified_assertions
 
     corpus = Corpus(tmp_path / "fabric")
     _setup(corpus)
@@ -310,8 +310,8 @@ def test_preferences_do_not_assign_favorable_cost_to_unknown_candidates(tmp_path
 
 
 def _preference_release(corpus: Corpus, tmp_path: Path) -> None:
-    from library_guides.publication.objectives import evidence
-    from library_guides.semantics.contracts import Comparison
+    from library_deep_enrichment.publication.objectives import evidence
+    from library_deep_enrichment.semantics.contracts import Comparison
 
     comparison = next(
         item for item in corpus.reader().records("comparisons") if isinstance(item, Comparison)
@@ -449,7 +449,7 @@ def test_later_paragraph_exception_prevents_unconditional_delivery(tmp_path: Pat
 
 def test_integer_range_and_unconditional_context_conflict(tmp_path: Path) -> None:
     """Range entailment uses observed integers, while inconsistent context never becomes favorable."""
-    from library_guides.semantics.contracts import Value, ValueKind
+    from library_deep_enrichment.semantics.contracts import Value, ValueKind
 
     Corpus(tmp_path / "fabric")
     zero = Value(kind=ValueKind.INTEGER, text="0")

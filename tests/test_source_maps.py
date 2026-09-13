@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 import pytest
-from library_guides.collection import CollectionError
-from library_guides.source_maps import (
+from library_deep_enrichment.collection import CollectionError
+from library_deep_enrichment.source_maps import (
     example_view,
     fences,
     identity,

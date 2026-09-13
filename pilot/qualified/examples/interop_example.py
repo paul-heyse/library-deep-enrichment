@@ -18,7 +18,7 @@ def main(extension: Path) -> None:
         AssertionError: If a consumed capsule can be imported again.
 
     """
-    spec = importlib.util.spec_from_file_location("library_guides_interop", extension)
+    spec = importlib.util.spec_from_file_location("lde_interop", extension)
     assert spec is not None
     assert spec.loader is not None
     module = importlib.util.module_from_spec(spec)

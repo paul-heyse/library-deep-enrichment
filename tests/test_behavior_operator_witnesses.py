@@ -8,26 +8,26 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.behavior.contracts import (
+from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,
     BehaviorSummary,
     Limits,
     Outcome,
 )
-from library_guides.analyses.behavior.engine import Interpreter
-from library_guides.analyses.behavior.witness_checks import check
-from library_guides.analyses.behavior.witness_contracts import (
+from library_deep_enrichment.analyses.behavior.engine import Interpreter
+from library_deep_enrichment.analyses.behavior.witness_checks import check
+from library_deep_enrichment.analyses.behavior.witness_contracts import (
     Cell,
     Input,
     Observation,
     OperationObservation,
     Verdict,
 )
-from library_guides.analyses.behavior.witness_operators import same_operands
-from library_guides.analyses.behavior.witness_values import Concrete
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.schemas import revision_of
-from library_guides.processes import execute
+from library_deep_enrichment.analyses.behavior.witness_operators import same_operands
+from library_deep_enrichment.analyses.behavior.witness_values import Concrete
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.processes import execute
 
 from tests import test_behavior_python as python_controls
 

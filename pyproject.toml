@@ -3,7 +3,7 @@ requires = ["setuptools>=80", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "smartref-library-guides"
+name = "library-deep-enrichment"
 version = "0.2.0"
 description = "Library knowledge compiler: build and maintain agent-facing library guides"
 requires-python = ">=3.14"
@@ -30,7 +30,7 @@ dependencies = [
     "scipy>=1.18.1",
     "scikit-learn>=1.9.1",
     "fcapy>=0.1.4.5",
-    "scikit-mine==1.0.0+smartref.1",
+    "scikit-mine==1.0.0+lde.1",
     "httpx>=0.28.1",
     "transformers>=5.17.0",
     "z3-solver>=5.1.0.0",
@@ -41,7 +41,7 @@ dependencies = [
 ]
 
 [project.scripts]
-library-guides = "library_guides.cli:app"
+library-deep-enrichment = "library_deep_enrichment.cli:app"
 
 [project.optional-dependencies]
 pilot = ["datafusion==54.0.0", "pyarrow==25.0.1", "pydantic==2.13.4"]
@@ -57,12 +57,12 @@ include-package-data = true
 [tool.setuptools.packages.find]
 where = ["."]
 include = [
-    "library_guides",
-    "library_guides.*",
+    "library_deep_enrichment",
+    "library_deep_enrichment.*",
 ]
 
 [tool.setuptools.package-data]
-library_guides = ["assets/**/*"]
+library_deep_enrichment = ["assets/**/*"]
 
 [dependency-groups]
 dev = [
@@ -85,4 +85,4 @@ markers = ["native_lanes: executable pinned upstream extraction canaries requiri
 
 [tool.uv.sources]
 torch = { index = "pytorch" }
-scikit-mine = { path = "vendor/scikit_mine-1.0.0+smartref.1-py3-none-any.whl" }
+scikit-mine = { path = "vendor/scikit_mine-1.0.0+lde.1-py3-none-any.whl" }

@@ -8,11 +8,11 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.collection import CollectionError
-from library_guides.facts.contracts import Budget
-from library_guides.facts.protocol import Frames
-from library_guides.store.digests import canonical_bytes
-from library_guides.worker_runtime import WorkerLimitError, WorkerRequest, run
+from library_deep_enrichment.collection import CollectionError
+from library_deep_enrichment.facts.contracts import Budget
+from library_deep_enrichment.facts.protocol import Frames
+from library_deep_enrichment.store.digests import canonical_bytes
+from library_deep_enrichment.worker_runtime import WorkerLimitError, WorkerRequest, run
 
 
 def _frame(value: object) -> bytes:

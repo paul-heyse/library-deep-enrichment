@@ -8,15 +8,15 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.encoding import bytes_digest, canonical
-from library_guides.corpus.evidence import read_field
-from library_guides.corpus.native_contracts import NativeFact
-from library_guides.corpus.native_validation import validate
-from library_guides.corpus.signature_syntax import return_clause
-from library_guides.corpus.store import Corpus
-from library_guides.facts.contracts import FactArtifact, FactShard
-from library_guides.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.encoding import bytes_digest, canonical
+from library_deep_enrichment.corpus.evidence import read_field
+from library_deep_enrichment.corpus.native_contracts import NativeFact
+from library_deep_enrichment.corpus.native_validation import validate
+from library_deep_enrichment.corpus.signature_syntax import return_clause
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.facts.contracts import FactArtifact, FactShard
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
 
 
 def _artifact(root: Path) -> FactArtifact:
@@ -75,7 +75,7 @@ def test_native_authority_and_forged_projection(tmp_path: Path) -> None:
     with pytest.raises(CorpusError, match="differs from original"):
         validate(reader, evolve(fact, symbol="invented.call"))
     shutil.rmtree(transport)
-    from library_guides.corpus.schemas import revision_of
+    from library_deep_enrichment.corpus.schemas import revision_of
 
     assert read_field(reader, "native_facts", revision_of(fact), "/raw/payload/node_kind") == "call"
 
@@ -99,10 +99,10 @@ def test_contextual_identity_does_not_merge_reused_item_ids_across_artifacts(
     tmp_path: Path,
 ) -> None:
     """Identical local IDs and source spelling do not prove a cross-artifact identity join."""
-    from library_guides.corpus.admission import Coordinator, WriterIdentity
-    from library_guides.corpus.identities import identify, join
-    from library_guides.corpus.schemas import revision_of
-    from library_guides.publication.export import export_view, import_view
+    from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+    from library_deep_enrichment.corpus.identities import identify, join
+    from library_deep_enrichment.corpus.schemas import revision_of
+    from library_deep_enrichment.publication.export import export_view, import_view
 
     transport = tmp_path / "transport"
     first = _artifact(transport)
@@ -145,7 +145,7 @@ def test_nested_callback_return_recovery(signature: str, expected: str) -> None:
 
 def test_native_corruption_withdraws_current_success(tmp_path: Path) -> None:
     """A source mutation cannot turn a previous successful admission into warm reuse."""
-    from library_guides.corpus.contracts import Disposition, Job
+    from library_deep_enrichment.corpus.contracts import Disposition, Job
 
     transport = tmp_path / "transport"
     inputs = NativeInputs(root=transport, artifacts=(_artifact(transport),))
@@ -166,12 +166,12 @@ def test_python_source_interface_preserves_slots_and_replays_without_transport(
     tmp_path: Path,
 ) -> None:
     """Defaults remain unevaluated; current source slots cannot become a runtime guarantee."""
-    from library_guides.corpus.contracts import Operation
-    from library_guides.corpus.native_contracts import NativeArtifact
-    from library_guides.corpus.python_interfaces import normalize
-    from library_guides.corpus.python_interfaces import validate as validate_interface
-    from library_guides.corpus.schemas import revision_of
-    from library_guides.workflows.python_interfaces import build
+    from library_deep_enrichment.corpus.contracts import Operation
+    from library_deep_enrichment.corpus.native_contracts import NativeArtifact
+    from library_deep_enrichment.corpus.python_interfaces import normalize
+    from library_deep_enrichment.corpus.python_interfaces import validate as validate_interface
+    from library_deep_enrichment.corpus.schemas import revision_of
+    from library_deep_enrichment.workflows.python_interfaces import build
 
     transport = tmp_path / "transport"
     artifact = _artifact(transport)
@@ -262,11 +262,11 @@ def test_fabric_source_analysis_replays_after_transport_removal(
     tmp_path: Path, *, projected: bool
 ) -> None:
     """Actual retained MIR fields drive typed flow/effects, open writes, and tamper rejection."""
-    from library_guides.analyses.fabric import validate as validate_analysis
-    from library_guides.analyses.fabric_contracts import AnalysisRequest, SourceAnalysis
-    from library_guides.corpus.schemas import revision_of
-    from library_guides.publication.export import export_view, import_view
-    from library_guides.workflows.source_analysis import build
+    from library_deep_enrichment.analyses.fabric import validate as validate_analysis
+    from library_deep_enrichment.analyses.fabric_contracts import AnalysisRequest, SourceAnalysis
+    from library_deep_enrichment.corpus.schemas import revision_of
+    from library_deep_enrichment.publication.export import export_view, import_view
+    from library_deep_enrichment.workflows.source_analysis import build
 
     transport = tmp_path / "mir-transport"
     corpus = Corpus(tmp_path / "mir-corpus")

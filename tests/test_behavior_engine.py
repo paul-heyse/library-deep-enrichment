@@ -5,9 +5,9 @@ from __future__ import annotations
 import pytest
 from hypothesis import given
 from hypothesis import strategies as st
-from library_guides.analyses.behavior import schemas
-from library_guides.analyses.behavior.builder import GraphBuilder, Origin
-from library_guides.analyses.behavior.contracts import (
+from library_deep_enrichment.analyses.behavior import schemas
+from library_deep_enrichment.analyses.behavior.builder import GraphBuilder, Origin
+from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,
     Language,
     Limits,
@@ -15,9 +15,9 @@ from library_guides.analyses.behavior.contracts import (
     Precision,
     Term,
 )
-from library_guides.analyses.behavior.engine import Interpreter
-from library_guides.analyses.behavior.values import Values
-from library_guides.corpus.backend import BudgetExceededError
+from library_deep_enrichment.analyses.behavior.engine import Interpreter
+from library_deep_enrichment.analyses.behavior.values import Values
+from library_deep_enrichment.corpus.backend import BudgetExceededError
 
 
 def builder(name: str = "choose") -> GraphBuilder:

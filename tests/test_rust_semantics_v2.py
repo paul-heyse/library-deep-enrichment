@@ -6,9 +6,9 @@ import json
 from pathlib import Path
 
 from attrs import evolve
-from library_guides.adapters.rust.semantic import extract
-from library_guides.evidence_graph import EvidenceGraph
-from library_guides.linking import link
+from library_deep_enrichment.adapters.rust.semantic import extract
+from library_deep_enrichment.evidence_graph import EvidenceGraph
+from library_deep_enrichment.linking import link
 
 from .test_knowledge_v2 import _sample
 

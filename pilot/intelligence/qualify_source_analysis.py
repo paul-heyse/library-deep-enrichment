@@ -5,14 +5,14 @@ from __future__ import annotations
 from pathlib import Path
 from uuid import uuid4
 
-from library_guides.analyses.fabric_contracts import AnalysisRequest, SourceAnalysis
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.encoding import CONVERTER, canonical
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.closure import evidence_closure
-from library_guides.publication.export import export_view, import_view
-from library_guides.workflows.source_analysis import build
+from library_deep_enrichment.analyses.fabric_contracts import AnalysisRequest, SourceAnalysis
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.closure import evidence_closure
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.workflows.source_analysis import build
 
 OWNERS = (
     "3fc60a92b3ec67c9aeb2d24f0a5a7befd146c23d8212bef87784e3ce2b377e31",
@@ -68,7 +68,7 @@ def main() -> None:
         "result_revisions": [revision_of(item) for item in results],
     }
     Path(
-        "tooling/library_guides/pilot/intelligence/reports/resume-native-source-analysis.json"
+        "tooling/library_deep_enrichment/pilot/intelligence/reports/resume-native-source-analysis.json"
     ).write_bytes(canonical(report) + b"\n")
 
 

@@ -6,19 +6,19 @@ from pathlib import Path
 from uuid import uuid4
 
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.contracts import Release
-from library_guides.corpus.encoding import CONVERTER, canonical
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.export import export_view, import_view
-from library_guides.publication.objectives import deltas, evidence
-from library_guides.publication.releases import publish, read_guide
-from library_guides.semantics.comparison import counterfactuals
-from library_guides.semantics.contracts import Comparison, Interpretation, Task
-from library_guides.semantics.decision_contracts import Objective, PreferencePolicy
-from library_guides.semantics.task_matching import compare
-from library_guides.semantics.vocabulary import text_value
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.contracts import Release
+from library_deep_enrichment.corpus.encoding import CONVERTER, canonical
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.publication.objectives import deltas, evidence
+from library_deep_enrichment.publication.releases import publish, read_guide
+from library_deep_enrichment.semantics.comparison import counterfactuals
+from library_deep_enrichment.semantics.contracts import Comparison, Interpretation, Task
+from library_deep_enrichment.semantics.decision_contracts import Objective, PreferencePolicy
+from library_deep_enrichment.semantics.task_matching import compare
+from library_deep_enrichment.semantics.vocabulary import text_value
 
 
 def _publish(corpus: Corpus, comparison: Comparison, name: str) -> dict[str, object]:
@@ -27,7 +27,7 @@ def _publish(corpus: Corpus, comparison: Comparison, name: str) -> dict[str, obj
     reader = corpus.reader(head)
     release = next(item for item in reader.records("releases") if isinstance(item, Release))
     guide = read_guide(reader, release)
-    Path(f"tooling/library_guides/pilot/intelligence/guides/{name}.md").write_text(
+    Path(f"tooling/library_deep_enrichment/pilot/intelligence/guides/{name}.md").write_text(
         guide, encoding="utf-8"
     )
     destination = Path(".cache/library-guides-intelligence/decision-publication") / uuid4().hex
@@ -99,7 +99,7 @@ def main() -> None:
         "releases": reports,
     }
     Path(
-        "tooling/library_guides/pilot/intelligence/reports/resume-decision-publication.json"
+        "tooling/library_deep_enrichment/pilot/intelligence/reports/resume-decision-publication.json"
     ).write_bytes(canonical(report) + b"\n")
 
 

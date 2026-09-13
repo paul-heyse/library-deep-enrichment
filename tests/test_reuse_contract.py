@@ -14,7 +14,7 @@ from pathlib import Path
 
 import pytest
 
-PACKAGE_ROOT = Path(__file__).resolve().parents[3] / "tooling/library_guides/library_guides"
+PACKAGE_ROOT = Path(__file__).resolve().parents[3] / "tooling/library_deep_enrichment/library_deep_enrichment"
 
 # Directories allowed to name a library, because naming one is their purpose.
 _LIBRARY_AWARE = ("registry_adapters",)

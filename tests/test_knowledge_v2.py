@@ -8,10 +8,10 @@ from pathlib import Path
 import pytest
 import yaml
 from attrs import asdict, evolve
-from library_guides import authoring, build_system, generations, reader
-from library_guides.collection import CollectionError, save
-from library_guides.evidence_graph import EvidenceGraph
-from library_guides.knowledge import (
+from library_deep_enrichment import authoring, build_system, generations, reader
+from library_deep_enrichment.collection import CollectionError, save
+from library_deep_enrichment.evidence_graph import EvidenceGraph
+from library_deep_enrichment.knowledge import (
     Binding,
     Candidate,
     Capability,
@@ -27,8 +27,8 @@ from library_guides.knowledge import (
     Review,
     Source,
 )
-from library_guides.qualification import coverage, validate
-from library_guides.store.digests import canonical_bytes, digest_bytes
+from library_deep_enrichment.qualification import coverage, validate
+from library_deep_enrichment.store.digests import canonical_bytes, digest_bytes
 
 
 def _sample(root: Path) -> Knowledge:

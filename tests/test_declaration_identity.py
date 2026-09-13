@@ -7,8 +7,8 @@ import json
 from pathlib import Path
 
 import pytest
-from library_guides.facts.contracts import Budget
-from library_guides.source_pipeline import SourceJob, extract
+from library_deep_enrichment.facts.contracts import Budget
+from library_deep_enrichment.source_pipeline import SourceJob, extract
 
 TOOLING = Path(__file__).parents[1]
 ID_FIELDS = {
@@ -53,9 +53,9 @@ def _extract(root: Path, name: str, document: object) -> dict[int, dict]:
             id=name,
             kind="declarations",
             input=str(source),
-            helper=str(TOOLING / "rustdoc-helper/target/debug/library-guides-rustdoc"),
+            helper=str(TOOLING / "rustdoc-helper/target/debug/lde-rustdoc-facts"),
             profile="declaration-identity-control",
-            schema=str(TOOLING / "library_guides/assets/schemas/declaration.v1.schema.json"),
+            schema=str(TOOLING / "library_deep_enrichment/assets/schemas/declaration.v1.schema.json"),
         ),
         Budget(),
     )

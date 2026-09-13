@@ -4,12 +4,12 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.contracts import Argument, Operation, Passage, TypeUse
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.staging import ObservationBuilder
-from library_guides.corpus.store import Corpus
-from library_guides.semantics.contracts import (
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.contracts import Argument, Operation, Passage, TypeUse
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.staging import ObservationBuilder
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.semantics.contracts import (
     Capability,
     Interpretation,
     Predicate,
@@ -17,15 +17,15 @@ from library_guides.semantics.contracts import (
     Slot,
     Task,
 )
-from library_guides.semantics.planning import compose
-from library_guides.semantics.vocabulary import approve_rules, foundation, text_value
-from library_guides.workflows.semantics import build
+from library_deep_enrichment.semantics.planning import compose
+from library_deep_enrichment.semantics.vocabulary import approve_rules, foundation, text_value
+from library_deep_enrichment.workflows.semantics import build
 
 if TYPE_CHECKING:
     from pathlib import Path
 
-    from library_guides.semantics.contracts import Composition
-    from library_guides.semantics.enrichment_contracts import CompositionEvaluation
+    from library_deep_enrichment.semantics.contracts import Composition
+    from library_deep_enrichment.semantics.enrichment_contracts import CompositionEvaluation
 
 
 def _slot(name: str, kind: str) -> Slot:
@@ -213,11 +213,11 @@ def test_missing_second_input_does_not_become_a_free_solver_assignment(tmp_path:
 def test_intermediate_state_is_replayed_and_a_compatible_loss_is_rejected(tmp_path: Path) -> None:
     """Equal final carriers cannot conceal a property lost at an intermediate operation."""
     from attrs import evolve
-    from library_guides.corpus.contracts import Policy, Record
-    from library_guides.corpus.evidence import select
-    from library_guides.semantics.composition_models import evaluate_composition
-    from library_guides.semantics.contracts import Assignment
-    from library_guides.semantics.enrichment_contracts import (
+    from library_deep_enrichment.corpus.contracts import Policy, Record
+    from library_deep_enrichment.corpus.evidence import select
+    from library_deep_enrichment.semantics.composition_models import evaluate_composition
+    from library_deep_enrichment.semantics.contracts import Assignment
+    from library_deep_enrichment.semantics.enrichment_contracts import (
         CompositionGoal,
         InvocationContract,
         TransferMapping,
@@ -341,12 +341,12 @@ def _tamper_controls(
 ) -> None:
     import pytest
     from attrs import evolve
-    from library_guides.corpus.backend import CorpusError
-    from library_guides.corpus.validation import validate_records
-    from library_guides.semantics.composition_programs import render
-    from library_guides.semantics.contracts import Assignment
-    from library_guides.semantics.enrichment_contracts import CompositionProgram
-    from library_guides.workflows.engine import overlay
+    from library_deep_enrichment.corpus.backend import CorpusError
+    from library_deep_enrichment.corpus.validation import validate_records
+    from library_deep_enrichment.semantics.composition_programs import render
+    from library_deep_enrichment.semantics.contracts import Assignment
+    from library_deep_enrichment.semantics.enrichment_contracts import CompositionProgram
+    from library_deep_enrichment.workflows.engine import overlay
 
     writer = Coordinator(corpus, WriterIdentity(principal="fixture-review", role="policy"))
     with pytest.raises(CorpusError, match="replayed intermediate states"):

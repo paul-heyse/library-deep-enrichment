@@ -5,10 +5,10 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 import pytest
-from library_guides.models import ApiBinding, ApiIdentity, Ecosystem, EvidenceOrigin
-from library_guides.models.enums import StageCompletion
-from library_guides.models.records import ExtractionReceipt, UnprocessedInput
-from library_guides.store import (
+from library_deep_enrichment.models import ApiBinding, ApiIdentity, Ecosystem, EvidenceOrigin
+from library_deep_enrichment.models.enums import StageCompletion
+from library_deep_enrichment.models.records import ExtractionReceipt, UnprocessedInput
+from library_deep_enrichment.store import (
     PublicationRefusedError,
     ReceiptRequest,
     StagedBundle,
@@ -20,7 +20,7 @@ from library_guides.store import (
     write_atomic,
     write_records,
 )
-from library_guides.store.digests import digest_file
+from library_deep_enrichment.store.digests import digest_file
 
 if TYPE_CHECKING:
     from pathlib import Path

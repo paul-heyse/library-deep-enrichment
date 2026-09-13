@@ -6,17 +6,17 @@ import json
 from pathlib import Path
 
 import pytest
-from library_guides.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary, Outcome
-from library_guides.corpus.evidence import resolve_bytes
-from library_guides.corpus.native_contracts import NativeFact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.facts.contracts import Budget, FactArtifact, FileEntry
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.processes import execute
-from library_guides.source_pipeline import SourceJob, extract
-from library_guides.store.digests import digest_file
-from library_guides.workflows.behavior import build
+from library_deep_enrichment.analyses.behavior.contracts import BehaviorRequest, BehaviorSummary, Outcome
+from library_deep_enrichment.corpus.evidence import resolve_bytes
+from library_deep_enrichment.corpus.native_contracts import NativeFact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.facts.contracts import Budget, FactArtifact, FileEntry
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.processes import execute
+from library_deep_enrichment.source_pipeline import SourceJob, extract
+from library_deep_enrichment.store.digests import digest_file
+from library_deep_enrichment.workflows.behavior import build
 
 from tests.test_native_lanes import SCHEMAS, _binary, _records
 
@@ -52,9 +52,9 @@ def native_cases(tmp_path_factory: pytest.TempPathFactory) -> tuple[Path, tuple[
     artifacts = []
     sources = []
     with pytest.MonkeyPatch.context() as patch:
-        patch.setenv("LIBRARY_GUIDES_MIR_CONTEXT", "behavior-cross-unit-controls")
-        patch.setenv("LIBRARY_GUIDES_MIR_BEHAVIOR", "1")
-        patch.delenv("LIBRARY_GUIDES_MIR_PACKAGES", raising=False)
+        patch.setenv("LDE_MIR_CONTEXT", "behavior-cross-unit-controls")
+        patch.setenv("LDE_MIR_BEHAVIOR", "1")
+        patch.delenv("LDE_MIR_PACKAGES", raising=False)
         cases = (
             ("behavior_dependency", DEPENDENCY),
             ("behavior_consumer", CONSUMER),
@@ -66,7 +66,7 @@ def native_cases(tmp_path_factory: pytest.TempPathFactory) -> tuple[Path, tuple[
             if source not in sources:
                 sources.append(source)
             output = root / f"{name}-{index}"
-            patch.setenv("LIBRARY_GUIDES_MIR_OUTPUT", str(output))
+            patch.setenv("LDE_MIR_OUTPUT", str(output))
             argv = [
                 str(_binary("mir-facts")),
                 str(sysroot / "bin/rustc"),
@@ -137,7 +137,7 @@ def test_native_logical_members_and_signed_discriminants(
     native_cases: tuple[Path, tuple[FactArtifact, ...]],
 ) -> None:
     """The compiler supplies member names and enum tags independently of display-name heuristics."""
-    from library_guides.analyses.behavior.mir_types import nominals, target_types
+    from library_deep_enrichment.analyses.behavior.mir_types import nominals, target_types
 
     root, artifacts = native_cases
     rows = _records(root, artifacts[0])
@@ -206,7 +206,7 @@ def test_same_definition_from_wrong_compiled_source_does_not_close_call(
     native_cases: tuple[Path, tuple[FactArtifact, ...]], tmp_path: Path
 ) -> None:
     """A same-name callee from changed source cannot satisfy the old caller's target build."""
-    from library_guides.analyses.behavior.contracts import Precision
+    from library_deep_enrichment.analyses.behavior.contracts import Precision
 
     root, artifacts = native_cases
     corpus = Corpus(tmp_path / "corpus")

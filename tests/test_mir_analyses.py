@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-from library_guides.analyses.effects import summarize
-from library_guides.analyses.flow import analyze, control_dependence
+from library_deep_enrichment.analyses.effects import summarize
+from library_deep_enrichment.analyses.flow import analyze, control_dependence
 
 
 def _place(local: int, *, projected: bool = False) -> dict:

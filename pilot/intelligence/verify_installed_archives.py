@@ -10,14 +10,14 @@ import sys
 from pathlib import Path
 from typing import TypedDict
 
-import library_guides
-from library_guides.corpus.contracts import Release
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.export import export_view, import_view
-from library_guides.publication.releases import read_guide
-from library_guides.semantics.contracts import Comparison
-from library_guides.workflows.shapes import build
+import library_deep_enrichment
+from library_deep_enrichment.corpus.contracts import Release
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.publication.releases import read_guide
+from library_deep_enrichment.semantics.contracts import Comparison
+from library_deep_enrichment.workflows.shapes import build
 
 PAGE_SIZE = 5
 
@@ -43,7 +43,7 @@ def candidate_pages(corpus: Corpus) -> dict[str, object]:
         sys.executable,
         "-I",
         "-m",
-        "library_guides",
+        "library_deep_enrichment",
         "--corpus",
         str(corpus.root),
         "candidate-results",
@@ -140,19 +140,19 @@ def verify(item: dict[str, str], root: Path) -> dict[str, object]:
 def main() -> None:
     """Prove source-independent reading and one installed analytical worker."""
     root = Path.cwd()
-    assert not Path("/home/paul/smartref/tooling/library_guides/library_guides").exists()
+    assert not Path("/home/paul/smartref/tooling/library_deep_enrichment/library_deep_enrichment").exists()
     assert not Path("/home/paul/.cache/library-guides-intelligence").exists()
     assert not Path("/dev/nvidia0").exists()
     assert not Path("/home/paul/.cargo/registry").exists()
     with socket.socket() as connection:
         connection.settimeout(0.5)
         assert connection.connect_ex(("127.0.0.1", 18080)) != 0
-    package = Path(library_guides.__file__).resolve().parent
+    package = Path(library_deep_enrichment.__file__).resolve().parent
     assert "installed-all-reader" in str(package)
     assert "site-packages" in str(package)
     freeze = json.loads((root / "freeze.json").read_bytes())
     for name, expected in freeze["files"].items():
-        if name.startswith("library_guides/") and name.endswith(".py"):
+        if name.startswith("library_deep_enrichment/") and name.endswith(".py"):
             assert hashlib.sha256((package.parent / name).read_bytes()).hexdigest() == expected
     result_path = root / "result.json"
     result: GateResult = (

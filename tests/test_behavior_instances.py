@@ -7,27 +7,27 @@ import json
 from pathlib import Path
 
 import pytest
-from library_guides.analyses.behavior import mir_instances
-from library_guides.analyses.behavior.contracts import (
+from library_deep_enrichment.analyses.behavior import mir_instances
+from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,
     BehaviorRequest,
     BehaviorSummary,
 )
-from library_guides.analyses.call_graph.contracts import CallClosureRequest, CallIndexRequest
-from library_guides.analyses.compilation_contracts import CompilationPopulation, CompilationRequest
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.native_contracts import NativeFact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.facts.compiler_invocation import read as read_invocation
-from library_guides.facts.contracts import Budget, FactArtifact, FileEntry
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.processes import execute
-from library_guides.publication.export import export_view, import_view
-from library_guides.source_pipeline import SourceJob, extract
-from library_guides.store.digests import digest_file
-from library_guides.workflows.behavior import build as build_behavior
-from library_guides.workflows.compilation import build as build_compilation
+from library_deep_enrichment.analyses.call_graph.contracts import CallClosureRequest, CallIndexRequest
+from library_deep_enrichment.analyses.compilation_contracts import CompilationPopulation, CompilationRequest
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.native_contracts import NativeFact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.facts.compiler_invocation import read as read_invocation
+from library_deep_enrichment.facts.contracts import Budget, FactArtifact, FileEntry
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.processes import execute
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.source_pipeline import SourceJob, extract
+from library_deep_enrichment.store.digests import digest_file
+from library_deep_enrichment.workflows.behavior import build as build_behavior
+from library_deep_enrichment.workflows.compilation import build as build_compilation
 
 from tests.test_call_graph import _index, _selection
 from tests.test_native_lanes import SCHEMAS, _binary, _records
@@ -89,12 +89,12 @@ def instance_cases(
 def _capture(root: Path, source: Path, sysroot: Path, limit: int, depth: int) -> FactArtifact:
     output = root / f"frames-{limit}-{depth}"
     with pytest.MonkeyPatch.context() as patch:
-        patch.setenv("LIBRARY_GUIDES_MIR_CONTEXT", "concrete-instance-controls")
-        patch.setenv("LIBRARY_GUIDES_MIR_BEHAVIOR", "1")
-        patch.setenv("LIBRARY_GUIDES_MIR_INSTANCES", str(limit))
-        patch.setenv("LIBRARY_GUIDES_MIR_INSTANCE_DEPTH", str(depth))
-        patch.setenv("LIBRARY_GUIDES_MIR_OUTPUT", str(output))
-        patch.delenv("LIBRARY_GUIDES_MIR_PACKAGES", raising=False)
+        patch.setenv("LDE_MIR_CONTEXT", "concrete-instance-controls")
+        patch.setenv("LDE_MIR_BEHAVIOR", "1")
+        patch.setenv("LDE_MIR_INSTANCES", str(limit))
+        patch.setenv("LDE_MIR_INSTANCE_DEPTH", str(depth))
+        patch.setenv("LDE_MIR_OUTPUT", str(output))
+        patch.delenv("LDE_MIR_PACKAGES", raising=False)
         result = execute(
             (
                 str(_binary("mir-facts")),

@@ -1,9 +1,9 @@
 """Shared immutable source chunks fit their actual bounded byte representation."""
 
-from library_guides.corpus.cache import MAX_BYTES, RecordCache
-from library_guides.corpus.contracts import BlobChunk
-from library_guides.corpus.encoding import bytes_digest
-from library_guides.corpus.evidence import CHUNK_SIZE
+from library_deep_enrichment.corpus.cache import MAX_BYTES, RecordCache
+from library_deep_enrichment.corpus.contracts import BlobChunk
+from library_deep_enrichment.corpus.encoding import bytes_digest
+from library_deep_enrichment.corpus.evidence import CHUNK_SIZE
 
 
 def test_binary_chunks_reuse_without_json_inflation_and_still_evict() -> None:

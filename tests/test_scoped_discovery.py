@@ -6,16 +6,16 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import BudgetExceededError, CorpusError
-from library_guides.corpus.contracts import Disposition, Job, Operation, Scope
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.discovery.contracts import Descriptor, DiscoveryScope, SearchSelection
-from library_guides.discovery.scopes import current, units
-from library_guides.discovery.search import search
-from library_guides.discovery.validation import validate
-from library_guides.workflows.discovery import (
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import BudgetExceededError, CorpusError
+from library_deep_enrichment.corpus.contracts import Disposition, Job, Operation, Scope
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.discovery.contracts import Descriptor, DiscoveryScope, SearchSelection
+from library_deep_enrichment.discovery.scopes import current, units
+from library_deep_enrichment.discovery.search import search
+from library_deep_enrichment.discovery.validation import validate
+from library_deep_enrichment.workflows.discovery import (
     build_fca,
     build_graphs,
     build_labels,

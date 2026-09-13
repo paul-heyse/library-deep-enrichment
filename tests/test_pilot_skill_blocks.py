@@ -12,10 +12,10 @@ import tomllib
 from pathlib import Path
 
 import pytest
-from library_guides.adapters.docs.markdown_sections import index_markdown_file
-from library_guides.manifest import load_stack_manifest
-from library_guides.render.blocks import block_markers
-from library_guides.render.pipeline import check_stack, render_for_stack
+from library_deep_enrichment.adapters.docs.markdown_sections import index_markdown_file
+from library_deep_enrichment.manifest import load_stack_manifest
+from library_deep_enrichment.render.blocks import block_markers
+from library_deep_enrichment.render.pipeline import check_stack, render_for_stack
 
 STACKS = ("datafusion-arrow-rust", "datafusion-pyarrow-python")
 
@@ -37,7 +37,7 @@ _BARE_OFFSET = re.compile(r"\b(?:line|offset|L)\s*[`']?\d{4,}", re.IGNORECASE)
 
 def _block_span(text: str, block_name: str) -> tuple[int, int] | None:
     begin_pattern = re.compile(
-        rf"<!-- BEGIN GENERATED library-guides {re.escape(block_name)}(?: [0-9a-f]+)? -->"
+        rf"<!-- BEGIN GENERATED library-deep-enrichment {re.escape(block_name)}(?: [0-9a-f]+)? -->"
     )
     _, end_marker = block_markers(block_name)
     begin = begin_pattern.search(text)

@@ -8,15 +8,15 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.analyses.behavior import mir_callables
-from library_guides.analyses.behavior.contracts import (
+from library_deep_enrichment.analyses.behavior import mir_callables
+from library_deep_enrichment.analyses.behavior.contracts import (
     BehaviorProgram,
     BehaviorRequest,
     BehaviorSummary,
     Outcome,
 )
-from library_guides.analyses.behavior.witness_checks import CheckPolicy, compare
-from library_guides.analyses.behavior.witness_contracts import (
+from library_deep_enrichment.analyses.behavior.witness_checks import CheckPolicy, compare
+from library_deep_enrichment.analyses.behavior.witness_contracts import (
     BehaviorWitnessCheck,
     BehaviorWitnessRequest,
     Cell,
@@ -25,28 +25,28 @@ from library_guides.analyses.behavior.witness_contracts import (
     ObservationSet,
     Verdict,
 )
-from library_guides.analyses.call_graph.contracts import (
+from library_deep_enrichment.analyses.call_graph.contracts import (
     CallableClosure,
     CallClosureRequest,
     CallIndexRequest,
 )
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.encoding import CONVERTER
-from library_guides.corpus.native_contracts import NativeFact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.staging import ObservationBuilder
-from library_guides.corpus.store import Corpus
-from library_guides.facts.compiler_invocation import read as read_invocation
-from library_guides.facts.contracts import Budget, FactArtifact, FileEntry
-from library_guides.native_admission import NativeInputs, admit_artifacts
-from library_guides.processes import execute
-from library_guides.publication.export import export_view, import_view
-from library_guides.source_pipeline import SourceJob, extract
-from library_guides.store.digests import digest_file
-from library_guides.workflows.behavior import build
-from library_guides.workflows.behavior_witnesses import build as build_witnesses
-from library_guides.workflows.call_graph import build as build_calls
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.encoding import CONVERTER
+from library_deep_enrichment.corpus.native_contracts import NativeFact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.staging import ObservationBuilder
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.facts.compiler_invocation import read as read_invocation
+from library_deep_enrichment.facts.contracts import Budget, FactArtifact, FileEntry
+from library_deep_enrichment.native_admission import NativeInputs, admit_artifacts
+from library_deep_enrichment.processes import execute
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.source_pipeline import SourceJob, extract
+from library_deep_enrichment.store.digests import digest_file
+from library_deep_enrichment.workflows.behavior import build
+from library_deep_enrichment.workflows.behavior_witnesses import build as build_witnesses
+from library_deep_enrichment.workflows.call_graph import build as build_calls
 
 from tests.test_call_graph import _index
 from tests.test_native_lanes import SCHEMAS, _binary, _records
@@ -142,8 +142,8 @@ def _capture(root: Path, source: Path, sysroot: Path, depth: int) -> FactArtifac
             "OUTPUT": str(output),
             "CALLABLES": "1",
         }.items():
-            patch.setenv("LIBRARY_GUIDES_MIR_" + name, value)
-        patch.delenv("LIBRARY_GUIDES_MIR_PACKAGES", raising=False)
+            patch.setenv("LDE_MIR_" + name, value)
+        patch.delenv("LDE_MIR_PACKAGES", raising=False)
         result = execute(
             (
                 str(_binary("mir-facts")),

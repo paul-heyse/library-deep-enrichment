@@ -6,11 +6,11 @@ import json
 from typing import TYPE_CHECKING
 
 import pytest
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.checker_epochs import HISTORICAL, fingerprint
-from library_guides.corpus.store import Corpus
-from library_guides.publication.export import export_view, import_view
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.checker_epochs import HISTORICAL, fingerprint
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.export import export_view, import_view
 
 from tests.test_corpus_fabric import _job
 

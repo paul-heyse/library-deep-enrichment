@@ -6,27 +6,27 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import CorpusError
-from library_guides.corpus.contracts import Argument, Operation, Passage, Policy
-from library_guides.corpus.evidence import select
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.staging import ObservationBuilder
-from library_guides.corpus.store import Corpus
-from library_guides.corpus.validation import validate_records
-from library_guides.semantics.contracts import Assignment, Interpretation, Rule, Value, ValueKind
-from library_guides.semantics.documents import literal, parameters, statements
-from library_guides.semantics.enrichment_contracts import (
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import CorpusError
+from library_deep_enrichment.corpus.contracts import Argument, Operation, Passage, Policy
+from library_deep_enrichment.corpus.evidence import select
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.staging import ObservationBuilder
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.corpus.validation import validate_records
+from library_deep_enrichment.semantics.contracts import Assignment, Interpretation, Rule, Value, ValueKind
+from library_deep_enrichment.semantics.documents import literal, parameters, statements
+from library_deep_enrichment.semantics.enrichment_contracts import (
     TransferMapping,
     TransferModel,
     TransferRule,
     WitnessObservation,
     WitnessRecipe,
 )
-from library_guides.semantics.experiments import run_witness
-from library_guides.semantics.rules import consequence
-from library_guides.semantics.transfers import evaluate
-from library_guides.workflows.engine import overlay
+from library_deep_enrichment.semantics.experiments import run_witness
+from library_deep_enrichment.semantics.rules import consequence
+from library_deep_enrichment.semantics.transfers import evaluate
+from library_deep_enrichment.workflows.engine import overlay
 
 if TYPE_CHECKING:
     from pathlib import Path

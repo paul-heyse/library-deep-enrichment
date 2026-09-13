@@ -6,14 +6,14 @@ from pathlib import Path
 
 import pytest
 from attrs import evolve
-from library_guides.corpus.backend import BudgetExceededError
-from library_guides.corpus.contracts import ByteRange, Passage, Policy
-from library_guides.corpus.store import Corpus
-from library_guides.semantic_packs import install
-from library_guides.semantics.contracts import Rule
-from library_guides.semantics.rules import matching_text
+from library_deep_enrichment.corpus.backend import BudgetExceededError
+from library_deep_enrichment.corpus.contracts import ByteRange, Passage, Policy
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.semantic_packs import install
+from library_deep_enrichment.semantics.contracts import Rule
+from library_deep_enrichment.semantics.rules import matching_text
 
-PACK = Path(__file__).parents[1] / "library_guides/assets/packs/arithmetic_contracts.json"
+PACK = Path(__file__).parents[1] / "library_deep_enrichment/assets/packs/arithmetic_contracts.json"
 
 
 def _source(text: str) -> Passage:
@@ -67,8 +67,8 @@ def test_a_pathological_model_cannot_hang_the_consequence_checker(tmp_path: Path
 
 def test_registry_facets_require_their_own_observed_fields(tmp_path: Path) -> None:
     """A runtime phase cannot inherit a kind citation or a contradictory raw field."""
-    from library_guides.corpus.contracts import RegistryEntry
-    from library_guides.corpus.staging import ObservationBuilder
+    from library_deep_enrichment.corpus.contracts import RegistryEntry
+    from library_deep_enrichment.corpus.staging import ObservationBuilder
 
     corpus = Corpus(tmp_path)
     install(corpus, PACK.with_name("registry_applicability.json"), authority="fixture-author")

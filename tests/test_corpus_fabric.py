@@ -7,13 +7,13 @@ from typing import TYPE_CHECKING
 
 import pytest
 from attrs import evolve
-from library_guides.corpus.admission import Coordinator, WriterIdentity
-from library_guides.corpus.backend import CorpusError, PredecessorConflictError
-from library_guides.corpus.contracts import ByteRange, Disposition, Job, Policy
-from library_guides.corpus.encoding import bytes_digest
-from library_guides.corpus.evidence import resolve, resolve_bytes, select, stage_blob
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
+from library_deep_enrichment.corpus.admission import Coordinator, WriterIdentity
+from library_deep_enrichment.corpus.backend import CorpusError, PredecessorConflictError
+from library_deep_enrichment.corpus.contracts import ByteRange, Disposition, Job, Policy
+from library_deep_enrichment.corpus.encoding import bytes_digest
+from library_deep_enrichment.corpus.evidence import resolve, resolve_bytes, select, stage_blob
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
 
 if TYPE_CHECKING:
     from pathlib import Path
@@ -58,7 +58,7 @@ def test_unchanged_small_transaction_does_not_scan_the_population(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     """Reasserting a current request uses bounded point reads and performs no family writes."""
-    from library_guides.corpus.store import CorpusReader
+    from library_deep_enrichment.corpus.store import CorpusReader
 
     corpus = Corpus(tmp_path)
     writer = Coordinator(corpus, WriterIdentity(principal="test"))
@@ -76,7 +76,7 @@ def test_unchanged_small_transaction_does_not_scan_the_population(
 
 def test_index_maintenance_retains_exact_membership_and_pinned_history(tmp_path: Path) -> None:
     """Fresh physical indexes do not promote unselected rows or change logical facts."""
-    from library_guides.corpus.backend import Backend
+    from library_deep_enrichment.corpus.backend import Backend
 
     corpus = Corpus(tmp_path / "fabric")
     writer = Coordinator(corpus, WriterIdentity(principal="index-maintainer"))
@@ -104,7 +104,7 @@ def test_append_updates_index_deltas_without_rebuilding_existing_indexes(
 ) -> None:
     """An append retains old versions and covers new rows without recreating an index."""
     from lancedb.table import LanceTable
-    from library_guides.corpus.backend import Backend
+    from library_deep_enrichment.corpus.backend import Backend
 
     corpus = Corpus(tmp_path / "fabric")
     writer = Coordinator(corpus, WriterIdentity(principal="index-maintainer"))

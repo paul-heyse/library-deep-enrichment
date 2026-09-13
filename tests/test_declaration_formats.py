@@ -8,12 +8,12 @@ from pathlib import Path
 
 import pytest
 import yaml
-from library_guides.corpus.evidence import read_field
-from library_guides.corpus.native_contracts import NativeFact
-from library_guides.corpus.schemas import revision_of
-from library_guides.corpus.store import Corpus
-from library_guides.publication.export import export_view, import_view
-from library_guides.workflows.native import build
+from library_deep_enrichment.corpus.evidence import read_field
+from library_deep_enrichment.corpus.native_contracts import NativeFact
+from library_deep_enrichment.corpus.schemas import revision_of
+from library_deep_enrichment.corpus.store import Corpus
+from library_deep_enrichment.publication.export import export_view, import_view
+from library_deep_enrichment.workflows.native import build
 
 TOOLING = Path(__file__).parents[1]
 FAMILIES = {
@@ -111,10 +111,10 @@ def test_all_declaration_and_type_variants_survive_portable_native_admission(
                         "profile": f"synthetic-format-{version}",
                         "input": str(source),
                         "helper": str(
-                            TOOLING / "rustdoc-helper/target/debug/library-guides-rustdoc"
+                            TOOLING / "rustdoc-helper/target/debug/lde-rustdoc-facts"
                         ),
                         "schema": str(
-                            TOOLING / "library_guides/assets/schemas/declaration.v1.schema.json"
+                            TOOLING / "library_deep_enrichment/assets/schemas/declaration.v1.schema.json"
                         ),
                     }
                 ],
