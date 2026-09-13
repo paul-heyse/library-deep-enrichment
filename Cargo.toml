@@ -15,6 +15,7 @@ exclude = [
   "pilot/rust-example",
   "pilot/qualified/examples/rust",
   "tests/fixtures/rust_declarations",
+  "pilot/intelligence/foundational/handover/pyo3-preflight",
 ]
 
 [workspace.package]

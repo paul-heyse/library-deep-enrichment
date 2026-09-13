@@ -1,0 +1,218 @@
+{
+  "counts": {
+    "mir_instance": 30,
+    "mir_owner": 2000
+  },
+  "instances": [
+    {
+      "symbol": "pyo3::Borrowed::<'_, '_, pyo3::PyAny>::from_ptr_unchecked",
+      "bytes": 68687,
+      "events": 0,
+      "exits": 3
+    },
+    {
+      "symbol": "arrow_schema::Field::is_nullable",
+      "bytes": 43034,
+      "events": 1,
+      "exits": 1
+    },
+    {
+      "symbol": "<std::result::Result<&pyo3_arrow::field::PyField, pyo3::PyErr> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, pyo3::CastError<'_, '_>>>>::from_residual",
+      "bytes": 125519,
+      "events": 9,
+      "exits": 2
+    },
+    {
+      "symbol": "<pyo3::PyClassGuard<'_, pyo3_arrow::field::PyField> as std::ops::Deref>::deref",
+      "bytes": 122481,
+      "events": 11,
+      "exits": 6
+    },
+    {
+      "symbol": "pyo3::PyClassGuard::<'_, pyo3_arrow::field::PyField>::try_from_class_object",
+      "bytes": 126495,
+      "events": 2,
+      "exits": 5
+    },
+    {
+      "symbol": "<std::result::Result<&pyo3_arrow::field::PyField, pyo3::PyErr> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, pyo3::pycell::PyBorrowError>>>::from_residual",
+      "bytes": 115875,
+      "events": 9,
+      "exits": 2
+    },
+    {
+      "symbol": "<pyo3::Borrowed<'_, '_, pyo3::types::PyBool> as pyo3::BoundObject<'_, pyo3::types::PyBool>>::into_ptr",
+      "bytes": 78320,
+      "events": 1,
+      "exits": 4
+    },
+    {
+      "symbol": "<pyo3::impl_::pycell::PyStaticClassObject<pyo3_arrow::field::PyField> as pyo3::pycell::impl_::PyClassObjectLayout<pyo3_arrow::field::PyField>>::get_ptr",
+      "bytes": 57006,
+      "events": 1,
+      "exits": 3
+    },
+    {
+      "symbol": "<std::sync::Arc<arrow_schema::Field> as std::ops::Deref>::deref",
+      "bytes": 47511,
+      "events": 5,
+      "exits": 1
+    },
+    {
+      "symbol": "<std::result::Result<pyo3::PyClassGuard<'_, pyo3_arrow::field::PyField>, pyo3::pycell::PyBorrowError> as std::ops::Try>::branch",
+      "bytes": 111521,
+      "events": 12,
+      "exits": 5
+    },
+    {
+      "symbol": "<pyo3::PyErr as std::convert::From<pyo3::PyErr>>::from",
+      "bytes": 69177,
+      "events": 1,
+      "exits": 1
+    },
+    {
+      "symbol": "pyo3::Borrowed::<'_, '_, pyo3::PyAny>::cast::<pyo3_arrow::field::PyField>",
+      "bytes": 112647,
+      "events": 0,
+      "exits": 3
+    },
+    {
+      "symbol": "pyo3::impl_::callback::convert::<'_, bool, *mut pyo3::ffi::PyObject>",
+      "bytes": 77377,
+      "events": 0,
+      "exits": 2
+    },
+    {
+      "symbol": "<std::result::Result<pyo3::Borrowed<'_, '_, pyo3_arrow::field::PyField>, pyo3::CastError<'_, '_>> as std::ops::Try>::branch",
+      "bytes": 121351,
+      "events": 12,
+      "exits": 5
+    },
+    {
+      "symbol": "std::ptr::NonNull::<pyo3::ffi::PyObject>::new_unchecked",
+      "bytes": 61036,
+      "events": 4,
+      "exits": 4
+    },
+    {
+      "symbol": "std::result::Result::<pyo3::Borrowed<'_, '_, pyo3::types::PyBool>, std::convert::Infallible>::map::<*mut pyo3::ffi::PyObject, fn(pyo3::Borrowed<'_, '_, pyo3::types::PyBool>) -> *mut pyo3::ffi::PyObject {<pyo3::Borrowed<'_, '_, pyo3::types::PyBool> as pyo3::BoundObject<'_, pyo3::types::PyBool>>::into_ptr}>",
+      "bytes": 95955,
+      "events": 17,
+      "exits": 6
+    },
+    {
+      "symbol": "pyo3::Borrowed::<'_, '_, pyo3::PyAny>::from_non_null",
+      "bytes": 63042,
+      "events": 1,
+      "exits": 1
+    },
+    {
+      "symbol": "std::ptr::drop_glue::<std::option::Option<pyo3::PyClassGuard<'_, pyo3_arrow::field::PyField>>>",
+      "bytes": 99782,
+      "events": 1,
+      "exits": 3
+    },
+    {
+      "symbol": "pyo3::Borrowed::<'_, '_, pyo3::PyAny>::to_any",
+      "bytes": 64229,
+      "events": 2,
+      "exits": 1
+    },
+    {
+      "symbol": "std::option::Option::<pyo3::PyClassGuard<'_, pyo3_arrow::field::PyField>>::insert",
+      "bytes": 118283,
+      "events": 18,
+      "exits": 6
+    },
+    {
+      "symbol": "pyo3_arrow::field::PyField::nullable",
+      "bytes": 51311,
+      "events": 1,
+      "exits": 3
+    },
+    {
+      "symbol": "<bool as pyo3::impl_::callback::IntoPyCallbackOutput<'_, *mut pyo3::ffi::PyObject>>::convert",
+      "bytes": 97033,
+      "events": 0,
+      "exits": 4
+    },
+    {
+      "symbol": "pyo3::PyClassGuard::<'_, pyo3_arrow::field::PyField>::try_borrow_from_borrowed",
+      "bytes": 113473,
+      "events": 0,
+      "exits": 3
+    },
+    {
+      "symbol": "<std::result::Result<&pyo3_arrow::field::PyField, pyo3::PyErr> as std::ops::Try>::branch",
+      "bytes": 119092,
+      "events": 12,
+      "exits": 5
+    },
+    {
+      "symbol": "pyo3::PyClassGuard::<'_, pyo3_arrow::field::PyField>::as_class_object",
+      "bytes": 109679,
+      "events": 2,
+      "exits": 3
+    },
+    {
+      "symbol": "pyo3::Borrowed::<'a, 'py, T>::cast::inner::<pyo3_arrow::field::PyField>",
+      "bytes": 140807,
+      "events": 4,
+      "exits": 11
+    },
+    {
+      "symbol": "<std::result::Result<*mut pyo3::ffi::PyObject, pyo3::PyErr> as std::ops::FromResidual<std::result::Result<std::convert::Infallible, pyo3::PyErr>>>::from_residual",
+      "bytes": 80433,
+      "events": 9,
+      "exits": 2
+    },
+    {
+      "symbol": "std::ptr::drop_glue::<pyo3::PyClassGuard<'_, pyo3_arrow::field::PyField>>",
+      "bytes": 100057,
+      "events": 1,
+      "exits": 2
+    },
+    {
+      "symbol": "pyo3::impl_::extract_argument::cast_function_argument",
+      "bytes": 65267,
+      "events": 0,
+      "exits": 2
+    },
+    {
+      "symbol": "pyo3::impl_::extract_argument::extract_pyclass_ref::<pyo3_arrow::field::PyField>",
+      "bytes": 172946,
+      "events": 7,
+      "exits": 13
+    }
+  ],
+  "end": {
+    "coverage": {
+      "body": "generic_and_observed_item_instances",
+      "captured_instances": 30,
+      "effect_model": "local_mir_events_with_frontiers",
+      "empty_reason": null,
+      "generic_owners": 2000,
+      "instance_attempts": 32,
+      "instance_options": {
+        "callable_references": true,
+        "definition_roots": [
+          "definition:8df7ebca6c55a21b:150d49351e9413d28df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad",
+          "definition:8df7ebca6c55a21b:236a7d1f070c86ae8df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad",
+          "definition:8df7ebca6c55a21b:b11f1db9ce67e0108df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad",
+          "definition:8df7ebca6c55a21b:d5a14fe99fd43a3e8df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad"
+        ],
+        "lifecycle_uses": true,
+        "max_candidates": 4096,
+        "max_depth": 4,
+        "max_instances": 32
+      },
+      "monomorphized": "finite_observed_selection",
+      "owners": 2030,
+      "semantic_closed": false,
+      "state": "complete"
+    },
+    "digest": "c44c3ff8870418d3f06ccd50997646f224027a851036d9a276f44d4ba5fff6b4",
+    "kind": "terminal",
+    "records": 2030
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "command": "schema",
+    "schema": "mir-execution.v1.schema.json",
+    "json_matches_owned_asset": true,
+    "bytes_match_owned_asset": true,
+    "bytes_match_previous_binary": true,
+    "output_sha256": "95def15fcf3a06aac08626ff9e312335a8d5502fc724122a67ef3201454f581c",
+    "asset_sha256": "95def15fcf3a06aac08626ff9e312335a8d5502fc724122a67ef3201454f581c"
+  },
+  {
+    "command": "instance-schema",
+    "schema": "mir-instances.v1.schema.json",
+    "json_matches_owned_asset": true,
+    "bytes_match_owned_asset": false,
+    "bytes_match_previous_binary": true,
+    "output_sha256": "702ec462c9640cb61fd4df1b1706709b6b7de904e2a994d0fa5f9536780971e4",
+    "asset_sha256": "f70a1ae968eaae180f5873c8b07b6680d4376714e50ca92837d45b599ba763f7"
+  },
+  {
+    "command": "callable-schema",
+    "schema": "mir-callables.v1.schema.json",
+    "json_matches_owned_asset": true,
+    "bytes_match_owned_asset": true,
+    "bytes_match_previous_binary": true,
+    "output_sha256": "1ae90a5ec384b1ae251f21ee4e40df5eaf88ef386f773ccf5ac2bebd4800ff0c",
+    "asset_sha256": "1ae90a5ec384b1ae251f21ee4e40df5eaf88ef386f773ccf5ac2bebd4800ff0c"
+  },
+  {
+    "command": "lifecycle-schema",
+    "schema": "mir-lifecycle.v1.schema.json",
+    "json_matches_owned_asset": true,
+    "bytes_match_owned_asset": true,
+    "bytes_match_previous_binary": true,
+    "output_sha256": "2c11a9a5a00c91540432cfa191614149958a33d1478a71f10730eaad929bad35",
+    "asset_sha256": "2c11a9a5a00c91540432cfa191614149958a33d1478a71f10730eaad929bad35"
+  },
+  {
+    "command": "memory-schema",
+    "schema": "mir-memory.v1.schema.json",
+    "json_matches_owned_asset": true,
+    "bytes_match_owned_asset": true,
+    "bytes_match_previous_binary": null,
+    "output_sha256": "644c29e647aea1d8e9fa50714a1600fa3ff583309a8f1df8d5d4763f5f4f9636",
+    "asset_sha256": "644c29e647aea1d8e9fa50714a1600fa3ff583309a8f1df8d5d4763f5f4f9636"
+  }
+]

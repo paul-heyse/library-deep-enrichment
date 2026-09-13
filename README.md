@@ -15,7 +15,10 @@ development and never copied into this repository as reference manuals.
 See [`STATUS.md`](STATUS.md) for measured counts and [`docs/adr/`](docs/adr/) for every
 decision that departs from the frozen design record under [`docs/design/`](docs/design/).
 This repository was migrated on 2026-09-13 from a monorepo sub-project; ADR 0001 and 0002
-record what changed.
+record what changed. The foundational behaviour-characterization work is paused at the
+migration checkpoint: only FB00/G0 is accepted, and
+[`docs/design/foundational_behavior_characterization_status_and_repo_handover_2026-09-13.md`](docs/design/foundational_behavior_characterization_status_and_repo_handover_2026-09-13.md)
+records every remaining package and gate.
 
 ## How it fits together
 

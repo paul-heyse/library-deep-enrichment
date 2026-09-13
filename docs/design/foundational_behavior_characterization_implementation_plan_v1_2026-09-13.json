@@ -4,7 +4,7 @@
   "state": "in_progress",
   "implementation_started": true,
   "scope_authority": "tooling/library_guides/docs/foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md",
-  "scope_authority_sha256": "626d10b1038245ebd70f9372cd16d2fb14583ddc5f45884be575f9cfd2a5bda2",
+  "scope_authority_sha256": "6eaf6117f66fd6571525aec75cca7911e219bdfc412bf6a846b0acea9647afa2",
   "design_source": "tooling/library_guides/docs/foundational_behavior_characterization_design_assessment_2026-09-13.md",
   "design_source_sha256": "6b96647cf4abddd23daedbdd1527346381d2924d4beea7ea58d9337bebbd4dd4",
   "baseline": {
@@ -155,6 +155,11 @@
         {
           "path": "pilot/intelligence/foundational/RUST_LIFECYCLE_CHECKPOINT.md",
           "sha256": "39e2a0d3e9ef1561cee4069eed6aa1c559bdfacefa24508ac3bb2e86e95b2817"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONSTANT_MEMORY_CHECKPOINT.md",
+          "sha256": "27399151fdb35b48dc8ff1bc66a6f953ba702ef2b5ad0b9b4744818a8ff1173c",
+          "bytes": 8147
         }
       ],
       "blockers": [],
@@ -256,6 +261,11 @@
         {
           "path": "pilot/intelligence/foundational/INSTANCE_DEMAND_CHECKPOINT.md",
           "sha256": "695c11fc4efc5d361901ab8bf748864bc64c33abc597623130d5f30c15bd776c"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONSTANT_MEMORY_CHECKPOINT.md",
+          "sha256": "27399151fdb35b48dc8ff1bc66a6f953ba702ef2b5ad0b9b4744818a8ff1173c",
+          "bytes": 8147
         }
       ],
       "blockers": [],
@@ -374,6 +384,11 @@
         {
           "path": "pilot/intelligence/foundational/HELDOUT_CHECKPOINT.md",
           "sha256": "0dd655df7bf2124081201026fbf21e07f59ea6359e900863c4cf9b1420b543f9"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONSTANT_MEMORY_CHECKPOINT.md",
+          "sha256": "27399151fdb35b48dc8ff1bc66a6f953ba702ef2b5ad0b9b4744818a8ff1173c",
+          "bytes": 8147
         }
       ],
       "blockers": [],
@@ -427,6 +442,11 @@
         {
           "path": "pilot/intelligence/foundational/INSTANCE_DEMAND_CHECKPOINT.md",
           "sha256": "695c11fc4efc5d361901ab8bf748864bc64c33abc597623130d5f30c15bd776c"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONSTANT_MEMORY_CHECKPOINT.md",
+          "sha256": "27399151fdb35b48dc8ff1bc66a6f953ba702ef2b5ad0b9b4744818a8ff1173c",
+          "bytes": 8147
         }
       ],
       "blockers": [],
@@ -530,13 +550,19 @@
         "FB09"
       ],
       "gate": "G3",
-      "status": "not_started",
+      "status": "in_progress",
       "mandatory": true,
       "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB11",
       "existing_integration_paths": [],
-      "receipts": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/CONSTANT_MEMORY_CHECKPOINT.md",
+          "sha256": "27399151fdb35b48dc8ff1bc66a6f953ba702ef2b5ad0b9b4744818a8ff1173c",
+          "bytes": 8147
+        }
+      ],
       "blockers": [],
-      "completion_note": null
+      "completion_note": "Real PyO3 acquisition/runtime preflight and generalized constant-memory facts are implemented. Registration binding, allocation-value interpretation, exact conversion/error/ownership composition and C/C++ trigger decision remain open. No package acceptance."
     },
     {
       "id": "FB12",
@@ -1223,5 +1249,26 @@
     "no_implementation_or_tests_run": true
   },
   "gate_semantics": "Each package completes against its own acceptance criteria; its gate field identifies the aggregate milestone consuming that evidence, not a prerequisite for successor packages.",
-  "execution_root": "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z"
+  "execution_root": "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z",
+  "execution_state": "paused_by_user_for_repository_migration",
+  "handover": {
+    "status_document": "docs/foundational_behavior_characterization_status_and_repo_handover_2026-09-13.md",
+    "validation": {
+      "path": "pilot/intelligence/foundational/handover-validation.json",
+      "sha256": "b9da4444bac77089daaf4c95111c8b8623f127f0658be1db06e1330898b1d4c0",
+      "bytes": 14128
+    },
+    "source_freeze": {
+      "path": "pilot/intelligence/foundational/handover-source-freeze.json",
+      "sha256": "5a64c4b6552f2d8d34ca95515bbf8000af1445a51644553e6fe9c69785281237",
+      "bytes": 98867
+    },
+    "stop_reason": "User requested finishing the current increment and comprehensive status before standalone repository pivot. Scope and acceptance are unchanged.",
+    "current_run_location": "/home/paul/.cache/library-deep-enrichment/foundational/20260913T101230Z",
+    "package_counts": {
+      "complete": 1,
+      "in_progress": 13,
+      "not_started": 5
+    }
+  }
 }

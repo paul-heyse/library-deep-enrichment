@@ -1,0 +1,382 @@
+{
+  "kind": "library-guides.foundational-handover-validation.v1",
+  "recorded_at_utc": "2026-09-13T21:52:08.592256+00:00",
+  "status": "current_increment_verified_plan_incomplete",
+  "execution_state": "paused_by_user_for_repository_migration",
+  "terminal_qualified": false,
+  "source_root_at_capture": "/home/paul/smartref/tooling/library_guides",
+  "source_freeze": {
+    "path": "pilot/intelligence/foundational/handover-source-freeze.json",
+    "sha256": "5a64c4b6552f2d8d34ca95515bbf8000af1445a51644553e6fe9c69785281237",
+    "bytes": 98867
+  },
+  "checks": [
+    {
+      "check": "pytest",
+      "argv": [
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/full-environment/bin/pytest",
+        "tests",
+        "-q",
+        "--tb=short"
+      ],
+      "cwd": "/home/paul/smartref/tooling/library_guides",
+      "exit_code": 0,
+      "log": {
+        "path": "pilot/intelligence/foundational/handover/handover-full-suite-v1.log",
+        "sha256": "6db0c6394bb1951ba152b701a461ad1bd06b6e6970aa32daf7b8ed84580c408c",
+        "bytes": 2537
+      },
+      "passed": 458,
+      "warnings": 2,
+      "seconds": 211.07
+    },
+    {
+      "check": "ruff",
+      "argv": [
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/full-environment/bin/ruff",
+        "check",
+        "library_guides",
+        "tests",
+        "pilot/intelligence"
+      ],
+      "cwd": "/home/paul/smartref/tooling/library_guides",
+      "exit_code": 0,
+      "log": {
+        "path": "pilot/intelligence/foundational/handover/handover-ruff-v1.log",
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+        "bytes": 19
+      },
+      "result": "passed"
+    },
+    {
+      "check": "format",
+      "argv": [
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/full-environment/bin/ruff",
+        "format",
+        "--check",
+        "library_guides",
+        "tests",
+        "pilot/intelligence"
+      ],
+      "cwd": "/home/paul/smartref/tooling/library_guides",
+      "exit_code": 0,
+      "log": {
+        "path": "pilot/intelligence/foundational/handover/handover-format-v1.log",
+        "sha256": "bb14a75615200ff2609b2048c098d6ebd2e81a7ffe6ddb98b337c9d82c78dde5",
+        "bytes": 28
+      },
+      "files": 445,
+      "result": "passed"
+    },
+    {
+      "check": "pyrefly",
+      "argv": [
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/full-environment/bin/pyrefly",
+        "check",
+        "--min-severity",
+        "warn",
+        "--output-format",
+        "min-text"
+      ],
+      "cwd": "/home/paul/smartref/tooling/library_guides",
+      "exit_code": 0,
+      "log": {
+        "path": "pilot/intelligence/foundational/handover/handover-pyrefly-v1.log",
+        "sha256": "1ac7f98a4fb317bfde6a7125655e410ee262e6c459b2b4d19cb229dc86901e0c",
+        "bytes": 115
+      },
+      "diagnostics": 0,
+      "scope": "pyrefly.toml configured includes"
+    },
+    {
+      "check": "mir_build",
+      "argv": [
+        "cargo",
+        "+nightly-2026-08-18",
+        "build",
+        "--locked",
+        "--manifest-path",
+        "native/mir-facts/Cargo.toml"
+      ],
+      "cwd": "/home/paul/smartref/tooling/library_guides",
+      "exit_code": 0,
+      "log": {
+        "path": "pilot/intelligence/foundational/handover/memory-native-build-v4.log",
+        "sha256": "3936acea2dcc3ea3c03543eeaf20703e13894b0372b3bd68618274fde9eb53ae",
+        "bytes": 167
+      },
+      "result": "passed"
+    },
+    {
+      "check": "mir_clippy",
+      "argv": [
+        "cargo",
+        "+nightly-2026-08-18",
+        "clippy",
+        "--locked",
+        "--no-deps",
+        "--manifest-path",
+        "native/mir-facts/Cargo.toml",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "cwd": "/home/paul/smartref/tooling/library_guides",
+      "exit_code": 0,
+      "log": {
+        "path": "pilot/intelligence/foundational/handover/memory-native-clippy-v1.log",
+        "sha256": "a1a4ce14d2e3aa257a83a7c6dd3e5a55666cc360d05a9187c82db92eb1dba792",
+        "bytes": 167
+      },
+      "result": "passed"
+    },
+    {
+      "check": "mir_test",
+      "argv": [
+        "cargo",
+        "+nightly-2026-08-18",
+        "test",
+        "--locked",
+        "--manifest-path",
+        "native/mir-facts/Cargo.toml"
+      ],
+      "cwd": "/home/paul/smartref/tooling/library_guides",
+      "exit_code": 0,
+      "log": {
+        "path": "pilot/intelligence/foundational/handover/handover-native-test.log",
+        "sha256": "a861b023ecc2d35b7d0b26895a18bc530cbfb3bfa7d8f25d0bd72744af577ab8",
+        "bytes": 442
+      },
+      "result": "passed",
+      "rust_unit_tests": 0,
+      "semantic_controls": "real compiler tests in Python full suite"
+    },
+    {
+      "check": "mir_format",
+      "argv": [
+        "cargo",
+        "+nightly-2026-08-18",
+        "fmt",
+        "--manifest-path",
+        "native/mir-facts/Cargo.toml",
+        "--",
+        "--check"
+      ],
+      "cwd": "/home/paul/smartref/tooling/library_guides",
+      "exit_code": 0,
+      "log": {
+        "path": "pilot/intelligence/foundational/handover/handover-native-format.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "result": "passed",
+      "rechecked_at_handover": true
+    }
+  ],
+  "schema_identity": {
+    "path": "pilot/intelligence/foundational/handover/handover-schema-identity.json",
+    "sha256": "524a794fdd071d6d80c61b9ea252686a80cbd3e6552caed951de17397064d271",
+    "bytes": 1896
+  },
+  "environment": {
+    "path": "pilot/intelligence/foundational/environment.json",
+    "sha256": "da3b5a3144f2a100ccf6198f3d75bd9da0bb7e6069f46b53323e119a60c1c525",
+    "bytes": 2752
+  },
+  "copied_evidence": [
+    {
+      "path": "pilot/intelligence/foundational/handover/handover-format-v1.log",
+      "sha256": "bb14a75615200ff2609b2048c098d6ebd2e81a7ffe6ddb98b337c9d82c78dde5",
+      "bytes": 28
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/handover-full-suite-v1.log",
+      "sha256": "6db0c6394bb1951ba152b701a461ad1bd06b6e6970aa32daf7b8ed84580c408c",
+      "bytes": 2537
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/handover-native-format.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/handover-native-test.log",
+      "sha256": "a861b023ecc2d35b7d0b26895a18bc530cbfb3bfa7d8f25d0bd72744af577ab8",
+      "bytes": 442
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/handover-pyrefly-v1.log",
+      "sha256": "1ac7f98a4fb317bfde6a7125655e410ee262e6c459b2b4d19cb229dc86901e0c",
+      "bytes": 115
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/handover-ruff-v1.log",
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "bytes": 19
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/handover-schema-identity.json",
+      "sha256": "524a794fdd071d6d80c61b9ea252686a80cbd3e6552caed951de17397064d271",
+      "bytes": 1896
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/memory-native-build-v4.log",
+      "sha256": "3936acea2dcc3ea3c03543eeaf20703e13894b0372b3bd68618274fde9eb53ae",
+      "bytes": 167
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/memory-native-clippy-v1.log",
+      "sha256": "a1a4ce14d2e3aa257a83a7c6dd3e5a55666cc360d05a9187c82db92eb1dba792",
+      "bytes": 167
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/Cargo.lock",
+      "sha256": "bd92a00c8234c4e1ad3f9a70411aad41700567f9103a1ba4c994a131842f042c",
+      "bytes": 24503
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/Cargo.toml",
+      "sha256": "a4e50ed1424ac57651f728b4ab79b6a0d8c3a20bd98124627030d6e9d75b658d",
+      "bytes": 286
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/build-demand-v1.stderr",
+      "sha256": "86d285f2987a48981e4dc8b3f02e37b2640f5cc6e8af71d45ebb1d2c2d9add8d",
+      "bytes": 15214
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/build-exact-demand-v2.stderr",
+      "sha256": "1041395a11a7e08a2ab6c06f3f1ff043336907632bdea03ae3e87bdb19d527a0",
+      "bytes": 13164
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/build-exact-demand-v4.stderr",
+      "sha256": "eb21ba815889cef4028a92275202d822b529628506f3056579c9b7387ce21d4b",
+      "bytes": 13034
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/build-exact-generic-v3.stderr",
+      "sha256": "f211ac7e1ef6454fe89a03c1637606104328e60afacd41d476b642a4e84aef1f",
+      "bytes": 13035
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/build-memory-v1.stderr",
+      "sha256": "b691706e37db6846f6f58bed0796dc16e815f09e3d376dc4e2109021bb7fc445",
+      "bytes": 12997
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/build-memory-v1.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/demand-inspection-v4.json",
+      "sha256": "afce0bbec9257c0ca9040bc0800d9bed7e22ce29dc0b054d7f0a0c4d7b3776ac",
+      "bytes": 6821
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/demand-selection-v1.json",
+      "sha256": "f274a004475b2fe85ec59e5080e88f8aee645f75e8ff61c319135851828f2ba5",
+      "bytes": 2112
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/demand-selection-v4.json",
+      "sha256": "e2ea3391fef381bf2cf8467984558d34996d78a237ce200233d7fa7582f7d5e8",
+      "bytes": 1524
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/exact-demand-command-v2.json",
+      "sha256": "3a900e073dc1e6abca7c54ee7472d5e21eb8c2b13bc330b9db4f83f67403c8c9",
+      "bytes": 13887
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/generic-inspection-v1.json",
+      "sha256": "4c41f0a6d3199c41c97fa037f7e1b6b85b99fff6060c846e83c314d5c5732b85",
+      "bytes": 10582475
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/memory-inspection-v1.json",
+      "sha256": "248d1046de9fea00409f7ede3c9e359ace8ed9feb7f252eabcf7ba5c0e3fa7f5",
+      "bytes": 7810
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/runtime-oracle-v1.json",
+      "sha256": "6c7f1f1039d98913b1fabcca8ef061cc6a6eb9162a220bc91f6b507aa6b3505d",
+      "bytes": 1529
+    },
+    {
+      "path": "pilot/intelligence/foundational/handover/pyo3-preflight/src/lib.rs",
+      "sha256": "47215d737af45677c80abcda6b064dc38bae156ac7139ebb4dc6bff41922e969",
+      "bytes": 239
+    }
+  ],
+  "constant_memory": {
+    "schema": "library-guides.mir-memory.v1",
+    "real_compiler_controls": 3,
+    "source_backed_admission": true,
+    "analysis_head_portable_replay": true,
+    "allocation_value_interpretation": false,
+    "native_binding_qualified": false,
+    "memory_target_call_index": false
+  },
+  "pyo3_preflight": {
+    "state": "acquisition_and_runtime_preflight_only",
+    "counts": {
+      "mir_instance": 32,
+      "selected_memory": 36,
+      "bytes": 3059,
+      "nodes": 184,
+      "types": 4754,
+      "roots": 20883,
+      "mir_owner": 2000
+    },
+    "all_records_structurally_validated": 2032,
+    "exact_invocation_options_validated": true,
+    "full_body_catalog_target_join": false,
+    "normal_native_admission": false,
+    "elapsed_seconds": 24.58,
+    "maximum_child_rss_kib": 940544,
+    "existing_call_index_request_limit_bytes": 134217728,
+    "external_artifacts": [
+      {
+        "path": "/home/paul/.cache/library-deep-enrichment/foundational/20260913T101230Z/pyo3-boundary-v1/memory-v1-frames/183b41a4a62f49cb6572fea3b8dbe70deeca7cd486d06cc1b614a7bf14567d09.frames",
+        "sha256": "1e1cd466aa0fb8165880b22852960ae329433cd738a628538e48e9be1b56c88f",
+        "bytes": 207276482
+      },
+      {
+        "path": "/home/paul/.cache/library-deep-enrichment/foundational/20260913T101230Z/pyo3-boundary-v1/memory-v1-frames/183b41a4a62f49cb6572fea3b8dbe70deeca7cd486d06cc1b614a7bf14567d09.invocation.json",
+        "sha256": "70c058fee71484e5439437de460f5d9cfbf2e3ff034c0e7ab8bf8c2c7b4d0ef0",
+        "bytes": 13880
+      }
+    ],
+    "original_runtime_binary_automatically_joined_to_later_facts": false,
+    "initial_crate_hash_change_cause": "unresolved"
+  },
+  "acceptance": {
+    "complete_packages": [
+      "FB00"
+    ],
+    "complete_gates": [
+      "G0"
+    ],
+    "all_other_gates_open": true,
+    "fresh_installed_wheel": false,
+    "all_24_tasks_reassessed": false
+  },
+  "post_full_suite_changes": "checkpoint documentation and receipts only; no source changes",
+  "external_relocation": {
+    "original_run": "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z",
+    "current_run": "/home/paul/.cache/library-deep-enrichment/foundational/20260913T101230Z",
+    "original_run_path_now_absent": true,
+    "qualification_environment_current_path": "/home/paul/.cache/library-deep-enrichment/implementation/completion-20260912T220757Z/full-environment",
+    "relocated_environment_or_successor_repository_requalified": false,
+    "final_delta_location": "/home/paul/smartref/tooling/library_guides"
+  },
+  "limitations": [
+    "Two pre-existing NumPy deprecation warnings.",
+    "Prior exploratory Ruff over the entire tooling tree found five archived example diagnostics outside the specified check scope; preserved without suppressions.",
+    "Historical held-out evidence applies to its frozen model; later transfer changes need fresh qualification.",
+    "This task did not perform migration, commit, root environment sync or GPU service changes."
+  ]
+}

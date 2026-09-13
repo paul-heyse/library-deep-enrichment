@@ -1,0 +1,8 @@
+   Compiling library-guides-mir-facts v0.1.0 (/home/paul/smartref/tooling/library_guides/native/mir-facts)
+    Finished `test` profile [unoptimized] target(s) in 0.84s
+     Running unittests src/main.rs (native/mir-facts/target/debug/build/library-guides-mir-facts/28d0b04cfcb465e1/out/library_guides_mir_facts-28d0b04cfcb465e1)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

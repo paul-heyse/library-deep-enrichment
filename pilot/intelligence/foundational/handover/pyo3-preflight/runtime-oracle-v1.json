@@ -1,0 +1,49 @@
+{
+  "python": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/full-environment/bin/python",
+  "python_version": "3.14.7 (main, Aug 14 2026, 15:35:28) [Clang 22.1.3 ]",
+  "soabi": "cpython-314-x86_64-linux-gnu",
+  "binary": "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target/debug/libfoundational_arrow_binding.so",
+  "binary_sha256": "4bd2eab185eb7eb103c3344753e30f30310700cbcf337e0268f1ec7215a8002d",
+  "observations": [
+    {
+      "input": false,
+      "nullable": false,
+      "name": "value"
+    },
+    {
+      "input": true,
+      "nullable": true,
+      "name": "value"
+    },
+    {
+      "input": "None",
+      "error": "TypeError",
+      "detail": "argument 'nullable': 'None' is not an instance of 'bool'"
+    },
+    {
+      "input": "'yes'",
+      "error": "TypeError",
+      "detail": "argument 'nullable': 'str' object is not an instance of 'bool'"
+    },
+    {
+      "input": "0",
+      "error": "TypeError",
+      "detail": "argument 'nullable': 'int' object is not an instance of 'bool'"
+    },
+    {
+      "input": "1",
+      "error": "TypeError",
+      "detail": "argument 'nullable': 'int' object is not an instance of 'bool'"
+    },
+    {
+      "input": "[]",
+      "error": "TypeError",
+      "detail": "argument 'nullable': 'list' object is not an instance of 'bool'"
+    },
+    {
+      "input": "{}",
+      "error": "TypeError",
+      "detail": "argument 'nullable': 'dict' object is not an instance of 'bool'"
+    }
+  ]
+}

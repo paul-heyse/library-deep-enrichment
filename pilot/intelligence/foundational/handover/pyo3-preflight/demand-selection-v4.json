@@ -1,0 +1,27 @@
+{
+  "selected": [
+    {
+      "symbol": "pyo3_arrow::field::PyField::nullable",
+      "definition": "definition:8df7ebca6c55a21b:150d49351e9413d28df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad"
+    },
+    {
+      "symbol": "pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS",
+      "definition": "definition:8df7ebca6c55a21b:236a7d1f070c86ae8df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad"
+    },
+    {
+      "symbol": "pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods",
+      "definition": "definition:8df7ebca6c55a21b:b11f1db9ce67e0108df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad"
+    },
+    {
+      "symbol": "pyo3_arrow::field::PyField::__pymethod_get_nullable__",
+      "definition": "definition:8df7ebca6c55a21b:d5a14fe99fd43a3e8df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad"
+    }
+  ],
+  "definitions": [
+    "definition:8df7ebca6c55a21b:150d49351e9413d28df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad",
+    "definition:8df7ebca6c55a21b:236a7d1f070c86ae8df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad",
+    "definition:8df7ebca6c55a21b:b11f1db9ce67e0108df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad",
+    "definition:8df7ebca6c55a21b:d5a14fe99fd43a3e8df7ebca6c55a21b:8a146a35a994668869e0e9bc6b31cbad"
+  ],
+  "basis": "exact generic replay v3"
+}

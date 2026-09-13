@@ -1,0 +1,93 @@
+   Compiling autocfg v1.5.1
+   Compiling proc-macro2 v1.0.107
+   Compiling libm v0.2.16
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.47
+   Compiling num-traits v0.2.19
+   Compiling target-lexicon v0.13.5
+   Compiling syn v2.0.119
+   Compiling pyo3-build-config v0.28.3
+   Compiling zerocopy v0.8.57
+   Compiling libc v0.2.189
+   Compiling zerocopy-derive v0.8.57
+   Compiling cfg-if v1.0.4
+   Compiling num-integer v0.1.47
+   Compiling siphasher v1.0.3
+   Compiling phf_shared v0.12.1
+   Compiling iana-time-zone v0.1.65
+   Compiling chrono-tz v0.10.4
+   Compiling chrono v0.4.45
+   Compiling half v2.7.1
+   Compiling phf v0.12.1
+   Compiling getrandom v0.3.4
+   Compiling version_check v0.9.5
+   Compiling once_cell v1.21.4
+   Compiling hashbrown v0.17.1
+   Compiling ahash v0.8.12
+   Compiling num-bigint v0.4.8
+   Compiling num-complex v0.4.6
+   Compiling bitflags v2.13.2
+   Compiling lexical-util v1.0.7
+   Compiling bytes v1.12.1
+   Compiling arrow-buffer v58.4.0
+   Compiling arrow-schema v58.4.0
+   Compiling pyo3-ffi v0.28.3
+   Compiling pyo3-macros-backend v0.28.3
+   Compiling arrow-data v58.4.0
+   Compiling matrixmultiply v0.3.11
+   Compiling heck v0.5.0
+   Compiling arrow-array v58.4.0
+   Compiling lexical-parse-integer v1.0.6
+   Compiling lexical-write-integer v1.0.6
+   Compiling pyo3 v0.28.3
+   Compiling equivalent v1.0.2
+   Compiling rawpointer v0.2.1
+   Compiling indexmap v2.14.2
+   Compiling lexical-write-float v1.0.6
+   Compiling lexical-parse-float v1.0.6
+   Compiling pyo3-macros v0.28.3
+   Compiling arrow-select v58.4.0
+   Compiling numpy v0.28.0
+   Compiling unicode-width v0.2.2
+   Compiling thiserror v1.0.69
+   Compiling unicode-segmentation v1.13.3
+   Compiling comfy-table v7.2.2
+   Compiling arrow-ord v58.4.0
+   Compiling lexical-core v1.0.6
+   Compiling ndarray v0.17.2
+   Compiling thiserror-impl v1.0.69
+   Compiling atoi v2.0.0
+   Compiling rustc-hash v2.1.3
+   Compiling base64 v0.22.1
+   Compiling ryu v1.0.23
+   Compiling arrow-cast v58.4.0
+   Compiling pyo3-arrow v0.17.0
+instance collection failed: requested instance root is absent from this exact compiler unit
+error: could not compile `pyo3-arrow` (lib)
+
+Caused by:
+  process didn't exit successfully: `/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/checkpoints/20260913T205504Z/binaries/library-guides-mir-facts /home/paul/.rustup/toolchains/nightly-2026-08-18-x86_64-unknown-linux-gnu/bin/rustc --crate-name pyo3_arrow --edition=2021 /home/paul/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-arrow-0.17.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type rlib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="buffer_protocol"' --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("buffer_protocol", "default"))' -C metadata=4c8adb6ff4572b08 -C extra-filename=-e2b0706faad1895b --out-dir /home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/pyo3-arrow/e2b0706faad1895b/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/ahash/1014f8c26e9b679e/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-array/b9444c2321f939f9/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-buffer/b14f5684b2770aa1/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-cast/3d37e0b10acc1dfc/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-data/dfeed2f9c3cdece4/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-ord/39f2381613296dcc/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-schema/1e6b01838c425593/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-select/49c8d0b1d95839bb/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/atoi/e52824b581cc7f7b/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/base64/13a5fa74cae263c2/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/bitflags/15e58311f35fdf44/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/bytes/6510cc76d0716f58/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/cfg-if/44ba406a53fd58ee/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/chrono/c4a4dfbd40b1e32f/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/chrono-tz/a242aec3553426b2/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/comfy-table/28f394e2f75835e5/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/equivalent/1269e6c7de8384e7/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/getrandom/c110017b5928910a/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/half/2e02497ea2b113d9/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/hashbrown/077511501e49f029/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/iana-time-zone/ed77a89efa991498/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/indexmap/731003be1a5ed433/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/lexical-core/71e92d188c21a532/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/lexical-parse-float/1ad3073b58cf9dea/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/lexical-parse-integer/d3a7884276e9a27a/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/lexical-util/e1bb62acd18a107b/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/lexical-write-float/6613dd9fa92cf631/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/lexical-write-integer/b0b1ad5ffcc2340e/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/libc/c4d70db73b5d3aab/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/libm/43696a1befdda175/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/matrixmultiply/bd16068ce78cb509/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/ndarray/1cc2ac50b9ec08b8/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/num-bigint/1ae76ca7286990cb/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/num-complex/720c9876d8df9027/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/num-integer/2b7865adf8e14055/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/num-traits/0040c746d557c16d/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/numpy/cbf9f8fa240e75ec/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/once_cell/40bc50583b079270/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/phf/13f8ad2678c004b2/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/phf_shared/79204a8790679aa0/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/pyo3/f9006e6320043672/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/pyo3-ffi/2bd3fe0e6a2f4f74/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/pyo3-macros/4d878235c57aff94/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/rawpointer/66b59809eed27b46/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/rustc-hash/62f50da87644d29b/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/ryu/5f1aacf66ea136ca/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/siphasher/8e21e1a18818f118/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/thiserror/6876a5594303c90f/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/thiserror-impl/e72f41ceeb2ec92d/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/unicode-segmentation/960fe6112c11b26d/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/unicode-width/615e01c6c0883a89/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/zerocopy/a524bf464c3e6be9/out -L dependency=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/zerocopy-derive/63fd812cd19410db/out --extern arrow_array=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-array/b9444c2321f939f9/out/libarrow_array-b9444c2321f939f9.rmeta --extern arrow_buffer=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-buffer/b14f5684b2770aa1/out/libarrow_buffer-b14f5684b2770aa1.rmeta --extern arrow_cast=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-cast/3d37e0b10acc1dfc/out/libarrow_cast-3d37e0b10acc1dfc.rmeta --extern arrow_data=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-data/dfeed2f9c3cdece4/out/libarrow_data-dfeed2f9c3cdece4.rmeta --extern arrow_schema=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-schema/1e6b01838c425593/out/libarrow_schema-1e6b01838c425593.rmeta --extern arrow_select=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/arrow-select/49c8d0b1d95839bb/out/libarrow_select-49c8d0b1d95839bb.rmeta --extern chrono=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/chrono/c4a4dfbd40b1e32f/out/libchrono-c4a4dfbd40b1e32f.rmeta --extern chrono_tz=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/chrono-tz/a242aec3553426b2/out/libchrono_tz-a242aec3553426b2.rmeta --extern half=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/half/2e02497ea2b113d9/out/libhalf-2e02497ea2b113d9.rmeta --extern indexmap=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/indexmap/731003be1a5ed433/out/libindexmap-731003be1a5ed433.rmeta --extern numpy=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/numpy/cbf9f8fa240e75ec/out/libnumpy-cbf9f8fa240e75ec.rmeta --extern pyo3=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/pyo3/f9006e6320043672/out/libpyo3-f9006e6320043672.rmeta --extern thiserror=/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/pyo3-boundary-v1/target-demand/debug/build/thiserror/6876a5594303c90f/out/libthiserror-6876a5594303c90f.rmeta --cap-lints allow -C target-cpu=native -C link-arg=-fuse-ld=mold` (exit status: 1)
+Command exited with non-zero status 101
+	Command being timed: "cargo +nightly-2026-08-18 build --locked -j 2 --manifest-path Cargo.toml --target-dir target-demand --message-format=json"
+	User time (seconds): 49.71
+	System time (seconds): 3.12
+	Percent of CPU this job got: 158%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:33.36
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 874012
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2767498
+	Voluntary context switches: 10807
+	Involuntary context switches: 3107
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1897216
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 101

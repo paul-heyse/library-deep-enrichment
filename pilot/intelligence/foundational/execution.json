@@ -1,7 +1,7 @@
 {
   "run": "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z",
   "baseline_receipt": "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/preservation.json",
-  "status": "G0 complete; executable projection and admission in progress; G1-G7 open",
+  "status": "Paused by user for standalone repository pivot; FB00/G0 complete; constant-memory increment verified; G1-G7 open",
   "baseline_checks": {
     "pytest": "315 passed, 2 pre-existing transitive NumPy deprecations in 112.31s",
     "ruff": "passed",
@@ -9,14 +9,14 @@
     "pyrefly": "0 diagnostics"
   },
   "integration_checks": {
-    "pytest": "454 passed, 2 existing warnings in 209.26s; lifecycle-full-suite.log",
+    "pytest": "458 passed, 2 existing warnings in 211.07s; handover/handover-full-suite-v1.log",
     "focused_behavior": "107 passed in 26.73s; projection-budget-behavior-suite.log",
     "source_worker": "pinned stable check/build/Clippy passed",
-    "ruff": "plan scope passed; lifecycle-final-ruff-v2.log",
-    "pyrefly": "0 diagnostics; lifecycle-final-pyrefly-v1.log",
-    "mir_worker": "pinned nightly build/Clippy passed with actual working-directory/provider invocation identity",
+    "ruff": "plan scope passed; handover/handover-ruff-v1.log",
+    "pyrefly": "0 diagnostics in configured project scope; handover/handover-pyrefly-v1.log",
+    "mir_worker": "pinned nightly locked build, all-target Clippy, Cargo test (0 Rust unit tests), format and legacy schema compatibility passed; actual compiler controls in full pytest suite",
     "python_semantics_worker": "pinned stable build/Clippy passed; exact resolver patch verified",
-    "format": "plan scope passed; lifecycle-final-format-v2.log",
+    "format": "445 files already formatted; handover/handover-format-v1.log",
     "callable_after_ordering_fix": "4 focused controls and both real development archive replays passed",
     "compilation_regression": "13 passed in 13.37s; compilation-regression-tests.log",
     "failure_after_history_fix": "13 passed, 2 existing warnings in 12.25s; stage-failure-input-tests-v3.log",
@@ -431,5 +431,47 @@
     "latest_seconds": 6.36,
     "full_suite_after_feature": false,
     "terminal_qualified": false
+  },
+  "execution_state": "paused_by_user_for_repository_migration",
+  "current_run_location": "/home/paul/.cache/library-deep-enrichment/foundational/20260913T101230Z",
+  "constant_memory_checkpoint": {
+    "receipt": {
+      "path": "pilot/intelligence/foundational/CONSTANT_MEMORY_CHECKPOINT.md",
+      "sha256": "27399151fdb35b48dc8ff1bc66a6f953ba702ef2b5ad0b9b4744818a8ff1173c",
+      "bytes": 8147
+    },
+    "validation": {
+      "path": "pilot/intelligence/foundational/handover-validation.json",
+      "sha256": "b9da4444bac77089daaf4c95111c8b8623f127f0658be1db06e1330898b1d4c0",
+      "bytes": 14128
+    },
+    "schema": "library-guides.mir-memory.v1",
+    "generic_owners_in_real_preflight": 2000,
+    "concrete_owners_in_real_preflight": 32,
+    "native_binding_qualified": false,
+    "terminal_qualified": false
+  },
+  "handover": {
+    "status_document": "docs/foundational_behavior_characterization_status_and_repo_handover_2026-09-13.md",
+    "validation": {
+      "path": "pilot/intelligence/foundational/handover-validation.json",
+      "sha256": "b9da4444bac77089daaf4c95111c8b8623f127f0658be1db06e1330898b1d4c0",
+      "bytes": 14128
+    },
+    "source_freeze": {
+      "path": "pilot/intelligence/foundational/handover-source-freeze.json",
+      "sha256": "5a64c4b6552f2d8d34ca95515bbf8000af1445a51644553e6fe9c69785281237",
+      "bytes": 98867
+    },
+    "stop_reason": "User requested finishing the current increment and comprehensive status before standalone repository pivot. Scope and acceptance are unchanged.",
+    "current_run_location": "/home/paul/.cache/library-deep-enrichment/foundational/20260913T101230Z",
+    "package_counts": {
+      "complete": 1,
+      "in_progress": 13,
+      "not_started": 5
+    },
+    "plan_complete": false,
+    "last_increment": "bounded constant-memory acquisition/validation/admission and portable controls",
+    "next_package_started": false
   }
 }

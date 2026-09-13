@@ -1,0 +1,189 @@
+{
+  "counts": {
+    "mir_instance": 32,
+    "selected_memory": 36,
+    "bytes": 3059,
+    "nodes": 184,
+    "types": 4754,
+    "roots": 20883,
+    "mir_owner": 2000
+  },
+  "examples": [
+    {
+      "symbol": "pyo3::impl_::trampoline::reprfunc::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3_arrow::field::PyField::__pymethod_get_nullable__",
+      "roots": 9,
+      "nodes": 1,
+      "bytes": 8,
+      "types": 162,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3::impl_::trampoline::fastcall_cfunction_with_keywords::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3::impl_::trampoline::noargs::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3::impl_::trampoline::fastcall_cfunction_with_keywords::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3::impl_::trampoline::fastcall_cfunction_with_keywords::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3::impl_::trampoline::noargs::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3::impl_::trampoline::fastcall_cfunction_with_keywords::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3::impl_::trampoline::richcmpfunc::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3::impl_::trampoline::fastcall_cfunction_with_keywords::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3::impl_::trampoline::fastcall_cfunction_with_keywords::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3::impl_::trampoline::fastcall_cfunction_with_keywords::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3::impl_::trampoline::newfunc::<pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS::Def>",
+      "roots": 2,
+      "nodes": 2,
+      "bytes": 8,
+      "types": 137,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS",
+      "roots": 2,
+      "nodes": 45,
+      "bytes": 1299,
+      "types": 181,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods",
+      "roots": 1,
+      "nodes": 46,
+      "bytes": 1323,
+      "types": 180,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    },
+    {
+      "symbol": "pyo3_arrow::field::PyField::__pymethod_get_nullable__",
+      "roots": 9,
+      "nodes": 1,
+      "bytes": 8,
+      "types": 162,
+      "frontier": [
+        "physical_layout_does_not_establish_runtime_lifetime_or_abi_conformance",
+        "projected_assignment_and_call_operands_only"
+      ]
+    }
+  ]
+}

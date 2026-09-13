@@ -1,8 +1,10 @@
-> **Migrated 2026-09-13** from `smartref/tooling/library_guides/docs/foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md`. Frozen provenance: paths inside refer to the pre-migration layout (`library_guides/` is now `src/library_deep_enrichment/`, `native/` and `rustdoc-helper/` are now `crates/`).
+> **Migrated 2026-09-13** from `smartref/tooling/library_guides/docs/foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md` (refreshed from the final handover delta). Frozen provenance: paths inside refer to the pre-migration layout (`library_guides/` is now `src/library_deep_enrichment/`, `native/` and `rustdoc-helper/` are now `crates/`).
 
 # Foundational behavior characterization — implementation plan v1
 
 Date: 2026-09-13. State: **implementation in progress; G0 baseline/reservation accepted, G1–G7 open**.
+
+Execution is paused at the user's requested checkpoint for a standalone-repository pivot. The [comprehensive status and migration handover](foundational_behavior_characterization_status_and_repo_handover_2026-09-13.md) records implemented scope and every remaining obligation; the plan's acceptance scope is unchanged.
 
 Execution progress and remaining obligations: [foundational status](../pilot/intelligence/foundational/STATUS.md). The acceptance scope below remains unchanged.
 

@@ -1,0 +1,31 @@
+{
+  "definitions": [
+    "definition:8df7ebca6c55a21b:150d49351e9413d28df7ebca6c55a21b:ab114df19e8810e7023fb14f213e3a6b",
+    "definition:8df7ebca6c55a21b:236a7d1f070c86ae8df7ebca6c55a21b:ab114df19e8810e7023fb14f213e3a6b",
+    "definition:8df7ebca6c55a21b:b11f1db9ce67e0108df7ebca6c55a21b:ab114df19e8810e7023fb14f213e3a6b",
+    "definition:8df7ebca6c55a21b:d5a14fe99fd43a3e8df7ebca6c55a21b:ab114df19e8810e7023fb14f213e3a6b"
+  ],
+  "selected": [
+    {
+      "symbol": "pyo3_arrow::field::PyField::nullable",
+      "definition": "definition:8df7ebca6c55a21b:150d49351e9413d28df7ebca6c55a21b:ab114df19e8810e7023fb14f213e3a6b",
+      "prior_native_id": "mir:54e10afd0ed0e5b53ce583e235ae43b4c773387ec85a3cb0225feceda66ca4e7:150d49351e9413d28df7ebca6c55a21b"
+    },
+    {
+      "symbol": "pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods::ITEMS",
+      "definition": "definition:8df7ebca6c55a21b:236a7d1f070c86ae8df7ebca6c55a21b:ab114df19e8810e7023fb14f213e3a6b",
+      "prior_native_id": "mir:54e10afd0ed0e5b53ce583e235ae43b4c773387ec85a3cb0225feceda66ca4e7:236a7d1f070c86ae8df7ebca6c55a21b"
+    },
+    {
+      "symbol": "pyo3_arrow::field::<impl pyo3::impl_::pyclass::PyMethods<pyo3_arrow::field::PyField> for pyo3::impl_::pyclass::PyClassImplCollector<pyo3_arrow::field::PyField>>::py_methods",
+      "definition": "definition:8df7ebca6c55a21b:b11f1db9ce67e0108df7ebca6c55a21b:ab114df19e8810e7023fb14f213e3a6b",
+      "prior_native_id": "mir:54e10afd0ed0e5b53ce583e235ae43b4c773387ec85a3cb0225feceda66ca4e7:b11f1db9ce67e0108df7ebca6c55a21b"
+    },
+    {
+      "symbol": "pyo3_arrow::field::PyField::__pymethod_get_nullable__",
+      "definition": "definition:8df7ebca6c55a21b:d5a14fe99fd43a3e8df7ebca6c55a21b:ab114df19e8810e7023fb14f213e3a6b",
+      "prior_native_id": "mir:54e10afd0ed0e5b53ce583e235ae43b4c773387ec85a3cb0225feceda66ca4e7:d5a14fe99fd43a3e8df7ebca6c55a21b"
+    }
+  ],
+  "basis": "exact definitions from original captured generic compiler unit; no inferred runtime binding"
+}
