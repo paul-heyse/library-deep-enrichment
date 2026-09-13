@@ -1,0 +1,12 @@
+id: no-smartref-coupling
+language: python
+severity: error
+message: A path or import reaching into the smartref monorepo. This repository is standalone; service state lives under LDE_HOME and library facts come from Context7 and the workers.
+note: See .claude/rules/library-lookup.md and AGENTS.md. Resolve paths through library_deep_enrichment.paths.
+rule:
+  any:
+    - pattern: import smartref
+    - pattern: from smartref import $$$A
+    - pattern: from smartref.$M import $$$A
+    - kind: string
+      regex: "(/home/paul/smartref|tooling/library_guides|docs/library_ref)"

@@ -1,0 +1,45 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/env bash \"$(git rev-parse --show-toplevel)/scripts/hooks/session_start.sh\"",
+            "statusMessage": "Loading library-deep-enrichment environment"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "/usr/bin/env bash \"$(git rev-parse --show-toplevel)/scripts/hooks/pre_bash.sh\"" }
+        ]
+      },
+      {
+        "matcher": "Edit|Write|apply_patch",
+        "hooks": [
+          { "type": "command", "command": "/usr/bin/env bash \"$(git rev-parse --show-toplevel)/scripts/hooks/pre_edit.sh\"" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|apply_patch",
+        "hooks": [
+          { "type": "command", "command": "/usr/bin/env bash \"$(git rev-parse --show-toplevel)/scripts/hooks/post_edit.sh\"" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "/usr/bin/env bash \"$(git rev-parse --show-toplevel)/scripts/hooks/stop_guard.sh\"" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+id: no-home-relative-state-path
+language: python
+severity: error
+message: Hard-coded service state under ~/.cache. Resolve it through library_deep_enrichment.paths (LDE_HOME) so sessions and tests can redirect state.
+note: paths.home(), paths.default_corpus(), paths.runtime_root(), paths.acquired_root(), paths.examples_root().
+files:
+  - "src/**/*.py"
+  - "pilot/**/*.py"
+rule:
+  kind: string
+  regex: "\\.cache/library-(deep-enrichment|guides)"

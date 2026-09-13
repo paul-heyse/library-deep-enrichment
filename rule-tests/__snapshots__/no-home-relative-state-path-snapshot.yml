@@ -1,0 +1,14 @@
+id: no-home-relative-state-path
+snapshots:
+  lock = Path.home() / ".cache/library-deep-enrichment/examples/execution.lock":
+    labels:
+    - source: '".cache/library-deep-enrichment/examples/execution.lock"'
+      style: primary
+      start: 21
+      end: 77
+  root = Path("/home/paul/.cache/library-guides-intelligence"):
+    labels:
+    - source: '"/home/paul/.cache/library-guides-intelligence"'
+      style: primary
+      start: 12
+      end: 59

@@ -1,0 +1,14 @@
+id: no-print-in-worker-protocol
+snapshots:
+  print('debug', file=sys.stdout):
+    labels:
+    - source: print('debug', file=sys.stdout)
+      style: primary
+      start: 0
+      end: 31
+  print(record):
+    labels:
+    - source: print(record)
+      style: primary
+      start: 0
+      end: 13

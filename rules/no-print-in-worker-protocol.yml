@@ -1,0 +1,11 @@
+id: no-print-in-worker-protocol
+language: python
+severity: error
+message: stdout is the framed fact channel in a worker; a stray print() corrupts every frame after it.
+note: Write diagnostics to stderr (sys.stderr) or record them as worker observations.
+files:
+  - "src/library_deep_enrichment/_worker_entry.py"
+  - "src/library_deep_enrichment/worker_runtime.py"
+  - "src/library_deep_enrichment/workflows/worker.py"
+rule:
+  pattern: print($$$ARGS)

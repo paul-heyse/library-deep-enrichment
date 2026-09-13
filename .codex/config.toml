@@ -1,0 +1,39 @@
+# Codex CLI project configuration. Mirrors what .claude/settings.json gives Claude Code:
+# the same environment (scripts/env.sh via the session hook), the same Context7 MCP server
+# for library documentation, and no user-scope mutations.
+
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+web_search = "live"
+file_opener = "cursor"
+history.persistence = "save-all"
+
+[features]
+hooks = true
+
+[sandbox_workspace_write]
+network_access = true
+# Cargo and uv caches, plus the service-state root for corpora (never inside the repo).
+writable_roots = ["~/.cache", "~/.cargo", "~/.local/share/uv"]
+
+[shell_environment_policy]
+inherit = "core"
+
+# Codex has no per-session env-file mechanism analogous to CLAUDE_ENV_FILE, so the parts of
+# scripts/env.sh that must reach tool calls are duplicated here. Keep them in step.
+[shell_environment_policy.set]
+LDE_ROOT = "/home/paul/library-deep-enrichment"
+LDE_HOME = "/home/paul/library-deep-enrichment/.dev-state"
+VIRTUAL_ENV = "/home/paul/library-deep-enrichment/.venv"
+UV_PROJECT_ENVIRONMENT = "/home/paul/library-deep-enrichment/.venv"
+UV_NO_SYNC = "1"
+PYTHONDONTWRITEBYTECODE = "1"
+CARGO_TERM_COLOR = "never"
+RUST_BACKTRACE = "1"
+PATH = "/home/paul/library-deep-enrichment/.venv/bin:/home/paul/library-deep-enrichment/.dev-state/bin:/home/paul/.local/bin:/home/paul/.cargo/bin:/usr/local/bin:/usr/bin:/bin"
+
+# Library documentation is resolved through Context7; exact-release facts through the workers.
+# Pinned: verified on npm 2026-09-13 (`npm view @upstash/context7-mcp version` -> 4.1.0).
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp@4.1.0"]

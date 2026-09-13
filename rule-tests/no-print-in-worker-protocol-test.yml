@@ -1,0 +1,7 @@
+id: no-print-in-worker-protocol
+valid:
+  - "sys.stderr.write('diagnostic\\n')"
+  - "stream.frame(record)"
+invalid:
+  - "print(record)"
+  - "print('debug', file=sys.stdout)"

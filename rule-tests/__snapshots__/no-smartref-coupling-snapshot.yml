@@ -1,0 +1,26 @@
+id: no-smartref-coupling
+snapshots:
+  CONTENT_ROOT = Path("docs/library_ref/agent_reference"):
+    labels:
+    - source: '"docs/library_ref/agent_reference"'
+      style: primary
+      start: 20
+      end: 54
+  from smartref.contracts import x:
+    labels:
+    - source: from smartref.contracts import x
+      style: primary
+      start: 0
+      end: 32
+  import smartref:
+    labels:
+    - source: import smartref
+      style: primary
+      start: 0
+      end: 15
+  p = Path("/home/paul/smartref/.cache/library-guides-intelligence"):
+    labels:
+    - source: '"/home/paul/smartref/.cache/library-guides-intelligence"'
+      style: primary
+      start: 9
+      end: 65

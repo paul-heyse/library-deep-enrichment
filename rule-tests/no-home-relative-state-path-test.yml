@@ -1,0 +1,7 @@
+id: no-home-relative-state-path
+valid:
+  - "corpus = default_corpus()"
+  - 'lock = examples_root() / "execution.lock"'
+invalid:
+  - 'lock = Path.home() / ".cache/library-deep-enrichment/examples/execution.lock"'
+  - 'root = Path("/home/paul/.cache/library-guides-intelligence")'

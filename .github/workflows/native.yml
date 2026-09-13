@@ -1,0 +1,52 @@
+name: native-workers
+
+# The three standalone worker workspaces vendor ruff and pyrefly and take tens of minutes to
+# compile cold, so they run on demand and weekly rather than on every push. The root
+# workspace (protocol + rustdoc-facts) is covered by ci.yml on every change.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 1"
+
+env:
+  CARGO_TERM_COLOR: never
+  RUST_BACKTRACE: 1
+  LDE_HOME: ${{ github.workspace }}/.dev-state
+
+jobs:
+  workers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install the pinned stable toolchain and the dated MIR nightly
+        run: |
+          rustup show active-toolchain || rustup toolchain install
+          rustup toolchain install nightly-2026-08-18 --profile minimal --component rustc-dev,rust-src,llvm-tools
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: |
+            . -> target
+            crates/source-facts -> target
+            crates/python-semantics -> target
+            crates/mir-facts -> target
+
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: just
+
+      - name: Install bubblewrap (worker sandbox)
+        run: sudo apt-get update -q && sudo apt-get install -y -q bubblewrap
+
+      - run: uv sync --frozen --all-groups --all-extras
+      - run: just native-bootstrap
+      - run: just native-build
+      - run: just native-check
+      - run: just test-native

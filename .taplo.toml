@@ -1,0 +1,7 @@
+# taplo (TOML formatter/linter) scope. The Python environment and build outputs are not ours.
+exclude = [".venv/**", "**/target/**", "crates/*/upstream/**", ".dev-state/**"]
+
+[formatting]
+align_entries = false
+column_width = 100
+reorder_keys = false

@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+Cargo.lock                     linguist-generated
+uv.lock                        linguist-generated
+pilot/qualified/sources/**     linguist-generated
+pilot/intelligence/reports/**  linguist-generated
+tests/fixtures/*.json          linguist-generated
+*.whl                          binary
+rule-tests/__snapshots__/**    linguist-generated

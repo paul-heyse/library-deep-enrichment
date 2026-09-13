@@ -1,0 +1,54 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_TERM_COLOR: never
+  RUST_BACKTRACE: 1
+  LDE_HOME: ${{ github.workspace }}/.dev-state
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      # rust-toolchain.toml is the single toolchain authority; installing from it keeps CI and
+      # local builds on the same compiler by construction.
+      - name: Install the pinned Rust toolchain
+        run: rustup show active-toolchain || rustup toolchain install
+
+      - uses: Swatinem/rust-cache@v2
+
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-nextest,cargo-deny,just,ast-grep,taplo-cli,typos-cli
+
+      - name: Install bubblewrap (worker sandbox)
+        run: sudo apt-get update -q && sudo apt-get install -y -q bubblewrap
+
+      - name: Sync the Python environment from the lockfile
+        run: uv sync --frozen --all-groups --all-extras
+
+      # Same order as `just ci`. If you add a step to one, add it to the other.
+      - run: just toolchain-check
+      - run: just hooks-test
+      - run: just rules-test
+      - run: just fmt-check
+      - run: just lint
+      - run: just check
+      - run: just test
+      - run: just typecheck
+      - run: just deps-policy

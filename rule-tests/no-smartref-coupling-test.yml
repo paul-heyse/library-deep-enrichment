@@ -1,0 +1,9 @@
+id: no-smartref-coupling
+valid:
+  - "from library_deep_enrichment.paths import home"
+  - 'root = Path(os.environ["LDE_HOME"])'
+invalid:
+  - "import smartref"
+  - "from smartref.contracts import x"
+  - 'p = Path("/home/paul/smartref/.cache/library-guides-intelligence")'
+  - 'CONTENT_ROOT = Path("docs/library_ref/agent_reference")'

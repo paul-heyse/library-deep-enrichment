@@ -42,7 +42,7 @@ setup:
 [doc("Install Python dependencies exactly as locked (dev group included, no extras).")]
 [group('environment')]
 sync:
-    uv sync --frozen --all-groups
+    uv sync --frozen --all-groups --all-extras
 
 [doc("Also install the `embed` extra (tokenizer + model snapshot acquisition; pulls torch).")]
 [group('environment')]
@@ -148,8 +148,7 @@ test: test-rust test-python
 [doc("Run the pinned upstream extraction canaries and every worker-dependent test; workers must be built.")]
 [group('gate')]
 test-native:
-    LDE_REQUIRE_WORKERS=1 pytest -m "native_lanes"
-    LDE_REQUIRE_WORKERS=1 pytest -m "not native_lanes" -k "worker or native or behavior or mir or source_facts"
+    LDE_REQUIRE_WORKERS=1 pytest
 
 [doc("Assert dependency policy for the root workspace: bans, licenses, sources.")]
 [group('gate')]
