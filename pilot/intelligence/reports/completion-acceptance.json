@@ -1,0 +1,1820 @@
+{
+  "scope": "Finite implementation controls for the retained pilot. Semantic task gaps and native frontiers are accepted explicit outputs, not certified library guarantees.",
+  "checks": [
+    {
+      "id": "U01",
+      "check": "Legacy YAML/index/generation mutations leave the active corpus CLI unchanged; active writes require the coordinator.",
+      "tests": [
+        "test_fabric_application"
+      ],
+      "passing_controls": {
+        "test_fabric_application": [
+          "test_active_cli_uses_only_the_pinned_corpus_even_when_legacy_files_change",
+          "test_authoring_predecessor_and_stage_output_ownership_are_enforced",
+          "test_family_page_reports_continuation_instead_of_claiming_a_complete_inventory"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U02",
+      "check": "Typed records, ordered declaration variants, exact bytes and unknowns survive Arrow/Lance and portable restoration.",
+      "tests": [
+        "test_corpus_fabric",
+        "test_native_fabric",
+        "test_declaration_formats",
+        "test_source_maps"
+      ],
+      "passing_controls": {
+        "test_corpus_fabric": [
+          "test_append_updates_index_deltas_without_rebuilding_existing_indexes",
+          "test_crash_cannot_admit_orphan_rows[jobs]",
+          "test_crash_cannot_admit_orphan_rows[manifests]",
+          "test_crash_cannot_admit_orphan_rows[memberships]",
+          "test_exact_fields_and_original_bytes_are_inside_the_corpus",
+          "test_fresh_head_and_pinned_reader_do_not_mix_jobs",
+          "test_index_maintenance_retains_exact_membership_and_pinned_history",
+          "test_producers_cannot_rewrite_policy",
+          "test_unchanged_small_transaction_does_not_scan_the_population"
+        ],
+        "test_native_fabric": [
+          "test_contextual_identity_does_not_merge_reused_item_ids_across_artifacts",
+          "test_fabric_source_analysis_replays_after_transport_removal[False]",
+          "test_fabric_source_analysis_replays_after_transport_removal[True]",
+          "test_native_authority_and_forged_projection",
+          "test_native_corruption_withdraws_current_success",
+          "test_native_receipt_denominator_is_not_a_citation_gesture",
+          "test_nested_callback_return_recovery[def f(x: Callable[[A], B]) -> Callable[[C], D]:-Callable[[C], D]]",
+          "test_nested_callback_return_recovery[fn f(callback: fn() -> ())-]",
+          "test_nested_callback_return_recovery[fn map<F: Fn(T) -> U>(f: F) -> Vec<U>-Vec<U>]",
+          "test_nested_callback_return_recovery[fn(f: fn(T) -> U) -> fn(V) -> W-fn(V) -> W]",
+          "test_python_source_interface_preserves_slots_and_replays_without_transport"
+        ],
+        "test_declaration_formats": [
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[57]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[59]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[60]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[61]"
+        ],
+        "test_source_maps": [
+          "test_blockquote_fence_and_python_prompt_offsets",
+          "test_escaped_python_literal_has_non_linear_support",
+          "test_unicode_crlf_doc_comments_and_hidden_lines",
+          "test_unknown_language_and_non_documentation_remain_unknown"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U03",
+      "check": "Crashes at family, membership and manifest writes preserve the prior head and hide orphan rows.",
+      "tests": [
+        "test_corpus_fabric"
+      ],
+      "passing_controls": {
+        "test_corpus_fabric": [
+          "test_append_updates_index_deltas_without_rebuilding_existing_indexes",
+          "test_crash_cannot_admit_orphan_rows[jobs]",
+          "test_crash_cannot_admit_orphan_rows[manifests]",
+          "test_crash_cannot_admit_orphan_rows[memberships]",
+          "test_exact_fields_and_original_bytes_are_inside_the_corpus",
+          "test_fresh_head_and_pinned_reader_do_not_mix_jobs",
+          "test_index_maintenance_retains_exact_membership_and_pinned_history",
+          "test_producers_cannot_rewrite_policy",
+          "test_unchanged_small_transaction_does_not_scan_the_population"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U04",
+      "check": "Stale predecessors, mixed proposed membership and unauthorized output ownership are rejected.",
+      "tests": [
+        "test_batched_corpus_reads",
+        "test_fabric_application"
+      ],
+      "passing_controls": {
+        "test_batched_corpus_reads": [
+          "test_batch_overlay_rejects_superseded_and_retired_support[False]",
+          "test_batch_overlay_rejects_superseded_and_retired_support[True]",
+          "test_batch_preserves_order_duplicates_and_pinned_history",
+          "test_validation_batches_evidence_selections_across_records",
+          "test_wide_comparisons_do_not_issue_per_candidate_point_reads"
+        ],
+        "test_fabric_application": [
+          "test_active_cli_uses_only_the_pinned_corpus_even_when_legacy_files_change",
+          "test_authoring_predecessor_and_stage_output_ownership_are_enforced",
+          "test_family_page_reports_continuation_instead_of_claiming_a_complete_inventory"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U05",
+      "check": "Failed changed producers retire stale current outputs; interrupted pre-admission attempts remain failures.",
+      "tests": [
+        "test_discovery_fabric",
+        "test_semantic_intelligence",
+        "test_native_fabric"
+      ],
+      "passing_controls": {
+        "test_discovery_fabric": [
+          "test_cli_retains_lexical_results_when_runtime_initialization_fails",
+          "test_embedding_recipe_roundtrip_and_numerical_rejection",
+          "test_failed_changed_stage_cannot_reuse_previous_success",
+          "test_fca_closure_records_support_not_negative_truth",
+          "test_graph_projection_retains_isolates_and_discovery_sources",
+          "test_new_competitor_invalidates_stage_but_pinned_view_survives",
+          "test_real_souffle_positive_join_and_recursive_cycle"
+        ],
+        "test_semantic_intelligence": [
+          "test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta",
+          "test_document_qualifiers_are_not_discarded[except]",
+          "test_document_qualifiers_are_not_discarded[if]",
+          "test_document_qualifiers_are_not_discarded[may]",
+          "test_document_qualifiers_are_not_discarded[might]",
+          "test_document_qualifiers_are_not_discarded[never]",
+          "test_document_qualifiers_are_not_discarded[not]",
+          "test_document_qualifiers_are_not_discarded[unless]",
+          "test_failed_semantic_build_retires_its_old_current_outputs",
+          "test_forged_consequence_cannot_reuse_valid_citations",
+          "test_generated_choice_reverse_and_portable_release",
+          "test_integer_range_and_unconditional_context_conflict",
+          "test_later_paragraph_exception_prevents_unconditional_delivery",
+          "test_portable_successor_withdraws_changed_premise_without_jobs",
+          "test_preferences_do_not_assign_favorable_cost_to_unknown_candidates",
+          "test_solver_does_not_assign_unknown_context_in_our_favor"
+        ],
+        "test_native_fabric": [
+          "test_contextual_identity_does_not_merge_reused_item_ids_across_artifacts",
+          "test_fabric_source_analysis_replays_after_transport_removal[False]",
+          "test_fabric_source_analysis_replays_after_transport_removal[True]",
+          "test_native_authority_and_forged_projection",
+          "test_native_corruption_withdraws_current_success",
+          "test_native_receipt_denominator_is_not_a_citation_gesture",
+          "test_nested_callback_return_recovery[def f(x: Callable[[A], B]) -> Callable[[C], D]:-Callable[[C], D]]",
+          "test_nested_callback_return_recovery[fn f(callback: fn() -> ())-]",
+          "test_nested_callback_return_recovery[fn map<F: Fn(T) -> U>(f: F) -> Vec<U>-Vec<U>]",
+          "test_nested_callback_return_recovery[fn(f: fn(T) -> U) -> fn(V) -> W-fn(V) -> W]",
+          "test_python_source_interface_preserves_slots_and_replays_without_transport"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U06",
+      "check": "Forged consequences, changed predicate values and dropped source qualifiers fail replay.",
+      "tests": [
+        "test_semantic_intelligence",
+        "test_semantic_packs",
+        "test_input_contract_pack"
+      ],
+      "passing_controls": {
+        "test_semantic_intelligence": [
+          "test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta",
+          "test_document_qualifiers_are_not_discarded[except]",
+          "test_document_qualifiers_are_not_discarded[if]",
+          "test_document_qualifiers_are_not_discarded[may]",
+          "test_document_qualifiers_are_not_discarded[might]",
+          "test_document_qualifiers_are_not_discarded[never]",
+          "test_document_qualifiers_are_not_discarded[not]",
+          "test_document_qualifiers_are_not_discarded[unless]",
+          "test_failed_semantic_build_retires_its_old_current_outputs",
+          "test_forged_consequence_cannot_reuse_valid_citations",
+          "test_generated_choice_reverse_and_portable_release",
+          "test_integer_range_and_unconditional_context_conflict",
+          "test_later_paragraph_exception_prevents_unconditional_delivery",
+          "test_portable_successor_withdraws_changed_premise_without_jobs",
+          "test_preferences_do_not_assign_favorable_cost_to_unknown_candidates",
+          "test_solver_does_not_assign_unknown_context_in_our_favor"
+        ],
+        "test_semantic_packs": [
+          "test_a_pathological_model_cannot_hang_the_consequence_checker",
+          "test_pack_approval_is_separate_and_full_field_templates_keep_alternative_polarity",
+          "test_registry_facets_require_their_own_observed_fields"
+        ],
+        "test_input_contract_pack": [
+          "test_input_forms_and_eof_do_not_inherit_negated_or_appended_contracts[input]",
+          "test_input_forms_and_eof_do_not_inherit_negated_or_appended_contracts[result]"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U07",
+      "check": "Rules, schemas, invocation mappings and witnesses require their separate approval authority; source citations alone grant none.",
+      "tests": [
+        "test_semantic_intelligence",
+        "test_semantic_enrichment",
+        "test_corpus_fabric"
+      ],
+      "passing_controls": {
+        "test_semantic_intelligence": [
+          "test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta",
+          "test_document_qualifiers_are_not_discarded[except]",
+          "test_document_qualifiers_are_not_discarded[if]",
+          "test_document_qualifiers_are_not_discarded[may]",
+          "test_document_qualifiers_are_not_discarded[might]",
+          "test_document_qualifiers_are_not_discarded[never]",
+          "test_document_qualifiers_are_not_discarded[not]",
+          "test_document_qualifiers_are_not_discarded[unless]",
+          "test_failed_semantic_build_retires_its_old_current_outputs",
+          "test_forged_consequence_cannot_reuse_valid_citations",
+          "test_generated_choice_reverse_and_portable_release",
+          "test_integer_range_and_unconditional_context_conflict",
+          "test_later_paragraph_exception_prevents_unconditional_delivery",
+          "test_portable_successor_withdraws_changed_premise_without_jobs",
+          "test_preferences_do_not_assign_favorable_cost_to_unknown_candidates",
+          "test_solver_does_not_assign_unknown_context_in_our_favor"
+        ],
+        "test_semantic_enrichment": [
+          "test_document_projection_keeps_later_qualifiers_and_rejects_rewritten_text",
+          "test_real_isolated_witness_is_finite_and_cannot_rewrite_its_output",
+          "test_state_transfer_requires_mapping_approval_and_does_not_invent_missing_properties",
+          "test_symbolic_default_never_becomes_a_constant_and_literal_domain_is_finite"
+        ],
+        "test_corpus_fabric": [
+          "test_append_updates_index_deltas_without_rebuilding_existing_indexes",
+          "test_crash_cannot_admit_orphan_rows[jobs]",
+          "test_crash_cannot_admit_orphan_rows[manifests]",
+          "test_crash_cannot_admit_orphan_rows[memberships]",
+          "test_exact_fields_and_original_bytes_are_inside_the_corpus",
+          "test_fresh_head_and_pinned_reader_do_not_mix_jobs",
+          "test_index_maintenance_retains_exact_membership_and_pinned_history",
+          "test_producers_cannot_rewrite_policy",
+          "test_unchanged_small_transaction_does_not_scan_the_population"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U08",
+      "check": "Unknown/conflicting evidence and unobserved objective values cannot become favorable facts or solver assignments.",
+      "tests": [
+        "test_semantic_intelligence",
+        "test_task_applicability",
+        "test_mir_analyses"
+      ],
+      "passing_controls": {
+        "test_semantic_intelligence": [
+          "test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta",
+          "test_document_qualifiers_are_not_discarded[except]",
+          "test_document_qualifiers_are_not_discarded[if]",
+          "test_document_qualifiers_are_not_discarded[may]",
+          "test_document_qualifiers_are_not_discarded[might]",
+          "test_document_qualifiers_are_not_discarded[never]",
+          "test_document_qualifiers_are_not_discarded[not]",
+          "test_document_qualifiers_are_not_discarded[unless]",
+          "test_failed_semantic_build_retires_its_old_current_outputs",
+          "test_forged_consequence_cannot_reuse_valid_citations",
+          "test_generated_choice_reverse_and_portable_release",
+          "test_integer_range_and_unconditional_context_conflict",
+          "test_later_paragraph_exception_prevents_unconditional_delivery",
+          "test_portable_successor_withdraws_changed_premise_without_jobs",
+          "test_preferences_do_not_assign_favorable_cost_to_unknown_candidates",
+          "test_solver_does_not_assign_unknown_context_in_our_favor"
+        ],
+        "test_task_applicability": [
+          "test_input_contract_dimensions[slot0-supported]",
+          "test_input_contract_dimensions[slot1-refuted]",
+          "test_input_contract_dimensions[slot2-refuted]",
+          "test_input_contract_dimensions[slot3-unknown]",
+          "test_input_contract_dimensions[slot4-unknown]",
+          "test_input_contract_dimensions[slot5-refuted]",
+          "test_input_contract_dimensions[slot6-unknown]",
+          "test_multi_input_consumption_and_limit",
+          "test_task_mutation_preserves_other_decisions_but_new_competitor_invalidates",
+          "test_versioned_comparison_and_forgery"
+        ],
+        "test_mir_analyses": [
+          "test_conditional_assignment_preserves_uninitialized_path",
+          "test_dominating_branch_does_not_control_rejoined_call",
+          "test_indirect_callable_flow_does_not_resolve_dispatch",
+          "test_only_values_reaching_return_and_projected_writes",
+          "test_recursive_effects_propagate_with_separate_support_dag"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U09",
+      "check": "Negation, modality, exceptions, symbolic defaults, source identity and native wrappers retain narrow facts or explicit uncertainty.",
+      "tests": [
+        "test_semantic_intelligence",
+        "test_semantic_enrichment",
+        "test_native_lanes",
+        "test_python_boundaries"
+      ],
+      "passing_controls": {
+        "test_semantic_intelligence": [
+          "test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta",
+          "test_document_qualifiers_are_not_discarded[except]",
+          "test_document_qualifiers_are_not_discarded[if]",
+          "test_document_qualifiers_are_not_discarded[may]",
+          "test_document_qualifiers_are_not_discarded[might]",
+          "test_document_qualifiers_are_not_discarded[never]",
+          "test_document_qualifiers_are_not_discarded[not]",
+          "test_document_qualifiers_are_not_discarded[unless]",
+          "test_failed_semantic_build_retires_its_old_current_outputs",
+          "test_forged_consequence_cannot_reuse_valid_citations",
+          "test_generated_choice_reverse_and_portable_release",
+          "test_integer_range_and_unconditional_context_conflict",
+          "test_later_paragraph_exception_prevents_unconditional_delivery",
+          "test_portable_successor_withdraws_changed_premise_without_jobs",
+          "test_preferences_do_not_assign_favorable_cost_to_unknown_candidates",
+          "test_solver_does_not_assign_unknown_context_in_our_favor"
+        ],
+        "test_semantic_enrichment": [
+          "test_document_projection_keeps_later_qualifiers_and_rejects_rewritten_text",
+          "test_real_isolated_witness_is_finite_and_cannot_rewrite_its_output",
+          "test_state_transfer_requires_mapping_approval_and_does_not_invent_missing_properties",
+          "test_symbolic_default_never_becomes_a_constant_and_literal_domain_is_finite"
+        ],
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_python_boundaries": [
+          "test_boundary_exact_sources_and_portability"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U10",
+      "check": "Representation/type/resource mismatches and unsupported invocation conditions are rejected or conditional; semantic eligibility has an explicit invocation limit.",
+      "tests": [
+        "test_task_applicability",
+        "test_operation_shapes",
+        "test_input_contract_pack"
+      ],
+      "passing_controls": {
+        "test_task_applicability": [
+          "test_input_contract_dimensions[slot0-supported]",
+          "test_input_contract_dimensions[slot1-refuted]",
+          "test_input_contract_dimensions[slot2-refuted]",
+          "test_input_contract_dimensions[slot3-unknown]",
+          "test_input_contract_dimensions[slot4-unknown]",
+          "test_input_contract_dimensions[slot5-refuted]",
+          "test_input_contract_dimensions[slot6-unknown]",
+          "test_multi_input_consumption_and_limit",
+          "test_task_mutation_preserves_other_decisions_but_new_competitor_invalidates",
+          "test_versioned_comparison_and_forgery"
+        ],
+        "test_operation_shapes": [
+          "test_conflicting_contexts_remain_unresolved",
+          "test_self_keeps_borrow_result_and_artifact_scope",
+          "test_shaped_capability_release_replays_without_source_transport"
+        ],
+        "test_input_contract_pack": [
+          "test_input_forms_and_eof_do_not_inherit_negated_or_appended_contracts[input]",
+          "test_input_forms_and_eof_do_not_inherit_negated_or_appended_contracts[result]"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U11",
+      "check": "Comparison populations are independent of retrieval rank; newly admitted competitors invalidate prior choices, including empty scoped populations.",
+      "tests": [
+        "test_stage_inputs",
+        "test_discovery_fabric",
+        "test_native_lanes",
+        "test_task_applicability"
+      ],
+      "passing_controls": {
+        "test_stage_inputs": [
+          "test_empty_population_and_other_profile_invalidation",
+          "test_receipt_forgery_and_selected_source_replacement"
+        ],
+        "test_discovery_fabric": [
+          "test_cli_retains_lexical_results_when_runtime_initialization_fails",
+          "test_embedding_recipe_roundtrip_and_numerical_rejection",
+          "test_failed_changed_stage_cannot_reuse_previous_success",
+          "test_fca_closure_records_support_not_negative_truth",
+          "test_graph_projection_retains_isolates_and_discovery_sources",
+          "test_new_competitor_invalidates_stage_but_pinned_view_survives",
+          "test_real_souffle_positive_join_and_recursive_cycle"
+        ],
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_task_applicability": [
+          "test_input_contract_dimensions[slot0-supported]",
+          "test_input_contract_dimensions[slot1-refuted]",
+          "test_input_contract_dimensions[slot2-refuted]",
+          "test_input_contract_dimensions[slot3-unknown]",
+          "test_input_contract_dimensions[slot4-unknown]",
+          "test_input_contract_dimensions[slot5-refuted]",
+          "test_input_contract_dimensions[slot6-unknown]",
+          "test_multi_input_consumption_and_limit",
+          "test_task_mutation_preserves_other_decisions_but_new_competitor_invalidates",
+          "test_versioned_comparison_and_forgery"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U12",
+      "check": "Multi-input consumption, wrapper boundaries and unsupported transfer states remain explicit. The real schema composition rejects metadata loss and has compiler/execution witnesses.",
+      "tests": [
+        "test_composition_search",
+        "test_task_applicability",
+        "test_semantic_enrichment"
+      ],
+      "reports": [
+        "resume-generated-composition.json"
+      ],
+      "passing_controls": {
+        "test_composition_search": [
+          "test_intermediate_state_is_replayed_and_a_compatible_loss_is_rejected",
+          "test_missing_second_input_does_not_become_a_free_solver_assignment",
+          "test_multi_input_composition_rejects_semantic_near_neighbor"
+        ],
+        "test_task_applicability": [
+          "test_input_contract_dimensions[slot0-supported]",
+          "test_input_contract_dimensions[slot1-refuted]",
+          "test_input_contract_dimensions[slot2-refuted]",
+          "test_input_contract_dimensions[slot3-unknown]",
+          "test_input_contract_dimensions[slot4-unknown]",
+          "test_input_contract_dimensions[slot5-refuted]",
+          "test_input_contract_dimensions[slot6-unknown]",
+          "test_multi_input_consumption_and_limit",
+          "test_task_mutation_preserves_other_decisions_but_new_competitor_invalidates",
+          "test_versioned_comparison_and_forgery"
+        ],
+        "test_semantic_enrichment": [
+          "test_document_projection_keeps_later_qualifiers_and_rejects_rewritten_text",
+          "test_real_isolated_witness_is_finite_and_cannot_rewrite_its_output",
+          "test_state_transfer_requires_mapping_approval_and_does_not_invent_missing_properties",
+          "test_symbolic_default_never_becomes_a_constant_and_literal_domain_is_finite"
+        ]
+      },
+      "report_digests": {
+        "resume-generated-composition.json": "161515e06ab199584856a57f2c17a1a2406c735abfaa1515ddaed12cb1a0d477"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U13",
+      "check": "Positive-support FCA preserves closure and unknowns; graphs retain isolates and labels cite actual source phrases without creating semantic authority.",
+      "tests": [
+        "test_discovery_fabric",
+        "test_scoped_discovery"
+      ],
+      "reports": [
+        "completion-final-discovery-maintenance.json"
+      ],
+      "passing_controls": {
+        "test_discovery_fabric": [
+          "test_cli_retains_lexical_results_when_runtime_initialization_fails",
+          "test_embedding_recipe_roundtrip_and_numerical_rejection",
+          "test_failed_changed_stage_cannot_reuse_previous_success",
+          "test_fca_closure_records_support_not_negative_truth",
+          "test_graph_projection_retains_isolates_and_discovery_sources",
+          "test_new_competitor_invalidates_stage_but_pinned_view_survives",
+          "test_real_souffle_positive_join_and_recursive_cycle"
+        ],
+        "test_scoped_discovery": [
+          "test_scope_bound_failure_is_durable_and_never_truncates_the_universe",
+          "test_scope_population_change_withdraws_current_products_without_losing_history",
+          "test_scoped_fca_labels_and_other_profile_addition",
+          "test_scopes_keep_exact_populations_and_separate_output_ownership"
+        ]
+      },
+      "report_digests": {
+        "completion-final-discovery-maintenance.json": "1dbf06e7407d849dc709a05ec5f6639d655b3e5fc5250c4a83ba8d25f3550d1e"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U14",
+      "check": "Finite witnesses cannot rewrite observations or promote open effect frontiers; strictness and EOF counterexamples constrain stronger claims.",
+      "tests": [
+        "test_semantic_enrichment",
+        "test_mir_analyses"
+      ],
+      "reports": [
+        "completion-reuse-witnesses.json",
+        "completion-result-mechanism.json"
+      ],
+      "passing_controls": {
+        "test_semantic_enrichment": [
+          "test_document_projection_keeps_later_qualifiers_and_rejects_rewritten_text",
+          "test_real_isolated_witness_is_finite_and_cannot_rewrite_its_output",
+          "test_state_transfer_requires_mapping_approval_and_does_not_invent_missing_properties",
+          "test_symbolic_default_never_becomes_a_constant_and_literal_domain_is_finite"
+        ],
+        "test_mir_analyses": [
+          "test_conditional_assignment_preserves_uninitialized_path",
+          "test_dominating_branch_does_not_control_rejoined_call",
+          "test_indirect_callable_flow_does_not_resolve_dispatch",
+          "test_only_values_reaching_return_and_projected_writes",
+          "test_recursive_effects_propagate_with_separate_support_dag"
+        ]
+      },
+      "report_digests": {
+        "completion-reuse-witnesses.json": "64e2afc21615b170c615b58c2713eda6bac6885c5f5d99681ebe24e03eb9f5a0",
+        "completion-result-mechanism.json": "7d82b48d278120db449c66d4ea163c392bf9787146996254771ae58a9d618781"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U15",
+      "check": "Exact selected input revisions, model changes, source replacement and new candidates invalidate dependents. Label completion preserves base extraction/embedding reuse. Field paths are declared, with conservative whole-record revision sensitivity.",
+      "tests": [
+        "test_stage_inputs",
+        "test_embedding_reuse",
+        "test_task_applicability",
+        "test_semantic_intelligence"
+      ],
+      "reports": [
+        "completion-final-discovery-maintenance.json",
+        "completion-four-library-chains.json"
+      ],
+      "passing_controls": {
+        "test_stage_inputs": [
+          "test_empty_population_and_other_profile_invalidation",
+          "test_receipt_forgery_and_selected_source_replacement"
+        ],
+        "test_embedding_reuse": [
+          "test_new_competitor_reuses_unchanged_inputs_but_a_new_model_recomputes_every_vector"
+        ],
+        "test_task_applicability": [
+          "test_input_contract_dimensions[slot0-supported]",
+          "test_input_contract_dimensions[slot1-refuted]",
+          "test_input_contract_dimensions[slot2-refuted]",
+          "test_input_contract_dimensions[slot3-unknown]",
+          "test_input_contract_dimensions[slot4-unknown]",
+          "test_input_contract_dimensions[slot5-refuted]",
+          "test_input_contract_dimensions[slot6-unknown]",
+          "test_multi_input_consumption_and_limit",
+          "test_task_mutation_preserves_other_decisions_but_new_competitor_invalidates",
+          "test_versioned_comparison_and_forgery"
+        ],
+        "test_semantic_intelligence": [
+          "test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta",
+          "test_document_qualifiers_are_not_discarded[except]",
+          "test_document_qualifiers_are_not_discarded[if]",
+          "test_document_qualifiers_are_not_discarded[may]",
+          "test_document_qualifiers_are_not_discarded[might]",
+          "test_document_qualifiers_are_not_discarded[never]",
+          "test_document_qualifiers_are_not_discarded[not]",
+          "test_document_qualifiers_are_not_discarded[unless]",
+          "test_failed_semantic_build_retires_its_old_current_outputs",
+          "test_forged_consequence_cannot_reuse_valid_citations",
+          "test_generated_choice_reverse_and_portable_release",
+          "test_integer_range_and_unconditional_context_conflict",
+          "test_later_paragraph_exception_prevents_unconditional_delivery",
+          "test_portable_successor_withdraws_changed_premise_without_jobs",
+          "test_preferences_do_not_assign_favorable_cost_to_unknown_candidates",
+          "test_solver_does_not_assign_unknown_context_in_our_favor"
+        ]
+      },
+      "report_digests": {
+        "completion-final-discovery-maintenance.json": "1dbf06e7407d849dc709a05ec5f6639d655b3e5fc5250c4a83ba8d25f3550d1e",
+        "completion-four-library-chains.json": "854b4b0e31005f3210c16939ceae3588c61ac669776b3f38b94dbfb2da98f4fc"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U16",
+      "check": "Actual Qwen vectors, hybrid reasons and recipe reuse are retained; malformed responses, recipe mismatch and runtime outage have controls.",
+      "tests": [
+        "test_embedding_reuse",
+        "test_runtime_lifecycle",
+        "test_discovery_fabric"
+      ],
+      "reports": [
+        "resume-real-embedding-reuse.json",
+        "resume-scoped-discovery.json"
+      ],
+      "passing_controls": {
+        "test_embedding_reuse": [
+          "test_new_competitor_reuses_unchanged_inputs_but_a_new_model_recomputes_every_vector"
+        ],
+        "test_runtime_lifecycle": [
+          "test_model_identity_detects_same_size_corruption",
+          "test_plan_does_not_create_cache_or_run_docker",
+          "test_unowned_container_cannot_be_stopped"
+        ],
+        "test_discovery_fabric": [
+          "test_cli_retains_lexical_results_when_runtime_initialization_fails",
+          "test_embedding_recipe_roundtrip_and_numerical_rejection",
+          "test_failed_changed_stage_cannot_reuse_previous_success",
+          "test_fca_closure_records_support_not_negative_truth",
+          "test_graph_projection_retains_isolates_and_discovery_sources",
+          "test_new_competitor_invalidates_stage_but_pinned_view_survives",
+          "test_real_souffle_positive_join_and_recursive_cycle"
+        ]
+      },
+      "report_digests": {
+        "resume-real-embedding-reuse.json": "6d8fa968c6498b51a47efef5887b1dc3f4d2bc4f6137a0e9c59b71711da0ba07",
+        "resume-scoped-discovery.json": "e6e41c29ad02275fe0c9746c4f3db88818a38610721885fdd726cc334516c69a"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U17",
+      "check": "Native/analytical workers enforce declared process/output bounds; finite algorithms fail explicit limits. Record and nested candidate/proof pages retain denominators and pinned continuations without truncating stored evidence.",
+      "tests": [
+        "test_source_protocol",
+        "test_analytical_memory_setting",
+        "test_pinned_pages",
+        "test_batched_corpus_reads",
+        "test_task_applicability",
+        "test_scoped_discovery"
+      ],
+      "passing_controls": {
+        "test_source_protocol": [
+          "test_closed_stdout_does_not_escape_the_deadline",
+          "test_fragmented_unicode_frames_commit_exact_records",
+          "test_incomplete_or_mismatched_evidence_never_commits[after_terminal]",
+          "test_incomplete_or_mismatched_evidence_never_commits[duplicate_header]",
+          "test_incomplete_or_mismatched_evidence_never_commits[empty_success]",
+          "test_incomplete_or_mismatched_evidence_never_commits[truncated]",
+          "test_incomplete_or_mismatched_evidence_never_commits[wrong_digest]",
+          "test_incomplete_or_mismatched_evidence_never_commits[wrong_input]",
+          "test_incomplete_or_mismatched_evidence_never_commits[wrong_sequence]",
+          "test_oversized_frame_rejected_before_body_arrives",
+          "test_resident_memory_budget_is_independent_of_virtual_mapping_ceiling",
+          "test_worker_deadline_stops_a_hanging_child",
+          "test_worker_zero_exit_without_receipt_is_failure"
+        ],
+        "test_analytical_memory_setting": [
+          "test_default_and_explicit_memory_settings",
+          "test_invalid_memory_settings_are_errors[-1]",
+          "test_invalid_memory_settings_are_errors[0]",
+          "test_invalid_memory_settings_are_errors[69793218560]",
+          "test_invalid_memory_settings_are_errors[]",
+          "test_invalid_memory_settings_are_errors[invalid]"
+        ],
+        "test_pinned_pages": [
+          "test_byte_limit_retains_the_unconsumed_row_and_empty_populations_complete",
+          "test_pinned_ordered_pages_survive_an_advance_and_reject_cross_head_cursor"
+        ],
+        "test_batched_corpus_reads": [
+          "test_batch_overlay_rejects_superseded_and_retired_support[False]",
+          "test_batch_overlay_rejects_superseded_and_retired_support[True]",
+          "test_batch_preserves_order_duplicates_and_pinned_history",
+          "test_validation_batches_evidence_selections_across_records",
+          "test_wide_comparisons_do_not_issue_per_candidate_point_reads"
+        ],
+        "test_task_applicability": [
+          "test_input_contract_dimensions[slot0-supported]",
+          "test_input_contract_dimensions[slot1-refuted]",
+          "test_input_contract_dimensions[slot2-refuted]",
+          "test_input_contract_dimensions[slot3-unknown]",
+          "test_input_contract_dimensions[slot4-unknown]",
+          "test_input_contract_dimensions[slot5-refuted]",
+          "test_input_contract_dimensions[slot6-unknown]",
+          "test_multi_input_consumption_and_limit",
+          "test_task_mutation_preserves_other_decisions_but_new_competitor_invalidates",
+          "test_versioned_comparison_and_forgery"
+        ],
+        "test_scoped_discovery": [
+          "test_scope_bound_failure_is_durable_and_never_truncates_the_universe",
+          "test_scope_population_change_withdraws_current_products_without_losing_history",
+          "test_scoped_fca_labels_and_other_profile_addition",
+          "test_scopes_keep_exact_populations_and_separate_output_ownership"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U18",
+      "check": "The final installed wheel verifies every selected portable archive with source trees, native workers, network, GPU service and model cache unavailable, including actual CLI pages and an installed analytical worker.",
+      "tests": [
+        "test_historical_epochs"
+      ],
+      "reports": [
+        "completion-installed-delivery.json"
+      ],
+      "passing_controls": {
+        "test_historical_epochs": [
+          "test_duplicate_portable_family_rejected_before_admission",
+          "test_historical_checker_rejects_new_archive_and_producer"
+        ]
+      },
+      "report_digests": {
+        "completion-installed-delivery.json": "92ec0e484b40a59455ffafef922499ece939139312f48f8e230d38b3c8e2cca4"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U19",
+      "check": "Pydantic and serde_json use the same frozen core and shared input pack, with zero per-operation prose overrides. All core and model corrections are reported and requalified.",
+      "tests": [
+        "test_reuse_contract",
+        "test_input_contract_pack"
+      ],
+      "reports": [
+        "completion-pydantic-decision-reuse.json",
+        "completion-serde-decision-reuse.json",
+        "completion-reuse-findings.json",
+        "completion-model-findings.json"
+      ],
+      "passing_controls": {
+        "test_reuse_contract": [
+          "test_core_modules_do_not_name_a_library[datafusion]",
+          "test_core_modules_do_not_name_a_library[deltalake]",
+          "test_core_modules_do_not_name_a_library[duckdb]",
+          "test_core_modules_do_not_name_a_library[parquet]",
+          "test_core_modules_do_not_name_a_library[polars]",
+          "test_core_modules_do_not_name_a_library[pyarrow]",
+          "test_core_modules_do_not_name_a_library[pydantic]",
+          "test_registry_adapters_are_resolved_by_identifier_not_import",
+          "test_storage_dependencies_do_not_license_library_specific_decisions",
+          "test_there_are_library_blind_modules_to_check"
+        ],
+        "test_input_contract_pack": [
+          "test_input_forms_and_eof_do_not_inherit_negated_or_appended_contracts[input]",
+          "test_input_forms_and_eof_do_not_inherit_negated_or_appended_contracts[result]"
+        ]
+      },
+      "report_digests": {
+        "completion-pydantic-decision-reuse.json": "7d9ce36ec5f0abdd5ec4cda3283f0d65194e80672b014459bf243545b24d8b7b",
+        "completion-serde-decision-reuse.json": "e670c7b18d5aa9b7cd05a9f7ae800c7a2fd60fc5cd2f881be9dbd04d46c14179",
+        "completion-reuse-findings.json": "336b6f21d02571e9425ce22d9e9b78ea829e7fca63e3b0faad8de91f38939b53",
+        "completion-model-findings.json": "94a95214557fd5674ffe1e1357f83dc78dee4253614fca979a2bf9c983f80abd"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "U20",
+      "check": "All 24 retained tasks have same-agent attributed supported/partial/gap assessments, exact baseline selections and generated releases, reversing conditions and remaining interpretation.",
+      "tests": [
+        "test_document_and_qualitative_tools"
+      ],
+      "reports": [
+        "completion-24-task-assessment.json",
+        "completion-nine-gap-dispositions.json",
+        "completion-four-library-chains.json"
+      ],
+      "passing_controls": {
+        "test_document_and_qualitative_tools": [
+          "test_qualitative_review_rejects_a_stale_artifact_without_any_runner",
+          "test_rst_retains_unknown_directive_diagnostics",
+          "test_sphinx_inventory_expands_exact_object_uri"
+        ]
+      },
+      "report_digests": {
+        "completion-24-task-assessment.json": "811dd9992d5823c1884d37ca334babac3a06b61bef059d94abebbaae335d3924",
+        "completion-nine-gap-dispositions.json": "7262dd5c5fab7b3bc2aa84ae7f29b5ff35cc3c450652758a87844df1bf039559",
+        "completion-four-library-chains.json": "854b4b0e31005f3210c16939ceae3588c61ac669776b3f38b94dbfb2da98f4fc"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G01",
+      "check": "Concrete record/field/byte support and independent closure replay are required; uncited composites and arbitrary IDs do not qualify behavior.",
+      "tests": [
+        "test_native_fabric",
+        "test_evidence_derivation",
+        "test_semantic_intelligence"
+      ],
+      "passing_controls": {
+        "test_native_fabric": [
+          "test_contextual_identity_does_not_merge_reused_item_ids_across_artifacts",
+          "test_fabric_source_analysis_replays_after_transport_removal[False]",
+          "test_fabric_source_analysis_replays_after_transport_removal[True]",
+          "test_native_authority_and_forged_projection",
+          "test_native_corruption_withdraws_current_success",
+          "test_native_receipt_denominator_is_not_a_citation_gesture",
+          "test_nested_callback_return_recovery[def f(x: Callable[[A], B]) -> Callable[[C], D]:-Callable[[C], D]]",
+          "test_nested_callback_return_recovery[fn f(callback: fn() -> ())-]",
+          "test_nested_callback_return_recovery[fn map<F: Fn(T) -> U>(f: F) -> Vec<U>-Vec<U>]",
+          "test_nested_callback_return_recovery[fn(f: fn(T) -> U) -> fn(V) -> W-fn(V) -> W]",
+          "test_python_source_interface_preserves_slots_and_replays_without_transport"
+        ],
+        "test_evidence_derivation": [
+          "test_a_shifted_document_keeps_the_same_behavior_ids",
+          "test_an_ambiguous_name_is_never_silently_bound",
+          "test_behaviors_carry_stable_ids_and_their_kind",
+          "test_every_observation_records_which_pass_produced_it",
+          "test_identifier_shape_separates_apis_from_keywords[AND-constant_like]",
+          "test_identifier_shape_separates_apis_from_keywords[ORDER_BY-constant_like]",
+          "test_identifier_shape_separates_apis_from_keywords[SessionContext-type_like]",
+          "test_identifier_shape_separates_apis_from_keywords[datafusion::expr::Expr-qualified]",
+          "test_identifier_shape_separates_apis_from_keywords[execute_stream-callable_like]",
+          "test_packet_digest_is_stable_and_content_sensitive",
+          "test_packets_keep_evidence_and_grounding_separate",
+          "test_packets_respect_their_declared_budget",
+          "test_trivial_and_foreign_documentation_is_not_harvested",
+          "test_upstream_doc_comments_are_captured_whole",
+          "test_upstream_documentation_was_actually_harvested_for_a_rust_profile"
+        ],
+        "test_semantic_intelligence": [
+          "test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta",
+          "test_document_qualifiers_are_not_discarded[except]",
+          "test_document_qualifiers_are_not_discarded[if]",
+          "test_document_qualifiers_are_not_discarded[may]",
+          "test_document_qualifiers_are_not_discarded[might]",
+          "test_document_qualifiers_are_not_discarded[never]",
+          "test_document_qualifiers_are_not_discarded[not]",
+          "test_document_qualifiers_are_not_discarded[unless]",
+          "test_failed_semantic_build_retires_its_old_current_outputs",
+          "test_forged_consequence_cannot_reuse_valid_citations",
+          "test_generated_choice_reverse_and_portable_release",
+          "test_integer_range_and_unconditional_context_conflict",
+          "test_later_paragraph_exception_prevents_unconditional_delivery",
+          "test_portable_successor_withdraws_changed_premise_without_jobs",
+          "test_preferences_do_not_assign_favorable_cost_to_unknown_candidates",
+          "test_solver_does_not_assign_unknown_context_in_our_favor"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G02",
+      "check": "Real Rustdoc, Ruff, Pyrefly/TSP and MIR controls produce expected positive events and reject lookalikes; all 47 native jobs have explicit denominators.",
+      "tests": [
+        "test_native_lanes",
+        "test_recovery_regressions"
+      ],
+      "reports": [
+        "completion-native-final-producers.json"
+      ],
+      "passing_controls": {
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_recovery_regressions": [
+          "test_authored_denominator_cannot_shrink_independent_scope",
+          "test_changed_review_metadata_reuses_semantically_unchanged_products",
+          "test_documented_python_types_are_separate_from_annotations",
+          "test_example_edit_reopens_decision_review",
+          "test_failed_behavior_after_explicit_new_review_still_cannot_publish",
+          "test_failed_intake_preserves_existing_authority",
+          "test_missing_execution_receipt_cannot_be_resealed_as_valid_bundle",
+          "test_nomination_rules_have_positive_and_negative_controls",
+          "test_proposal_replaces_existing_claim_as_unreviewed_draft",
+          "test_registry_preserves_functionality_without_accepting_it",
+          "test_source_rule_excludes_comment_and_string_lookalikes",
+          "test_unicode_eof_markdown_selection_keeps_final_byte",
+          "test_withdrawn_dependency_review_removes_capability_coverage"
+        ]
+      },
+      "report_digests": {
+        "completion-native-final-producers.json": "55a95d0e54aada1fcf8516158b0ef48c94818b1e78be0598ec57815e706ddec7"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G03",
+      "check": "Source identity does not elevate heuristic dispatch or native equivalence; impl polarity and cross-artifact identities retain distinct evidence.",
+      "tests": [
+        "test_native_fabric",
+        "test_native_lanes",
+        "test_declaration_formats"
+      ],
+      "reports": [
+        "completion-four-library-chains.json"
+      ],
+      "passing_controls": {
+        "test_native_fabric": [
+          "test_contextual_identity_does_not_merge_reused_item_ids_across_artifacts",
+          "test_fabric_source_analysis_replays_after_transport_removal[False]",
+          "test_fabric_source_analysis_replays_after_transport_removal[True]",
+          "test_native_authority_and_forged_projection",
+          "test_native_corruption_withdraws_current_success",
+          "test_native_receipt_denominator_is_not_a_citation_gesture",
+          "test_nested_callback_return_recovery[def f(x: Callable[[A], B]) -> Callable[[C], D]:-Callable[[C], D]]",
+          "test_nested_callback_return_recovery[fn f(callback: fn() -> ())-]",
+          "test_nested_callback_return_recovery[fn map<F: Fn(T) -> U>(f: F) -> Vec<U>-Vec<U>]",
+          "test_nested_callback_return_recovery[fn(f: fn(T) -> U) -> fn(V) -> W-fn(V) -> W]",
+          "test_python_source_interface_preserves_slots_and_replays_without_transport"
+        ],
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_declaration_formats": [
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[57]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[59]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[60]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[61]"
+        ]
+      },
+      "report_digests": {
+        "completion-four-library-chains.json": "854b4b0e31005f3210c16939ceae3588c61ac669776b3f38b94dbfb2da98f4fc"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G04",
+      "check": "Any/generic/native/indirect and unmodeled effects remain unresolved through typed projections and released analyses.",
+      "tests": [
+        "test_native_lanes",
+        "test_mir_analyses",
+        "test_task_applicability"
+      ],
+      "reports": [
+        "completion-result-mechanism.json",
+        "completion-python-boundary.json"
+      ],
+      "passing_controls": {
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_mir_analyses": [
+          "test_conditional_assignment_preserves_uninitialized_path",
+          "test_dominating_branch_does_not_control_rejoined_call",
+          "test_indirect_callable_flow_does_not_resolve_dispatch",
+          "test_only_values_reaching_return_and_projected_writes",
+          "test_recursive_effects_propagate_with_separate_support_dag"
+        ],
+        "test_task_applicability": [
+          "test_input_contract_dimensions[slot0-supported]",
+          "test_input_contract_dimensions[slot1-refuted]",
+          "test_input_contract_dimensions[slot2-refuted]",
+          "test_input_contract_dimensions[slot3-unknown]",
+          "test_input_contract_dimensions[slot4-unknown]",
+          "test_input_contract_dimensions[slot5-refuted]",
+          "test_input_contract_dimensions[slot6-unknown]",
+          "test_multi_input_consumption_and_limit",
+          "test_task_mutation_preserves_other_decisions_but_new_competitor_invalidates",
+          "test_versioned_comparison_and_forgery"
+        ]
+      },
+      "report_digests": {
+        "completion-result-mechanism.json": "7d82b48d278120db449c66d4ea163c392bf9787146996254771ae58a9d618781",
+        "completion-python-boundary.json": "ab16340ccf527ebc9f1cec6748cdc95d755385cd35359793b0c0378e20206aee"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G05",
+      "check": "An enumerated body with open callees does not establish effect absence. Immediate async constructors and their later polled bodies are kept separate.",
+      "tests": [
+        "test_mir_analyses",
+        "test_native_lanes"
+      ],
+      "reports": [
+        "completion-result-mechanism.json",
+        "resume-native-source-analysis.json"
+      ],
+      "passing_controls": {
+        "test_mir_analyses": [
+          "test_conditional_assignment_preserves_uninitialized_path",
+          "test_dominating_branch_does_not_control_rejoined_call",
+          "test_indirect_callable_flow_does_not_resolve_dispatch",
+          "test_only_values_reaching_return_and_projected_writes",
+          "test_recursive_effects_propagate_with_separate_support_dag"
+        ],
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ]
+      },
+      "report_digests": {
+        "completion-result-mechanism.json": "7d82b48d278120db449c66d4ea163c392bf9787146996254771ae58a9d618781",
+        "resume-native-source-analysis.json": "a5e37ad86b7af2557b4494dbb74cf1b75d39e8a2fd5230c572bfcf7be6c76730"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G06",
+      "check": "Unicode/CRLF, doctest hidden lines, prompts and escaped literals preserve exact maps; unmapped/generated ranges retain uncertainty.",
+      "tests": [
+        "test_source_maps",
+        "test_native_lanes",
+        "test_python_documents"
+      ],
+      "passing_controls": {
+        "test_source_maps": [
+          "test_blockquote_fence_and_python_prompt_offsets",
+          "test_escaped_python_literal_has_non_linear_support",
+          "test_unicode_crlf_doc_comments_and_hidden_lines",
+          "test_unknown_language_and_non_documentation_remain_unknown"
+        ],
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_python_documents": [
+          "test_literal_positions_and_dynamic_abstention",
+          "test_python_document_owner_and_portable_replay"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G07",
+      "check": "Fragmented frames, truncation, wrong digests/schema/context, missing terminal receipts, hanging/closed-output children and RSS excess cannot admit success.",
+      "tests": [
+        "test_source_protocol",
+        "test_native_fabric"
+      ],
+      "passing_controls": {
+        "test_source_protocol": [
+          "test_closed_stdout_does_not_escape_the_deadline",
+          "test_fragmented_unicode_frames_commit_exact_records",
+          "test_incomplete_or_mismatched_evidence_never_commits[after_terminal]",
+          "test_incomplete_or_mismatched_evidence_never_commits[duplicate_header]",
+          "test_incomplete_or_mismatched_evidence_never_commits[empty_success]",
+          "test_incomplete_or_mismatched_evidence_never_commits[truncated]",
+          "test_incomplete_or_mismatched_evidence_never_commits[wrong_digest]",
+          "test_incomplete_or_mismatched_evidence_never_commits[wrong_input]",
+          "test_incomplete_or_mismatched_evidence_never_commits[wrong_sequence]",
+          "test_oversized_frame_rejected_before_body_arrives",
+          "test_resident_memory_budget_is_independent_of_virtual_mapping_ceiling",
+          "test_worker_deadline_stops_a_hanging_child",
+          "test_worker_zero_exit_without_receipt_is_failure"
+        ],
+        "test_native_fabric": [
+          "test_contextual_identity_does_not_merge_reused_item_ids_across_artifacts",
+          "test_fabric_source_analysis_replays_after_transport_removal[False]",
+          "test_fabric_source_analysis_replays_after_transport_removal[True]",
+          "test_native_authority_and_forged_projection",
+          "test_native_corruption_withdraws_current_success",
+          "test_native_receipt_denominator_is_not_a_citation_gesture",
+          "test_nested_callback_return_recovery[def f(x: Callable[[A], B]) -> Callable[[C], D]:-Callable[[C], D]]",
+          "test_nested_callback_return_recovery[fn f(callback: fn() -> ())-]",
+          "test_nested_callback_return_recovery[fn map<F: Fn(T) -> U>(f: F) -> Vec<U>-Vec<U>]",
+          "test_nested_callback_return_recovery[fn(f: fn(T) -> U) -> fn(V) -> W-fn(V) -> W]",
+          "test_python_source_interface_preserves_slots_and_replays_without_transport"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G08",
+      "check": "Effective package/feature/stub/compiler profiles are distinct. The retained Python 54/25 profile mapping is explicit and FFI availability is demonstrated in separate consumer builds.",
+      "tests": [
+        "test_cargo_context",
+        "test_native_lanes",
+        "test_stage_inputs"
+      ],
+      "reports": [
+        "completion-profile-mapping.json",
+        "completion-feature-availability.json"
+      ],
+      "passing_controls": {
+        "test_cargo_context": [
+          "test_cargo_virtual_workspace_duplicate_names_targets_and_dependency_kinds"
+        ],
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_stage_inputs": [
+          "test_empty_population_and_other_profile_invalidation",
+          "test_receipt_forgery_and_selected_source_replacement"
+        ]
+      },
+      "report_digests": {
+        "completion-profile-mapping.json": "3edc6c340151042f302ff12aaae44dc98623a470592b021040118b284842d569",
+        "completion-feature-availability.json": "bfad70f679ff8397b7a0bcfce0373cf34fc46585ad5324fb9763b05990897071"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G09",
+      "check": "Exact source/model prerequisites, uncited candidate changes and portable successors without original jobs reopen dependent products. Sensitivity is conservative at whole-record revision granularity.",
+      "tests": [
+        "test_native_lanes",
+        "test_stage_inputs",
+        "test_task_applicability",
+        "test_semantic_intelligence"
+      ],
+      "reports": [
+        "completion-four-library-chains.json"
+      ],
+      "passing_controls": {
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_stage_inputs": [
+          "test_empty_population_and_other_profile_invalidation",
+          "test_receipt_forgery_and_selected_source_replacement"
+        ],
+        "test_task_applicability": [
+          "test_input_contract_dimensions[slot0-supported]",
+          "test_input_contract_dimensions[slot1-refuted]",
+          "test_input_contract_dimensions[slot2-refuted]",
+          "test_input_contract_dimensions[slot3-unknown]",
+          "test_input_contract_dimensions[slot4-unknown]",
+          "test_input_contract_dimensions[slot5-refuted]",
+          "test_input_contract_dimensions[slot6-unknown]",
+          "test_multi_input_consumption_and_limit",
+          "test_task_mutation_preserves_other_decisions_but_new_competitor_invalidates",
+          "test_versioned_comparison_and_forgery"
+        ],
+        "test_semantic_intelligence": [
+          "test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta",
+          "test_document_qualifiers_are_not_discarded[except]",
+          "test_document_qualifiers_are_not_discarded[if]",
+          "test_document_qualifiers_are_not_discarded[may]",
+          "test_document_qualifiers_are_not_discarded[might]",
+          "test_document_qualifiers_are_not_discarded[never]",
+          "test_document_qualifiers_are_not_discarded[not]",
+          "test_document_qualifiers_are_not_discarded[unless]",
+          "test_failed_semantic_build_retires_its_old_current_outputs",
+          "test_forged_consequence_cannot_reuse_valid_citations",
+          "test_generated_choice_reverse_and_portable_release",
+          "test_integer_range_and_unconditional_context_conflict",
+          "test_later_paragraph_exception_prevents_unconditional_delivery",
+          "test_portable_successor_withdraws_changed_premise_without_jobs",
+          "test_preferences_do_not_assign_favorable_cost_to_unknown_candidates",
+          "test_solver_does_not_assign_unknown_context_in_our_favor"
+        ]
+      },
+      "report_digests": {
+        "completion-four-library-chains.json": "854b4b0e31005f3210c16939ceae3588c61ac669776b3f38b94dbfb2da98f4fc"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G10",
+      "check": "Byte-only review equivalence is separate from contract mutation; source tampering, changed qualifiers and incomplete support cannot reuse an old qualification.",
+      "tests": [
+        "test_native_lanes",
+        "test_recovery_regressions",
+        "test_semantic_intelligence"
+      ],
+      "passing_controls": {
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_recovery_regressions": [
+          "test_authored_denominator_cannot_shrink_independent_scope",
+          "test_changed_review_metadata_reuses_semantically_unchanged_products",
+          "test_documented_python_types_are_separate_from_annotations",
+          "test_example_edit_reopens_decision_review",
+          "test_failed_behavior_after_explicit_new_review_still_cannot_publish",
+          "test_failed_intake_preserves_existing_authority",
+          "test_missing_execution_receipt_cannot_be_resealed_as_valid_bundle",
+          "test_nomination_rules_have_positive_and_negative_controls",
+          "test_proposal_replaces_existing_claim_as_unreviewed_draft",
+          "test_registry_preserves_functionality_without_accepting_it",
+          "test_source_rule_excludes_comment_and_string_lookalikes",
+          "test_unicode_eof_markdown_selection_keeps_final_byte",
+          "test_withdrawn_dependency_review_removes_capability_coverage"
+        ],
+        "test_semantic_intelligence": [
+          "test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta",
+          "test_document_qualifiers_are_not_discarded[except]",
+          "test_document_qualifiers_are_not_discarded[if]",
+          "test_document_qualifiers_are_not_discarded[may]",
+          "test_document_qualifiers_are_not_discarded[might]",
+          "test_document_qualifiers_are_not_discarded[never]",
+          "test_document_qualifiers_are_not_discarded[not]",
+          "test_document_qualifiers_are_not_discarded[unless]",
+          "test_failed_semantic_build_retires_its_old_current_outputs",
+          "test_forged_consequence_cannot_reuse_valid_citations",
+          "test_generated_choice_reverse_and_portable_release",
+          "test_integer_range_and_unconditional_context_conflict",
+          "test_later_paragraph_exception_prevents_unconditional_delivery",
+          "test_portable_successor_withdraws_changed_premise_without_jobs",
+          "test_preferences_do_not_assign_favorable_cost_to_unknown_candidates",
+          "test_solver_does_not_assign_unknown_context_in_our_favor"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G11",
+      "check": "Actual native and analytical unchanged requests execute no producer. Corrupt receipts force execution or explicit failure; label work leaves base products warm.",
+      "tests": [
+        "test_native_lanes",
+        "test_stage_graph",
+        "test_embedding_reuse"
+      ],
+      "reports": [
+        "completion-native-final-warm.json",
+        "completion-final-discovery-maintenance.json"
+      ],
+      "passing_controls": {
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_stage_graph": [
+          "test_a_changed_stage_invalidates_only_its_dependents",
+          "test_a_dependency_cycle_is_rejected",
+          "test_an_unchanged_rebuild_runs_nothing",
+          "test_an_unproduced_input_is_rejected",
+          "test_producers_precede_consumers",
+          "test_the_stage_key_changes_with_the_adapter_identity",
+          "test_the_stage_key_ignores_mapping_order"
+        ],
+        "test_embedding_reuse": [
+          "test_new_competitor_reuses_unchanged_inputs_but_a_new_model_recomputes_every_vector"
+        ]
+      },
+      "report_digests": {
+        "completion-native-final-warm.json": "2f2658e76719a4e33482a94a6a35512acbc11ae4dbab57783aa73a6c2c473742",
+        "completion-final-discovery-maintenance.json": "1dbf06e7407d849dc709a05ec5f6639d655b3e5fc5250c4a83ba8d25f3550d1e"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G12",
+      "check": "Authored/generated scopes cannot shrink the independent policy or candidate population, including failed or newly added entries.",
+      "tests": [
+        "test_recovery_regressions",
+        "test_native_lanes",
+        "test_stage_inputs",
+        "test_batched_corpus_reads"
+      ],
+      "passing_controls": {
+        "test_recovery_regressions": [
+          "test_authored_denominator_cannot_shrink_independent_scope",
+          "test_changed_review_metadata_reuses_semantically_unchanged_products",
+          "test_documented_python_types_are_separate_from_annotations",
+          "test_example_edit_reopens_decision_review",
+          "test_failed_behavior_after_explicit_new_review_still_cannot_publish",
+          "test_failed_intake_preserves_existing_authority",
+          "test_missing_execution_receipt_cannot_be_resealed_as_valid_bundle",
+          "test_nomination_rules_have_positive_and_negative_controls",
+          "test_proposal_replaces_existing_claim_as_unreviewed_draft",
+          "test_registry_preserves_functionality_without_accepting_it",
+          "test_source_rule_excludes_comment_and_string_lookalikes",
+          "test_unicode_eof_markdown_selection_keeps_final_byte",
+          "test_withdrawn_dependency_review_removes_capability_coverage"
+        ],
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_stage_inputs": [
+          "test_empty_population_and_other_profile_invalidation",
+          "test_receipt_forgery_and_selected_source_replacement"
+        ],
+        "test_batched_corpus_reads": [
+          "test_batch_overlay_rejects_superseded_and_retired_support[False]",
+          "test_batch_overlay_rejects_superseded_and_retired_support[True]",
+          "test_batch_preserves_order_duplicates_and_pinned_history",
+          "test_validation_batches_evidence_selections_across_records",
+          "test_wide_comparisons_do_not_issue_per_candidate_point_reads"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G13",
+      "check": "Under the target's explicit replacement authority, approved reusable rules plus replayed typed consequences qualify narrowly; arbitrary proposal import cannot approve itself.",
+      "tests": [
+        "test_fabric_application",
+        "test_semantic_intelligence",
+        "test_semantic_enrichment"
+      ],
+      "passing_controls": {
+        "test_fabric_application": [
+          "test_active_cli_uses_only_the_pinned_corpus_even_when_legacy_files_change",
+          "test_authoring_predecessor_and_stage_output_ownership_are_enforced",
+          "test_family_page_reports_continuation_instead_of_claiming_a_complete_inventory"
+        ],
+        "test_semantic_intelligence": [
+          "test_counterfactuals_recompute_actual_eligibility_and_reject_forged_delta",
+          "test_document_qualifiers_are_not_discarded[except]",
+          "test_document_qualifiers_are_not_discarded[if]",
+          "test_document_qualifiers_are_not_discarded[may]",
+          "test_document_qualifiers_are_not_discarded[might]",
+          "test_document_qualifiers_are_not_discarded[never]",
+          "test_document_qualifiers_are_not_discarded[not]",
+          "test_document_qualifiers_are_not_discarded[unless]",
+          "test_failed_semantic_build_retires_its_old_current_outputs",
+          "test_forged_consequence_cannot_reuse_valid_citations",
+          "test_generated_choice_reverse_and_portable_release",
+          "test_integer_range_and_unconditional_context_conflict",
+          "test_later_paragraph_exception_prevents_unconditional_delivery",
+          "test_portable_successor_withdraws_changed_premise_without_jobs",
+          "test_preferences_do_not_assign_favorable_cost_to_unknown_candidates",
+          "test_solver_does_not_assign_unknown_context_in_our_favor"
+        ],
+        "test_semantic_enrichment": [
+          "test_document_projection_keeps_later_qualifiers_and_rejects_rewritten_text",
+          "test_real_isolated_witness_is_finite_and_cannot_rewrite_its_output",
+          "test_state_transfer_requires_mapping_approval_and_does_not_invent_missing_properties",
+          "test_symbolic_default_never_becomes_a_constant_and_literal_domain_is_finite"
+        ]
+      },
+      "report_digests": {},
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G14",
+      "check": "The qualitative workflow uses zero automated model-judge runs or API keys; published decisions retain mechanisms, exact alternatives and explicit uncertainty.",
+      "tests": [
+        "test_document_and_qualitative_tools",
+        "test_guide_content"
+      ],
+      "reports": [
+        "completion-24-task-assessment.json"
+      ],
+      "passing_controls": {
+        "test_document_and_qualitative_tools": [
+          "test_qualitative_review_rejects_a_stale_artifact_without_any_runner",
+          "test_rst_retains_unknown_directive_diagnostics",
+          "test_sphinx_inventory_expands_exact_object_uri"
+        ],
+        "test_guide_content": [
+          "test_a_brief_compares_at_least_two_candidates[datafusion-arrow-rust-brief0]",
+          "test_a_brief_compares_at_least_two_candidates[datafusion-arrow-rust-brief1]",
+          "test_a_brief_compares_at_least_two_candidates[datafusion-arrow-rust-brief2]",
+          "test_a_brief_compares_at_least_two_candidates[datafusion-arrow-rust-brief3]",
+          "test_a_brief_compares_at_least_two_candidates[datafusion-arrow-rust-brief4]",
+          "test_a_brief_compares_at_least_two_candidates[datafusion-arrow-rust-brief5]",
+          "test_a_brief_compares_at_least_two_candidates[datafusion-pyarrow-python-brief6]",
+          "test_a_brief_compares_at_least_two_candidates[datafusion-pyarrow-python-brief7]",
+          "test_a_brief_compares_at_least_two_candidates[datafusion-pyarrow-python-brief8]",
+          "test_a_brief_declares_a_known_family_kind[datafusion-arrow-rust-brief0]",
+          "test_a_brief_declares_a_known_family_kind[datafusion-arrow-rust-brief1]",
+          "test_a_brief_declares_a_known_family_kind[datafusion-arrow-rust-brief2]",
+          "test_a_brief_declares_a_known_family_kind[datafusion-arrow-rust-brief3]",
+          "test_a_brief_declares_a_known_family_kind[datafusion-arrow-rust-brief4]",
+          "test_a_brief_declares_a_known_family_kind[datafusion-arrow-rust-brief5]",
+          "test_a_brief_declares_a_known_family_kind[datafusion-pyarrow-python-brief6]",
+          "test_a_brief_declares_a_known_family_kind[datafusion-pyarrow-python-brief7]",
+          "test_a_brief_declares_a_known_family_kind[datafusion-pyarrow-python-brief8]",
+          "test_a_brief_names_a_condition_that_would_reverse_it[datafusion-arrow-rust-brief0]",
+          "test_a_brief_names_a_condition_that_would_reverse_it[datafusion-arrow-rust-brief1]",
+          "test_a_brief_names_a_condition_that_would_reverse_it[datafusion-arrow-rust-brief2]",
+          "test_a_brief_names_a_condition_that_would_reverse_it[datafusion-arrow-rust-brief3]",
+          "test_a_brief_names_a_condition_that_would_reverse_it[datafusion-arrow-rust-brief4]",
+          "test_a_brief_names_a_condition_that_would_reverse_it[datafusion-arrow-rust-brief5]",
+          "test_a_brief_names_a_condition_that_would_reverse_it[datafusion-pyarrow-python-brief6]",
+          "test_a_brief_names_a_condition_that_would_reverse_it[datafusion-pyarrow-python-brief7]",
+          "test_a_brief_names_a_condition_that_would_reverse_it[datafusion-pyarrow-python-brief8]",
+          "test_a_brief_only_cites_declared_principles[datafusion-arrow-rust-brief0]",
+          "test_a_brief_only_cites_declared_principles[datafusion-arrow-rust-brief1]",
+          "test_a_brief_only_cites_declared_principles[datafusion-arrow-rust-brief2]",
+          "test_a_brief_only_cites_declared_principles[datafusion-arrow-rust-brief3]",
+          "test_a_brief_only_cites_declared_principles[datafusion-arrow-rust-brief4]",
+          "test_a_brief_only_cites_declared_principles[datafusion-arrow-rust-brief5]",
+          "test_a_brief_only_cites_declared_principles[datafusion-pyarrow-python-brief6]",
+          "test_a_brief_only_cites_declared_principles[datafusion-pyarrow-python-brief7]",
+          "test_a_brief_only_cites_declared_principles[datafusion-pyarrow-python-brief8]",
+          "test_an_accepted_brief_cites_evidence[datafusion-arrow-rust-brief0]",
+          "test_an_accepted_brief_cites_evidence[datafusion-arrow-rust-brief1]",
+          "test_an_accepted_brief_cites_evidence[datafusion-arrow-rust-brief2]",
+          "test_an_accepted_brief_cites_evidence[datafusion-arrow-rust-brief3]",
+          "test_an_accepted_brief_cites_evidence[datafusion-arrow-rust-brief4]",
+          "test_an_accepted_brief_cites_evidence[datafusion-arrow-rust-brief5]",
+          "test_an_accepted_brief_cites_evidence[datafusion-pyarrow-python-brief6]",
+          "test_an_accepted_brief_cites_evidence[datafusion-pyarrow-python-brief7]",
+          "test_an_accepted_brief_cites_evidence[datafusion-pyarrow-python-brief8]",
+          "test_candidate_apis_resolve_against_the_extracted_inventory",
+          "test_every_principle_states_a_limit",
+          "test_every_principle_states_its_mechanism",
+          "test_lookup_reports_absence_as_scoped_to_the_searched_inventory",
+          "test_the_pilot_authored_decision_briefs"
+        ]
+      },
+      "report_digests": {
+        "completion-24-task-assessment.json": "811dd9992d5823c1884d37ca334babac3a06b61bef059d94abebbaae335d3924"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G15",
+      "check": "The final wheel contains all 36 asset files; five owned native workspaces build/test/lint independently. Two unrelated libraries and offline installed reading use the same standalone package.",
+      "tests": [
+        "test_reuse_contract",
+        "test_native_lanes"
+      ],
+      "reports": [
+        "completion-packaging-native-verification.json",
+        "completion-installed-delivery.json"
+      ],
+      "passing_controls": {
+        "test_reuse_contract": [
+          "test_core_modules_do_not_name_a_library[datafusion]",
+          "test_core_modules_do_not_name_a_library[deltalake]",
+          "test_core_modules_do_not_name_a_library[duckdb]",
+          "test_core_modules_do_not_name_a_library[parquet]",
+          "test_core_modules_do_not_name_a_library[polars]",
+          "test_core_modules_do_not_name_a_library[pyarrow]",
+          "test_core_modules_do_not_name_a_library[pydantic]",
+          "test_registry_adapters_are_resolved_by_identifier_not_import",
+          "test_storage_dependencies_do_not_license_library_specific_decisions",
+          "test_there_are_library_blind_modules_to_check"
+        ],
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ]
+      },
+      "report_digests": {
+        "completion-packaging-native-verification.json": "4e49cc1df71330851596bee6fbe7bac65dd71d51ac73dc4483376794a2371837",
+        "completion-installed-delivery.json": "92ec0e484b40a59455ffafef922499ece939139312f48f8e230d38b3c8e2cca4"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G16",
+      "check": "Real Cargo fixtures retain virtual/single package identity, duplicate versions, aliases, normal/dev/build dependencies, host proc macros, target kinds, required features and no-deps omission. Metadata explicitly does not claim unobserved compilation units.",
+      "tests": [
+        "test_cargo_context",
+        "test_native_lanes"
+      ],
+      "reports": [
+        "completion-native-final-producers.json",
+        "completion-feature-availability.json"
+      ],
+      "passing_controls": {
+        "test_cargo_context": [
+          "test_cargo_virtual_workspace_duplicate_names_targets_and_dependency_kinds"
+        ],
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ]
+      },
+      "report_digests": {
+        "completion-native-final-producers.json": "55a95d0e54aada1fcf8516158b0ef48c94818b1e78be0598ec57815e706ddec7",
+        "completion-feature-availability.json": "bfad70f679ff8397b7a0bcfce0373cf34fc46585ad5324fb9763b05990897071"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G17",
+      "check": "All 21 ItemEnum and 14 Type wire variants survive 57/59/60/61 native admission and restoration with ordering and explicit historical metadata frontiers. Real private-origin aliases, wrappers, impl polarity and unknown externals retain their distinctions.",
+      "tests": [
+        "test_declaration_formats",
+        "test_native_lanes",
+        "test_rust_semantics_v2",
+        "test_operation_shapes"
+      ],
+      "reports": [
+        "completion-declaration-format-matrix.json"
+      ],
+      "passing_controls": {
+        "test_declaration_formats": [
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[57]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[59]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[60]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[61]"
+        ],
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_rust_semantics_v2": [
+          "test_index_keeps_associated_methods_fields_and_item_namespaces",
+          "test_reexported_trait_members_survive_private_defining_module"
+        ],
+        "test_operation_shapes": [
+          "test_conflicting_contexts_remain_unresolved",
+          "test_self_keeps_borrow_result_and_artifact_scope",
+          "test_shaped_capability_release_replays_without_source_transport"
+        ]
+      },
+      "report_digests": {
+        "completion-declaration-format-matrix.json": "60618a18ed046483fb043b6abba765fb39bb3fea952d58803c7802bfa6c656c9"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G18",
+      "check": "Exact source/helper/context digests distinguish acquisition requests. Documentation/private/hidden surfaces do not certify ordinary consumer availability; paired disabled/enabled FFI compiler results are separate.",
+      "tests": [
+        "test_native_lanes",
+        "test_cargo_context",
+        "test_native_fabric"
+      ],
+      "reports": [
+        "completion-feature-availability.json"
+      ],
+      "passing_controls": {
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_cargo_context": [
+          "test_cargo_virtual_workspace_duplicate_names_targets_and_dependency_kinds"
+        ],
+        "test_native_fabric": [
+          "test_contextual_identity_does_not_merge_reused_item_ids_across_artifacts",
+          "test_fabric_source_analysis_replays_after_transport_removal[False]",
+          "test_fabric_source_analysis_replays_after_transport_removal[True]",
+          "test_native_authority_and_forged_projection",
+          "test_native_corruption_withdraws_current_success",
+          "test_native_receipt_denominator_is_not_a_citation_gesture",
+          "test_nested_callback_return_recovery[def f(x: Callable[[A], B]) -> Callable[[C], D]:-Callable[[C], D]]",
+          "test_nested_callback_return_recovery[fn f(callback: fn() -> ())-]",
+          "test_nested_callback_return_recovery[fn map<F: Fn(T) -> U>(f: F) -> Vec<U>-Vec<U>]",
+          "test_nested_callback_return_recovery[fn(f: fn(T) -> U) -> fn(V) -> W-fn(V) -> W]",
+          "test_python_source_interface_preserves_slots_and_replays_without_transport"
+        ]
+      },
+      "report_digests": {
+        "completion-feature-availability.json": "bfad70f679ff8397b7a0bcfce0373cf34fc46585ad5324fb9763b05990897071"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G19",
+      "check": "Numeric ID/key-order changes preserve all 166 fixture contract digests. Bound/default/associated-requirement/impl-polarity/stability/mutability/public-route mutations remain observable; exact source prerequisites reopen sensitive qualifications. No blanket semver verdict or equivalence across unresolved Rust contexts is claimed.",
+      "tests": [
+        "test_native_lanes",
+        "test_declaration_formats",
+        "test_rust_semantics_v2",
+        "test_recovery_regressions",
+        "test_declaration_identity"
+      ],
+      "reports": [
+        "completion-native-identity.json"
+      ],
+      "passing_controls": {
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_declaration_formats": [
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[57]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[59]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[60]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[61]"
+        ],
+        "test_rust_semantics_v2": [
+          "test_index_keeps_associated_methods_fields_and_item_namespaces",
+          "test_reexported_trait_members_survive_private_defining_module"
+        ],
+        "test_recovery_regressions": [
+          "test_authored_denominator_cannot_shrink_independent_scope",
+          "test_changed_review_metadata_reuses_semantically_unchanged_products",
+          "test_documented_python_types_are_separate_from_annotations",
+          "test_example_edit_reopens_decision_review",
+          "test_failed_behavior_after_explicit_new_review_still_cannot_publish",
+          "test_failed_intake_preserves_existing_authority",
+          "test_missing_execution_receipt_cannot_be_resealed_as_valid_bundle",
+          "test_nomination_rules_have_positive_and_negative_controls",
+          "test_proposal_replaces_existing_claim_as_unreviewed_draft",
+          "test_registry_preserves_functionality_without_accepting_it",
+          "test_source_rule_excludes_comment_and_string_lookalikes",
+          "test_unicode_eof_markdown_selection_keeps_final_byte",
+          "test_withdrawn_dependency_review_removes_capability_coverage"
+        ],
+        "test_declaration_identity": [
+          "test_additional_contract_changes_do_not_disappear[associated-requirement]",
+          "test_additional_contract_changes_do_not_disappear[impl-polarity]",
+          "test_additional_contract_changes_do_not_disappear[stability]",
+          "test_bound_default_mutability_and_public_route_changes_remain_observable",
+          "test_item_numbering_and_mapping_order_do_not_change_contract_digests"
+        ]
+      },
+      "report_digests": {
+        "completion-native-identity.json": "0087f343cd282a6b96f43355e6b066b6f61697ec235f9851d994656459824c9d"
+      },
+      "state": "finite-controls-passed"
+    },
+    {
+      "id": "G20",
+      "check": "Supported format decoding is strict, unknown formats fail, original native observations remain auditable and incomplete/budget-exceeded workers fail. Python receives owned per-record projections, never another whole raw Crate for semantic interpretation.",
+      "tests": [
+        "test_extraction",
+        "test_source_protocol",
+        "test_native_lanes",
+        "test_declaration_formats"
+      ],
+      "reports": [
+        "completion-native-final-producers.json",
+        "completion-packaging-native-verification.json"
+      ],
+      "passing_controls": {
+        "test_extraction": [
+          "test_a_dependency_item_is_recorded_as_a_candidate_not_a_local_api",
+          "test_an_unverified_rustdoc_format_is_refused",
+          "test_every_declared_profile_has_an_inventory[arrow-flight-rust-arrow-flight-rust-docsrs]",
+          "test_every_declared_profile_has_an_inventory[arrow-rust-arrow-rust-docsrs]",
+          "test_every_declared_profile_has_an_inventory[datafusion-python-datafusion-python-locked]",
+          "test_every_declared_profile_has_an_inventory[datafusion-rust-datafusion-rust-docsrs]",
+          "test_every_declared_profile_has_an_inventory[pyarrow-python-pyarrow-python-locked]",
+          "test_inventories_only_contain_declared_surface_packages[arrow-flight-rust-arrow-flight-rust-docsrs]",
+          "test_inventories_only_contain_declared_surface_packages[arrow-rust-arrow-rust-docsrs]",
+          "test_inventories_only_contain_declared_surface_packages[datafusion-python-datafusion-python-locked]",
+          "test_inventories_only_contain_declared_surface_packages[datafusion-rust-datafusion-rust-docsrs]",
+          "test_inventories_only_contain_declared_surface_packages[pyarrow-python-pyarrow-python-locked]",
+          "test_registry_probes_record_what_they_are_evidence_for"
+        ],
+        "test_source_protocol": [
+          "test_closed_stdout_does_not_escape_the_deadline",
+          "test_fragmented_unicode_frames_commit_exact_records",
+          "test_incomplete_or_mismatched_evidence_never_commits[after_terminal]",
+          "test_incomplete_or_mismatched_evidence_never_commits[duplicate_header]",
+          "test_incomplete_or_mismatched_evidence_never_commits[empty_success]",
+          "test_incomplete_or_mismatched_evidence_never_commits[truncated]",
+          "test_incomplete_or_mismatched_evidence_never_commits[wrong_digest]",
+          "test_incomplete_or_mismatched_evidence_never_commits[wrong_input]",
+          "test_incomplete_or_mismatched_evidence_never_commits[wrong_sequence]",
+          "test_oversized_frame_rejected_before_body_arrives",
+          "test_resident_memory_budget_is_independent_of_virtual_mapping_ceiling",
+          "test_worker_deadline_stops_a_hanging_child",
+          "test_worker_zero_exit_without_receipt_is_failure"
+        ],
+        "test_native_lanes": [
+          "test_derived_warm_reuse_executes_no_analysis",
+          "test_independent_universe_detects_added_competitor",
+          "test_mir_real_dispatch_and_derived_input_closure",
+          "test_real_declaration_routes_self_bounds_and_nomination",
+          "test_real_ruff_and_pyrefly_keep_scopes_and_uncertainty",
+          "test_review_equivalence_and_contract_mutation",
+          "test_source_capability_preserves_documentation_and_nested_call_ids",
+          "test_source_examples_use_documentation_roles_and_exact_maps",
+          "test_targeted_type_roles_and_expected_fallback",
+          "test_trait_checklist_and_nested_composition",
+          "test_worker_reuse_and_corruption_are_observed"
+        ],
+        "test_declaration_formats": [
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[57]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[59]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[60]",
+          "test_all_declaration_and_type_variants_survive_portable_native_admission[61]"
+        ]
+      },
+      "report_digests": {
+        "completion-native-final-producers.json": "55a95d0e54aada1fcf8516158b0ef48c94818b1e78be0598ec57815e706ddec7",
+        "completion-packaging-native-verification.json": "4e49cc1df71330851596bee6fbe7bac65dd71d51ac73dc4483376794a2371837"
+      },
+      "state": "finite-controls-passed"
+    }
+  ],
+  "freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e",
+  "verification": "completion-verification.json",
+  "semantic_dispositions": {
+    "gap": 16,
+    "partial": 4,
+    "supported": 4
+  },
+  "compatibility": "completion-native-only-freeze-compatibility.json",
+  "all_40_finite_checks_passed": true,
+  "completion_boundary": "Accepted seven-step pilot implementation and finite evidence gates complete. Semantic task gaps, unresolved native bridges, conservative whole-record invalidation and same-agent review remain explicit; no universal library certification."
+}

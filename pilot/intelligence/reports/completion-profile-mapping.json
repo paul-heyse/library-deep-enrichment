@@ -1,0 +1,57 @@
+{
+  "observed_manifest": "3d60c02fc1b871569e4b619532ead76d6c335a78266d275b881422e531d1dab5",
+  "requested_task_profile": "python-installed-54.0-25.0.1",
+  "selected_corpus_profile": "python-installed-54-25",
+  "scope": "Task catalog label correction for the exact DataFusion Python 54.0.0 and PyArrow 25.0.1 observations. This does not merge distinct source, stub, runtime, registry, or compiler contexts.",
+  "contexts": [
+    {
+      "revision": "5c3ebfebdbd55c0c3a7ce1c76383d2537c931741a26fc577f7f51477a5aebbce",
+      "context": {
+        "logical_id": "native-context:context:c4b0d436349f059d0a08f0b2d45e846621b5ac4dd6ed209731126ab045e86cb3",
+        "profile": "python-installed-54-25",
+        "language": "mixed",
+        "package": "datafusion",
+        "version": "54.0.0",
+        "toolchain": "tree-sitter+ruff; exact binary recorded by extraction",
+        "target": "",
+        "features": [],
+        "components": [],
+        "evidence": [
+          {
+            "family": "raw_observations",
+            "revision": "67593e8d7b3cdc749fffd3f6f44fd39212e49984e00bec6cb19817d336489c02",
+            "field": "/raw/package",
+            "digest": "7c3efaf672642964bf02caaa5299ea9667a17314542d3e5a576bd702bea2c1be",
+            "role": "context"
+          }
+        ]
+      }
+    },
+    {
+      "revision": "3e3f24a6c642c2b60c21d167971ef675312dbe393c70b54c3a60a74d166d7d6b",
+      "context": {
+        "logical_id": "native-context:context:34f7a8fa702b8e9ce5e9ecfd827e1c2f5900d037e9397cfd82975f45b955535d",
+        "profile": "python-installed-54-25",
+        "language": "mixed",
+        "package": "pyarrow",
+        "version": "25.0.1",
+        "toolchain": "tree-sitter+ruff; exact binary recorded by extraction",
+        "target": "",
+        "features": [],
+        "components": [],
+        "evidence": [
+          {
+            "family": "raw_observations",
+            "revision": "7d2801772f6f8409505b425a26538d5fff249a305cd2ee79184781b63405ae64",
+            "field": "/raw/package",
+            "digest": "b3f170fdcbacc95f328d54c1a3601bc668856b4ae5555eb6f40ed798536f1f14",
+            "role": "context"
+          }
+        ]
+      }
+    }
+  ],
+  "author": "Codex implementation agent",
+  "reviewer": "same Codex agent; no independent review claimed",
+  "other_profiles": "Rust docsrs, local Arrow schema, interop, feature-reduced, Pydantic and serde_json selections remain distinct and require their own applicability evidence."
+}

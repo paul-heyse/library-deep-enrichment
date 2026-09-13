@@ -1,0 +1,13 @@
+{
+  "upstream_url": "https://files.pythonhosted.org/packages/c3/90/bf149bccebdc19b21197ee779663564c4d8573923023efc26ca89b0da3c8/scikit_mine-1.0.0-py3-none-any.whl",
+  "upstream_sha256": "74b3b8104882280eb8fc254399b541f652d03c2a0f2ca55d0e97993b7e72938e",
+  "patched_wheel": "scikit_mine-1.0.0+smartref.1-py3-none-any.whl",
+  "patched_sha256": "27ff176b0dd221ad2846dfeb5b1de0d4627da5627062f621b4eeab1f91e86e06",
+  "changes": [
+    "Version metadata 1.0.0+smartref.1",
+    "dataclasses backport dependency applies only below Python 3.7",
+    "Regenerated wheel RECORD"
+  ],
+  "code_bytes": "All upstream package code and license bytes retained exactly",
+  "reason": "The standard-library dataclasses module is used on Python 3.14; backport 0.8 requires Python <3.7."
+}

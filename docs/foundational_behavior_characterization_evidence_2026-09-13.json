@@ -1,0 +1,325 @@
+{
+  "kind": "library-guides.design-assessment-evidence.v1",
+  "status": "read-only source assessment; proposed design, no behavioral qualification",
+  "verified_at_utc": "2026-09-13T05:01:59.669272+00:00",
+  "assessment_document": "tooling/library_guides/docs/foundational_behavior_characterization_design_assessment_2026-09-13.md",
+  "assessment_document_sha256": "6b96647cf4abddd23daedbdd1527346381d2924d4beea7ea58d9337bebbd4dd4",
+  "repository_head": "5e2464345a11ee9482e4f0d582c07d457904a694",
+  "workspace_note": "Shared dirty working tree; existing library_guides work preserved. This assessment adds only its Markdown document and this JSON evidence record.",
+  "methodology": {
+    "evidence": "Relevant local reference sections, owned producer and analysis source, critical pinned upstream API source, and primary external documentation.",
+    "code_intelligence": "MCP tools unavailable; source/text fallback. No transitive-closure or repository-wide absence proof.",
+    "reference_navigation": "Requested skill navigators used. just lib-outline helper unavailable; section indexes and source slices used.",
+    "execution": "No extraction, compiler qualification, unit tests or dependency changes; historical execution evidence is linked and not reasserted as rerun.",
+    "file_hash_scope": "Whole-file fingerprints for referenced evidence; the assessment inspected relevant sections, not necessarily every line of large references.",
+    "external_documentation": "Primary documentation supports capability/design discussion; live documentation is not proof of availability in an uninspected installed version."
+  },
+  "core_freeze_verification": {
+    "record": "tooling/library_guides/pilot/intelligence/reports/completion-core-freeze.json",
+    "reported_digest": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e",
+    "digest_basis": "SHA-256 of canonical JSON path-to-file-SHA256 mapping",
+    "files_checked": 270,
+    "changed_or_missing": []
+  },
+  "verified_provider_heads": [
+    {
+      "provider": "Ruff",
+      "checkout": "tooling/library_guides/native/source-facts/upstream",
+      "expected_commit": "80790b348b5188e7fc253665540f442c6ec7dd05",
+      "observed_commit": "80790b348b5188e7fc253665540f442c6ec7dd05"
+    },
+    {
+      "provider": "Pyrefly",
+      "checkout": "tooling/library_guides/native/python-semantics/upstream",
+      "expected_commit": "1933169ad8ee9e4d4114112eb56ef0811fb0a094",
+      "observed_commit": "1933169ad8ee9e4d4114112eb56ef0811fb0a094"
+    }
+  ],
+  "task_counts": {
+    "gap": 16,
+    "partial": 4,
+    "supported": 4
+  },
+  "tasks": [
+    {
+      "task": "rust-placement",
+      "state": "gap"
+    },
+    {
+      "task": "python-placement",
+      "state": "partial"
+    },
+    {
+      "task": "rust-results",
+      "state": "supported"
+    },
+    {
+      "task": "python-results",
+      "state": "supported"
+    },
+    {
+      "task": "python-representation",
+      "state": "gap"
+    },
+    {
+      "task": "pydantic-input",
+      "state": "supported"
+    },
+    {
+      "task": "serde-input",
+      "state": "partial"
+    },
+    {
+      "task": "c-stream",
+      "state": "gap"
+    },
+    {
+      "task": "rust-enrichment",
+      "state": "gap"
+    },
+    {
+      "task": "rust-rows",
+      "state": "gap"
+    },
+    {
+      "task": "python-dataset",
+      "state": "gap"
+    },
+    {
+      "task": "reverse-rust-placement",
+      "state": "gap"
+    },
+    {
+      "task": "reverse-python-overflow",
+      "state": "supported"
+    },
+    {
+      "task": "duplicate-reference",
+      "state": "gap"
+    },
+    {
+      "task": "provider-limit",
+      "state": "gap"
+    },
+    {
+      "task": "rust-schema",
+      "state": "partial"
+    },
+    {
+      "task": "python-schema",
+      "state": "gap"
+    },
+    {
+      "task": "custom-scalar",
+      "state": "gap"
+    },
+    {
+      "task": "custom-aggregate",
+      "state": "gap"
+    },
+    {
+      "task": "conditional-store",
+      "state": "gap"
+    },
+    {
+      "task": "flight-ipc",
+      "state": "gap"
+    },
+    {
+      "task": "async-consistency",
+      "state": "gap"
+    },
+    {
+      "task": "numpy-dlpack",
+      "state": "gap"
+    },
+    {
+      "task": "feature-profile",
+      "state": "partial"
+    }
+  ],
+  "validation": {
+    "local_links_resolve": true,
+    "all_24_task_ids_accounted_for": true,
+    "all_20_non_supported_tasks_mapped_with_original_state": true,
+    "frozen_implementation_files_unchanged": true,
+    "independent_review": false
+  },
+  "local_evidence_files": [
+    {
+      "path": ".codex/skills/code-facts-lib-ref/SKILL.md",
+      "sha256": "ca24f247931dbb822c7c9cc653cdf5f60d04d5e804a39b719b30e4b8f7b0f362"
+    },
+    {
+      "path": ".codex/skills/rust-api-extraction-ref/SKILL.md",
+      "sha256": "9922f2e3eceecb6c2e781541568699cdc240dab54db0ef13704362e75bc6b6f0"
+    },
+    {
+      "path": ".codex/skills/search-tools-ref/SKILL.md",
+      "sha256": "2bd8e1b4cb5c1a0bc0d992d2529cf2d107eb2c7f8c56774fe56da530cc1294c5"
+    },
+    {
+      "path": "docs/library_ref/cargo_metadata_comprehensive_advanced_reference_2026-09-11.md",
+      "sha256": "45bb44b1b60c3eaa5fcc0b21414bdef19a2ec3c037a8865fd94d02500ef4e26b"
+    },
+    {
+      "path": "docs/library_ref/petgraph.md",
+      "sha256": "8f5b19b2d9fbb9dfe2caf974b2a1f4c55b9244cfd167eb48956d225a076cccd9"
+    },
+    {
+      "path": "docs/library_ref/pyrefly_rust_cpg_advanced_reference_1.2.0_2026-08-19.md",
+      "sha256": "208582927c109dde0d399a7277442417006c878dfd21403a09a5c0bc7b2819e1"
+    },
+    {
+      "path": "docs/library_ref/ruff_python_crates_advanced_reference_2026-08-18.md",
+      "sha256": "f42e0b5e3d63c66bde68e2c3b79cef04d288eec52ee64e424f3d95578fc386d6"
+    },
+    {
+      "path": "docs/library_ref/rust_mir_cpg_continuous_reference_2026-08-18.md",
+      "sha256": "1584a4ca9c7a06a495cfedacf585717aaec61949546d0191b19df48451451ea5"
+    },
+    {
+      "path": "docs/library_ref/rustdoc_json_comprehensive_advanced_reference_2026-09-11.md",
+      "sha256": "9297843c334a98283c6b2fb801db65bdfb8ea80dfd00990ff87376220e5ae485"
+    },
+    {
+      "path": "docs/library_ref/rustdoc_types_comprehensive_advanced_reference_2026-09-11.md",
+      "sha256": "30141d426067c42c1e9b9f5401414fff8524e2e4bd26530fa526fe9756ba048f"
+    },
+    {
+      "path": "tooling/library_guides/library_guides/analyses/contracts.py",
+      "sha256": "eb7f05f86878ecbef51ef100dcd5b57f0d0d28ae4ec6e2f4d7d94f2f4f74f971"
+    },
+    {
+      "path": "tooling/library_guides/library_guides/analyses/effects.py",
+      "sha256": "562c8a7428c521535e5c36d5dcc3e67fbb5819664e5ef5616c7e529ce9dab4eb"
+    },
+    {
+      "path": "tooling/library_guides/library_guides/analyses/fabric.py",
+      "sha256": "e480d51c14001e5ab32a579bc9916b09cbf834a000a27a150a99c9857f6b919f"
+    },
+    {
+      "path": "tooling/library_guides/library_guides/analyses/flow.py",
+      "sha256": "3ed6a444e829f2a3b89643a6ed12be3c0edbe1773a3ed25cc81d814db7745be4"
+    },
+    {
+      "path": "tooling/library_guides/library_guides/analyses/python_fabric.py",
+      "sha256": "ae547a3c5dd008ad1000b335c5abdb404c6e29a8ee53d3c30ed57ca4a31e100f"
+    },
+    {
+      "path": "tooling/library_guides/library_guides/semantics/applicability.py",
+      "sha256": "d21ed16904bf64787b9097278efb362cd79a9a55bcfeb4a0bcb736716d053fae"
+    },
+    {
+      "path": "tooling/library_guides/library_guides/semantics/composition_programs.py",
+      "sha256": "b375c40d7a367a02c1069ea45dee4746b83ad8ebb04abe3c82a5c926633e5313"
+    },
+    {
+      "path": "tooling/library_guides/library_guides/semantics/documents.py",
+      "sha256": "bd1344cfa52e6276da36678ef73ad7f0d8e0aad5ff479814c0fe61002557131c"
+    },
+    {
+      "path": "tooling/library_guides/library_guides/semantics/enrichment_contracts.py",
+      "sha256": "ecd5ba0277ffa9aed7710a6317fe92ba80c638250982c2010127068efc725f16"
+    },
+    {
+      "path": "tooling/library_guides/library_guides/semantics/relational.py",
+      "sha256": "b5d48dd0bb4659ade8404dce216d2b0b304c3e12ba4e96654f73ba56ef00ece4"
+    },
+    {
+      "path": "tooling/library_guides/library_guides/semantics/transfers.py",
+      "sha256": "f6bea892f0e7586e3ee20fd0c60bd25dcae6331a137dc0f9632c24a76040142b"
+    },
+    {
+      "path": "tooling/library_guides/native/mir-facts/rust-toolchain.toml",
+      "sha256": "ce125936f5b4d256a461a76bef37a6b7ffbe7c6e37f1166417c10843241ded43"
+    },
+    {
+      "path": "tooling/library_guides/native/mir-facts/src/main.rs",
+      "sha256": "486f2d54a74f2ae8cc3fa5b636bed1bddeea2c72c593eece5056f0dfaa30be30"
+    },
+    {
+      "path": "tooling/library_guides/native/mir-facts/src/projection.rs",
+      "sha256": "e9e844ff0f66c7c9e4fc6c72664bd578c1be205066ba6681b53e54e4f2148a5a"
+    },
+    {
+      "path": "tooling/library_guides/native/mir-facts/src/values.rs",
+      "sha256": "90574f9d7f6c120c7605da1da413332087bb96ed3f7c2df722e832ab8b15c5c6"
+    },
+    {
+      "path": "tooling/library_guides/native/python-semantics/bootstrap.sh",
+      "sha256": "ead58a40594cc2dd146a35798381f8f1fd17fe803b4dc6908fca74926f8a3962"
+    },
+    {
+      "path": "tooling/library_guides/native/python-semantics/src/main.rs",
+      "sha256": "9dd8deab25971905f22a75409de1c872a8727f8ee483e3d32b992925454d7308"
+    },
+    {
+      "path": "tooling/library_guides/native/python-semantics/src/targeted.rs",
+      "sha256": "3123b6ce7937f8833beb7ef1d43251c5adab98b01b14697460f25d2622feb919"
+    },
+    {
+      "path": "tooling/library_guides/native/python-semantics/upstream/pyrefly/lib/query.rs",
+      "sha256": "c642a5223cc9062c22d7c243c8d5ab9c0dbec09ab1bd6b5f2cf780d8df9c8a58"
+    },
+    {
+      "path": "tooling/library_guides/native/source-facts/Cargo.toml",
+      "sha256": "5d6093856b0321b7d75ddf2eb2b973559fe747d8dbf97396b4623ebedd1021a8"
+    },
+    {
+      "path": "tooling/library_guides/native/source-facts/bootstrap.sh",
+      "sha256": "f8907fc3d3f88f0b25427b5c847478b09a96638d083a2b34cc1d7c451ad48bb9"
+    },
+    {
+      "path": "tooling/library_guides/native/source-facts/src/lexical.rs",
+      "sha256": "b49c55acaeb10dc0c2e9670cc1c214ad5ebab72d7a8683111f6af2c09ee883f0"
+    },
+    {
+      "path": "tooling/library_guides/native/source-facts/upstream/crates/ruff_python_semantic/src/cfg/graph.rs",
+      "sha256": "bd628bdbc47c4072e30df1f628d77c68f9b93075ae2e59e29b6db1265e50ebb5"
+    },
+    {
+      "path": "tooling/library_guides/pilot/intelligence/COMPLETION.md",
+      "sha256": "4b27c0c2bf09f49b9a979c274333ca60bb1aefe67976d7bf773a23262818651a"
+    },
+    {
+      "path": "tooling/library_guides/pilot/intelligence/TASK_ASSESSMENT.md",
+      "sha256": "c23fcab6a6afca67c289548ecdf8d3283350980d353fb8d7ee61c3359bbfc676"
+    },
+    {
+      "path": "tooling/library_guides/pilot/intelligence/reports/completion-core-freeze.json",
+      "sha256": "fe2d7a7d2f5f9bad6c9d5af6b2cb25f0e23a103e6d50bba7e604cfc0161e3aa5"
+    },
+    {
+      "path": "tooling/library_guides/pyproject.toml",
+      "sha256": "16dbeee31030419fcd53f9e481d10b9575566ea119348dc5ce52f82b2a2ad4b4"
+    },
+    {
+      "path": "tooling/library_guides/rustdoc-helper/Cargo.toml",
+      "sha256": "9967fc0c49a2dff9c5d2f8bc1658fbcbf5b25cb98554465041d231d207dcfd87"
+    },
+    {
+      "path": "tooling/library_guides/rustdoc-helper/src/cargo_messages.rs",
+      "sha256": "32d153503045a6a2d6ca0d3adbe8583621c6b488c02b1e90e9c85bd09e06c013"
+    },
+    {
+      "path": "tooling/library_guides/rustdoc-helper/src/declarations.rs",
+      "sha256": "30efe7b01aad8cf5e203e4ba6fe9fe597d07fe5452695ef64f2ab4b4ebc0418b"
+    }
+  ],
+  "primary_external_references": [
+    "https://clang.llvm.org/docs/JSONCompilationDatabase.html",
+    "https://clang.llvm.org/docs/LibTooling.html",
+    "https://cython.readthedocs.io/en/latest/src/userguide/source_files_and_compilation.html",
+    "https://docs.rs/cargo_metadata/0.23.1/cargo_metadata/enum.Message.html",
+    "https://docs.rs/loom/latest/loom/?search=model",
+    "https://docs.rs/petgraph/latest/petgraph/algo/dominators/index.html",
+    "https://hypothesis.readthedocs.io/en/latest/stateful.html",
+    "https://model-checking.github.io/kani/verification-results.html",
+    "https://plse.cs.washington.edu/daikon/",
+    "https://pyo3.rs/main/class.html",
+    "https://rustc-dev-guide.rust-lang.org/borrow-check.html",
+    "https://rustc-dev-guide.rust-lang.org/mir/dataflow.html",
+    "https://souffle-lang.github.io/provenance"
+  ]
+}

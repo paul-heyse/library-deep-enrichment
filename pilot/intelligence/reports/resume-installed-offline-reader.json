@@ -1,0 +1,11 @@
+{
+  "manifest": "066767626ca7f657baed3b8d99c8c6b4bc1ed41cda1482dc39df0c3dafbeaa5a",
+  "package": "/home/paul/smartref/.cache/library-guides-implementation/resume-20260912T134154Z/installed-reader/lib/python3.14/site-packages/library_guides/__init__.py",
+  "network": "isolated namespace",
+  "gpu_service": "unavailable",
+  "original_sources": "unmounted",
+  "read_guide": true,
+  "export_reimport": true,
+  "guide_sha256": "bf0757dd7a64d0d479fa70c7fcc58e537ff6c69ce8718128998a7e1f8384fc30",
+  "dependency_fixture": "Fresh virtualenv containing the 96 exact distributions present in the tooling environment; wheel installed without dependency resolution. This tests the installed reader, not all newly declared runtime dependencies."
+}

@@ -1,0 +1,6 @@
+{
+  "manifest": "f555426f89fc6c2315cbee0575d8c142ab162dba959efb17428583209d64fb87",
+  "sample_size": 64,
+  "sanctioned_batch_seconds": 0.22306039800014332,
+  "scope": "First 64 selected native fact members in this exact view; cold reader"
+}

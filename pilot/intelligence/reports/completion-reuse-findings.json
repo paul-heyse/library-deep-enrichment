@@ -1,0 +1,241 @@
+{
+  "freeze": "ae96ee29d0bf2d1bc5a59ac96167fc5411f4e4f615f17fd19d76d66d8f95e5fa",
+  "failed_attempt_heads": {
+    "pydantic": "0ff73f3dc8f5e4a616a19b367d7037af8540a3fb1c942d4d2d2995a759aff912",
+    "serde": "08508cdba3cfdc871750ad4cfdbd0228ab1101d2f56119ba20d5d3e56381861b"
+  },
+  "findings": [
+    {
+      "id": "reuse-01",
+      "problem": "Python documentation reads all source_files; semantic pack provenance adds an unrelated source and withdraws 718 docstrings.",
+      "change": "Select exact native artifact and its retained source-file logical identities."
+    },
+    {
+      "id": "reuse-02",
+      "problem": "Adding a different task withdraws previous comparisons, making publication fail.",
+      "change": "Task updates invalidate only decisions attached to the changed task; other candidate or semantic mutations retain conservative invalidation."
+    },
+    {
+      "id": "reuse-03",
+      "problem": "Python interface stage selects all contexts, so a new witness environment would invalidate unrelated source interfaces.",
+      "change": "Select only the exact native artifact context; regression adds an unrelated context and requires interface/docstring warm reuse."
+    },
+    {
+      "id": "full-scope-04",
+      "problem": "Current full-corpus shapes worker reached its 4000000000-byte aggregate RSS limit. It imported the FCA/scientific stack even though shapes do not use that lane. The stage failed explicitly and no partial output was admitted.",
+      "change": "Keep shapes independent of unused analytical imports. Add a typed per-worker memory limit to the analytical request and use an explicit 8 GiB bound for the full shape compiler. Resource receipt and pinned request retain the chosen bound; all other workers keep the 4 GB default. This is resource sizing, not a claim of a memory optimization.",
+      "second_attempt": "Lazy imports alone again hit the unchanged 4 GB aggregate RSS ceiling; no partial output admitted.",
+      "calibration": "The full PyArrow interface producer also reached the 4 GB ceiling. LIBRARY_GUIDES_ANALYTICAL_MEMORY_BYTES now accepts an explicit positive limit up to 64 GiB; the resolved value is included in the pinned analytical request and execution receipt. Full-main qualification explicitly selects 8 GiB; ordinary callers retain their default."
+    },
+    {
+      "id": "full-scope-05",
+      "problem": "Profiled main shape admission and Pydantic release admission repeatedly decode/hashes the same 4 MiB BlobChunk. RecordCache multiplies base64/JSON length by four, allowing only two such chunks in its 64 MiB budget.",
+      "change": "Account immutable binary bytes directly plus conservative fixed/string overhead, and avoid recalculating the size of an identical cached object. Keep the same 64 MiB and 2048-entry bounds. Requalify exact byte/membership integrity and replay."
+    },
+    {
+      "id": "portable-currentness-06",
+      "problem": "A mutable current successor restored from a portable decision has exact proof prerequisites but no producing StageJobs. Replacing a premise must withdraw dependent products even when there is no job to invalidate.",
+      "change": "Add a typed exact-reference withdrawal closure for unowned current products; retain historical control and authority records. This is an additional general core exception and requires a renewed freeze and qualification.",
+      "state": "implemented; portable premise withdrawal control and 304-test suite passed",
+      "performance_control": "Read-only full main-corpus direct dependency selection: 7.104 seconds, no mutation; log direct-dependencies-main-profile.log."
+    },
+    {
+      "id": "full-scope-07",
+      "problem": "The full shape producer completes, but admission profiles show one support prefetch per proposed shape. Existing batch prefetch only included explicit foreign keys, leaving exact evidence selections on an expensive per-record path.",
+      "change": "Prefetch each bounded validation window including Selection and ByteRange prerequisites. Keep per-record exact support and proposed-membership validation. Add a physical-read count control and renew freeze/qualification.",
+      "state": "implemented; 260 independent source supports require exactly three cold read windows (128/128/4), with 23 focused controls passed"
+    },
+    {
+      "id": "full-cohort-08",
+      "problem": "22 full-profile comparisons repeat the same candidate evidence. A prerequisite list larger than the bounded record cache can evict its own prefetched records before reference validation.",
+      "change": "Use a bounded transaction-local exact-prerequisite memo and consume long reference lists in windows. Validate all distinct source selections and preserve complete candidate populations. Qualify wide comparisons and renew freeze. Add generic pinned nested-sequence paging so large candidate populations and proof scopes remain inspectable; responses are bounded, while the selected record is materialized internally.",
+      "state": "implemented; 23 focused tests passed in 12.34 seconds; Pyrefly zero diagnostics",
+      "controls": "Two 3000-candidate scopes require fewer than 100 operation reads; all exact prerequisites remain validated. Continuations reject different manifests, records and fields, preserve exact denominators and leave oversized values unconsumed."
+    },
+    {
+      "id": "full-publication-09",
+      "problem": "Main publication remained on one-at-a-time evidence-closure reads after 19 minutes; the 22 comparisons were already admitted and no release was attempted.",
+      "change": "Resolve each distinct closure frontier in exact family batches of at most 128, preserve all prerequisites and the sorted final closure. A 3000-operation control verifies the exact operation set with fewer than 100 physical operation reads.",
+      "state": "21 focused controls passed in 12.77 seconds; source head preserved in cohort-publication-batching-interruption.json"
+    },
+    {
+      "id": "native-format-10",
+      "problem": "Formats 59 and 60 encode non-null stable metadata with a flattened enum; converting directly to the format-61 owned contract rejects valid stable records. The real 47-job set had no such populated value and did not cover this case.",
+      "change": "Within the native typed item adapter, preserve old feature/since fields while converting stable metadata to the owned nested enum. No whole raw Crate is sent to Python. The matrix retains 166 declarations, all 21 ItemEnum and 14 Type variants for 57/59/60/61, with explicit unavailable historical fields.",
+      "state": "All four native admission/export/import controls passed in 6.97 seconds; fresh native build and full gate required"
+    },
+    {
+      "id": "native-formatting-11",
+      "problem": "Final owned Rust formatting check found unformatted MIR constructor/literal projections.",
+      "change": "rustfmt-only changes to projection.rs and values.rs; 16 native/MIR controls passed after rebuild. Preserve upstream formatter drift and verify only each owned package plus the separate protocol workspace.",
+      "state": "native-final-format-fixtures.log; completion-native-source-freeze.json records before/after hashes"
+    },
+    {
+      "id": "native-identity-12",
+      "problem": "Renumbering rustdoc item IDs and reversing JSON map order caused five false semantic deltas among 166 declarations. Unnamed imports, tuple field ID arrays and restricted visibility parents retained compiler-local numbers.",
+      "change": "Normalize those references through native symbolic declaration identity. Artifact identity remains distinct; no cross-context equivalence is inferred.",
+      "validation": "tests/test_declaration_identity.py: all 166 digests and public routes stable; bound/default/mutability/public alias positive mutations remain observable. Four-format matrix also passed; 6 tests in 8.16 seconds.",
+      "before_control": "declaration-identity-before-fix.log: 1 failed, 1 passed",
+      "renewed_freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e"
+    }
+  ],
+  "before": {
+    "library_guides/workflows/python_documents.py": "cd3886ab4cf10419b90c8e8755d24bd513266e6a557dabab6418a63effcdfb1e",
+    "library_guides/corpus/invalidation.py": "1e69763cdf63d4eec2de4eef3ed310b362dd10a7d2598a3ac4a650cbe17dda3d",
+    "library_guides/workflows/python_interfaces.py": "672aad1eeec4edbee55e98a2d49f8815ebd04a8f381bb79f1d1d24aeaedbce92",
+    "library_guides/workflows/worker.py": "d61ef8ab519bfb27b3879ca595a01861ce8290e4963ee5c0f74d86a42ffef7c9",
+    "library_guides/workflows/remote.py": "3e14f3bbe0e1541d44b9e9cf18e843ecee9d8b06fec23d9ee396a9ea349f6e8f",
+    "library_guides/workflows/shapes.py": "f2b43bfe4c0e42ab6709d348991bfaaa585fa6e0a8e3ffa2b7b239b63a0a6e1a",
+    "library_guides/corpus/cache.py": "f686b2a3cbf878b5b3963400a09d8ed73f9d91fd4c0cb593f9b5bd444354d38d"
+  },
+  "qualification": "Required regression tests, full suite, new core freeze and clean repeated decision reuse; these are core changes, not data-only first-attempt success.",
+  "after": {
+    "library_guides/workflows/python_documents.py": "16945729a1c032cc8988303a8773309f4a70e8d81ffbf0d0d046c3e889aef6a3",
+    "library_guides/corpus/invalidation.py": "1ac698a9550ff5965e56dacc244022e9226b21fdf7aeed1596e57cd08fdde32a",
+    "library_guides/workflows/python_interfaces.py": "b6aabeb46dae72c8807c52f63884f9c7936ef71b9aaaffe74a90ca74f7ecf780",
+    "library_guides/workflows/worker.py": "e662dd0512cc27669a7c80343c0e7fcf3774bfd41edeeaa5568c42ecacbd0601",
+    "library_guides/workflows/remote.py": "2d6225f42f1f6714baedf7e29c8c0e9b027ef49239b1611719d13f0eaa77e512",
+    "library_guides/workflows/shapes.py": "4a8e33d5f467e1eed251570eff012644e0aa256c43fe2bf0adc2feec0d3d447c",
+    "library_guides/corpus/cache.py": "8d1273b375714d579c397dd2d6a104ef119a294c1269fccd99ec09e287afb10b"
+  },
+  "renewed_freeze": "98902f2b564254ce62c93b636ec8e2106d436725fb898fc8be881cbfa55cc91f",
+  "final_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d",
+  "changed_files_since_original": {
+    "library_guides/cli.py": {
+      "before": "6dfa5ca64d95858f386ae3ee08145bb9332593aee1b5f3a8083fd2fddb8cb8bd",
+      "after": "d6860f6801bb94476c0368e02cb639316ed646b87fe4b2e83b7a249689a7f841"
+    },
+    "library_guides/corpus/cache.py": {
+      "before": "f686b2a3cbf878b5b3963400a09d8ed73f9d91fd4c0cb593f9b5bd444354d38d",
+      "after": "8d1273b375714d579c397dd2d6a104ef119a294c1269fccd99ec09e287afb10b"
+    },
+    "library_guides/corpus/direct_dependencies.py": {
+      "before": null,
+      "after": "5b9d76881f41be04fde3b539a673982f86b67844b7854e6e57b6829b4ac33a12"
+    },
+    "library_guides/corpus/invalidation.py": {
+      "before": "1e69763cdf63d4eec2de4eef3ed310b362dd10a7d2598a3ac4a650cbe17dda3d",
+      "after": "adeb990d986d9765361c2594a2ec863e2b81a5dc6054d0483e9be95d35e1103b"
+    },
+    "library_guides/corpus/sequence_pages.py": {
+      "before": null,
+      "after": "593c49b3b6218c91bf2df815f419580810dc99e76d532c32c3721ec19d068ae5"
+    },
+    "library_guides/corpus/validation.py": {
+      "before": "6a8a22acda18f8ca83e4a7a2dd383d5a6bb5bf459fae2fec4567b9b02df2cf56",
+      "after": "f127319f4981c991b864e3913a771df677c4c77a0929d0d39e8a9d987ff06596"
+    },
+    "library_guides/publication/closure.py": {
+      "before": "66f6cb8564a58bf990a71d75aa80242ab0a51d02f177c4c547bb817196df4531",
+      "after": "a96bb0007ee1174117049811419d2ed440960cdcff4a2e53b334278960cf8308"
+    },
+    "library_guides/workflows/python_documents.py": {
+      "before": "cd3886ab4cf10419b90c8e8755d24bd513266e6a557dabab6418a63effcdfb1e",
+      "after": "16945729a1c032cc8988303a8773309f4a70e8d81ffbf0d0d046c3e889aef6a3"
+    },
+    "library_guides/workflows/python_interfaces.py": {
+      "before": "672aad1eeec4edbee55e98a2d49f8815ebd04a8f381bb79f1d1d24aeaedbce92",
+      "after": "b6aabeb46dae72c8807c52f63884f9c7936ef71b9aaaffe74a90ca74f7ecf780"
+    },
+    "library_guides/workflows/remote.py": {
+      "before": "3e14f3bbe0e1541d44b9e9cf18e843ecee9d8b06fec23d9ee396a9ea349f6e8f",
+      "after": "2d6225f42f1f6714baedf7e29c8c0e9b027ef49239b1611719d13f0eaa77e512"
+    },
+    "library_guides/workflows/shapes.py": {
+      "before": "f2b43bfe4c0e42ab6709d348991bfaaa585fa6e0a8e3ffa2b7b239b63a0a6e1a",
+      "after": "4a8e33d5f467e1eed251570eff012644e0aa256c43fe2bf0adc2feec0d3d447c"
+    },
+    "library_guides/workflows/worker.py": {
+      "before": "d61ef8ab519bfb27b3879ca595a01861ce8290e4963ee5c0f74d86a42ffef7c9",
+      "after": "e662dd0512cc27669a7c80343c0e7fcf3774bfd41edeeaa5568c42ecacbd0601"
+    },
+    "native/build.sh": {
+      "before": null,
+      "after": "f0a68b379c910e27afae633227aefb4c8ec7f9fa641cebb06ef6c58a1a667d21"
+    },
+    "native/mir-facts/build.rs": {
+      "before": null,
+      "after": "3a334b130d7222edf70df015c6d38e0c6b60547589f595b349a08656259446f6"
+    },
+    "native/mir-facts/src/projection.rs": {
+      "before": "a2c2feb04764645f34588d2a4bac8abdf49c3289970818e7e107cea643b22a40",
+      "after": "e9e844ff0f66c7c9e4fc6c72664bd578c1be205066ba6681b53e54e4f2148a5a"
+    },
+    "native/mir-facts/src/values.rs": {
+      "before": "c4232c4c6930d4876878154a7109dd14d3aca124fd2ae221b41ae189f5de29aa",
+      "after": "90574f9d7f6c120c7605da1da413332087bb96ed3f7c2df722e832ab8b15c5c6"
+    },
+    "native/python-semantics/bootstrap.sh": {
+      "before": null,
+      "after": "ead58a40594cc2dd146a35798381f8f1fd17fe803b4dc6908fca74926f8a3962"
+    },
+    "native/python-semantics/upstream.patch": {
+      "before": null,
+      "after": "48e2481123eca7726e92bd45fa2ad53896cc9ef3b2175753e1fc5a689071f93b"
+    },
+    "native/source-facts/bootstrap.sh": {
+      "before": null,
+      "after": "f8907fc3d3f88f0b25427b5c847478b09a96638d083a2b34cc1d7c451ad48bb9"
+    },
+    "native/source-facts/upstream.patch": {
+      "before": null,
+      "after": "c2972b2add4aa5fcbff5f62438d9597aa06048221aec2747304cfa75da313994"
+    },
+    "rustdoc-helper/src/decoder.rs": {
+      "before": "1ef4c085edb8474c6f8b799c15d8ea8e0e98394048f86637637abaeac1bcd25d",
+      "after": "7954abe81ac61b1fe345538a8faf56f291b380a82ff97905b43a45c77c12ca78"
+    }
+  },
+  "native_inventory_extension": {
+    "kind": "native-producer-source-freeze.v1",
+    "utc": "2026-09-13T02:56:20.406639+00:00",
+    "semantic_core_freeze": "7384547c6b51a46066b1118e6071dfe15c39a9963a293a592509606d2318509f",
+    "files": {
+      "native/build.sh": "f0a68b379c910e27afae633227aefb4c8ec7f9fa641cebb06ef6c58a1a667d21",
+      "native/mir-facts/Cargo.lock": "ddd7aa65c95473e178a5346e921e90a83ec74a5085621ed22c01d9a83b31ebb9",
+      "native/mir-facts/Cargo.toml": "d3c4aa2006a2bd85680af7bd0d611716ede8057adec9bc3de71907266aa22f5d",
+      "native/mir-facts/build.rs": "3a334b130d7222edf70df015c6d38e0c6b60547589f595b349a08656259446f6",
+      "native/mir-facts/rust-toolchain.toml": "ce125936f5b4d256a461a76bef37a6b7ffbe7c6e37f1166417c10843241ded43",
+      "native/mir-facts/src/invocation.rs": "857831f600e84d2bf078ec0138486c894945583d5f47ef0f19f35a8d52cb8071",
+      "native/mir-facts/src/main.rs": "486f2d54a74f2ae8cc3fa5b636bed1bddeea2c72c593eece5056f0dfaa30be30",
+      "native/mir-facts/src/projection.rs": "e9e844ff0f66c7c9e4fc6c72664bd578c1be205066ba6681b53e54e4f2148a5a",
+      "native/mir-facts/src/values.rs": "90574f9d7f6c120c7605da1da413332087bb96ed3f7c2df722e832ab8b15c5c6",
+      "native/protocol/Cargo.lock": "e4f8c219226fe0b51be30497b5c84ac4f94ae559cf67c5fb18cc4069fa40305c",
+      "native/protocol/Cargo.toml": "e14ab60175cb928ddc447e0c65b61950c7b1949ff3e1a944e48b61c5ca6a42c5",
+      "native/protocol/src/lib.rs": "69683342e19ba79e228481a9b00c62568118129114ae4e00cc2581e019c17e92",
+      "native/python-semantics/Cargo.lock": "be756add984c894e1420b86d60c4bff94c7067f4f30f13aaf956e0bf5a9a76bd",
+      "native/python-semantics/Cargo.toml": "3947f009aa08128267a74db2403e3ada05d7d7b5520743fac24387c0fa5e89e6",
+      "native/python-semantics/bootstrap.sh": "ead58a40594cc2dd146a35798381f8f1fd17fe803b4dc6908fca74926f8a3962",
+      "native/python-semantics/src/main.rs": "9dd8deab25971905f22a75409de1c872a8727f8ee483e3d32b992925454d7308",
+      "native/python-semantics/src/targeted.rs": "3123b6ce7937f8833beb7ef1d43251c5adab98b01b14697460f25d2622feb919",
+      "native/python-semantics/upstream.patch": "48e2481123eca7726e92bd45fa2ad53896cc9ef3b2175753e1fc5a689071f93b",
+      "native/source-facts/Cargo.lock": "c015ee346be839d79863632ec4e7053c69b3a25f08ca25722d58d08d854cdcf4",
+      "native/source-facts/Cargo.toml": "5d6093856b0321b7d75ddf2eb2b973559fe747d8dbf97396b4623ebedd1021a8",
+      "native/source-facts/bootstrap.sh": "f8907fc3d3f88f0b25427b5c847478b09a96638d083a2b34cc1d7c451ad48bb9",
+      "native/source-facts/src/lexical.rs": "b49c55acaeb10dc0c2e9670cc1c214ad5ebab72d7a8683111f6af2c09ee883f0",
+      "native/source-facts/src/main.rs": "eaca7c5f269a91d34e5b4cc3912aa46daf094d2f09bd85184f720496a9a18d8f",
+      "native/source-facts/upstream.patch": "c2972b2add4aa5fcbff5f62438d9597aa06048221aec2747304cfa75da313994"
+    },
+    "digest": "cd1d026b1a4479a2a06275527f9ea7233e48e0a572736388bd6412be088f4d40",
+    "native_format_change": {
+      "before": {
+        "native/mir-facts/src/projection.rs": "a2c2feb04764645f34588d2a4bac8abdf49c3289970818e7e107cea643b22a40",
+        "native/mir-facts/src/values.rs": "c4232c4c6930d4876878154a7109dd14d3aca124fd2ae221b41ae189f5de29aa"
+      },
+      "after": {
+        "native/mir-facts/src/projection.rs": "e9e844ff0f66c7c9e4fc6c72664bd578c1be205066ba6681b53e54e4f2148a5a",
+        "native/mir-facts/src/values.rs": "90574f9d7f6c120c7605da1da413332087bb96ed3f7c2df722e832ab8b15c5c6"
+      },
+      "scope": "rustfmt only; MIR extraction fixtures rerun. Frozen Python semantic core unchanged."
+    },
+    "external_sources": "Pinned HEAD plus exact owned patch verified by native/build.sh. Upstream whole-workspace rustfmt drift is retained; owned worker packages and separate protocol are checked."
+  },
+  "newly_frozen_native_files": [
+    "native/build.sh",
+    "native/mir-facts/build.rs",
+    "native/python-semantics/bootstrap.sh",
+    "native/python-semantics/upstream.patch",
+    "native/source-facts/bootstrap.sh",
+    "native/source-facts/upstream.patch"
+  ]
+}

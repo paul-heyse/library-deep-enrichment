@@ -1,0 +1,43 @@
+services:
+  embeddings:
+    image: ${VLLM_IMAGE:?Set a tested immutable vLLM image tag or digest}
+    entrypoint: ["vllm", "serve"]
+    command:
+      - /models/qwen3-embedding-8b
+      - --served-model-name
+      - library-qwen3-embedding
+      - --runner
+      - pooling
+      - --dtype
+      - bfloat16
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8000"
+      - --max-model-len
+      - "4096"
+      - --max-num-seqs
+      - "4"
+      - --max-num-batched-tokens
+      - "8192"
+      - --gpu-memory-utilization
+      - "0.85"
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ${QWEN_MODEL_DIR:?Set the verified local snapshot directory}:/models/qwen3-embedding-8b:ro
+      - vllm_cache:/root/.cache/vllm
+    environment:
+      HF_HUB_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    shm_size: "2gb"
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+volumes:
+  vllm_cache:

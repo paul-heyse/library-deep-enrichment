@@ -1,0 +1,46 @@
+"""Unicode π and CRLF controls are produced from these bytes by the native tests."""
+from __future__ import annotations
+
+import sys
+from math import sqrt as root
+from typing import Any, Protocol
+
+if sys.version_info >= (3, 14):
+    version_value = 14
+else:
+    version_value = "legacy"
+
+class Consumer(Protocol):
+    def consume(self, value: int) -> str: ...
+
+def encode(value: int) -> str:
+    return str(value)
+
+def delegated(value: int) -> str:
+    return encode(value)
+
+def gradual(value: Any) -> Any:
+    return value.missing()
+
+def deferred() -> float:
+    return root(4)
+
+def shadow(root: int) -> int:
+    return root
+
+def scopes() -> int:
+    outer = 1
+    def nested() -> int:
+        nonlocal outer
+        outer += 1
+        return outer
+    return nested()
+
+def caught() -> None:
+    try:
+        raise ValueError("fixture")
+    except ValueError as error:
+        str(error)
+    str(error)
+
+version_result = version_value

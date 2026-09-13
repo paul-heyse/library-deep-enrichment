@@ -1,0 +1,171 @@
+[
+  {
+    "historical_manifest": "93f1462edd7bbf5eeb8d51da30f3dfc434eb5fe638fa889dcd68b90b65a1c5f8",
+    "historical_checker": "library-guides.realization.2026-09-12.pre-schema-approval.v1",
+    "source_manifest": "18f06677cc46a30f11715428c6650256b380d11500e63b3a0b2d805b4f751675",
+    "current_manifest": "5ec5e9a06c0ba7a85fb5572abe1eed0172e956deb2d663ba6eae86feb60133ab",
+    "current_checker": "current",
+    "identical_source_records": {
+      "blob_chunks": 2706,
+      "blobs": 2711,
+      "contexts": 1,
+      "entities": 927,
+      "legacy_records": 3712,
+      "legacy_selections": 16,
+      "operations": 430,
+      "passages": 350,
+      "relations": 75988,
+      "source_files": 15,
+      "type_nodes": 75988,
+      "type_uses": 1048
+    },
+    "retained_only_in_immutable_history": {
+      "assertions": 323,
+      "capabilities": 296,
+      "comparisons": 1,
+      "jobs": 3,
+      "modes": 296,
+      "policies": 12,
+      "predicates": 4,
+      "proofs": 323,
+      "qualifications": 323,
+      "releases": 1,
+      "reviews": 16,
+      "rules": 12,
+      "scopes": 1,
+      "tasks": 1
+    },
+    "shape_stage": {
+      "manifest": "daa722e032ffa6ff465d1ed117359537158fe44a8fa24ab394a68277168535ec",
+      "request": "a8d96217bd566bf2647b7172bf2eb2e06f153beb7bcddc6fe9aca5228130e26e",
+      "reused": false,
+      "outputs": [
+        [
+          "operation_shapes",
+          430
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 7.058830273999774
+    },
+    "semantic_stage": {
+      "manifest": "b66911a2b9b22ebd64667130252776f96bc526bda82384b647a9096a5a3bfb11",
+      "request": "e61ce63065854312c412573d4385c4225f819278d54ec91db9433ffbd8e18ca2",
+      "reused": false,
+      "assertions": 311,
+      "qualifications": 311,
+      "capabilities": 296
+    },
+    "releases": [
+      {
+        "old_task": "7d787599bff547473072d7a9a14a600341c03a9fadf00551920e117f8d10e7cb",
+        "current_task": "996deeea221bd64332c1624483f9e8710c5c22b15532759e2b550ecc6b756dff",
+        "comparison": "717766de439fbae0eeac229794b6a9a1577d0db2862e526b036621e7f94e52cf",
+        "head": "release-0",
+        "manifest": "bdc6e9f9623776413f717aa5a05a1345dbf65331629b9ed31fa704947fc16781",
+        "candidates": 3,
+        "dispositions": {
+          "conditional": 1,
+          "rejected": 1,
+          "eligible": 1
+        }
+      }
+    ],
+    "policy_authority": "Codex implementation agent; same-agent reusable-rule review",
+    "policy_rationale": "Reviewed controlled source grammars, declaration carriers, schema requirements and adversarial fixtures. Generated conclusions remain exact declaration or upstream-contract statements; no runtime availability, memory, native effects or universal behavioral guarantee is approved."
+  },
+  {
+    "historical_manifest": "c846a29508e67b5799ee2cf767fce0412cf6ba508faec72616a8d86750b6a299",
+    "historical_checker": "library-guides.realization.2026-09-12.pre-schema-approval.v1",
+    "source_manifest": "fdbeedd234ba8094262113f58093c24abbe42a08a33a092ee4a06844ff82a65b",
+    "current_manifest": "9991a012db2ac4dfc5356a4804c1de72fc3fcdc1e7e02301fb522fd73b93130f",
+    "current_checker": "current",
+    "identical_source_records": {
+      "blob_chunks": 2706,
+      "blobs": 2711,
+      "contexts": 1,
+      "entities": 927,
+      "legacy_records": 3712,
+      "legacy_selections": 16,
+      "operations": 430,
+      "passages": 350,
+      "relations": 75988,
+      "source_files": 15,
+      "type_nodes": 75988,
+      "type_uses": 1048
+    },
+    "retained_only_in_immutable_history": {
+      "assertions": 323,
+      "capabilities": 296,
+      "comparisons": 2,
+      "jobs": 3,
+      "modes": 296,
+      "policies": 12,
+      "predicates": 4,
+      "proofs": 323,
+      "qualifications": 323,
+      "releases": 1,
+      "reviews": 16,
+      "rules": 12,
+      "scopes": 2,
+      "tasks": 2
+    },
+    "shape_stage": {
+      "manifest": "d0e78106b04683a7112a2d62ecebe9b155ebaff91f26b402826942f4f7ffb67a",
+      "request": "a8d96217bd566bf2647b7172bf2eb2e06f153beb7bcddc6fe9aca5228130e26e",
+      "reused": false,
+      "outputs": [
+        [
+          "operation_shapes",
+          430
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 7.171545360004529
+    },
+    "semantic_stage": {
+      "manifest": "3d5487ce1bf53866aac5f4a18db7372cb67722f867a839b42bd8943d75fedd5b",
+      "request": "e61ce63065854312c412573d4385c4225f819278d54ec91db9433ffbd8e18ca2",
+      "reused": false,
+      "assertions": 311,
+      "qualifications": 311,
+      "capabilities": 296
+    },
+    "releases": [
+      {
+        "old_task": "7d787599bff547473072d7a9a14a600341c03a9fadf00551920e117f8d10e7cb",
+        "current_task": "996deeea221bd64332c1624483f9e8710c5c22b15532759e2b550ecc6b756dff",
+        "comparison": "717766de439fbae0eeac229794b6a9a1577d0db2862e526b036621e7f94e52cf",
+        "head": "release-0",
+        "manifest": "e7ef8cb91e4881883508a94f1ccdc5a22ca5a8d40a3d57161accb0a56f1e807b",
+        "candidates": 3,
+        "dispositions": {
+          "conditional": 1,
+          "rejected": 1,
+          "eligible": 1
+        }
+      },
+      {
+        "old_task": "14603942ba14ea63704132ac7869e8505b940aca5666b1a628a26fd1ff21f8af",
+        "current_task": "37a57a13ce5b627c66bbb57bb56d6e74110f3388ffc990477e6f208d5e4db9df",
+        "comparison": "ed7dd6135401c173e2bb3fab4f75ee1d9cf1beeee82e0e1cffc514f7c1cf0d7d",
+        "head": "release-1",
+        "manifest": "aa10c1b03f7457cc3f012a85cd1ff97761e5d28fd286869e0ee2d9a9c31b144a",
+        "candidates": 427,
+        "dispositions": {
+          "rejected": 288,
+          "conditional": 136,
+          "eligible": 3
+        }
+      }
+    ],
+    "policy_authority": "Codex implementation agent; same-agent reusable-rule review",
+    "policy_rationale": "Reviewed controlled source grammars, declaration carriers, schema requirements and adversarial fixtures. Generated conclusions remain exact declaration or upstream-contract statements; no runtime availability, memory, native effects or universal behavioral guarantee is approved."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-09-12T13:57:48.683213+00:00",
+  "archive": ".cache/library-guides-intelligence/pilot-v4/exports/python-results",
+  "manifest": "93f1462edd7bbf5eeb8d51da30f3dfc434eb5fe638fa889dcd68b90b65a1c5f8",
+  "operation": "import_view into an empty analysis view",
+  "outcome": "rejected before admission",
+  "error": "mode or capability does not follow from its approved schema, qualified assertions, and exact interface",
+  "finding": "This early release predates capability schema approval records and current capability logical identity construction. Its typed Parquet is readable, but the current semantic validator does not replay this historical capability derivation.",
+  "preservation": "Original archive unchanged; failed target .cache/library-guides-intelligence/resume-runtime-reuse retained. No validation was bypassed.",
+  "disposition": "Open T5 historical release migration and versioned checker gate; new-schema fixture roundtrips do not certify this archive."
+}

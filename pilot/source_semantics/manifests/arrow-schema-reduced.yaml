@@ -1,0 +1,10 @@
+schema_version: library-guides.rust-workspace.v1
+id: arrow-schema-reduced
+profile: arrow-schema-no-default-features
+toolchain: nightly-2026-08-18
+target: x86_64-unknown-linux-gnu
+packages:
+- name: arrow-schema
+  version: 58.4.0
+  default_features: false
+  features: []

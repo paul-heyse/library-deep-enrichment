@@ -1,0 +1,22 @@
+{
+  "artifact_status": "Researched design handoff, not target-codebase implementation",
+  "python_snippets_syntax_checked": 11,
+  "yaml_blocks_parsed": 2,
+  "ctfidf_reference_checks": [
+    "hand-computable matrix",
+    "all-zero matrix",
+    "zero term and row handling",
+    "negative count rejection"
+  ],
+  "not_executed": [
+    "LanceDB storage/integration",
+    "igraph/leidenalg execution",
+    "FCApy execution",
+    "vLLM service",
+    "RTX 5090 inference",
+    "Docker Compose deployment",
+    "target repository tests"
+  ],
+  "spec_words": 10257,
+  "spec_lines": 1196
+}

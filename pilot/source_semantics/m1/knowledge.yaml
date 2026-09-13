@@ -1,0 +1,1230 @@
+schema_version: library-guides.knowledge.v3
+collection_id: columnar-semantic-pilot-fact-scope
+sources:
+- id: source:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  path: projections/declarations/6b1dc99d5d93dbe3dfc6691d37c05ecec96208ee9bbf3be71bbd05c65a0c6ff5.json
+  digest: 6b1dc99d5d93dbe3dfc6691d37c05ecec96208ee9bbf3be71bbd05c65a0c6ff5
+  locator: ./projections/declarations/6b1dc99d5d93dbe3dfc6691d37c05ecec96208ee9bbf3be71bbd05c65a0c6ff5.json
+  profile: rust-docsrs-54.1-58.4
+  origin: compiler_api
+  attribution: Upstream crate authors; retained artifact provenance and per-item documentation
+  acquisition: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+- id: source:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  path: projections/declarations/cf2ad7a1da54d2efc20e060c457f3e125db310a7bd5076f13a02228fa09e1985.json
+  digest: cf2ad7a1da54d2efc20e060c457f3e125db310a7bd5076f13a02228fa09e1985
+  locator: ./projections/declarations/cf2ad7a1da54d2efc20e060c457f3e125db310a7bd5076f13a02228fa09e1985.json
+  profile: rust-docsrs-54.1-58.4
+  origin: compiler_api
+  attribution: Upstream crate authors; retained artifact provenance and per-item documentation
+  acquisition: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+- id: source:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  path: projections/declarations/eac5f1b6f1e7c4e1fc4bc41d2c5198214784cf5ed277ffe15d9bda99dfb16b9b.json
+  digest: eac5f1b6f1e7c4e1fc4bc41d2c5198214784cf5ed277ffe15d9bda99dfb16b9b
+  locator: ./projections/declarations/eac5f1b6f1e7c4e1fc4bc41d2c5198214784cf5ed277ffe15d9bda99dfb16b9b.json
+  profile: rust-docsrs-54.1-58.4
+  origin: compiler_api
+  attribution: Upstream crate authors; retained artifact provenance and per-item documentation
+  acquisition: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+- id: source:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  path: projections/declarations/c8b6a564c9d11008c401637a21c61a34ce9dd4bc359c050b8f81cad5621b662e.json
+  digest: c8b6a564c9d11008c401637a21c61a34ce9dd4bc359c050b8f81cad5621b662e
+  locator: ./projections/declarations/c8b6a564c9d11008c401637a21c61a34ce9dd4bc359c050b8f81cad5621b662e.json
+  profile: rust-docsrs-54.1-58.4
+  origin: compiler_api
+  attribution: Upstream crate authors; retained artifact provenance and per-item documentation
+  acquisition: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+- id: source:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  path: projections/declarations/5bcfda97cc41148d5b04149500c4813084cf51e2bde6179c5d9ec9db6142519e.json
+  digest: 5bcfda97cc41148d5b04149500c4813084cf51e2bde6179c5d9ec9db6142519e
+  locator: ./projections/declarations/5bcfda97cc41148d5b04149500c4813084cf51e2bde6179c5d9ec9db6142519e.json
+  profile: rust-docsrs-54.1-58.4
+  origin: compiler_api
+  attribution: Upstream crate authors; retained artifact provenance and per-item documentation
+  acquisition: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+evidence:
+- id: evidence:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:signature
+  source: source:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  selector: json:/item/inner/function
+  digest: 39e4d2d804bceb4e1d8047e6e850b4d9b2ee34d6109473f9402022abaa0a849f
+  subject: arrow_schema::<impl Schema>::new
+  kind: api
+- id: evidence:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:documentation
+  source: source:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  selector: json:/item/docs
+  digest: 29079ebb3e2582df76cec579649c25ddd0a4ba7170bb840ca0b2727e4277fc7b
+  subject: arrow_schema::<impl Schema>::new
+  kind: statement
+- id: evidence:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:signature
+  source: source:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  selector: json:/item/inner/function
+  digest: 2a71cf5e9c724d4fb0b9006a6791dbd0d73606f326d8bd6ddad83d7cccad98b1
+  subject: arrow_schema::<impl Schema>::new_with_metadata
+  kind: api
+- id: evidence:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:documentation
+  source: source:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  selector: json:/item/docs
+  digest: 95c377e5b2db4e6371d4c921f89e9d9e21ce882e62440f11a65efe1fb82e1251
+  subject: arrow_schema::<impl Schema>::new_with_metadata
+  kind: statement
+- id: evidence:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:signature
+  source: source:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  selector: json:/item/inner/function
+  digest: f689c3f179ce38b98c868915ba8d2257d1817910158a5e8a3d3c18c84eceeab1
+  subject: arrow_schema::<impl Schema>::project
+  kind: api
+- id: evidence:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:documentation
+  source: source:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  selector: json:/item/docs
+  digest: 789908078b087a621c8f3289652d743171fbb005f754470fa42e6794c86d6514
+  subject: arrow_schema::<impl Schema>::project
+  kind: statement
+- id: evidence:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:signature
+  source: source:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  selector: json:/item/inner/function
+  digest: b3213a647cfdbcedc606345f18abde5b1c113d783f7dcf935897de9628ab20f5
+  subject: arrow_schema::<impl Schema>::try_merge
+  kind: api
+- id: evidence:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:documentation
+  source: source:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  selector: json:/item/docs
+  digest: 672f066953032ebf575def89e971532cf2146dd398288f4e4c3cb2e60d497163
+  subject: arrow_schema::<impl Schema>::try_merge
+  kind: statement
+- id: evidence:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:signature
+  source: source:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  selector: json:/item/inner/function
+  digest: 3370b9c242c94a899f67db0b721f6bfa376dbd039d2e528ae96280faa2afe92e
+  subject: arrow_schema::<impl SchemaBuilder>::finish
+  kind: api
+- id: evidence:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:documentation
+  source: source:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  selector: json:/item/docs
+  digest: 8b9691f19049206efc2ea1a4e0cc8f72146359c651b9fd6aafc93978ce09b86d
+  subject: arrow_schema::<impl SchemaBuilder>::finish
+  kind: statement
+bindings:
+- id: binding:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  symbol: arrow_schema::<impl Schema>::new
+  package: arrow_schema
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:signature
+  parameters: []
+  returns: ''
+  generics: ''
+  aliases:
+  - arrow_schema::Schema::new
+  owner: ''
+  conditions: []
+  families:
+  - schema-construction
+  resolution: resolved
+  signature: 'fn arrow_schema::<impl Schema>::new(fields: impl Into<Fields>) -> Self'
+  documented_returns: ''
+- id: binding:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  symbol: arrow_schema::<impl Schema>::new_with_metadata
+  package: arrow_schema
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:signature
+  parameters: []
+  returns: ''
+  generics: ''
+  aliases:
+  - arrow_schema::Schema::new_with_metadata
+  owner: ''
+  conditions: []
+  families:
+  - schema-construction
+  resolution: resolved
+  signature: 'fn arrow_schema::<impl Schema>::new_with_metadata(fields: impl Into<Fields>,
+    metadata: HashMap<String, String>) -> Self'
+  documented_returns: ''
+- id: binding:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  symbol: arrow_schema::<impl Schema>::project
+  package: arrow_schema
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:signature
+  parameters: []
+  returns: ''
+  generics: ''
+  aliases:
+  - arrow_schema::Schema::project
+  owner: ''
+  conditions: []
+  families:
+  - schema-construction
+  resolution: resolved
+  signature: 'fn arrow_schema::<impl Schema>::project(self: &Self, indices: &[usize])
+    -> Result<Schema, ArrowError>'
+  documented_returns: ''
+- id: binding:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  symbol: arrow_schema::<impl Schema>::try_merge
+  package: arrow_schema
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:signature
+  parameters: []
+  returns: ''
+  generics: ''
+  aliases:
+  - arrow_schema::Schema::try_merge
+  owner: ''
+  conditions: []
+  families:
+  - schema-construction
+  resolution: resolved
+  signature: 'fn arrow_schema::<impl Schema>::try_merge(schemas: impl IntoIterator<Item
+    = Self>) -> Result<Self, ArrowError>'
+  documented_returns: ''
+- id: binding:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  symbol: arrow_schema::<impl SchemaBuilder>::finish
+  package: arrow_schema
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:signature
+  parameters: []
+  returns: ''
+  generics: ''
+  aliases:
+  - arrow_schema::SchemaBuilder::finish
+  owner: ''
+  conditions: []
+  families:
+  - schema-construction
+  resolution: resolved
+  signature: 'fn arrow_schema::<impl SchemaBuilder>::finish(self: Self) -> Schema'
+  documented_returns: ''
+claims:
+- id: claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:signature
+  profile: rust-docsrs-54.1-58.4
+  statement: 'Declared callable: fn arrow_schema::<impl Schema>::new(fields: impl
+    Into<Fields>) -> Self. Its complete generic obligations and qualifiers are retained
+    in the cited function contract.'
+  mechanism: Typed Rustdoc declaration; nominal occurrences do not establish assignability
+    or executable effects.
+  evidence:
+  - evidence:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:signature
+  conditions:
+  - Documentation-generation context; ordinary consumer availability is not established.
+  exceptions: []
+  verification: source_reviewed
+  category: structural
+- id: claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:documentation
+  profile: rust-docsrs-54.1-58.4
+  statement: Creates a new [`Schema`] from a sequence of [`Field`] values.
+  mechanism: Upstream item documentation states this behavior; extraction has not
+    independently verified its implementation or execution.
+  evidence:
+  - evidence:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:documentation
+  conditions: []
+  exceptions: []
+  verification: documented
+  category: behavioral
+- id: claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:signature
+  profile: rust-docsrs-54.1-58.4
+  statement: 'Declared callable: fn arrow_schema::<impl Schema>::new_with_metadata(fields:
+    impl Into<Fields>, metadata: HashMap<String, String>) -> Self. Its complete generic
+    obligations and qualifiers are retained in the cited function contract.'
+  mechanism: Typed Rustdoc declaration; nominal occurrences do not establish assignability
+    or executable effects.
+  evidence:
+  - evidence:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:signature
+  conditions:
+  - Documentation-generation context; ordinary consumer availability is not established.
+  exceptions: []
+  verification: source_reviewed
+  category: structural
+- id: claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:documentation
+  profile: rust-docsrs-54.1-58.4
+  statement: Creates a new [`Schema`] from a sequence of [`Field`] values and adds
+    additional metadata in form of key value pairs.
+  mechanism: Upstream item documentation states this behavior; extraction has not
+    independently verified its implementation or execution.
+  evidence:
+  - evidence:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:documentation
+  conditions: []
+  exceptions: []
+  verification: documented
+  category: behavioral
+- id: claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:signature
+  profile: rust-docsrs-54.1-58.4
+  statement: 'Declared callable: fn arrow_schema::<impl Schema>::project(self: &Self,
+    indices: &[usize]) -> Result<Schema, ArrowError>. Its complete generic obligations
+    and qualifiers are retained in the cited function contract.'
+  mechanism: Typed Rustdoc declaration; nominal occurrences do not establish assignability
+    or executable effects.
+  evidence:
+  - evidence:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:signature
+  conditions:
+  - Documentation-generation context; ordinary consumer availability is not established.
+  exceptions: []
+  verification: source_reviewed
+  category: structural
+- id: claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:documentation
+  profile: rust-docsrs-54.1-58.4
+  statement: Returns a new schema with only the specified columns in the new schema
+    This carries metadata from the parent schema over as well
+  mechanism: Upstream item documentation states this behavior; extraction has not
+    independently verified its implementation or execution.
+  evidence:
+  - evidence:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:documentation
+  conditions: []
+  exceptions: []
+  verification: documented
+  category: behavioral
+- id: claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:signature
+  profile: rust-docsrs-54.1-58.4
+  statement: 'Declared callable: fn arrow_schema::<impl Schema>::try_merge(schemas:
+    impl IntoIterator<Item = Self>) -> Result<Self, ArrowError>. Its complete generic
+    obligations and qualifiers are retained in the cited function contract.'
+  mechanism: Typed Rustdoc declaration; nominal occurrences do not establish assignability
+    or executable effects.
+  evidence:
+  - evidence:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:signature
+  conditions:
+  - Documentation-generation context; ordinary consumer availability is not established.
+  exceptions: []
+  verification: source_reviewed
+  category: structural
+- id: claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:documentation
+  profile: rust-docsrs-54.1-58.4
+  statement: Merge schema into self if it is compatible. Struct fields will be merged
+    recursively.
+  mechanism: Upstream item documentation states this behavior; extraction has not
+    independently verified its implementation or execution.
+  evidence:
+  - evidence:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:documentation
+  conditions: []
+  exceptions: []
+  verification: documented
+  category: behavioral
+- id: claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:signature
+  profile: rust-docsrs-54.1-58.4
+  statement: 'Declared callable: fn arrow_schema::<impl SchemaBuilder>::finish(self:
+    Self) -> Schema. Its complete generic obligations and qualifiers are retained
+    in the cited function contract.'
+  mechanism: Typed Rustdoc declaration; nominal occurrences do not establish assignability
+    or executable effects.
+  evidence:
+  - evidence:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:signature
+  conditions:
+  - Documentation-generation context; ordinary consumer availability is not established.
+  exceptions: []
+  verification: source_reviewed
+  category: structural
+- id: claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:documentation
+  profile: rust-docsrs-54.1-58.4
+  statement: Consume this [`SchemaBuilder`] yielding the final [`Schema`]
+  mechanism: Upstream item documentation states this behavior; extraction has not
+    independently verified its implementation or execution.
+  evidence:
+  - evidence:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:documentation
+  conditions: []
+  exceptions: []
+  verification: documented
+  category: behavioral
+capabilities:
+- id: capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  title: Creates a new [`Schema`] from a sequence of [`Field`] values.
+  intent: Creates a new [`Schema`] from a sequence of [`Field`] values.
+  profile: rust-docsrs-54.1-58.4
+  family: schema-construction
+  bindings:
+  - binding:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  claims:
+  - claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:signature
+  - claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:documentation
+  facets:
+  - name: declaration
+    value: 'fn arrow_schema::<impl Schema>::new(fields: impl Into<Fields>) -> Self'
+    claims:
+    - claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:signature
+  synonyms: []
+  realizations: []
+- id: capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  title: Creates a new [`Schema`] from a sequence of [`Field`] values and adds additional
+    metadata in form of key value pairs.
+  intent: Creates a new [`Schema`] from a sequence of [`Field`] values and adds additional
+    metadata in form of key value pairs.
+  profile: rust-docsrs-54.1-58.4
+  family: schema-construction
+  bindings:
+  - binding:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  claims:
+  - claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:signature
+  - claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:documentation
+  facets:
+  - name: declaration
+    value: 'fn arrow_schema::<impl Schema>::new_with_metadata(fields: impl Into<Fields>,
+      metadata: HashMap<String, String>) -> Self'
+    claims:
+    - claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:signature
+  synonyms: []
+  realizations: []
+- id: capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  title: Returns a new schema with only the specified columns in the new schema This
+    carries metadata from the parent schema over as well
+  intent: Returns a new schema with only the specified columns in the new schema This
+    carries metadata from the parent schema over as well
+  profile: rust-docsrs-54.1-58.4
+  family: schema-construction
+  bindings:
+  - binding:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  claims:
+  - claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:signature
+  - claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:documentation
+  facets:
+  - name: declaration
+    value: 'fn arrow_schema::<impl Schema>::project(self: &Self, indices: &[usize])
+      -> Result<Schema, ArrowError>'
+    claims:
+    - claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:signature
+  synonyms: []
+  realizations: []
+- id: capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  title: Merge schema into self if it is compatible. Struct fields will be merged
+    recursively.
+  intent: Merge schema into self if it is compatible. Struct fields will be merged
+    recursively.
+  profile: rust-docsrs-54.1-58.4
+  family: schema-construction
+  bindings:
+  - binding:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  claims:
+  - claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:signature
+  - claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:documentation
+  facets:
+  - name: declaration
+    value: 'fn arrow_schema::<impl Schema>::try_merge(schemas: impl IntoIterator<Item
+      = Self>) -> Result<Self, ArrowError>'
+    claims:
+    - claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:signature
+  synonyms: []
+  realizations: []
+- id: capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  title: Consume this [`SchemaBuilder`] yielding the final [`Schema`]
+  intent: Consume this [`SchemaBuilder`] yielding the final [`Schema`]
+  profile: rust-docsrs-54.1-58.4
+  family: schema-construction
+  bindings:
+  - binding:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  claims:
+  - claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:signature
+  - claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:documentation
+  facets:
+  - name: declaration
+    value: 'fn arrow_schema::<impl SchemaBuilder>::finish(self: Self) -> Schema'
+    claims:
+    - claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:signature
+  synonyms: []
+  realizations: []
+decisions:
+- id: decision:arrow-schema:construction-routes
+  stack: arrow-rust
+  profile: rust-docsrs-54.1-58.4
+  task: Choose an Arrow Rust schema construction route from the available inputs.
+  requirements:
+  - Use the retained Arrow schema 58.4.0 documentation context.
+  - Choose by available input representation, required metadata and whether reconciliation
+    is intended.
+  - Do not infer ordinary consumer availability or complete merge/conflict behavior
+    from this declaration guide.
+  candidates:
+  - capability: capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+    when: You have field values and do not need to supply schema metadata in this
+      call.
+    claims:
+    - claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:signature
+    - claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:documentation
+  - capability: capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+    when: You have field values plus a HashMap<String, String> of schema metadata.
+    claims:
+    - claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:signature
+    - claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:documentation
+  - capability: capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+    when: You already have a schema and want only specified column indices; the upstream
+      documentation states that parent metadata carries over.
+    claims:
+    - claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:signature
+    - claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:documentation
+  - capability: capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+    when: You have multiple schemas to reconcile and require the documented compatible
+      recursive struct-field merge; the precise conflict policy still needs separate
+      evidence.
+    claims:
+    - claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:signature
+    - claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:documentation
+  - capability: capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+    when: You already have a SchemaBuilder and are ready to consume it for the final
+      schema.
+    claims:
+    - claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:signature
+    - claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:documentation
+  comparison: Schema::new and Schema::new_with_metadata construct from fields; the
+    latter takes explicit schema metadata. Schema::project selects columns from an
+    existing schema, with metadata retention stated by its documentation. Schema::try_merge
+    accepts an iterator of schemas and returns a Result, with compatible recursive
+    struct-field merging documented separately. SchemaBuilder::finish consumes an
+    existing builder. These five nominated routes cover the reviewed input choices;
+    the retained 65-record neighborhood also includes accessors, trait implementations
+    and other operations, which remain unreviewed alternatives outside this bounded
+    task.
+  claims:
+  - claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:signature
+  - claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:documentation
+  - claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:signature
+  - claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:documentation
+  - claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:signature
+  - claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:documentation
+  - claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:signature
+  - claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:documentation
+  - claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:signature
+  - claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:documentation
+  reversing_conditions:
+  - Explicit metadata input favors new_with_metadata over new.
+  - Selecting existing columns favors project; combining schemas instead requires
+    reconciliation evidence.
+  - An existing builder can be finished without first reconstructing its fields.
+  - Nullability, metadata-conflict precedence, copying, allocation, or feature-specific
+    availability requirements remain open and may reverse the choice.
+  family: schema-construction
+  examples: []
+integrations: []
+obligations:
+- id: m1:surface:binding:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: binding:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:surface:binding:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: binding:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:surface:binding:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: binding:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:surface:binding:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: binding:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:surface:binding:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: binding:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:use:capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  required_facets:
+  - declaration
+  disposition: required
+  reason: ''
+- id: m1:use:capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  required_facets:
+  - declaration
+  disposition: required
+  reason: ''
+- id: m1:use:capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  required_facets:
+  - declaration
+  disposition: required
+  reason: ''
+- id: m1:use:capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  required_facets:
+  - declaration
+  disposition: required
+  reason: ''
+- id: m1:use:capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  required_facets:
+  - declaration
+  disposition: required
+  reason: ''
+- id: m1:decision
+  axis: decision
+  profile: rust-docsrs-54.1-58.4
+  target: decision:arrow-schema:construction-routes
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:composition
+  axis: composition
+  profile: rust-docsrs-54.1-58.4
+  target: not-in-this-declaration-task
+  required_facets: []
+  disposition: excluded
+  reason: The M1 task compares schema creation entry points; cross-library composition
+    remains in the unchanged full pilot policy.
+reviews:
+- subject: claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:signature
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the complete typed function and owning impl contracts, including
+    Into/IntoIterator associated constraints, Self receiver, borrowing and Result
+    shape. The assertion is limited to this documentation context.
+  digest: 5649fa3f9b7993d2c045372e894d46306026ee1f2830b6590e11cb2c2424a42e
+  disposition: accepted
+- subject: claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:documentation
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the selected upstream item documentation as a documented assertion;
+    no independent runtime verification is claimed.
+  digest: 2f1ebab687a14f2835930271ee12548d6162102335e42e5933b1258cc19b5557
+  disposition: accepted
+- subject: claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:signature
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the complete typed function and owning impl contracts, including
+    Into/IntoIterator associated constraints, Self receiver, borrowing and Result
+    shape. The assertion is limited to this documentation context.
+  digest: a21c6b8143c7da84cb2ae415474c457cd6c2eb2c76aa7b52dbbbe7d08d3ef102
+  disposition: accepted
+- subject: claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:documentation
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the selected upstream item documentation as a documented assertion;
+    no independent runtime verification is claimed.
+  digest: a74e8441e8c21e2aa11cad02e2c2a0058f605c4ee02a169112d4dbd2b858dfe0
+  disposition: accepted
+- subject: claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:signature
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the complete typed function and owning impl contracts, including
+    Into/IntoIterator associated constraints, Self receiver, borrowing and Result
+    shape. The assertion is limited to this documentation context.
+  digest: beeb8c371a6a589a9db6b27c2a898be19ec8e4ff3f3920738395a0c76c9115f5
+  disposition: accepted
+- subject: claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:documentation
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the selected upstream item documentation as a documented assertion;
+    no independent runtime verification is claimed.
+  digest: 6f2e5939bc2888c4a3a597ceac3ff8532b4d795c84309698103fb3b3a4cbef2d
+  disposition: accepted
+- subject: claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:signature
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the complete typed function and owning impl contracts, including
+    Into/IntoIterator associated constraints, Self receiver, borrowing and Result
+    shape. The assertion is limited to this documentation context.
+  digest: cbddc435dcf20a91f0570f82b3c58b408f44d97abf11bd6b950aabdbbafe64c0
+  disposition: accepted
+- subject: claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:documentation
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the selected upstream item documentation as a documented assertion;
+    no independent runtime verification is claimed.
+  digest: eb52150a8f6a9fbe9be6f91e4f25ce3dc428027a392aa6b03712a9116f449215
+  disposition: accepted
+- subject: claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:signature
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the complete typed function and owning impl contracts, including
+    Into/IntoIterator associated constraints, Self receiver, borrowing and Result
+    shape. The assertion is limited to this documentation context.
+  digest: a54f54f00c3cb558dabb200ff14b1983098d1b1d0e6cb07502b6f03bb9c7deb3
+  disposition: accepted
+- subject: claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:documentation
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the selected upstream item documentation as a documented assertion;
+    no independent runtime verification is claimed.
+  digest: 4e952053fbacc1112edb384113dccb3701dda154619dbc10bf8f86fdbc30995b
+  disposition: accepted
+- subject: capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the generated callable capability against its declaration and
+    item documentation. Behavioral dimensions remain explicit unresolved seeds; this
+    does not establish runtime effects or consumer availability.
+  digest: 9489c5cc867879ef784e58a660902ceb50f179dd4ecc9d01683566a66af455c3
+  disposition: accepted
+- subject: capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the generated callable capability against its declaration and
+    item documentation. Behavioral dimensions remain explicit unresolved seeds; this
+    does not establish runtime effects or consumer availability.
+  digest: 42c06e82a77f8e18797df1d2eb64098c605dd0e07fe60ee7a556e924a8f00ae4
+  disposition: accepted
+- subject: capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the generated callable capability against its declaration and
+    item documentation. Behavioral dimensions remain explicit unresolved seeds; this
+    does not establish runtime effects or consumer availability.
+  digest: e5a7be630b2afbf536b4b8e25f217ba3fedf2d607d3cc5429aa5acd4b717e382
+  disposition: accepted
+- subject: capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the generated callable capability against its declaration and
+    item documentation. Behavioral dimensions remain explicit unresolved seeds; this
+    does not establish runtime effects or consumer availability.
+  digest: 4d088df95c9e8a2ee4d1d0a1240d791856d7a4c7f415aba2ecd719b76b6dbc63
+  disposition: accepted
+- subject: capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the generated callable capability against its declaration and
+    item documentation. Behavioral dimensions remain explicit unresolved seeds; this
+    does not establish runtime effects or consumer availability.
+  digest: 05ba54cc6ffdee5b38abb0d7a3a6e68de2a92f16dade39f3739cc2ee56b56999
+  disposition: accepted
+- subject: decision:arrow-schema:construction-routes
+  reviewer: Codex interactive source-evidence pilot review 2026-09-11
+  rationale: Reviewed the five input-dependent routes against the exact contracts
+    and upstream statements in the generated neighborhood. Conditions distinguish
+    field/metadata construction, projection, merging and builder consumption. The
+    comparison explicitly preserves unreviewed alternatives and behavioral gaps.
+  digest: 8cd3947a8a9104b307ff730688a00c059f6641870ef8c3772c5f348b6d42a9ca
+  disposition: accepted
+examples: []
+relations: []
+profiles:
+- id: rust-docsrs-54.1-58.4
+  description: docs.rs source build for locked Rust library versions; consumer features
+    are separate
+  components: []
+- id: python-installed-54.0-25.0.1
+  description: DataFusion Python 54.0.0 and PyArrow 25.0.1
+  components: []
+- id: pydantic-2.13.4
+  description: Pydantic 2.13.4
+  components: []
+- id: serde-json-1.0.151
+  description: serde_json 1.0.151
+  components: []
+- id: interop-pilot
+  description: Explicit Python and Rust component profiles; no dependency-version
+    unification inferred
+  components:
+  - rust-docsrs-54.1-58.4
+  - python-installed-54.0-25.0.1
+- id: rust-example-pilot
+  description: 'Executable Cargo.lock fixture: DataFusion 54.1 with SQL enabled, Arrow
+    58.4, serde_json 1.0.151; this does not qualify other docs.rs features.'
+  components:
+  - rust-docsrs-54.1-58.4
+  - serde-json-1.0.151
+principles: []
+fact_artifacts:
+- id: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+  schema: library-guides.declaration.v1
+  profile: rust-docsrs-54.1-58.4
+  producer: 85806155676d101141e9b8177e5dd9c733553d876201f1212d50985460322bb6
+  input_path: facts/4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e/input.json
+  input_digest: 9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b
+  header_path: facts/4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e/header.json
+  receipt_path: facts/4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e/receipt.json
+  receipt_digest: 4db8d25ab5f0654dad38b698dd391d4524cc82e149b2c5cbcd0a10d0ca0a9f18
+  shards:
+  - path: facts/4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e/records.jsonl
+    digest: e8110fe05884126c45451388f08e9a24dd9428bc832bf5423e401f40a1e77078
+    records: 1354
+  outcome: complete
+  artifact_kind: declarations
+  job: arrow-schema-58.4.0
+  context: context:aad8d79659f3925be8c7411fec575812437cedcf4d87653c81d2f0a0a2c92302
+  snapshots: []
+  acquisition_path: facts/4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e/acquired.source
+  acquisition_digest: 3e87256722d50e86318b37f2dfaacaa7c11c3f1502f0c26035a892f81e76632b
+fact_heads:
+- job: arrow-schema-58.4.0
+  profile: rust-docsrs-54.1-58.4
+  request: 4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+  artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+  outcome: complete
+  reason: ''
+semantic_profiles:
+- id: context:aad8d79659f3925be8c7411fec575812437cedcf4d87653c81d2f0a0a2c92302
+  purpose: documentation
+  package: unknown
+  version: 58.4.0
+  source_digest: 9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b
+  toolchain: unknown
+  target: null
+  settings:
+  - name: features
+    value: null
+    origin: unknown
+  - name: target_cfg
+    value: null
+    origin: unknown
+  - name: dependencies
+    value: null
+    origin: unknown
+  - name: panic
+    value: null
+    origin: unknown
+  - name: overflow_checks
+    value: null
+    origin: unknown
+  - name: build_script_outputs
+    value: null
+    origin: unknown
+  - name: target
+    value: '{"target_features":[{"globally_enabled":false,"implies_features":[],"name":"adx","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["sse2"],"name":"aes","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["amx-tile"],"name":"amx-avx512","unstable_feature_gate":"x86_amx_intrinsics"},{"globally_enabled":false,"implies_features":["amx-tile"],"name":"amx-bf16","unstable_feature_gate":"x86_amx_intrinsics"},{"globally_enabled":false,"implies_features":["amx-tile"],"name":"amx-complex","unstable_feature_gate":"x86_amx_intrinsics"},{"globally_enabled":false,"implies_features":["amx-tile"],"name":"amx-fp8","unstable_feature_gate":"x86_amx_intrinsics"},{"globally_enabled":false,"implies_features":["amx-tile"],"name":"amx-fp16","unstable_feature_gate":"x86_amx_intrinsics"},{"globally_enabled":false,"implies_features":["amx-tile"],"name":"amx-int8","unstable_feature_gate":"x86_amx_intrinsics"},{"globally_enabled":false,"implies_features":["amx-tile"],"name":"amx-movrs","unstable_feature_gate":"x86_amx_intrinsics"},{"globally_enabled":false,"implies_features":[],"name":"amx-tile","unstable_feature_gate":"x86_amx_intrinsics"},{"globally_enabled":false,"implies_features":[],"name":"apxf","unstable_feature_gate":"apx_target_feature"},{"globally_enabled":false,"implies_features":["sse4.2"],"name":"avx","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx"],"name":"avx2","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512bf16","avx512bitalg","avx512bw","avx512cd","avx512dq","avx512f","avx512fp16","avx512ifma","avx512vbmi","avx512vbmi2","avx512vl","avx512vnni","avx512vpopcntdq"],"name":"avx10.1","unstable_feature_gate":"avx10_target_feature"},{"globally_enabled":false,"implies_features":["avx10.1","avxvnni","avxvnniint8","avxvnniint16"],"name":"avx10.2","unstable_feature_gate":"avx10_target_feature"},{"globally_enabled":false,"implies_features":["avx512bw"],"name":"avx512bf16","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512bw"],"name":"avx512bitalg","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512f"],"name":"avx512bw","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512f"],"name":"avx512cd","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512f"],"name":"avx512dq","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx2","fma","f16c"],"name":"avx512f","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512bw"],"name":"avx512fp16","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512f"],"name":"avx512ifma","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512bw"],"name":"avx512vbmi","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512bw"],"name":"avx512vbmi2","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512f"],"name":"avx512vl","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512f"],"name":"avx512vnni","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512f"],"name":"avx512vp2intersect","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx512f"],"name":"avx512vpopcntdq","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx2"],"name":"avxifma","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx2"],"name":"avxneconvert","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx2"],"name":"avxvnni","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx2"],"name":"avxvnniint8","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx2"],"name":"avxvnniint16","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"bmi1","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"bmi2","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"clflushopt","unstable_feature_gate":"clflushopt_target_feature"},{"globally_enabled":false,"implies_features":[],"name":"cmpxchg16b","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"ermsb","unstable_feature_gate":"ermsb_target_feature"},{"globally_enabled":false,"implies_features":["avx"],"name":"f16c","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx"],"name":"fma","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx","sse4a"],"name":"fma4","unstable_feature_gate":"fma4_target_feature"},{"globally_enabled":true,"implies_features":[],"name":"fxsr","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["sse2"],"name":"gfni","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["sse2"],"name":"kl","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"lahfsahf","unstable_feature_gate":"lahfsahf_target_feature"},{"globally_enabled":false,"implies_features":[],"name":"lzcnt","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"movbe","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"movrs","unstable_feature_gate":"movrs_target_feature"},{"globally_enabled":false,"implies_features":["sse2"],"name":"pclmulqdq","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"popcnt","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"prfchw","unstable_feature_gate":"prfchw_target_feature"},{"globally_enabled":false,"implies_features":[],"name":"rdrand","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"rdseed","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"rtm","unstable_feature_gate":"rtm_target_feature"},{"globally_enabled":false,"implies_features":["sse2"],"name":"sha","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx2"],"name":"sha512","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx"],"name":"sm3","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx2"],"name":"sm4","unstable_feature_gate":null},{"globally_enabled":true,"implies_features":[],"name":"sse","unstable_feature_gate":null},{"globally_enabled":true,"implies_features":["sse"],"name":"sse2","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["sse2"],"name":"sse3","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["ssse3"],"name":"sse4.1","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["sse4.1"],"name":"sse4.2","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["sse3"],"name":"sse4a","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["sse3"],"name":"ssse3","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":[],"name":"tbm","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx2","aes"],"name":"vaes","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["avx","pclmulqdq"],"name":"vpclmulqdq","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["kl"],"name":"widekl","unstable_feature_gate":null},{"globally_enabled":true,"implies_features":[],"name":"x87","unstable_feature_gate":"x87_target_feature"},{"globally_enabled":false,"implies_features":["fma4","avx","sse4a"],"name":"xop","unstable_feature_gate":"xop_target_feature"},{"globally_enabled":false,"implies_features":[],"name":"xsave","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["xsave"],"name":"xsavec","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["xsave"],"name":"xsaveopt","unstable_feature_gate":null},{"globally_enabled":false,"implies_features":["xsave"],"name":"xsaves","unstable_feature_gate":null}],"triple":"x86_64-unknown-linux-gnu"}'
+    origin: observed
+  - name: format
+    value: '60'
+    origin: observed
+  - name: cfg(doc)
+    value: 'true'
+    origin: observed
+  dependency_digests: []
+  limitations:
+  - Input digest identifies acquired evidence; a library source snapshot is separate.
+  - No ordinary consumer-unit availability or complete effects established by this
+    normalization receipt.
+source_snapshots: []
+claim_support:
+- id: support:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:signature
+  claim: claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:signature
+  assertion: 'Declared callable: fn arrow_schema::<impl Schema>::new(fields: impl
+    Into<Fields>) -> Self. Its complete generic obligations and qualifiers are retained
+    in the cited function contract.'
+  kind: signature
+  facts:
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1198
+    selector: json:/item/inner/function
+    digest: 39e4d2d804bceb4e1d8047e6e850b4d9b2ee34d6109473f9402022abaa0a849f
+    role: declaration
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1198
+    selector: json:/owner_contract
+    digest: f759e60b773ecbdd74bef6923310a42c9866ddc91ac1276f8b7156fbec7ebe3c
+    role: declaration
+  assumptions: []
+  exceptions: []
+  scope: null
+  dependency_mode: declaration
+- id: support:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:documentation
+  claim: claim:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4:documentation
+  assertion: Creates a new [`Schema`] from a sequence of [`Field`] values.
+  kind: upstream_statement
+  facts:
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1198
+    selector: json:/item/docs
+    digest: 29079ebb3e2582df76cec579649c25ddd0a4ba7170bb840ca0b2727e4277fc7b
+    role: statement
+  assumptions: []
+  exceptions: []
+  scope: null
+  dependency_mode: documentation
+- id: support:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:signature
+  claim: claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:signature
+  assertion: 'Declared callable: fn arrow_schema::<impl Schema>::new_with_metadata(fields:
+    impl Into<Fields>, metadata: HashMap<String, String>) -> Self. Its complete generic
+    obligations and qualifiers are retained in the cited function contract.'
+  kind: signature
+  facts:
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1199
+    selector: json:/item/inner/function
+    digest: 2a71cf5e9c724d4fb0b9006a6791dbd0d73606f326d8bd6ddad83d7cccad98b1
+    role: declaration
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1199
+    selector: json:/owner_contract
+    digest: f759e60b773ecbdd74bef6923310a42c9866ddc91ac1276f8b7156fbec7ebe3c
+    role: declaration
+  assumptions: []
+  exceptions: []
+  scope: null
+  dependency_mode: declaration
+- id: support:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:documentation
+  claim: claim:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40:documentation
+  assertion: Creates a new [`Schema`] from a sequence of [`Field`] values and adds
+    additional metadata in form of key value pairs.
+  kind: upstream_statement
+  facts:
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1199
+    selector: json:/item/docs
+    digest: 95c377e5b2db4e6371d4c921f89e9d9e21ce882e62440f11a65efe1fb82e1251
+    role: statement
+  assumptions: []
+  exceptions: []
+  scope: null
+  dependency_mode: documentation
+- id: support:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:signature
+  claim: claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:signature
+  assertion: 'Declared callable: fn arrow_schema::<impl Schema>::project(self: &Self,
+    indices: &[usize]) -> Result<Schema, ArrowError>. Its complete generic obligations
+    and qualifiers are retained in the cited function contract.'
+  kind: signature
+  facts:
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1201
+    selector: json:/item/inner/function
+    digest: f689c3f179ce38b98c868915ba8d2257d1817910158a5e8a3d3c18c84eceeab1
+    role: declaration
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1201
+    selector: json:/owner_contract
+    digest: f759e60b773ecbdd74bef6923310a42c9866ddc91ac1276f8b7156fbec7ebe3c
+    role: declaration
+  assumptions: []
+  exceptions: []
+  scope: null
+  dependency_mode: declaration
+- id: support:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:documentation
+  claim: claim:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f:documentation
+  assertion: Returns a new schema with only the specified columns in the new schema
+    This carries metadata from the parent schema over as well
+  kind: upstream_statement
+  facts:
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1201
+    selector: json:/item/docs
+    digest: 789908078b087a621c8f3289652d743171fbb005f754470fa42e6794c86d6514
+    role: statement
+  assumptions: []
+  exceptions: []
+  scope: null
+  dependency_mode: documentation
+- id: support:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:signature
+  claim: claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:signature
+  assertion: 'Declared callable: fn arrow_schema::<impl Schema>::try_merge(schemas:
+    impl IntoIterator<Item = Self>) -> Result<Self, ArrowError>. Its complete generic
+    obligations and qualifiers are retained in the cited function contract.'
+  kind: signature
+  facts:
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1202
+    selector: json:/item/inner/function
+    digest: b3213a647cfdbcedc606345f18abde5b1c113d783f7dcf935897de9628ab20f5
+    role: declaration
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1202
+    selector: json:/owner_contract
+    digest: f759e60b773ecbdd74bef6923310a42c9866ddc91ac1276f8b7156fbec7ebe3c
+    role: declaration
+  assumptions: []
+  exceptions: []
+  scope: null
+  dependency_mode: declaration
+- id: support:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:documentation
+  claim: claim:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545:documentation
+  assertion: Merge schema into self if it is compatible. Struct fields will be merged
+    recursively.
+  kind: upstream_statement
+  facts:
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1202
+    selector: json:/item/docs
+    digest: 672f066953032ebf575def89e971532cf2146dd398288f4e4c3cb2e60d497163
+    role: statement
+  assumptions: []
+  exceptions: []
+  scope: null
+  dependency_mode: documentation
+- id: support:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:signature
+  claim: claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:signature
+  assertion: 'Declared callable: fn arrow_schema::<impl SchemaBuilder>::finish(self:
+    Self) -> Schema. Its complete generic obligations and qualifiers are retained
+    in the cited function contract.'
+  kind: signature
+  facts:
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1168
+    selector: json:/item/inner/function
+    digest: 3370b9c242c94a899f67db0b721f6bfa376dbd039d2e528ae96280faa2afe92e
+    role: declaration
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1168
+    selector: json:/owner_contract
+    digest: 40f40eb02cd82f9d54390dd8ecac2fe8b9e74fd89771e8856eb72bf28fff830e
+    role: declaration
+  assumptions: []
+  exceptions: []
+  scope: null
+  dependency_mode: declaration
+- id: support:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:documentation
+  claim: claim:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a:documentation
+  assertion: Consume this [`SchemaBuilder`] yielding the final [`Schema`]
+  kind: upstream_statement
+  facts:
+  - artifact: facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e
+    record: decl:9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b:1168
+    selector: json:/item/docs
+    digest: 8b9691f19049206efc2ea1a4e0cc8f72146359c651b9fd6aafc93978ce09b86d
+    role: statement
+  assumptions: []
+  exceptions: []
+  scope: null
+  dependency_mode: documentation
+facet_seeds:
+- capability: capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  dimension: evaluation_timing
+  value: null
+  facts: []
+  missing:
+  - evaluation_timing is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  dimension: failure_semantics
+  value: null
+  facts: []
+  missing:
+  - failure_semantics is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  dimension: null_behavior
+  value: null
+  facts: []
+  missing:
+  - null_behavior is not established by declarations; inspect source, registry or
+    execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  dimension: ownership_effects
+  value: null
+  facts: []
+  missing:
+  - ownership_effects is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  dimension: resource_lifecycle
+  value: null
+  facts: []
+  missing:
+  - resource_lifecycle is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  dimension: consumer_availability
+  value: null
+  facts: []
+  missing:
+  - consumer_availability is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  dimension: evaluation_timing
+  value: null
+  facts: []
+  missing:
+  - evaluation_timing is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  dimension: failure_semantics
+  value: null
+  facts: []
+  missing:
+  - failure_semantics is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  dimension: null_behavior
+  value: null
+  facts: []
+  missing:
+  - null_behavior is not established by declarations; inspect source, registry or
+    execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  dimension: ownership_effects
+  value: null
+  facts: []
+  missing:
+  - ownership_effects is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  dimension: resource_lifecycle
+  value: null
+  facts: []
+  missing:
+  - resource_lifecycle is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  dimension: consumer_availability
+  value: null
+  facts: []
+  missing:
+  - consumer_availability is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  dimension: evaluation_timing
+  value: null
+  facts: []
+  missing:
+  - evaluation_timing is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  dimension: failure_semantics
+  value: null
+  facts: []
+  missing:
+  - failure_semantics is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  dimension: null_behavior
+  value: null
+  facts: []
+  missing:
+  - null_behavior is not established by declarations; inspect source, registry or
+    execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  dimension: ownership_effects
+  value: null
+  facts: []
+  missing:
+  - ownership_effects is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  dimension: resource_lifecycle
+  value: null
+  facts: []
+  missing:
+  - resource_lifecycle is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  dimension: consumer_availability
+  value: null
+  facts: []
+  missing:
+  - consumer_availability is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  dimension: evaluation_timing
+  value: null
+  facts: []
+  missing:
+  - evaluation_timing is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  dimension: failure_semantics
+  value: null
+  facts: []
+  missing:
+  - failure_semantics is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  dimension: null_behavior
+  value: null
+  facts: []
+  missing:
+  - null_behavior is not established by declarations; inspect source, registry or
+    execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  dimension: ownership_effects
+  value: null
+  facts: []
+  missing:
+  - ownership_effects is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  dimension: resource_lifecycle
+  value: null
+  facts: []
+  missing:
+  - resource_lifecycle is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  dimension: consumer_availability
+  value: null
+  facts: []
+  missing:
+  - consumer_availability is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  dimension: evaluation_timing
+  value: null
+  facts: []
+  missing:
+  - evaluation_timing is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  dimension: failure_semantics
+  value: null
+  facts: []
+  missing:
+  - failure_semantics is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  dimension: null_behavior
+  value: null
+  facts: []
+  missing:
+  - null_behavior is not established by declarations; inspect source, registry or
+    execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  dimension: ownership_effects
+  value: null
+  facts: []
+  missing:
+  - ownership_effects is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  dimension: resource_lifecycle
+  value: null
+  facts: []
+  missing:
+  - resource_lifecycle is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+- capability: capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  dimension: consumer_availability
+  value: null
+  facts: []
+  missing:
+  - consumer_availability is not established by declarations; inspect source, registry
+    or execution evidence.
+  recipe: declaration-facets.v1
+example_discoveries: []
+revalidations: []

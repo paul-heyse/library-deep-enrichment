@@ -1,0 +1,79 @@
+{
+  "kind": "library-guides.reserved-behavior-expectations.v1",
+  "state": "reserved_before_library_transfer_evaluation",
+  "evaluation_independence": "Source-derived hypotheses and ordinary consumer executions are separate mechanisms from abstract transfer. The implementation author also specified these controls; no independent human review is claimed.",
+  "population_authority": "benchmark.json",
+  "denominator_policy": "These expectations select challenging controls within the complete public-operation population. They do not replace or reduce that denominator. Every missing body, unsupported operation and exhausted analysis remains reportable.",
+  "relationships": [
+    {
+      "library": "arrow-schema",
+      "version": "58.4.0",
+      "split": "development",
+      "source": "src/field.rs",
+      "owner": "Field::dict_is_ordered",
+      "premise": "The data_type variant is Dictionary.",
+      "consequence": "Return Some of the receiver's dict_is_ordered field; otherwise return None.",
+      "oracle": "Ordinary Rust consumers construct dictionary and non-dictionary fields and compare returned variants and payloads, including both ordering values.",
+      "negative_control": "Treating all data types as dictionaries or replacing the stored ordering flag must disagree."
+    },
+    {
+      "library": "arrow-schema",
+      "version": "58.4.0",
+      "split": "development",
+      "source": "src/field.rs",
+      "owner": "Field::with_dict_is_ordered",
+      "premise": "The receiver data_type variant is Dictionary.",
+      "consequence": "The returned receiver's ordering field is the supplied value; for a non-dictionary receiver the field remains unchanged. Other receiver fields are forwarded.",
+      "oracle": "Compare the returned field before/after, exercising both branches and non-default metadata/name/nullability.",
+      "negative_control": "An unconditional write or dropped metadata must change the expected relation."
+    },
+    {
+      "library": "pydantic",
+      "version": "2.13.4",
+      "split": "development",
+      "source": "fields.py",
+      "owner": "FieldInfo.rebuild_annotation",
+      "premise": "The ordinary metadata collection is empty.",
+      "consequence": "Return the receiver's annotation object unchanged; with metadata, construct the annotated subscription from the annotation and expanded metadata.",
+      "oracle": "Ordinary Python calls check object identity without metadata and retained annotation/metadata ordering with metadata.",
+      "negative_control": "Unconditionally wrapping the annotation or reversing metadata must disagree."
+    },
+    {
+      "library": "pydantic",
+      "version": "2.13.4",
+      "split": "development",
+      "source": "fields.py",
+      "owner": "FieldInfo.default_factory_takes_validated_data",
+      "premise": "The ordinary default_factory field is None.",
+      "consequence": "Return None without invoking the helper; otherwise forward the helper's result for the selected default_factory.",
+      "oracle": "Exercise missing factory and no-argument/validated-data callable factories in ordinary Python.",
+      "negative_control": "Unconditional helper invocation or an unconditional false result must disagree."
+    },
+    {
+      "library": "serde_json",
+      "version": "1.0.149",
+      "split": "held_out",
+      "source": "src/value/mod.rs",
+      "owner": "Value::as_bool",
+      "premise": "The receiver variant is Bool.",
+      "consequence": "Return Some of the contained boolean; otherwise None.",
+      "oracle": "Ordinary Rust calls over both booleans and every other declared Value variant.",
+      "negative_control": "Replacing the payload with a constant or treating a different variant as Bool must disagree."
+    },
+    {
+      "library": "serde_json",
+      "version": "1.0.149",
+      "split": "held_out",
+      "source": "src/value/mod.rs",
+      "owner": "Value::as_array",
+      "premise": "The receiver variant is Array.",
+      "consequence": "Return Some borrowing the contained vector; otherwise None. No ownership-transfer or lifetime guarantee beyond the borrow contract is inferred.",
+      "oracle": "Ordinary Rust calls over all Value variants compare vector identity/contents for the Array branch.",
+      "negative_control": "Returning a fresh vector or accepting the Object variant must disagree."
+    }
+  ],
+  "composition_controls": [
+    "A separately compiled ordinary Rust wrapper calling Field::dict_is_ordered carries the selected callee's guard and field relationship only after exact cross-unit binding is retained.",
+    "Python source helper contracts require retained executable helper identities; lexical names and type candidates alone do not close dispatch."
+  ]
+}

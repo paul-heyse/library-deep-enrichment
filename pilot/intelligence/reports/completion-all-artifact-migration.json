@@ -1,0 +1,222 @@
+{
+  "kind": "all-retained-native-artifact-migration.v1",
+  "current_manifest": "f97c62d019315029938e21a6bcd02e9bbbecbd0e169c01d61470c28688a3ad1e",
+  "current_artifacts": [
+    "facts:0161fc9d09aabb8ef0aedf732d26a5ff3d588da4fccdeaec3714ee82f54b2393",
+    "facts:0b5c299c3837647475b98fa857511866172220c5cda9d70028759b0b1e9bf657",
+    "facts:2236b4f4d170cb1fed6a47a97df359c3caf439c0e1538338d799047b32c4a743",
+    "facts:22d00d35e56106ce6c1df2cb41ecf04d082f2b9907002e1a1d1cb26aa612fb0c",
+    "facts:25b6689eed93a36ef352948a4330564f4bd7a5204471bef05cbbbea5ed25a39e",
+    "facts:27136dfa944860594f02b1d9b626e94073cff47749f2b2828eef4225444a69b1",
+    "facts:28525523caf13a83f8a7d45d9df095cb41a6a1dd2eea05b576f087fd7a7ffee8",
+    "facts:2abebaaa1ec4ef6b2f87748a78148f190f6856799664b189cbda42716e156895",
+    "facts:2dbbebb1bfe969aef1ebe6c7a0df1247adab56545daa63d0df9e24fa209bcd5c",
+    "facts:332afcd5898a11a7c6fc5cf23c65778b0ca145dac18434f6bd8494e2e03846ce",
+    "facts:3527e7bd92d2fe6be0688f5866d464f737e5e8902b3466e22aa152fb526959f1",
+    "facts:35e847a95c4d3c42ffa55d0d467f8e19e1aa943226934aba424892b2652f8d7c",
+    "facts:36faa1d381fab35b58f82d2cdd1ef9f9501b02f402a858f048246070c8333fb1",
+    "facts:3c1d789c3b2733e8458742b1ab0fb75d2d2eac3dd286de825ad8e4e110e01536",
+    "facts:3c25a438421d91490e15408c4646cacaf9a81a292b8650340a61ed43ba327158",
+    "facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e",
+    "facts:4a6840469d2b9972d1d60e7c0311c3859428939b8ffbf220618b9dd658a4a2aa",
+    "facts:4d492e311e07a3ce6cb607bfda143ada97f1cc88a6e2260d910f22a5cdbcf949",
+    "facts:51939db44794a42f9372892c86b5575a0d5a96b85e9026000e40b056b32d3621",
+    "facts:570b519e9bd2079d3dd306ad054f74d2963b21c74d1b28d3ff6ffa8e6d080c04",
+    "facts:57c762e8c5d0204853c2f8ac601bbc20503e986344b850984bc2b9ca2ee32356",
+    "facts:5cff57eb93025b1ee0358072a799684451cba76af7765a89e73a32bfbf8f3cf0",
+    "facts:6205009c392a94568f6d8d36c2dbe2d0d72c93b580abf141c228003c2ebd2017",
+    "facts:62d508080cefcdfd3d2ca563b9435e7f8377753e47411cf1069ba60a0ee3f06a",
+    "facts:62f1358eb0b2f82995cd65244de04ce04b2d893e8cbd650c94a865a46f80e070",
+    "facts:6488af6ad1c0d7caf4fb6d54ae5c3fe067e1be032b5ce84d2d1758a6cde433fc",
+    "facts:64c338a45df47022d785e5ac535d5d22aebcc8c58499b22473ae2b5794bdb420",
+    "facts:66c7f84ae1768870e5766715811f27efede08a9cbc891b875f0eec960676d439",
+    "facts:679378984cc970825db51990d190ee5001059731d29b8f223ed938a2c56260ab",
+    "facts:6ad10c63f463e3eb41823de20f7478ac14a5eb465735ec3e36cf721aa2c5b6f3",
+    "facts:6b6e208e4d8d3aa1c2bb9f1758512e2406d08f5e551e94adc8bec7aa5577f2bf",
+    "facts:6c162708c108f8a765e2538ad5d84adc40117779e80d2f57b239d8ea97617395",
+    "facts:6d2f942c7bebb7441cb249439ab32e993c4c185bc4986abc0f13a4682bd1b5b0",
+    "facts:6edabbc0f5f7d447f28f30f37bbdf3448affe4d06bfe1bfcb20f26510d03dfbc",
+    "facts:809e0c1453e2adb2296f4a31d8f6486438f527c21b9bcf4d0c77ec3b261772ec",
+    "facts:81301376591ce181c7280af5126446e2a1c8dd8ab9848a8171a2a69f535865c8",
+    "facts:81e6e3be83973f1b92ce1225fbdf06354adeaffc0de97aac9f4ea77fc4a561bb",
+    "facts:821e1c118128f88f01fdb0d14804b3a256ef580c37e34494e2ec316577e604ec",
+    "facts:83453ce4f954d0a0dff5b30831b015680b6db9bc24ce1ff1b20c57b2c092c720",
+    "facts:8603975aa5fe42e0ac6f9ef57674b8da4f709e92337a75493500ab13c578d347",
+    "facts:891a5b6a98aff265039c04da4d83c1cf137385cfae83cdbd7db4646baf64a917",
+    "facts:90784482258ea4779f15afbf657c777f405d3a502997a61a4d9891640c89010d",
+    "facts:90fbf79b30b0c10d5c2a551d29c33352cd53b128af69108a4f13bb31c920681b",
+    "facts:93f90a327dcac5a93b3acd73c78ac569f9a6283602b44925e1f19b61b3cd00e6",
+    "facts:9fc5a95d96e4e0c5617cc3d8a91662c9de934845e3340658e75090ac347bcfc9",
+    "facts:a07baaca62c127a15866f81729b9ff20f84370a835f819e21c6d49b7904d0861",
+    "facts:a17bd0ec1232ee187dcf2c83815a501fbdfbb2a58a60f9aad501c46bc135acc0",
+    "facts:a5ef1ad543cbb49e5c85d4bbfa0dbc32d63bf0b3a592c61903277584f23c3724",
+    "facts:a663028e4d5c25bf5d8a3d5bae02b186a0b2387ebea088545cf6d93dbd9dd419",
+    "facts:a7f423832eafcf81399a7af3c5b956c3b0648494ef7030ceb91cfd1fc508f538",
+    "facts:aaa6cae2e5a3b2e127a56a1ce04c1fb03456603a66c7c15716f1e1b85cff5d85",
+    "facts:b2aa752ffbef871fa8b7d119886cb8ec3896908b1ecb1cce4411e48520e3771f",
+    "facts:b409b4c3579f627864d7dcf26de469fd895fd50d1965498363eb9e1f719fbbbc",
+    "facts:b45a6b4feb2f10c51db67ca52c54e1a39222a78934b3773f73c39c996716ee5d",
+    "facts:b8c3a5a5c186b2be907bf173d993e8cff773ea383942af071385839949f4047f",
+    "facts:b9749ef4b3b8039adef64226bafa07998decc9ff4f5a6d4af5ba5929860ed36c",
+    "facts:c2a98120e2cdc56bbaa9d9637680074cda6ad395e5f858d39b5ba4538e568d48",
+    "facts:cbca954231884a81d8dccecf668b8dd0bac64f06dfd36b55aada77616c7e1c5f",
+    "facts:d1d582ec866b15eb484f9ba23d7e29d105ed385d546bd3b43667ee764ac6e4ef",
+    "facts:d4585d6b1650652acdd8f25abf46f263d4ee9a9a44987d99bcd68a6e754c9f0f",
+    "facts:d6d26d3738d1d9e8efbfe91142a39e10d9e9279e8c48c8e842b9fb35a1b43d66",
+    "facts:d955a34d275e95e436a7cce01fb8601beb29f6f6630c83be448ba5aabaf23084",
+    "facts:de5a5a072747e20021ce2dedf047d0852971aab1718186b4763126b9a29cf1e4",
+    "facts:e50649b464d2e94488fadced911cddd867defc50fab34821028c94990a6856a1",
+    "facts:e65c46fc957b317fec7db2e3118128ff05e31b25d86375e4fc6ce3f90333ebda",
+    "facts:e85aec40cda36a4f865ef14a1273b8846d3c5eb3d5227505e20cc8cd13c189da",
+    "facts:e98339ad9a526ada26cc68130895d7e0c0ec4adcd2b0e4c098c1a0f70068bd3b"
+  ],
+  "historical_corpus": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/historical-native-corpus",
+  "historical_artifacts": [
+    "facts:0f2e8a9ac816496bda0dbdadbc7132d9bbda735b4dea2e2dbfc159fe2ded6145",
+    "facts:148fbb1fcfeb94f64fc2114d17dea06735ff37d239ee7ce2e1c9fc6f194a3acb",
+    "facts:14da68a71da54d027b7d23d79673b844e9e2c6531250206fc64bab13ab6afd03",
+    "facts:1de00a585f55df2cc7012ad3990f86456161ce88b56262cdffc5e7c93c2dc6f3",
+    "facts:207863022367eede087635389142a87ab77fd60f1e4ba494cd76017f6e746039",
+    "facts:306a0610532146cb4d97a08d601aac02dbe4028d8eda67902a27510e40ecc885",
+    "facts:3edd9117bf8b61e03eed926aeb6709b9f1c29ed62ba17d8e481ea44beb77cf44",
+    "facts:5d18399bfbaa37a0c4abac6a60da5266bf42542886caf02477dfaca5cfa7281f",
+    "facts:5fc3837bb9e719929dc18712085e09896d69c1687e4bd4fbed1ad2805b50a8c4",
+    "facts:66b4510e41fe9131a53f2ea3331197acc73e788854d4f5051ecbaca82fe685dd",
+    "facts:6df5e16f568aca6fc2be9e5e97ad40a7e06fa0ccb1a443702d21836b6a5d8ee2",
+    "facts:6f90f40d3af72305869a2d726c2fba075fe9c3466e293bedf0d89c95d5e82707",
+    "facts:708c98573190df0e7ca00dc880ef7ddecfda7ff2a8615558845b8c0ef8319a2f",
+    "facts:82c7f73690c2b2fbb9203c5046091222cd2edeb20765d7800a2352121ed63ec8",
+    "facts:88c0b7cf5292fb72376dd4840c6048392c3a6934c357c28815b2b88051d4b5e2",
+    "facts:91f6042f51fb8588f930d6f965646eacb104a5f7e5382c6a96119bc66f3f67ff",
+    "facts:93e864847f994528e055661ae3f9a4f5fc7284bef7f0d59a0b66ea3b309a602e",
+    "facts:9a8ae31ec92e486bb7c2d392d5028bc6cbf7acdc91302f1577062b745931e42a",
+    "facts:9d4a5d98d3824d3c663e5976fd48fd335fcb565a9dd60033f5614979ca388ff8",
+    "facts:b85e3410f5231d3ffe3654429644167719ec5cdf26c56cc4f7f63109bd6b4faf",
+    "facts:ce09e6e5744f497baf961e0d63e2bbd86151168ad9b6752905888355d688eaa2",
+    "facts:d0c7b854737af5c920aaae6dc3f958560d665e53c43ecfa5fae5083fdd0fc945",
+    "facts:e4d70bc11b40d1519237788dfd6be4039225f77aff0065b342d0eacfdee488ed",
+    "facts:f3ba6cf705a0182ac47b45eb2007f1069f4daa2c7830400bbc417e4e709c72b2"
+  ],
+  "historical_manifest": "bd95ef1b51df718ecaaa1077f8b49e705376a663af6d140435f92e6f6aea3514",
+  "receipts": [
+    {
+      "source": "pilot/source_semantics/collection/knowledge.yaml",
+      "first": {
+        "manifest": "3867ffcdd9aaf4bd7778a58f8c372e96a5d8243ae54d1248adfdd43dce6e6060",
+        "request": "f93b683a4be611b629baf9c1ceecd48ffffef6678ee4a1c5d9ea15bc36ce7391",
+        "reused": false,
+        "outputs": [
+          [
+            "blob_chunks",
+            11217
+          ],
+          [
+            "blobs",
+            11018
+          ],
+          [
+            "contexts",
+            11
+          ],
+          [
+            "entities",
+            3708
+          ],
+          [
+            "native_artifacts",
+            22
+          ],
+          [
+            "native_facts",
+            20347
+          ],
+          [
+            "operations",
+            1708
+          ],
+          [
+            "passages",
+            1376
+          ],
+          [
+            "raw_observations",
+            11
+          ],
+          [
+            "relations",
+            10832
+          ],
+          [
+            "source_files",
+            11712
+          ],
+          [
+            "type_nodes",
+            10832
+          ],
+          [
+            "type_uses",
+            3226
+          ]
+        ],
+        "elapsed_seconds": 73.26843097700475
+      },
+      "warm": {
+        "manifest": "3867ffcdd9aaf4bd7778a58f8c372e96a5d8243ae54d1248adfdd43dce6e6060",
+        "request": "f93b683a4be611b629baf9c1ceecd48ffffef6678ee4a1c5d9ea15bc36ce7391",
+        "reused": true,
+        "outputs": [],
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "source": "pilot/source_semantics/python/knowledge.yaml",
+      "first": {
+        "manifest": "bd95ef1b51df718ecaaa1077f8b49e705376a663af6d140435f92e6f6aea3514",
+        "request": "cbff2b719c0546f82201453965c586858bd0e1e7f943dc2e6cbf926e83066acc",
+        "reused": false,
+        "outputs": [
+          [
+            "blob_chunks",
+            845
+          ],
+          [
+            "blobs",
+            753
+          ],
+          [
+            "contexts",
+            2
+          ],
+          [
+            "native_artifacts",
+            2
+          ],
+          [
+            "native_facts",
+            260264
+          ],
+          [
+            "raw_observations",
+            2
+          ],
+          [
+            "source_files",
+            790
+          ]
+        ],
+        "elapsed_seconds": 41.64952230799827
+      },
+      "warm": {
+        "manifest": "bd95ef1b51df718ecaaa1077f8b49e705376a663af6d140435f92e6f6aea3514",
+        "request": "cbff2b719c0546f82201453965c586858bd0e1e7f943dc2e6cbf926e83066acc",
+        "reused": true,
+        "outputs": [],
+        "elapsed_seconds": 0.0
+      }
+    }
+  ],
+  "accounted": 91,
+  "expected": 91,
+  "scope": "67 selected current artifacts and 24 superseded native artifacts; original historical decisions separately restored under their retained checker"
+}

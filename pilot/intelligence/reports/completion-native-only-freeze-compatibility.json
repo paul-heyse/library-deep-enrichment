@@ -1,0 +1,15 @@
+{
+  "before": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d",
+  "after": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e",
+  "changed": [
+    "rustdoc-helper/src/declarations.rs"
+  ],
+  "unchanged_python_reader_and_assets": true,
+  "older_receipts": [
+    "completion-main-task-cohort.json",
+    "completion-final-discovery-maintenance.json"
+  ],
+  "meaning": "Native helper requalified against all 47 original jobs. Existing immutable source artifacts keep their recorded producer identities. The Python admission, replay, publication and installed-reader files are byte-identical; prior release/discovery gates retain their actual earlier freeze, rather than falsely claiming a new execution.",
+  "renewed_native_jobs": "completion-native-final-producers.json",
+  "renewed_reuse": "completion-pydantic-decision-reuse.json and completion-serde-decision-reuse.json"
+}

@@ -1,0 +1,75 @@
+{
+  "freeze": "ae96ee29d0bf2d1bc5a59ac96167fc5411f4e4f615f17fd19d76d66d8f95e5fa",
+  "core_changes": [],
+  "adapter_changes": [],
+  "manual_operation_overrides": 0,
+  "corpus": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/corpus",
+  "first": {
+    "manifest": "ad51f12d80a8a1d792bf87b6af273f2ba0cb4407661c2b753a57e1dbd8b2f4f6",
+    "request": "9dd8eb7fb814e0fd0a9256d798719c06554043bd97806b810c4fb6c873a6232d",
+    "reused": false,
+    "outputs": [
+      [
+        "blob_chunks",
+        239
+      ],
+      [
+        "blobs",
+        239
+      ],
+      [
+        "contexts",
+        1
+      ],
+      [
+        "entities",
+        828
+      ],
+      [
+        "native_artifacts",
+        1
+      ],
+      [
+        "native_facts",
+        1513
+      ],
+      [
+        "operations",
+        685
+      ],
+      [
+        "passages",
+        242
+      ],
+      [
+        "raw_observations",
+        1
+      ],
+      [
+        "relations",
+        3758
+      ],
+      [
+        "source_files",
+        1
+      ],
+      [
+        "type_nodes",
+        3758
+      ],
+      [
+        "type_uses",
+        1244
+      ]
+    ],
+    "elapsed_seconds": 4.932317749000504
+  },
+  "warm": {
+    "manifest": "ad51f12d80a8a1d792bf87b6af273f2ba0cb4407661c2b753a57e1dbd8b2f4f6",
+    "request": "9dd8eb7fb814e0fd0a9256d798719c06554043bd97806b810c4fb6c873a6232d",
+    "reused": true,
+    "outputs": [],
+    "elapsed_seconds": 0.0
+  },
+  "manifest": "ad51f12d80a8a1d792bf87b6af273f2ba0cb4407661c2b753a57e1dbd8b2f4f6"
+}

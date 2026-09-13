@@ -1,0 +1,14 @@
+[package]
+name = "library-guide-declaration-fixture"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+name = "reference_fixture"
+
+[workspace]
+
+[features]
+default = []
+fast = []

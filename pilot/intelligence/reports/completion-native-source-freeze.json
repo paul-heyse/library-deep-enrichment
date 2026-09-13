@@ -1,0 +1,44 @@
+{
+  "kind": "native-producer-source-freeze.v1",
+  "utc": "2026-09-13T02:56:20.406639+00:00",
+  "semantic_core_freeze": "7384547c6b51a46066b1118e6071dfe15c39a9963a293a592509606d2318509f",
+  "files": {
+    "native/build.sh": "f0a68b379c910e27afae633227aefb4c8ec7f9fa641cebb06ef6c58a1a667d21",
+    "native/mir-facts/Cargo.lock": "ddd7aa65c95473e178a5346e921e90a83ec74a5085621ed22c01d9a83b31ebb9",
+    "native/mir-facts/Cargo.toml": "d3c4aa2006a2bd85680af7bd0d611716ede8057adec9bc3de71907266aa22f5d",
+    "native/mir-facts/build.rs": "3a334b130d7222edf70df015c6d38e0c6b60547589f595b349a08656259446f6",
+    "native/mir-facts/rust-toolchain.toml": "ce125936f5b4d256a461a76bef37a6b7ffbe7c6e37f1166417c10843241ded43",
+    "native/mir-facts/src/invocation.rs": "857831f600e84d2bf078ec0138486c894945583d5f47ef0f19f35a8d52cb8071",
+    "native/mir-facts/src/main.rs": "486f2d54a74f2ae8cc3fa5b636bed1bddeea2c72c593eece5056f0dfaa30be30",
+    "native/mir-facts/src/projection.rs": "e9e844ff0f66c7c9e4fc6c72664bd578c1be205066ba6681b53e54e4f2148a5a",
+    "native/mir-facts/src/values.rs": "90574f9d7f6c120c7605da1da413332087bb96ed3f7c2df722e832ab8b15c5c6",
+    "native/protocol/Cargo.lock": "e4f8c219226fe0b51be30497b5c84ac4f94ae559cf67c5fb18cc4069fa40305c",
+    "native/protocol/Cargo.toml": "e14ab60175cb928ddc447e0c65b61950c7b1949ff3e1a944e48b61c5ca6a42c5",
+    "native/protocol/src/lib.rs": "69683342e19ba79e228481a9b00c62568118129114ae4e00cc2581e019c17e92",
+    "native/python-semantics/Cargo.lock": "be756add984c894e1420b86d60c4bff94c7067f4f30f13aaf956e0bf5a9a76bd",
+    "native/python-semantics/Cargo.toml": "3947f009aa08128267a74db2403e3ada05d7d7b5520743fac24387c0fa5e89e6",
+    "native/python-semantics/bootstrap.sh": "ead58a40594cc2dd146a35798381f8f1fd17fe803b4dc6908fca74926f8a3962",
+    "native/python-semantics/src/main.rs": "9dd8deab25971905f22a75409de1c872a8727f8ee483e3d32b992925454d7308",
+    "native/python-semantics/src/targeted.rs": "3123b6ce7937f8833beb7ef1d43251c5adab98b01b14697460f25d2622feb919",
+    "native/python-semantics/upstream.patch": "48e2481123eca7726e92bd45fa2ad53896cc9ef3b2175753e1fc5a689071f93b",
+    "native/source-facts/Cargo.lock": "c015ee346be839d79863632ec4e7053c69b3a25f08ca25722d58d08d854cdcf4",
+    "native/source-facts/Cargo.toml": "5d6093856b0321b7d75ddf2eb2b973559fe747d8dbf97396b4623ebedd1021a8",
+    "native/source-facts/bootstrap.sh": "f8907fc3d3f88f0b25427b5c847478b09a96638d083a2b34cc1d7c451ad48bb9",
+    "native/source-facts/src/lexical.rs": "b49c55acaeb10dc0c2e9670cc1c214ad5ebab72d7a8683111f6af2c09ee883f0",
+    "native/source-facts/src/main.rs": "eaca7c5f269a91d34e5b4cc3912aa46daf094d2f09bd85184f720496a9a18d8f",
+    "native/source-facts/upstream.patch": "c2972b2add4aa5fcbff5f62438d9597aa06048221aec2747304cfa75da313994"
+  },
+  "digest": "cd1d026b1a4479a2a06275527f9ea7233e48e0a572736388bd6412be088f4d40",
+  "native_format_change": {
+    "before": {
+      "native/mir-facts/src/projection.rs": "a2c2feb04764645f34588d2a4bac8abdf49c3289970818e7e107cea643b22a40",
+      "native/mir-facts/src/values.rs": "c4232c4c6930d4876878154a7109dd14d3aca124fd2ae221b41ae189f5de29aa"
+    },
+    "after": {
+      "native/mir-facts/src/projection.rs": "e9e844ff0f66c7c9e4fc6c72664bd578c1be205066ba6681b53e54e4f2148a5a",
+      "native/mir-facts/src/values.rs": "90574f9d7f6c120c7605da1da413332087bb96ed3f7c2df722e832ab8b15c5c6"
+    },
+    "scope": "rustfmt only; MIR extraction fixtures rerun. Frozen Python semantic core unchanged."
+  },
+  "external_sources": "Pinned HEAD plus exact owned patch verified by native/build.sh. Upstream whole-workspace rustfmt drift is retained; owned worker packages and separate protocol are checked."
+}

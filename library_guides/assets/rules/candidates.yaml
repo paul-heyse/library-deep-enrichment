@@ -1,0 +1,14 @@
+schema_version: library-guides.nominations.v2
+families:
+  transformation:
+    pattern: '\b(kernel|expression|scalar function|cast|projection|transform)\b'
+  lifecycle:
+    pattern: '\b(stream|cancel|abort|drop|resource|shutdown)\b'
+  interchange:
+    pattern: '\b(capsule|ffi|c data|interchange|zero.copy|ownership)\b'
+  schema:
+    pattern: '\b(schema|field|metadata|type coercion|unification)\b'
+  storage:
+    pattern: '\b(dataset|parquet|partition|pushdown|object store)\b'
+  validation:
+    pattern: '\b(validate|validation|deserialize|serialize|serialization)\b'

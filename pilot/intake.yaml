@@ -1,0 +1,691 @@
+collection_id: columnar-reference-pilot
+sources:
+- id: arrow-58.4.0
+  adapter: rustdoc
+  package: arrow
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow/58.4.0/json
+  cache: '{cache}'
+- id: arrow-arith-58.4.0
+  adapter: rustdoc
+  package: arrow-arith
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-arith/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-arith/58.4.0/json
+  cache: '{cache}'
+- id: arrow-array-58.4.0
+  adapter: rustdoc
+  package: arrow-array
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-array/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-array/58.4.0/json
+  cache: '{cache}'
+- id: arrow-avro-58.4.0
+  adapter: rustdoc
+  package: arrow-avro
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-avro/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-avro/58.4.0/json
+  cache: '{cache}'
+- id: arrow-buffer-58.4.0
+  adapter: rustdoc
+  package: arrow-buffer
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-buffer/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-buffer/58.4.0/json
+  cache: '{cache}'
+- id: arrow-cast-58.4.0
+  adapter: rustdoc
+  package: arrow-cast
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-cast/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-cast/58.4.0/json
+  cache: '{cache}'
+- id: arrow-csv-58.4.0
+  adapter: rustdoc
+  package: arrow-csv
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-csv/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-csv/58.4.0/json
+  cache: '{cache}'
+- id: arrow-data-58.4.0
+  adapter: rustdoc
+  package: arrow-data
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-data/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-data/58.4.0/json
+  cache: '{cache}'
+- id: arrow-flight-58.4.0
+  adapter: rustdoc
+  package: arrow-flight
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-flight/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-flight/58.4.0/json
+  cache: '{cache}'
+- id: arrow-ipc-58.4.0
+  adapter: rustdoc
+  package: arrow-ipc
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-ipc/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-ipc/58.4.0/json
+  cache: '{cache}'
+- id: arrow-json-58.4.0
+  adapter: rustdoc
+  package: arrow-json
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-json/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-json/58.4.0/json
+  cache: '{cache}'
+- id: arrow-ord-58.4.0
+  adapter: rustdoc
+  package: arrow-ord
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-ord/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-ord/58.4.0/json
+  cache: '{cache}'
+- id: arrow-pyarrow-58.4.0
+  adapter: rustdoc
+  package: arrow-pyarrow
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-pyarrow/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-pyarrow/58.4.0/json
+  cache: '{cache}'
+- id: arrow-row-58.4.0
+  adapter: rustdoc
+  package: arrow-row
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-row/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-row/58.4.0/json
+  cache: '{cache}'
+- id: arrow-schema-58.4.0
+  adapter: rustdoc
+  package: arrow-schema
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-schema/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-schema/58.4.0/json
+  cache: '{cache}'
+- id: arrow-select-58.4.0
+  adapter: rustdoc
+  package: arrow-select
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-select/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-select/58.4.0/json
+  cache: '{cache}'
+- id: arrow-string-58.4.0
+  adapter: rustdoc
+  package: arrow-string
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/arrow-string/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/arrow-string/58.4.0/json
+  cache: '{cache}'
+- id: datafusion-54.1.0
+  adapter: rustdoc
+  package: datafusion
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-catalog-54.1.0
+  adapter: rustdoc
+  package: datafusion-catalog
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-catalog/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-catalog/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-catalog-listing-54.1.0
+  adapter: rustdoc
+  package: datafusion-catalog-listing
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-catalog-listing/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-catalog-listing/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-common-54.1.0
+  adapter: rustdoc
+  package: datafusion-common
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-common/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-common/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-datasource-54.1.0
+  adapter: rustdoc
+  package: datafusion-datasource
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-datasource/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-datasource/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-datasource-arrow-54.1.0
+  adapter: rustdoc
+  package: datafusion-datasource-arrow
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-datasource-arrow/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-datasource-arrow/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-datasource-parquet-54.1.0
+  adapter: rustdoc
+  package: datafusion-datasource-parquet
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-datasource-parquet/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-datasource-parquet/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-doc-54.1.0
+  adapter: rustdoc
+  package: datafusion-doc
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-doc/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-doc/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-execution-54.1.0
+  adapter: rustdoc
+  package: datafusion-execution
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-execution/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-execution/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-expr-54.1.0
+  adapter: rustdoc
+  package: datafusion-expr
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-expr/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-expr/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-functions-54.1.0
+  adapter: rustdoc
+  package: datafusion-functions
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-functions/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-functions/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-functions-aggregate-54.1.0
+  adapter: rustdoc
+  package: datafusion-functions-aggregate
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-functions-aggregate/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-functions-aggregate/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-functions-aggregate-common-54.1.0
+  adapter: rustdoc
+  package: datafusion-functions-aggregate-common
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-functions-aggregate-common/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-functions-aggregate-common/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-functions-nested-54.1.0
+  adapter: rustdoc
+  package: datafusion-functions-nested
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-functions-nested/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-functions-nested/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-functions-table-54.1.0
+  adapter: rustdoc
+  package: datafusion-functions-table
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-functions-table/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-functions-table/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-functions-window-54.1.0
+  adapter: rustdoc
+  package: datafusion-functions-window
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-functions-window/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-functions-window/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-macros-54.1.0
+  adapter: rustdoc
+  package: datafusion-macros
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-macros/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-macros/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-optimizer-54.1.0
+  adapter: rustdoc
+  package: datafusion-optimizer
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-optimizer/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-optimizer/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-physical-expr-54.1.0
+  adapter: rustdoc
+  package: datafusion-physical-expr
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-physical-expr/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-physical-expr/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-physical-expr-adapter-54.1.0
+  adapter: rustdoc
+  package: datafusion-physical-expr-adapter
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-physical-expr-adapter/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-physical-expr-adapter/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-physical-expr-common-54.1.0
+  adapter: rustdoc
+  package: datafusion-physical-expr-common
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-physical-expr-common/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-physical-expr-common/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-physical-optimizer-54.1.0
+  adapter: rustdoc
+  package: datafusion-physical-optimizer
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-physical-optimizer/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-physical-optimizer/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-physical-plan-54.1.0
+  adapter: rustdoc
+  package: datafusion-physical-plan
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-physical-plan/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-physical-plan/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-proto-54.1.0
+  adapter: rustdoc
+  package: datafusion-proto
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-proto/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-proto/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-session-54.1.0
+  adapter: rustdoc
+  package: datafusion-session
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-session/54.1.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-session/54.1.0/json
+  cache: '{cache}'
+- id: datafusion-tracing-54.0.0
+  adapter: rustdoc
+  package: datafusion-tracing
+  version: 54.0.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/datafusion-tracing/54.0.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/datafusion-tracing/54.0.0/json
+  cache: '{cache}'
+- id: parquet-58.4.0
+  adapter: rustdoc
+  package: parquet
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/parquet/58.4.0
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+  url: https://docs.rs/crate/parquet/58.4.0/json
+  cache: '{cache}'
+- id: datafusion-static
+  adapter: python_static
+  package: datafusion
+  version: 54.0.0
+  profile: python-installed-54.0-25.0.1
+  module: datafusion
+  python: '{python}'
+  locator: https://datafusion.apache.org/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow.compute-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow.compute
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow.dataset-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow.dataset
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: object_store-0.13.2
+  adapter: rustdoc
+  package: object_store
+  version: 0.13.2
+  profile: rust-docsrs-54.1-58.4
+  url: https://docs.rs/crate/object_store/0.13.2/json
+  cache: '{cache}'
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/object_store/0.13.2
+  attribution: Upstream crate authors; Apache-2.0 or MIT; inspect crate metadata
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+- id: pyo3-arrow-0.17.0
+  adapter: rustdoc
+  package: pyo3-arrow
+  version: 0.17.0
+  profile: rust-docsrs-54.1-58.4
+  url: https://docs.rs/crate/pyo3-arrow/0.17.0/json
+  cache: '{cache}'
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/pyo3-arrow/0.17.0
+  attribution: Upstream crate authors; Apache-2.0 or MIT; inspect crate metadata
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+- id: serde_json-1.0.151
+  adapter: rustdoc
+  package: serde_json
+  version: 1.0.151
+  profile: serde-json-1.0.151
+  url: https://docs.rs/crate/serde_json/1.0.151/json
+  cache: '{cache}'
+  helper: '{manifest}/../rustdoc-helper/target/debug/library-guides-rustdoc'
+  locator: https://docs.rs/serde_json/1.0.151
+  attribution: Upstream crate authors; Apache-2.0 or MIT; inspect crate metadata
+  acquisition: Version-checked docs.rs JSON; URL-bound SHA-256 cache receipt
+- id: pydantic-static
+  adapter: python_static
+  package: pydantic
+  module: pydantic
+  version: 2.13.4
+  profile: pydantic-2.13.4
+  python: '{python}'
+  locator: https://docs.pydantic.dev/2.13/
+  attribution: Pydantic authors; MIT
+- id: pyarrow.csv-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow.csv
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow.json-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow.json
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow.ipc-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow.ipc
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow.parquet-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow.parquet
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow.orc-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow.orc
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow.fs-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow.fs
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow.flight-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow.flight
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow.acero-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow.acero
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow.interchange-native
+  adapter: python_native
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  module: pyarrow.interchange
+  python: '{python}'
+  locator: https://arrow.apache.org/docs/python/
+  attribution: Apache Software Foundation; Apache-2.0
+- id: pyarrow-compute-registry
+  adapter: registry
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  command:
+  - '{python}'
+  - -m
+  - library_guides.registry_adapters.export
+  - pyarrow-compute
+  locator: https://arrow.apache.org/docs/python/compute.html
+  attribution: Apache Software Foundation; Apache-2.0
+- id: datafusion-functions-registry
+  adapter: registry
+  package: datafusion
+  version: 54.0.0
+  profile: python-installed-54.0-25.0.1
+  command:
+  - '{python}'
+  - -m
+  - library_guides.registry_adapters.export
+  - datafusion-functions
+  locator: https://datafusion.apache.org/user-guide/sql/information_schema.html
+  attribution: Apache Software Foundation; Apache-2.0
+- id: datafusion-settings-registry
+  adapter: registry
+  package: datafusion
+  version: 54.0.0
+  profile: python-installed-54.0-25.0.1
+  command:
+  - '{python}'
+  - -m
+  - library_guides.registry_adapters.export
+  - datafusion-settings
+  locator: https://datafusion.apache.org/user-guide/sql/information_schema.html
+  attribution: Apache Software Foundation; Apache-2.0
+profiles:
+- id: rust-docsrs-54.1-58.4
+  description: 'docs.rs feature-unified public docs: DataFusion 54.1, Arrow 58.4.
+    This inventory does not prove consumer feature availability.'
+- id: python-installed-54.0-25.0.1
+  description: 'Isolated Python 3.14 runtime: DataFusion 54.0, PyArrow 25.0.1.'
+- id: pydantic-2.13.4
+  description: Pydantic 2.13.4 source/stubs and Python 3.14 runtime.
+- id: serde-json-1.0.151
+  description: serde_json 1.0.151 docs.rs feature profile.

@@ -1,0 +1,392 @@
+mode: qualitative
+observations:
+- task: rust-placement
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The comparison distinguishes query-plan composition, direct Arrow arithmetic
+    and the scalar extension mechanism. Overflow is explicit, and custom extension
+    use remains conditional on a scoped search; no blanket optimizer-opacity claim
+    is inherited.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: Need a direct Arrow operation on already materialized values.;
+    Required scalar semantics remain unexpressed after a scoped catalog search.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:rust-placement
+    - 29095af86a9d9823a8f82a9e7ab45cdf9d6155f1015752339fd6eaaf16fa93d0
+- task: python-placement
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The query and array placements are distinct. The real fixture produces
+    the same nullable projected values through DataFusion and Arrow compute, and separates
+    wrapping addition from checked overflow.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: Already materialized arrays or a different overflow policy
+    are required.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:python-placement
+    - f04b5b226095d35ad8f19eaedef70cd4e017fc3451fc865004ae065d9124d8e3
+- task: rust-results
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The brief preserves the documented collect/stream distinction and drop-driven
+    cancellation scope. The executable consumes both paths and compares their batch
+    results; it does not claim a process-wide memory bound or measure cancellation
+    latency.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: Incremental consumption or drop-driven cancellation is required.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:rust-results
+    - 95e0ab5efd61cdd87a9e00d2d1c02a3f1aaf9bd9e4799335939651123f445b27
+- task: python-results
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The Python wrapper documentation distinguishes a list of collected batches
+    from a stream. The comparison explicitly declines to import a Rust cancellation
+    guarantee. Stream cancellation itself is not behavior-qualified here.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: The consumer can process a record-batch stream.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:python-results
+    - 286c218f237d466817404f87d1a36df0aef260a984d8f406d5e23d5c8f322e20
+- task: python-representation
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: 'The comparison preserves conversion direction: expose a Table as a reader
+    or materialize a reader as a Table. The fixture checks schema metadata and values;
+    the prose does not generalize a local zero-copy statement to arbitrary consumers.'
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: The caller requires a materialized Table.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:python-representation
+    - 059b486fef9f95d44585a014da7f9c8bf986b58b238d7ea389783daf1fba98a0
+- task: pydantic-input
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The same contracts and compiler work for an unrelated Python library. Object
+    and JSON front doors are distinguished, and the fixture verifies successful decoding
+    and strict integer rejection without claiming identical semantics for all input
+    types.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: The input is JSON data.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:pydantic-input
+    - 1eb0f56c9b614b9c73a75abd520e795e1f2404dc8c4e9231671200c3d60d5722
+- task: serde-input
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The unrelated Rust transfer case retains an operationally useful EOF/buffering
+    caveat from the exact reader documentation. The executable verifies text/reader
+    agreement on a fixture and malformed-input failure.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: Input is an IO stream; consider EOF and buffering requirements.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:serde-input
+    - 292e36270ac0276a53012ac75e86eed220d41c3ca5ac15ae213e9ec539f30cc7
+- task: c-stream
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: A real compiled pyo3-arrow extension round-trips a nullable int64 reader.
+    The recorded fixture preserves schema metadata and buffer address, survives producer
+    deletion, and rejects repeated capsule import. These observations are intentionally
+    limited to that fixture and build.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: Change the representation, applicability profile or required
+    guarantee; reacquire and review the corresponding evidence before applying this
+    result.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - integration:c-stream
+    - 514aa36118aa15f5ef6a22f7774ac332075590c0a5cf8ccb0a59787592ee40b1
+- task: rust-enrichment
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The alternatives are a relation join, a provider scan contract and an async
+    remote scalar interface. The decision requires an external freshness policy rather
+    than inventing snapshot guarantees. The duplicate-key fixture demonstrates why
+    a left join alone does not establish row-count preservation.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: The source needs a reusable scan plan with explicit projection,
+    filters and limit contracts.; Remote scalar invocation itself is required under
+    an explicit caller-owned consistency and retry policy.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:rust-enrichment
+    - 2eb903edf5bb024713bf4de8fd7796c0ec056a0a8d95b5abbce77ada22e97087
+- task: rust-rows
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: Grouped aggregation and window placement are distinguished by their documented
+    contracts and the fixture row counts. A custom accumulator is conditional; function-specific
+    empty/null behavior remains a required separate check.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: Results should be attached to existing rows with an explicit
+    frame and ordering.; A required statistic remains unexpressed after searching
+    the scoped aggregate catalog.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:rust-rows
+    - 84bf4ae0cd87f98e32fbb50399c0518352475f4e7e4d5f6f53539cae6d08726b
+- task: python-dataset
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: Both Scanner and direct Parquet Table reading support projection and filters.
+    The fixture compares the same result through both. Scanner adds deferred consumption
+    and batch controls; physical pruning remains conditional rather than asserted
+    from the API name.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: The consumer wants a Table directly from a Parquet source.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:python-dataset
+    - 2279f45b864fb6f4a88a9f4a0b29af00206f95b052921dc75c860c7dd74a54df
+- task: reverse-rust-placement
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: Changing the consumer to already materialized Arrow operands makes the
+    direct kernel the applicable route. The comparison still requires a separate arithmetic
+    policy; it does not force all transformations through a query.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: Need a direct Arrow operation on already materialized values.;
+    Required scalar semantics remain unexpressed after a scoped catalog search.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:rust-placement
+    - 29095af86a9d9823a8f82a9e7ab45cdf9d6155f1015752339fd6eaaf16fa93d0
+- task: reverse-python-overflow
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The error-on-overflow requirement reverses the default wrapping choice
+    toward checked arithmetic. The real fixture observes an error for checked int8
+    overflow and a wrapped value for ordinary addition.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: Already materialized arrays or a different overflow policy
+    are required.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:python-placement
+    - f04b5b226095d35ad8f19eaedef70cd4e017fc3451fc865004ae065d9124d8e3
+- task: duplicate-reference
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The exact SQL fixture retains the unmatched left key but produces two matches
+    for the duplicated right key. The brief therefore requires a key-uniqueness or
+    duplicate-resolution policy, instead of claiming that left joins preserve row
+    count.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: The source needs a reusable scan plan with explicit projection,
+    filters and limit contracts.; Remote scalar invocation itself is required under
+    an explicit caller-owned consistency and retry policy.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - decision:rust-enrichment
+    - 2eb903edf5bb024713bf4de8fd7796c0ec056a0a8d95b5abbce77ada22e97087
+- task: provider-limit
+  disposition: supported
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The recovered TableProvider.scan documentation explicitly orders filters
+    before limit before projection and disallows pushed limits with inexact filters.
+    This is documentation-backed; no custom provider implementation has been certified.
+  comparison: The previous generated briefs and navigator did not bind their recommendations
+    to current item-level review fingerprints. This route retains the conditions and
+    exact supporting artifacts.
+  reversing_condition: Change the representation, applicability profile or required
+    guarantee; reacquire and review the corresponding evidence before applying this
+    result.
+  follow_up: Retain the stated evidence class and applicability limits; re-review
+    if the recorded inputs or requirement changes.
+  records:
+  - - cap:rust-provider
+    - 2c3a36a0bbbe1437b121492a1484db701e2528bce3b0bd22ec0dfd0ef33e56e7
+- task: rust-schema
+  disposition: gap
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The broad acquisition makes relevant APIs and documentation discoverable,
+    but this task lacks a reviewed decision with the complete required semantic contract.
+    The pilot must not answer it with a generic recommendation.
+  comparison: The preserved deep dives remain useful starting points. The new tooling
+    exposes this as unfinished semantic work instead of manufacturing coverage from
+    an API mention.
+  reversing_condition: Change the representation, applicability profile or required
+    guarantee; reacquire and review the corresponding evidence before applying this
+    result.
+  follow_up: Use scoped discovery and the original reference skill to acquire the
+    missing contract, compare alternatives, and add the required semantic or executable
+    evidence.
+  records: []
+- task: python-schema
+  disposition: gap
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The broad acquisition makes relevant APIs and documentation discoverable,
+    but this task lacks a reviewed decision with the complete required semantic contract.
+    The pilot must not answer it with a generic recommendation.
+  comparison: The preserved deep dives remain useful starting points. The new tooling
+    exposes this as unfinished semantic work instead of manufacturing coverage from
+    an API mention.
+  reversing_condition: Change the representation, applicability profile or required
+    guarantee; reacquire and review the corresponding evidence before applying this
+    result.
+  follow_up: Use scoped discovery and the original reference skill to acquire the
+    missing contract, compare alternatives, and add the required semantic or executable
+    evidence.
+  records: []
+- task: custom-scalar
+  disposition: gap
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The broad acquisition makes relevant APIs and documentation discoverable,
+    but this task lacks a reviewed decision with the complete required semantic contract.
+    The pilot must not answer it with a generic recommendation.
+  comparison: The preserved deep dives remain useful starting points. The new tooling
+    exposes this as unfinished semantic work instead of manufacturing coverage from
+    an API mention.
+  reversing_condition: Change the representation, applicability profile or required
+    guarantee; reacquire and review the corresponding evidence before applying this
+    result.
+  follow_up: Use scoped discovery and the original reference skill to acquire the
+    missing contract, compare alternatives, and add the required semantic or executable
+    evidence.
+  records: []
+- task: custom-aggregate
+  disposition: gap
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The broad acquisition makes relevant APIs and documentation discoverable,
+    but this task lacks a reviewed decision with the complete required semantic contract.
+    The pilot must not answer it with a generic recommendation.
+  comparison: The preserved deep dives remain useful starting points. The new tooling
+    exposes this as unfinished semantic work instead of manufacturing coverage from
+    an API mention.
+  reversing_condition: Change the representation, applicability profile or required
+    guarantee; reacquire and review the corresponding evidence before applying this
+    result.
+  follow_up: Use scoped discovery and the original reference skill to acquire the
+    missing contract, compare alternatives, and add the required semantic or executable
+    evidence.
+  records: []
+- task: conditional-store
+  disposition: gap
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The broad acquisition makes relevant APIs and documentation discoverable,
+    but this task lacks a reviewed decision with the complete required semantic contract.
+    The pilot must not answer it with a generic recommendation.
+  comparison: The preserved deep dives remain useful starting points. The new tooling
+    exposes this as unfinished semantic work instead of manufacturing coverage from
+    an API mention.
+  reversing_condition: Change the representation, applicability profile or required
+    guarantee; reacquire and review the corresponding evidence before applying this
+    result.
+  follow_up: Use scoped discovery and the original reference skill to acquire the
+    missing contract, compare alternatives, and add the required semantic or executable
+    evidence.
+  records: []
+- task: flight-ipc
+  disposition: gap
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The broad acquisition makes relevant APIs and documentation discoverable,
+    but this task lacks a reviewed decision with the complete required semantic contract.
+    The pilot must not answer it with a generic recommendation.
+  comparison: The preserved deep dives remain useful starting points. The new tooling
+    exposes this as unfinished semantic work instead of manufacturing coverage from
+    an API mention.
+  reversing_condition: Change the representation, applicability profile or required
+    guarantee; reacquire and review the corresponding evidence before applying this
+    result.
+  follow_up: Use scoped discovery and the original reference skill to acquire the
+    missing contract, compare alternatives, and add the required semantic or executable
+    evidence.
+  records: []
+- task: async-consistency
+  disposition: gap
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The broad acquisition makes relevant APIs and documentation discoverable,
+    but this task lacks a reviewed decision with the complete required semantic contract.
+    The pilot must not answer it with a generic recommendation.
+  comparison: The preserved deep dives remain useful starting points. The new tooling
+    exposes this as unfinished semantic work instead of manufacturing coverage from
+    an API mention.
+  reversing_condition: Change the representation, applicability profile or required
+    guarantee; reacquire and review the corresponding evidence before applying this
+    result.
+  follow_up: Use scoped discovery and the original reference skill to acquire the
+    missing contract, compare alternatives, and add the required semantic or executable
+    evidence.
+  records: []
+- task: numpy-dlpack
+  disposition: gap
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The broad acquisition makes relevant APIs and documentation discoverable,
+    but this task lacks a reviewed decision with the complete required semantic contract.
+    The pilot must not answer it with a generic recommendation.
+  comparison: The preserved deep dives remain useful starting points. The new tooling
+    exposes this as unfinished semantic work instead of manufacturing coverage from
+    an API mention.
+  reversing_condition: Change the representation, applicability profile or required
+    guarantee; reacquire and review the corresponding evidence before applying this
+    result.
+  follow_up: Use scoped discovery and the original reference skill to acquire the
+    missing contract, compare alternatives, and add the required semantic or executable
+    evidence.
+  records: []
+- task: feature-profile
+  disposition: gap
+  reviewer: Codex qualitative task review 2026-09-11
+  finding: The broad acquisition makes relevant APIs and documentation discoverable,
+    but this task lacks a reviewed decision with the complete required semantic contract.
+    The pilot must not answer it with a generic recommendation.
+  comparison: The preserved deep dives remain useful starting points. The new tooling
+    exposes this as unfinished semantic work instead of manufacturing coverage from
+    an API mention.
+  reversing_condition: Change the representation, applicability profile or required
+    guarantee; reacquire and review the corresponding evidence before applying this
+    result.
+  follow_up: Use scoped discovery and the original reference skill to acquire the
+    missing contract, compare alternatives, and add the required semantic or executable
+    evidence.
+  records: []

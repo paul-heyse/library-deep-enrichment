@@ -1,0 +1,41 @@
+{
+  "kind": "synthetic-wire-format-matrix.v1",
+  "native_base": "tests/fixtures/rust_declarations/src/lib.rs",
+  "native_compiler": "nightly-2026-08-18",
+  "native_base_sha256": "55b657783e50ac0feaf5665ade8cb5c85c82e5d2e602ed9118306f779aad5a25",
+  "synthetic_items": [
+    "external_alias",
+    "opaque_external",
+    "declarative_macro",
+    "derive_macro",
+    "primitive",
+    "trait_alias",
+    "type_resolved_path",
+    "type_dyn_trait",
+    "type_generic",
+    "type_primitive",
+    "type_function_pointer",
+    "type_tuple",
+    "type_slice",
+    "type_array",
+    "type_pat",
+    "type_impl_trait",
+    "type_infer",
+    "type_raw_pointer",
+    "type_borrowed_ref",
+    "type_qualified_path"
+  ],
+  "scope": "Retains every advertised ItemEnum and Type variant through four typed decoders; synthetic additions do not prove Rust coherence or ordinary consumer availability.",
+  "older_format_frontiers": {
+    "57": [
+      "stability",
+      "const_stability",
+      "default_unstable"
+    ],
+    "59": [
+      "default_unstable"
+    ],
+    "60": [],
+    "61": []
+  }
+}

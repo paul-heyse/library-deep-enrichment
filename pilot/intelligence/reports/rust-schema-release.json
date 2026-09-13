@@ -1,0 +1,13 @@
+{
+  "manifest": "c846a29508e67b5799ee2cf767fce0412cf6ba508faec72616a8d86750b6a299",
+  "restored_manifest": "c846a29508e67b5799ee2cf767fce0412cf6ba508faec72616a8d86750b6a299",
+  "comparison": "59e29a5629c42c3780af1526a51a38337c14eca1cd88b0c6cb624348a219706a",
+  "candidate_count": 427,
+  "eligible": [
+    "arrow_schema::<impl Schema>::new",
+    "arrow_schema::<impl Schema>::empty",
+    "arrow_schema::<impl Schema>::new_with_metadata"
+  ],
+  "elapsed_seconds": 65.64342079599737,
+  "portable_families": 26
+}

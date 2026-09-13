@@ -1,0 +1,38 @@
+[
+  {
+    "manifest": "426188f6e3c3769a988d2cb79c72335560bac662ff6501e14efeda9592e7dd0e",
+    "source_digest": "687bfc7a5ae534f6ed7a3fb4c01efbb9bf3aca7b4acf928de1e1aaccee5cb05f",
+    "families": [
+      [
+        "predicates",
+        2
+      ],
+      [
+        "rules",
+        2
+      ]
+    ],
+    "operation_mappings": 0,
+    "approved": true
+  },
+  {
+    "manifest": "25c5df7e79d782f50acab166749e75d01e824c8fcec6b3dda66a771b39b88608",
+    "source_digest": "1d6af9231842de49b8ec7a6c58d2eb512c42e4ba24aceafba6f041835ee046ce",
+    "families": [
+      [
+        "capability_schemas",
+        1
+      ],
+      [
+        "predicates",
+        2
+      ],
+      [
+        "rules",
+        3
+      ]
+    ],
+    "operation_mappings": 0,
+    "approved": true
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "archive": "python-results",
+    "manifest": "93f1462edd7bbf5eeb8d51da30f3dfc434eb5fe638fa889dcd68b90b65a1c5f8",
+    "checker": "library-guides.realization.2026-09-12.pre-schema-approval.v1",
+    "checker_implementation": "c7c58074122d588e54e4cfff389ff7fa0190d1556821e7dc0891f520a9c04c7d",
+    "restored_manifest": "93f1462edd7bbf5eeb8d51da30f3dfc434eb5fe638fa889dcd68b90b65a1c5f8",
+    "guide_count": 1,
+    "typed_families": 26,
+    "immutable_controls": 2
+  },
+  {
+    "archive": "rust-schema",
+    "manifest": "c846a29508e67b5799ee2cf767fce0412cf6ba508faec72616a8d86750b6a299",
+    "checker": "library-guides.realization.2026-09-12.pre-schema-approval.v1",
+    "checker_implementation": "c7c58074122d588e54e4cfff389ff7fa0190d1556821e7dc0891f520a9c04c7d",
+    "restored_manifest": "c846a29508e67b5799ee2cf767fce0412cf6ba508faec72616a8d86750b6a299",
+    "guide_count": 1,
+    "typed_families": 26,
+    "immutable_controls": 2
+  }
+]

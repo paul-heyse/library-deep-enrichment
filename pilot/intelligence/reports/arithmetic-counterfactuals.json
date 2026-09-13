@@ -1,0 +1,112 @@
+{
+  "manifest": "38a45cc74a0bf023134fd1344840d78e61a301d9e0bc959f2858576000131db9",
+  "task": "task:integer-add-error",
+  "deltas": [
+    {
+      "logical_id": "delta:335064c82e753e0cb0a1011e0ba9a9c0e77b4a93f0a6411b5f2ed5f99992be8c:0:c1ba4daa1d25d7bd018ffd3974ef97fc8ec289dfe61862ac4c499542c6b25fa4",
+      "profile": "python-installed-54-25",
+      "task": "335064c82e753e0cb0a1011e0ba9a9c0e77b4a93f0a6411b5f2ed5f99992be8c",
+      "baseline": "9bc832f102bca3ce9f9f875bf76345e1f415707e3c09f3dcfd8c1dfc1ed8e963",
+      "alternative_task": "e9a9e897e156b08232247457d8999b3a427226c8b5b2bdde8900d92aea9a4ded",
+      "alternative": "f55ad1521fc7163c01a752f69366528dce39f41f5b6cf9ce5251ac9d9f3d0e8f",
+      "requirement": 0,
+      "before": {
+        "kind": "text",
+        "text": "add"
+      },
+      "after": {
+        "kind": "text",
+        "text": "subtract"
+      },
+      "became_eligible": [],
+      "ceased_eligible": [
+        "e9c64940d869a0070c0cc1a097620f8804b70cee175f26a02bf3b0c58443e581"
+      ],
+      "became_eligible_symbols": [],
+      "ceased_eligible_symbols": [
+        "compute-registry:add_checked"
+      ]
+    },
+    {
+      "logical_id": "delta:335064c82e753e0cb0a1011e0ba9a9c0e77b4a93f0a6411b5f2ed5f99992be8c:0:003d03489439eae99383e6664ffd1e30cfe83ac14bb4f1e921d18a43252b272c",
+      "profile": "python-installed-54-25",
+      "task": "335064c82e753e0cb0a1011e0ba9a9c0e77b4a93f0a6411b5f2ed5f99992be8c",
+      "baseline": "9bc832f102bca3ce9f9f875bf76345e1f415707e3c09f3dcfd8c1dfc1ed8e963",
+      "alternative_task": "e670ed8f987d2f4593612503870c64c5d90fd70caac99b91371df8bfc176cebc",
+      "alternative": "51e7c52e550f2c10f4b1f7fafc807f16d47067ab9948e0681a33262394256698",
+      "requirement": 0,
+      "before": {
+        "kind": "text",
+        "text": "add"
+      },
+      "after": {
+        "kind": "text",
+        "text": "multiply"
+      },
+      "became_eligible": [],
+      "ceased_eligible": [
+        "e9c64940d869a0070c0cc1a097620f8804b70cee175f26a02bf3b0c58443e581"
+      ],
+      "became_eligible_symbols": [],
+      "ceased_eligible_symbols": [
+        "compute-registry:add_checked"
+      ]
+    },
+    {
+      "logical_id": "delta:335064c82e753e0cb0a1011e0ba9a9c0e77b4a93f0a6411b5f2ed5f99992be8c:0:a6d301ef9af58800352385e6860c94ddc5ebc5a3fd948eae3b5af510f1c73dd0",
+      "profile": "python-installed-54-25",
+      "task": "335064c82e753e0cb0a1011e0ba9a9c0e77b4a93f0a6411b5f2ed5f99992be8c",
+      "baseline": "9bc832f102bca3ce9f9f875bf76345e1f415707e3c09f3dcfd8c1dfc1ed8e963",
+      "alternative_task": "638858804ec2190e95bc9b5e63f14b4ba7d9d848ae968d2313db551c96d300de",
+      "alternative": "550eb9de4715fc58aace44607097d31632b36b340833bc541056f567f0cd89f5",
+      "requirement": 0,
+      "before": {
+        "kind": "text",
+        "text": "add"
+      },
+      "after": {
+        "kind": "text",
+        "text": "divide"
+      },
+      "became_eligible": [],
+      "ceased_eligible": [
+        "e9c64940d869a0070c0cc1a097620f8804b70cee175f26a02bf3b0c58443e581"
+      ],
+      "became_eligible_symbols": [],
+      "ceased_eligible_symbols": [
+        "compute-registry:add_checked"
+      ]
+    },
+    {
+      "logical_id": "delta:335064c82e753e0cb0a1011e0ba9a9c0e77b4a93f0a6411b5f2ed5f99992be8c:1:e403ffb5ff0078a3e3c6bcc7df0c775f42e30c87087a35b72a872e84d5b29ab2",
+      "profile": "python-installed-54-25",
+      "task": "335064c82e753e0cb0a1011e0ba9a9c0e77b4a93f0a6411b5f2ed5f99992be8c",
+      "baseline": "9bc832f102bca3ce9f9f875bf76345e1f415707e3c09f3dcfd8c1dfc1ed8e963",
+      "alternative_task": "5728e27747d1d69a4c4112d446f7d68bf827a93dd15c8b8849c6a82c1a65a1f1",
+      "alternative": "849ee39eccf723a06428df17b9e99ea78abc27603669c3ce0dce5fe200db730d",
+      "requirement": 1,
+      "before": {
+        "kind": "text",
+        "text": "error"
+      },
+      "after": {
+        "kind": "text",
+        "text": "wrap"
+      },
+      "became_eligible": [
+        "3fd1128863c25d5fc3dac5f60b01a8f4519258fca7a8b0d2bbc8691154ca196f"
+      ],
+      "ceased_eligible": [
+        "e9c64940d869a0070c0cc1a097620f8804b70cee175f26a02bf3b0c58443e581"
+      ],
+      "became_eligible_symbols": [
+        "compute-registry:add"
+      ],
+      "ceased_eligible_symbols": [
+        "compute-registry:add_checked"
+      ]
+    }
+  ],
+  "elapsed_seconds": 46.10383437000564,
+  "manual_reversal_prose": 0
+}

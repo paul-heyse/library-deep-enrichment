@@ -1,0 +1,42 @@
+schema_version: library-guides.library_manifest.v1
+library_id: datafusion-rust
+ecosystem: rust
+packages:
+  - name: datafusion
+    public_root: datafusion
+surface_packages: ['datafusion', 'datafusion_*', 'arrow', 'arrow_*', 'parquet', 'object_store']
+profiles:
+  - profile_id: datafusion-rust-docsrs
+    version_source: cargo_workspace_dependency
+    version_key: datafusion
+    scope: docs.rs default documentation build; not every consumer feature set
+    api_source:
+      kind: docs_rs_rustdoc_json
+      crate: datafusion
+      additional_crates:
+        - datafusion-catalog
+        - datafusion-catalog-listing
+        - datafusion-common
+        - datafusion-datasource
+        - datafusion-datasource-arrow
+        - datafusion-datasource-parquet
+        - datafusion-doc
+        - datafusion-execution
+        - datafusion-expr
+        - datafusion-functions
+        - datafusion-functions-aggregate
+        - datafusion-functions-aggregate-common
+        - datafusion-functions-nested
+        - datafusion-functions-table
+        - datafusion-functions-window
+        - datafusion-macros
+        - datafusion-optimizer
+        - datafusion-physical-expr
+        - datafusion-physical-expr-adapter
+        - datafusion-physical-expr-common
+        - datafusion-physical-optimizer
+        - datafusion-physical-plan
+        - datafusion-proto
+        - datafusion-session
+        - datafusion-tracing
+registry_probes: []

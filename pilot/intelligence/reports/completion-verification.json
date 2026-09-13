@@ -1,0 +1,31 @@
+{
+  "freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e",
+  "utc": "2026-09-13T03:52:38.845339+00:00",
+  "distinct_tests_passed": 315,
+  "test_runs": [
+    {
+      "file": "completion-final-tests.xml",
+      "sha256": "67dddbb3b493a9875d0d52d5eda0c0f726abb03000cebdb8ebe1a4149e3f649e",
+      "passed": 312
+    },
+    {
+      "file": "completion-additional-native-tests.xml",
+      "sha256": "c05158a6a8e4640e39fb593d003df732c7489e275f410ba70fb27b3beb5dad5c",
+      "passed": 5
+    }
+  ],
+  "test_accounting": "312-test complete suite plus five declaration controls, including three added after that suite; two controls overlap. 315 distinct tests passed.",
+  "warnings": "Two unsuppressed transitive scikit-mine NumPy deprecation warnings.",
+  "static_scope": "library_guides tests pilot vendor; Pyrefly configured standalone project. Supplied handoff reference example remains an external input; broad dot Ruff reported five existing style issues there.",
+  "logs": {
+    "completion-final-owned-ruff.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "completion-final-owned-format.log": "052421aab453b9c0087aea55ba6398d3ed1325ff894fc2cdfa61e9c4c66cb127",
+    "completion-final-pyrefly.log": "1ac7f98a4fb317bfde6a7125655e410ee262e6c459b2b4d19cb229dc86901e0c",
+    "native-final-identity-build.log": "337052b05be99536315213877dde633c00e970ae2dfdb396a42af83bc94ef0df",
+    "native-final-identity-test.log": "79c62259b758beb116217724fc0e3bb61a089a03345c89404cb5266ad44fbf98",
+    "native-final-identity-clippy.log": "a13905646e2aed93ec6ea9ed6ac91490a4e01f91af0215c3965279a910612149"
+  },
+  "all_frozen_files_verified": 270,
+  "native_quality": "All five owned workspaces passed build/test/Clippy/format; changed rustdoc helper rechecked and all 47 actual producer jobs rerun, then zero-worker warm reuse. Pinned external upstream formatting drift is retained.",
+  "root_smartref_acceptance_claimed": false
+}

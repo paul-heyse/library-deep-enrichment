@@ -1,0 +1,245 @@
+"""Executable controls for Python evaluation and cleanup; independent of the analyzer."""
+
+
+def final_override() -> int:
+    """A finally return replaces the pending return.
+
+    Returns:
+        The overriding cleanup value.
+
+    """
+    try:
+        return 1
+    finally:
+        return 2
+
+
+def guarded_cleanup(*, enabled: bool) -> int:
+    """Cleanup can change locals without rewriting an already evaluated return value.
+
+    Returns:
+        The selected value evaluated before cleanup.
+
+    """
+    value = 1
+    try:
+        if enabled:
+            return value
+        return 3
+    finally:
+        value = 4
+
+
+def short_circuit() -> bool:
+    """A false left operand does not execute a failing right operand.
+
+    Returns:
+        False without dividing by zero.
+
+    """
+    return False and 1 / 0
+
+
+def break_finally() -> int:
+    """Break runs cleanup before taking the loop exit.
+
+    Returns:
+        The value assigned by the exited finally suite.
+
+    """
+    value = 1
+    while True:
+        try:
+            break
+        finally:
+            value = 5
+    return value
+
+
+def ordinary_finally() -> int:
+    """Ordinary fallthrough also executes cleanup.
+
+    Returns:
+        The final value written on the normal path.
+
+    """
+    value = 1
+    try:
+        value = 3
+    finally:
+        value = 6
+    return value
+
+
+def unbound_local():
+    if False:
+        value = 1
+    return value
+
+
+def deleted_local():
+    value = 1
+    del value
+    return value
+
+
+def context_return(manager):
+    with manager as value:
+        return 7
+
+
+def singleton_match():
+    match None:
+        case None:
+            return 11
+        case _:
+            return 12
+
+
+def deferred_cleanup(log):
+    try:
+        log.append('started')
+        yield 1
+        log.append('resumed')
+    finally:
+        log.append('cleaned')
+
+
+def capture_pattern(value):
+    match value:
+        case captured:
+            return captured
+
+
+def comprehension_shadow():
+    value = 99
+    items = [value for value in (1, 2)]
+    return value
+
+
+def comprehension_values():
+    return [value for value in (1, 2)]
+
+
+def comprehension_filter():
+    return [value for value in (False, True) if value]
+
+
+def comprehension_walrus():
+    value = 99
+    items = [(value := item) for item in (1, 2)]
+    return value
+
+
+def generator_outer_order(log, source):
+    return (log.append(item) for item in source)
+
+
+def comprehension_nested():
+    return [(outer, inner) for outer in (1, 2) for inner in (3,)]
+
+
+class FirstDecorated:
+    @property
+    def decorated_extent(self):
+        return 31  # A trailing comment belongs to the structural function extent.
+
+
+class SecondDecorated:
+    @property
+    def decorated_extent(self):
+        return 47  # The same identifier in another owner is a distinct body.
+
+
+def identity_condition(value):
+    if value is None:
+        return 1
+    return 2
+
+
+def custom_condition(value):
+    if value:
+        return 1
+    return 2
+
+
+def expanded_tuple():
+    return (1, *(2, 3), 4)
+
+
+def expanded_list():
+    source = [2, 3]
+    return [1, *source, 4]
+
+
+def expanded_string():
+    return (*"a😀",)
+
+
+def expanded_noniterable():
+    return (1, *2, 3)
+
+
+def expansion_before_rebinding():
+    source = (2, 3)
+    return (1, *source, (source := (8, 9)))
+
+
+def expansion_order(log, source):
+    return (log.append('before'), *source, log.append('after'))
+
+
+def negated_value(value):
+    return not value
+
+
+def equality_value(value):
+    return value == 1
+def witness_forward(enabled, callback, value):
+    if enabled:
+        return callback(value)
+    return value
+
+
+def witness_helper(value):
+    return value * 7
+
+
+def witness_global(value):
+    return witness_helper(value)
+
+
+def witness_empty_branch(value, items):
+    if not items:
+        return value
+    return None
+
+
+def two_subscriptions(container):
+    return container[0], container[1]
+
+
+def repeated_subscription(container):
+    return container[0], container[0]
+
+
+def two_equal_assignments():
+    first = 1
+    second = 1
+    return first, second
+
+
+AMBIENT_FLAG = 17
+
+
+def ambient_result():
+    return AMBIENT_FLAG
+
+
+def retained_extent(values):
+    return [*values]
+
+
+def shared_assignment(target):
+    target.value = 3
+    return None

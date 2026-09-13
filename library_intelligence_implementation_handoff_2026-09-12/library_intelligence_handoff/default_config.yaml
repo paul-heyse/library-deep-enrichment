@@ -1,0 +1,69 @@
+storage:
+  backend: lancedb
+  uri: /absolute/local/path/library-intelligence.lancedb
+  single_writer: true
+  batch_rows: 4096
+  raw_blob_chunk_bytes: 4194304
+  retained_generation_tags: true
+  automatic_version_pruning: false
+  portable_format: parquet
+
+embedding:
+  model: Qwen/Qwen3-Embedding-8B
+  model_revision: REQUIRED_EXACT_REVISION
+  service_url: http://127.0.0.1:8000/v1
+  served_model_name: library-qwen3-embedding
+  dimension: 4096
+  inference_dtype: bfloat16
+  storage_dtype: float32
+  normalize: l2
+  document_max_tokens: 2048
+  service_max_tokens: 4096
+  prompt_policy: qwen_query_instruction_document_plain_v1
+
+retrieval:
+  vector_mode: exact_flat
+  lexical_index: native_fts
+  per_channel_limit: 50
+  seed_entity_limit: 20
+  rrf_constant: 60
+  graph_hops: 2
+  graph_node_limit: 200
+  graph_edge_limit: 500
+  learned_reranker: null
+
+communities:
+  backend: igraph_leidenalg
+  objective: RBConfigurationVertexPartition
+  resolution: 1.0
+  seed: 13
+  iterations: until_no_improvement
+  process_timeout_seconds: 120
+  primary_view: architecture_structural
+  retain_views:
+    - architecture_structural
+    - capability_semantic
+    - architecture_semantic_fused
+  semantic_neighbors: 15
+  semantic_edges: mutual_positive_cosine
+  fusion_layer_weights: [0.75, 0.25]
+  normalize_layer_total_weight: true
+  recursive_split_above_nodes: 80
+  hierarchy_max_depth: 3
+
+labels:
+  method: source_phrase_ctfidf
+  ngram_range: [1, 3]
+  alternative_labels: 5
+  source_boundaries_preserved: true
+  allow_generative_fallback: false
+
+formal_concepts:
+  backend: fcapy
+  algorithm: CbO
+  context_semantics: observed_positive_support
+  max_objects: 256
+  max_attributes: 24
+  max_output_concepts: 20000
+  process_timeout_seconds: 60
+  expose_empty_extent_to_recommendations: false

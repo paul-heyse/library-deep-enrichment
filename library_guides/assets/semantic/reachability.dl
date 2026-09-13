@@ -1,0 +1,7 @@
+// Reachability under this supplied finite edge relation; no whole-program claims.
+.decl Edge(source:number, target:number)
+.input Edge
+.decl Reach(source:number, target:number)
+Reach(x,y) :- Edge(x,y).
+Reach(x,z) :- Reach(x,y), Edge(y,z).
+.output Reach

@@ -1,0 +1,69 @@
+{
+  "python": "3.14.7 (main, Aug 14 2026, 15:35:28) [Clang 22.1.3 ]",
+  "interpreter": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/full-environment/bin/python",
+  "packages": {
+    "attrs": "26.1.0",
+    "cattrs": "26.2.0",
+    "pyarrow": "25.0.1",
+    "datafusion": "54.0.0",
+    "lancedb": "0.38.0",
+    "networkx": "3.6.1",
+    "z3-solver": "5.1.0.0",
+    "hypothesis": "6.168.0",
+    "ruff": "0.16.7",
+    "pyrefly": "1.3.0",
+    "pytest": "9.1.1"
+  },
+  "native_commands": [
+    {
+      "argv": [
+        "cargo",
+        "+stable",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "cargo 1.98.1 (797e8a9bc 2026-08-05)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rustc",
+        "+stable",
+        "-vV"
+      ],
+      "exit_code": 0,
+      "stdout": "rustc 1.98.1 (48a229cea 2026-09-01)\nbinary: rustc\ncommit-hash: 48a229ceaefd4985c50990b14116b6d856af0985\ncommit-date: 2026-09-01\nhost: x86_64-unknown-linux-gnu\nrelease: 1.98.1\nLLVM version: 22.1.8\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rustc",
+        "+nightly-2026-08-18",
+        "-vV"
+      ],
+      "exit_code": 0,
+      "stdout": "rustc 1.100.0-nightly (8fa1c96cf 2026-08-17)\nbinary: rustc\ncommit-hash: 8fa1c96cfd489e4c27654c144ae871ce2c4db6c6\ncommit-date: 2026-08-17\nhost: x86_64-unknown-linux-gnu\nrelease: 1.100.0-nightly\nLLVM version: 23.1.0\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/home/paul/smartref/tooling/library_guides/native/mir-facts/target/debug/library-guides-mir-facts",
+        "toolchain"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"compiler_commit\":\"8fa1c96cfd489e4c27654c144ae871ce2c4db6c6\",\"sysroot\":\"/home/paul/.rustup/toolchains/nightly-2026-08-18-x86_64-unknown-linux-gnu\"}\n",
+      "stderr": ""
+    }
+  ],
+  "input_hashes": {
+    "pyproject.toml": "16dbeee31030419fcd53f9e481d10b9575566ea119348dc5ce52f82b2a2ad4b4",
+    "uv.lock": "c8701e9f5e904f76b0e0e26019a170fb60923316bfffeec9d51a5c94f05f0455",
+    "native/source-facts/Cargo.lock": "c015ee346be839d79863632ec4e7053c69b3a25f08ca25722d58d08d854cdcf4",
+    "native/mir-facts/Cargo.lock": "ddd7aa65c95473e178a5346e921e90a83ec74a5085621ed22c01d9a83b31ebb9",
+    "native/python-semantics/Cargo.lock": "be756add984c894e1420b86d60c4bff94c7067f4f30f13aaf956e0bf5a9a76bd",
+    "rustdoc-helper/Cargo.lock": "50ba357f0595c2ef38694641ec33fb927b5b3df734901c9eaf60123d716ffd88",
+    "native/protocol/Cargo.lock": "e4f8c219226fe0b51be30497b5c84ac4f94ae559cf67c5fb18cc4069fa40305c"
+  },
+  "historic_analysis_manifest": "f61eabbd4fe17866ca3bd5c6a3d7b1d8875e3f53ee32b204a693ce4292fa9913",
+  "benchmark_cargo_lock": "235e3b0e70eb73b4426552bc7568ed3bc2fadbd272dfe6043caa3b1f808537df"
+}

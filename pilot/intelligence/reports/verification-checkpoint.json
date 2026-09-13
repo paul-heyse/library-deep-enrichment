@@ -1,0 +1,16 @@
+{
+  "status": "in-progress",
+  "tests": {
+    "command": "tooling/library_guides/.venv/bin/python -m pytest tooling/library_guides/tests -q",
+    "passed": 227,
+    "warnings": [
+      "FCApy transitive skmine dependency imports deprecated NumPy private namespaces"
+    ]
+  },
+  "ruff": "passed",
+  "pyrefly": {
+    "command": ".venv/bin/pyrefly check --min-severity warn --output-format min-text",
+    "diagnostics": 0
+  },
+  "terminal_acceptance": "not-yet-complete"
+}

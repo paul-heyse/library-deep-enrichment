@@ -1,0 +1,36 @@
+{
+  "freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d",
+  "compiler": "nightly-2026-08-18",
+  "real_jobs_format_counts": {
+    "57": 3,
+    "60": 44
+  },
+  "advertised_formats": [
+    57,
+    59,
+    60,
+    61
+  ],
+  "declarations_per_format": 166,
+  "item_enum_variants": 21,
+  "type_variants": 14,
+  "all_items_equal_expected": true,
+  "all_portable_round_trips": true,
+  "unknown_metadata_by_format": {
+    "57": [
+      "stability",
+      "const_stability",
+      "default_unstable"
+    ],
+    "59": [
+      "default_unstable"
+    ]
+  },
+  "fixture": {
+    "path": "tests/fixtures/declaration-format-matrix.json",
+    "sha256": "989417dd74851eea75b584106d7ede79f4207c246b5fc4385d4be4d6328d36e6"
+  },
+  "provenance": "tests/fixtures/declaration-format-matrix-provenance.json",
+  "limits": "Pinned compiler base plus explicit synthetic wire variants. This qualifies wire retention and format conversion, not Rust coherence or public invocation of synthetic declarations.",
+  "verification": "declaration-format-matrix-tests-final-2.log; 4 passed in 7.05 seconds"
+}

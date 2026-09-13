@@ -1,0 +1,91 @@
+obligations:
+- id: m1:surface:binding:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: binding:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:surface:binding:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: binding:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:surface:binding:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: binding:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:surface:binding:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: binding:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:surface:binding:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: binding:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:use:capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: capability:draft:b2ad7b8782353e844424de2e6fd8b029f6d3cc2ff01b1e81dc1e4fd34c3ccde4
+  required_facets:
+  - declaration
+  disposition: required
+  reason: ''
+- id: m1:use:capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: capability:draft:90d663776c42f41d5f62a1db7847e162b8388df05be3fc56ebe000ea51800f40
+  required_facets:
+  - declaration
+  disposition: required
+  reason: ''
+- id: m1:use:capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: capability:draft:d5332af7390c435f7c6fab12975ff9fa74b415a38f5927bbe3e0422f5c60ff9f
+  required_facets:
+  - declaration
+  disposition: required
+  reason: ''
+- id: m1:use:capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: capability:draft:6ca3b36c0d9f63f199e9c2a45fcf43ebdba9c9aa7a7c5c0712b4e30b85aca545
+  required_facets:
+  - declaration
+  disposition: required
+  reason: ''
+- id: m1:use:capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: capability:draft:c8c759a8342ac1b428e0c660ea5a48b6548d22fff44fb3c9eeeb92d3712eef7a
+  required_facets:
+  - declaration
+  disposition: required
+  reason: ''
+- id: m1:decision
+  axis: decision
+  profile: rust-docsrs-54.1-58.4
+  target: decision:arrow-schema:construction-routes
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: m1:composition
+  axis: composition
+  profile: rust-docsrs-54.1-58.4
+  target: not-in-this-declaration-task
+  required_facets: []
+  disposition: excluded
+  reason: The M1 task compares schema creation entry points; cross-library composition
+    remains in the unchanged full pilot policy.

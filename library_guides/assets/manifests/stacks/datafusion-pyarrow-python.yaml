@@ -1,0 +1,43 @@
+# Build manifest for the DataFusion + PyArrow Python stack.
+schema_version: library-guides.stack_manifest.v1
+stack_id: datafusion-pyarrow-python
+title: DataFusion + PyArrow (Python)
+ecosystem: python
+
+libraries: [datafusion-python, pyarrow-python]
+
+documents:
+  - doc_id: df-python
+    path: docs/library_ref/datafusion.md
+    role: secondary_research
+    deep_dive_prefix: '**Two-pass.** Pass 1 catalog + deep-dives for §0, §2-§26 (`# DataFusion Advanced — N)` H1; §1 + §27-§28 are catalog-only). Pass 2 catalog + deep-dives reusing §27-§36 for **schema engineering I-III, plan lifecycle I-III, scientific Python UDFs I-III, governed-pipeline capstone**. Disambiguate §N by full heading text (Pass-1 §27 ≠ Pass-2 §27).'
+    scope: 'Full DataFusion Python stack; the second pass adds governed-pipeline architecture (schema/source/UDF registries + query builder + plan lint + execution policy + artifact manifest).'
+    chapter_levels: [1]
+    chapter_pattern: '^DataFusion Advanced — (\d+)\)\s+'
+  - doc_id: pa-python
+    path: docs/library_ref/pyarrow.md
+    role: secondary_research
+    deep_dive_prefix: '**Single-pass.** Compact catalog for §0-§15, then inline `## N)` H2 deep-dives with `### N.M` subsections. §16-§39 extend the surface as more H1 chapters. Section numbers 20, 21, 28-30 are intentional scaffolding gaps. Each subsection chain closes with `Anti-patterns` + `Minimal canonical pattern`.'
+    scope: 'PyArrow as DataFusion''s interchange substrate **and** standalone tabular toolkit: types/schemas, arrays/tables, buffers/IO, NumPy/pandas/DLPack interop, compute kernels, Datasets, Filesystems, Parquet/IPC/CSV/JSON/ORC, extension types + PyCapsule, Flight, Acero, Substrait, packaging, v24/v25 deltas, threading, sparse tensors, compression, native extensions, schema engineering, solver contracts, simulation QA, type-system design, local dataset stores, SymPy/SciPy diagnostics bridge.'
+    chapter_levels: [1, 2]
+    chapter_pattern: '^(\d+)\)\s+'
+
+version_anchors:
+  - anchor_id: datafusion
+    source: python_locked_distribution
+    key: datafusion
+  - anchor_id: pyarrow
+    source: python_locked_distribution
+    key: pyarrow
+
+consumers:
+  - path: .claude/skills/datafusion-pyarrow-guide/SKILL.md
+    blocks: [version-anchors]
+  - path: .claude/skills/datafusion-pyarrow-guide/REFERENCE.md
+    blocks: [decision-index, decision-briefs, api-families, document-inventory, section-index]
+
+mirror_groups:
+  - authoritative: .claude/skills/datafusion-pyarrow-guide/SKILL.md
+    mirrors: [.codex/skills/datafusion-pyarrow-guide/SKILL.md]
+  - authoritative: .claude/skills/datafusion-pyarrow-guide/REFERENCE.md
+    mirrors: [.codex/skills/datafusion-pyarrow-guide/REFERENCE.md]

@@ -1,0 +1,147 @@
+{
+  "schema": "library-guides.semantic-pack.v1",
+  "rationale": "Same implementation-agent author and reviewer; no independent assessment. Reusable source grammars preserve collect/stream alternatives, the Rust-only drop contract, and the explicit compatibility precondition of schema merge. Source examples are retained but are not promoted to universal behavioral guarantees. No operation-ID or function-name mappings.",
+  "records": [
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:buffered-result-consumption",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Execute\\ this\\ `DataFrame`\\ and\\ buffer\\ all\\ resulting\\ `RecordBatch`es\\ \\ into\\ memory\\.\\\n\\\nPrior\\ to\\ calling\\ `collect`,\\ modifying\\ a\\ DataFrame\\ simply\\ updates\\ a\\ plan\\\n\\(no\\ actual\\ computation\\ is\\ performed\\)\\.\\ `collect`\\ triggers\\ the\\ computation\\.\\\n\\\nSee\\ \\[`Self::execute_stream`\\]\\ to\\ execute\\ a\\ DataFrame\\ without\\ buffering\\.\\\n\\\n\\#\\ Example\\\n```\\n(?:(?!\\n```)[\\s\\S])*\\n```",
+        "predicate": {
+          "$lookup": {
+            "family": "predicates",
+            "logical_id": "predicate:documented-result-delivery",
+            "profile": ""
+          }
+        },
+        "value": {
+          "kind": "text",
+          "text": "collected"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "buffers result batches in memory; the alternative stream route and planning/execution phase distinction are retained; total operator memory is separate",
+        "phase": "consumption-contract",
+        "interpretation": "upstream_contract",
+        "description": "A complete source-field grammar retains the primary clause, alternative route and named limitation; no operation identifier mapping.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "predicates",
+      "record": {
+        "profile": "",
+        "logical_id": "predicate:documented-drop-cancellation",
+        "name": "documented_drop_cancellation",
+        "description": "The exact upstream stream contract says that dropping this stream aborts its query and frees allocated resources; does not transfer to Python wrappers or establish latency.",
+        "value_kind": "text",
+        "allowed_values": [
+          "drop-stream-aborts-query"
+        ],
+        "exclusive": true,
+        "interpretations": [
+          "upstream_contract"
+        ],
+        "template": "The selected upstream contract states {value}."
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:drop-stream-cancellation",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Executes\\ this\\ DataFrame\\ and\\ returns\\ a\\ stream\\ over\\ a\\ single\\ partition\\\n\\\nSee\\ \\[Self::collect\\]\\ to\\ buffer\\ the\\ `RecordBatch`es\\ in\\ memory\\.\\\n\\\n\\#\\ Example\\\n```\\n(?:(?!\\n```)[\\s\\S])*\\n```\\\n\\\n\\#\\ Aborting\\ Execution\\\n\\\nDropping\\ the\\ stream\\ will\\ abort\\ the\\ execution\\ of\\ the\\ query,\\ and\\ free\\ up\\\nany\\ allocated\\ resources",
+        "predicate": {
+          "$ref": "predicate:documented-drop-cancellation"
+        },
+        "value": {
+          "kind": "text",
+          "text": "drop-stream-aborts-query"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "the exact selected Rust stream and query; no Python cancellation, latency or total-memory inference",
+        "phase": "consumption-contract",
+        "interpretation": "upstream_contract",
+        "description": "A complete source-field grammar retains the primary clause, alternative route and named limitation; no operation identifier mapping.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "predicates",
+      "record": {
+        "profile": "",
+        "logical_id": "predicate:documented-schema-merge-policy",
+        "name": "documented_schema_merge_policy",
+        "description": "Compatibility is a stated precondition and Struct fields merge recursively. Metadata precedence, numeric conversions and arbitrary evolution policy are not established by this property.",
+        "value_kind": "text",
+        "allowed_values": [
+          "compatible-recursive-structs"
+        ],
+        "exclusive": true,
+        "interpretations": [
+          "upstream_contract"
+        ],
+        "template": "The selected upstream contract states {value}."
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:compatible-schema-merge",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Merge\\ schema\\ into\\ self\\ if\\ it\\ is\\ compatible\\.\\ Struct\\ fields\\ will\\ be\\ merged\\ recursively\\.\\\n\\\nExample:\\\n\\\n```\\n(?:(?!\\n```)[\\s\\S])*\\n```",
+        "predicate": {
+          "$ref": "predicate:documented-schema-merge-policy"
+        },
+        "value": {
+          "kind": "text",
+          "text": "compatible-recursive-structs"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "schema merging conditional on compatibility; recursive Struct handling only; metadata and nullability policies require separate evidence",
+        "phase": "consumption-contract",
+        "interpretation": "upstream_contract",
+        "description": "A complete source-field grammar retains the primary clause, alternative route and named limitation; no operation identifier mapping.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "capability_schemas",
+      "record": {
+        "profile": "",
+        "logical_id": "capability-schema:reconcile-schema",
+        "name": "reconcile-schema",
+        "description": "Inspect a compatible schema-merge route and separately resolve metadata, nullability and nested-type obligations.",
+        "requirements": [
+          {
+            "predicate": {
+              "$ref": "predicate:documented-schema-merge-policy"
+            },
+            "value": {
+              "kind": "text",
+              "text": "compatible-recursive-structs"
+            },
+            "operator": "equal",
+            "interpretations": [
+              "upstream_contract"
+            ],
+            "mandatory": true
+          }
+        ],
+        "any_qualified_support": false
+      }
+    }
+  ]
+}

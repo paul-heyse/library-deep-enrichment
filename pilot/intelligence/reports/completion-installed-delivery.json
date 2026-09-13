@@ -1,0 +1,761 @@
+{
+  "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d",
+  "current_freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e",
+  "compatibility": "completion-native-only-freeze-compatibility.json",
+  "current_installed_python_files_verified": true,
+  "result": {
+    "results": [
+      {
+        "name": "baseline-0",
+        "manifest": "066767626ca7f657baed3b8d99c8c6b4bc1ed41cda1482dc39df0c3dafbeaa5a",
+        "export_reimport": true,
+        "guide_sha256": [
+          "bf0757dd7a64d0d479fa70c7fcc58e537ff6c69ce8718128998a7e1f8384fc30"
+        ],
+        "paged_operations": 3,
+        "eligible_operations": 3,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparisons": "absent"
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "baseline-1",
+        "manifest": "c22ab70fb9cbad2874da614039b1bcf1cee03b7edc2bf78556bebb4ec6f7c747",
+        "export_reimport": true,
+        "guide_sha256": [],
+        "paged_operations": 3,
+        "eligible_operations": 3,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparisons": "absent"
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "baseline-2",
+        "manifest": "acfca5e4778445d30b256dd80f829907f1b390f300b1d16baf1cb18d9ca0e4c0",
+        "export_reimport": true,
+        "guide_sha256": [],
+        "paged_operations": 0,
+        "eligible_operations": 0,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparisons": "absent"
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "baseline-3",
+        "manifest": "c846a29508e67b5799ee2cf767fce0412cf6ba508faec72616a8d86750b6a299",
+        "export_reimport": true,
+        "guide_sha256": [
+          "ce0d9c0e38bd174f901d798f6a1049418ca3b2c368f8e3060edf07c3939c54be"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 430,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "0cc7b70d2f4ae4e9c14fb20994c4def02011a789ef413bcc501da86f87959892",
+          "eligible": 3,
+          "first_page": 3,
+          "next_page": 0,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "baseline-4",
+        "manifest": "93f1462edd7bbf5eeb8d51da30f3dfc434eb5fe638fa889dcd68b90b65a1c5f8",
+        "export_reimport": true,
+        "guide_sha256": [
+          "291f1c96403570078823511b2d50664bd190b7c08a3a36262d1a4c4a50339713"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 430,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "0cc7b70d2f4ae4e9c14fb20994c4def02011a789ef413bcc501da86f87959892",
+          "eligible": 3,
+          "first_page": 3,
+          "next_page": 0,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "baseline-5",
+        "manifest": "996a321234235f216c7112389098e06796c11ed0697fec2fd7408c73ca232b20",
+        "export_reimport": true,
+        "guide_sha256": [
+          "8f96d93bbdead647310f768851a89fe7eb71a368164e147772631c3fcb798b26"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 890,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "9bc832f102bca3ce9f9f875bf76345e1f415707e3c09f3dcfd8c1dfc1ed8e963",
+          "eligible": 890,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "baseline-6",
+        "manifest": "034369bb64f4fdb15a0ae7c4c2c17541600d365156e5a11594b30acd6023f65e",
+        "export_reimport": true,
+        "guide_sha256": [
+          "bcbdb0dd3becd1a2f2203c44ddfc2e42b617e8f23f2f7348167673d465cd07bc"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 890,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "93790284aba98c6c1d7805836c2b23b23956f4344ec186b8fd31e99dce942743",
+          "eligible": 890,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "successor-python-0",
+        "manifest": "bdc6e9f9623776413f717aa5a05a1345dbf65331629b9ed31fa704947fc16781",
+        "export_reimport": true,
+        "guide_sha256": [
+          "a0e271a539497dab857c9803472e9f2cc2464723c430c92b7cccffefd86f4289"
+        ],
+        "paged_operations": 3,
+        "eligible_operations": 3,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparison": "717766de439fbae0eeac229794b6a9a1577d0db2862e526b036621e7f94e52cf",
+          "eligible": 3,
+          "first_page": 3,
+          "next_page": 0,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "successor-rust-0",
+        "manifest": "e7ef8cb91e4881883508a94f1ccdc5a22ca5a8d40a3d57161accb0a56f1e807b",
+        "export_reimport": true,
+        "guide_sha256": [
+          "a0e271a539497dab857c9803472e9f2cc2464723c430c92b7cccffefd86f4289"
+        ],
+        "paged_operations": 3,
+        "eligible_operations": 3,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparison": "717766de439fbae0eeac229794b6a9a1577d0db2862e526b036621e7f94e52cf",
+          "eligible": 3,
+          "first_page": 3,
+          "next_page": 0,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "successor-rust-1",
+        "manifest": "aa10c1b03f7457cc3f012a85cd1ff97761e5d28fd286869e0ee2d9a9c31b144a",
+        "export_reimport": true,
+        "guide_sha256": [
+          "d4136e34ff4ee0672d98ac240041115dff674e6ab93526d50bc038831f8c9c4f"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 427,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "ed7dd6135401c173e2bb3fab4f75ee1d9cf1beeee82e0e1cffc514f7c1cf0d7d",
+          "eligible": 427,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "feature-availability",
+        "manifest": "e097c2c79407c8b1b13c38b3a5b7940e64f16a9547796646830d26c5098a39fd",
+        "export_reimport": true,
+        "guide_sha256": [],
+        "paged_operations": 0,
+        "eligible_operations": 0,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparisons": "absent"
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "witness-pydantic",
+        "manifest": "aa0e15c51f4808b70fa770052c18992089b83c9a2439e579d51535ce67bdc9c9",
+        "export_reimport": true,
+        "guide_sha256": [],
+        "paged_operations": 2,
+        "eligible_operations": 2,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparisons": "absent"
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "witness-serde",
+        "manifest": "14815e741ecaaa648aac3c21d68f09eebfdfff8ad8781b2168b2d2cbc80c935a",
+        "export_reimport": true,
+        "guide_sha256": [],
+        "paged_operations": 2,
+        "eligible_operations": 2,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparisons": "absent"
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "reuse-pydantic-0",
+        "manifest": "4d3f6ff55f700bfce75e9daefd313b33392b6d6b2739dab345e1c534f221eae2",
+        "export_reimport": true,
+        "guide_sha256": [
+          "750bffe65a5b095ae8ee94a2be488ea553a3d43a09d97d9317cbdc1910173b5f"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 1866,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "9338a1ff2446208333419dbe47fe7318b9c9a96b3500131e311dce9422b6dd53",
+          "eligible": 1866,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "reuse-pydantic-1",
+        "manifest": "3d297668664b95591a6bd940116c3ebd28b1bbfed35638134eba75bcb5258ae3",
+        "export_reimport": true,
+        "guide_sha256": [
+          "dcd4a3b6e0f26ad002116af1b8bf100ee5053a18340061aa6ec31581fdf5cae1"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 1866,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "3c600d9c21e81780ea5c07fbf2318aa496e8ad2dffc80697ec7e9c8f5f04b4ec",
+          "eligible": 1866,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "reuse-pydantic-2",
+        "manifest": "f7aabed480cd34e01c54baee45f1a3651e71385a385ef343092e3bb0bb895406",
+        "export_reimport": true,
+        "guide_sha256": [
+          "df9380d011c0227e28d0e0eb8a60b239f7ff512411346c0e9545125ffa1d8c14"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 1866,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "a4ab603229af2ffd37d8c170bd18585b4f145704b550ffceace936985761f549",
+          "eligible": 1866,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "reuse-pydantic-3",
+        "manifest": "526d82c02b4aa421c1ba86ebcc9818aa33808143f9a1e8cd1c51b5093450f830",
+        "export_reimport": true,
+        "guide_sha256": [
+          "16127533da20a44cbcb9ddc0d09d9f927e225bd3fff5e282b4354b13e5a65b96"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 1866,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "fcc7930b75fee0d78dd6ac610d5e5951b66c14b69d892d039b6cf0fe7381030e",
+          "eligible": 1866,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "reuse-serde-0",
+        "manifest": "24594d796e3506199cb8223e1cf175724ad88a7dce5da41735448bc38ca589f1",
+        "export_reimport": true,
+        "guide_sha256": [
+          "14f6312035bc1edb1df9e42d5eba94a5dd05c16d2af30371104f38ce49056745"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 685,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "c94cd5c8e5d1ae064792addc3611794b8b3c5495cbbfab26a4334cf910b56a70",
+          "eligible": 685,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "reuse-serde-1",
+        "manifest": "7aa0073960bd69a9f81e7fdb5af383abd1e94acdacfd528084fb0bc5cecf8512",
+        "export_reimport": true,
+        "guide_sha256": [
+          "426af09fb217c011735952f61ca5bbed1573539f293f2a1e4cfaea9a2a3865d6"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 685,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "c0c25c889f618e6f39f075e7d85d944dba3fd76550f281e00fbaec93d75f4378",
+          "eligible": 685,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "reuse-serde-2",
+        "manifest": "455f3d26e83d02e95497b1ede0a2757eb038a5332edde6cb0434fb9bb128ddee",
+        "export_reimport": true,
+        "guide_sha256": [
+          "6f4eaec1d3f7a8d6491c767c71314aed8c23b4e68698d7d4a41947948685ed30"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 685,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "4cea95a8d6bcdf11c466a64b85ddd4ed4df6251f1b21aeb35178e05d5eec1324",
+          "eligible": 685,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "reuse-serde-3",
+        "manifest": "16af241809677ed090e83662c04e6a85b8840b029d5be5d630ae0a1e5a274296",
+        "export_reimport": true,
+        "guide_sha256": [
+          "9d1a6bc2c724344ae12360cc07be5ca7749a4d1e2215d69b403c3edb7ad1d731"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 685,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "92b965c43542d3f9a560d568833e79926691e5e241decefd3e7477a1529fecf3",
+          "eligible": 685,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "reuse-serde-4",
+        "manifest": "c142542ef488d7d085f7bc3c520d60a2cc923a1b84727402ded70b2f0ea0e852",
+        "export_reimport": true,
+        "guide_sha256": [
+          "2b136512edef342180f796f544eb03a1b06715dab698b27aba1b1b4eb883dedc"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 685,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "503ab658f12a5702c5cd32ab7b0c9117423c53eac3b13eb2eba0df2e6c7fb1f2",
+          "eligible": 685,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "datafusion-result-mechanism",
+        "manifest": "f683870f399c8dd9071db84d88eb2504ba5bec46a07c172a0ee78cdc22bb910e",
+        "export_reimport": true,
+        "guide_sha256": [],
+        "paged_operations": 0,
+        "eligible_operations": 0,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparisons": "absent"
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "main-task-cohort",
+        "manifest": "7e7b42b41bafcfca619a6f5e8856effe6f0a566e21af99259b63fb58abfa1596",
+        "export_reimport": true,
+        "guide_sha256": [
+          "7c37b15160b2c72ae89f55bcc0b72f37bbe6f0b933208b4f06a81c14076b7181"
+        ],
+        "paged_operations": 5,
+        "eligible_operations": 29891,
+        "has_continuation": true,
+        "candidate_pages": {
+          "comparison": "06a6cd91c7400e4e13cfd39edcdeb0befe225d8c83e518a471d831f71cff71dc",
+          "eligible": 24209,
+          "first_page": 5,
+          "next_page": 5,
+          "installed_cli": true
+        },
+        "execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d"
+      },
+      {
+        "name": "final-witness-pydantic",
+        "manifest": "35d819c78b23f0984d46454991732ab24e49b518d3ef7676aa67bab722b8e46f",
+        "export_reimport": true,
+        "guide_sha256": [],
+        "paged_operations": 2,
+        "eligible_operations": 2,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparisons": "absent"
+        },
+        "execution_freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e"
+      },
+      {
+        "name": "final-witness-serde",
+        "manifest": "a9a945a1b5015229201c9a36688cb9ee1d69a918dfbb213be618bd1a8725cd65",
+        "export_reimport": true,
+        "guide_sha256": [],
+        "paged_operations": 2,
+        "eligible_operations": 2,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparisons": "absent"
+        },
+        "execution_freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e"
+      },
+      {
+        "name": "final-datafusion-result-mechanism",
+        "manifest": "ccc9631d6d707da72671e0343131a0b41fe9f51585b2e87b5fbc5d47812b0c7f",
+        "export_reimport": true,
+        "guide_sha256": [],
+        "paged_operations": 0,
+        "eligible_operations": 0,
+        "has_continuation": false,
+        "candidate_pages": {
+          "comparisons": "absent"
+        },
+        "execution_freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e"
+      }
+    ],
+    "installed_worker": {
+      "manifest": "82f4bc824b056cdd53299a7795b437e4e47017921b167167e267dc8e030973b6",
+      "request": "e217f1a36acbe870c5d64431d7a525bb2d7287b51fb09977e38429e6aeb7fa94",
+      "outputs": [
+        [
+          "operation_shapes",
+          3
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "warm_reuse": true
+    },
+    "package": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/installed-all-reader/lib/python3.14/site-packages/library_guides",
+    "freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e",
+    "network": "isolated namespace",
+    "gpu_service": "unavailable",
+    "original_sources": "unmounted",
+    "native_workers": "unmounted",
+    "passed": true
+  },
+  "archives": [
+    {
+      "name": "baseline-0",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-0",
+      "manifest": "066767626ca7f657baed3b8d99c8c6b4bc1ed41cda1482dc39df0c3dafbeaa5a"
+    },
+    {
+      "name": "baseline-1",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-1",
+      "manifest": "c22ab70fb9cbad2874da614039b1bcf1cee03b7edc2bf78556bebb4ec6f7c747"
+    },
+    {
+      "name": "baseline-2",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-2",
+      "manifest": "acfca5e4778445d30b256dd80f829907f1b390f300b1d16baf1cb18d9ca0e4c0"
+    },
+    {
+      "name": "baseline-3",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-3",
+      "manifest": "c846a29508e67b5799ee2cf767fce0412cf6ba508faec72616a8d86750b6a299"
+    },
+    {
+      "name": "baseline-4",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-4",
+      "manifest": "93f1462edd7bbf5eeb8d51da30f3dfc434eb5fe638fa889dcd68b90b65a1c5f8"
+    },
+    {
+      "name": "baseline-5",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-5",
+      "manifest": "996a321234235f216c7112389098e06796c11ed0697fec2fd7408c73ca232b20"
+    },
+    {
+      "name": "baseline-6",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-6",
+      "manifest": "034369bb64f4fdb15a0ae7c4c2c17541600d365156e5a11594b30acd6023f65e"
+    },
+    {
+      "name": "successor-python-0",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-python-release-0",
+      "manifest": "bdc6e9f9623776413f717aa5a05a1345dbf65331629b9ed31fa704947fc16781"
+    },
+    {
+      "name": "successor-rust-0",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-rust-release-0",
+      "manifest": "e7ef8cb91e4881883508a94f1ccdc5a22ca5a8d40a3d57161accb0a56f1e807b"
+    },
+    {
+      "name": "successor-rust-1",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-rust-release-1",
+      "manifest": "aa10c1b03f7457cc3f012a85cd1ff97761e5d28fd286869e0ee2d9a9c31b144a"
+    },
+    {
+      "name": "feature-availability",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/feature-availability-export",
+      "manifest": "e097c2c79407c8b1b13c38b3a5b7940e64f16a9547796646830d26c5098a39fd"
+    },
+    {
+      "name": "witness-pydantic",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic-witness-17888bb9f37fa3db/export",
+      "manifest": "aa0e15c51f4808b70fa770052c18992089b83c9a2439e579d51535ce67bdc9c9"
+    },
+    {
+      "name": "witness-serde",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde-witness-17888bb9f37fa3db/export",
+      "manifest": "14815e741ecaaa648aac3c21d68f09eebfdfff8ad8781b2168b2d2cbc80c935a"
+    },
+    {
+      "name": "reuse-pydantic-0",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-0",
+      "manifest": "4d3f6ff55f700bfce75e9daefd313b33392b6d6b2739dab345e1c534f221eae2"
+    },
+    {
+      "name": "reuse-pydantic-1",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-1",
+      "manifest": "3d297668664b95591a6bd940116c3ebd28b1bbfed35638134eba75bcb5258ae3"
+    },
+    {
+      "name": "reuse-pydantic-2",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-2",
+      "manifest": "f7aabed480cd34e01c54baee45f1a3651e71385a385ef343092e3bb0bb895406"
+    },
+    {
+      "name": "reuse-pydantic-3",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-3",
+      "manifest": "526d82c02b4aa421c1ba86ebcc9818aa33808143f9a1e8cd1c51b5093450f830"
+    },
+    {
+      "name": "reuse-serde-0",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-0",
+      "manifest": "24594d796e3506199cb8223e1cf175724ad88a7dce5da41735448bc38ca589f1"
+    },
+    {
+      "name": "reuse-serde-1",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-1",
+      "manifest": "7aa0073960bd69a9f81e7fdb5af383abd1e94acdacfd528084fb0bc5cecf8512"
+    },
+    {
+      "name": "reuse-serde-2",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-2",
+      "manifest": "455f3d26e83d02e95497b1ede0a2757eb038a5332edde6cb0434fb9bb128ddee"
+    },
+    {
+      "name": "reuse-serde-3",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-3",
+      "manifest": "16af241809677ed090e83662c04e6a85b8840b029d5be5d630ae0a1e5a274296"
+    },
+    {
+      "name": "reuse-serde-4",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-4",
+      "manifest": "c142542ef488d7d085f7bc3c520d60a2cc923a1b84727402ded70b2f0ea0e852"
+    },
+    {
+      "name": "datafusion-result-mechanism",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/result-mechanism-17888bb9f37fa3db/export",
+      "manifest": "f683870f399c8dd9071db84d88eb2504ba5bec46a07c172a0ee78cdc22bb910e"
+    },
+    {
+      "name": "main-task-cohort",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/main-task-cohort-7e7b42b41bafcfca/export",
+      "manifest": "7e7b42b41bafcfca619a6f5e8856effe6f0a566e21af99259b63fb58abfa1596"
+    },
+    {
+      "name": "final-witness-pydantic",
+      "manifest": "35d819c78b23f0984d46454991732ab24e49b518d3ef7676aa67bab722b8e46f",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic-witness-89cb8d1665f7d4e0/export"
+    },
+    {
+      "name": "final-witness-serde",
+      "manifest": "a9a945a1b5015229201c9a36688cb9ee1d69a918dfbb213be618bd1a8725cd65",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde-witness-89cb8d1665f7d4e0/export"
+    },
+    {
+      "name": "final-datafusion-result-mechanism",
+      "manifest": "ccc9631d6d707da72671e0343131a0b41fe9f51585b2e87b5fbc5d47812b0c7f",
+      "path": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/result-mechanism-89cb8d1665f7d4e0/export"
+    }
+  ],
+  "command": [
+    "/usr/bin/bwrap",
+    "--die-with-parent",
+    "--unshare-net",
+    "--unshare-pid",
+    "--new-session",
+    "--proc",
+    "/proc",
+    "--dev",
+    "/dev",
+    "--tmpfs",
+    "/tmp",
+    "--ro-bind",
+    "/usr",
+    "/usr",
+    "--ro-bind",
+    "/bin",
+    "/bin",
+    "--ro-bind",
+    "/lib",
+    "/lib",
+    "--ro-bind",
+    "/lib64",
+    "/lib64",
+    "--ro-bind",
+    "/etc/alternatives",
+    "/etc/alternatives",
+    "--ro-bind",
+    "/etc/ld.so.cache",
+    "/etc/ld.so.cache",
+    "--ro-bind",
+    "/home/paul/.local/share/uv/python/cpython-3.14.7-linux-x86_64-gnu",
+    "/home/paul/.local/share/uv/python/cpython-3.14.7-linux-x86_64-gnu",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/installed-all-reader",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/installed-all-reader",
+    "--bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/installed-delivery-1788",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/installed-delivery-1788",
+    "--ro-bind",
+    "/home/paul/.local/share/uv/python/cpython-3.14-linux-x86_64-gnu",
+    "/home/paul/.local/share/uv/python/cpython-3.14-linux-x86_64-gnu",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-0",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-0",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-1",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-1",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-2",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-2",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-3",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-3",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-4",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-4",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-5",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-5",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-6",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-6",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-python-release-0",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-python-release-0",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-rust-release-0",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-rust-release-0",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-rust-release-1",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-rust-release-1",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/feature-availability-export",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/feature-availability-export",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic-witness-17888bb9f37fa3db/export",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic-witness-17888bb9f37fa3db/export",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde-witness-17888bb9f37fa3db/export",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde-witness-17888bb9f37fa3db/export",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-0",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-0",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-1",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-1",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-2",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-2",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-3",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/qualified-17888bb9f37fa3db-c6f236745969/export-3",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-0",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-0",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-1",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-1",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-2",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-2",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-3",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-3",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-4",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde/qualified-17888bb9f37fa3db-c6f236745969/export-4",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/result-mechanism-17888bb9f37fa3db/export",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/result-mechanism-17888bb9f37fa3db/export",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/main-task-cohort-7e7b42b41bafcfca/export",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/main-task-cohort-7e7b42b41bafcfca/export",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic-witness-89cb8d1665f7d4e0/export",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic-witness-89cb8d1665f7d4e0/export",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde-witness-89cb8d1665f7d4e0/export",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-serde-witness-89cb8d1665f7d4e0/export",
+    "--ro-bind",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/result-mechanism-89cb8d1665f7d4e0/export",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/result-mechanism-89cb8d1665f7d4e0/export",
+    "--chdir",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/installed-delivery-1788",
+    "--",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/installed-all-reader/bin/python",
+    "-I",
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/installed-delivery-1788/verify.py"
+  ],
+  "verifier_sha256": "546d907c8f4cf1408661067fb0a8eb5d73a2f27b84da0e3f26be4f8c2be577c0",
+  "result_sha256": "3c8aee585d17f2eec4a72e689c3dd4846e1eeafc1b09338e79f24915b98f1e0e",
+  "archive_count": 27,
+  "passed": true,
+  "current_final_inventory_count": 24,
+  "superseded_witness_archives": 3,
+  "execution_accounting": "24 archive verifications and installed worker under 17888bb9; 3 renewed witness/mechanism archives under 89cb8d16, with per-archive execution freeze. All final Python reader and asset bytes are identical and reverified; nine new reuse exports have identical manifest identities to their verified copies."
+}

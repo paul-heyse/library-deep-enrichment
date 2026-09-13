@@ -1,0 +1,770 @@
+{
+  "freeze": "ae96ee29d0bf2d1bc5a59ac96167fc5411f4e4f615f17fd19d76d66d8f95e5fa",
+  "core_changes": [],
+  "adapter_changes": [],
+  "manual_operation_overrides": 0,
+  "corpus": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/reuse-pydantic/corpus",
+  "snapshot": {
+    "id": "snapshot:e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a",
+    "package": "pydantic",
+    "version": "2.13.4",
+    "origin": "locked installed distribution; full Python package subtree",
+    "files": [
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/DISTRIBUTION-METADATA",
+        "digest": "d1e56c3412492512fb6b59a9dfc25ab7af2a8204585cd7bca000513023133394",
+        "size": 109397,
+        "kind": "other"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/__init__.py",
+        "digest": "e62127278c07bf5384cdd2903f368a69929f3b8a524000bae4e0eb608ebf4bc6",
+        "size": 15812,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/__init__.py",
+        "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_config.py",
+        "digest": "473cacd49a1f7e7e097331257180eab192d18018079f69585aa0d1e79a0048f0",
+        "size": 14839,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_core_metadata.py",
+        "digest": "63f836b778bbba5b8afb05c266fcc97d114c3d4336dda0582df69ee05cc13f2d",
+        "size": 5162,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_core_utils.py",
+        "digest": "d63aeee156c9d31eb747a76d55cb8e23e74a4130bf77f9529c9584050cc63444",
+        "size": 6487,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_dataclasses.py",
+        "digest": "660a9c9b559a24b0704d0402e6618a368c23953817de67d7fc9e5edaf776e253",
+        "size": 13188,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_decorators.py",
+        "digest": "443106fc96aee4d88971f3b4c60753ec43a0b14d4b816218957ef0379ad8b55b",
+        "size": 33620,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_decorators_v1.py",
+        "digest": "b5f75f76940a6384765c23b0a876d97a840cbabe95362811adf86e757047c77f",
+        "size": 6185,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_discriminated_union.py",
+        "digest": "24bc7f3152dea7b331975cdba5d3598ef1c3733f89dce116e9671d575f3875c3",
+        "size": 26255,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_docs_extraction.py",
+        "digest": "7f2ce74801e1e40ce88675d94ad5741ef1fe9d16dabcd1cfca0fa49f1f92fc41",
+        "size": 4127,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_fields.py",
+        "digest": "85779bfb3a1d1b04c3bc6f4e2b5ba6d7c3fae1bedca876f418e9e03f88eb81c6",
+        "size": 31557,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_forward_ref.py",
+        "digest": "e67dd8efedc028b9fcfc54b761cecabad2e23d48725e602d90464e6859e89f03",
+        "size": 611,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_generate_schema.py",
+        "digest": "3e3a2051ac085e67fc2ee2cd7bdb1e26987b58b5b8309efe181b17c02b100bd4",
+        "size": 136348,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_generics.py",
+        "digest": "0978dc22796f722f157a36969f57f7f64bf401c7c92f4479db7a912c56550feb",
+        "size": 23393,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_git.py",
+        "digest": "2303e1dc33df6b65eadeb06e07d371f25b91d80d62ebd41d7937d659722e0958",
+        "size": 809,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_import_utils.py",
+        "digest": "4d18710f93ae63a094a2c8a805d05c254b34a26ec820e36265d60057bcd0f233",
+        "size": 402,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_internal_dataclass.py",
+        "digest": "fdb79d7355dbbaeca044688b66a914930c05a506a847584a2e5479d359f2c926",
+        "size": 144,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_known_annotated_metadata.py",
+        "digest": "3f29d020543ad7fff819caf39f40f910d96583b8cfabf731a0b4e6b8540163cf",
+        "size": 16805,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_mock_val_ser.py",
+        "digest": "c2645115206fa9f70b6c8e353ec165881e2ed80677989a597a21116c3df1293a",
+        "size": 8885,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_model_construction.py",
+        "digest": "2682a663826b0c1bb79c6fed088ac982d249135baaeafdbd4ef4f3e449471398",
+        "size": 38928,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_namespace_utils.py",
+        "digest": "865dfe4d102bf365368d3c8f3f7b7e42ab2f28b8abc6d90b7cd7eb37e7e9d31f",
+        "size": 12878,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_repr.py",
+        "digest": "8d07e726ec83c50a5244d846dbd208f4f5fc7b836fdaa599ac4c3696a8a1dd41",
+        "size": 5172,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_schema_gather.py",
+        "digest": "f2727eb8ce98e33eb1a5ab271a89c432e6ed3555ff9b179e44316677fa8c54b0",
+        "size": 9052,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_schema_generation_shared.py",
+        "digest": "17fadb41bae4a289a0c6cb24747a4fd23509ed309f7b40400c0124aba089e273",
+        "size": 4842,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_serializers.py",
+        "digest": "6085af4a6011e5f9db19258239076e5add72078650638d9e02bb9cf9e9eb6fa7",
+        "size": 1491,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_signature.py",
+        "digest": "8bf6fac2d96e895599461d5963c52f076519ce23f52a3a925d9802f87c70393d",
+        "size": 6808,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_typing_extra.py",
+        "digest": "743c6a178ea5ceea82a0a2eb007fe4f791036dac8478a6f69478ee4c9e4e0686",
+        "size": 31574,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_utils.py",
+        "digest": "80de3c06c47e143ac90e26c29a8ebdb6d420ebb59bb85addcbfd4d40bddcbcb2",
+        "size": 15959,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_validate_call.py",
+        "digest": "383fc1b291da2fd14acd9f57ae7761884b8c9e3177491209507b70bfac947df5",
+        "size": 5366,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_internal/_validators.py",
+        "digest": "ec64e35d758530b89be1dc50f8779a8879406624760761bc6f2098306ae6438f",
+        "size": 20563,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/_migration.py",
+        "digest": "545ef72d1094cf722b6f9c55b75de36f7340717567105e93d7e27438b7de6790",
+        "size": 12160,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/alias_generators.py",
+        "digest": "28cd67deee097cb48197552e620de1a181f35c90fecaf82b9eaf2ed5c73087f0",
+        "size": 2124,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/aliases.py",
+        "digest": "be1087ca84969d7f8427ec166f9aa3e31c91b2c8065a74d07f3429e06499f6e8",
+        "size": 4937,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/annotated_handlers.py",
+        "digest": "59fc854aac28108157061ed3ef73f270a9682350e25f8e465a2d3e24eb024786",
+        "size": 4407,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/class_validators.py",
+        "digest": "8bf5778fe3d87462d22e68ff20965e913463ba73bc488573f0b325aae3f23fb1",
+        "size": 148,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/color.py",
+        "digest": "033a867d540717ddbf65cb4372e7b40cce324e9d8fead7a49304483535ab2c8a",
+        "size": 21481,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/config.py",
+        "digest": "a353faec53162101befd17c6b4a8ac9641f0a38a579bfea37ec478d4ff3cbfbf",
+        "size": 44533,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/dataclasses.py",
+        "digest": "e17f567b48e3d4a2f006dbd84a40055cda27e3aceba4199164035fe0b7f06d78",
+        "size": 18963,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/datetime_parse.py",
+        "digest": "402f9680cc4caffc10fe6357512ec055ffb684b121befb0f6353d0ca148639d9",
+        "size": 150,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/decorator.py",
+        "digest": "617fa3500a6ee4029a55628fa1a57e9fee25ed46d2ebd184b7d45ade1b3398a2",
+        "size": 145,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/deprecated/__init__.py",
+        "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/deprecated/class_validators.py",
+        "digest": "9f48d840e71be58422c346fb617ca2ecd3e261d57bba3591e0ac99ba68d33e89",
+        "size": 10281,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/deprecated/config.py",
+        "digest": "93f96c564e7ba5ac4b24e701b9e1f4edcbb53a012059d541c66ea57da0b70825",
+        "size": 2663,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/deprecated/copy_internals.py",
+        "digest": "1a177ebe431de446020a0c821ad3ca3b9f27a7d704281402eaa9017881052368",
+        "size": 7618,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/deprecated/decorator.py",
+        "digest": "4c19ba6c9ef026c36287ff16ab92330dcc0fdf69bdfef7f1b3de9d7ac2ee934d",
+        "size": 10845,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/deprecated/json.py",
+        "digest": "1e55821b7e5146bc72cee4d2e8b4d089907046198365699ea901fcacb5bac00f",
+        "size": 4657,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/deprecated/parse.py",
+        "digest": "1b377a6ff83ccc95dcb84ed046ae5a761c7f10c25a8577dca57085d1182baaa2",
+        "size": 2511,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/deprecated/tools.py",
+        "digest": "36b9bda054595a9f3e8e57ef3e02482c4b32c29e18cd90f9d972063c32f11dc2",
+        "size": 3330,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/env_settings.py",
+        "digest": "e881de79612a9543d152fdd5f805e217f5bdd5f836270fccdced25df827f7b20",
+        "size": 148,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/error_wrappers.py",
+        "digest": "44aea6a804dcf72303f8a043f48252f47a4a0a9ad61ddf30a3ce019e6fb77d1f",
+        "size": 150,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/errors.py",
+        "digest": "0eb1023c25a1498ad0f016b83bc84acc800cda2f460474d75802f36850e92dfe",
+        "size": 6013,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/experimental/__init__.py",
+        "digest": "413eeb298743b0289327d1848e6b107561d2730a4aaeb3641aaeafa8e34fe914",
+        "size": 104,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/experimental/arguments_schema.py",
+        "digest": "1059e35ffba5a7eb4fc948d05f9a6642dba0d4e14bfc071cf1b70c6cb77e7d56",
+        "size": 1866,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/experimental/missing_sentinel.py",
+        "digest": "8507a382d174d3052e40c9e2f78dbd7af83e797c88c292af8ec0fca1fa9f8fec",
+        "size": 127,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/experimental/pipeline.py",
+        "digest": "6aea16ea5ea0d450b8d4b7223e6b08d4cea771fd344b375ef41dc2fb2bdbf662",
+        "size": 23956,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/fields.py",
+        "digest": "6bc66125f23c143e934030fbf9c58c9b5657950bdad3031d4f6132e55bd57be3",
+        "size": 82023,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/functional_serializers.py",
+        "digest": "cf04408d9bac391b446edc69554db4920f05a5e9b2673e05abac099359a9c184",
+        "size": 18117,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/functional_validators.py",
+        "digest": "ee9fb88ef3ffffd8d9caf71d5e289d7b9a406bf26533b7c9d41824a9b8f14963",
+        "size": 31724,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/generics.py",
+        "digest": "d19a99f4ef5a9e7223ff7986051aa9b3886d7b2ddbe65575f9ddad5313cc3270",
+        "size": 144,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/json.py",
+        "digest": "647f11908ee1e01cfece9f0e7530316c952856f72853e8e131d459d01fa4d317",
+        "size": 140,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/json_schema.py",
+        "digest": "75ade143dbd03cb1213ecac39d49628df4357ee0825621959d4cceac064b803b",
+        "size": 125955,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/main.py",
+        "digest": "35b842cfe92ef300e060b40c062ef93afee1cb075cf0b7b0037a1434867c2554",
+        "size": 85334,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/mypy.py",
+        "digest": "b189a666b2ff1afa1848b701b8f4510df49f81059e864cf0fd9bcd9300d8d8c1",
+        "size": 60971,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/networks.py",
+        "digest": "80207dea0b741bbb625438559c97e92abd4044be6a907f923d992e364986d8ee",
+        "size": 42102,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/parse.py",
+        "digest": "c2477cd9d82dbd6b43f3de54fc8e84d61b6a3251a1052604577f5cb8149ea370",
+        "size": 141,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/plugin/__init__.py",
+        "digest": "6bb4f0dfae94e8ade496d08235963bea773db2cfbbb86190e344d769df4eca94",
+        "size": 7333,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/plugin/_loader.py",
+        "digest": "8408e04a58e82211b1dc0569229baac3948fb6d04d35e181493aea48c9cd8899",
+        "size": 2213,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/plugin/_schema_validator.py",
+        "digest": "e4ce487356d99e384d0f1b510d529b44f4d0ea9a3a42e28c63b320b8c907796d",
+        "size": 5445,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/py.typed",
+        "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0,
+        "kind": "other"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/root_model.py",
+        "digest": "70e328796769e77e8a17ce6e448716fa8cf53bb7791910a9c7d1d34b8fb5b9ff",
+        "size": 6394,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/schema.py",
+        "digest": "56aaa3beafcb9daa5592779b51ddc1a7f275a768176599d94602f8f1b5441bba",
+        "size": 142,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/tools.py",
+        "digest": "88742977c489e43093b4f5796ad015d3a4fcf5b8d268c15e659d8b5fd95ab196",
+        "size": 141,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/type_adapter.py",
+        "digest": "4f4e60f1641ccc1b1553fdf945d2b1823222ed8ecb222a7aee9177348ed7e061",
+        "size": 36123,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/types.py",
+        "digest": "7e961c1a702770ae108da166de366da98c31258cc1eeb2493df025f3d7a6cf24",
+        "size": 105961,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/typing.py",
+        "digest": "3fb7de037e4cc1370bb11d6e2fb75bd12fa8c9d071a1b9976b9e580e80606a34",
+        "size": 138,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/utils.py",
+        "digest": "d799d1d90a6a4c1165415e1336d4c8b4cc93271fdf6f257e80f988118d46a287",
+        "size": 141,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/__init__.py",
+        "digest": "4b140f925801b385c727013a059f6aa1ec18a0688dc98527987cc414265b7e72",
+        "size": 2946,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/_hypothesis_plugin.py",
+        "digest": "e444b9c56bb0d45400b3298b7b3cbc4209d5cf466955f5378e4993ef81f6ed54",
+        "size": 14847,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/annotated_types.py",
+        "digest": "ba4d8d000c6a88d10b2a388787287129a20e87c1759585bf2f3ad6dd7ee86417",
+        "size": 3157,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/class_validators.py",
+        "digest": "50b39a21481850306c1cbec411511aadc33e52e6ca52082837c8526c3a27b051",
+        "size": 14672,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/color.py",
+        "digest": "8990012d8a7a395a28d801643fd229ae2ff049cebe2a496ef18ba149aaed7798",
+        "size": 16844,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/config.py",
+        "digest": "6ba3f459eafdc7871bc0a5bb5eff29a1252a33858ff912d6c17e9832962af400",
+        "size": 6532,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/dataclasses.py",
+        "digest": "efce1caaf2276f020f5abf6eb1fa57ddc87bcf8b77276b532ba374ebbff0935a",
+        "size": 18172,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/datetime_parse.py",
+        "digest": "e10cb5910a6adeb3556497881de48f0e9b92d81be1a7528fb73246d71bbe1f4d",
+        "size": 7724,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/decorator.py",
+        "digest": "cda6b1c71a163c29bcd7c0f56ecd3285aa518d79b7d95f06d191d609d335b970",
+        "size": 10339,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/env_settings.py",
+        "digest": "03d557c2d465d36018fa31f40b4a2ecb954dc377e2e85fe9933b870e380000e3",
+        "size": 14105,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/error_wrappers.py",
+        "digest": "ebadb931fc3daa40b63708ad07f2450167bc07e5efeb3054eeb2fd936f2d7f2a",
+        "size": 5196,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/errors.py",
+        "digest": "988c0f103e6f18ce50e6fe02e19d493e5753447fa89af132947ea4b0c84e98fc",
+        "size": 17726,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/fields.py",
+        "digest": "56a5890ab894362132a6d5eba03549e74d49a550347a7d9500d724b2a5cbd9bf",
+        "size": 50649,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/generics.py",
+        "digest": "633c8a4d937ac79435446277590f6337ebb01c9c4bdd6e2aa19ab07195eac568",
+        "size": 17829,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/json.py",
+        "digest": "590e47cbf848a5f751dd84bc93a37613a28c273b1d6c18bf95d58e3c9695f353",
+        "size": 3390,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/main.py",
+        "digest": "bd10754dba64ccf3773f98a326573e72336e3be1dc88d3a90b86fc2b7cd99df7",
+        "size": 45697,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/mypy.py",
+        "digest": "0a5f1745f0a621c544de3e40114e760bc88387c95c5fffc3de1cf68c85b1300b",
+        "size": 38860,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/networks.py",
+        "digest": "1d836d2807ce98e9ca269b0383583a488923f563e153ffa2f25e5ed89281a46e",
+        "size": 22124,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/parse.py",
+        "digest": "049b5daa2651b5abfd55114298ec6863e2889909a33f2f80fcda288e21546716",
+        "size": 1821,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/py.typed",
+        "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0,
+        "kind": "other"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/schema.py",
+        "digest": "6aa06e03ef9cabc8005648a6e4124f140487cce67c745b66157fdf346afa8a9e",
+        "size": 47801,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/tools.py",
+        "digest": "d650dd5c79348cbe6e3f7bb9442600bd402518296000efb8e6592af63edfc810",
+        "size": 2881,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/types.py",
+        "digest": "07397e45c9e2b4f0479eac308fd8afec98c7b8dd46a67587db874a905de5f5ef",
+        "size": 35455,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/typing.py",
+        "digest": "a2fc2d2e911909b9e08596877d2349ba9cdeb731cd90b5e39ffeba9204e7215e",
+        "size": 20102,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/utils.py",
+        "digest": "d4fa8e225cfa3955b019db371c12a5c3812de9ab05a2ed1452902da3b8c5382b",
+        "size": 26014,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/validators.py",
+        "digest": "9725249f5316847c65097e597c48058ff0801e88e888f71a41e31d10cf57be25",
+        "size": 22187,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/v1/version.py",
+        "digest": "6291d63902ad1a8c5fca29331ab7265c954a515601f4405da0247df784314a71",
+        "size": 1039,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/validate_call_decorator.py",
+        "digest": "54b022e21a05a630bed5e2f41e2c5869a59a1053ba86d19c0dcb60b2a6b95482",
+        "size": 4416,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/validators.py",
+        "digest": "a706c825755bd42576980138c3f1067cd8fb0f0cec29a5b0fed4cbe9cbe24eeb",
+        "size": 146,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/version.py",
+        "digest": "4f9af38b00cfacc8df694d17fbee5f05d195be1f784339cd43b4230f82df8260",
+        "size": 3985,
+        "kind": "python"
+      },
+      {
+        "path": "snapshots/e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a/source/pydantic/warnings.py",
+        "digest": "dd0c90a3a94ddf970eece5c36c511759c35a3e518245aade815640f86fa56702",
+        "size": 4822,
+        "kind": "python"
+      }
+    ],
+    "attribution": "Pydantic authors; MIT license retained in distribution metadata",
+    "source_digest": "e93e1c9907af1a217afe0362fafd3d2cb02723abc48e7c52d5f7122084315d7a"
+  },
+  "stages": [
+    {
+      "stage": "source",
+      "first": {
+        "manifest": "abd7eaa54aad89c321c01a3da9ea689ade31e189162be173411739fba1e73adf",
+        "request": "35640336e1e74f5887cca8a50595633542fdebbf6a93020b7c63db81be71d51d",
+        "reused": false,
+        "outputs": [
+          [
+            "blob_chunks",
+            123
+          ],
+          [
+            "blobs",
+            110
+          ],
+          [
+            "contexts",
+            1
+          ],
+          [
+            "native_artifacts",
+            1
+          ],
+          [
+            "native_facts",
+            104194
+          ],
+          [
+            "raw_observations",
+            1
+          ],
+          [
+            "source_files",
+            109
+          ]
+        ],
+        "elapsed_seconds": 23.66400160700141
+      },
+      "warm": {
+        "manifest": "abd7eaa54aad89c321c01a3da9ea689ade31e189162be173411739fba1e73adf",
+        "request": "35640336e1e74f5887cca8a50595633542fdebbf6a93020b7c63db81be71d51d",
+        "reused": true,
+        "outputs": [],
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "stage": "interfaces",
+      "first": {
+        "manifest": "d4774d6a42e06e91323d912e3d459d4f22109ba5370cf60f4fe8ff95e2ee9631",
+        "request": "441ab69cd65bf72ab2e33a236edcb7ab68120dd66275ac922171a9cd2dda9706",
+        "reused": false,
+        "outputs": [
+          [
+            "gaps",
+            1866
+          ],
+          [
+            "operations",
+            1866
+          ],
+          [
+            "stage_executions",
+            1
+          ]
+        ],
+        "elapsed_seconds": 20.744133079002495
+      },
+      "warm": {
+        "manifest": "d4774d6a42e06e91323d912e3d459d4f22109ba5370cf60f4fe8ff95e2ee9631",
+        "request": "441ab69cd65bf72ab2e33a236edcb7ab68120dd66275ac922171a9cd2dda9706",
+        "reused": true,
+        "outputs": [],
+        "elapsed_seconds": 0.0
+      }
+    },
+    {
+      "stage": "documents",
+      "first": {
+        "manifest": "3b19f244d50f1ed55ea83bc144293617ed25d958dba7c6bcfc034a9c32daf539",
+        "request": "78dac8dfabf352cb056317306e8ac7ea9f2836e4be831482a6cc4fdbd4c48adc",
+        "reused": false,
+        "outputs": [
+          [
+            "passages",
+            718
+          ],
+          [
+            "stage_executions",
+            1
+          ]
+        ],
+        "elapsed_seconds": 9.620319431000098
+      },
+      "warm": {
+        "manifest": "3b19f244d50f1ed55ea83bc144293617ed25d958dba7c6bcfc034a9c32daf539",
+        "request": "78dac8dfabf352cb056317306e8ac7ea9f2836e4be831482a6cc4fdbd4c48adc",
+        "reused": true,
+        "outputs": [],
+        "elapsed_seconds": 0.0
+      }
+    }
+  ],
+  "manifest": "3b19f244d50f1ed55ea83bc144293617ed25d958dba7c6bcfc034a9c32daf539"
+}

@@ -1,0 +1,302 @@
+{
+  "manifest": "e346b62b46679948d022da3380c608937066a410be6c29d10fe2709858f0842b",
+  "author": "implementation-agent",
+  "independent_human_review": false,
+  "witnesses": [
+    {
+      "logical_id": "witness-run:a0186206d8d74bbf628cef89401d38e073f6e23d194c698b69a49e030448c505",
+      "profile": "rust-docsrs-54.1-58.4",
+      "recipe": "a0186206d8d74bbf628cef89401d38e073f6e23d194c698b69a49e030448c505",
+      "context": "b0a6ea0ca511229f1938303b4a296292a3528b8c25c1e357a4028bdc737fb21f",
+      "command": [
+        "/usr/bin/env",
+        "CARGO_HOME=/tmp/library-guides-witness-ua4geabf/cargo-home",
+        "CARGO_TARGET_DIR=/tmp/library-guides-witness-ua4geabf/target",
+        "RUSTC=/home/paul/.rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustc",
+        "RUSTDOC=/home/paul/.rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/rustdoc",
+        "/home/paul/.rustup/toolchains/1.98.1-x86_64-unknown-linux-gnu/bin/cargo",
+        "run",
+        "--offline",
+        "--quiet",
+        "--manifest-path",
+        "/tmp/library-guides-witness-ua4geabf/Cargo.toml"
+      ],
+      "stdout": {
+        "blob": "5306474dea9b7c8bc25e127e34fecb84f3d841907db7c1d10e42d4bc8692d782",
+        "start": 0,
+        "end": 400,
+        "digest": "3db542cf5a9f7c64d029a462ef40dc1a31d4c47359fa1abf9dad1e92ad3f50c2"
+      },
+      "stderr": {
+        "blob": "a661d2155e764c8d187de774f2f9f16ace8b5f981fca7eb5807b2cc91a84804f",
+        "start": 0,
+        "end": 0,
+        "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "lockfile": {
+        "blob": "f86a10efa17e4ceefdc56927d932b4ca19a52276e6ff25bc9d764a03f21d44aa",
+        "start": 0,
+        "end": 412,
+        "digest": "cc54325544362739ff3911a5561948ebd1354f92e4994761055e7c7169aff4b5"
+      },
+      "returncode": 0,
+      "isolation": "filesystem-network-process-resource-limits",
+      "disposition": "complete"
+    }
+  ],
+  "observations": [
+    {
+      "logical_id": "witness-observation:0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b:2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c:/duplicate_projection_fields",
+      "profile": "rust-docsrs-54.1-58.4",
+      "operation": "2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c",
+      "run": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+      "field": "/duplicate_projection_fields",
+      "value": {
+        "kind": "integer",
+        "text": "2"
+      },
+      "scope": "5d5cba2c1112678bd07445589814c24241a981161418deff1e07050a4cbb6113",
+      "support": [
+        {
+          "family": "raw_observations",
+          "revision": "6d4e9df66b08c29b9e71a28385132dda4f959dd1ec32375aa47cc8f360a36ecc",
+          "field": "/raw/duplicate_projection_fields",
+          "digest": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+          "role": "observed-result"
+        },
+        {
+          "family": "witness_runs",
+          "revision": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+          "field": "/stdout",
+          "digest": "797b80e4d164160aad8c0b24da96d25eea145027e595b6132b9d0596fca8dbbe",
+          "role": "execution-output"
+        }
+      ]
+    },
+    {
+      "logical_id": "witness-observation:0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b:2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c:/empty_projection_retains_metadata",
+      "profile": "rust-docsrs-54.1-58.4",
+      "operation": "2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c",
+      "run": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+      "field": "/empty_projection_retains_metadata",
+      "value": {
+        "kind": "boolean",
+        "text": "true"
+      },
+      "scope": "5d5cba2c1112678bd07445589814c24241a981161418deff1e07050a4cbb6113",
+      "support": [
+        {
+          "family": "raw_observations",
+          "revision": "6d4e9df66b08c29b9e71a28385132dda4f959dd1ec32375aa47cc8f360a36ecc",
+          "field": "/raw/empty_projection_retains_metadata",
+          "digest": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "role": "observed-result"
+        },
+        {
+          "family": "witness_runs",
+          "revision": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+          "field": "/stdout",
+          "digest": "797b80e4d164160aad8c0b24da96d25eea145027e595b6132b9d0596fca8dbbe",
+          "role": "execution-output"
+        }
+      ]
+    },
+    {
+      "logical_id": "witness-observation:0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b:2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c:/out_of_range_is_error",
+      "profile": "rust-docsrs-54.1-58.4",
+      "operation": "2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c",
+      "run": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+      "field": "/out_of_range_is_error",
+      "value": {
+        "kind": "boolean",
+        "text": "true"
+      },
+      "scope": "5d5cba2c1112678bd07445589814c24241a981161418deff1e07050a4cbb6113",
+      "support": [
+        {
+          "family": "raw_observations",
+          "revision": "6d4e9df66b08c29b9e71a28385132dda4f959dd1ec32375aa47cc8f360a36ecc",
+          "field": "/raw/out_of_range_is_error",
+          "digest": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "role": "observed-result"
+        },
+        {
+          "family": "witness_runs",
+          "revision": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+          "field": "/stdout",
+          "digest": "797b80e4d164160aad8c0b24da96d25eea145027e595b6132b9d0596fca8dbbe",
+          "role": "execution-output"
+        }
+      ]
+    },
+    {
+      "logical_id": "witness-observation:0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b:2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c:/projection_field_count",
+      "profile": "rust-docsrs-54.1-58.4",
+      "operation": "2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c",
+      "run": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+      "field": "/projection_field_count",
+      "value": {
+        "kind": "integer",
+        "text": "1"
+      },
+      "scope": "5d5cba2c1112678bd07445589814c24241a981161418deff1e07050a4cbb6113",
+      "support": [
+        {
+          "family": "raw_observations",
+          "revision": "6d4e9df66b08c29b9e71a28385132dda4f959dd1ec32375aa47cc8f360a36ecc",
+          "field": "/raw/projection_field_count",
+          "digest": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "role": "observed-result"
+        },
+        {
+          "family": "witness_runs",
+          "revision": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+          "field": "/stdout",
+          "digest": "797b80e4d164160aad8c0b24da96d25eea145027e595b6132b9d0596fca8dbbe",
+          "role": "execution-output"
+        }
+      ]
+    },
+    {
+      "logical_id": "witness-observation:0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b:2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c:/projection_preserves_field_metadata",
+      "profile": "rust-docsrs-54.1-58.4",
+      "operation": "2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c",
+      "run": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+      "field": "/projection_preserves_field_metadata",
+      "value": {
+        "kind": "boolean",
+        "text": "true"
+      },
+      "scope": "5d5cba2c1112678bd07445589814c24241a981161418deff1e07050a4cbb6113",
+      "support": [
+        {
+          "family": "raw_observations",
+          "revision": "6d4e9df66b08c29b9e71a28385132dda4f959dd1ec32375aa47cc8f360a36ecc",
+          "field": "/raw/projection_preserves_field_metadata",
+          "digest": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "role": "observed-result"
+        },
+        {
+          "family": "witness_runs",
+          "revision": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+          "field": "/stdout",
+          "digest": "797b80e4d164160aad8c0b24da96d25eea145027e595b6132b9d0596fca8dbbe",
+          "role": "execution-output"
+        }
+      ]
+    },
+    {
+      "logical_id": "witness-observation:0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b:2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c:/projection_preserves_metadata",
+      "profile": "rust-docsrs-54.1-58.4",
+      "operation": "2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c",
+      "run": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+      "field": "/projection_preserves_metadata",
+      "value": {
+        "kind": "boolean",
+        "text": "true"
+      },
+      "scope": "5d5cba2c1112678bd07445589814c24241a981161418deff1e07050a4cbb6113",
+      "support": [
+        {
+          "family": "raw_observations",
+          "revision": "6d4e9df66b08c29b9e71a28385132dda4f959dd1ec32375aa47cc8f360a36ecc",
+          "field": "/raw/projection_preserves_metadata",
+          "digest": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "role": "observed-result"
+        },
+        {
+          "family": "witness_runs",
+          "revision": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+          "field": "/stdout",
+          "digest": "797b80e4d164160aad8c0b24da96d25eea145027e595b6132b9d0596fca8dbbe",
+          "role": "execution-output"
+        }
+      ]
+    },
+    {
+      "logical_id": "witness-observation:0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b:2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c:/projection_preserves_nullability",
+      "profile": "rust-docsrs-54.1-58.4",
+      "operation": "2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c",
+      "run": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+      "field": "/projection_preserves_nullability",
+      "value": {
+        "kind": "boolean",
+        "text": "true"
+      },
+      "scope": "5d5cba2c1112678bd07445589814c24241a981161418deff1e07050a4cbb6113",
+      "support": [
+        {
+          "family": "raw_observations",
+          "revision": "6d4e9df66b08c29b9e71a28385132dda4f959dd1ec32375aa47cc8f360a36ecc",
+          "field": "/raw/projection_preserves_nullability",
+          "digest": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "role": "observed-result"
+        },
+        {
+          "family": "witness_runs",
+          "revision": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+          "field": "/stdout",
+          "digest": "797b80e4d164160aad8c0b24da96d25eea145027e595b6132b9d0596fca8dbbe",
+          "role": "execution-output"
+        }
+      ]
+    },
+    {
+      "logical_id": "witness-observation:0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b:4643c45fedb0cfe26b72862d0baace65b03309bd3733702eb4b5eab54d1474bc:/reconstruction_preserves_metadata",
+      "profile": "rust-docsrs-54.1-58.4",
+      "operation": "4643c45fedb0cfe26b72862d0baace65b03309bd3733702eb4b5eab54d1474bc",
+      "run": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+      "field": "/reconstruction_preserves_metadata",
+      "value": {
+        "kind": "boolean",
+        "text": "false"
+      },
+      "scope": "5d5cba2c1112678bd07445589814c24241a981161418deff1e07050a4cbb6113",
+      "support": [
+        {
+          "family": "raw_observations",
+          "revision": "6d4e9df66b08c29b9e71a28385132dda4f959dd1ec32375aa47cc8f360a36ecc",
+          "field": "/raw/reconstruction_preserves_metadata",
+          "digest": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+          "role": "observed-result"
+        },
+        {
+          "family": "witness_runs",
+          "revision": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+          "field": "/stdout",
+          "digest": "797b80e4d164160aad8c0b24da96d25eea145027e595b6132b9d0596fca8dbbe",
+          "role": "execution-output"
+        }
+      ]
+    },
+    {
+      "logical_id": "witness-observation:0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b:2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c:/reordered_first_field_is_id",
+      "profile": "rust-docsrs-54.1-58.4",
+      "operation": "2883958a0abc2b74922a61a5b07c3d0a83576f683b9f37123f221e236d8e3d2c",
+      "run": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+      "field": "/reordered_first_field_is_id",
+      "value": {
+        "kind": "boolean",
+        "text": "true"
+      },
+      "scope": "5d5cba2c1112678bd07445589814c24241a981161418deff1e07050a4cbb6113",
+      "support": [
+        {
+          "family": "raw_observations",
+          "revision": "6d4e9df66b08c29b9e71a28385132dda4f959dd1ec32375aa47cc8f360a36ecc",
+          "field": "/raw/reordered_first_field_is_id",
+          "digest": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+          "role": "observed-result"
+        },
+        {
+          "family": "witness_runs",
+          "revision": "0cfc695c9f4af86c18575059f5882380c512a8b6abb644f14b98fc4735cb990b",
+          "field": "/stdout",
+          "digest": "797b80e4d164160aad8c0b24da96d25eea145027e595b6132b9d0596fca8dbbe",
+          "role": "execution-output"
+        }
+      ]
+    }
+  ],
+  "scope": "Exactly the retained inputs and environment; no universal metadata guarantee."
+}

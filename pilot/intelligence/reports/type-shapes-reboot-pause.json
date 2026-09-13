@@ -1,0 +1,17 @@
+{
+  "state": "interrupted-before-admission",
+  "exit_code": 130,
+  "reason": "User reboot checkpoint; full-scope exact membership lookup cost needs further profiling and batching",
+  "attempts": 2,
+  "second_attempt_included": "64 exact-version table handles per backend; latest writer handles stay fresh",
+  "manifest_before": "38a45cc74a0bf023134fd1344840d78e61a301d9e0bc959f2858576000131db9",
+  "manifest_after": "38a45cc74a0bf023134fd1344840d78e61a301d9e0bc959f2858576000131db9",
+  "operation_shapes_admitted": 0,
+  "code_verification": "256 tests passed including contextual shapes and portable shape release replay; Ruff and Pyrefly clean",
+  "required_after_resume": [
+    "Profile and bound selected native-fact membership lookups",
+    "Run build --stage shapes",
+    "Run build --stage semantics",
+    "Retain actual completion receipts"
+  ]
+}

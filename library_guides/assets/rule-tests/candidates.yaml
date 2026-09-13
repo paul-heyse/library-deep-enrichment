@@ -1,0 +1,14 @@
+positive:
+  transformation: 'Apply an elementwise kernel to an array.'
+  lifecycle: 'Dropping the stream cancels outstanding work.'
+  interchange: 'Export an Arrow C Data capsule.'
+  schema: 'Merge field metadata into the schema.'
+  storage: 'Read a partition with predicate pushdown.'
+  validation: 'Deserialize JSON and validate the input.'
+negative:
+  transformation: 'An identifier exists in the package.'
+  lifecycle: 'Add two scalar values.'
+  interchange: 'Allocate a local integer.'
+  schema: 'Open a socket.'
+  storage: 'Validate a scalar.'
+  validation: 'Sort a column.'

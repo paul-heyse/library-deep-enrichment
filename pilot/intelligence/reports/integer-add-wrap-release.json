@@ -1,0 +1,14 @@
+{
+  "manifest": "1ce2f8a5e3f7ff9b9b65d971dc9efe0e79db789893e1dbb98a2289b553e8bcd6",
+  "comparison": "3e374970b1b5cbc9b52e5ce477c03eebe12779e6a4b8fcbe2745164466379efe",
+  "candidate_count": 890,
+  "eligible": [
+    "compute-registry:add"
+  ],
+  "evaluated_examples": {
+    "compute-registry:add": "eligible",
+    "compute-registry:add_checked": "rejected"
+  },
+  "interpretation": "upstream contract; invocation and whole-program memory remain separate",
+  "manual_operation_cards": 0
+}

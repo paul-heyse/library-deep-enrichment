@@ -1,0 +1,137 @@
+{
+  "plan": "library_guide_source_semantic_evidence_lanes_implementation_plan_v2_2026-09-11.md",
+  "state": "in_progress",
+  "baseline": {
+    "files": 174,
+    "archive": ".cache/library-guides-implementation/2026-09-11-v2/baseline.tar.gz",
+    "python_tests": {
+      "passed": 168,
+      "seconds": 10.43
+    }
+  },
+  "packages": {
+    "00": {
+      "state": "in_progress",
+      "evidence": [
+        "168-test baseline retained; pinned stable and nightly workers all build; real Rustdoc, Ruff, Pyrefly/TSP and MIR fixtures run.",
+        "Full four-format retention and Cargo fixture matrices still need completion."
+      ]
+    },
+    "01": {
+      "state": "in_progress",
+      "evidence": [
+        "V3 typed contracts and explicit separate migration implemented; atomic staging and locked draft imports.",
+        "V2 compatibility tests pass; final schema/portable publication validation pending."
+      ]
+    },
+    "02": {
+      "state": "in_progress",
+      "evidence": [
+        "Frozen 258-package Cargo closure and 788-file Python distribution inventories retained; exact unit/environment contexts attached.",
+        "Complete context mutation and acquisition adversarial matrix pending."
+      ]
+    },
+    "03": {
+      "state": "in_progress",
+      "evidence": [
+        "Bounded native transport, duplicate key rejection, ordered digest commit, wrong-lane schema rejection, verified source store and real worker cache canary.",
+        "Shard rotation, cost accounting and final concurrency/corruption controls remain."
+      ]
+    },
+    "04A": {
+      "state": "in_progress",
+      "evidence": [
+        "cargo_metadata package/target/resolve and compatible Cargo message projection; actual wrapper/process receipts retained.",
+        "Full target/rename/duplicate/host-feature fixture matrix pending."
+      ]
+    },
+    "04B": {
+      "state": "in_progress",
+      "evidence": [
+        "All 47 retained rustdoc jobs normalized; real local private/hidden Arrow schema generation retained.",
+        "Reprojection with final normalizer and paired reduced-feature/consumer availability gates pending."
+      ]
+    },
+    "04C": {
+      "state": "in_progress",
+      "evidence": [
+        "Typed declarations, Self/owner contracts, nested roles, public aliases, trait checklists, composition candidate and declaration/profile delta queries.",
+        "Every advertised family across formats and declaration mutation matrix pending."
+      ]
+    },
+    "04D": {
+      "state": "in_progress",
+      "evidence": [
+        "Exact frozen-file joins and same-source Python syntax/lexical/type callee reconciliation.",
+        "Cross-artifact Rust declaration/entity and dependency joins remain incomplete."
+      ]
+    },
+    "05": {
+      "state": "in_progress",
+      "evidence": [
+        "Real Python L1 extraction: 24711 DataFusion and 235553 PyArrow facts; 2183 source-mapped examples.",
+        "Reconstruction-based example integrity, exact hidden/doctest views; real Rust source-example pilot still pending."
+      ]
+    },
+    "06": {
+      "state": "in_progress",
+      "evidence": [
+        "Actual pinned Ruff traversal, lexical bindings, callee expressions, deferred scopes and exception handling canary.",
+        "Full adversarial lexical fixture matrix and body recipes pending."
+      ]
+    },
+    "07": {
+      "state": "in_progress",
+      "evidence": [
+        "Pyrefly bulk run: 307798 records; targeted computed/declared/expected TSP canary; native/candidate uncertainty retained.",
+        "Broader Any/overload/synthesized/stub-order controls pending."
+      ]
+    },
+    "08": {
+      "state": "in_progress",
+      "evidence": [
+        "All four requested first MIR crates extract successfully with effective unit receipts and frozen sources.",
+        "Real fixture distinguishes item/generic/virtual/indirect calls; final compiler/source mapping and dispatch matrix pending."
+      ]
+    },
+    "09": {
+      "state": "in_progress",
+      "evidence": [
+        "Declaration/source capability drafts and six unknown facets; independent candidate policies; owner-local reaching dependencies, post-dominators and recursive may-effects.",
+        "Derived artifacts retain acyclic exact input closure. Error/configuration/registration/null/exception recipes remain incomplete."
+      ]
+    },
+    "10": {
+      "state": "in_progress",
+      "evidence": [
+        "Declaration byte-only review equivalence and contract mutation tests; uncited new competitor invalidation; stale primitive invalidates derived output.",
+        "Full sensitivity/revalidation/impact matrix remains incomplete."
+      ]
+    },
+    "11": {
+      "state": "in_progress",
+      "evidence": [
+        "M1 reviewed Arrow schema decision published; source examples, mechanisms, trait/composition/delta/boundary queries exposed; no runner needed.",
+        "Broader source-backed review/publication chains, extraction DAG and offline installed-wheel gates pending."
+      ]
+    },
+    "12": {
+      "state": "in_progress",
+      "evidence": [
+        "Three real Python capability packets and boundary reports now archived; initial Rust M1 and four-crate extraction reports retained.",
+        "24-task and nine-gap qualitative reassessment, full scope dispositions and frozen-core unrelated-library controls still pending."
+      ]
+    },
+    "13": {
+      "state": "not_adopted_pending_pilot",
+      "evidence": [
+        "Optional rust-analyzer has not been adopted; residual-gap decision will follow full pilot evidence."
+      ]
+    }
+  },
+  "limitations": [
+    "The plan is not complete. The extraction and initial M1 publication do not certify M2-M4 or all G01-G20 gates.",
+    "Qualitative review has no model runner and does not claim quantitative productivity or quality gains.",
+    "Newest focused native/maps/analysis suite passed 18 tests; latest full suite before subsequent additions passed 193 tests. Final quality and packaging gates remain pending."
+  ]
+}

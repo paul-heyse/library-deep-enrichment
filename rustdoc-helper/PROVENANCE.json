@@ -1,0 +1,14 @@
+{
+  "contract.rs": {
+    "upstream": "https://docs.rs/crate/rustdoc-types/0.61.0/source/src/lib.rs",
+    "version": "0.61.0",
+    "source_sha256": "8e07e6ae3d360bbd761dd8d575730e6f71f7ef5e2b04bf379f8187c99807d8f7",
+    "license": "MIT OR Apache-2.0",
+    "adaptation": [
+      "owned declaration DTOs only; exclude Crate and ExternalCrate containers",
+      "BTreeMap ordering, independent JSON Schema, strict owned unknown-field policy",
+      "remove engine caches and traits; preserve typed declarations and field names",
+      "per-item decoder conversion with format-specific unavailable-field reporting"
+    ]
+  }
+}

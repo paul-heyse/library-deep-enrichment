@@ -1,0 +1,411 @@
+{
+  "author": "implementation-agent",
+  "candidate_scope": {
+    "disposition": "complete",
+    "frontier": [
+      "Specialization scope; no claim that unmodeled operations cannot provide another plan"
+    ],
+    "logical_id": "invocation-universe:task:project-with-metadata",
+    "members": [
+      "251fad5398e9f61c94e33b17779ab9212db4659ee8a27a7b06b53acdc5d6e953",
+      "4edb74ca1cfe5c9f7fda11cfd71b6bab26fe1d54142577f5be6d93ef7d09de90",
+      "f739829489e89c29e7562c3194ec56af94942579da5db14fb00ff2089306ce0f"
+    ],
+    "owner": "6a5aefb1dd782b85e62184e1d6bd5b465e2c328cb6d7b1145fd4539d630e233f",
+    "profile": "rust-docsrs-54.1-58.4",
+    "query": "Exact approved concrete invocation population in the task profiles",
+    "sources": [
+      {
+        "digest": "fac82f52f1a0c3a24f5a1837e47ad98c189725e43b83875c5ce790a902689a9c",
+        "family": "invocation_contracts",
+        "field": "/capability",
+        "revision": "d7d77d94c581c7b3021889ffea01bdae25d1d4d4003fb9b2e877fded38cd0e27",
+        "role": "approved-invocation-population"
+      },
+      {
+        "digest": "1ea3a83c229d4f64017e22e19ca66b9beb688c784649ec9933e51118c7e2993a",
+        "family": "invocation_contracts",
+        "field": "/capability",
+        "revision": "35b36bb1e65072eb764502dd02df932013fbd2324878cac3a2a649467b6abe81",
+        "role": "approved-invocation-population"
+      },
+      {
+        "digest": "2420a3dfebbc4b114977dcb860ca412080ced65cc214af45abdcb7ea1a99026f",
+        "family": "invocation_contracts",
+        "field": "/capability",
+        "revision": "43acd0d9730fa01eef5e130e13421edcc67164b54e76a415722c577936d0745b",
+        "role": "approved-invocation-population"
+      }
+    ]
+  },
+  "corpus": ".cache/library-guides-intelligence/composition-pilot/031f49fddb11442baf00089af11c5568",
+  "evaluations": [
+    {
+      "composition": "e8eff027c28bf1170731c816c84dd70c3148f7f421ec2c5337a35e823185f318",
+      "disposition": "rejected",
+      "frontier": [],
+      "goal": "18b71e34629f978d0a81c4f57bbf12256382988f859d5a9e9fd90d0721df9545",
+      "invocations": [
+        "d7d77d94c581c7b3021889ffea01bdae25d1d4d4003fb9b2e877fded38cd0e27",
+        "43acd0d9730fa01eef5e130e13421edcc67164b54e76a415722c577936d0745b"
+      ],
+      "logical_id": "composition-evaluation:e8eff027c28bf1170731c816c84dd70c3148f7f421ec2c5337a35e823185f318:18b71e34629f978d0a81c4f57bbf12256382988f859d5a9e9fd90d0721df9545",
+      "outputs": [
+        {
+          "value": {
+            "kind": "text",
+            "text": ""
+          },
+          "variable": "result.metadata"
+        }
+      ],
+      "profile": "rust-docsrs-54.1-58.4",
+      "transfers": [
+        "be7e82af7d28e8b08912651e991d6ad37892add6cf3e85ecb574fa497218f910",
+        "ce7e13b51454cd4229cf0ed11aeb7bdbbe7b5b1d7efeb23f2b9f750664353197"
+      ]
+    },
+    {
+      "composition": "93d9b7a0cb15ee7d52c69a3eb7d14bd67c45dd955e2d8f88e31893a9be1e54a2",
+      "disposition": "modeled-requires-witness",
+      "frontier": [],
+      "goal": "18b71e34629f978d0a81c4f57bbf12256382988f859d5a9e9fd90d0721df9545",
+      "invocations": [
+        "35b36bb1e65072eb764502dd02df932013fbd2324878cac3a2a649467b6abe81",
+        "43acd0d9730fa01eef5e130e13421edcc67164b54e76a415722c577936d0745b"
+      ],
+      "logical_id": "composition-evaluation:93d9b7a0cb15ee7d52c69a3eb7d14bd67c45dd955e2d8f88e31893a9be1e54a2:18b71e34629f978d0a81c4f57bbf12256382988f859d5a9e9fd90d0721df9545",
+      "outputs": [
+        {
+          "value": {
+            "kind": "text",
+            "text": "measurements"
+          },
+          "variable": "result.metadata"
+        }
+      ],
+      "profile": "rust-docsrs-54.1-58.4",
+      "transfers": [
+        "5704db3692b6940012249e521cfb73a937c622f66484cb68940ff2225368e0f1",
+        "4320a3b45328af01f88b238d21db3525a01c6d6c62c906d54491b895a6c36e9c"
+      ]
+    }
+  ],
+  "independent_review": false,
+  "interpretation": "Both exact generated programs compiled and executed. Their different metadata results corroborate the model for these retained inputs only.",
+  "manifest": "c22ab70fb9cbad2874da614039b1bcf1cee03b7edc2bf78556bebb4ec6f7c747",
+  "plans": [
+    {
+      "assertions": [
+        "8736d48ce27b3b4cb637655723a983a84ac706d5605ac0c689a49f98777fe1d3"
+      ],
+      "disposition": "candidate-requires-witness",
+      "frontier": [
+        "Finite owned inputs and valid indices; borrowing and Result handling remain explicit in generated Rust; compiler/execution witness required",
+        "Input semantic properties are not presumed preserved by type compatibility",
+        "Native invocation, bounds, ownership, and effects require a matching witness or model"
+      ],
+      "logical_id": "composition:task:project-with-metadata:fc9e1647d4bec3c591c7d37c32cad43b0397c48568dfaa43a4245347c12ce2e0",
+      "profile": "rust-docsrs-54.1-58.4",
+      "steps": [
+        {
+          "capability": "5e5a1f5ed3452a5914197ae9d95cff57ddb0703d5b4454dc7fd7306adfd24ffc",
+          "inputs": [
+            "input:0:fields"
+          ],
+          "outputs": [
+            "value:8f06546864ac6e47db7481b51ea2a29918b861906aafe97415f809efdaef0394:0"
+          ]
+        },
+        {
+          "capability": "dd7e2fed0eb7d5d7cd3c26ae228eb5e8106788b3fecef3560d892bcb37f20f2d",
+          "inputs": [
+            "value:8f06546864ac6e47db7481b51ea2a29918b861906aafe97415f809efdaef0394:0",
+            "input:2:indices"
+          ],
+          "outputs": [
+            "value:75ce702ac133023795550ea8dce740f710b1b3a7a79edcc58c563a3f62fbe91d:0"
+          ]
+        }
+      ],
+      "task": "6a5aefb1dd782b85e62184e1d6bd5b465e2c328cb6d7b1145fd4539d630e233f",
+      "universe": "e5252bf363731a325aa48677aa6f4c40fb9c3dfe813ee0607f221a98cd6c142f",
+      "witnesses": []
+    },
+    {
+      "assertions": [
+        "8736d48ce27b3b4cb637655723a983a84ac706d5605ac0c689a49f98777fe1d3"
+      ],
+      "disposition": "candidate-requires-witness",
+      "frontier": [
+        "Finite owned inputs and valid indices; borrowing and Result handling remain explicit in generated Rust; compiler/execution witness required",
+        "Input semantic properties are not presumed preserved by type compatibility",
+        "Native invocation, bounds, ownership, and effects require a matching witness or model"
+      ],
+      "logical_id": "composition:task:project-with-metadata:aa79dd74a93fac38acaa3e79bbb9d919ee6a42d94664fa170750c095d1b88cba",
+      "profile": "rust-docsrs-54.1-58.4",
+      "steps": [
+        {
+          "capability": "ce58671e090a5e9bb86a6c27cebdc6e058d8a3797604a63c995e2e3cf37fb0d9",
+          "inputs": [
+            "input:0:fields",
+            "input:1:metadata"
+          ],
+          "outputs": [
+            "value:fbe427b6aaffb44e6601f79a86140828ec0a9d36402b8f612a642f17227a3b3b:0"
+          ]
+        },
+        {
+          "capability": "dd7e2fed0eb7d5d7cd3c26ae228eb5e8106788b3fecef3560d892bcb37f20f2d",
+          "inputs": [
+            "value:fbe427b6aaffb44e6601f79a86140828ec0a9d36402b8f612a642f17227a3b3b:0",
+            "input:2:indices"
+          ],
+          "outputs": [
+            "value:32ab462d2f84801c217caeab17e4e1f7700ad7acb5deb0458e0f42b43f3081e9:0"
+          ]
+        }
+      ],
+      "task": "6a5aefb1dd782b85e62184e1d6bd5b465e2c328cb6d7b1145fd4539d630e233f",
+      "universe": "e5252bf363731a325aa48677aa6f4c40fb9c3dfe813ee0607f221a98cd6c142f",
+      "witnesses": []
+    }
+  ],
+  "portable": {
+    "count": 197,
+    "families": [
+      {
+        "digest": "54a00cc6b6fbb1ee4fdf4a59b2eba700ecec731cd7f5b7f7ee80b2b265719692",
+        "name": "assertions",
+        "rows": 5
+      },
+      {
+        "digest": "94ea67fc9d2c8bcd916e077668a122de02dd857d02ab61d564e0a00def2973d2",
+        "name": "blob_chunks",
+        "rows": 21
+      },
+      {
+        "digest": "ec4b6917170c542e311f0704d9369096d5a0135d376c7d502a990f0003fb3fee",
+        "name": "blobs",
+        "rows": 22
+      },
+      {
+        "digest": "279b0bc85d7c1a48e62dbf161b93508eb99ee21bdf3a1a394899601f79407c1f",
+        "name": "capabilities",
+        "rows": 3
+      },
+      {
+        "digest": "3a035f7778939b0f23d42c2a74e55335d77360030f5c9e45ed89b546fd91b574",
+        "name": "capability_schemas",
+        "rows": 8
+      },
+      {
+        "digest": "de08d16e31d22ccc2283b00d833e588e075b72e040e865b6581b67b1a965f18e",
+        "name": "composition_evaluations",
+        "rows": 2
+      },
+      {
+        "digest": "eda1c50a474fd2a8b2c7307888bfc648ae9a2d28b00a9f7cb87620b5a390ba88",
+        "name": "composition_goals",
+        "rows": 1
+      },
+      {
+        "digest": "02e2657dd07f2fcba68f33d1ef46a5efa0fbf1bda8b72c62e452e05a84122d2f",
+        "name": "composition_programs",
+        "rows": 2
+      },
+      {
+        "digest": "e6950807ca967e3ba0dfd6764e1d98cf5ad0ca07174ac2bf0bc6ab7d5a9c1b09",
+        "name": "composition_witnesses",
+        "rows": 2
+      },
+      {
+        "digest": "4ac87d635ea5b9e4ca4f477d6aa33c58da798c736cc142a461e81ee3f920f04f",
+        "name": "compositions",
+        "rows": 2
+      },
+      {
+        "digest": "79037efd3305ac0444c93be9ed4e3d459df3ba0e34f5b49fce6e79b22a2b717a",
+        "name": "contexts",
+        "rows": 3
+      },
+      {
+        "digest": "e17c8c648dc052dff20397de4506c8a4d26b7a1a7e01dcb91dccda28d378cbc3",
+        "name": "invocation_contracts",
+        "rows": 3
+      },
+      {
+        "digest": "11b4a1b4853930a8c98cf0a1c6fd3308a77256d41ef2d89a40eb8867307116d8",
+        "name": "jobs",
+        "rows": 4
+      },
+      {
+        "digest": "9b33626f41bc6eec9b72cc6e9683f4e3378fabfe1f5e1a6df4620fc1ac9a8b56",
+        "name": "modes",
+        "rows": 3
+      },
+      {
+        "digest": "86ef3bd3242837f0e1fae3877bb892179730fa3c49e60fcd8456d289c0ecb5fe",
+        "name": "native_artifacts",
+        "rows": 1
+      },
+      {
+        "digest": "c1865767176379a7eecd7ab7f68541b93083e5edde8c0753c2bc7a410c740e6c",
+        "name": "native_facts",
+        "rows": 3
+      },
+      {
+        "digest": "5e247e82d34acc5794c2650fcd082f57a8e3425879177cddb950aa7deb22d6a9",
+        "name": "operation_shapes",
+        "rows": 3
+      },
+      {
+        "digest": "395a16ae0a69c22f39455c81d69245e73a34ab7aeabc8f01f18c29a9f865d8b7",
+        "name": "operations",
+        "rows": 3
+      },
+      {
+        "digest": "e3326015baf4960adb4d01152384ced3f2486e0a8f8351497b95720dfcd6add0",
+        "name": "passages",
+        "rows": 3
+      },
+      {
+        "digest": "0102376cc7943f8957998813e72f40c0042adf8a66a9c033d8844efeba996040",
+        "name": "policies",
+        "rows": 32
+      },
+      {
+        "digest": "bf03421c8ab107b9b9aa6d23909a70d135a0df4b6332dde8b69ebaa304cdca04",
+        "name": "predicates",
+        "rows": 5
+      },
+      {
+        "digest": "dc60fed4e3210513afbe559cc329830dd39613101e78cce5cba54143357069b4",
+        "name": "proofs",
+        "rows": 5
+      },
+      {
+        "digest": "f543c976483790844ecbc0000f65010cfdd96c481f9db0e17fec02eff14d7510",
+        "name": "qualifications",
+        "rows": 5
+      },
+      {
+        "digest": "7010fb159d5d8dc5d9d427d89491239e1282e4939d5edbd1e86c2ba92a779e92",
+        "name": "raw_observations",
+        "rows": 5
+      },
+      {
+        "digest": "05b9320661e3a398e9ee5be1813994c8ac3c037ac8830449712c5342a9fb73d5",
+        "name": "rules",
+        "rows": 13
+      },
+      {
+        "digest": "ffa1744d51ecf19e629967abda88f6defb598c312811274962e7ac02acb284be",
+        "name": "scopes",
+        "rows": 3
+      },
+      {
+        "digest": "a87b54bef68cb4fe6cd8ad3fe4dfb972ea0b6f4e6c5486b99806949b119eac34",
+        "name": "source_files",
+        "rows": 1
+      },
+      {
+        "digest": "17e7b3440f4c6b7631fda5a07ef667e3813623549dc8cefdf4540e20f3cb1288",
+        "name": "stage_definitions",
+        "rows": 4
+      },
+      {
+        "digest": "d8367a8edf654508d5c2ddbb42c3cc0d0039a2b335d5ff9c682a636b2c741c75",
+        "name": "state_transfers",
+        "rows": 4
+      },
+      {
+        "digest": "26e648617f0f3d1cb0dd7484368c05abc5e5d5db64dc8f15de2c69273a2df93f",
+        "name": "tasks",
+        "rows": 1
+      },
+      {
+        "digest": "5ab7e2a1d7dcbf81f54e881be4bbbe6845545ee01a8cf8a0613acb2aaf69bcd8",
+        "name": "transfer_mappings",
+        "rows": 3
+      },
+      {
+        "digest": "fedace40fe0280ed6e423e14ec1abc794bb5b3b870bda71b78f75d057c5a2709",
+        "name": "transfer_models",
+        "rows": 3
+      },
+      {
+        "digest": "9e683e518de225ae37b460d7cc117c7d38f9486e0a8a9838f6ab17485f55222f",
+        "name": "type_uses",
+        "rows": 11
+      },
+      {
+        "digest": "a0c92c5ec0cefed3675dfceadd21313edf82695636cb1ec5a154f9eb69403011",
+        "name": "witness_observations",
+        "rows": 4
+      },
+      {
+        "digest": "af09184cced026f46706deca50eb1815f87dfabce9e265126dcc59ae0f1df179",
+        "name": "witness_recipes",
+        "rows": 2
+      },
+      {
+        "digest": "78d236c98a13e9355a423e15d2ca7daec3efcd877bbaad68b850a82c8a50c2c8",
+        "name": "witness_runs",
+        "rows": 2
+      }
+    ],
+    "format": "library-guides.portable.v4",
+    "manifest": "c22ab70fb9cbad2874da614039b1bcf1cee03b7edc2bf78556bebb4ec6f7c747",
+    "members_digest": "fe5d44a71e81a80ffd603de33e996b97fef2ddc1f9eeac7602412d51482272ed",
+    "predecessor": "b71d036e153c3edd0e82d2557d5d82e5ccfa7ccbbb8988189e2825014b8d30d0"
+  },
+  "reviewer": "same implementation-agent",
+  "source_manifest": "b52b912bb9b885a5b6182009c9bdfa0960ae9b66e1d6e1fbf633f3cbebf8510d",
+  "source_operations": [
+    "arrow_schema::<impl Schema>::new",
+    "arrow_schema::<impl Schema>::new_with_metadata",
+    "arrow_schema::<impl Schema>::project"
+  ],
+  "witnesses": [
+    {
+      "disposition": "corroborated",
+      "evaluation": "91d07b0ab536b356515cc75d5b05e86d5411962e7a27b421a5923944454b0be5",
+      "fields": [
+        {
+          "value": {
+            "kind": "text",
+            "text": "/metadata"
+          },
+          "variable": "result.metadata"
+        }
+      ],
+      "logical_id": "composition-witness:e8eff027c28bf1170731c816c84dd70c3148f7f421ec2c5337a35e823185f318",
+      "profile": "rust-docsrs-54.1-58.4",
+      "program": "f51eb612b40ff29fcc3fc443bfc9379960c01498e0ebaef27e5b72b8e2ed8115",
+      "run": "4fe01aa59e2292f01619e33a468b6305cdbd4ba984329bc380216ba879dfd45f"
+    },
+    {
+      "disposition": "corroborated",
+      "evaluation": "867d9419ae7d1e5aa4b44d7f9eaa2b436eac2c75dab6ffe53a67d62180332f43",
+      "fields": [
+        {
+          "value": {
+            "kind": "text",
+            "text": "/metadata"
+          },
+          "variable": "result.metadata"
+        }
+      ],
+      "logical_id": "composition-witness:93d9b7a0cb15ee7d52c69a3eb7d14bd67c45dd955e2d8f88e31893a9be1e54a2",
+      "profile": "rust-docsrs-54.1-58.4",
+      "program": "cc265128a82094ecc63c62c0ef42b69e51b5fde44be212f6d04741c42a890a97",
+      "run": "a78d81a6a1e59040619816cfc933de6a9788cf797b4b8edf1c64b9df6a75e310"
+    }
+  ],
+  "restored_manifest": "c22ab70fb9cbad2874da614039b1bcf1cee03b7edc2bf78556bebb4ec6f7c747",
+  "restore_seconds": 0.39968569800021214,
+  "release_manifest": "066767626ca7f657baed3b8d99c8c6b4bc1ed41cda1482dc39df0c3dafbeaa5a",
+  "restored_release_manifest": "066767626ca7f657baed3b8d99c8c6b4bc1ed41cda1482dc39df0c3dafbeaa5a",
+  "release_export": ".cache/library-guides-intelligence/composition-pilot/031f49fddb11442baf00089af11c5568-release"
+}

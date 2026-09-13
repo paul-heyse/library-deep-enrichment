@@ -1,0 +1,26 @@
+[
+  {
+    "library": "python",
+    "head": "release-0",
+    "manifest": "bdc6e9f9623776413f717aa5a05a1345dbf65331629b9ed31fa704947fc16781",
+    "export": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-python-release-0",
+    "rows": 72,
+    "guide_identical": true
+  },
+  {
+    "library": "rust",
+    "head": "release-0",
+    "manifest": "e7ef8cb91e4881883508a94f1ccdc5a22ca5a8d40a3d57161accb0a56f1e807b",
+    "export": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-rust-release-0",
+    "rows": 72,
+    "guide_identical": true
+  },
+  {
+    "library": "rust",
+    "head": "release-1",
+    "manifest": "aa10c1b03f7457cc3f012a85cd1ff97761e5d28fd286869e0ee2d9a9c31b144a",
+    "export": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/successor-export-rust-release-1",
+    "rows": 2153,
+    "guide_identical": true
+  }
+]

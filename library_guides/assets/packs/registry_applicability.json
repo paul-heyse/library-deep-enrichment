@@ -1,0 +1,95 @@
+{
+  "schema": "library-guides.semantic-pack.v1",
+  "rationale": "Same implementation-agent authored and reviewed this reusable registry-field pack. Values are copied from exact typed observations; no function-name branch, per-operation prose card, runtime-dispatch inference, or cross-language promotion. Wrong phase/domain and missing registry evidence remain refuted or unknown under the same task matcher. Independent review has not occurred.",
+  "records": [
+    {
+      "family": "predicates",
+      "record": {
+        "logical_id": "predicate:registered-input-domain",
+        "profile": "",
+        "name": "registered_input_domain",
+        "description": "The exact registry's declared input domain; public wrapper binding and cross-language equivalence remain independent.",
+        "value_kind": "text",
+        "allowed_values": [
+          "sql-expressions-in-the-loaded-engine",
+          "native-datum-inputs",
+          "grouped-kernel-inputs"
+        ],
+        "exclusive": true,
+        "interpretations": [
+          "declaration"
+        ],
+        "template": "The retained contract states {value}."
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "logical_id": "rule:registered-input-domain",
+        "profile": "",
+        "algorithm": "registry-field",
+        "source_family": "registry_entries",
+        "selector": "/input_domain",
+        "pattern": "^(?:sql-expressions-in-the-loaded-engine|native-datum-inputs|grouped-kernel-inputs)$",
+        "predicate": {
+          "$ref": "predicate:registered-input-domain"
+        },
+        "value": {
+          "kind": "text",
+          "text": ""
+        },
+        "condition": "",
+        "quantifier": "observed-registration",
+        "domain": "the exact captured registry context",
+        "phase": "registered",
+        "interpretation": "declaration",
+        "description": "The exact registry's declared input domain; public wrapper binding and cross-language equivalence remain independent.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "predicates",
+      "record": {
+        "logical_id": "predicate:registered-execution-phase",
+        "profile": "",
+        "name": "registered_execution_phase",
+        "description": "The acquisition adapter's exact registry phase observation; registered is not automatically execution or planning.",
+        "value_kind": "text",
+        "allowed_values": [
+          "registered",
+          "execution"
+        ],
+        "exclusive": true,
+        "interpretations": [
+          "declaration"
+        ],
+        "template": "The retained contract states {value}."
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "logical_id": "rule:registered-execution-phase",
+        "profile": "",
+        "algorithm": "registry-field",
+        "source_family": "registry_entries",
+        "selector": "/phase",
+        "pattern": "^(?:registered|execution)$",
+        "predicate": {
+          "$ref": "predicate:registered-execution-phase"
+        },
+        "value": {
+          "kind": "text",
+          "text": ""
+        },
+        "condition": "",
+        "quantifier": "observed-registration",
+        "domain": "the exact captured registry context",
+        "phase": "registered",
+        "interpretation": "declaration",
+        "description": "The acquisition adapter's exact registry phase observation; registered is not automatically execution or planning.",
+        "version": "1"
+      }
+    }
+  ]
+}

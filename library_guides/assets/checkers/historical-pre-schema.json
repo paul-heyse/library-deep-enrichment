@@ -1,0 +1,16 @@
+{
+  "checker": "library-guides.realization.2026-09-12.pre-schema-approval.v1",
+  "source_session": "01a09208-1440-7cf0-ba8a-e1743aa8be6a",
+  "recovered_creation_event": 5633,
+  "recovered_semantic_patch_event": 5927,
+  "release_observation_event": 6079,
+  "modules": {
+    "semantics/historical_realization.py": "66b3b64c2fbeb6ff18d0a1ed2038cf83d09b8c5d43e5a65001871d68988c7d30",
+    "semantics/historical_task_matching.py": "08c11f883771f497fb6dc403619d89043d55c866c9613c90435666701889a832",
+    "semantics/historical_replay.py": "ca2ff3b74470c6e6b1cb93a401f072883726ce75a8c04d5dafe32ad688467891"
+  },
+  "ordering": "The original comparison retained physical iteration order in Scope.sources. Replay uses that recorded order while retaining all selected operations; omission, duplication, or a new competitor still changes or rejects the result.",
+  "authority": "Historical preservation only; the two inventoried original manifest identities are immutable. Current successors require current schema/rule qualification.",
+  "author": "Codex implementation agent",
+  "reviewer": "same Codex agent; no independent review claimed"
+}

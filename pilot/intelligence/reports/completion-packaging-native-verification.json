@@ -1,0 +1,130 @@
+{
+  "freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e",
+  "wheel": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/wheel-final-1788/smartref_library_guides-0.2.0-py3-none-any.whl",
+  "wheel_sha256": "c702eab6ab88591a0549a96fff1b3f297b9845b17acf708eb626dccca951252a",
+  "packaged_assets": 36,
+  "all_asset_bytes_match": true,
+  "assets": {
+    "library_guides/assets/packs/input_contracts.json": "c6f23674596961c3bd350b3ac105ad6bea59e1cfe9cefde3aa559002149562fc",
+    "library_guides/assets/packs/registry_applicability.json": "687bfc7a5ae534f6ed7a3fb4c01efbb9bf3aca7b4acf928de1e1aaccee5cb05f",
+    "library_guides/assets/packs/result_contracts.json": "1d6af9231842de49b8ec7a6c58d2eb512c42e4ba24aceafba6f041835ee046ce",
+    "library_guides/assets/packs/arithmetic_contracts.json": "063a728476c43b5e551e1051b77cfebac84270d0031bd97f0a7780ca9a83742b",
+    "library_guides/assets/rule-tests/candidates.yaml": "225e816be92ce3c648b53ac23eb621fdfe7cd6938bc6d51f9530014a9c3aa83b",
+    "library_guides/assets/checkers/historical-pre-schema.json": "f117dbe72a1229cea1fd81fecaff7e01734393f4c32edb16a727df0867af5825",
+    "library_guides/assets/templates/review-packet.md": "200b4bd84237e0c63a1deba0dd01a1fb5a427f54f264ddd0192d4d639bbf53ea",
+    "library_guides/assets/semantic/owner_rules.dl": "79fd71cd97298e92597514580b270139b44c6dd0bb2512f7e3273f016aa75c17",
+    "library_guides/assets/semantic/reachability.dl": "a991fee98584b4d2e83ab145665cbc4d0f530772ca608830f417ad39b7f75c9d",
+    "library_guides/assets/obligations/capability_families.yaml": "fb635a96d9ddedf7b295414c77b1a29a1c6ad3a9be4a0e65745689a910602483",
+    "library_guides/assets/witnesses/arrow_schema_projection.toml": "4f9fafbf16849d45b6bdc81d3fe4a8cdfc1ea63c85e772d1af582f0bb74856cf",
+    "library_guides/assets/witnesses/arrow_schema_projection.rs": "0916c8023d50ce03b95d6d2ae559ac725e83ca3a44d0193a11ef459ca21e2636",
+    "library_guides/assets/schemas/cargo-messages.v1.schema.json": "f2bfa8fad7cd7bdf27b7634fc974c3c33ddc24a404ca7f7af20e5b34b969ed5a",
+    "library_guides/assets/schemas/mir.v1.schema.json": "25f6798ce2b325a8fe704fc663bf419937bba5fede653c95af297e87df4d43ad",
+    "library_guides/assets/schemas/knowledge.v2.schema.json": "051e1d12ec5dc5dad473c97411307c7aa231b9d93b8886d6c76a98905403632a",
+    "library_guides/assets/schemas/python-semantics.v1.schema.json": "9c4f1492845aaae37986bd3aea3bf3d2b3005b1708e528b734432b89e767eba4",
+    "library_guides/assets/schemas/declaration.v1.schema.json": "792ecae69d3983cd7356ffdcf115c934f49b4922d61e34166c04e4b53decda70",
+    "library_guides/assets/schemas/source-facts.v1.schema.json": "46c50098f8cc6f28017d0bbf9698edb9747b5cb2a6eafd847aa207eb4e9b9438",
+    "library_guides/assets/schemas/knowledge.v3.schema.json": "c49d0ca71bb2f9bca70fdc35b5d2a6a6b021a78a11aab08a3a177f4a665de5aa",
+    "library_guides/assets/schemas/cargo.v1.schema.json": "6d9d566abe0e697c63498a184cbdf5d55d20e6b16d601a91df620d0c57f6b29f",
+    "library_guides/assets/runtime/qwen3-embedding-8b.json": "01ecbf0e25b60af83366c32da11bb8938d96a3a6492af722d7f63ac10b88d899",
+    "library_guides/assets/analyses/declaration-facets.v1.json": "53d3a0c21cdb1cff35d86e277d4ce98b2466fbdcb5fe524858902b5653056fec",
+    "library_guides/assets/rules/source-patterns.yaml": "bb7db0e132ee192321666ff66a594c005727257d848faf96f0ad0e061aaef58d",
+    "library_guides/assets/rules/candidates.yaml": "b94f00aa6d447bf718cb9867b2b32d56986de20fbc7c366239c640dab583b3c7",
+    "library_guides/assets/manifests/libraries/pydantic-python.yaml": "e88157b58edbe1a52d2f7eb8a1c31507f15fc5d471567b46facf951476817abd",
+    "library_guides/assets/manifests/libraries/datafusion-python.yaml": "d68df143bc6cd288705189563e8956ad4ecaebe18c4868006853a15f76d7aaf6",
+    "library_guides/assets/manifests/libraries/arrow-rust.yaml": "e2746415459d0faeee11c25cf4377f83e93be215786cad033e98cd6383a62bf2",
+    "library_guides/assets/manifests/libraries/pyarrow-python.yaml": "0b25777ab80cc717c2576b84379165d4689a3109de699c6228f650123408a7ac",
+    "library_guides/assets/manifests/libraries/datafusion-rust.yaml": "39fa06f7baf0640fff46aeae287effc1eb28a23302a25e582f0e5471cc99a8e1",
+    "library_guides/assets/manifests/libraries/parquet-rust.yaml": "3eaf29d2f5cfb5c8efe899d288c1ec1b09b0489197ddc38f01eed51031d1c23e",
+    "library_guides/assets/manifests/libraries/arrow-flight-rust.yaml": "628c92b7aaadac0005b54ce692b02522a1a3b1656de0e40e4d730f42e38a5812",
+    "library_guides/assets/manifests/stacks/datafusion-pyarrow-python.yaml": "954b1b12bd3a8e27edecb388f50eeeecf9818ec8dcfd772daf6cda733d5c6824",
+    "library_guides/assets/manifests/stacks/datafusion-arrow-rust.yaml": "05d66f759c4aa03307181b9049763e97bba67145009882a43c543ac1bedb458b",
+    "library_guides/assets/queries/markdown/evidence.scm": "320f33c2a4f929ed16b2ab9f960a4238bd3fed84380a8bc13f88e6517a4eb12d",
+    "library_guides/assets/queries/rust/evidence.scm": "41702cb0f551505009f4e24620dac967ba07b33bc48b785577b82fe7e2aaf863",
+    "library_guides/assets/queries/python/evidence.scm": "d17e739d50baa1a8e4cf19d0487c82eb2b96d0b2ea4b19b65d3890fb8f8cafb8"
+  },
+  "native_workers": {
+    "library-guides-mir-facts": "c3ec46a7559ca6f7de0fee0dec08e4a650e90df9e73ecc3faef4a8849ebe1c2d",
+    "library-guides-rustdoc": "7a0af29f669e0fc855846efb36b967421ed4686947c46ca84c6cafdbf4ddb65b",
+    "library-guides-source-facts": "ff3d0ab8907b92eefeb70ef7a57cc1933e7c734818909db36a670362b51f4163",
+    "library-guides-python-semantics": "d3da36b49924c0365cc0586dcc0e2bd2ec4104ba78859d7e75ab09d3eae24ce6"
+  },
+  "native_quality": [
+    {
+      "workspace": "rustdoc-helper",
+      "tests": [
+        "0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ],
+      "clippy": "passed -D warnings; no-deps; all-targets",
+      "logs": [
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/final-rustdoc-helper-test.log",
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/final-rustdoc-helper-clippy.log"
+      ]
+    },
+    {
+      "workspace": "native-protocol",
+      "tests": [
+        "1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ],
+      "clippy": "passed -D warnings; no-deps; all-targets",
+      "logs": [
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/final-native-protocol-test.log",
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/final-native-protocol-clippy.log"
+      ]
+    },
+    {
+      "workspace": "native-source-facts",
+      "tests": [
+        "0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ],
+      "clippy": "passed -D warnings; no-deps; all-targets",
+      "logs": [
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/final-native-source-facts-test.log",
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/final-native-source-facts-clippy.log"
+      ]
+    },
+    {
+      "workspace": "native-python-semantics",
+      "tests": [
+        "0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ],
+      "clippy": "passed -D warnings; no-deps; all-targets",
+      "logs": [
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/final-native-python-semantics-test.log",
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/final-native-python-semantics-clippy.log"
+      ]
+    },
+    {
+      "workspace": "native-mir-facts",
+      "tests": [
+        "0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ],
+      "clippy": "passed -D warnings; no-deps; all-targets",
+      "logs": [
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/final-native-mir-facts-test.log",
+        "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/final-native-mir-facts-clippy.log"
+      ]
+    }
+  ],
+  "declared_native_build": "native/build.sh --apply --prefix /home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/native-final-bin",
+  "lock_check": "passed; 127 resolved packages",
+  "full_environment_lock_sync_dry_run": "125 packages; would make no changes",
+  "full_environment_pip_check": "125 packages compatible",
+  "main_admission_rss_limit": "Worker budget is explicit; coordinator admission is bounded by rows/bytes but has no separate RSS limit.",
+  "all_frozen_python_bytes_match": true,
+  "final_native_refresh": {
+    "build": "native-final-decoder-build.log",
+    "rustdoc_tests": "native-final-decoder-test.log",
+    "rustdoc_clippy": "native-final-decoder-clippy.log",
+    "mir_tests": "native-final-format-test.log",
+    "mir_clippy": "native-final-format-clippy.log",
+    "owned_format": "all five owned workspaces passed their toolchain format check; external upstream tree is pinned and not reformatted",
+    "native_fixtures": "Final standalone pytest plus declaration change controls; see completion-verification.json for exact final counts.",
+    "identity_build": "native-final-identity-build.log",
+    "identity_tests": "native-final-identity-test.log",
+    "identity_clippy": "native-final-identity-clippy.log",
+    "identity_format": "native-final-identity-format.log"
+  },
+  "wheel_execution_freeze": "17888bb9f37fa3db35f5b7503ff158b0142783d3d9b33475fe8d55c9e3f1707d",
+  "compatibility": "completion-native-only-freeze-compatibility.json"
+}

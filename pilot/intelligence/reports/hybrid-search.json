@@ -1,0 +1,603 @@
+{
+  "incremental-results": {
+    "manifest": "1d78981ef50dd7cd9b3c0e8b5b658d86ca9aac5c999649de23cfe3aabfac4e3f",
+    "query": "Consume query results as a stream of batches rather than collecting all results into memory",
+    "hits": [
+      {
+        "unit": "93bdd8a3816bb386c715fdeac7f6d3bcb79136958aeb74e00029cce23c6a93dd",
+        "subject": "bb78b2bbd955d9ccd1c117ea2f41c2855964243e4839de601c47e66c3071cc27",
+        "score": 0.032266458495966696,
+        "lexical": 9.913582877863425,
+        "dense": 0.6189970970153809,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "bb78b2bbd955d9ccd1c117ea2f41c2855964243e4839de601c47e66c3071cc27",
+            "field": "/signature",
+            "digest": "c184f22f2d3d995e34ca12f7ae54d12fa70103a1487cfef10bca9c8c6ccc6e12",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "bb78b2bbd955d9ccd1c117ea2f41c2855964243e4839de601c47e66c3071cc27",
+            "field": "/returns",
+            "digest": "262a5350554abc7a665aaab42054e3a2da6e380703929446c3e627c1987e7be0",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "d3fd02f15e3a3ac5a129747f3d86264c6023e0512c0729333fb02bc87f418f0b",
+            "field": "/text",
+            "digest": "c184f22f2d3d995e34ca12f7ae54d12fa70103a1487cfef10bca9c8c6ccc6e12",
+            "role": "upstream-text"
+          },
+          {
+            "family": "passages",
+            "revision": "6a6538572a78f9810379c8e63bf121619d3c8eb62dfc8c5ca5cbdcbf74235ff3",
+            "field": "/text",
+            "digest": "d77c791fcee99009861f1383b25beca3e73fea40c95adfeaaefb8e336ba422cd",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "681488ff03b2fa4e72d7b3746d924f6ca4503765308f341b74ca91c61b0f695b",
+        "subject": "0be359ef2eb87819bf44546b7ad3043e311001fcc75d8f3c1b1d58e665583b48",
+        "score": 0.031754032258064516,
+        "lexical": 8.984147676089922,
+        "dense": 0.5680899024009705,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "0be359ef2eb87819bf44546b7ad3043e311001fcc75d8f3c1b1d58e665583b48",
+            "field": "/signature",
+            "digest": "2faf5ef808b6808b2b8e482b300959cd67e10427a246eb2ef96971ae986a149c",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "0be359ef2eb87819bf44546b7ad3043e311001fcc75d8f3c1b1d58e665583b48",
+            "field": "/returns",
+            "digest": "e6f5d867381c06f4fa50604b6acd81afc2c8830fbeb761cf1cd118aa9a8acad6",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "63412ba3eca9cfddcaf3d4e27f3e11eecac4a87a24081a86cb415711f31fcd24",
+            "field": "/text",
+            "digest": "2faf5ef808b6808b2b8e482b300959cd67e10427a246eb2ef96971ae986a149c",
+            "role": "upstream-text"
+          },
+          {
+            "family": "passages",
+            "revision": "a2a963dfbcd131fb84744d134443d25325040d9cc4acfb2a2b8800923b91c6cf",
+            "field": "/text",
+            "digest": "99c3142d6de5e271bd1aa6843742cd8b5a7b85e9000d58a6104af33c57ec55f2",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "d42d359aa1d4f26f22ccfe7bcf8ba74dfda1f60b05087f9450097cb896179e84",
+        "subject": "3d2e6c902bbd32e5b2edfecf86570c915717588400b439fe39a2457f6f380e7b",
+        "score": 0.026515151515151516,
+        "lexical": 8.537766551905214,
+        "dense": 0.3859758973121643,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "3d2e6c902bbd32e5b2edfecf86570c915717588400b439fe39a2457f6f380e7b",
+            "field": "/signature",
+            "digest": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "3d2e6c902bbd32e5b2edfecf86570c915717588400b439fe39a2457f6f380e7b",
+            "field": "/returns",
+            "digest": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "7f2a0e78ffca43d77d20e0cc3902cea554d22b30b80f6b4258aec3d6ed7e942b",
+            "field": "/text",
+            "digest": "6bce50b20aa62257cdcd9f310748ed90868c5f1358153df193ca0024038436c9",
+            "role": "upstream-text"
+          },
+          {
+            "family": "passages",
+            "revision": "1c9f36e736d3cb186d89afbc2378ca8dc647327ef0ad970f8042726700d1ac15",
+            "field": "/text",
+            "digest": "1a5b002b626ba00b769c694c325c629b09b299a4a3c9db4b0929cc483fae667c",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "9150ca59b7430a3c0cd6369ae110b724345844d3e299b9d4820ff259bd8a4089",
+        "subject": "7d1ba9f27a2ec33c23a8ac105984142ce6c4546f9ae125a34b1f33bd1c2a1584",
+        "score": 0.022435897435897436,
+        "lexical": 7.899836769854381,
+        "dense": 0.3637060821056366,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "7d1ba9f27a2ec33c23a8ac105984142ce6c4546f9ae125a34b1f33bd1c2a1584",
+            "field": "/signature",
+            "digest": "7ecee150f7c53c2d6c673a96f5ef8b01472e21b7fafc400cbcbae5f3d0670c8c",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "7d1ba9f27a2ec33c23a8ac105984142ce6c4546f9ae125a34b1f33bd1c2a1584",
+            "field": "/returns",
+            "digest": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "551ac2e8d1877417c56762098baf579567203e3465f36666f06c19ec2c9e411e",
+            "field": "/text",
+            "digest": "d49e769f75fffc0f7e72f2515c331ef8a8eecf3218cb92c2d77e27cf65587618",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "7202bf10c9567b0f6e1806bfe6c311b7c4724ba9feaa94e47435b0d596a6f124",
+        "subject": "076bc702b575670ee4bd2a5376837e467687e7add5f42f1275488caeb90de6fd",
+        "score": 0.021479958890030834,
+        "lexical": 4.364505676229585,
+        "dense": 0.41889891028404236,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "076bc702b575670ee4bd2a5376837e467687e7add5f42f1275488caeb90de6fd",
+            "field": "/signature",
+            "digest": "6f2686c544c16aaa1953263262b3c54a1bacd963a4dae1b59b9242841688d673",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "076bc702b575670ee4bd2a5376837e467687e7add5f42f1275488caeb90de6fd",
+            "field": "/returns",
+            "digest": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "a4cbde41cdbf768236ddaff910d0ceab012d99072d0e2b6de2ba2e0d3d7ba0eb",
+            "field": "/text",
+            "digest": "6f2686c544c16aaa1953263262b3c54a1bacd963a4dae1b59b9242841688d673",
+            "role": "upstream-text"
+          },
+          {
+            "family": "passages",
+            "revision": "7d0282f3d2a9a2b6e4050fbf0994fceed04a45d0a5bde636eb3fadceb99b3744",
+            "field": "/text",
+            "digest": "6f4ceeb697f970f5634731da2caab71fca4e3ce15bd75d3ec98a7bbdd479f15c",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "411017b5fae93bb15bc16996d62968a11cd2b0a1feb0f25447ce7d54c60f6583",
+        "subject": "a06d1652f1e1523893b110456f7a3472b8e30450cd15bb793f616368c868b7e3",
+        "score": 0.021249076127124907,
+        "lexical": 3.973637739099675,
+        "dense": 0.4296487867832184,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "a06d1652f1e1523893b110456f7a3472b8e30450cd15bb793f616368c868b7e3",
+            "field": "/signature",
+            "digest": "9172e5f308d3ed31b7ba00ae1c2d6e2362918c1df65102a8c049fe0b064cba98",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "a06d1652f1e1523893b110456f7a3472b8e30450cd15bb793f616368c868b7e3",
+            "field": "/returns",
+            "digest": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "4ba55b8d162ebfdd0058fa464682cfd4ba99f62cc0b84c7343260e0bddf36a46",
+            "field": "/text",
+            "digest": "17638c9de68d06e08f6f65f0765bf245f6fd7fc02783ea6aed727f6daf07cf55",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "2778746155149ac01e6e6e671639ec8f8b44d3e288e9831316428fc4a273107f",
+        "subject": "d42291dd5e85322e49d9a6cb9add78b57e3b6e5df9a6a460d03d1f6ccb0acb3b",
+        "score": 0.02095965266861292,
+        "lexical": 11.216862335062693,
+        "dense": 0.3324783742427826,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "d42291dd5e85322e49d9a6cb9add78b57e3b6e5df9a6a460d03d1f6ccb0acb3b",
+            "field": "/signature",
+            "digest": "5a102cef4463f8b3fe943e448e8e8a6db9f7a2e3f1e8508e099f9dc76658dddd",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "d42291dd5e85322e49d9a6cb9add78b57e3b6e5df9a6a460d03d1f6ccb0acb3b",
+            "field": "/returns",
+            "digest": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "49f294874122f0838d2f4b2601c025e714d8edc62f05925f5724d68cabccce42",
+            "field": "/text",
+            "digest": "de37dedf8f70d87f7505655624ea8a327449d08c6545595b464de0f02aaf53e5",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "03038e391803fcdf91d95dd9644fc40e779ac79c38867b36c539185301dbb866",
+        "subject": "a8a54604959b65096b4628dc26fe6cd470c366da017bd144adf47a4c6e3155ee",
+        "score": 0.020669698222405955,
+        "lexical": 6.517384941936301,
+        "dense": 0.36351320147514343,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "a8a54604959b65096b4628dc26fe6cd470c366da017bd144adf47a4c6e3155ee",
+            "field": "/signature",
+            "digest": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "a8a54604959b65096b4628dc26fe6cd470c366da017bd144adf47a4c6e3155ee",
+            "field": "/returns",
+            "digest": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "15cbff6bfa2fa343999f423b6b76c7502ce1274dab6a20cdc44804e49d44eff3",
+            "field": "/text",
+            "digest": "3aa1430d4df1fb31d002f76ba7eec4bbe8ab095a5049db79a214634f52e5b81b",
+            "role": "upstream-text"
+          },
+          {
+            "family": "passages",
+            "revision": "d945d92ead2204423bf7fa7648dc808043945874463d630e7af6d504cc180a00",
+            "field": "/text",
+            "digest": "d551470664239e30c5a6dd080ff6e3ec24e621655c5d46de6d4f8936b1d84ab9",
+            "role": "upstream-text"
+          }
+        ]
+      }
+    ],
+    "eligible": 890,
+    "disposition": "ranked-discovery-not-decision-universe",
+    "frontier": [
+      "Dense coverage 890/890; unembedded units remain eligible lexically"
+    ]
+  },
+  "schema-construction": {
+    "manifest": "1d78981ef50dd7cd9b3c0e8b5b658d86ca9aac5c999649de23cfe3aabfac4e3f",
+    "query": "Construct a schema from fields and retain custom metadata",
+    "hits": [
+      {
+        "unit": "0aa3f440106c490173d5b39345f8c6ab9d719a2426a53c49dd06fd7110984fb7",
+        "subject": "ceaa0f1b915305d5d5ba28bf7405fa9cd2a0d0a56a7a1f60a01cf1c8c69d45a7",
+        "score": 0.03278688524590164,
+        "lexical": 16.095568505157793,
+        "dense": 0.815633237361908,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "ceaa0f1b915305d5d5ba28bf7405fa9cd2a0d0a56a7a1f60a01cf1c8c69d45a7",
+            "field": "/signature",
+            "digest": "e2caa8ffc3008eb524b6f96b8b48dea21ea6cde1030f6f7986e482cd4b7c938f",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "ceaa0f1b915305d5d5ba28bf7405fa9cd2a0d0a56a7a1f60a01cf1c8c69d45a7",
+            "field": "/returns",
+            "digest": "747e524ba0d00c268f3a3d1418638ef5fd94e0ba3e516bfaaa71ec66b522fc5c",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "e801aeb2903a2e38e2bdf7225f546aa5bdc26d72475c12257f0d4357e00e5e10",
+            "field": "/text",
+            "digest": "95c377e5b2db4e6371d4c921f89e9d9e21ce882e62440f11a65efe1fb82e1251",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "bd8814ca2ba08da04d91eb2e02b1fdc297099efd4733ab612af3d1e7e448429c",
+        "subject": "278f068db0071024299e4bdffb81161c96f77cb47cc7334bd40d766d141101d2",
+        "score": 0.031754032258064516,
+        "lexical": 12.692320887280445,
+        "dense": 0.7486531734466553,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "278f068db0071024299e4bdffb81161c96f77cb47cc7334bd40d766d141101d2",
+            "field": "/signature",
+            "digest": "7db105f976cb75f2c78c27ffeed43ee754316dc4d0f1d0b1bfc70252f5700ee2",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "278f068db0071024299e4bdffb81161c96f77cb47cc7334bd40d766d141101d2",
+            "field": "/returns",
+            "digest": "747e524ba0d00c268f3a3d1418638ef5fd94e0ba3e516bfaaa71ec66b522fc5c",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "c08882ab1a96d473725a11edf069ed0909c0c7f5caf3d6e47589fb3e1ab5faf2",
+            "field": "/text",
+            "digest": "496e3a9e4e8deabaf62d68d3e73c0ee844d68aca1c80c44a4a4977cdfef6e05e",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "7ed9ba799d308a5061b16de910f2c968e64a98a895c6c24bb0f9d0de45d05038",
+        "subject": "e07a6b8171836514395629b38a2d3856a75667932fd8ac3dba0797cfce06b3ab",
+        "score": 0.030798389007344232,
+        "lexical": 15.83397572994471,
+        "dense": 0.7022210359573364,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "e07a6b8171836514395629b38a2d3856a75667932fd8ac3dba0797cfce06b3ab",
+            "field": "/signature",
+            "digest": "319c11123cc865d73d72442bbea6a416f42c48f6145f79a4abdbfea9da4270c1",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "e07a6b8171836514395629b38a2d3856a75667932fd8ac3dba0797cfce06b3ab",
+            "field": "/returns",
+            "digest": "5d42431ee13546e6ffdf314f2a03a544da84602d7c1c173f7a172a462ad9eb02",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "ca0786743111e968f55e79efe1430ace3a68c978ea5c3682d6fd932d26855fad",
+            "field": "/text",
+            "digest": "063a8753595746d87f968f128184aa6c5265968f57dbf56b3b8ac9adc3bf2c41",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "3ff83d90c7e2af6a8d4ed52bce5a6638b102587a2bcf56d298c83c98809057fa",
+        "subject": "da2a39535da40ac101dbb4a147422b4f568c0a775dd25a92a8219f4372b8c9e7",
+        "score": 0.03007688828584351,
+        "lexical": 11.526819867053685,
+        "dense": 0.7082895040512085,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "da2a39535da40ac101dbb4a147422b4f568c0a775dd25a92a8219f4372b8c9e7",
+            "field": "/signature",
+            "digest": "9e324645ac7f9197fb12b87ca2c1aff00d7d91caa61db56ff1d6d64798ac085d",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "da2a39535da40ac101dbb4a147422b4f568c0a775dd25a92a8219f4372b8c9e7",
+            "field": "/returns",
+            "digest": "ed2d55db58ccfecfe4914fde9cd081d5a26281c12af2294f649a88301ca73dc4",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "99d52a1d2059de033f822802f3d6840ac78f2855ec913d4923d6066ba41bbb98",
+            "field": "/text",
+            "digest": "8057bc853625fdd0e3fb165360218b6727a5208391fc7c80c946f92414374c67",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "1d156f9dd9fefa3311c2cf76148457d67d2ff5ce8b7d7b9fd30d1c1bee72c692",
+        "subject": "a93fa338d280d7cf18da816062e1b38c86505938ff8e45cfca24ac2261f5acf6",
+        "score": 0.029877369007803793,
+        "lexical": 10.93229209693341,
+        "dense": 0.7147640585899353,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "a93fa338d280d7cf18da816062e1b38c86505938ff8e45cfca24ac2261f5acf6",
+            "field": "/signature",
+            "digest": "19651f848a4453bf54cd3e7e9d0bfe0c21977e06fb19052650610cc0d9ac5089",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "a93fa338d280d7cf18da816062e1b38c86505938ff8e45cfca24ac2261f5acf6",
+            "field": "/returns",
+            "digest": "5d42431ee13546e6ffdf314f2a03a544da84602d7c1c173f7a172a462ad9eb02",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "eab374c1182722c2b5c34376cff1716a8ebdfe728aeb65b97e48d5b22dabbff9",
+            "field": "/text",
+            "digest": "f3dc4e6f62abe7167ae8477ab4a3e52ddf2fcfd6a135289a6e4d8543aede4398",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "a6a7065e9534cd9724aefe2fbec40c0764356b8501467b38eb24843e1043297f",
+        "subject": "4643c45fedb0cfe26b72862d0baace65b03309bd3733702eb4b5eab54d1474bc",
+        "score": 0.029437229437229435,
+        "lexical": 11.531126820152302,
+        "dense": 0.6925836205482483,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "4643c45fedb0cfe26b72862d0baace65b03309bd3733702eb4b5eab54d1474bc",
+            "field": "/signature",
+            "digest": "b6768e2f3e0f1de2e2d1c4764a2548a0665717c504db7006cc6bc95750c49cb4",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "4643c45fedb0cfe26b72862d0baace65b03309bd3733702eb4b5eab54d1474bc",
+            "field": "/returns",
+            "digest": "747e524ba0d00c268f3a3d1418638ef5fd94e0ba3e516bfaaa71ec66b522fc5c",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "eecfb767943d2e8361c76ba24756714aa353af598839738be8de188c46591b88",
+            "field": "/text",
+            "digest": "29079ebb3e2582df76cec579649c25ddd0a4ba7170bb840ca0b2727e4277fc7b",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "f6b1a065e17b6abc28381517c200397111d8a4a111a85b9a14057e2f3f6b7bc8",
+        "subject": "532ea3db87f05e7f673328a6b6e71147f3c3935bc03b151be87a8051e401817e",
+        "score": 0.028594771241830064,
+        "lexical": 10.658320326642409,
+        "dense": 0.6994719505310059,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "532ea3db87f05e7f673328a6b6e71147f3c3935bc03b151be87a8051e401817e",
+            "field": "/signature",
+            "digest": "14d014d14d0d7ee82ee9845777e33f1dbd33c6279461554cf6eb1ee8cf0cea56",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "532ea3db87f05e7f673328a6b6e71147f3c3935bc03b151be87a8051e401817e",
+            "field": "/returns",
+            "digest": "5d42431ee13546e6ffdf314f2a03a544da84602d7c1c173f7a172a462ad9eb02",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "fee32cc915b381c58ee7c867852257322840f8b97133d9cda4268237c73bb6b8",
+            "field": "/text",
+            "digest": "063a8753595746d87f968f128184aa6c5265968f57dbf56b3b8ac9adc3bf2c41",
+            "role": "upstream-text"
+          }
+        ]
+      },
+      {
+        "unit": "64bb9970782c24a2d7c91a823636fc0460ba058c0bf8acf2db28e5e514dcb75e",
+        "subject": "f1faa63ef12b8ca1aee8cdbf1bfc7e2b71da2119d178cc29cc36ec72246906cb",
+        "score": 0.02797067901234568,
+        "lexical": 8.372851419752566,
+        "dense": 0.7258607149124146,
+        "channels": [
+          "lexical",
+          "dense"
+        ],
+        "support": [
+          {
+            "family": "operations",
+            "revision": "f1faa63ef12b8ca1aee8cdbf1bfc7e2b71da2119d178cc29cc36ec72246906cb",
+            "field": "/signature",
+            "digest": "e5a57f15f5ca270325f86e81109ded286cbac14fc6a53484b7e362eb3df86deb",
+            "role": "declaration"
+          },
+          {
+            "family": "operations",
+            "revision": "f1faa63ef12b8ca1aee8cdbf1bfc7e2b71da2119d178cc29cc36ec72246906cb",
+            "field": "/returns",
+            "digest": "03735ea707bedb27ce152614dc75ecdfc1ef683c057db9872938e13f080a5b6f",
+            "role": "declaration"
+          },
+          {
+            "family": "passages",
+            "revision": "1b5561ce122e4f9ad289b223063aad4017eee0d3d0e394c3db65940309f9c3cd",
+            "field": "/text",
+            "digest": "ac61f5651e54072cc275c245dd8b53629a15bba46853a6d168d343ab80060ad3",
+            "role": "upstream-text"
+          }
+        ]
+      }
+    ],
+    "eligible": 1317,
+    "disposition": "ranked-discovery-not-decision-universe",
+    "frontier": [
+      "Dense coverage 1317/1317; unembedded units remain eligible lexically"
+    ]
+  }
+}

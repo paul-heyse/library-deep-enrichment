@@ -1,0 +1,495 @@
+[
+  {
+    "stage": "datafusion-interfaces",
+    "first": {
+      "manifest": "f97c62d019315029938e21a6bcd02e9bbbecbd0e169c01d61470c28688a3ad1e",
+      "request": "02f446a279734af79ce409626589d3ed48be6fcc441d1f7d6e9e0c50d760e87c",
+      "reused": false,
+      "outputs": [
+        [
+          "gaps",
+          1037
+        ],
+        [
+          "operations",
+          1037
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 469.0172216360006
+    },
+    "warm": {
+      "manifest": "f97c62d019315029938e21a6bcd02e9bbbecbd0e169c01d61470c28688a3ad1e",
+      "request": "02f446a279734af79ce409626589d3ed48be6fcc441d1f7d6e9e0c50d760e87c",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    }
+  },
+  {
+    "stage": "datafusion-interfaces",
+    "first": {
+      "manifest": "f97c62d019315029938e21a6bcd02e9bbbecbd0e169c01d61470c28688a3ad1e",
+      "request": "02f446a279734af79ce409626589d3ed48be6fcc441d1f7d6e9e0c50d760e87c",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "warm": {
+      "manifest": "f97c62d019315029938e21a6bcd02e9bbbecbd0e169c01d61470c28688a3ad1e",
+      "request": "02f446a279734af79ce409626589d3ed48be6fcc441d1f7d6e9e0c50d760e87c",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "index_maintenance": "index-only-deltas",
+    "wall_seconds": 3.8274038109957473
+  },
+  {
+    "stage": "datafusion-interfaces",
+    "first": {
+      "manifest": "53f83b598a7789dcbc748779972a194026bdc53bee66007ecc99b56254f3007a",
+      "request": "fc1027369769655212d999b7c05e5d0b5e67db1ecd823b283692a37117ba50e0",
+      "reused": false,
+      "outputs": [
+        [
+          "gaps",
+          1037
+        ],
+        [
+          "operations",
+          1037
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 260.1597391280011
+    },
+    "warm": {
+      "manifest": "53f83b598a7789dcbc748779972a194026bdc53bee66007ecc99b56254f3007a",
+      "request": "fc1027369769655212d999b7c05e5d0b5e67db1ecd823b283692a37117ba50e0",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 264.10354680800083
+  },
+  {
+    "stage": "pyarrow-interfaces",
+    "first": {
+      "manifest": "242e8564b48950e15dd52b4b607bc0e1ceffd486e8bc9d43645eb1ac153cd975",
+      "request": "d487794950efc7221b79ae27feef8ab0031ebab487a7a9d2f3694b8183f09636",
+      "reused": false,
+      "outputs": [
+        [
+          "gaps",
+          3755
+        ],
+        [
+          "operations",
+          3755
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 920.5054954169973
+    },
+    "warm": {
+      "manifest": "242e8564b48950e15dd52b4b607bc0e1ceffd486e8bc9d43645eb1ac153cd975",
+      "request": "d487794950efc7221b79ae27feef8ab0031ebab487a7a9d2f3694b8183f09636",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 924.3615082110045
+  },
+  {
+    "stage": "datafusion-documents",
+    "first": {
+      "manifest": "9c284afcb7782ad173d017db0f2848e88a7c85d806cc5e530dfc09499cda517e",
+      "request": "1153ced43d76c030b63752f06e750dcc7c13f03d06a4de0dcc041325b476eb4d",
+      "reused": false,
+      "outputs": [
+        [
+          "passages",
+          979
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 222.71479778000503
+    },
+    "warm": {
+      "manifest": "9c284afcb7782ad173d017db0f2848e88a7c85d806cc5e530dfc09499cda517e",
+      "request": "1153ced43d76c030b63752f06e750dcc7c13f03d06a4de0dcc041325b476eb4d",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 223.58062291699753
+  },
+  {
+    "stage": "pyarrow-documents",
+    "first": {
+      "manifest": "2e2132dbd9d4f27a01f18755fc5b5fe29b86e8ad47b7dcd59c02fbf4b480dc32",
+      "request": "8d31cf75a458b04a7496bc32bbef7f71d0912f61639f4c100c887d25abd75007",
+      "reused": false,
+      "outputs": [
+        [
+          "passages",
+          369
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 446.46807834799984
+    },
+    "warm": {
+      "manifest": "2e2132dbd9d4f27a01f18755fc5b5fe29b86e8ad47b7dcd59c02fbf4b480dc32",
+      "request": "8d31cf75a458b04a7496bc32bbef7f71d0912f61639f4c100c887d25abd75007",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 447.3691268929979
+  },
+  {
+    "stage": "python-boundary",
+    "first": {
+      "manifest": "bb3617d7e0744aa74b541d4c2db3aae2680a1eb0dfed1469b9352439c6d59fb5",
+      "request": "74746f0d1333ab677d14f74d6ecf3ff99a4138e5025465dd7327001924480a5e",
+      "reused": false,
+      "outputs": [
+        [
+          "python_boundaries",
+          1
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 43.473751213998185
+    },
+    "warm": {
+      "manifest": "bb3617d7e0744aa74b541d4c2db3aae2680a1eb0dfed1469b9352439c6d59fb5",
+      "request": "74746f0d1333ab677d14f74d6ecf3ff99a4138e5025465dd7327001924480a5e",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 49.27096204800182
+  },
+  {
+    "stage": "structure",
+    "first": {
+      "manifest": "3a8baeee124a7e77a9c57191104b8e1475149383431be3541ba14c8a55b55b1b",
+      "request": "b86a9a45b3bb581eac12147b26d7893a6368fee048d4d8d5136f15856cea6c61",
+      "reused": false,
+      "outputs": [
+        [
+          "document_statements",
+          21441
+        ],
+        [
+          "parameter_modes",
+          46857
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 72.67767165999976
+    },
+    "warm": {
+      "manifest": "3a8baeee124a7e77a9c57191104b8e1475149383431be3541ba14c8a55b55b1b",
+      "request": "b86a9a45b3bb581eac12147b26d7893a6368fee048d4d8d5136f15856cea6c61",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 73.74066391100496
+  },
+  {
+    "stage": "shapes",
+    "error": "BudgetExceededError: worker exceeded aggregate resident-memory budget",
+    "manifest": "cb15829f4d3a399b38cb3dd409f041e0bd2fd9347ed6477d3b2fed02c0790e38"
+  },
+  {
+    "stage": "datafusion-interfaces",
+    "first": {
+      "manifest": "5c5b92cb106f9aac2f8d1d268c40cf0691dbae5c7837fc70a4ecc2c3c3b90e25",
+      "request": "a1c5a342feff31ecfab31446763e2ec4f1745bdc9aa99f265e196e1e83d14c0e",
+      "reused": false,
+      "outputs": [
+        [
+          "gaps",
+          1037
+        ],
+        [
+          "operations",
+          1037
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 231.94359260200144
+    },
+    "warm": {
+      "manifest": "5c5b92cb106f9aac2f8d1d268c40cf0691dbae5c7837fc70a4ecc2c3c3b90e25",
+      "request": "a1c5a342feff31ecfab31446763e2ec4f1745bdc9aa99f265e196e1e83d14c0e",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 235.8252804809963
+  },
+  {
+    "stage": "pyarrow-interfaces",
+    "error": "BudgetExceededError: worker exceeded aggregate resident-memory budget",
+    "manifest": "ab1c6c1c8f3024d5bb56ca1d01418b9dd5b31b3fc7ca6c529d809ff945b712a4"
+  },
+  {
+    "stage": "datafusion-interfaces",
+    "first": {
+      "manifest": "0fdf3e848c3fd56d16e005eec2fd0fdf045932095c75753e0f56c809ee6935c7",
+      "request": "6ddd1591fa4e8d2e0641a31a0272f71f9bc9ae46415d543a74ad620bb6a6c2b2",
+      "reused": false,
+      "outputs": [
+        [
+          "gaps",
+          1037
+        ],
+        [
+          "operations",
+          1037
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 237.20949718500196
+    },
+    "warm": {
+      "manifest": "0fdf3e848c3fd56d16e005eec2fd0fdf045932095c75753e0f56c809ee6935c7",
+      "request": "6ddd1591fa4e8d2e0641a31a0272f71f9bc9ae46415d543a74ad620bb6a6c2b2",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 241.5444835570015
+  },
+  {
+    "stage": "pyarrow-interfaces",
+    "first": {
+      "manifest": "ca9f1a458ae3d4253946a3b7fb6b1a60c0f2e31da4f760a231a4955456c029d8",
+      "request": "fcc33b3fa34b22bea0fb54dcce7072635262a6f0b3cb8e95d080d3748c4d09b0",
+      "reused": false,
+      "outputs": [
+        [
+          "gaps",
+          3755
+        ],
+        [
+          "operations",
+          3755
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 1314.944486776003
+    },
+    "warm": {
+      "manifest": "ca9f1a458ae3d4253946a3b7fb6b1a60c0f2e31da4f760a231a4955456c029d8",
+      "request": "fcc33b3fa34b22bea0fb54dcce7072635262a6f0b3cb8e95d080d3748c4d09b0",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 1319.328526639998
+  },
+  {
+    "stage": "datafusion-documents",
+    "first": {
+      "manifest": "88b452cd1ea07cd39d2657f525fc5dc0f41e6e3cda9828dd0ac71168282d6009",
+      "request": "e8608ba1da3c3a934fdbc39ec84e409ca1193ddbe8aa566d53c59c146343f769",
+      "reused": false,
+      "outputs": [
+        [
+          "passages",
+          979
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 310.79979702400306
+    },
+    "warm": {
+      "manifest": "88b452cd1ea07cd39d2657f525fc5dc0f41e6e3cda9828dd0ac71168282d6009",
+      "request": "e8608ba1da3c3a934fdbc39ec84e409ca1193ddbe8aa566d53c59c146343f769",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 312.3598325060011
+  },
+  {
+    "stage": "pyarrow-documents",
+    "first": {
+      "manifest": "882443a5b15427c8761446562a911b853e6d5aa4c1122eeaf41f2d11b615cebd",
+      "request": "8c8267c61aa2398a8c567e4fe56d217ab89106c344161d815888d56b022395a1",
+      "reused": false,
+      "outputs": [
+        [
+          "passages",
+          369
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 623.5556571869965
+    },
+    "warm": {
+      "manifest": "882443a5b15427c8761446562a911b853e6d5aa4c1122eeaf41f2d11b615cebd",
+      "request": "8c8267c61aa2398a8c567e4fe56d217ab89106c344161d815888d56b022395a1",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 627.6202664889934
+  },
+  {
+    "stage": "python-boundary",
+    "first": {
+      "manifest": "998eba70886a26b14bc9c0ff48d8375801891b3e2fd707c1625f3460881e7aee",
+      "request": "99669e6dea9ad43c40fc5b03e28f0353094baab354085b22462d483e1cc4ba20",
+      "reused": false,
+      "outputs": [
+        [
+          "python_boundaries",
+          1
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 54.47471753099671
+    },
+    "warm": {
+      "manifest": "998eba70886a26b14bc9c0ff48d8375801891b3e2fd707c1625f3460881e7aee",
+      "request": "99669e6dea9ad43c40fc5b03e28f0353094baab354085b22462d483e1cc4ba20",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 61.56376957300381
+  },
+  {
+    "stage": "structure",
+    "first": {
+      "manifest": "15922cfbc58b92e1d1c39873b66648102eaaffdf0584a888866786bf6397adeb",
+      "request": "a94fb257368e14e507d0506556cfefcecc8c4c227883e9829b2f000b263b482c",
+      "reused": false,
+      "outputs": [
+        [
+          "document_statements",
+          21441
+        ],
+        [
+          "parameter_modes",
+          46857
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 94.49822015499376
+    },
+    "warm": {
+      "manifest": "15922cfbc58b92e1d1c39873b66648102eaaffdf0584a888866786bf6397adeb",
+      "request": "a94fb257368e14e507d0506556cfefcecc8c4c227883e9829b2f000b263b482c",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 95.82542202900368
+  },
+  {
+    "stage": "shapes",
+    "error": "'str' object has no attribute 'mkdir'",
+    "manifest": "15922cfbc58b92e1d1c39873b66648102eaaffdf0584a888866786bf6397adeb",
+    "freeze": "149eba0f391d94f2b301ae97b2a158989e4c000cbd4bf4f365d35270b8196439"
+  },
+  {
+    "stage": "shapes",
+    "first": {
+      "manifest": "021464ae27d7b7a33826c45f499ea8ab2ee9b0ee8f9cbfcecaabf9a7658d1e0e",
+      "request": "caa76e1feb2663afde957dd9f2a0ab76ee31376731c3125ff05b1b64c1d68802",
+      "reused": false,
+      "outputs": [
+        [
+          "operation_shapes",
+          31150
+        ],
+        [
+          "stage_executions",
+          1
+        ]
+      ],
+      "elapsed_seconds": 467.67704664199846
+    },
+    "warm": {
+      "manifest": "021464ae27d7b7a33826c45f499ea8ab2ee9b0ee8f9cbfcecaabf9a7658d1e0e",
+      "request": "caa76e1feb2663afde957dd9f2a0ab76ee31376731c3125ff05b1b64c1d68802",
+      "reused": true,
+      "outputs": [],
+      "elapsed_seconds": 0.0
+    },
+    "wall_seconds": 469.2119058899989,
+    "freeze": "149eba0f391d94f2b301ae97b2a158989e4c000cbd4bf4f365d35270b8196439"
+  },
+  {
+    "stage": "semantics",
+    "first": {
+      "manifest": "1678f1b43a94d993b7d1ebfe64b841ce35382db186cd8cfa19bb2e289a4713c9",
+      "request": "4c1465f79be15bfdde8855229d2383ade1926be402a76c75bca6f44033e8f5bd",
+      "reused": false,
+      "assertions": 4328,
+      "qualifications": 4328,
+      "capabilities": 3614
+    },
+    "warm": {
+      "manifest": "1678f1b43a94d993b7d1ebfe64b841ce35382db186cd8cfa19bb2e289a4713c9",
+      "request": "4c1465f79be15bfdde8855229d2383ade1926be402a76c75bca6f44033e8f5bd",
+      "reused": true,
+      "assertions": 0,
+      "qualifications": 0,
+      "capabilities": 0
+    },
+    "wall_seconds": 117.11940754699754,
+    "freeze": "149eba0f391d94f2b301ae97b2a158989e4c000cbd4bf4f365d35270b8196439"
+  }
+]

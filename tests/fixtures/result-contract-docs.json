@@ -1,0 +1,32 @@
+[
+  {
+    "symbol": "arrow_schema::<impl Schema>::try_merge",
+    "profile": "rust-docsrs-54.1-58.4",
+    "passage": "23aad9ea6556667fc55f56e1b0342f90ed05f6a6c80b14a8408d36af9151da69",
+    "text": "Merge schema into self if it is compatible. Struct fields will be merged recursively.\n\nExample:\n\n```\n# use arrow_schema::*;\n\nlet merged = Schema::try_merge(vec![\n    Schema::new(vec![\n        Field::new(\"c1\", DataType::Int64, false),\n        Field::new(\"c2\", DataType::Utf8, false),\n    ]),\n    Schema::new(vec![\n        Field::new(\"c1\", DataType::Int64, true),\n        Field::new(\"c2\", DataType::Utf8, false),\n        Field::new(\"c3\", DataType::Utf8, false),\n    ]),\n]).unwrap();\n\nassert_eq!(\n    merged,\n    Schema::new(vec![\n        Field::new(\"c1\", DataType::Int64, true),\n        Field::new(\"c2\", DataType::Utf8, false),\n        Field::new(\"c3\", DataType::Utf8, false),\n    ]),\n);\n```",
+    "expected_rules": [
+      "compatible-schema-merge"
+    ],
+    "license": "Apache-2.0"
+  },
+  {
+    "symbol": "datafusion::<impl DataFrame>::execute_stream",
+    "profile": "rust-docsrs-54.1-58.4",
+    "passage": "63c60d3470eb86e8621491af12bb1fad0bad963b176d5ac21d9d32b0ff2e5dff",
+    "text": "Executes this DataFrame and returns a stream over a single partition\n\nSee [Self::collect] to buffer the `RecordBatch`es in memory.\n\n# Example\n```\n# use datafusion::prelude::*;\n# use datafusion::error::Result;\n# #[tokio::main]\n# async fn main() -> Result<()> {\nlet ctx = SessionContext::new();\nlet df = ctx\n    .read_csv(\"tests/data/example.csv\", CsvReadOptions::new())\n    .await?;\nlet stream = df.execute_stream().await?;\n# Ok(())\n# }\n```\n\n# Aborting Execution\n\nDropping the stream will abort the execution of the query, and free up\nany allocated resources",
+    "expected_rules": [
+      "drop-stream-cancellation"
+    ],
+    "license": "Apache-2.0"
+  },
+  {
+    "symbol": "datafusion::<impl DataFrame>::collect",
+    "profile": "rust-docsrs-54.1-58.4",
+    "passage": "05384a696e896fde2b7577d2008428116b6735c022b5fcb13fb53b0be786b216",
+    "text": "Execute this `DataFrame` and buffer all resulting `RecordBatch`es  into memory.\n\nPrior to calling `collect`, modifying a DataFrame simply updates a plan\n(no actual computation is performed). `collect` triggers the computation.\n\nSee [`Self::execute_stream`] to execute a DataFrame without buffering.\n\n# Example\n```\n# use datafusion::prelude::*;\n# use datafusion::error::Result;\n# #[tokio::main]\n# async fn main() -> Result<()> {\nlet ctx = SessionContext::new();\nlet df = ctx\n    .read_csv(\"tests/data/example.csv\", CsvReadOptions::new())\n    .await?;\nlet batches = df.collect().await?;\n# Ok(())\n# }\n```",
+    "expected_rules": [
+      "buffered-result-consumption"
+    ],
+    "license": "Apache-2.0"
+  }
+]

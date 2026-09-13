@@ -1,0 +1,177 @@
+{
+  "author": "implementation-agent",
+  "reviewer": "same implementation-agent",
+  "independent_review": false,
+  "automated_model_judge": false,
+  "assessment_basis": "Inspected source contracts, generated reusable rule semantics, exact runtime/compiler receipts, and retained baseline observations; identities attached by the cohort report builder. A narrow supported task is not universal upstream semantic coverage.",
+  "observations": [
+    {
+      "task": "rust-placement",
+      "disposition": "gap",
+      "finding": "The generated cohort retains the full Rust candidate denominator but lacks a shared placement-plus-extension model. The older manual choice is retained as baseline evidence, not automatically promoted.",
+      "reversing_condition": "Choose an already materialized array; direct-kernel applicability then becomes the relevant obligation.",
+      "remaining_interpretation": "Define query/kernel placement and scoped missing-semantics evidence before recommending a custom extension."
+    },
+    {
+      "task": "python-placement",
+      "disposition": "partial",
+      "finding": "The selected materialized-array case uses captured registry input/phase fields and qualified arithmetic overflow contracts. The alternative query-expression placement still needs a composed requirement model.",
+      "reversing_condition": "Change the consumer from materialized data to a query expression, or require checked overflow.",
+      "remaining_interpretation": "The agent selected the materialized consumer branch; SQL expression compatibility and nullable behavior remain separately scoped."
+    },
+    {
+      "task": "rust-results",
+      "disposition": "supported",
+      "finding": "The exact Rust source distinguishes buffered results from a stream and states the stream drop contract. The generated comparison requires incremental delivery and drop-driven query abortion together.",
+      "reversing_condition": "Require fully collected result batches instead of incremental consumption.",
+      "remaining_interpretation": "Upstream documentation supports the narrow contract; neither total operator memory nor cancellation latency is established."
+    },
+    {
+      "task": "python-results",
+      "disposition": "supported",
+      "finding": "Current Python wrapper declarations and literal documentation support a batch-stream consumer. Rust cancellation evidence is excluded from the Python task.",
+      "reversing_condition": "Require a materialized list of batches.",
+      "remaining_interpretation": "Native wrapper dispatch remains an explicit unresolved boundary, and no Python cancellation behavior is inferred."
+    },
+    {
+      "task": "python-representation",
+      "disposition": "gap",
+      "finding": "Current source retains Table and reader interfaces, while the generated task has no complete qualified conversion/materialization/copy-condition model. The baseline finite conversion observation remains historical.",
+      "reversing_condition": "Require a materialized Table instead of an incremental reader.",
+      "remaining_interpretation": "Model conversion direction, buffer ownership and conditional copy behavior before recommending a composition."
+    },
+    {
+      "task": "pydantic-input",
+      "disposition": "supported",
+      "finding": "The shared pack chooses TypeAdapter.validate_python for Python objects, validate_json for JSON text including bytes, and validate_strings for string mappings. A finite strict date counterexample distinguishes Python and JSON validation.",
+      "reversing_condition": "Change the input representation; generated counterfactual comparisons change eligibility.",
+      "remaining_interpretation": "The user must still choose the target model and strictness policy. The date fixture does not establish every coercion or error behavior."
+    },
+    {
+      "task": "serde-input",
+      "disposition": "partial",
+      "finding": "The shared pack admits from_str/from_slice for JSON text and from_reader for finite IO. A persistent-input task rejects the EOF-requiring helper and leaves a prefix decoder conditional on a Deserialize step.",
+      "reversing_condition": "The IO source remains open after one complete JSON value.",
+      "remaining_interpretation": "Buffering, framing and Deserialize composition remain explicit. The finite WouldBlock reader is not a real persistent-socket timing experiment."
+    },
+    {
+      "task": "c-stream",
+      "disposition": "gap",
+      "finding": "The original compiled nullable-reader round-trip remains baseline evidence. The new generated task does not yet derive ownership, capsule single-use and cross-language metadata obligations together.",
+      "reversing_condition": "Change representation, build profile, owner lifetime, or null layout.",
+      "remaining_interpretation": "A finite historical buffer-address result cannot certify arbitrary interchange consumers or a new compiled profile."
+    },
+    {
+      "task": "rust-enrichment",
+      "disposition": "gap",
+      "finding": "The full admitted universe contains source/provider/join/async surfaces, but no shared model composes acquisition, cardinality and consumer freshness into a qualified recommendation.",
+      "reversing_condition": "Require duplicate-preserving relation enrichment or a different freshness policy.",
+      "remaining_interpretation": "Freshness belongs to an explicit service/data policy. A join or remote scalar signature does not supply it."
+    },
+    {
+      "task": "rust-rows",
+      "disposition": "gap",
+      "finding": "Registry kinds and declarations are retained, but output cardinality plus operation-specific empty/null semantics are not jointly qualified for this task.",
+      "reversing_condition": "Change from one result per group to one result per input row.",
+      "remaining_interpretation": "A custom accumulator needs explicit state, merge, empty/null behavior and invocation evidence."
+    },
+    {
+      "task": "python-dataset",
+      "disposition": "gap",
+      "finding": "Scanner and materialization source surfaces are retained. The cohort leaves projection/filter support and conditional physical pruning unresolved.",
+      "reversing_condition": "Require a materialized Table or a filter with different pushdown support.",
+      "remaining_interpretation": "Logical filter support does not prove row-group or page pruning for every file layout."
+    },
+    {
+      "task": "reverse-rust-placement",
+      "disposition": "gap",
+      "finding": "The reversal is retained as a mandatory consumer requirement, but there is no generated Rust query-to-kernel placement model establishing the eligibility change.",
+      "reversing_condition": "The input becomes an already materialized Arrow array.",
+      "remaining_interpretation": "A direct kernel must satisfy the exact types, representation and arithmetic policy before it is recommended."
+    },
+    {
+      "task": "reverse-python-overflow",
+      "disposition": "supported",
+      "finding": "The reusable arithmetic source model distinguishes checked from wrapping addition over the independent admitted Python universe. Error-on-overflow selects the checked route.",
+      "reversing_condition": "Allow wrapping arithmetic instead of an error.",
+      "remaining_interpretation": "The source contract is integer-specific; input-type compatibility and arbitrary numerical validity remain separate."
+    },
+    {
+      "task": "duplicate-reference",
+      "disposition": "gap",
+      "finding": "The historical duplicate-key observation is retained, but the generated task has no qualified relation-cardinality and unmatched-null transfer model.",
+      "reversing_condition": "Prove uniqueness of the reference key or choose a different cardinality policy.",
+      "remaining_interpretation": "Neither a left join nor a key name establishes uniqueness or one output row per input."
+    },
+    {
+      "task": "provider-limit",
+      "disposition": "gap",
+      "finding": "The provider declaration inventory does not establish a generated filter/limit/projection ordering contract. All unresolved obligations remain mandatory.",
+      "reversing_condition": "The provider accepts exact rather than inexact filters.",
+      "remaining_interpretation": "Prove the precise pushdown conditions and execution ordering for the selected provider profile."
+    },
+    {
+      "task": "rust-schema",
+      "disposition": "partial",
+      "finding": "A complete source-field grammar establishes compatible schema merging with recursive Struct handling. Existing finite native constructor/project witnesses distinguish metadata preservation from reconstruction loss.",
+      "reversing_condition": "Schemas become incompatible, or the consumer requires a specific metadata precedence or nullability policy.",
+      "remaining_interpretation": "Compatibility is a precondition. Metadata conflict policy, nullability, units and arbitrary evolution remain independent requirements."
+    },
+    {
+      "task": "python-schema",
+      "disposition": "gap",
+      "finding": "The generated task retains separate fragment/dataset evolution obligations but has no qualified rule joining those schemas and evolution conditions.",
+      "reversing_condition": "A fragment schema changes, or a different dataset unification policy is required.",
+      "remaining_interpretation": "Document and exercise a concrete schema-evolution policy; a successful schema read is insufficient."
+    },
+    {
+      "task": "custom-scalar",
+      "disposition": "gap",
+      "finding": "No complete scoped built-in search, missing-semantics proof and working generated custom scalar extension are jointly qualified.",
+      "reversing_condition": "The exact desired semantics are found in an applicable built-in.",
+      "remaining_interpretation": "Define the missing contract, signature, null/error behavior and a compiled execution witness."
+    },
+    {
+      "task": "custom-aggregate",
+      "disposition": "gap",
+      "finding": "No generated custom accumulator satisfies the retained state/merge/empty-null requirements. Native inventories do not settle these semantics.",
+      "reversing_condition": "A built-in aggregate satisfies the required empty-group policy.",
+      "remaining_interpretation": "Provide state transition and merge models plus finite empty/null counterexamples before qualification."
+    },
+    {
+      "task": "conditional-store",
+      "disposition": "gap",
+      "finding": "The admitted object-store surfaces do not establish conditional-write concurrency or backend-specific failure behavior.",
+      "reversing_condition": "Change backend or concurrency precondition.",
+      "remaining_interpretation": "Acquire exact backend capability evidence and exercise success, conflict and failure cases."
+    },
+    {
+      "task": "flight-ipc",
+      "disposition": "gap",
+      "finding": "The generated task has no complete transport/serialization/ownership/failure model selecting IPC versus Flight.",
+      "reversing_condition": "Change remote transport, failure handling, or stream ownership requirements.",
+      "remaining_interpretation": "A transport API and Arrow representation alone do not prove remote lifetime or failure semantics."
+    },
+    {
+      "task": "async-consistency",
+      "disposition": "gap",
+      "finding": "No source API supplies the requested live-service consistency guarantee. Freshness, call multiplicity and retries remain explicit consumer obligations.",
+      "reversing_condition": "Adopt and qualify a concrete snapshot/version/freshness policy.",
+      "remaining_interpretation": "A service policy and failure model are required; async execution itself is not a consistency guarantee."
+    },
+    {
+      "task": "numpy-dlpack",
+      "disposition": "gap",
+      "finding": "The generated task retains null representation, ownership and copy obligations but does not qualify an arbitrary NumPy/DLPack transfer.",
+      "reversing_condition": "Change null layout, device, ownership or zero-copy requirements.",
+      "remaining_interpretation": "Use exact representation and lifetime evidence, including adverse null/copy cases."
+    },
+    {
+      "task": "feature-profile",
+      "disposition": "partial",
+      "finding": "A real ordinary-consumer Arrow Schema build fails to import FFI with the feature disabled and compiles with it enabled, retaining exact locks, contexts and compiler diagnostics.",
+      "reversing_condition": "Enable the required feature or change the target/dependency profile.",
+      "remaining_interpretation": "This qualifies one exact FFI profile pair, not every docs.rs-only optional API or every target."
+    }
+  ]
+}

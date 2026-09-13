@@ -1,0 +1,11 @@
+{
+  "manifest": "93f1462edd7bbf5eeb8d51da30f3dfc434eb5fe638fa889dcd68b90b65a1c5f8",
+  "restored_manifest": "93f1462edd7bbf5eeb8d51da30f3dfc434eb5fe638fa889dcd68b90b65a1c5f8",
+  "comparison": "0cc7b70d2f4ae4e9c14fb20994c4def02011a789ef413bcc501da86f87959892",
+  "candidate_count": 3,
+  "eligible": [
+    "datafusion.dataframe.DataFrame.execute_stream"
+  ],
+  "elapsed_seconds": 62.097185163991526,
+  "portable_families": 26
+}

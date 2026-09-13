@@ -1,0 +1,1227 @@
+{
+  "kind": "library-guides.foundational-behavior-implementation-plan.v1",
+  "created_at_utc": "2026-09-13T10:09:19.889636+00:00",
+  "state": "in_progress",
+  "implementation_started": true,
+  "scope_authority": "tooling/library_guides/docs/foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md",
+  "scope_authority_sha256": "626d10b1038245ebd70f9372cd16d2fb14583ddc5f45884be575f9cfd2a5bda2",
+  "design_source": "tooling/library_guides/docs/foundational_behavior_characterization_design_assessment_2026-09-13.md",
+  "design_source_sha256": "6b96647cf4abddd23daedbdd1527346381d2924d4beea7ea58d9337bebbd4dd4",
+  "baseline": {
+    "core_freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e",
+    "frozen_files_verified": 270,
+    "changed_or_missing": [],
+    "task_counts": {
+      "gap": 16,
+      "partial": 4,
+      "supported": 4
+    },
+    "qualification": "Historical tests were not rerun during planning; FB00 must establish the execution baseline."
+  },
+  "gates": [
+    {
+      "id": "G0",
+      "status": "complete",
+      "acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 5 / G0",
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/baseline-acceptance.json",
+          "sha256": "dece1c7b7ba59618ccd96c30ec1b7b705056d4effd78dc1f5d8098c25cb2d612"
+        }
+      ]
+    },
+    {
+      "id": "G1",
+      "status": "not_started",
+      "acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 5 / G1",
+      "receipts": []
+    },
+    {
+      "id": "G2",
+      "status": "not_started",
+      "acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 5 / G2",
+      "receipts": []
+    },
+    {
+      "id": "G3",
+      "status": "not_started",
+      "acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 5 / G3",
+      "receipts": []
+    },
+    {
+      "id": "G4",
+      "status": "not_started",
+      "acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 5 / G4",
+      "receipts": []
+    },
+    {
+      "id": "G5",
+      "status": "not_started",
+      "acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 5 / G5",
+      "receipts": []
+    },
+    {
+      "id": "G6",
+      "status": "not_started",
+      "acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 5 / G6",
+      "receipts": []
+    },
+    {
+      "id": "G7",
+      "status": "not_started",
+      "acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 5 / G7",
+      "receipts": []
+    }
+  ],
+  "work_packages": [
+    {
+      "id": "FB00",
+      "title": "Baseline, coverage denominator and evaluation reservation",
+      "depends_on": [],
+      "gate": "G0",
+      "status": "complete",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB00",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/baseline-acceptance.json",
+          "sha256": "dece1c7b7ba59618ccd96c30ec1b7b705056d4effd78dc1f5d8098c25cb2d612"
+        }
+      ],
+      "blockers": [],
+      "completion_note": "Preserved core and corpus; fresh baseline; exact finite 190-candidate population and source/declaration contexts; six guarded expectations frozen before library transfer evaluation. Generated, missing and declaration-only bodies remain explicit."
+    },
+    {
+      "id": "FB01",
+      "title": "Typed executable/summary contracts and admission",
+      "depends_on": [
+        "FB00"
+      ],
+      "gate": "G1",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB01",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/PYTHON_TYPING_CHECKPOINT.md",
+          "sha256": "dc9d20859a6a7530fda528188bdf8c422dfc064ab440e2e963f3559e10aeb8a2"
+        },
+        {
+          "path": "pilot/intelligence/foundational/BUDGET_SEQUENCE_CHECKPOINT.md",
+          "sha256": "65bbbacf59cbc9c9968ec9de5eb1b5c554ac50eb026e36044d132f041426596b"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONTEXT_WITNESS_CHECKPOINT.md",
+          "sha256": "f1f984ba35fce00584ced8ae14d6e791400a248f21d8055b4c442167f1b68dab"
+        },
+        {
+          "path": "pilot/intelligence/foundational/OPERATOR_ORIGIN_CHECKPOINT.md",
+          "sha256": "1b254b4571e729cb41401d56b647e75046a24ff0e17073a27bd2cb02bf51f954"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALLABLE_POPULATION_CHECKPOINT.md",
+          "sha256": "56c13319c7570503c9f5fac3a0a686ff3077c18154b55d5cf7ae82e806bb70be"
+        },
+        {
+          "path": "pilot/intelligence/foundational/COMPILATION_CONTEXT_CHECKPOINT.md",
+          "sha256": "792d0885b3d346026fcfa9c91fd31ade20d195916a9fdfdacc58526d71fc97dc"
+        },
+        {
+          "path": "pilot/intelligence/foundational/FAILURE_OBSERVATION_CHECKPOINT.md",
+          "sha256": "cf03e5189e8e57c75b48c24d290bb2c8f6cb870efdf73f14a6cf33b12cea0bae"
+        },
+        {
+          "path": "pilot/intelligence/foundational/PROJECTION_BUDGET_CHECKPOINT.md",
+          "sha256": "96911bb6afe1c92ce2c60122b0eb5b75f0fe05842ed2478ab3932ec76b71bfe8"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CHARACTERIZATION_CHECKPOINT.md",
+          "sha256": "29da6ef8e6ef8130d0f5ddf125adc2ce0478e8a96e1ee6ae1171f1cdaa501c84"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALL_INDEX_CHECKPOINT.md",
+          "sha256": "661f68f8f8cb9ca3aa7d4b58fae4abfb4b3996e7ffd451cc934a3953fe45ff24"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONCRETE_INSTANCE_CHECKPOINT.md",
+          "sha256": "b72df680512bb5c9e4a3bea2cd6867b78f72915e91e762cf1ccde454eaad739f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALLABLE_VALUE_CHECKPOINT.md",
+          "sha256": "5ffc6bb1a84cee74321920eb7567d89c95b34e88e86233b708a4cbfdf1868455"
+        },
+        {
+          "path": "pilot/intelligence/foundational/RUST_LIFECYCLE_CHECKPOINT.md",
+          "sha256": "39e2a0d3e9ef1561cee4069eed6aa1c559bdfacefa24508ac3bb2e86e95b2817"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB02",
+      "title": "Context, public reachability and callable identity",
+      "depends_on": [
+        "FB01"
+      ],
+      "gate": "G1",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB02",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/PYTHON_TYPING_CHECKPOINT.md",
+          "sha256": "dc9d20859a6a7530fda528188bdf8c422dfc064ab440e2e963f3559e10aeb8a2"
+        },
+        {
+          "path": "pilot/intelligence/foundational/BUDGET_SEQUENCE_CHECKPOINT.md",
+          "sha256": "65bbbacf59cbc9c9968ec9de5eb1b5c554ac50eb026e36044d132f041426596b"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONTEXT_WITNESS_CHECKPOINT.md",
+          "sha256": "f1f984ba35fce00584ced8ae14d6e791400a248f21d8055b4c442167f1b68dab"
+        },
+        {
+          "path": "pilot/intelligence/foundational/OPERATOR_ORIGIN_CHECKPOINT.md",
+          "sha256": "1b254b4571e729cb41401d56b647e75046a24ff0e17073a27bd2cb02bf51f954"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALLABLE_POPULATION_CHECKPOINT.md",
+          "sha256": "56c13319c7570503c9f5fac3a0a686ff3077c18154b55d5cf7ae82e806bb70be"
+        },
+        {
+          "path": "pilot/intelligence/foundational/COMPILATION_CONTEXT_CHECKPOINT.md",
+          "sha256": "792d0885b3d346026fcfa9c91fd31ade20d195916a9fdfdacc58526d71fc97dc"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALL_INDEX_CHECKPOINT.md",
+          "sha256": "661f68f8f8cb9ca3aa7d4b58fae4abfb4b3996e7ffd451cc934a3953fe45ff24"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONCRETE_INSTANCE_CHECKPOINT.md",
+          "sha256": "b72df680512bb5c9e4a3bea2cd6867b78f72915e91e762cf1ccde454eaad739f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALLABLE_VALUE_CHECKPOINT.md",
+          "sha256": "5ffc6bb1a84cee74321920eb7567d89c95b34e88e86233b708a4cbfdf1868455"
+        },
+        {
+          "path": "pilot/intelligence/foundational/RUST_LIFECYCLE_CHECKPOINT.md",
+          "sha256": "39e2a0d3e9ef1561cee4069eed6aa1c559bdfacefa24508ac3bb2e86e95b2817"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB03",
+      "title": "Rust executable projection",
+      "depends_on": [
+        "FB01",
+        "FB02"
+      ],
+      "gate": "G1",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB03",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/DEVELOPMENT_POPULATION_CHECKPOINT.md",
+          "sha256": "d87556bf998c6888e864d91434b99ec9ba7c74dce60baa991d9bee1f3ad5420f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/HELDOUT_CHECKPOINT.md",
+          "sha256": "0dd655df7bf2124081201026fbf21e07f59ea6359e900863c4cf9b1420b543f9"
+        },
+        {
+          "path": "pilot/intelligence/foundational/PROJECTION_BUDGET_CHECKPOINT.md",
+          "sha256": "96911bb6afe1c92ce2c60122b0eb5b75f0fe05842ed2478ab3932ec76b71bfe8"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONCRETE_INSTANCE_CHECKPOINT.md",
+          "sha256": "b72df680512bb5c9e4a3bea2cd6867b78f72915e91e762cf1ccde454eaad739f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALLABLE_VALUE_CHECKPOINT.md",
+          "sha256": "5ffc6bb1a84cee74321920eb7567d89c95b34e88e86233b708a4cbfdf1868455"
+        },
+        {
+          "path": "pilot/intelligence/foundational/RUST_LIFECYCLE_CHECKPOINT.md",
+          "sha256": "39e2a0d3e9ef1561cee4069eed6aa1c559bdfacefa24508ac3bb2e86e95b2817"
+        },
+        {
+          "path": "pilot/intelligence/foundational/INSTANCE_DEMAND_CHECKPOINT.md",
+          "sha256": "695c11fc4efc5d361901ab8bf748864bc64c33abc597623130d5f30c15bd776c"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB04",
+      "title": "Python executable projection and type reconciliation",
+      "depends_on": [
+        "FB01",
+        "FB02"
+      ],
+      "gate": "G1",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB04",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/PYTHON_TYPING_CHECKPOINT.md",
+          "sha256": "dc9d20859a6a7530fda528188bdf8c422dfc064ab440e2e963f3559e10aeb8a2"
+        },
+        {
+          "path": "pilot/intelligence/foundational/BUDGET_SEQUENCE_CHECKPOINT.md",
+          "sha256": "65bbbacf59cbc9c9968ec9de5eb1b5c554ac50eb026e36044d132f041426596b"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONTEXT_WITNESS_CHECKPOINT.md",
+          "sha256": "f1f984ba35fce00584ced8ae14d6e791400a248f21d8055b4c442167f1b68dab"
+        },
+        {
+          "path": "pilot/intelligence/foundational/OPERATOR_ORIGIN_CHECKPOINT.md",
+          "sha256": "1b254b4571e729cb41401d56b647e75046a24ff0e17073a27bd2cb02bf51f954"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALLABLE_POPULATION_CHECKPOINT.md",
+          "sha256": "56c13319c7570503c9f5fac3a0a686ff3077c18154b55d5cf7ae82e806bb70be"
+        },
+        {
+          "path": "pilot/intelligence/foundational/DEVELOPMENT_POPULATION_CHECKPOINT.md",
+          "sha256": "d87556bf998c6888e864d91434b99ec9ba7c74dce60baa991d9bee1f3ad5420f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/PROJECTION_BUDGET_CHECKPOINT.md",
+          "sha256": "96911bb6afe1c92ce2c60122b0eb5b75f0fe05842ed2478ab3932ec76b71bfe8"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB05",
+      "title": "Guarded value analysis and solver boundary",
+      "depends_on": [
+        "FB03",
+        "FB04"
+      ],
+      "gate": "G2",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB05",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/BUDGET_SEQUENCE_CHECKPOINT.md",
+          "sha256": "65bbbacf59cbc9c9968ec9de5eb1b5c554ac50eb026e36044d132f041426596b"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONTEXT_WITNESS_CHECKPOINT.md",
+          "sha256": "f1f984ba35fce00584ced8ae14d6e791400a248f21d8055b4c442167f1b68dab"
+        },
+        {
+          "path": "pilot/intelligence/foundational/OPERATOR_ORIGIN_CHECKPOINT.md",
+          "sha256": "1b254b4571e729cb41401d56b647e75046a24ff0e17073a27bd2cb02bf51f954"
+        },
+        {
+          "path": "pilot/intelligence/foundational/DEVELOPMENT_POPULATION_CHECKPOINT.md",
+          "sha256": "d87556bf998c6888e864d91434b99ec9ba7c74dce60baa991d9bee1f3ad5420f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/HELDOUT_CHECKPOINT.md",
+          "sha256": "0dd655df7bf2124081201026fbf21e07f59ea6359e900863c4cf9b1420b543f9"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB06",
+      "title": "Fields, regions, aliasing and representation lineage",
+      "depends_on": [
+        "FB05"
+      ],
+      "gate": "G2",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB06",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/BUDGET_SEQUENCE_CHECKPOINT.md",
+          "sha256": "65bbbacf59cbc9c9968ec9de5eb1b5c554ac50eb026e36044d132f041426596b"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONTEXT_WITNESS_CHECKPOINT.md",
+          "sha256": "f1f984ba35fce00584ced8ae14d6e791400a248f21d8055b4c442167f1b68dab"
+        },
+        {
+          "path": "pilot/intelligence/foundational/OPERATOR_ORIGIN_CHECKPOINT.md",
+          "sha256": "1b254b4571e729cb41401d56b647e75046a24ff0e17073a27bd2cb02bf51f954"
+        },
+        {
+          "path": "pilot/intelligence/foundational/DEVELOPMENT_POPULATION_CHECKPOINT.md",
+          "sha256": "d87556bf998c6888e864d91434b99ec9ba7c74dce60baa991d9bee1f3ad5420f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/HELDOUT_CHECKPOINT.md",
+          "sha256": "0dd655df7bf2124081201026fbf21e07f59ea6359e900863c4cf9b1420b543f9"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB07",
+      "title": "Interprocedural and higher-order summaries",
+      "depends_on": [
+        "FB02",
+        "FB06"
+      ],
+      "gate": "G2",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB07",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/BUDGET_SEQUENCE_CHECKPOINT.md",
+          "sha256": "65bbbacf59cbc9c9968ec9de5eb1b5c554ac50eb026e36044d132f041426596b"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONTEXT_WITNESS_CHECKPOINT.md",
+          "sha256": "f1f984ba35fce00584ced8ae14d6e791400a248f21d8055b4c442167f1b68dab"
+        },
+        {
+          "path": "pilot/intelligence/foundational/OPERATOR_ORIGIN_CHECKPOINT.md",
+          "sha256": "1b254b4571e729cb41401d56b647e75046a24ff0e17073a27bd2cb02bf51f954"
+        },
+        {
+          "path": "pilot/intelligence/foundational/DEVELOPMENT_POPULATION_CHECKPOINT.md",
+          "sha256": "d87556bf998c6888e864d91434b99ec9ba7c74dce60baa991d9bee1f3ad5420f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALL_INDEX_CHECKPOINT.md",
+          "sha256": "661f68f8f8cb9ca3aa7d4b58fae4abfb4b3996e7ffd451cc934a3953fe45ff24"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONCRETE_INSTANCE_CHECKPOINT.md",
+          "sha256": "b72df680512bb5c9e4a3bea2cd6867b78f72915e91e762cf1ccde454eaad739f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALLABLE_VALUE_CHECKPOINT.md",
+          "sha256": "5ffc6bb1a84cee74321920eb7567d89c95b34e88e86233b708a4cbfdf1868455"
+        },
+        {
+          "path": "pilot/intelligence/foundational/RUST_LIFECYCLE_CHECKPOINT.md",
+          "sha256": "39e2a0d3e9ef1561cee4069eed6aa1c559bdfacefa24508ac3bb2e86e95b2817"
+        },
+        {
+          "path": "pilot/intelligence/foundational/INSTANCE_DEMAND_CHECKPOINT.md",
+          "sha256": "695c11fc4efc5d361901ab8bf748864bc64c33abc597623130d5f30c15bd776c"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB08",
+      "title": "Witness generation, independent oracles and shrinking",
+      "depends_on": [
+        "FB01",
+        "FB05"
+      ],
+      "gate": "G2",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB08",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/WITNESS_CHECKPOINT.md",
+          "sha256": "aec1b5fb40dc9aec343409fcf49bfa08d1a7af17614dd6a63400e11f65c36ac2"
+        },
+        {
+          "path": "pilot/intelligence/foundational/BUDGET_SEQUENCE_CHECKPOINT.md",
+          "sha256": "65bbbacf59cbc9c9968ec9de5eb1b5c554ac50eb026e36044d132f041426596b"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONTEXT_WITNESS_CHECKPOINT.md",
+          "sha256": "f1f984ba35fce00584ced8ae14d6e791400a248f21d8055b4c442167f1b68dab"
+        },
+        {
+          "path": "pilot/intelligence/foundational/OPERATOR_ORIGIN_CHECKPOINT.md",
+          "sha256": "1b254b4571e729cb41401d56b647e75046a24ff0e17073a27bd2cb02bf51f954"
+        },
+        {
+          "path": "pilot/intelligence/foundational/HELDOUT_CHECKPOINT.md",
+          "sha256": "0dd655df7bf2124081201026fbf21e07f59ea6359e900863c4cf9b1420b543f9"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALLABLE_VALUE_CHECKPOINT.md",
+          "sha256": "5ffc6bb1a84cee74321920eb7567d89c95b34e88e86233b708a4cbfdf1868455"
+        },
+        {
+          "path": "pilot/intelligence/foundational/RUST_LIFECYCLE_CHECKPOINT.md",
+          "sha256": "39e2a0d3e9ef1561cee4069eed6aa1c559bdfacefa24508ac3bb2e86e95b2817"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB09",
+      "title": "First cross-library vertical-slice qualification",
+      "depends_on": [
+        "FB07",
+        "FB08"
+      ],
+      "gate": "G2",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB09",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/DEVELOPMENT_POPULATION_CHECKPOINT.md",
+          "sha256": "d87556bf998c6888e864d91434b99ec9ba7c74dce60baa991d9bee1f3ad5420f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/HELDOUT_CHECKPOINT.md",
+          "sha256": "0dd655df7bf2124081201026fbf21e07f59ea6359e900863c4cf9b1420b543f9"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB10",
+      "title": "Protocols, deferred execution, cleanup and failures",
+      "depends_on": [
+        "FB09"
+      ],
+      "gate": "G3",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB10",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/RUST_LIFECYCLE_CHECKPOINT.md",
+          "sha256": "39e2a0d3e9ef1561cee4069eed6aa1c559bdfacefa24508ac3bb2e86e95b2817"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null,
+      "progress_note": "Frontend lifecycle preparation before milestone acceptance: separate activation phase, context exits and cancellation edges; full protocol and G3 qualification remain outstanding."
+    },
+    {
+      "id": "FB11",
+      "title": "Native binding and conversion composition",
+      "depends_on": [
+        "FB09"
+      ],
+      "gate": "G3",
+      "status": "not_started",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB11",
+      "existing_integration_paths": [],
+      "receipts": [],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB12",
+      "title": "Reusable semantic-family models and laws",
+      "depends_on": [
+        "FB07",
+        "FB10",
+        "FB11"
+      ],
+      "gate": "G4",
+      "status": "not_started",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB12",
+      "existing_integration_paths": [],
+      "receipts": [],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB13",
+      "title": "Availability, placement and extension obligations",
+      "depends_on": [
+        "FB02",
+        "FB12"
+      ],
+      "gate": "G4",
+      "status": "not_started",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB13",
+      "existing_integration_paths": [],
+      "receipts": [],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB14",
+      "title": "Cost, ambient dependence and interference",
+      "depends_on": [
+        "FB07",
+        "FB10"
+      ],
+      "gate": "G4",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB14",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/CHARACTERIZATION_CHECKPOINT.md",
+          "sha256": "29da6ef8e6ef8130d0f5ddf125adc2ce0478e8a96e1ee6ae1171f1cdaa501c84"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB15",
+      "title": "Population characterization, discovery and refinement",
+      "depends_on": [
+        "FB08",
+        "FB12",
+        "FB14"
+      ],
+      "gate": "G4",
+      "status": "not_started",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB15",
+      "existing_integration_paths": [],
+      "receipts": [],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB16",
+      "title": "Incremental execution, resource control and recovery",
+      "depends_on": [
+        "FB09"
+      ],
+      "gate": "G5",
+      "status": "in_progress",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB16",
+      "existing_integration_paths": [],
+      "receipts": [
+        {
+          "path": "pilot/intelligence/foundational/WITNESS_CHECKPOINT.md",
+          "sha256": "aec1b5fb40dc9aec343409fcf49bfa08d1a7af17614dd6a63400e11f65c36ac2"
+        },
+        {
+          "path": "pilot/intelligence/foundational/BUDGET_SEQUENCE_CHECKPOINT.md",
+          "sha256": "65bbbacf59cbc9c9968ec9de5eb1b5c554ac50eb026e36044d132f041426596b"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONTEXT_WITNESS_CHECKPOINT.md",
+          "sha256": "f1f984ba35fce00584ced8ae14d6e791400a248f21d8055b4c442167f1b68dab"
+        },
+        {
+          "path": "pilot/intelligence/foundational/OPERATOR_ORIGIN_CHECKPOINT.md",
+          "sha256": "1b254b4571e729cb41401d56b647e75046a24ff0e17073a27bd2cb02bf51f954"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALLABLE_POPULATION_CHECKPOINT.md",
+          "sha256": "56c13319c7570503c9f5fac3a0a686ff3077c18154b55d5cf7ae82e806bb70be"
+        },
+        {
+          "path": "pilot/intelligence/foundational/DEVELOPMENT_POPULATION_CHECKPOINT.md",
+          "sha256": "d87556bf998c6888e864d91434b99ec9ba7c74dce60baa991d9bee1f3ad5420f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/COMPILATION_CONTEXT_CHECKPOINT.md",
+          "sha256": "792d0885b3d346026fcfa9c91fd31ade20d195916a9fdfdacc58526d71fc97dc"
+        },
+        {
+          "path": "pilot/intelligence/foundational/HELDOUT_CHECKPOINT.md",
+          "sha256": "0dd655df7bf2124081201026fbf21e07f59ea6359e900863c4cf9b1420b543f9"
+        },
+        {
+          "path": "pilot/intelligence/foundational/FAILURE_INPUT_CHECKPOINT.md",
+          "sha256": "f8c5de2e2f79643ad69ba9758ddb1c3bf066725e68de2e591f470eba44e4158c"
+        },
+        {
+          "path": "pilot/intelligence/foundational/FAILURE_OBSERVATION_CHECKPOINT.md",
+          "sha256": "cf03e5189e8e57c75b48c24d290bb2c8f6cb870efdf73f14a6cf33b12cea0bae"
+        },
+        {
+          "path": "pilot/intelligence/foundational/PROJECTION_BUDGET_CHECKPOINT.md",
+          "sha256": "96911bb6afe1c92ce2c60122b0eb5b75f0fe05842ed2478ab3932ec76b71bfe8"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CHARACTERIZATION_CHECKPOINT.md",
+          "sha256": "29da6ef8e6ef8130d0f5ddf125adc2ce0478e8a96e1ee6ae1171f1cdaa501c84"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALL_INDEX_CHECKPOINT.md",
+          "sha256": "661f68f8f8cb9ca3aa7d4b58fae4abfb4b3996e7ffd451cc934a3953fe45ff24"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CONCRETE_INSTANCE_CHECKPOINT.md",
+          "sha256": "b72df680512bb5c9e4a3bea2cd6867b78f72915e91e762cf1ccde454eaad739f"
+        },
+        {
+          "path": "pilot/intelligence/foundational/CALLABLE_VALUE_CHECKPOINT.md",
+          "sha256": "5ffc6bb1a84cee74321920eb7567d89c95b34e88e86233b708a4cbfdf1868455"
+        },
+        {
+          "path": "pilot/intelligence/foundational/INSTANCE_DEMAND_CHECKPOINT.md",
+          "sha256": "695c11fc4efc5d361901ab8bf748864bc64c33abc597623130d5f30c15bd776c"
+        }
+      ],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB17",
+      "title": "Consumer integration and retained-task reassessment",
+      "depends_on": [
+        "FB11",
+        "FB13",
+        "FB15",
+        "FB16"
+      ],
+      "gate": "G6",
+      "status": "not_started",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB17",
+      "existing_integration_paths": [],
+      "receipts": [],
+      "blockers": [],
+      "completion_note": null
+    },
+    {
+      "id": "FB18",
+      "title": "Terminal qualification, portable delivery and handover",
+      "depends_on": [
+        "FB17"
+      ],
+      "gate": "G7",
+      "status": "not_started",
+      "mandatory": true,
+      "scope_and_acceptance": "foundational_behavior_characterization_implementation_plan_v1_2026-09-13.md section 4 / FB18",
+      "existing_integration_paths": [],
+      "receipts": [],
+      "blockers": [],
+      "completion_note": null
+    }
+  ],
+  "topological_order": [
+    "FB00",
+    "FB01",
+    "FB02",
+    "FB03",
+    "FB04",
+    "FB05",
+    "FB06",
+    "FB08",
+    "FB07",
+    "FB09",
+    "FB10",
+    "FB11",
+    "FB16",
+    "FB12",
+    "FB14",
+    "FB13",
+    "FB15",
+    "FB17",
+    "FB18"
+  ],
+  "assessment_dimensions": {
+    "contextual_fact_contract": [
+      "FB01",
+      "FB02",
+      "FB03",
+      "FB04"
+    ],
+    "guarded_values_and_precision": [
+      "FB05"
+    ],
+    "memory_and_lineage": [
+      "FB06"
+    ],
+    "interprocedural_and_higher_order": [
+      "FB07"
+    ],
+    "protocol_phase_failure": [
+      "FB10"
+    ],
+    "native_boundaries": [
+      "FB11"
+    ],
+    "semantic_families": [
+      "FB12"
+    ],
+    "availability_placement_extensions": [
+      "FB02",
+      "FB13"
+    ],
+    "cost_ambient_interference": [
+      "FB14"
+    ],
+    "unexpected_behavior_discovery": [
+      "FB15"
+    ],
+    "witnesses_and_refinement": [
+      "FB08",
+      "FB15"
+    ],
+    "incrementality_and_resource_control": [
+      "FB16"
+    ],
+    "generalization": [
+      "FB00",
+      "FB09",
+      "FB12",
+      "FB15",
+      "FB18"
+    ],
+    "consumer_and_portable_delivery": [
+      "FB17",
+      "FB18"
+    ]
+  },
+  "semantic_families": [
+    "collections_relations",
+    "records_schemas",
+    "reductions_accumulators",
+    "serialization_framing",
+    "buffers_interchange",
+    "requests_transactions"
+  ],
+  "optional_decisions": [
+    {
+      "name": "focused_c_cpp_frontend",
+      "owner": "FB11",
+      "status": "not_evaluated",
+      "trigger": "Exact source and compilation commands are available, and unresolved native bodies block at least two semantic families or three retained task obligations.",
+      "disposition": null,
+      "evidence": []
+    },
+    {
+      "name": "additional_private_compiler_facts",
+      "owner": "FB03",
+      "status": "not_evaluated",
+      "trigger": "A named unresolved analysis requirement demonstrates a need beyond the qualified public projection.",
+      "disposition": null,
+      "evidence": []
+    },
+    {
+      "name": "rust_summary_execution",
+      "owner": "FB16",
+      "status": "not_evaluated",
+      "trigger": "Measured summary execution hotspot warrants another qualified execution boundary.",
+      "disposition": null,
+      "evidence": []
+    },
+    {
+      "name": "kani_loom_proof_harnesses",
+      "owner": "FB08",
+      "status": "not_evaluated",
+      "trigger": "A measured closed verification problem benefits from a selected optional tool.",
+      "disposition": null,
+      "evidence": []
+    }
+  ],
+  "task_traceability": [
+    {
+      "task": "rust-placement",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB02",
+        "FB07",
+        "FB10",
+        "FB12",
+        "FB13"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Consumer phase and closed built-in scope",
+      "reassessment": null
+    },
+    {
+      "task": "python-placement",
+      "baseline_state": "partial",
+      "evidence_packages": [
+        "FB04",
+        "FB11",
+        "FB12",
+        "FB13"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Exact wrapper/native behavior",
+      "reassessment": null
+    },
+    {
+      "task": "python-representation",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB06",
+        "FB10",
+        "FB11",
+        "FB12"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Conversion, layout and owner context",
+      "reassessment": null
+    },
+    {
+      "task": "serde-input",
+      "baseline_state": "partial",
+      "evidence_packages": [
+        "FB07",
+        "FB10",
+        "FB12"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Framing/EOF and actual transport assumptions",
+      "reassessment": null
+    },
+    {
+      "task": "c-stream",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB06",
+        "FB10",
+        "FB11",
+        "FB12"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "ABI, single use, release, null/metadata compatibility",
+      "reassessment": null
+    },
+    {
+      "task": "rust-enrichment",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB07",
+        "FB10",
+        "FB12",
+        "FB13"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Input key properties and external freshness",
+      "reassessment": null
+    },
+    {
+      "task": "rust-rows",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB05",
+        "FB07",
+        "FB12"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Operation-specific empty/null and cardinality laws",
+      "reassessment": null
+    },
+    {
+      "task": "python-dataset",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB10",
+        "FB11",
+        "FB12",
+        "FB14"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Requested pushdown versus observed physical pruning",
+      "reassessment": null
+    },
+    {
+      "task": "reverse-rust-placement",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB12",
+        "FB13"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Same model under changed representation",
+      "reassessment": null
+    },
+    {
+      "task": "duplicate-reference",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB06",
+        "FB12"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Key uniqueness cannot be assumed",
+      "reassessment": null
+    },
+    {
+      "task": "provider-limit",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB07",
+        "FB10",
+        "FB12",
+        "FB13"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Exact/inexact ordering and selected provider scope",
+      "reassessment": null
+    },
+    {
+      "task": "rust-schema",
+      "baseline_state": "partial",
+      "evidence_packages": [
+        "FB06",
+        "FB07",
+        "FB12"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Semantic metadata/units interpretation",
+      "reassessment": null
+    },
+    {
+      "task": "python-schema",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB06",
+        "FB11",
+        "FB12"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Fragment population and evolution policy",
+      "reassessment": null
+    },
+    {
+      "task": "custom-scalar",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB02",
+        "FB12",
+        "FB13"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Missing-built-in proof, compilation and behavior are separate",
+      "reassessment": null
+    },
+    {
+      "task": "custom-aggregate",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB10",
+        "FB12",
+        "FB13"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "State/merge laws and arithmetic/order assumptions",
+      "reassessment": null
+    },
+    {
+      "task": "conditional-store",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB10",
+        "FB11",
+        "FB12",
+        "FB14"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Remote atomicity and backend conformance",
+      "reassessment": null
+    },
+    {
+      "task": "flight-ipc",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB06",
+        "FB10",
+        "FB11",
+        "FB12"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Transport/deployment requirements and failure boundary",
+      "reassessment": null
+    },
+    {
+      "task": "async-consistency",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB10",
+        "FB12",
+        "FB14"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Async does not establish service consistency",
+      "reassessment": null
+    },
+    {
+      "task": "numpy-dlpack",
+      "baseline_state": "gap",
+      "evidence_packages": [
+        "FB06",
+        "FB10",
+        "FB11",
+        "FB12"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Device, null, synchronization and ownership context",
+      "reassessment": null
+    },
+    {
+      "task": "feature-profile",
+      "baseline_state": "partial",
+      "evidence_packages": [
+        "FB02",
+        "FB13"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Finite actual compilation catalog",
+      "reassessment": null
+    },
+    {
+      "task": "rust-results",
+      "baseline_state": "supported",
+      "evidence_packages": [
+        "FB10",
+        "FB14",
+        "FB17"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Streaming does not imply bounded total memory or latency",
+      "reassessment": null
+    },
+    {
+      "task": "python-results",
+      "baseline_state": "supported",
+      "evidence_packages": [
+        "FB04",
+        "FB10",
+        "FB11",
+        "FB17"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "No automatic inheritance of Rust cancellation semantics",
+      "reassessment": null
+    },
+    {
+      "task": "pydantic-input",
+      "baseline_state": "supported",
+      "evidence_packages": [
+        "FB04",
+        "FB05",
+        "FB12",
+        "FB17"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Model/strictness choice and finite coercion observations",
+      "reassessment": null
+    },
+    {
+      "task": "reverse-python-overflow",
+      "baseline_state": "supported",
+      "evidence_packages": [
+        "FB05",
+        "FB11",
+        "FB12",
+        "FB13"
+      ],
+      "delivery_packages": [
+        "FB17",
+        "FB18"
+      ],
+      "retained_limit": "Exact arithmetic/type contract",
+      "reassessment": null
+    }
+  ],
+  "planning_validation": {
+    "work_package_count": 19,
+    "dag_acyclic": true,
+    "terminal_package_depends_on_all_mandatory_packages": true,
+    "all_24_tasks_mapped": true,
+    "local_link_occurrences_checked": 66,
+    "local_links_resolve": true,
+    "no_implementation_or_tests_run": true
+  },
+  "gate_semantics": "Each package completes against its own acceptance criteria; its gate field identifies the aggregate milestone consuming that evidence, not a prerequisite for successor packages.",
+  "execution_root": "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z"
+}

@@ -1,0 +1,70 @@
+{
+  "retrieval": {
+    "manifest": "ade323124576470508c70384540f0575a954a0a9289f888eff8d32302d7c5508",
+    "request": "8db2caced8e37f1f73eaf1d6815419111060864f5bf04ebd85320ad079ddcebe",
+    "reused": false,
+    "outputs": [
+      [
+        "retrieval_units",
+        1317
+      ]
+    ],
+    "elapsed_seconds": 8.623472896986641
+  },
+  "embeddings": {
+    "manifest": "0395b81861efaff774c69deb4d4257756e083935b78d7cdfa04799915eb926fb",
+    "request": "3275c4e6bb3ec7f686225874e25528ed5a988306542c5dedecfa067e8e198199",
+    "reused": false,
+    "outputs": [
+      [
+        "embeddings",
+        1317
+      ]
+    ],
+    "elapsed_seconds": 34.97082698097802
+  },
+  "graphs": {
+    "manifest": "7bce1c25bcdff0846015e731b421136ef7d4358cbd82430f9c33c143697c8733",
+    "request": "516e983f263f7bb8f366ad2cf3ada697ede9b01000f526d866b8898b0bcd23f4",
+    "reused": false,
+    "outputs": [
+      [
+        "concepts",
+        838
+      ],
+      [
+        "graph_edges",
+        6585
+      ],
+      [
+        "graph_nodes",
+        3951
+      ],
+      [
+        "scopes",
+        3
+      ]
+    ],
+    "elapsed_seconds": 117.6441124700068
+  },
+  "fca": {
+    "manifest": "c65c87f9c25fd717685ac0da805d8edc9b64797c52ee46754749d635f564bbdd",
+    "request": "ccfbb9c39f90a1167b887d617dc05f89395f3abfe17757bdb4764cbfd43e5564",
+    "reused": false,
+    "outputs": [
+      [
+        "attributes",
+        49
+      ],
+      [
+        "concepts",
+        57
+      ],
+      [
+        "scopes",
+        1
+      ]
+    ],
+    "elapsed_seconds": 9.217057910980657
+  }
+}

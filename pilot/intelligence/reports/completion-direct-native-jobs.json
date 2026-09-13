@@ -1,0 +1,73 @@
+{
+  "manifest_path": "/home/paul/smartref/tooling/library_guides/pilot/source_semantics/manifests/retained-rustdoc.local.yaml",
+  "declared_jobs": 47,
+  "first": {
+    "manifest": "7a46a234189b21ea6f42cd411a0273faa13dd1c647829a29eefcb95d9fc4a4b0",
+    "request": "5a25aab379b0dcac6e96ebc92563214284929909e02fcf610b1298a1bf6fdcfd",
+    "reused": false,
+    "outputs": [
+      [
+        "blob_chunks",
+        13108
+      ],
+      [
+        "blobs",
+        13076
+      ],
+      [
+        "contexts",
+        47
+      ],
+      [
+        "entities",
+        67994
+      ],
+      [
+        "native_artifacts",
+        47
+      ],
+      [
+        "native_facts",
+        92461
+      ],
+      [
+        "operations",
+        24467
+      ],
+      [
+        "passages",
+        14214
+      ],
+      [
+        "raw_observations",
+        47
+      ],
+      [
+        "relations",
+        209536
+      ],
+      [
+        "source_files",
+        47
+      ],
+      [
+        "type_nodes",
+        209536
+      ],
+      [
+        "type_uses",
+        58556
+      ]
+    ],
+    "elapsed_seconds": 256.1085916049997
+  },
+  "warm": {
+    "manifest": "7a46a234189b21ea6f42cd411a0273faa13dd1c647829a29eefcb95d9fc4a4b0",
+    "request": "5a25aab379b0dcac6e96ebc92563214284929909e02fcf610b1298a1bf6fdcfd",
+    "reused": true,
+    "outputs": [],
+    "elapsed_seconds": 0.0
+  },
+  "corpus": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/direct-native/corpus",
+  "native_artifacts": 47
+}

@@ -1,0 +1,497 @@
+{
+  "schema": "library-guides.semantic-pack.v1",
+  "rationale": "Same implementation-agent authored and reviewed this input-contract grammar pack. It maps shared full-field source templates, never operation IDs or function-name branches. Representation assertions retain their target/mode caveats. IO EOF and buffering clauses are matched in full, with the alternative decoder clause kept separate from the current function. No independent review; zero operation mappings. Strict Python-versus-JSON behavior requires a separate finite witness.",
+  "records": [
+    {
+      "family": "predicates",
+      "record": {
+        "profile": "",
+        "logical_id": "predicate:documented-input-form",
+        "name": "documented_input_form",
+        "description": "The semantic input representation of the selected entry. JSON text can be physically stored as a string or bytes; declared call shapes distinguish their storage. This does not guarantee successful validation, strict-mode equivalence, framing, buffering, or target-schema acceptance.",
+        "value_kind": "text",
+        "allowed_values": [
+          "python-object",
+          "json-text",
+          "json-io",
+          "string-values"
+        ],
+        "exclusive": true,
+        "interpretations": [
+          "upstream_contract"
+        ],
+        "template": "The retained input contract states {value}."
+      }
+    },
+    {
+      "family": "predicates",
+      "record": {
+        "profile": "",
+        "logical_id": "predicate:documented-eof-policy",
+        "name": "documented_eof_policy",
+        "description": "Whether the retained contract requires EOF or exposes a decoder from which the caller can deserialize a prefix; caller framing remains required.",
+        "value_kind": "text",
+        "allowed_values": [
+          "requires-eof",
+          "prefix-decoder"
+        ],
+        "exclusive": true,
+        "interpretations": [
+          "upstream_contract"
+        ],
+        "template": "The retained input contract states {value}."
+      }
+    },
+    {
+      "family": "predicates",
+      "record": {
+        "profile": "",
+        "logical_id": "predicate:documented-input-buffering",
+        "name": "documented_input_buffering",
+        "description": "The selected IO contract requires callers to arrange buffering when short reads are inefficient; this is not a benchmark or a zero-copy claim.",
+        "value_kind": "text",
+        "allowed_values": [
+          "caller-buffering"
+        ],
+        "exclusive": true,
+        "interpretations": [
+          "upstream_contract"
+        ],
+        "template": "The retained input contract states {value}."
+      }
+    },
+    {
+      "family": "predicates",
+      "record": {
+        "profile": "",
+        "logical_id": "predicate:documented-input-action",
+        "name": "documented_input_action",
+        "description": "The entry itself validates or deserializes a value. Constructing a decoder is a separate operation and does not satisfy this property.",
+        "value_kind": "text",
+        "allowed_values": [
+          "decode-value"
+        ],
+        "exclusive": true,
+        "interpretations": [
+          "upstream_contract"
+        ],
+        "template": "The retained entry action is {value}."
+      }
+    },
+    {
+      "family": "capability_schemas",
+      "record": {
+        "profile": "",
+        "logical_id": "capability-schema:decode-input",
+        "name": "decode-input",
+        "description": "Choose a declared validation/deserialization entry under separately stated representation and framing requirements.",
+        "requirements": [
+          {
+            "predicate": {
+              "$ref": "predicate:documented-input-form"
+            },
+            "value": {
+              "kind": "text",
+              "text": ""
+            },
+            "operator": "exists",
+            "interpretations": [
+              "upstream_contract"
+            ],
+            "mandatory": true
+          },
+          {
+            "predicate": {
+              "$ref": "predicate:documented-input-action"
+            },
+            "value": {
+              "kind": "text",
+              "text": "decode-value"
+            },
+            "operator": "equal",
+            "interpretations": [
+              "upstream_contract"
+            ],
+            "mandatory": true
+          }
+        ],
+        "any_qualified_support": false
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:validate-python-input",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Validate a Python object against the model\\.\\n\\n[ ]+Args:\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n[ ]+Returns:\\n[ ]+The validated object\\.\\s*",
+        "predicate": {
+          "$ref": "predicate:documented-input-form"
+        },
+        "value": {
+          "kind": "text",
+          "text": "python-object"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "Python object input against the selected configured model; strictness and dataclass/from_attributes support remain separate",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:validate-json-input",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "(?:!!! abstract \"Usage Documentation\"\\n[ ]+\\[JSON Parsing\\]\\([^\\n]+\\)\\n\\n[ ]+)?Validate a JSON string or bytes against the model\\.\\n\\n[ ]+Args:\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n[ ]+Returns:\\n[ ]+The validated object\\.\\s*",
+        "predicate": {
+          "$ref": "predicate:documented-input-form"
+        },
+        "value": {
+          "kind": "text",
+          "text": "json-text"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "JSON string or bytes input against the selected configured model; strictness, partial parsing and trailing input policies remain separate",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:validate-string-values",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Validate object contains string data against the model\\.\\n\\n[ ]+Args:\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n[ ]+Returns:\\n[ ]+The validated object\\.\\s*",
+        "predicate": {
+          "$ref": "predicate:documented-input-form"
+        },
+        "value": {
+          "kind": "text",
+          "text": "string-values"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "a Python object containing string data; this is not a serialized JSON document",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:deserialize-json-text",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Deserialize an instance of type `T` from a string of JSON text\\.\\n\\n# Example\\n\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n# Errors\\n\\nThis conversion can fail if the structure of the input does not match the\\nstructure expected by `T`, for example if `T` is a struct type but the input\\ncontains something other than a JSON map\\. It can also fail if the structure\\nis correct but `T`'s implementation of `Deserialize` decides that something\\nis wrong with the data, for example required struct fields are missing from\\nthe JSON map or some number is too big to fit in the expected primitive\\ntype\\.",
+        "predicate": {
+          "$ref": "predicate:documented-input-form"
+        },
+        "value": {
+          "kind": "text",
+          "text": "json-text"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "JSON input into target T, conditional on valid JSON, matching structure, Deserialize acceptance and numeric range",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:deserialize-json-bytes",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Deserialize an instance of type `T` from bytes of JSON text\\.\\n\\n# Example\\n\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n# Errors\\n\\nThis conversion can fail if the structure of the input does not match the\\nstructure expected by `T`, for example if `T` is a struct type but the input\\ncontains something other than a JSON map\\. It can also fail if the structure\\nis correct but `T`'s implementation of `Deserialize` decides that something\\nis wrong with the data, for example required struct fields are missing from\\nthe JSON map or some number is too big to fit in the expected primitive\\ntype\\.",
+        "predicate": {
+          "$ref": "predicate:documented-input-form"
+        },
+        "value": {
+          "kind": "text",
+          "text": "json-text"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "JSON input into target T, conditional on valid JSON, matching structure, Deserialize acceptance and numeric range",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:deserialize-json-io",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Deserialize\\ an\\ instance\\ of\\ type\\ `T`\\ from\\ an\\ I/O\\ stream\\ of\\ JSON\\.\\\n\\\nThe\\ content\\ of\\ the\\ I/O\\ stream\\ is\\ deserialized\\ directly\\ from\\ the\\ stream\\\nwithout\\ being\\ buffered\\ in\\ memory\\ by\\ serde_json\\.\\\n\\\nWhen\\ reading\\ from\\ a\\ source\\ against\\ which\\ short\\ reads\\ are\\ not\\ efficient,\\ such\\\nas\\ a\\ \\[`File`\\],\\ you\\ will\\ want\\ to\\ apply\\ your\\ own\\ buffering\\ because\\ serde_json\\\nwill\\ not\\ buffer\\ the\\ input\\.\\ See\\ \\[`std::io::BufReader`\\]\\.\\\n\\\nIt\\ is\\ expected\\ that\\ the\\ input\\ stream\\ ends\\ after\\ the\\ deserialized\\ object\\.\\\nIf\\ the\\ stream\\ does\\ not\\ end,\\ such\\ as\\ in\\ the\\ case\\ of\\ a\\ persistent\\ socket\\ connection,\\\nthis\\ function\\ will\\ not\\ return\\.\\ It\\ is\\ possible\\ instead\\ to\\ deserialize\\ from\\ a\\ prefix\\ of\\ an\\ input\\\nstream\\ without\\ looking\\ for\\ EOF\\ by\\ managing\\ your\\ own\\ \\[`Deserializer`\\]\\.\\\n\\\nNote\\ that\\ counter\\ to\\ intuition,\\ this\\ function\\ is\\ usually\\ slower\\ than\\\nreading\\ a\\ file\\ completely\\ into\\ memory\\ and\\ then\\ applying\\ \\[`from_str`\\]\\\nor\\ \\[`from_slice`\\]\\ on\\ it\\.\\ See\\ \\[issue\\ \\#160\\]\\.\\\n\\\n\\[`File`\\]:\\ std::fs::File\\\n\\[issue\\ \\#160\\]:\\ https://github\\.com/serde\\-rs/json/issues/160\\n\\n# Example\\n\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n# Errors\\n\\nThis conversion can fail if the structure of the input does not match the\\nstructure expected by `T`, for example if `T` is a struct type but the input\\ncontains something other than a JSON map\\. It can also fail if the structure\\nis correct but `T`'s implementation of `Deserialize` decides that something\\nis wrong with the data, for example required struct fields are missing from\\nthe JSON map or some number is too big to fit in the expected primitive\\ntype\\.",
+        "predicate": {
+          "$ref": "predicate:documented-input-form"
+        },
+        "value": {
+          "kind": "text",
+          "text": "json-io"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "IO stream deserialization into T; EOF, target compatibility, caller buffering for inefficient short reads, and IO/validation errors are explicit source conditions",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:deserialize-io-eof",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Deserialize\\ an\\ instance\\ of\\ type\\ `T`\\ from\\ an\\ I/O\\ stream\\ of\\ JSON\\.\\\n\\\nThe\\ content\\ of\\ the\\ I/O\\ stream\\ is\\ deserialized\\ directly\\ from\\ the\\ stream\\\nwithout\\ being\\ buffered\\ in\\ memory\\ by\\ serde_json\\.\\\n\\\nWhen\\ reading\\ from\\ a\\ source\\ against\\ which\\ short\\ reads\\ are\\ not\\ efficient,\\ such\\\nas\\ a\\ \\[`File`\\],\\ you\\ will\\ want\\ to\\ apply\\ your\\ own\\ buffering\\ because\\ serde_json\\\nwill\\ not\\ buffer\\ the\\ input\\.\\ See\\ \\[`std::io::BufReader`\\]\\.\\\n\\\nIt\\ is\\ expected\\ that\\ the\\ input\\ stream\\ ends\\ after\\ the\\ deserialized\\ object\\.\\\nIf\\ the\\ stream\\ does\\ not\\ end,\\ such\\ as\\ in\\ the\\ case\\ of\\ a\\ persistent\\ socket\\ connection,\\\nthis\\ function\\ will\\ not\\ return\\.\\ It\\ is\\ possible\\ instead\\ to\\ deserialize\\ from\\ a\\ prefix\\ of\\ an\\ input\\\nstream\\ without\\ looking\\ for\\ EOF\\ by\\ managing\\ your\\ own\\ \\[`Deserializer`\\]\\.\\\n\\\nNote\\ that\\ counter\\ to\\ intuition,\\ this\\ function\\ is\\ usually\\ slower\\ than\\\nreading\\ a\\ file\\ completely\\ into\\ memory\\ and\\ then\\ applying\\ \\[`from_str`\\]\\\nor\\ \\[`from_slice`\\]\\ on\\ it\\.\\ See\\ \\[issue\\ \\#160\\]\\.\\\n\\\n\\[`File`\\]:\\ std::fs::File\\\n\\[issue\\ \\#160\\]:\\ https://github\\.com/serde\\-rs/json/issues/160\\n\\n# Example\\n\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n# Errors\\n\\nThis conversion can fail if the structure of the input does not match the\\nstructure expected by `T`, for example if `T` is a struct type but the input\\ncontains something other than a JSON map\\. It can also fail if the structure\\nis correct but `T`'s implementation of `Deserialize` decides that something\\nis wrong with the data, for example required struct fields are missing from\\nthe JSON map or some number is too big to fit in the expected primitive\\ntype\\.",
+        "predicate": {
+          "$ref": "predicate:documented-eof-policy"
+        },
+        "value": {
+          "kind": "text",
+          "text": "requires-eof"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "IO stream deserialization into T; EOF, target compatibility, caller buffering for inefficient short reads, and IO/validation errors are explicit source conditions",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:deserialize-io-buffering",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Deserialize\\ an\\ instance\\ of\\ type\\ `T`\\ from\\ an\\ I/O\\ stream\\ of\\ JSON\\.\\\n\\\nThe\\ content\\ of\\ the\\ I/O\\ stream\\ is\\ deserialized\\ directly\\ from\\ the\\ stream\\\nwithout\\ being\\ buffered\\ in\\ memory\\ by\\ serde_json\\.\\\n\\\nWhen\\ reading\\ from\\ a\\ source\\ against\\ which\\ short\\ reads\\ are\\ not\\ efficient,\\ such\\\nas\\ a\\ \\[`File`\\],\\ you\\ will\\ want\\ to\\ apply\\ your\\ own\\ buffering\\ because\\ serde_json\\\nwill\\ not\\ buffer\\ the\\ input\\.\\ See\\ \\[`std::io::BufReader`\\]\\.\\\n\\\nIt\\ is\\ expected\\ that\\ the\\ input\\ stream\\ ends\\ after\\ the\\ deserialized\\ object\\.\\\nIf\\ the\\ stream\\ does\\ not\\ end,\\ such\\ as\\ in\\ the\\ case\\ of\\ a\\ persistent\\ socket\\ connection,\\\nthis\\ function\\ will\\ not\\ return\\.\\ It\\ is\\ possible\\ instead\\ to\\ deserialize\\ from\\ a\\ prefix\\ of\\ an\\ input\\\nstream\\ without\\ looking\\ for\\ EOF\\ by\\ managing\\ your\\ own\\ \\[`Deserializer`\\]\\.\\\n\\\nNote\\ that\\ counter\\ to\\ intuition,\\ this\\ function\\ is\\ usually\\ slower\\ than\\\nreading\\ a\\ file\\ completely\\ into\\ memory\\ and\\ then\\ applying\\ \\[`from_str`\\]\\\nor\\ \\[`from_slice`\\]\\ on\\ it\\.\\ See\\ \\[issue\\ \\#160\\]\\.\\\n\\\n\\[`File`\\]:\\ std::fs::File\\\n\\[issue\\ \\#160\\]:\\ https://github\\.com/serde\\-rs/json/issues/160\\n\\n# Example\\n\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n# Errors\\n\\nThis conversion can fail if the structure of the input does not match the\\nstructure expected by `T`, for example if `T` is a struct type but the input\\ncontains something other than a JSON map\\. It can also fail if the structure\\nis correct but `T`'s implementation of `Deserialize` decides that something\\nis wrong with the data, for example required struct fields are missing from\\nthe JSON map or some number is too big to fit in the expected primitive\\ntype\\.",
+        "predicate": {
+          "$ref": "predicate:documented-input-buffering"
+        },
+        "value": {
+          "kind": "text",
+          "text": "caller-buffering"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "IO stream deserialization into T; EOF, target compatibility, caller buffering for inefficient short reads, and IO/validation errors are explicit source conditions",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:construct-io-decoder",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Creates\\ a\\ JSON\\ deserializer\\ from\\ an\\ `io::Read`\\.\\\n\\\nReader\\-based\\ deserializers\\ do\\ not\\ support\\ deserializing\\ borrowed\\ types\\\nlike\\ `\\&str`,\\ since\\ the\\ `std::io::Read`\\ trait\\ has\\ no\\ non\\-copying\\ methods\\\n\\-\\-\\ everything\\ it\\ does\\ involves\\ copying\\ bytes\\ out\\ of\\ the\\ data\\ source\\.",
+        "predicate": {
+          "$ref": "predicate:documented-input-form"
+        },
+        "value": {
+          "kind": "text",
+          "text": "json-io"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "decoder construction from IO; deserializing a value and caller framing are separate steps; borrowed targets are unsupported",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:validate-python-input-action",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Validate a Python object against the model\\.\\n\\n[ ]+Args:\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n[ ]+Returns:\\n[ ]+The validated object\\.\\s*",
+        "predicate": {
+          "$ref": "predicate:documented-input-action"
+        },
+        "value": {
+          "kind": "text",
+          "text": "decode-value"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "Python object input against the selected configured model; strictness and dataclass/from_attributes support remain separate",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:validate-json-input-action",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "(?:!!! abstract \"Usage Documentation\"\\n[ ]+\\[JSON Parsing\\]\\([^\\n]+\\)\\n\\n[ ]+)?Validate a JSON string or bytes against the model\\.\\n\\n[ ]+Args:\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n[ ]+Returns:\\n[ ]+The validated object\\.\\s*",
+        "predicate": {
+          "$ref": "predicate:documented-input-action"
+        },
+        "value": {
+          "kind": "text",
+          "text": "decode-value"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "JSON string or bytes input against the selected configured model; strictness, partial parsing and trailing input policies remain separate",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:validate-string-values-action",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Validate object contains string data against the model\\.\\n\\n[ ]+Args:\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n[ ]+Returns:\\n[ ]+The validated object\\.\\s*",
+        "predicate": {
+          "$ref": "predicate:documented-input-action"
+        },
+        "value": {
+          "kind": "text",
+          "text": "decode-value"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "a Python object containing string data; this is not a serialized JSON document",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:deserialize-json-text-action",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Deserialize an instance of type `T` from a string of JSON text\\.\\n\\n# Example\\n\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n# Errors\\n\\nThis conversion can fail if the structure of the input does not match the\\nstructure expected by `T`, for example if `T` is a struct type but the input\\ncontains something other than a JSON map\\. It can also fail if the structure\\nis correct but `T`'s implementation of `Deserialize` decides that something\\nis wrong with the data, for example required struct fields are missing from\\nthe JSON map or some number is too big to fit in the expected primitive\\ntype\\.",
+        "predicate": {
+          "$ref": "predicate:documented-input-action"
+        },
+        "value": {
+          "kind": "text",
+          "text": "decode-value"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "JSON input into target T, conditional on valid JSON, matching structure, Deserialize acceptance and numeric range",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:deserialize-json-bytes-action",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Deserialize an instance of type `T` from bytes of JSON text\\.\\n\\n# Example\\n\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n# Errors\\n\\nThis conversion can fail if the structure of the input does not match the\\nstructure expected by `T`, for example if `T` is a struct type but the input\\ncontains something other than a JSON map\\. It can also fail if the structure\\nis correct but `T`'s implementation of `Deserialize` decides that something\\nis wrong with the data, for example required struct fields are missing from\\nthe JSON map or some number is too big to fit in the expected primitive\\ntype\\.",
+        "predicate": {
+          "$ref": "predicate:documented-input-action"
+        },
+        "value": {
+          "kind": "text",
+          "text": "decode-value"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "JSON input into target T, conditional on valid JSON, matching structure, Deserialize acceptance and numeric range",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "profile": "",
+        "logical_id": "rule:deserialize-json-io-action",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Deserialize\\ an\\ instance\\ of\\ type\\ `T`\\ from\\ an\\ I/O\\ stream\\ of\\ JSON\\.\\\n\\\nThe\\ content\\ of\\ the\\ I/O\\ stream\\ is\\ deserialized\\ directly\\ from\\ the\\ stream\\\nwithout\\ being\\ buffered\\ in\\ memory\\ by\\ serde_json\\.\\\n\\\nWhen\\ reading\\ from\\ a\\ source\\ against\\ which\\ short\\ reads\\ are\\ not\\ efficient,\\ such\\\nas\\ a\\ \\[`File`\\],\\ you\\ will\\ want\\ to\\ apply\\ your\\ own\\ buffering\\ because\\ serde_json\\\nwill\\ not\\ buffer\\ the\\ input\\.\\ See\\ \\[`std::io::BufReader`\\]\\.\\\n\\\nIt\\ is\\ expected\\ that\\ the\\ input\\ stream\\ ends\\ after\\ the\\ deserialized\\ object\\.\\\nIf\\ the\\ stream\\ does\\ not\\ end,\\ such\\ as\\ in\\ the\\ case\\ of\\ a\\ persistent\\ socket\\ connection,\\\nthis\\ function\\ will\\ not\\ return\\.\\ It\\ is\\ possible\\ instead\\ to\\ deserialize\\ from\\ a\\ prefix\\ of\\ an\\ input\\\nstream\\ without\\ looking\\ for\\ EOF\\ by\\ managing\\ your\\ own\\ \\[`Deserializer`\\]\\.\\\n\\\nNote\\ that\\ counter\\ to\\ intuition,\\ this\\ function\\ is\\ usually\\ slower\\ than\\\nreading\\ a\\ file\\ completely\\ into\\ memory\\ and\\ then\\ applying\\ \\[`from_str`\\]\\\nor\\ \\[`from_slice`\\]\\ on\\ it\\.\\ See\\ \\[issue\\ \\#160\\]\\.\\\n\\\n\\[`File`\\]:\\ std::fs::File\\\n\\[issue\\ \\#160\\]:\\ https://github\\.com/serde\\-rs/json/issues/160\\n\\n# Example\\n\\n(?:(?!\\b(?:Except|Unless|Instead|Never)\\b)[\\s\\S])*?\\n\\n# Errors\\n\\nThis conversion can fail if the structure of the input does not match the\\nstructure expected by `T`, for example if `T` is a struct type but the input\\ncontains something other than a JSON map\\. It can also fail if the structure\\nis correct but `T`'s implementation of `Deserialize` decides that something\\nis wrong with the data, for example required struct fields are missing from\\nthe JSON map or some number is too big to fit in the expected primitive\\ntype\\.",
+        "predicate": {
+          "$ref": "predicate:documented-input-action"
+        },
+        "value": {
+          "kind": "text",
+          "text": "decode-value"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "IO stream deserialization into T; EOF, target compatibility, caller buffering for inefficient short reads, and IO/validation errors are explicit source conditions",
+        "phase": "input-contract",
+        "interpretation": "upstream_contract",
+        "description": "Full-field source grammar. This rule qualifies only its named input-contract property. Every other validation, error, mode, ownership and performance requirement remains separate.",
+        "version": "1"
+      }
+    }
+  ]
+}

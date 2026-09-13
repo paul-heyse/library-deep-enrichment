@@ -1,0 +1,25 @@
+{
+  "kind": "library-guides.benchmark-reservation.v1",
+  "benchmark_sha256": "7489ecf78f7498c39f8d3773e95844a9b25946d9508bff4f8ea040554f012712",
+  "expectations_sha256": "cfe872ea69071c0fb65d8d90913deeed0596ea23ea1cdf15d940149b491d0716",
+  "owners": {
+    "arrow-schema": 86,
+    "pydantic": 44,
+    "serde_json": 60
+  },
+  "source_hashes": {
+    "arrow-schema": {
+      "src/schema.rs": "0ce39e9a147c98fff1adc1c93517904592a3d8e33dc542164227d7596dcd13e9",
+      "src/field.rs": "7aea498fb386d32b1aac87d2b08a9aff591c2f7e259d4c12ed5c8667828afae1"
+    },
+    "pydantic": {
+      "fields.py": "6bc66125f23c143e934030fbf9c58c9b5657950bdad3031d4f6132e55bd57be3",
+      "aliases.py": "be1087ca84969d7f8427ec166f9aa3e31c91b2c8065a74d07f3429e06499f6e8"
+    },
+    "serde_json": {
+      "src/value/mod.rs": "6331d59ea362a74b6cd3d302d08114a63a73a384ff56fef737de29edea2f8d91",
+      "src/value/from.rs": "ae4b5f93b27e578fa40e3a8d25d0df2032fe40b680cddb15963e47cbd56db613"
+    }
+  },
+  "timing": "before library abstract-transfer evaluation; only source/declaration collection has run"
+}

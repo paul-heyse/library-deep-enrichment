@@ -1,0 +1,435 @@
+{
+  "run": "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z",
+  "baseline_receipt": "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/preservation.json",
+  "status": "G0 complete; executable projection and admission in progress; G1-G7 open",
+  "baseline_checks": {
+    "pytest": "315 passed, 2 pre-existing transitive NumPy deprecations in 112.31s",
+    "ruff": "passed",
+    "format": "306 files formatted",
+    "pyrefly": "0 diagnostics"
+  },
+  "integration_checks": {
+    "pytest": "454 passed, 2 existing warnings in 209.26s; lifecycle-full-suite.log",
+    "focused_behavior": "107 passed in 26.73s; projection-budget-behavior-suite.log",
+    "source_worker": "pinned stable check/build/Clippy passed",
+    "ruff": "plan scope passed; lifecycle-final-ruff-v2.log",
+    "pyrefly": "0 diagnostics; lifecycle-final-pyrefly-v1.log",
+    "mir_worker": "pinned nightly build/Clippy passed with actual working-directory/provider invocation identity",
+    "python_semantics_worker": "pinned stable build/Clippy passed; exact resolver patch verified",
+    "format": "plan scope passed; lifecycle-final-format-v2.log",
+    "callable_after_ordering_fix": "4 focused controls and both real development archive replays passed",
+    "compilation_regression": "13 passed in 13.37s; compilation-regression-tests.log",
+    "failure_after_history_fix": "13 passed, 2 existing warnings in 12.25s; stage-failure-input-tests-v3.log",
+    "failure_observations": "25 focused controls in 8.27s; observed-failure-tests-v2.log",
+    "failure_fingerprint": "17 passed in 31.28s; observed-failure-fingerprint-tests-v2.log",
+    "call_index_regression": "12 passed in 25.41s; call-index-regression-v2.log",
+    "instances": "31 native compatibility controls in 36.62s; 10 context/call controls in 27.53s; latest 2 original-invocation/portable controls in 7.08s"
+  },
+  "development_fact_admission": {
+    "library": "arrow-schema 58.4.0",
+    "owners": 389,
+    "mapped_sources": 12,
+    "manifest": "a59b72c38c26789917d443c9bed9c8b5b3fafff86d21be33fac91e11951291bb",
+    "receipt": ".cache/library-guides-foundational/20260913T101230Z/development-arrow-admission.json",
+    "behavior_qualified": false
+  },
+  "witness_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/WITNESS_CHECKPOINT.md",
+    "development_manifest": "f0da5092ea958e5d71c4bca4ce892a7d21cc12c0ba56dc3234e9737a6cf15c1e",
+    "rust_invocations": 64,
+    "result_dimension_comparisons": 448,
+    "matched": 448,
+    "inconclusive": 0,
+    "disagreements": 0,
+    "heldout_evaluated": false,
+    "terminal_qualified": false
+  },
+  "python_comprehension_checkpoint": {
+    "tests": "comprehension-tests.log",
+    "broader_tests": "behavior-comprehension-checkpoint-tests.log",
+    "scope": [
+      "private target slots",
+      "containing-scope assignment expressions",
+      "nested iteration/filter",
+      "known private list accumulation",
+      "outer generator iterator acquisition",
+      "live source growth",
+      "sticky exhaustion"
+    ],
+    "remaining": [
+      "set/dict accumulation laws",
+      "generator-expression body binding",
+      "broader async cancellation traces",
+      "Pyrefly reconciliation"
+    ]
+  },
+  "python_typing_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/PYTHON_TYPING_CHECKPOINT.md",
+    "pydantic_development_manifest": "a3c0953b965199cfcfd488ebc6db212896ce8f457cd23417559319feaa9b55b0",
+    "default_clause_limit_exhausted": true,
+    "diagnostic_clause_counts": [
+      80,
+      286
+    ],
+    "dispatch_qualified": false,
+    "heldout_evaluated": false
+  },
+  "budget_sequence_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/BUDGET_SEQUENCE_CHECKPOINT.md",
+    "behavior_coverage": "one summary or explicit interpretation/shared-fixedpoint budget disposition per normalized owner",
+    "remaining": [
+      "extraction/normalization failures",
+      "external interruption"
+    ],
+    "sequence_expansion": "ordered tuple/list snapshots; known non-iterable scalars raise; arbitrary iterators remain unresolved"
+  },
+  "context_witness_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/CONTEXT_WITNESS_CHECKPOINT.md",
+    "manifest": "6e0327973663b8963cb14be2cc54842cd906164f63f0a0ac230d7546b5baa0f6",
+    "pydantic_selected_owners": 44,
+    "type_queries": 132,
+    "source_files": 115,
+    "typed_clause_counts": [
+      80,
+      398
+    ],
+    "invocations": 21,
+    "matched": 13,
+    "inconclusive": 8,
+    "disagreements": 0,
+    "portable_records": 16546,
+    "portable_families": 18,
+    "wire_v1_downgrade_rejected": true,
+    "heldout_evaluated": false,
+    "terminal_qualified": false
+  },
+  "operator_origin_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/OPERATOR_ORIGIN_CHECKPOINT.md",
+    "manifest": "66b44254e9b13b3724b93b28618b4e351cf9fecd74d57ac8e53f7008034dfcb4",
+    "matched": 21,
+    "inconclusive": 0,
+    "disagreements": 0,
+    "negative_mutation_cases": 29,
+    "negative_mutation_matches": 0,
+    "negative_mutation_inconclusive": 29,
+    "portable_records": 16578,
+    "portable_families": 19,
+    "heldout_evaluated": false,
+    "terminal_qualified": false
+  },
+  "callable_population_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/CALLABLE_POPULATION_CHECKPOINT.md",
+    "model": "library-guides.contextual-callable-source-population.v2",
+    "arrow_reserved_recovered": 86,
+    "arrow_compiler_source_matches": 79,
+    "arrow_source_unresolved": 7,
+    "pydantic_reserved_recovered": 44,
+    "pydantic_extra_candidates": 1,
+    "portable_replay": true,
+    "warm_original_candidate_reused": true,
+    "heldout_evaluated": false,
+    "terminal_qualified": false
+  },
+  "development_population_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/DEVELOPMENT_POPULATION_CHECKPOINT.md",
+    "arrow": {
+      "reserved": 86,
+      "summarized": 75,
+      "budget_exhausted": 4,
+      "source_unresolved": 7,
+      "closed_under_model": 14,
+      "conservative": 61,
+      "manifest": "65079b568114959782f3e43a7b7ae3a24cabfb729d0782d4371f9db381018927"
+    },
+    "pydantic": {
+      "reserved": 44,
+      "summarized": 31,
+      "budget_exhausted": 13,
+      "source_unresolved": 0,
+      "closed_under_model": 0,
+      "conservative": 31,
+      "manifest": "a68ac7fa30909cf2ea62d0298fd23b80b137fd76c8b20c886d1faa22e2677e22"
+    },
+    "unchanged_new_producer_calls": 0,
+    "unchanged_new_summary_calls": 0,
+    "heldout_evaluated": false,
+    "terminal_qualified": false,
+    "portable": {
+      "arrow_records": 8772,
+      "arrow_replayed_products": 308,
+      "pydantic_records": 16837,
+      "pydantic_replayed_products": 238,
+      "exact_replay": true
+    }
+  },
+  "context_acquisition": {
+    "corpus": "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/context-development-corpus",
+    "manifest": "2dcf4a2f7d25109b93a41590cc2590eb2009983e12b3cf226b66b5b342681e2d",
+    "mir_owners": 389,
+    "cargo_packages": 13,
+    "cargo_messages": 14,
+    "context_reconciliation_implemented": true,
+    "heldout_transfer_evaluated": false
+  },
+  "compilation_context_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/COMPILATION_CONTEXT_CHECKPOINT.md",
+    "model": "library-guides.observed-compilation-correspondence.v1",
+    "manifest": "34226c2f5dadf8e57592f4c08c08593e4f5d42ffcb98bf5c64cad75e92f6d826",
+    "units": 1,
+    "package_facts": 13,
+    "cargo_messages": 14,
+    "externally_attributed_commands": 2,
+    "candidate_state": "target_and_output_recipe_correspondence",
+    "portable_records": 540,
+    "portable_families": 13,
+    "portable_replay": true,
+    "warm_reused": true,
+    "consumer_availability_qualified": false,
+    "heldout_evaluated": false,
+    "terminal_qualified": false
+  },
+  "heldout_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/HELDOUT_CHECKPOINT.md",
+    "freeze": "pilot/intelligence/foundational/pre_heldout_freeze_v1.json",
+    "manifest": "285b2bc498bb7043d03dfe908c66776b84be8d9b636e7828dbb08bda78ba91e9",
+    "heldout_evaluated": true,
+    "analyzer_changed_for_holdout": false,
+    "reserved": 60,
+    "summaries": 46,
+    "source_unresolved": 14,
+    "closed_under_model": 13,
+    "conservative": 33,
+    "invocations": 13,
+    "matched_dimensions": 32,
+    "inconclusive_dimensions": 0,
+    "disagreements": 0,
+    "portable_records": 23301,
+    "portable_families": 26,
+    "replayed_behavior_products": 184,
+    "new_producer_calls": 0,
+    "new_analysis_calls": 0,
+    "terminal_qualified": false
+  },
+  "current_reserved_denominator": {
+    "total": 190,
+    "summaries": 152,
+    "budget_exhausted": 17,
+    "source_unresolved": 21
+  },
+  "failure_input_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/FAILURE_INPUT_CHECKPOINT.md",
+    "real_worker_recovery_receipt": ".cache/library-guides-foundational/20260913T101230Z/real-worker-recovery-v2.json",
+    "failed_manifest": "352ecbe458bef68b063f0ab98d01fe2d8124edaff6fdc75673d2c2e27cd13822",
+    "resumed_manifest": "aeebef823600e4d67e47173067d766495ecb7c76d2659fa2a58d31fcf7f0304a",
+    "exact_failed_inputs_retained": true,
+    "unrelated_summaries_preserved": 46,
+    "resumed_summaries": 2,
+    "unchanged_reused": true,
+    "terminal_qualified": false
+  },
+  "failure_observation_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/FAILURE_OBSERVATION_CHECKPOINT.md",
+    "real_worker_recovery_receipt": ".cache/library-guides-foundational/20260913T101230Z/real-worker-recovery-v3.json",
+    "failed_manifest": "3bf3f45be05762a21761a6939c7daa69b7a5eb2e9c575de4539a481a9f1369f0",
+    "resumed_manifest": "adbea9e8271388b38b7ac310317d796747556c5430785d5bcfc0080c210ce410",
+    "observed_prefix_retained": true,
+    "partial_semantic_admission": false,
+    "internal_completed_owners": "unobserved",
+    "worker_peak_sampled_tree_rss_bytes": 48119808,
+    "coordinator_process_lifetime_high_water_bytes": 1371320320,
+    "unrelated_summaries_preserved": 46,
+    "resumed_summaries": 2,
+    "unchanged_reused": true,
+    "terminal_qualified": false
+  },
+  "projection_budget_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/PROJECTION_BUDGET_CHECKPOINT.md",
+    "phase": "normalization",
+    "no_fabricated_program": true,
+    "all_exhausted_denominator_retained": true,
+    "attempted_size_counters": true,
+    "portable_restore_and_retry": true,
+    "malformed_input_still_strict": true,
+    "heldout_driven_transfer_change": false,
+    "terminal_qualified": false
+  },
+  "characterization_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/CHARACTERIZATION_CHECKPOINT.md",
+    "model": "library-guides.guarded-dependency-resource-characterization.v1",
+    "profiles": 169,
+    "summarized": 152,
+    "budget_outcomes": 17,
+    "unmapped_reservation": 21,
+    "real_input_dependent_region_owners": 0,
+    "all_archives_replayed": true,
+    "new_unchanged_producer_calls": 0,
+    "new_unchanged_analysis_calls": 0,
+    "terminal_qualified": false
+  },
+  "call_index_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/CALL_INDEX_CHECKPOINT.md",
+    "index_owners": 389,
+    "index_calls": 2179,
+    "roots": 79,
+    "helpers": 27,
+    "expanded_summaries": 93,
+    "expanded_budget_outcomes": 13,
+    "root_summaries_before": 75,
+    "root_summaries_after": 69,
+    "root_budget_outcomes_before": 4,
+    "root_budget_outcomes_after": 10,
+    "original_corpus_preserved": true,
+    "portable_replayed": true,
+    "terminal_qualified": false
+  },
+  "concrete_instance_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/CONCRETE_INSTANCE_CHECKPOINT.md",
+    "schema": "library-guides.mir-instances.v1",
+    "generic_owners": 6,
+    "captured_instances": 4,
+    "independent_concrete_values": [
+      3,
+      5,
+      0,
+      9,
+      0,
+      0
+    ],
+    "exact_substitution_checks": true,
+    "original_invocation_joined": true,
+    "portable_replayed": true,
+    "legacy_schema_unchanged": true,
+    "retained_library_evaluated": true,
+    "terminal_qualified": false,
+    "arrow_experiment": {
+      "all_outcomes": {
+        "budget_exhausted": 13,
+        "summarized": 111
+      },
+      "call_dispositions": {
+        "body_absent_from_finite_catalog": 358,
+        "selected_concrete_instance": 49,
+        "selected_generic_definition": 113,
+        "unresolved_dispatch": 52
+      },
+      "coordinator_process_lifetime_high_water_rss_bytes": 1794560000,
+      "index_owners": 421,
+      "manifest": "e8da4a275eba351c3ca805920a4a9ee2889e9e2434e1a85425c0478526213a0f",
+      "mapped_roots": 79,
+      "portable_records": 9801,
+      "portable_replayed": true,
+      "reserved": 86,
+      "root_outcomes": {
+        "budget_exhausted": 10,
+        "summarized": 69
+      },
+      "seconds": 55.88958079800068,
+      "selected_helpers": 45,
+      "selected_owners": 124,
+      "state": "completed_bounded_instance_experiment",
+      "unchanged_new_producer_calls": 0,
+      "unmapped": 7
+    }
+  },
+  "callable_value_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/CALLABLE_VALUE_CHECKPOINT.md",
+    "schema": "library-guides.mir-callables.v1",
+    "projection": "rust-mir-execution.v3",
+    "transfer": "guarded-executable-transfer.v2",
+    "index": "library-guides.contextual-native-call-index.v3",
+    "selection": "library-guides.bounded-contextual-helper-selection.v3",
+    "independent_matches": 40,
+    "complemented_output_disagreements": 40,
+    "admitted_witness_matches": 10,
+    "admitted_witness_disagreements": 10,
+    "admitted_witness_inconclusive": 0,
+    "portable_replayed": true,
+    "terminal_qualified": false,
+    "checks": {
+      "full_tests": 452,
+      "full_seconds": 198.77,
+      "warnings": 2,
+      "log": "callable-full-suite.log",
+      "ruff": "callable-final-ruff-v2.log",
+      "format": "callable-final-format-v2.log",
+      "pyrefly": "callable-final-pyrefly.log",
+      "native_build": "callable-native-build-v2.log",
+      "native_clippy": "callable-native-clippy-v2.log",
+      "native_tests": "callable-native-tests.log",
+      "native_format": "callable-native-format.log",
+      "post_full_change": "exception docstring only"
+    },
+    "arrow_experiment": {
+      "all_outcomes": {
+        "budget_exhausted": 13,
+        "summarized": 111
+      },
+      "call_dispositions": {
+        "body_absent_from_finite_catalog": 358,
+        "selected_concrete_instance": 49,
+        "selected_generic_definition": 113,
+        "unresolved_dispatch": 52
+      },
+      "coordinator_process_lifetime_high_water_rss_bytes": 1889390592,
+      "index_owners": 421,
+      "manifest": "493da3f5241f1e5447d884eb4eadb756b7989e8230ea1ec1993beec37fda6667",
+      "mapped_roots": 79,
+      "portable_records": 9803,
+      "portable_replayed": true,
+      "reference_dispositions": {
+        "selected_concrete_instance": 49,
+        "unresolved_dispatch": 527
+      },
+      "reserved": 86,
+      "root_outcomes": {
+        "budget_exhausted": 10,
+        "summarized": 69
+      },
+      "seconds": 58.39482689398574,
+      "selected_helpers": 45,
+      "selected_owners": 124,
+      "state": "completed_bounded_callable_experiment",
+      "unchanged_new_producer_calls": 0,
+      "unmapped": 7
+    }
+  },
+  "rust_lifecycle_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/RUST_LIFECYCLE_CHECKPOINT.md",
+    "schema": "library-guides.mir-lifecycle.v1",
+    "projection": "rust-mir-execution.v4",
+    "transfer": "guarded-executable-transfer.v3",
+    "index": "library-guides.contextual-native-call-index.v4",
+    "selection": "library-guides.bounded-contextual-helper-selection.v4",
+    "independent_matches": 40,
+    "complemented_output_disagreements": 40,
+    "portable_replayed": true,
+    "legacy_schemas_unchanged": true,
+    "retained_library_evaluated": false,
+    "terminal_qualified": false,
+    "checks": {
+      "focused_tests": 10,
+      "focused_seconds": 43.9,
+      "focused_log": "lifecycle-tests-v3.log",
+      "full_tests": 454,
+      "full_seconds": 209.26,
+      "full_log": "lifecycle-full-suite.log",
+      "native_build": "lifecycle-native-build-v2.log",
+      "native_clippy": "lifecycle-native-clippy-v2.log",
+      "native_tests": "lifecycle-native-tests.log",
+      "native_format": "lifecycle-native-format.log"
+    }
+  },
+  "instance_demand_checkpoint": {
+    "receipt": "pilot/intelligence/foundational/INSTANCE_DEMAND_CHECKPOINT.md",
+    "max_roots": 128,
+    "generic_denominator_preserved": true,
+    "root_identity_qualified": true,
+    "missing_root_rejected": true,
+    "focused_tests": 11,
+    "focused_seconds": 40.91,
+    "latest_lifecycle_tests": 3,
+    "latest_seconds": 6.36,
+    "full_suite_after_feature": false,
+    "terminal_qualified": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-09-13T03:52:38.822747+00:00",
+  "allocated_directory_bytes": {
+    "/home/paul/smartref/.cache/library-guides-intelligence/pilot-v4/corpus": 39633424384,
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z": 19701444608,
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/installed-delivery-1788": 1617039360,
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/main-task-cohort-7e7b42b41bafcfca": 421171200,
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/main-chain-controls-89cb8d1665f7d4e0": 361398272,
+    "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/direct-native-final-89cb8d1665f7d4e0": 942870528
+  },
+  "nested_directories_not_additive": true,
+  "full_main_analytical_worker_limit_bytes": 8589934592,
+  "worker_default_bytes": 4000000000,
+  "coordinator_rss_limit": null,
+  "coordinator_observation": "Large full-source release publication reached approximately 20 GiB RSS; coordinator admission has row/byte bounds but no independent RSS supervisor.",
+  "final_native_first_seconds": 249.76223782000307,
+  "final_discovery_seconds": 664.8584642610003,
+  "maintenance": "Index delta only; retained generations and original sources preserved; no disk reclamation claimed."
+}

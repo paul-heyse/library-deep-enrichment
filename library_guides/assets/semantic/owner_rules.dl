@@ -1,0 +1,10 @@
+// Positive finite joins only. Missing rows never become semantic negation.
+.decl Source(source:number, family:number, owner:number, profile:number)
+.input Source
+.decl Model(rule:number, family:number)
+.input Model
+.decl Operation(owner:number, profile:number)
+.input Operation
+.decl Candidate(source:number, rule:number, owner:number)
+Candidate(s,r,o) :- Source(s,f,o,p), Model(r,f), Operation(o,p).
+.output Candidate

@@ -1,0 +1,10 @@
+[package]
+name = "library-guides-serde-framing-witness"
+version = "0.0.0"
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+serde = "=1.0.228"
+serde_json = "=1.0.151"

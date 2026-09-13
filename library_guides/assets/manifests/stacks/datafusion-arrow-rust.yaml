@@ -1,0 +1,69 @@
+# Build manifest for the DataFusion + Arrow Rust stack.
+#
+# Content manifests live under docs/library_ref/agent_reference/; this file
+# declares only how the build acquires and renders. The two are joined by
+# stack_id.
+schema_version: library-guides.stack_manifest.v1
+stack_id: datafusion-arrow-rust
+title: DataFusion + Arrow (Rust)
+ecosystem: rust
+
+libraries: [datafusion-rust, arrow-rust, arrow-flight-rust]
+
+documents:
+  - doc_id: df-rust
+    path: docs/library_ref/datafusion_rust.md
+    role: secondary_research
+    deep_dive_prefix: '`# DataFusion Advanced — N) `'
+    scope: '**§0-§40** — full Rust DataFusion engine: install, sessions, Arrow data model, SQL, DataFrame, `Expr`, built-ins, sources, Parquet, object stores, catalogs, `TableProvider`, logical/physical plans, optimizer, joins, UDFs, custom SQL/operators, config, memory, perf, metrics, CLI, testing, errors, architecture, distributed, deploy, security.'
+    chapter_pattern: '^(?:.*?—\s*)?([SC]?\d+)\)\s+'
+  - doc_id: df-planning
+    path: docs/library_ref/datafusion_planning_rust.md
+    role: secondary_research
+    deep_dive_prefix: '`# DataFusion Advanced — N) `'
+    scope: '**§41-§60** (deep-dives §41-§56) — planning lifecycle: phase-boundary map, SQL binder internals, programmatic plan construction, qualifier governance, expression lifecycle, plan lint, planner metadata, optimizer cookbook, physical lowering, scan/join/streaming planning, plan artifacts + serialization/caching/fingerprints.'
+    chapter_pattern: '^(?:.*?—\s*)?([SC]?\d+)\)\s+'
+  - doc_id: df-schemas
+    path: docs/library_ref/datafusion_schemas_rust.md
+    role: secondary_research
+    deep_dive_prefix: '`# DataFusion Advanced — SN) `'
+    scope: '**S1-S15** — schema lifecycle: vocabulary, factories, inference vs explicit + drift, naming/qualifiers, type compatibility/coercion/equality, evolution + migration, extension types + metadata, constraints/FDs, catalog + `information_schema`, `TableProvider` adaptation, plan-schema propagation, nested/partition/virtual columns, view/CTAS stability, testing, security.'
+    chapter_pattern: '^(?:.*?—\s*)?([SC]?\d+)\)\s+'
+  - doc_id: df-calcs
+    path: docs/library_ref/datafusion_calculations_rust.md
+    role: secondary_research
+    deep_dive_prefix: '`# DataFusion Advanced — CN) `'
+    scope: '**C1-C26** (deep-dives C1-C13) — UDF/UDAF/UDWF/UDTF subsystem: placement decision tree, lifecycle, registry/discovery, package architecture, signature/overload, return type/nullability, null/NaN/inf semantics, vectorized Arrow patterns, conditional composition, nested returns, external-lib integration, async UDFs, UDAF state. Catalog-only C14-C26: window frames, table UDFs, optimizer interaction, authz, observability, testing, DSL, domain libs, perf, distributed.'
+    chapter_pattern: '^(?:.*?—\s*)?([SC]?\d+)\)\s+'
+  - doc_id: pa-rust
+    path: docs/library_ref/pyarrow_rust.md
+    role: secondary_research
+    deep_dive_prefix: '`# N) ` *(no "DataFusion Advanced" prefix)*'
+    scope: '**§0-§30** (deep-dives §0-§28) — Arrow crate stack as the PyArrow-feature→Rust-crate map: data model, buffers/zero-copy, arrays/builders/scalars, RecordBatch/streaming, compute kernels, CSV/JSON/IPC/Parquet IO, dataset/object_store, DataFusion bridge, joins/aggs/windows, UDFs, Flight RPC/SQL, ADBC, Python interop/PyCapsule, Polars-vs-DataFusion, ORC/Avro, CUDA/DLPack, Substrait, extension types, perf, errors/testing.'
+    chapter_pattern: '^(?:.*?—\s*)?([SC]?\d+)\)\s+'
+
+version_anchors:
+  - anchor_id: datafusion
+    source: cargo_workspace_dependency
+    key: datafusion
+  - anchor_id: arrow
+    source: cargo_workspace_dependency
+    key: arrow
+  - anchor_id: parquet
+    source: cargo_workspace_dependency
+    key: parquet
+  - anchor_id: object_store
+    source: cargo_workspace_dependency
+    key: object_store
+
+consumers:
+  - path: .claude/skills/datafusion-arrow-rust-guide/SKILL.md
+    blocks: [version-anchors]
+  - path: .claude/skills/datafusion-arrow-rust-guide/REFERENCE.md
+    blocks: [decision-index, decision-briefs, api-families, document-inventory, section-index]
+
+mirror_groups:
+  - authoritative: .claude/skills/datafusion-arrow-rust-guide/SKILL.md
+    mirrors: [.codex/skills/datafusion-arrow-rust-guide/SKILL.md]
+  - authoritative: .claude/skills/datafusion-arrow-rust-guide/REFERENCE.md
+    mirrors: [.codex/skills/datafusion-arrow-rust-guide/REFERENCE.md]

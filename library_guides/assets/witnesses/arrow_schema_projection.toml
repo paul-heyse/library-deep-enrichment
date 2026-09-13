@@ -1,0 +1,12 @@
+[package]
+name = "library-guides-arrow-schema-witness"
+version = "0.0.0"
+edition = "2024"
+
+[workspace]
+
+[dependencies]
+arrow-schema = "=58.4.0"
+
+[profile.dev]
+debug = 0

@@ -1,0 +1,80 @@
+[
+  {
+    "symbol": "serde_json::<impl Deserializer<read::IoRead<R>>>::from_reader",
+    "profile": "serde-json-1.0.151",
+    "passage": "d0d6430eb697df27cb58e98c850e8d54f0a5bda7e8053927ca5b4d221e212268",
+    "text": "Creates a JSON deserializer from an `io::Read`.\n\nReader-based deserializers do not support deserializing borrowed types\nlike `&str`, since the `std::io::Read` trait has no non-copying methods\n-- everything it does involves copying bytes out of the data source.",
+    "expected_rules": [
+      "construct-io-decoder"
+    ],
+    "license": "MIT"
+  },
+  {
+    "symbol": "serde_json::de::from_str",
+    "profile": "serde-json-1.0.151",
+    "passage": "53770255005410c2562c8b7620126daafe7a6d28435dd3aa4a807342eecbe0db",
+    "text": "Deserialize an instance of type `T` from a string of JSON text.\n\n# Example\n\n```\nuse serde::Deserialize;\n\n#[derive(Deserialize, Debug)]\nstruct User {\n    fingerprint: String,\n    location: String,\n}\n\nfn main() {\n    // The type of `j` is `&str`\n    let j = \"\n        {\n            \\\"fingerprint\\\": \\\"0xF9BA143B95FF6D82\\\",\n            \\\"location\\\": \\\"Menlo Park, CA\\\"\n        }\";\n\n    let u: User = serde_json::from_str(j).unwrap();\n    println!(\"{:#?}\", u);\n}\n```\n\n# Errors\n\nThis conversion can fail if the structure of the input does not match the\nstructure expected by `T`, for example if `T` is a struct type but the input\ncontains something other than a JSON map. It can also fail if the structure\nis correct but `T`'s implementation of `Deserialize` decides that something\nis wrong with the data, for example required struct fields are missing from\nthe JSON map or some number is too big to fit in the expected primitive\ntype.",
+    "expected_rules": [
+      "deserialize-json-text",
+      "deserialize-json-text-action"
+    ],
+    "license": "MIT"
+  },
+  {
+    "symbol": "serde_json::de::from_slice",
+    "profile": "serde-json-1.0.151",
+    "passage": "29764f08eb4b768e037f348fb5f1d38961158df1f4576445c1a4bdd2e1ce9cfc",
+    "text": "Deserialize an instance of type `T` from bytes of JSON text.\n\n# Example\n\n```\nuse serde::Deserialize;\n\n#[derive(Deserialize, Debug)]\nstruct User {\n    fingerprint: String,\n    location: String,\n}\n\nfn main() {\n    // The type of `j` is `&[u8]`\n    let j = b\"\n        {\n            \\\"fingerprint\\\": \\\"0xF9BA143B95FF6D82\\\",\n            \\\"location\\\": \\\"Menlo Park, CA\\\"\n        }\";\n\n    let u: User = serde_json::from_slice(j).unwrap();\n    println!(\"{:#?}\", u);\n}\n```\n\n# Errors\n\nThis conversion can fail if the structure of the input does not match the\nstructure expected by `T`, for example if `T` is a struct type but the input\ncontains something other than a JSON map. It can also fail if the structure\nis correct but `T`'s implementation of `Deserialize` decides that something\nis wrong with the data, for example required struct fields are missing from\nthe JSON map or some number is too big to fit in the expected primitive\ntype.",
+    "expected_rules": [
+      "deserialize-json-bytes",
+      "deserialize-json-bytes-action"
+    ],
+    "license": "MIT"
+  },
+  {
+    "symbol": "serde_json::de::from_reader",
+    "profile": "serde-json-1.0.151",
+    "passage": "cae994ca2e29dc3897566daafc9aab3b311fbc94159413cedadc2900cb270b2e",
+    "text": "Deserialize an instance of type `T` from an I/O stream of JSON.\n\nThe content of the I/O stream is deserialized directly from the stream\nwithout being buffered in memory by serde_json.\n\nWhen reading from a source against which short reads are not efficient, such\nas a [`File`], you will want to apply your own buffering because serde_json\nwill not buffer the input. See [`std::io::BufReader`].\n\nIt is expected that the input stream ends after the deserialized object.\nIf the stream does not end, such as in the case of a persistent socket connection,\nthis function will not return. It is possible instead to deserialize from a prefix of an input\nstream without looking for EOF by managing your own [`Deserializer`].\n\nNote that counter to intuition, this function is usually slower than\nreading a file completely into memory and then applying [`from_str`]\nor [`from_slice`] on it. See [issue #160].\n\n[`File`]: std::fs::File\n[issue #160]: https://github.com/serde-rs/json/issues/160\n\n# Example\n\nReading the contents of a file.\n\n```\nuse serde::Deserialize;\n\nuse std::error::Error;\nuse std::fs::File;\nuse std::io::BufReader;\nuse std::path::Path;\n\n#[derive(Deserialize, Debug)]\nstruct User {\n    fingerprint: String,\n    location: String,\n}\n\nfn read_user_from_file<P: AsRef<Path>>(path: P) -> Result<User, Box<dyn Error>> {\n    // Open the file in read-only mode with buffer.\n    let file = File::open(path)?;\n    let reader = BufReader::new(file);\n\n    // Read the JSON contents of the file as an instance of `User`.\n    let u = serde_json::from_reader(reader)?;\n\n    // Return the `User`.\n    Ok(u)\n}\n\nfn main() {\n# }\n# fn fake_main() {\n    let u = read_user_from_file(\"test.json\").unwrap();\n    println!(\"{:#?}\", u);\n}\n```\n\nReading from a persistent socket connection.\n\n```\nuse serde::Deserialize;\n\nuse std::error::Error;\nuse std::io::BufReader;\nuse std::net::{TcpListener, TcpStream};\n\n#[derive(Deserialize, Debug)]\nstruct User {\n    fingerprint: String,\n    location: String,\n}\n\nfn read_user_from_stream(stream: &mut BufReader<TcpStream>) -> Result<User, Box<dyn Error>> {\n    let mut de = serde_json::Deserializer::from_reader(stream);\n    let u = User::deserialize(&mut de)?;\n\n    Ok(u)\n}\n\nfn main() {\n# }\n# fn fake_main() {\n    let listener = TcpListener::bind(\"127.0.0.1:4000\").unwrap();\n\n    for tcp_stream in listener.incoming() {\n        let mut buffered = BufReader::new(tcp_stream.unwrap());\n        println!(\"{:#?}\", read_user_from_stream(&mut buffered));\n    }\n}\n```\n\n# Errors\n\nThis conversion can fail if the structure of the input does not match the\nstructure expected by `T`, for example if `T` is a struct type but the input\ncontains something other than a JSON map. It can also fail if the structure\nis correct but `T`'s implementation of `Deserialize` decides that something\nis wrong with the data, for example required struct fields are missing from\nthe JSON map or some number is too big to fit in the expected primitive\ntype.",
+    "expected_rules": [
+      "deserialize-json-io",
+      "deserialize-io-eof",
+      "deserialize-io-buffering",
+      "deserialize-json-io-action"
+    ],
+    "license": "MIT"
+  },
+  {
+    "symbol": "pydantic.type_adapter.TypeAdapter.validate_python",
+    "profile": "pydantic-2.13.4",
+    "source_sha256": "4f4e60f1641ccc1b1553fdf945d2b1823222ed8ecb222a7aee9177348ed7e061",
+    "text": "Validate a Python object against the model.\n\n        Args:\n            object: The Python object to validate against the model.\n            strict: Whether to strictly check types.\n            extra: Whether to ignore, allow, or forbid extra data during model validation.\n                See the [`extra` configuration value][pydantic.ConfigDict.extra] for details.\n            from_attributes: Whether to extract data from object attributes.\n            context: Additional context to pass to the validator.\n            experimental_allow_partial: **Experimental** whether to enable\n                [partial validation](../concepts/experimental.md#partial-validation), e.g. to process streams.\n                * False / 'off': Default behavior, no partial validation.\n                * True / 'on': Enable partial validation.\n                * 'trailing-strings': Enable partial validation and allow trailing strings in the input.\n            by_alias: Whether to use the field's alias when validating against the provided input data.\n            by_name: Whether to use the field's name when validating against the provided input data.\n\n        !!! note\n            When using `TypeAdapter` with a Pydantic `dataclass`, the use of the `from_attributes`\n            argument is not supported.\n\n        Returns:\n            The validated object.\n        ",
+    "expected_rules": [
+      "validate-python-input",
+      "validate-python-input-action"
+    ],
+    "license": "MIT"
+  },
+  {
+    "symbol": "pydantic.type_adapter.TypeAdapter.validate_json",
+    "profile": "pydantic-2.13.4",
+    "source_sha256": "4f4e60f1641ccc1b1553fdf945d2b1823222ed8ecb222a7aee9177348ed7e061",
+    "text": "!!! abstract \"Usage Documentation\"\n            [JSON Parsing](../concepts/json.md#json-parsing)\n\n        Validate a JSON string or bytes against the model.\n\n        Args:\n            data: The JSON data to validate against the model.\n            strict: Whether to strictly check types.\n            extra: Whether to ignore, allow, or forbid extra data during model validation.\n                See the [`extra` configuration value][pydantic.ConfigDict.extra] for details.\n            context: Additional context to use during validation.\n            experimental_allow_partial: **Experimental** whether to enable\n                [partial validation](../concepts/experimental.md#partial-validation), e.g. to process streams.\n                * False / 'off': Default behavior, no partial validation.\n                * True / 'on': Enable partial validation.\n                * 'trailing-strings': Enable partial validation and allow trailing strings in the input.\n            by_alias: Whether to use the field's alias when validating against the provided input data.\n            by_name: Whether to use the field's name when validating against the provided input data.\n\n        Returns:\n            The validated object.\n        ",
+    "expected_rules": [
+      "validate-json-input",
+      "validate-json-input-action"
+    ],
+    "license": "MIT"
+  },
+  {
+    "symbol": "pydantic.type_adapter.TypeAdapter.validate_strings",
+    "profile": "pydantic-2.13.4",
+    "source_sha256": "4f4e60f1641ccc1b1553fdf945d2b1823222ed8ecb222a7aee9177348ed7e061",
+    "text": "Validate object contains string data against the model.\n\n        Args:\n            obj: The object contains string data to validate.\n            strict: Whether to strictly check types.\n            extra: Whether to ignore, allow, or forbid extra data during model validation.\n                See the [`extra` configuration value][pydantic.ConfigDict.extra] for details.\n            context: Additional context to use during validation.\n            experimental_allow_partial: **Experimental** whether to enable\n                [partial validation](../concepts/experimental.md#partial-validation), e.g. to process streams.\n                * False / 'off': Default behavior, no partial validation.\n                * True / 'on': Enable partial validation.\n                * 'trailing-strings': Enable partial validation and allow trailing strings in the input.\n            by_alias: Whether to use the field's alias when validating against the provided input data.\n            by_name: Whether to use the field's name when validating against the provided input data.\n\n        Returns:\n            The validated object.\n        ",
+    "expected_rules": [
+      "validate-string-values",
+      "validate-string-values-action"
+    ],
+    "license": "MIT"
+  }
+]

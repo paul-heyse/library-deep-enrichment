@@ -1,0 +1,40 @@
+{
+  "artifacts": [
+    {
+      "acquisition_digest": "3e87256722d50e86318b37f2dfaacaa7c11c3f1502f0c26035a892f81e76632b",
+      "acquisition_path": "facts/4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e/acquired.source",
+      "artifact_kind": "declarations",
+      "context": "context:aad8d79659f3925be8c7411fec575812437cedcf4d87653c81d2f0a0a2c92302",
+      "header_path": "facts/4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e/header.json",
+      "id": "facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e",
+      "input_digest": "9f641ce14fb9ae319530bc9e5e6b1c4359ef97db192e04dee2cda28ad1f9919b",
+      "input_path": "facts/4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e/input.json",
+      "job": "arrow-schema-58.4.0",
+      "outcome": "complete",
+      "producer": "85806155676d101141e9b8177e5dd9c733553d876201f1212d50985460322bb6",
+      "profile": "rust-docsrs-54.1-58.4",
+      "receipt_digest": "4db8d25ab5f0654dad38b698dd391d4524cc82e149b2c5cbcd0a10d0ca0a9f18",
+      "receipt_path": "facts/4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e/receipt.json",
+      "schema": "library-guides.declaration.v1",
+      "shards": [
+        {
+          "digest": "e8110fe05884126c45451388f08e9a24dd9428bc832bf5423e401f40a1e77078",
+          "path": "facts/4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e/records.jsonl",
+          "records": 1354
+        }
+      ],
+      "snapshots": []
+    }
+  ],
+  "jobs": [
+    {
+      "artifact": "facts:4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e",
+      "job": "arrow-schema-58.4.0",
+      "outcome": "complete",
+      "profile": "rust-docsrs-54.1-58.4",
+      "reason": "",
+      "request": "4a37cb5517483a47a02d8cd76f2b5ebde001ac9a69ed1e59b745b0047638013e"
+    }
+  ],
+  "state": "complete"
+}

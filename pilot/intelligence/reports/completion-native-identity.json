@@ -1,0 +1,29 @@
+{
+  "freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e",
+  "declarations": 166,
+  "false_deltas_before": 5,
+  "false_deltas_after": 0,
+  "tests": [
+    "test_item_numbering_and_mapping_order_do_not_change_contract_digests",
+    "test_bound_default_mutability_and_public_route_changes_remain_observable"
+  ],
+  "scope": "Finite fixture renumbering and mapping-order control, plus real contract mutations; not blanket Rust semantic equivalence.",
+  "additional_controls": [
+    "associated requirement",
+    "impl polarity",
+    "stability",
+    "unchanged unrelated callable"
+  ],
+  "verification": [
+    {
+      "file": "completion-final-tests.xml",
+      "sha256": "67dddbb3b493a9875d0d52d5eda0c0f726abb03000cebdb8ebe1a4149e3f649e",
+      "passed": 312
+    },
+    {
+      "file": "completion-additional-native-tests.xml",
+      "sha256": "c05158a6a8e4640e39fb593d003df732c7489e275f410ba70fb27b3beb5dad5c",
+      "passed": 5
+    }
+  ]
+}

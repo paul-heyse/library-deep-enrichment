@@ -1,0 +1,14 @@
+schema_version: library-guides.source-patterns.v2
+rules:
+  rust_trait_impl:
+    language: rust
+    pattern: 'impl $TRAIT for $TYPE { $$$BODY }'
+    certainty: syntactic
+  python_registration:
+    language: python
+    pattern: '$REGISTRY.register($$$ARGS)'
+    certainty: syntactic
+  python_context_manager:
+    language: python
+    pattern: 'with $RESOURCE as $NAME: $$$BODY'
+    certainty: syntactic

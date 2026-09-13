@@ -1,0 +1,10 @@
+{
+  ".env.example": "3414698bf1855dcc8d06d77a136feb154b69f5a528b4582d3e53e1fe9e9b43ce",
+  "IMPLEMENTATION_SPEC.md": "58e76f7eedc28313853b5cfcf2cde0e49c05eca393641af372769659b638eb5d",
+  "README.md": "2724e6aac27522ea335c026fda2670526531beea20549b86a875f6c39f915442",
+  "VALIDATION_NOTES.json": "67dcf0cb946297351e23084843bfe3c62cb6a0241b15f114d5543aabec4676b9",
+  "compose.yaml": "9072f4264302eba1d2f78f31f55152ffe5dddb2ff38fb7cb7385071bbfc8fa91",
+  "ctfidf_reference.py": "67b1031c638500b9fd234213fc2b6cb2386cb87cae39757b4624ca86ab52a7e0",
+  "default_config.yaml": "2f2db1d4dc5b28e5ab116d18a8a85dde6438eee3577f927f5bbcb19edf8dd286",
+  "library_guide_source_semantic_evidence_lanes_implementation_plan_v2_2026-09-11.md": "7c3adfda9062f165f7a3b8372ed2dd8881858a3fdbd925e74e233e8c226da5d2"
+}

@@ -1,0 +1,21 @@
+{
+  "retrieval": {
+    "manifest": "33ce4cee46527761046220ff76c0f5f65c294e59dc53a078165b17d9b9946f41",
+    "request": "a267ffa3b3abbe7a88b9c3e1848b3b047240f2c4ecd1f2f3bca60f7569995bf3",
+    "reused": true,
+    "outputs": [],
+    "elapsed_seconds": 0.0
+  },
+  "embeddings": {
+    "manifest": "248fda7765f398af99161341969027c988a307c69bfed8017caf55b3fe5b38a5",
+    "request": "720534c49ceb348239e81eb8d409a6f5dec3f3d8977b464268cc6c6dae9918c7",
+    "reused": false,
+    "outputs": [
+      [
+        "embeddings",
+        1017
+      ]
+    ],
+    "elapsed_seconds": 24.775678513979074
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "source": "/home/paul/smartref/.cache/library-guides-intelligence/composition-pilot/031f49fddb11442baf00089af11c5568-release",
+    "manifest": "066767626ca7f657baed3b8d99c8c6b4bc1ed41cda1482dc39df0c3dafbeaa5a",
+    "export": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-0",
+    "checker": "current",
+    "restored_identically": true
+  },
+  {
+    "source": "/home/paul/smartref/.cache/library-guides-intelligence/composition-pilot/031f49fddb11442baf00089af11c5568-export",
+    "manifest": "c22ab70fb9cbad2874da614039b1bcf1cee03b7edc2bf78556bebb4ec6f7c747",
+    "export": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-1",
+    "checker": "current",
+    "restored_identically": true
+  },
+  {
+    "source": "/home/paul/smartref/.cache/library-guides-intelligence/source-analysis/149afe3c53ff49318f613c1f684c7011-export",
+    "manifest": "acfca5e4778445d30b256dd80f829907f1b390f300b1d16baf1cb18d9ca0e4c0",
+    "export": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-2",
+    "checker": "current",
+    "restored_identically": true
+  },
+  {
+    "source": "/home/paul/smartref/.cache/library-guides-intelligence/pilot-v4/exports/rust-schema",
+    "manifest": "c846a29508e67b5799ee2cf767fce0412cf6ba508faec72616a8d86750b6a299",
+    "export": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-3",
+    "checker": "library-guides.realization.2026-09-12.pre-schema-approval.v1",
+    "restored_identically": true
+  },
+  {
+    "source": "/home/paul/smartref/.cache/library-guides-intelligence/pilot-v4/exports/python-results",
+    "manifest": "93f1462edd7bbf5eeb8d51da30f3dfc434eb5fe638fa889dcd68b90b65a1c5f8",
+    "export": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-4",
+    "checker": "library-guides.realization.2026-09-12.pre-schema-approval.v1",
+    "restored_identically": true
+  },
+  {
+    "source": "/home/paul/smartref/.cache/library-guides-intelligence/decision-publication/1b059090140d4324bd750e9734c4d253",
+    "manifest": "996a321234235f216c7112389098e06796c11ed0697fec2fd7408c73ca232b20",
+    "export": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-5",
+    "checker": "current",
+    "restored_identically": true
+  },
+  {
+    "source": "/home/paul/smartref/.cache/library-guides-intelligence/decision-publication/6d4d8fd4c7af48b69779e45e3c0b4005",
+    "manifest": "034369bb64f4fdb15a0ae7c4c2c17541600d365156e5a11594b30acd6023f65e",
+    "export": "/home/paul/smartref/.cache/library-guides-implementation/completion-20260912T220757Z/baseline-portable-export-6",
+    "checker": "current",
+    "restored_identically": true
+  }
+]

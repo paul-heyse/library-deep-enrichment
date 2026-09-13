@@ -1,0 +1,9 @@
+pub fn identity(value: u32) -> u32 { value }
+pub fn direct(value: u32) -> u32 { identity(value) }
+pub fn discarded(value: u32) -> u32 { let _unused = identity(value); 7 }
+pub fn write(value: &mut u32) { *value = 7; }
+pub fn indirect(f: fn(u32) -> u32, value: u32) -> u32 { f(value) }
+pub fn through_pointer(value: u32) -> u32 { let f: fn(u32) -> u32 = identity; f(value) }
+pub trait Operation { fn apply(&self, value: u32) -> u32; }
+pub fn dynamic(f: &dyn Operation, value: u32) -> u32 { f.apply(value) }
+pub fn generic<T: Operation>(f: &T, value: u32) -> u32 { f.apply(value) }

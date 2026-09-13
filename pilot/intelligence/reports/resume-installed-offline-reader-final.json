@@ -1,0 +1,43 @@
+{
+  "results": [
+    {
+      "name": "composition",
+      "manifest": "066767626ca7f657baed3b8d99c8c6b4bc1ed41cda1482dc39df0c3dafbeaa5a",
+      "export_reimport": true,
+      "guide_sha256": [
+        "bf0757dd7a64d0d479fa70c7fcc58e537ff6c69ce8718128998a7e1f8384fc30"
+      ]
+    },
+    {
+      "name": "source-analysis",
+      "manifest": "acfca5e4778445d30b256dd80f829907f1b390f300b1d16baf1cb18d9ca0e4c0",
+      "export_reimport": true,
+      "guide_sha256": []
+    },
+    {
+      "name": "release-integer-add-with-counterfactuals",
+      "manifest": "996a321234235f216c7112389098e06796c11ed0697fec2fd7408c73ca232b20",
+      "export_reimport": true,
+      "guide_sha256": [
+        "8f96d93bbdead647310f768851a89fe7eb71a368164e147772631c3fcb798b26"
+      ]
+    },
+    {
+      "name": "release-integer-add-with-preferences",
+      "manifest": "034369bb64f4fdb15a0ae7c4c2c17541600d365156e5a11594b30acd6023f65e",
+      "export_reimport": true,
+      "guide_sha256": [
+        "bcbdb0dd3becd1a2f2203c44ddfc2e42b617e8f23f2f7348167673d465cd07bc"
+      ]
+    }
+  ],
+  "package": "/home/paul/smartref/.cache/library-guides-implementation/resume-20260912T134154Z/installed-reader/lib/python3.14/site-packages/library_guides/__init__.py",
+  "network": "isolated namespace",
+  "gpu_service": "unavailable",
+  "original_sources": "unmounted",
+  "passed": true,
+  "wheel": ".cache/library-guides-implementation/resume-20260912T134154Z/wheel-final/smartref_library_guides-0.2.0-py3-none-any.whl",
+  "wheel_sha256": "357f0befdcba3308e2b328de9d94b445c7b6a30c98dcf14ca347214bde2dd3d4",
+  "qualification": "Fresh isolated reader using the 96 exact previously installed tooling distributions; full newly declared dependency installation is not qualified",
+  "command": ".cache/library-guides-implementation/resume-20260912T134154Z/installed-gate-final/command.json"
+}

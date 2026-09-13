@@ -1,0 +1,12 @@
+{
+  "manifest": "1d78981ef50dd7cd9b3c0e8b5b658d86ca9aac5c999649de23cfe3aabfac4e3f",
+  "request": "949ecebcb227bbe1b43abdc9d3e876a1d6d53e6d5f5ec2408c9d3e56adb09c4c",
+  "reused": false,
+  "outputs": [
+    [
+      "descriptors",
+      4461
+    ]
+  ],
+  "elapsed_seconds": 8.476052502024686
+}

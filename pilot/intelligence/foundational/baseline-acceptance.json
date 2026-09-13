@@ -1,0 +1,29 @@
+{
+  "kind": "library-guides.foundational-baseline-acceptance.v1",
+  "gate": "G0",
+  "state": "complete",
+  "scope": "baseline, denominator and expectation reservation only",
+  "files": {
+    "pilot/intelligence/foundational/benchmark.json": "7489ecf78f7498c39f8d3773e95844a9b25946d9508bff4f8ea040554f012712",
+    "pilot/intelligence/foundational/expectations.json": "cfe872ea69071c0fb65d8d90913deeed0596ea23ea1cdf15d940149b491d0716",
+    "pilot/intelligence/foundational/reservation.json": "64231afd5bb2669ab24d504f99a3d32389c74a786302c9d695b072a57689a904",
+    "pilot/intelligence/foundational/environment.json": "da3b5a3144f2a100ccf6198f3d75bd9da0bb7e6069f46b53323e119a60c1c525",
+    "pilot/intelligence/foundational/CONSTRUCT_COVERAGE.md": "f155aa22b3bfcaea871d3a9c87c3200e5d499b3ea62ad8775348b693318c1ed0",
+    "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/preservation.json": "070b9978fa8a7ca8973a2ef30feb55787b2b170b77c61858fad2b42724b1d273",
+    "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/baseline-pytest.log": "3923d8dd36fa7ce10b9928a27bf9352973a9616a165592b6d2b44b498ac17d50",
+    "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/baseline-ruff.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/baseline-format.log": "00f6e83b072d2efcb2491fdbc9aa0ffd790fef417522338dc20689ed0dfdeb03",
+    "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/baseline-pyrefly.log": "1ac7f98a4fb317bfde6a7125655e410ee262e6c459b2b4d19cb229dc86901e0c",
+    "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/population-cargo.json": "b73ecd352ec7df658c6a135d266b7f367ef402f0959772527e55c1c596aa5001",
+    "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/rust-population/Cargo.lock": "235e3b0e70eb73b4426552bc7568ed3bc2fadbd272dfe6043caa3b1f808537df"
+  },
+  "population": {
+    "arrow-schema": 86,
+    "pydantic": 44,
+    "serde_json": 60
+  },
+  "source_body_evaluation_started": false,
+  "baseline_tests": 315,
+  "behavior_gates": "not_accepted",
+  "preserved_manifest": "f61eabbd4fe17866ca3bd5c6a3d7b1d8875e3f53ee32b204a693ce4292fa9913"
+}

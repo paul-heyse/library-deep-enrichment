@@ -1,0 +1,3916 @@
+schema_version: library-guides.knowledge.v2
+collection_id: columnar-semantic-pilot
+sources:
+- id: arrow-arith-58.4.0
+  path: sources/95ea2bad4092c75753b875466f827c39a9959140fbe35d81156728bf44f69f73.json
+  digest: 95ea2bad4092c75753b875466f827c39a9959140fbe35d81156728bf44f69f73
+  locator: https://docs.rs/arrow-arith/58.4.0
+  profile: rust-docsrs-54.1-58.4
+  origin: compiler_api
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Recovered docs.rs cache; typed schema and crate version validated
+- id: datafusion-54.1.0
+  path: sources/59530b068edf7469b2a4a133035fad1f0199c0f3729f4ab963478f8663fc61da.json
+  digest: 59530b068edf7469b2a4a133035fad1f0199c0f3729f4ab963478f8663fc61da
+  locator: https://docs.rs/datafusion/54.1.0
+  profile: rust-docsrs-54.1-58.4
+  origin: compiler_api
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Recovered docs.rs cache; typed schema and crate version validated
+- id: datafusion-static
+  path: sources/8a271ca3e6ea58c863944c7df344a3f185e13aa1423ed59bf78764cb31a51002.json
+  digest: 8a271ca3e6ea58c863944c7df344a3f185e13aa1423ed59bf78764cb31a51002
+  locator: https://datafusion.apache.org/python/
+  profile: python-installed-54.0-25.0.1
+  origin: static_api
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: local-import
+- id: pyarrow-native
+  path: sources/b43a5186b57978dadb777e311deef947724a5d70034bda562598c171c955f3b1.json
+  digest: b43a5186b57978dadb777e311deef947724a5d70034bda562598c171c955f3b1
+  locator: https://arrow.apache.org/docs/python/
+  profile: python-installed-54.0-25.0.1
+  origin: runtime_api
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: local-import
+- id: pyarrow.compute-native
+  path: sources/29b836b91b301322ea0bc7755687f482c4f59cdf221bd022362b89bdca9bbe30.json
+  digest: 29b836b91b301322ea0bc7755687f482c4f59cdf221bd022362b89bdca9bbe30
+  locator: https://arrow.apache.org/docs/python/
+  profile: python-installed-54.0-25.0.1
+  origin: runtime_api
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: local-import
+- id: pyo3-arrow-0.17.0
+  path: sources/06df0e45945e667f4d7d5509205ec1919ed6f12921791ecb577b6d49a0172701.json
+  digest: 06df0e45945e667f4d7d5509205ec1919ed6f12921791ecb577b6d49a0172701
+  locator: https://docs.rs/pyo3-arrow/0.17.0
+  profile: rust-docsrs-54.1-58.4
+  origin: compiler_api
+  attribution: Upstream crate authors; Apache-2.0 or MIT; inspect crate metadata
+  acquisition: HTTPS with URL-bound SHA-256 cache receipt
+- id: serde_json-1.0.151
+  path: sources/743fcb11025ddb14c3f109eb0f90904fa6dc622a1e3cec687dfa447d2d9f2c11.json
+  digest: 743fcb11025ddb14c3f109eb0f90904fa6dc622a1e3cec687dfa447d2d9f2c11
+  locator: https://docs.rs/serde_json/1.0.151
+  profile: serde-json-1.0.151
+  origin: compiler_api
+  attribution: Upstream crate authors; Apache-2.0 or MIT; inspect crate metadata
+  acquisition: HTTPS with URL-bound SHA-256 cache receipt
+- id: pydantic-static
+  path: sources/d6597af72cbc451fdd25aa28a362b7c7918c069a10a0a470bf433207518152bf.json
+  digest: d6597af72cbc451fdd25aa28a362b7c7918c069a10a0a470bf433207518152bf
+  locator: https://docs.pydantic.dev/2.13/
+  profile: pydantic-2.13.4
+  origin: static_api
+  attribution: Pydantic authors; MIT
+  acquisition: local-import
+- id: interop-execution
+  path: sources/interop-observation.json
+  digest: 7db4174baccdbf591ef5b871043290f6c0fdc1f2c04acf3ff75b22e5cfc97f17
+  locator: examples/interop_example.py
+  profile: interop-pilot
+  origin: behavior
+  attribution: Local pilot execution, exact scripts and extension recorded
+  acquisition: library-guides bounded subprocess execution
+- id: datafusion-catalog-54.1.0
+  path: sources/4b07ad0c77da4169fa8bc6cc2a134788e1fd27c2673a2b1a9410d13c3b764f76.json
+  digest: 4b07ad0c77da4169fa8bc6cc2a134788e1fd27c2673a2b1a9410d13c3b764f76
+  locator: https://docs.rs/datafusion-catalog/54.1.0
+  profile: rust-docsrs-54.1-58.4
+  origin: compiler_api
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Exact successful intake receipt 4b07ad0c77da4169fa8bc6cc2a134788e1fd27c2673a2b1a9410d13c3b764f76
+- id: datafusion-expr-54.1.0
+  path: sources/340b26417aab51d362e3307383b557c8de33e4d060ce6ee6d14ce9b33f3aa685.json
+  digest: 340b26417aab51d362e3307383b557c8de33e4d060ce6ee6d14ce9b33f3aa685
+  locator: https://docs.rs/datafusion-expr/54.1.0
+  profile: rust-docsrs-54.1-58.4
+  origin: compiler_api
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Exact successful intake receipt 340b26417aab51d362e3307383b557c8de33e4d060ce6ee6d14ce9b33f3aa685
+- id: pyarrow.dataset-native
+  path: sources/3369843f13fe140db9a6ff38854af3e21a79e169a5a253c288594811957c1fb8.json
+  digest: 3369843f13fe140db9a6ff38854af3e21a79e169a5a253c288594811957c1fb8
+  locator: https://arrow.apache.org/docs/python/
+  profile: python-installed-54.0-25.0.1
+  origin: runtime_api
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Exact successful intake receipt 3369843f13fe140db9a6ff38854af3e21a79e169a5a253c288594811957c1fb8
+- id: pyarrow.parquet-native
+  path: sources/ad9a89b6178b884706b3eabf1007544190ccfd855a492fad6a927b90ae81e1af.json
+  digest: ad9a89b6178b884706b3eabf1007544190ccfd855a492fad6a927b90ae81e1af
+  locator: https://arrow.apache.org/docs/python/
+  profile: python-installed-54.0-25.0.1
+  origin: runtime_api
+  attribution: Apache Software Foundation; Apache-2.0
+  acquisition: Exact successful intake receipt ad9a89b6178b884706b3eabf1007544190ccfd855a492fad6a927b90ae81e1af
+- id: relational-execution
+  path: sources/relational-observation.json
+  digest: a06616399348f3c9b3c45d67f56e7115bab5d7ec578c635dfcb856135ca94c6a
+  locator: examples/rust/src/main.rs
+  profile: rust-docsrs-54.1-58.4
+  origin: behavior
+  attribution: Local DataFusion 54.1 SQL fixture with exact source and executable
+    hashes
+  acquisition: bounded executable witness
+evidence:
+- id: evidence:arrow-arith-58.4.0:100:api
+  source: arrow-arith-58.4.0
+  selector: json:/index/100
+  digest: 0e979073e5b106e218e7bbe4ab590dfc764150087544cc97499ece38f11b5e4c
+  subject: arrow_arith::numeric::add
+  kind: api
+- id: evidence:arrow-arith-58.4.0:100:docs
+  source: arrow-arith-58.4.0
+  selector: json:/index/100/docs
+  digest: 94ef0d85202da210b76145adf3809541a772d3ab46a2afa5b2fb6131da5e65cc
+  subject: arrow_arith::numeric::add
+  kind: statement
+- id: evidence:datafusion-54.1.0:124:api
+  source: datafusion-54.1.0
+  selector: json:/index/124
+  digest: 5a778135cfbdd497dd32d4fe67af8b3ef55bafebb001f8dbe3efd29f4eed8f0b
+  subject: datafusion::dataframe::DataFrame::execute_stream
+  kind: api
+- id: evidence:datafusion-54.1.0:124:docs
+  source: datafusion-54.1.0
+  selector: json:/index/124/docs
+  digest: 3f8eab06210b1bd75ebce06d70360aa643240b2f3c8020af3a5568b039d1b82c
+  subject: datafusion::dataframe::DataFrame::execute_stream
+  kind: statement
+- id: evidence:datafusion-54.1.0:76:api
+  source: datafusion-54.1.0
+  selector: json:/index/76
+  digest: 5c451857b09abf526bb9432782ea3d8983f809928a84dc6b4d8e3f21d78d9d54
+  subject: datafusion::dataframe::DataFrame::select
+  kind: api
+- id: evidence:datafusion-54.1.0:76:docs
+  source: datafusion-54.1.0
+  selector: json:/index/76/docs
+  digest: 8571c5290bf3ee3bcd2c1656d935d62caf0c4f6588839be83cae0e4d1fee20e9
+  subject: datafusion::dataframe::DataFrame::select
+  kind: statement
+- id: evidence:datafusion-54.1.0:80:api
+  source: datafusion-54.1.0
+  selector: json:/index/80
+  digest: 6ff7a496ce21b63da3c18566e97d9b64f04b9c0761c31be4247d543f69506eb2
+  subject: datafusion::dataframe::DataFrame::collect
+  kind: api
+- id: evidence:datafusion-54.1.0:80:docs
+  source: datafusion-54.1.0
+  selector: json:/index/80/docs
+  digest: 09286be639a0180e002292417f21316c0e519a3a6784971c7ae431baffda459b
+  subject: datafusion::dataframe::DataFrame::collect
+  kind: statement
+- id: evidence:datafusion-static:datafusion.DataFrame.collect
+  source: datafusion-static
+  selector: json:/records/datafusion.DataFrame.collect
+  digest: c3c55c2b9090616c8a95e081e39d00d94bfc58a2aa82faa144d7228b3c6facc5
+  subject: datafusion.DataFrame.collect
+  kind: api
+- id: evidence:datafusion-static:datafusion.DataFrame.collect:docs
+  source: datafusion-static
+  selector: json:/records/datafusion.DataFrame.collect/docs
+  digest: 30ec9fc5efcdf895b786dfc6ffec86611362abb1ba6356fb2cb34b10d6bd208a
+  subject: datafusion.DataFrame.collect
+  kind: statement
+- id: evidence:datafusion-static:datafusion.DataFrame.execute_stream
+  source: datafusion-static
+  selector: json:/records/datafusion.DataFrame.execute_stream
+  digest: 812827e0aaea64991bfd7bfd7249f7b34492aeee8bd90d65c8dece0e7120fe5e
+  subject: datafusion.DataFrame.execute_stream
+  kind: api
+- id: evidence:datafusion-static:datafusion.DataFrame.execute_stream:docs
+  source: datafusion-static
+  selector: json:/records/datafusion.DataFrame.execute_stream/docs
+  digest: 8b7c2d9fd5cba532d5dd2f90b3d2cd66d543a1fd874610f10adb1a058644a757
+  subject: datafusion.DataFrame.execute_stream
+  kind: statement
+- id: evidence:datafusion-static:datafusion.DataFrame.select
+  source: datafusion-static
+  selector: json:/records/datafusion.DataFrame.select
+  digest: 6214fac6744ff5f87f80ecf438b5a83a7d5b5e37c22fe3ceadf0f5f6494bc98f
+  subject: datafusion.DataFrame.select
+  kind: api
+- id: evidence:datafusion-static:datafusion.DataFrame.select:docs
+  source: datafusion-static
+  selector: json:/records/datafusion.DataFrame.select/docs
+  digest: bab19b8a342d2598d91ea0b9817179ed1788b5826dc41ccb64789928a3e0574d
+  subject: datafusion.DataFrame.select
+  kind: statement
+- id: evidence:datafusion-static:datafusion.SessionContext.from_arrow
+  source: datafusion-static
+  selector: json:/records/datafusion.SessionContext.from_arrow
+  digest: 81a8e2fdba194a8b0f1cc2d8c6f6d27e2916397e934546eb1fafbba8417847e5
+  subject: datafusion.SessionContext.from_arrow
+  kind: api
+- id: evidence:datafusion-static:datafusion.SessionContext.from_arrow:docs
+  source: datafusion-static
+  selector: json:/records/datafusion.SessionContext.from_arrow/docs
+  digest: b23ec3e0ac97d0c4058f0b6a32da0adf20598ab0f92ba74a2e1a905df0146dd5
+  subject: datafusion.SessionContext.from_arrow
+  kind: statement
+- id: evidence:pyarrow-native:pyarrow.RecordBatchReader.read_all
+  source: pyarrow-native
+  selector: json:/records/pyarrow.RecordBatchReader.read_all
+  digest: 743a3851401418030003bb816409f429a3af3ca5493291f570d8397de4f09731
+  subject: pyarrow.RecordBatchReader.read_all
+  kind: api
+- id: evidence:pyarrow-native:pyarrow.RecordBatchReader.read_all:docs
+  source: pyarrow-native
+  selector: json:/records/pyarrow.RecordBatchReader.read_all/docs
+  digest: 3bfb226d0934799ccff4314fb44a64e06accd6d61bcf3f288db3840c0c665e54
+  subject: pyarrow.RecordBatchReader.read_all
+  kind: statement
+- id: evidence:pyarrow-native:pyarrow.Table.to_reader
+  source: pyarrow-native
+  selector: json:/records/pyarrow.Table.to_reader
+  digest: 980bbc272fd541c5d287de249015c4761540cdc5654875e0572e1a42a3e54a36
+  subject: pyarrow.Table.to_reader
+  kind: api
+- id: evidence:pyarrow-native:pyarrow.Table.to_reader:docs
+  source: pyarrow-native
+  selector: json:/records/pyarrow.Table.to_reader/docs
+  digest: fe31fd9e5c02fa05eafdb9ae55d424fa6d3c70be73503693497e904738bbe5c0
+  subject: pyarrow.Table.to_reader
+  kind: statement
+- id: evidence:pyarrow.compute-native:pyarrow.compute.add
+  source: pyarrow.compute-native
+  selector: json:/records/pyarrow.compute.add
+  digest: 564a844b6331b3b826cf4c83f8950c9b3367a6300be9a358fde57d4d0b59d4c6
+  subject: pyarrow.compute.add
+  kind: api
+- id: evidence:pyarrow.compute-native:pyarrow.compute.add:docs
+  source: pyarrow.compute-native
+  selector: json:/records/pyarrow.compute.add/docs
+  digest: 4e123a12d82716fd91c3284e7bc76a97700dab85daa580b070d357067691f4c0
+  subject: pyarrow.compute.add
+  kind: statement
+- id: evidence:pyo3-arrow-0.17.0:1284:api
+  source: pyo3-arrow-0.17.0
+  selector: json:/index/1284
+  digest: 3a07c0e7e7f6ba2ab1863a4937ea9ab38fd8742c91e9230a9e11e926aa76a182
+  subject: pyo3_arrow::record_batch_reader::PyRecordBatchReader::from_arrow_pycapsule
+  kind: api
+- id: evidence:pyo3-arrow-0.17.0:1284:docs
+  source: pyo3-arrow-0.17.0
+  selector: json:/index/1284/docs
+  digest: 5d010c91a9877bf898027173ba196ba81c87bfc8f460088a4bdb1c5f4ee40658
+  subject: pyo3_arrow::record_batch_reader::PyRecordBatchReader::from_arrow_pycapsule
+  kind: statement
+- id: evidence:pyo3-arrow-0.17.0:1291:api
+  source: pyo3-arrow-0.17.0
+  selector: json:/index/1291
+  digest: b9337480d122dc5a1959821ed415448f97e9b19dfe2fbccf2c3ac2e7b8222d28
+  subject: pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow
+  kind: api
+- id: evidence:pyo3-arrow-0.17.0:1291:docs
+  source: pyo3-arrow-0.17.0
+  selector: json:/index/1291/docs
+  digest: 0e9cc3a711a6fea464057dd69ad44e52b73d8575788fa5edcd8b910c0ee9e1ce
+  subject: pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow
+  kind: statement
+- id: evidence:serde_json-1.0.151:145:api
+  source: serde_json-1.0.151
+  selector: json:/index/145
+  digest: 62321d53c6ec53a642740785c70230ce959b4deefe7c03ee00111b46fb25f9c8
+  subject: serde_json::de::from_str
+  kind: api
+- id: evidence:serde_json-1.0.151:145:docs
+  source: serde_json-1.0.151
+  selector: json:/index/145/docs
+  digest: 3ac8dfd59f16b027ac430661d6aa9a01b6d28ae1321b89296aa9ef6c3dc257e4
+  subject: serde_json::de::from_str
+  kind: statement
+- id: evidence:serde_json-1.0.151:147:api
+  source: serde_json-1.0.151
+  selector: json:/index/147
+  digest: eff2b80879287a154bb5e959a3fc28ac96a925d30c5b700b33972b5449abe545
+  subject: serde_json::de::from_reader
+  kind: api
+- id: evidence:serde_json-1.0.151:147:docs
+  source: serde_json-1.0.151
+  selector: json:/index/147/docs
+  digest: 9f919663976b2749633142c8751b1ca60fbc210ca88cc10b8a33dfc44bba0485
+  subject: serde_json::de::from_reader
+  kind: statement
+- id: evidence:pydantic-static:pydantic.BaseModel.model_validate
+  source: pydantic-static
+  selector: json:/records/pydantic.BaseModel.model_validate
+  digest: 6390ac3ece457c81368e222a3d7f7209d22db0f33f623852d5c040105ba635e5
+  subject: pydantic.BaseModel.model_validate
+  kind: api
+- id: evidence:pydantic-static:pydantic.BaseModel.model_validate:docs
+  source: pydantic-static
+  selector: json:/records/pydantic.BaseModel.model_validate/docs
+  digest: ec644717664c0d665e7c6250567c3d2ed89c4d74e78d7ced798378cc53ce046b
+  subject: pydantic.BaseModel.model_validate
+  kind: statement
+- id: evidence:pydantic-static:pydantic.BaseModel.model_validate_json
+  source: pydantic-static
+  selector: json:/records/pydantic.BaseModel.model_validate_json
+  digest: 2af1f13e0fea0862b778804b7e40856d478082a3006b8b5d3cc2c086990999c0
+  subject: pydantic.BaseModel.model_validate_json
+  kind: api
+- id: evidence:pydantic-static:pydantic.BaseModel.model_validate_json:docs
+  source: pydantic-static
+  selector: json:/records/pydantic.BaseModel.model_validate_json/docs
+  digest: 21bc0e327af5c307e3636ab93ddf4adbc40694522981515d9a5789bff09cfaea
+  subject: pydantic.BaseModel.model_validate_json
+  kind: statement
+- id: evidence:interop-observation
+  source: interop-execution
+  selector: json:/observations
+  digest: 10ca23a60af0bd1cdfb9e3cb55cfbec39c4b72b38130042cf24cae26b67a11d9
+  subject: nullable-int64 C Stream round trip
+  kind: behavior
+- id: evidence:datafusion-54.1.0:119:api
+  source: datafusion-54.1.0
+  selector: json:/index/119
+  digest: 77981a42b948a5cb115a9576da13f9f7f851eb3ba2581705b5282ce0b83eaef9
+  subject: datafusion::dataframe::DataFrame::join
+  kind: api
+- id: evidence:datafusion-54.1.0:119:docs
+  source: datafusion-54.1.0
+  selector: json:/index/119/docs
+  digest: cbc42cce80144f48e7d2bef3a27bc7eed3d164ef0e1a037b60556f9ea8b1c372
+  subject: datafusion::dataframe::DataFrame::join
+  kind: statement
+- id: evidence:datafusion-catalog-54.1.0:692:api
+  source: datafusion-catalog-54.1.0
+  selector: json:/index/692
+  digest: b5bc38fb4baaff67ecf9e8d593f65d54232d8418c601156c4583940bc611e09f
+  subject: datafusion_catalog::table::TableProvider::scan
+  kind: api
+- id: evidence:datafusion-catalog-54.1.0:692:docs
+  source: datafusion-catalog-54.1.0
+  selector: json:/index/692/docs
+  digest: 0eba884a9a72e6e49eec52b4ed569279bbb7a51752dc350ecfb2069210abe116
+  subject: datafusion_catalog::table::TableProvider::scan
+  kind: statement
+- id: evidence:datafusion-expr-54.1.0:6475:api
+  source: datafusion-expr-54.1.0
+  selector: json:/index/6475
+  digest: f448a5278a9af5d5a6cbfd9d7721a6fbebb674051c5c0e0b619ff29f1b264f91
+  subject: datafusion_expr::async_udf::AsyncScalarUDFImpl
+  kind: api
+- id: evidence:datafusion-expr-54.1.0:6475:docs
+  source: datafusion-expr-54.1.0
+  selector: json:/index/6475/docs
+  digest: 9735c75814f60dca55fe6f34bac637e4f098df3a78d73d16b1f30121d41d34d2
+  subject: datafusion_expr::async_udf::AsyncScalarUDFImpl
+  kind: statement
+- id: evidence:datafusion-54.1.0:77:api
+  source: datafusion-54.1.0
+  selector: json:/index/77
+  digest: 9483f74665e37e5e4e4f5a9cfcb62362a87c94767daf0d2135dd428fbf8f84ff
+  subject: datafusion::dataframe::DataFrame::aggregate
+  kind: api
+- id: evidence:datafusion-54.1.0:77:docs
+  source: datafusion-54.1.0
+  selector: json:/index/77/docs
+  digest: 572251a9bb9119902d3bbcb45eafda08436a5f068c9f00902ac79bb98bbcac42
+  subject: datafusion::dataframe::DataFrame::aggregate
+  kind: statement
+- id: evidence:datafusion-54.1.0:107:api
+  source: datafusion-54.1.0
+  selector: json:/index/107
+  digest: d1e1d35cd8aab1493f5020fe0989c67b611f9140ef3e88863b9fc19dcf2a84a9
+  subject: datafusion::dataframe::DataFrame::window
+  kind: api
+- id: evidence:datafusion-54.1.0:107:docs
+  source: datafusion-54.1.0
+  selector: json:/index/107/docs
+  digest: 260be2f67e045ebc3653a383b130106b8b49f27f43d047927a5309cca862ca1a
+  subject: datafusion::dataframe::DataFrame::window
+  kind: statement
+- id: evidence:datafusion-expr-54.1.0:557:api
+  source: datafusion-expr-54.1.0
+  selector: json:/index/557
+  digest: 0e84c577164e22d6c8b2f44f6a3a23647955b932b545eb1f9a05bf09e18837f6
+  subject: datafusion_expr::udaf::AggregateUDFImpl
+  kind: api
+- id: evidence:datafusion-expr-54.1.0:557:docs
+  source: datafusion-expr-54.1.0
+  selector: json:/index/557/docs
+  digest: 84be67c2e44a78fe43c40c500fc07d34755bbb9dff37e03c392037fae9711b39
+  subject: datafusion_expr::udaf::AggregateUDFImpl
+  kind: statement
+- id: evidence:datafusion-expr-54.1.0:840:api
+  source: datafusion-expr-54.1.0
+  selector: json:/index/840
+  digest: d60c69d71dfc2390cb91bdfdfa6b671ce2e52d5a26a4d23633cf5d5382adffcb
+  subject: datafusion_expr::udf::ScalarUDFImpl
+  kind: api
+- id: evidence:datafusion-expr-54.1.0:840:docs
+  source: datafusion-expr-54.1.0
+  selector: json:/index/840/docs
+  digest: b52d282ef29735aef91ef8bf7f71f141993b27ff88d8d845e4f2711ea58f2701
+  subject: datafusion_expr::udf::ScalarUDFImpl
+  kind: statement
+- id: evidence:pyarrow.dataset-native:pyarrow.dataset.Dataset.scanner
+  source: pyarrow.dataset-native
+  selector: json:/records/pyarrow.dataset.Dataset.scanner
+  digest: 20765426690e2a937271361e46fba225b672ad5b673b0d89644bc724cda842f3
+  subject: pyarrow.dataset.Dataset.scanner
+  kind: api
+- id: evidence:pyarrow.dataset-native:pyarrow.dataset.Dataset.scanner:docs
+  source: pyarrow.dataset-native
+  selector: json:/records/pyarrow.dataset.Dataset.scanner/docs
+  digest: 174b98c2c01d1fd99e1becdcde969e4e208d91cdc54fcd56cee96c67e1df503d
+  subject: pyarrow.dataset.Dataset.scanner
+  kind: statement
+- id: evidence:pyarrow.parquet-native:pyarrow.parquet.read_table
+  source: pyarrow.parquet-native
+  selector: json:/records/pyarrow.parquet.read_table
+  digest: 4ab46a9a7df0e8a1bada736128b769f93a938e91167c8dac4ba0e10b1f67a381
+  subject: pyarrow.parquet.read_table
+  kind: api
+- id: evidence:pyarrow.parquet-native:pyarrow.parquet.read_table:docs
+  source: pyarrow.parquet-native
+  selector: json:/records/pyarrow.parquet.read_table/docs
+  digest: b5e5695a3316a58c114250ed11c48b8904f4eeda9b512a00619ed1ef94707e67
+  subject: pyarrow.parquet.read_table
+  kind: statement
+- id: evidence:relational-observation
+  source: relational-execution
+  selector: json:/observations
+  digest: 2b6fc43e028644616f767e871ff7e5f700bdc4cd0d4c690f6d0fdcfb721d616e
+  subject: Duplicate-key left join and group/window fixture
+  kind: behavior
+bindings:
+- id: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::select
+  symbol: datafusion::dataframe::DataFrame::select
+  package: datafusion
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:datafusion-54.1.0:76:api
+  parameters:
+  - name: self
+    type: Self
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: expr_list
+    type: '{"impl_trait":[{"trait_bound":{"generic_params":[],"modifier":"none","trait":{"args":{"angle_bracketed":{"args":[],"constraints":[{"args":null,"binding":{"equality":{"type":{"impl_trait":[{"trait_bound":{"generic_params":[],"modifier":"none","trait":{"args":{"angle_bracketed":{"args":[{"type":{"resolved_path":{"args":null,"id":99,"path":"SelectExpr"}}}],"constraints":[]}},"id":40,"path":"Into"}}}]}}},"name":"Item"}]}},"id":98,"path":"IntoIterator"}}}]}'
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: datafusion_common::error::Result<datafusion::dataframe::DataFrame>
+  generics: '{"params":[{"kind":{"type":{"bounds":[{"trait_bound":{"generic_params":[],"modifier":"none","trait":{"args":{"angle_bracketed":{"args":[{"type":{"resolved_path":{"args":null,"id":99,"path":"SelectExpr"}}}],"constraints":[]}},"id":40,"path":"Into"}}}],"default":null,"is_synthetic":true}},"name":"impl
+    Into<SelectExpr>"},{"kind":{"type":{"bounds":[{"trait_bound":{"generic_params":[],"modifier":"none","trait":{"args":{"angle_bracketed":{"args":[],"constraints":[{"args":null,"binding":{"equality":{"type":{"impl_trait":[{"trait_bound":{"generic_params":[],"modifier":"none","trait":{"args":{"angle_bracketed":{"args":[{"type":{"resolved_path":{"args":null,"id":99,"path":"SelectExpr"}}}],"constraints":[]}},"id":40,"path":"Into"}}}]}}},"name":"Item"}]}},"id":98,"path":"IntoIterator"}}}],"default":null,"is_synthetic":true}},"name":"impl
+    IntoIterator<Item = impl Into<SelectExpr>>"}],"where_predicates":[]}'
+  aliases: []
+  owner: datafusion::dataframe::DataFrame
+  conditions: []
+  families:
+  - transformation
+  resolution: resolved
+  signature: 'fn datafusion::dataframe::DataFrame::select(self: Self, expr_list: {"impl_trait":[{"trait_bound":{"generic_params":[],"modifier":"none","trait":{"args":{"angle_bracketed":{"args":[],"constraints":[{"args":null,"binding":{"equality":{"type":{"impl_trait":[{"trait_bound":{"generic_params":[],"modifier":"none","trait":{"args":{"angle_bracketed":{"args":[{"type":{"resolved_path":{"args":null,"id":99,"path":"SelectExpr"}}}],"constraints":[]}},"id":40,"path":"Into"}}}]}}},"name":"Item"}]}},"id":98,"path":"IntoIterator"}}}]})
+    -> datafusion_common::error::Result<datafusion::dataframe::DataFrame>'
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:arrow-arith:function:arrow_arith::numeric::add
+  symbol: arrow_arith::numeric::add
+  package: arrow-arith
+  version: 58.4.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:arrow-arith-58.4.0:100:api
+  parameters:
+  - name: lhs
+    type: '&{"dyn_trait":{"lifetime":null,"traits":[{"generic_params":[],"trait":{"args":null,"id":101,"path":"Datum"}}]}}'
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: rhs
+    type: '&{"dyn_trait":{"lifetime":null,"traits":[{"generic_params":[],"trait":{"args":null,"id":101,"path":"Datum"}}]}}'
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: core::result::Result<arrow_array::array::ArrayRef, arrow_schema::error::ArrowError>
+  generics: '{"params":[],"where_predicates":[]}'
+  aliases: []
+  owner: arrow_arith::numeric
+  conditions: []
+  families:
+  - transformation
+  resolution: resolved
+  signature: 'fn arrow_arith::numeric::add(lhs: &{"dyn_trait":{"lifetime":null,"traits":[{"generic_params":[],"trait":{"args":null,"id":101,"path":"Datum"}}]}},
+    rhs: &{"dyn_trait":{"lifetime":null,"traits":[{"generic_params":[],"trait":{"args":null,"id":101,"path":"Datum"}}]}})
+    -> core::result::Result<arrow_array::array::ArrayRef, arrow_schema::error::ArrowError>'
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::collect
+  symbol: datafusion::dataframe::DataFrame::collect
+  package: datafusion
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:datafusion-54.1.0:80:api
+  parameters:
+  - name: self
+    type: Self
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: datafusion_common::error::Result<alloc::vec::Vec<arrow_array::record_batch::RecordBatch>>
+  generics: '{"params":[],"where_predicates":[]}'
+  aliases: []
+  owner: datafusion::dataframe::DataFrame
+  conditions: []
+  families:
+  - lifecycle
+  resolution: resolved
+  signature: 'async fn datafusion::dataframe::DataFrame::collect(self: Self) -> datafusion_common::error::Result<alloc::vec::Vec<arrow_array::record_batch::RecordBatch>>'
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::execute_stream
+  symbol: datafusion::dataframe::DataFrame::execute_stream
+  package: datafusion
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:datafusion-54.1.0:124:api
+  parameters:
+  - name: self
+    type: Self
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: datafusion_common::error::Result<datafusion_execution::stream::SendableRecordBatchStream>
+  generics: '{"params":[],"where_predicates":[]}'
+  aliases: []
+  owner: datafusion::dataframe::DataFrame
+  conditions: []
+  families:
+  - lifecycle
+  resolution: resolved
+  signature: 'async fn datafusion::dataframe::DataFrame::execute_stream(self: Self)
+    -> datafusion_common::error::Result<datafusion_execution::stream::SendableRecordBatchStream>'
+  documented_returns: ''
+- id: api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.select
+  symbol: datafusion.DataFrame.select
+  package: datafusion
+  version: 54.0.0
+  profile: python-installed-54.0-25.0.1
+  language: python
+  kind: function
+  evidence:
+  - evidence:datafusion-static:datafusion.DataFrame.select
+  parameters:
+  - name: self
+    type: ''
+    kind: positional or keyword
+    default: null
+    documented_type: ''
+  - name: exprs
+    type: Expr | str
+    kind: variadic positional
+    default: ()
+    documented_type: ''
+  returns: DataFrame
+  generics: ''
+  aliases:
+  - datafusion.dataframe.DataFrame.select
+  owner: datafusion.DataFrame
+  conditions: []
+  families:
+  - transformation
+  resolution: resolved
+  signature: 'datafusion.DataFrame.select(self: ?, exprs: Expr | str) -> DataFrame'
+  documented_returns: ''
+- id: api:python-installed-54.0-25.0.1:pyarrow:pyarrow.compute.add
+  symbol: pyarrow.compute.add
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  language: python
+  kind: function
+  evidence:
+  - evidence:pyarrow.compute-native:pyarrow.compute.add
+  parameters:
+  - name: x
+    type: ''
+    kind: positional_only
+    default: null
+    documented_type: Array-like or scalar-like
+  - name: y
+    type: ''
+    kind: positional_only
+    default: null
+    documented_type: Array-like or scalar-like
+  - name: memory_pool
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: pyarrow.MemoryPool
+  returns: ''
+  generics: ''
+  aliases: []
+  owner: pyarrow.compute
+  conditions: []
+  families:
+  - transformation
+  resolution: resolved
+  signature: 'pyarrow.compute.add(x: ?, y: ?, memory_pool: ?)'
+  documented_returns: ''
+- id: api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.collect
+  symbol: datafusion.DataFrame.collect
+  package: datafusion
+  version: 54.0.0
+  profile: python-installed-54.0-25.0.1
+  language: python
+  kind: function
+  evidence:
+  - evidence:datafusion-static:datafusion.DataFrame.collect
+  parameters:
+  - name: self
+    type: ''
+    kind: positional or keyword
+    default: null
+    documented_type: ''
+  returns: list[pa.RecordBatch]
+  generics: ''
+  aliases:
+  - datafusion.dataframe.DataFrame.collect
+  owner: datafusion.DataFrame
+  conditions: []
+  families:
+  - lifecycle
+  resolution: resolved
+  signature: 'datafusion.DataFrame.collect(self: ?) -> list[pa.RecordBatch]'
+  documented_returns: ''
+- id: api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.execute_stream
+  symbol: datafusion.DataFrame.execute_stream
+  package: datafusion
+  version: 54.0.0
+  profile: python-installed-54.0-25.0.1
+  language: python
+  kind: function
+  evidence:
+  - evidence:datafusion-static:datafusion.DataFrame.execute_stream
+  parameters:
+  - name: self
+    type: ''
+    kind: positional or keyword
+    default: null
+    documented_type: ''
+  returns: RecordBatchStream
+  generics: ''
+  aliases:
+  - datafusion.dataframe.DataFrame.execute_stream
+  owner: datafusion.DataFrame
+  conditions: []
+  families:
+  - lifecycle
+  resolution: resolved
+  signature: 'datafusion.DataFrame.execute_stream(self: ?) -> RecordBatchStream'
+  documented_returns: ''
+- id: api:python-installed-54.0-25.0.1:pyarrow:pyarrow.Table.to_reader
+  symbol: pyarrow.Table.to_reader
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  language: python
+  kind: function
+  evidence:
+  - evidence:pyarrow-native:pyarrow.Table.to_reader
+  parameters:
+  - name: self
+    type: ''
+    kind: positional_or_keyword
+    default: null
+    documented_type: ''
+  - name: max_chunksize
+    type: ''
+    kind: positional_or_keyword
+    default: None
+    documented_type: int
+  returns: ''
+  generics: ''
+  aliases: []
+  owner: pyarrow.Table
+  conditions: []
+  families:
+  - interchange
+  resolution: resolved
+  signature: 'pyarrow.Table.to_reader(self: ?, max_chunksize: ?)'
+  documented_returns: RecordBatchReader
+- id: api:python-installed-54.0-25.0.1:pyarrow:pyarrow.RecordBatchReader.read_all
+  symbol: pyarrow.RecordBatchReader.read_all
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  language: python
+  kind: function
+  evidence:
+  - evidence:pyarrow-native:pyarrow.RecordBatchReader.read_all
+  parameters:
+  - name: self
+    type: ''
+    kind: positional_or_keyword
+    default: null
+    documented_type: ''
+  returns: ''
+  generics: ''
+  aliases: []
+  owner: pyarrow.RecordBatchReader
+  conditions: []
+  families:
+  - interchange
+  resolution: resolved
+  signature: 'pyarrow.RecordBatchReader.read_all(self: ?)'
+  documented_returns: Table
+- id: api:python-installed-54.0-25.0.1:datafusion:datafusion.SessionContext.from_arrow
+  symbol: datafusion.SessionContext.from_arrow
+  package: datafusion
+  version: 54.0.0
+  profile: python-installed-54.0-25.0.1
+  language: python
+  kind: function
+  evidence:
+  - evidence:datafusion-static:datafusion.SessionContext.from_arrow
+  parameters:
+  - name: self
+    type: ''
+    kind: positional or keyword
+    default: null
+    documented_type: ''
+  - name: data
+    type: ArrowStreamExportable | ArrowArrayExportable
+    kind: positional or keyword
+    default: null
+    documented_type: ''
+  - name: name
+    type: str | None
+    kind: positional or keyword
+    default: None
+    documented_type: ''
+  returns: DataFrame
+  generics: ''
+  aliases:
+  - datafusion.context.SessionContext.from_arrow
+  owner: datafusion.SessionContext
+  conditions: []
+  families:
+  - interchange
+  resolution: resolved
+  signature: 'datafusion.SessionContext.from_arrow(self: ?, data: ArrowStreamExportable
+    | ArrowArrayExportable, name: str | None) -> DataFrame'
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::from_arrow_pycapsule
+  symbol: pyo3_arrow::record_batch_reader::PyRecordBatchReader::from_arrow_pycapsule
+  package: pyo3-arrow
+  version: 0.17.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:pyo3-arrow-0.17.0:1284:api
+  parameters:
+  - name: capsule
+    type: '&pyo3::instance::Bound<{"lifetime":"''_"}, pyo3::types::capsule::PyCapsule>'
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: pyo3::err::PyResult<Self>
+  generics: '{"params":[],"where_predicates":[]}'
+  aliases: []
+  owner: pyo3_arrow::record_batch_reader::PyRecordBatchReader
+  conditions: []
+  families:
+  - interchange
+  resolution: resolved
+  signature: 'fn pyo3_arrow::record_batch_reader::PyRecordBatchReader::from_arrow_pycapsule(capsule:
+    &pyo3::instance::Bound<{"lifetime":"''_"}, pyo3::types::capsule::PyCapsule>) ->
+    pyo3::err::PyResult<Self>'
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow
+  symbol: pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow
+  package: pyo3-arrow
+  version: 0.17.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:pyo3-arrow-0.17.0:1291:api
+  parameters:
+  - name: self
+    type: Self
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: py
+    type: pyo3::marker::Python<{"lifetime":"'_"}>
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: pyo3::err::PyResult<pyo3::instance::Bound<{"lifetime":"'_"}, pyo3::types::any::PyAny>>
+  generics: '{"params":[],"where_predicates":[]}'
+  aliases: []
+  owner: pyo3_arrow::record_batch_reader::PyRecordBatchReader
+  conditions: []
+  families:
+  - interchange
+  resolution: resolved
+  signature: 'fn pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow(self:
+    Self, py: pyo3::marker::Python<{"lifetime":"''_"}>) -> pyo3::err::PyResult<pyo3::instance::Bound<{"lifetime":"''_"},
+    pyo3::types::any::PyAny>>'
+  documented_returns: ''
+- id: api:pydantic-2.13.4:pydantic:pydantic.BaseModel.model_validate
+  symbol: pydantic.BaseModel.model_validate
+  package: pydantic
+  version: 2.13.4
+  profile: pydantic-2.13.4
+  language: python
+  kind: function
+  evidence:
+  - evidence:pydantic-static:pydantic.BaseModel.model_validate
+  parameters:
+  - name: cls
+    type: ''
+    kind: positional or keyword
+    default: null
+    documented_type: ''
+  - name: obj
+    type: Any
+    kind: positional or keyword
+    default: null
+    documented_type: ''
+  - name: strict
+    type: bool | None
+    kind: keyword-only
+    default: None
+    documented_type: ''
+  - name: extra
+    type: ExtraValues | None
+    kind: keyword-only
+    default: None
+    documented_type: ''
+  - name: from_attributes
+    type: bool | None
+    kind: keyword-only
+    default: None
+    documented_type: ''
+  - name: context
+    type: Any | None
+    kind: keyword-only
+    default: None
+    documented_type: ''
+  - name: by_alias
+    type: bool | None
+    kind: keyword-only
+    default: None
+    documented_type: ''
+  - name: by_name
+    type: bool | None
+    kind: keyword-only
+    default: None
+    documented_type: ''
+  returns: Self
+  generics: ''
+  aliases:
+  - pydantic.main.BaseModel.model_validate
+  owner: pydantic.BaseModel
+  conditions:
+  - classmethod
+  families:
+  - validation
+  resolution: resolved
+  signature: 'pydantic.BaseModel.model_validate(cls: ?, obj: Any, strict: bool | None,
+    extra: ExtraValues | None, from_attributes: bool | None, context: Any | None,
+    by_alias: bool | None, by_name: bool | None) -> Self'
+  documented_returns: ''
+- id: api:pydantic-2.13.4:pydantic:pydantic.BaseModel.model_validate_json
+  symbol: pydantic.BaseModel.model_validate_json
+  package: pydantic
+  version: 2.13.4
+  profile: pydantic-2.13.4
+  language: python
+  kind: function
+  evidence:
+  - evidence:pydantic-static:pydantic.BaseModel.model_validate_json
+  parameters:
+  - name: cls
+    type: ''
+    kind: positional or keyword
+    default: null
+    documented_type: ''
+  - name: json_data
+    type: str | bytes | bytearray
+    kind: positional or keyword
+    default: null
+    documented_type: ''
+  - name: strict
+    type: bool | None
+    kind: keyword-only
+    default: None
+    documented_type: ''
+  - name: extra
+    type: ExtraValues | None
+    kind: keyword-only
+    default: None
+    documented_type: ''
+  - name: context
+    type: Any | None
+    kind: keyword-only
+    default: None
+    documented_type: ''
+  - name: by_alias
+    type: bool | None
+    kind: keyword-only
+    default: None
+    documented_type: ''
+  - name: by_name
+    type: bool | None
+    kind: keyword-only
+    default: None
+    documented_type: ''
+  returns: Self
+  generics: ''
+  aliases:
+  - pydantic.main.BaseModel.model_validate_json
+  owner: pydantic.BaseModel
+  conditions:
+  - classmethod
+  families:
+  - validation
+  resolution: resolved
+  signature: 'pydantic.BaseModel.model_validate_json(cls: ?, json_data: str | bytes
+    | bytearray, strict: bool | None, extra: ExtraValues | None, context: Any | None,
+    by_alias: bool | None, by_name: bool | None) -> Self'
+  documented_returns: ''
+- id: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_str
+  symbol: serde_json::de::from_str
+  package: serde_json
+  version: 1.0.151
+  profile: serde-json-1.0.151
+  language: rust
+  kind: function
+  evidence:
+  - evidence:serde_json-1.0.151:145:api
+  parameters:
+  - name: s
+    type: '&''a str'
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: serde_json::error::Result<T>
+  generics: '{"params":[{"kind":{"lifetime":{"outlives":[]}},"name":"''a"},{"kind":{"type":{"bounds":[],"default":null,"is_synthetic":false}},"name":"T"}],"where_predicates":[{"bound_predicate":{"bounds":[{"trait_bound":{"generic_params":[],"modifier":"none","trait":{"args":{"angle_bracketed":{"args":[{"lifetime":"''a"}],"constraints":[]}},"id":30,"path":"de::Deserialize"}}}],"generic_params":[],"type":{"generic":"T"}}}]}'
+  aliases: []
+  owner: serde_json::de
+  conditions: []
+  families:
+  - validation
+  resolution: resolved
+  signature: 'fn serde_json::de::from_str(s: &''a str) -> serde_json::error::Result<T>'
+  documented_returns: ''
+- id: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_reader
+  symbol: serde_json::de::from_reader
+  package: serde_json
+  version: 1.0.151
+  profile: serde-json-1.0.151
+  language: rust
+  kind: function
+  evidence:
+  - evidence:serde_json-1.0.151:147:api
+  parameters:
+  - name: rdr
+    type: R
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: serde_json::error::Result<T>
+  generics: '{"params":[{"kind":{"type":{"bounds":[],"default":null,"is_synthetic":false}},"name":"R"},{"kind":{"type":{"bounds":[],"default":null,"is_synthetic":false}},"name":"T"}],"where_predicates":[{"bound_predicate":{"bounds":[{"trait_bound":{"generic_params":[],"modifier":"none","trait":{"args":null,"id":21,"path":"crate::io::Read"}}}],"generic_params":[],"type":{"generic":"R"}}},{"bound_predicate":{"bounds":[{"trait_bound":{"generic_params":[],"modifier":"none","trait":{"args":null,"id":148,"path":"de::DeserializeOwned"}}}],"generic_params":[],"type":{"generic":"T"}}}]}'
+  aliases: []
+  owner: serde_json::de
+  conditions:
+  - '{"other":"#[attr = CfgTrace([NameValue { name: \"feature\", value: Some(\"std\"),
+    span: src/de.rs:2622:7: 2622:22 (#0) }])]"}'
+  - '{"other":"#[attr = CfgAttrTrace]"}'
+  - '{"other":"#[doc(cfg(feature = \"std\"))]"}'
+  families:
+  - validation
+  resolution: resolved
+  signature: 'fn serde_json::de::from_reader(rdr: R) -> serde_json::error::Result<T>'
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::join
+  symbol: datafusion::dataframe::DataFrame::join
+  package: datafusion
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:datafusion-54.1.0:119:api
+  parameters:
+  - name: self
+    type: Self
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: right
+    type: datafusion::dataframe::DataFrame
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: join_type
+    type: datafusion_common::join_type::JoinType
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: left_cols
+    type: '&[&str]'
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: right_cols
+    type: '&[&str]'
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: filter
+    type: core::option::Option<datafusion_expr::expr::Expr>
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: datafusion_common::error::Result<datafusion::dataframe::DataFrame>
+  generics: '{"params":[],"where_predicates":[]}'
+  aliases:
+  - datafusion::prelude::DataFrame::join
+  - datafusion::prelude::dataframe::DataFrame::join
+  owner: datafusion::dataframe::DataFrame
+  conditions: []
+  families:
+  - enrichment
+  resolution: resolved
+  signature: 'fn datafusion::dataframe::DataFrame::join(self: Self, right: datafusion::dataframe::DataFrame,
+    join_type: datafusion_common::join_type::JoinType, left_cols: &[&str], right_cols:
+    &[&str], filter: core::option::Option<datafusion_expr::expr::Expr>) -> datafusion_common::error::Result<datafusion::dataframe::DataFrame>'
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:datafusion-catalog:function:datafusion_catalog::table::TableProvider::scan
+  symbol: datafusion_catalog::table::TableProvider::scan
+  package: datafusion-catalog
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:datafusion-catalog-54.1.0:692:api
+  parameters:
+  - name: self
+    type: '&''life0 Self'
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: state
+    type: '&''life1 {"dyn_trait":{"lifetime":null,"traits":[{"generic_params":[],"trait":{"args":null,"id":70,"path":"Session"}}]}}'
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: projection
+    type: core::option::Option<&'life2 alloc::vec::Vec<usize>>
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: filters
+    type: '&''life3 [datafusion_expr::expr::Expr]'
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: limit
+    type: core::option::Option<usize>
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: core::pin::Pin<alloc::boxed::Box<{"dyn_trait":{"lifetime":"'async_trait","traits":[{"generic_params":[],"trait":{"args":{"angle_bracketed":{"args":[],"constraints":[{"args":null,"binding":{"equality":{"type":{"resolved_path":{"args":{"angle_bracketed":{"args":[{"type":{"resolved_path":{"args":{"angle_bracketed":{"args":[{"type":{"dyn_trait":{"lifetime":null,"traits":[{"generic_params":[],"trait":{"args":null,"id":78,"path":"ExecutionPlan"}}]}}}],"constraints":[]}},"id":77,"path":"Arc"}}}],"constraints":[]}},"id":76,"path":"Result"}}}},"name":"Output"}]}},"id":75,"path":"::core::future::Future"}},{"generic_params":[],"trait":{"args":null,"id":9,"path":"::core::marker::Send"}}]}}>>
+  generics: '{"params":[{"kind":{"lifetime":{"outlives":[]}},"name":"''life0"},{"kind":{"lifetime":{"outlives":[]}},"name":"''life1"},{"kind":{"lifetime":{"outlives":[]}},"name":"''life2"},{"kind":{"lifetime":{"outlives":[]}},"name":"''life3"},{"kind":{"lifetime":{"outlives":[]}},"name":"''async_trait"}],"where_predicates":[{"bound_predicate":{"bounds":[{"outlives":"''async_trait"}],"generic_params":[],"type":{"generic":"Self"}}},{"lifetime_predicate":{"lifetime":"''life0","outlives":["''async_trait"]}},{"lifetime_predicate":{"lifetime":"''life1","outlives":["''async_trait"]}},{"lifetime_predicate":{"lifetime":"''life2","outlives":["''async_trait"]}},{"lifetime_predicate":{"lifetime":"''life3","outlives":["''async_trait"]}}]}'
+  aliases: []
+  owner: datafusion_catalog::table::TableProvider
+  conditions:
+  - '{"other":"#[allow(elided_named_lifetimes, clippy :: type_complexity, clippy ::\ntype_repetition_in_bounds)]"}'
+  - '{"must_use":{"reason":null}}'
+  families:
+  - enrichment
+  resolution: resolved
+  signature: 'fn datafusion_catalog::table::TableProvider::scan(self: &''life0 Self,
+    state: &''life1 {"dyn_trait":{"lifetime":null,"traits":[{"generic_params":[],"trait":{"args":null,"id":70,"path":"Session"}}]}},
+    projection: core::option::Option<&''life2 alloc::vec::Vec<usize>>, filters: &''life3
+    [datafusion_expr::expr::Expr], limit: core::option::Option<usize>) -> core::pin::Pin<alloc::boxed::Box<{"dyn_trait":{"lifetime":"''async_trait","traits":[{"generic_params":[],"trait":{"args":{"angle_bracketed":{"args":[],"constraints":[{"args":null,"binding":{"equality":{"type":{"resolved_path":{"args":{"angle_bracketed":{"args":[{"type":{"resolved_path":{"args":{"angle_bracketed":{"args":[{"type":{"dyn_trait":{"lifetime":null,"traits":[{"generic_params":[],"trait":{"args":null,"id":78,"path":"ExecutionPlan"}}]}}}],"constraints":[]}},"id":77,"path":"Arc"}}}],"constraints":[]}},"id":76,"path":"Result"}}}},"name":"Output"}]}},"id":75,"path":"::core::future::Future"}},{"generic_params":[],"trait":{"args":null,"id":9,"path":"::core::marker::Send"}}]}}>>'
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::async_udf::AsyncScalarUDFImpl
+  symbol: datafusion_expr::async_udf::AsyncScalarUDFImpl
+  package: datafusion-expr
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: trait
+  evidence:
+  - evidence:datafusion-expr-54.1.0:6475:api
+  parameters: []
+  returns: ''
+  generics: '{"params":[],"where_predicates":[]}'
+  aliases: []
+  owner: datafusion_expr::async_udf
+  conditions: []
+  families:
+  - enrichment
+  resolution: resolved
+  signature: trait datafusion_expr::async_udf::AsyncScalarUDFImpl
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::aggregate
+  symbol: datafusion::dataframe::DataFrame::aggregate
+  package: datafusion
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:datafusion-54.1.0:77:api
+  parameters:
+  - name: self
+    type: Self
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: group_expr
+    type: alloc::vec::Vec<datafusion_expr::expr::Expr>
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: aggr_expr
+    type: alloc::vec::Vec<datafusion_expr::expr::Expr>
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: datafusion_common::error::Result<datafusion::dataframe::DataFrame>
+  generics: '{"params":[],"where_predicates":[]}'
+  aliases:
+  - datafusion::prelude::DataFrame::aggregate
+  - datafusion::prelude::dataframe::DataFrame::aggregate
+  owner: datafusion::dataframe::DataFrame
+  conditions: []
+  families:
+  - aggregation
+  resolution: resolved
+  signature: 'fn datafusion::dataframe::DataFrame::aggregate(self: Self, group_expr:
+    alloc::vec::Vec<datafusion_expr::expr::Expr>, aggr_expr: alloc::vec::Vec<datafusion_expr::expr::Expr>)
+    -> datafusion_common::error::Result<datafusion::dataframe::DataFrame>'
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::window
+  symbol: datafusion::dataframe::DataFrame::window
+  package: datafusion
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: function
+  evidence:
+  - evidence:datafusion-54.1.0:107:api
+  parameters:
+  - name: self
+    type: Self
+    kind: positional
+    default: null
+    documented_type: ''
+  - name: window_exprs
+    type: alloc::vec::Vec<datafusion_expr::expr::Expr>
+    kind: positional
+    default: null
+    documented_type: ''
+  returns: datafusion_common::error::Result<datafusion::dataframe::DataFrame>
+  generics: '{"params":[],"where_predicates":[]}'
+  aliases:
+  - datafusion::prelude::DataFrame::window
+  - datafusion::prelude::dataframe::DataFrame::window
+  owner: datafusion::dataframe::DataFrame
+  conditions: []
+  families:
+  - aggregation
+  resolution: resolved
+  signature: 'fn datafusion::dataframe::DataFrame::window(self: Self, window_exprs:
+    alloc::vec::Vec<datafusion_expr::expr::Expr>) -> datafusion_common::error::Result<datafusion::dataframe::DataFrame>'
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::udaf::AggregateUDFImpl
+  symbol: datafusion_expr::udaf::AggregateUDFImpl
+  package: datafusion-expr
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: trait
+  evidence:
+  - evidence:datafusion-expr-54.1.0:557:api
+  parameters: []
+  returns: ''
+  generics: '{"params":[],"where_predicates":[]}'
+  aliases:
+  - datafusion_expr::AggregateUDFImpl
+  owner: ''
+  conditions: []
+  families:
+  - aggregation
+  resolution: resolved
+  signature: trait datafusion_expr::udaf::AggregateUDFImpl
+  documented_returns: ''
+- id: api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::udf::ScalarUDFImpl
+  symbol: datafusion_expr::udf::ScalarUDFImpl
+  package: datafusion-expr
+  version: 54.1.0
+  profile: rust-docsrs-54.1-58.4
+  language: rust
+  kind: trait
+  evidence:
+  - evidence:datafusion-expr-54.1.0:840:api
+  parameters: []
+  returns: ''
+  generics: '{"params":[],"where_predicates":[]}'
+  aliases:
+  - datafusion_expr::ScalarUDFImpl
+  owner: ''
+  conditions: []
+  families:
+  - transformation
+  resolution: resolved
+  signature: trait datafusion_expr::udf::ScalarUDFImpl
+  documented_returns: ''
+- id: api:python-installed-54.0-25.0.1:pyarrow:pyarrow.dataset.Dataset.scanner
+  symbol: pyarrow.dataset.Dataset.scanner
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  language: python
+  kind: function
+  evidence:
+  - evidence:pyarrow.dataset-native:pyarrow.dataset.Dataset.scanner
+  parameters:
+  - name: self
+    type: ''
+    kind: positional_or_keyword
+    default: null
+    documented_type: ''
+  - name: columns
+    type: ''
+    kind: positional_or_keyword
+    default: None
+    documented_type: list of str
+  - name: filter
+    type: ''
+    kind: positional_or_keyword
+    default: None
+    documented_type: Expression
+  - name: batch_size
+    type: ''
+    kind: positional_or_keyword
+    default: '131072'
+    documented_type: int
+  - name: batch_readahead
+    type: ''
+    kind: positional_or_keyword
+    default: '16'
+    documented_type: int
+  - name: fragment_readahead
+    type: ''
+    kind: positional_or_keyword
+    default: '4'
+    documented_type: int
+  - name: fragment_scan_options
+    type: ''
+    kind: positional_or_keyword
+    default: None
+    documented_type: FragmentScanOptions
+  - name: use_threads
+    type: ''
+    kind: positional_or_keyword
+    default: 'True'
+    documented_type: bool
+  - name: cache_metadata
+    type: ''
+    kind: positional_or_keyword
+    default: 'True'
+    documented_type: bool
+  - name: memory_pool
+    type: ''
+    kind: positional_or_keyword
+    default: None
+    documented_type: MemoryPool
+  returns: ''
+  generics: ''
+  aliases: []
+  owner: pyarrow.dataset.Dataset
+  conditions: []
+  families:
+  - dataset
+  resolution: resolved
+  signature: 'pyarrow.dataset.Dataset.scanner(self: ?, columns: ?, filter: ?, batch_size:
+    ?, batch_readahead: ?, fragment_readahead: ?, fragment_scan_options: ?, use_threads:
+    ?, cache_metadata: ?, memory_pool: ?)'
+  documented_returns: Scanner
+- id: api:python-installed-54.0-25.0.1:pyarrow:pyarrow.parquet.read_table
+  symbol: pyarrow.parquet.read_table
+  package: pyarrow
+  version: 25.0.1
+  profile: python-installed-54.0-25.0.1
+  language: python
+  kind: function
+  evidence:
+  - evidence:pyarrow.parquet-native:pyarrow.parquet.read_table
+  parameters:
+  - name: source
+    type: ''
+    kind: positional_or_keyword
+    default: null
+    documented_type: str, list of str, pyarrow.NativeFile, or file-like object
+  - name: columns
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: list
+  - name: use_threads
+    type: ''
+    kind: keyword_only
+    default: 'True'
+    documented_type: bool
+  - name: schema
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: Schema
+  - name: use_pandas_metadata
+    type: ''
+    kind: keyword_only
+    default: 'False'
+    documented_type: bool
+  - name: read_dictionary
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: list
+  - name: binary_type
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: pyarrow.DataType
+  - name: list_type
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: subclass of pyarrow.DataType
+  - name: memory_map
+    type: ''
+    kind: keyword_only
+    default: 'False'
+    documented_type: bool
+  - name: buffer_size
+    type: ''
+    kind: keyword_only
+    default: '0'
+    documented_type: int
+  - name: partitioning
+    type: ''
+    kind: keyword_only
+    default: hive
+    documented_type: pyarrow.dataset.Partitioning or str or list of str
+  - name: filesystem
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: FileSystem
+  - name: filters
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: pyarrow.compute.Expression or List[Tuple] or List[List[Tuple]]
+  - name: ignore_prefixes
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: list
+  - name: pre_buffer
+    type: ''
+    kind: keyword_only
+    default: 'True'
+    documented_type: bool
+  - name: coerce_int96_timestamp_unit
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: str
+  - name: decryption_properties
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: FileDecryptionProperties or None
+  - name: thrift_string_size_limit
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: int
+  - name: thrift_container_size_limit
+    type: ''
+    kind: keyword_only
+    default: None
+    documented_type: int
+  - name: page_checksum_verification
+    type: ''
+    kind: keyword_only
+    default: 'False'
+    documented_type: bool
+  - name: arrow_extensions_enabled
+    type: ''
+    kind: keyword_only
+    default: 'True'
+    documented_type: bool
+  returns: ''
+  generics: ''
+  aliases: []
+  owner: pyarrow.parquet
+  conditions: []
+  families:
+  - dataset
+  resolution: resolved
+  signature: 'pyarrow.parquet.read_table(source: ?, columns: ?, use_threads: ?, schema:
+    ?, use_pandas_metadata: ?, read_dictionary: ?, binary_type: ?, list_type: ?, memory_map:
+    ?, buffer_size: ?, partitioning: ?, filesystem: ?, filters: ?, ignore_prefixes:
+    ?, pre_buffer: ?, coerce_int96_timestamp_unit: ?, decryption_properties: ?, thrift_string_size_limit:
+    ?, thrift_container_size_limit: ?, page_checksum_verification: ?, arrow_extensions_enabled:
+    ?)'
+  documented_returns: pyarrow.Table
+claims:
+- id: claim:rust-project
+  profile: rust-docsrs-54.1-58.4
+  statement: Projection returns a DataFrame with one output column per expression;
+    modifying the DataFrame updates a plan before collection.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:datafusion-54.1.0:76:docs
+  - evidence:datafusion-54.1.0:80:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:rust-add
+  profile: rust-docsrs-54.1-58.4
+  statement: The Arrow Rust add kernel performs addition and returns an error on overflow.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:arrow-arith-58.4.0:100:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:rust-collect
+  profile: rust-docsrs-54.1-58.4
+  statement: Collect executes the DataFrame and buffers all resulting RecordBatches
+    in memory.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:datafusion-54.1.0:80:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:rust-stream
+  profile: rust-docsrs-54.1-58.4
+  statement: Execute_stream returns a stream over a single partition; dropping that
+    stream aborts query execution and frees allocated resources.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:datafusion-54.1.0:124:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:python-project
+  profile: python-installed-54.0-25.0.1
+  statement: Select creates a projected DataFrame with one column per expression;
+    computation is triggered by collection.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:datafusion-static:datafusion.DataFrame.collect:docs
+  - evidence:datafusion-static:datafusion.DataFrame.select:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:python-add
+  profile: python-installed-54.0-25.0.1
+  statement: The Python Arrow add function adds arguments element-wise and wraps on
+    integer overflow; add_checked reports overflow errors.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:pyarrow.compute-native:pyarrow.compute.add:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:python-collect
+  profile: python-installed-54.0-25.0.1
+  statement: Collect executes the DataFrame and returns a list of RecordBatches collected
+    in memory.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:datafusion-static:datafusion.DataFrame.collect:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:python-stream
+  profile: python-installed-54.0-25.0.1
+  statement: Execute_stream returns a record-batch stream over a single partition.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:datafusion-static:datafusion.DataFrame.execute_stream:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:table-reader
+  profile: python-installed-54.0-25.0.1
+  statement: Table.to_reader is zero-copy and exposes the same data under the RecordBatchReader
+    API; max_chunksize bounds rows per output chunk, which may be smaller.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:pyarrow-native:pyarrow.Table.to_reader:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:reader-all
+  profile: python-installed-54.0-25.0.1
+  statement: RecordBatchReader.read_all reads all record batches as a PyArrow Table.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:pyarrow-native:pyarrow.RecordBatchReader.read_all:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:from-arrow
+  profile: python-installed-54.0-25.0.1
+  statement: SessionContext.from_arrow accepts objects implementing __arrow_c_stream__
+    or __arrow_c_array__; the array form must return a struct array.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:datafusion-static:datafusion.SessionContext.from_arrow:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:rust-import
+  profile: rust-docsrs-54.1-58.4
+  statement: PyRecordBatchReader.from_arrow_pycapsule constructs a reader from a raw
+    Arrow C Stream capsule.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:pyo3-arrow-0.17.0:1284:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:rust-export
+  profile: rust-docsrs-54.1-58.4
+  statement: PyRecordBatchReader.into_pyarrow exports a PyArrow RecordBatchReader
+    and requires PyArrow 15 or later.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:pyo3-arrow-0.17.0:1291:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:validate-object
+  profile: pydantic-2.13.4
+  statement: model_validate validates a Python object, supports strict type enforcement,
+    and raises ValidationError for invalid objects.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:pydantic-static:pydantic.BaseModel.model_validate:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:validate-json
+  profile: pydantic-2.13.4
+  statement: model_validate_json validates JSON data against a model and raises ValidationError
+    when JSON input or the resulting object cannot be validated.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:pydantic-static:pydantic.BaseModel.model_validate_json:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:json-text
+  profile: serde-json-1.0.151
+  statement: from_str deserializes JSON text into T; failures include a mismatch with
+    the expected structure or constraints imposed by Deserialize.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:serde_json-1.0.151:145:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:json-reader
+  profile: serde-json-1.0.151
+  statement: from_reader deserializes from an IO stream without adding its own buffering
+    and expects EOF after the value; persistent sockets require a managed Deserializer.
+  mechanism: The cited upstream item describes this operation and its stated conditions.
+  evidence:
+  - evidence:serde_json-1.0.151:147:docs
+  conditions:
+  - Applies to the explicitly recorded library version and source-build profile.
+  exceptions:
+  - No broader lifetime, null, ordering, or copy guarantee is inferred from this item.
+  verification: documented
+  category: behavioral
+- id: claim:interop-observation
+  profile: interop-pilot
+  statement: For the declared nullable-int64 fixture, a PyArrow to Rust to PyArrow
+    C Stream round trip preserves schema metadata and the data-buffer address, remains
+    readable after the producer is deleted, and rejects a second import of the capsule.
+  mechanism: The executable assertions compare schema and buffer addresses, delete
+    producer references before reading, and retry the consumed capsule.
+  evidence:
+  - evidence:interop-observation
+  conditions:
+  - PyArrow 25.0.1, pyo3-arrow 0.17.0, Arrow 58.4.0; this exact fixture and extension
+    build.
+  exceptions:
+  - This is not a blanket zero-copy or lifetime guarantee for every Arrow type, device,
+    consumer, or coercion.
+  verification: behavior_tested
+  category: behavioral
+- id: claim:rust-join
+  profile: rust-docsrs-54.1-58.4
+  statement: Join accepts explicit left and right keys and an optional filter. The
+    documented outer-join filter applies only to matched rows.
+  mechanism: Join two existing DataFrames under explicit predicate and join-kind rules.
+  evidence:
+  - evidence:datafusion-54.1.0:119:docs
+  conditions:
+  - datafusion 54.1.0; recorded profile
+  exceptions:
+  - A join does not itself acquire or freeze an external data source.
+  verification: documented
+  category: behavioral
+- id: claim:rust-provider
+  profile: rust-docsrs-54.1-58.4
+  statement: TableProvider.scan constructs an execution plan for streaming parallel
+    scanning with projection, filter and limit inputs. Filter pushdown must be enabled
+    by overriding supports_filters_pushdown; its default leaves filters empty. Logical
+    evaluation is filters, then limit, then projection; inexact filters prevent pushing
+    down the limit.
+  mechanism: Implement a source scan contract when the source needs an execution plan
+    and declared pushdown behavior.
+  evidence:
+  - evidence:datafusion-catalog-54.1.0:692:docs
+  conditions:
+  - datafusion-catalog 54.1.0; recorded profile
+  exceptions:
+  - A limit can be pushed only under the documented filter conditions; this interface
+    does not promise external snapshot consistency.
+  verification: documented
+  category: behavioral
+- id: claim:rust-async
+  profile: rust-docsrs-54.1-58.4
+  statement: AsyncScalarUDFImpl supports asynchronous invocation and registration
+    of remote functions; its documentation states it is less efficient than ScalarUDFImpl.
+  mechanism: Use the async scalar extension mechanism when remote scalar invocation
+    is itself required.
+  evidence:
+  - evidence:datafusion-expr-54.1.0:6475:docs
+  conditions:
+  - datafusion-expr 54.1.0; recorded profile
+  exceptions:
+  - This claim does not establish per-row IO multiplicity, retries or snapshot semantics.
+  verification: documented
+  category: behavioral
+- id: claim:rust-aggregate
+  profile: rust-docsrs-54.1-58.4
+  statement: DataFrame.aggregate aggregates the current rows, optionally grouping
+    by expressions.
+  mechanism: Use group and aggregate expressions for a grouped result.
+  evidence:
+  - evidence:datafusion-54.1.0:77:docs
+  conditions:
+  - datafusion 54.1.0; recorded profile
+  exceptions:
+  - Empty-input and null policies belong to the selected aggregate function.
+  verification: documented
+  category: behavioral
+- id: claim:rust-window
+  profile: rust-docsrs-54.1-58.4
+  statement: DataFrame.window adds the result of evaluating window functions to the
+    existing columns.
+  mechanism: Use window expressions when a calculation is attached to existing rows.
+  evidence:
+  - evidence:datafusion-54.1.0:107:docs
+  conditions:
+  - datafusion 54.1.0; recorded profile
+  exceptions:
+  - Frame, ordering and function-specific null policies must be chosen separately.
+  verification: documented
+  category: behavioral
+- id: claim:rust-udaf
+  profile: rust-docsrs-54.1-58.4
+  statement: AggregateUDFImpl exposes the aggregate extension API; the documented
+    example declares a signature, return type, accumulator factory and state fields.
+  mechanism: Implement accumulator and state behavior when required aggregate semantics
+    are not expressible through available registered functions.
+  evidence:
+  - evidence:datafusion-expr-54.1.0:557:docs
+  conditions:
+  - datafusion-expr 54.1.0; recorded profile
+  exceptions:
+  - This is an extension entry point, not a completed custom accumulator recipe.
+  verification: documented
+  category: behavioral
+- id: claim:rust-udf
+  profile: rust-docsrs-54.1-58.4
+  statement: ScalarUDFImpl exposes the scalar extension API; the documented example
+    supplies signature, return type and invoke_with_args hooks.
+  mechanism: Implement scalar behavior after a scoped search leaves required semantics
+    unexpressed by existing functions.
+  evidence:
+  - evidence:datafusion-expr-54.1.0:840:docs
+  conditions:
+  - datafusion-expr 54.1.0; recorded profile
+  exceptions:
+  - The interface description does not establish blanket optimizer opacity or a need
+    for a custom function.
+  verification: documented
+  category: behavioral
+- id: claim:python-scanner
+  profile: python-installed-54.0-25.0.1
+  statement: Dataset.scanner constructs a Scanner without loading data immediately.
+    It accepts projection, filter, batch-size and readahead controls. A filter may
+    use partition or internal metadata; otherwise it filters loaded batches.
+  mechanism: Plan dataset consumption with explicit columns, predicates and batch
+    controls.
+  evidence:
+  - evidence:pyarrow.dataset-native:pyarrow.dataset.Dataset.scanner:docs
+  conditions:
+  - pyarrow 25.0.1; recorded profile
+  exceptions:
+  - Pushdown depends on source metadata and format; a batch-size setting alone is
+    not a process-wide memory bound.
+  verification: documented
+  category: behavioral
+- id: claim:python-parquet
+  profile: python-installed-54.0-25.0.1
+  statement: parquet.read_table returns a Table and supports column selection and
+    row filters, including partition-key filtering.
+  mechanism: Read a Parquet source directly when the consumer requires a materialized
+    Table.
+  evidence:
+  - evidence:pyarrow.parquet-native:pyarrow.parquet.read_table:docs
+  conditions:
+  - pyarrow 25.0.1; recorded profile
+  exceptions:
+  - Do not claim that a custom reader or Scanner is necessary merely to use projection
+    or filtering.
+  verification: documented
+  category: behavioral
+- id: claim:relational-observation
+  profile: rust-docsrs-54.1-58.4
+  statement: In the recorded fixture, two left keys joined to a duplicated right key
+    produce three rows and one unmatched null label; grouping three input rows produces
+    two rows, while the partition window returns three.
+  mechanism: Executed DataFusion 54.1 SQL assertions
+  evidence:
+  - evidence:relational-observation
+  conditions:
+  - Exact VALUES fixture and Cargo.lock recorded in the execution source
+  exceptions:
+  - This fixture does not establish arbitrary source consistency, operator memory
+    bounds or every aggregate policy.
+  verification: behavior_tested
+  category: behavioral
+capabilities:
+- id: cap:rust-project
+  title: Compose expressions inside a query plan
+  intent: Compose expressions inside a query plan
+  profile: rust-docsrs-54.1-58.4
+  family: transformation
+  bindings:
+  - api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::select
+  claims:
+  - claim:rust-project
+  facets:
+  - name: execution_placement
+    value: Query plan
+    claims:
+    - claim:rust-project
+  synonyms: []
+  realizations:
+  - principle: principle:execution-placement
+    mechanism: Projection builds a query plan; collection triggers its execution.
+    conditions:
+    - The values are already part of the query pipeline.
+    claims:
+    - claim:rust-project
+- id: cap:rust-add
+  title: Add Arrow values with checked overflow
+  intent: Add Arrow values with checked overflow
+  profile: rust-docsrs-54.1-58.4
+  family: transformation
+  bindings:
+  - api:rust-docsrs-54.1-58.4:arrow-arith:function:arrow_arith::numeric::add
+  claims:
+  - claim:rust-add
+  facets:
+  - name: overflow
+    value: Error on overflow
+    claims:
+    - claim:rust-add
+  synonyms: []
+  realizations: []
+- id: cap:rust-collect
+  title: Materialize query results
+  intent: Materialize query results
+  profile: rust-docsrs-54.1-58.4
+  family: lifecycle
+  bindings:
+  - api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::collect
+  claims:
+  - claim:rust-collect
+  facets:
+  - name: materialization
+    value: All output batches buffered
+    claims:
+    - claim:rust-collect
+  synonyms: []
+  realizations: []
+- id: cap:rust-stream
+  title: Consume query results as a stream
+  intent: Consume query results as a stream
+  profile: rust-docsrs-54.1-58.4
+  family: lifecycle
+  bindings:
+  - api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::execute_stream
+  claims:
+  - claim:rust-stream
+  facets:
+  - name: lifecycle
+    value: Stream ownership controls cancellation
+    claims:
+    - claim:rust-stream
+  synonyms: []
+  realizations: []
+- id: cap:python-project
+  title: Project expressions in a Python query
+  intent: Project expressions in a Python query
+  profile: python-installed-54.0-25.0.1
+  family: transformation
+  bindings:
+  - api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.select
+  claims:
+  - claim:python-project
+  facets:
+  - name: execution_placement
+    value: Query plan
+    claims:
+    - claim:python-project
+  synonyms: []
+  realizations:
+  - principle: principle:execution-placement
+    mechanism: Projection builds a query plan; collection triggers its execution.
+    conditions:
+    - The values are already part of the query pipeline.
+    claims:
+    - claim:python-project
+- id: cap:python-add
+  title: Add materialized Arrow values
+  intent: Add materialized Arrow values
+  profile: python-installed-54.0-25.0.1
+  family: transformation
+  bindings:
+  - api:python-installed-54.0-25.0.1:pyarrow:pyarrow.compute.add
+  claims:
+  - claim:python-add
+  facets:
+  - name: overflow
+    value: Wrapping; choose add_checked for errors
+    claims:
+    - claim:python-add
+  synonyms: []
+  realizations: []
+- id: cap:python-collect
+  title: Collect Python query results
+  intent: Collect Python query results
+  profile: python-installed-54.0-25.0.1
+  family: lifecycle
+  bindings:
+  - api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.collect
+  claims:
+  - claim:python-collect
+  facets:
+  - name: materialization
+    value: List of output batches in memory
+    claims:
+    - claim:python-collect
+  synonyms: []
+  realizations: []
+- id: cap:python-stream
+  title: Consume Python query output
+  intent: Consume Python query output
+  profile: python-installed-54.0-25.0.1
+  family: lifecycle
+  bindings:
+  - api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.execute_stream
+  claims:
+  - claim:python-stream
+  facets:
+  - name: materialization
+    value: Record-batch stream
+    claims:
+    - claim:python-stream
+  synonyms: []
+  realizations: []
+- id: cap:table-reader
+  title: Expose a table through a reader
+  intent: Expose a table through a reader
+  profile: python-installed-54.0-25.0.1
+  family: interchange
+  bindings:
+  - api:python-installed-54.0-25.0.1:pyarrow:pyarrow.Table.to_reader
+  claims:
+  - claim:table-reader
+  facets:
+  - name: representation
+    value: Table to RecordBatchReader
+    claims:
+    - claim:table-reader
+  synonyms: []
+  realizations: []
+- id: cap:reader-all
+  title: Materialize a record-batch reader
+  intent: Materialize a record-batch reader
+  profile: python-installed-54.0-25.0.1
+  family: interchange
+  bindings:
+  - api:python-installed-54.0-25.0.1:pyarrow:pyarrow.RecordBatchReader.read_all
+  claims:
+  - claim:reader-all
+  facets:
+  - name: representation
+    value: RecordBatchReader to Table
+    claims:
+    - claim:reader-all
+  synonyms: []
+  realizations: []
+- id: cap:from-arrow
+  title: Use an Arrow source in a query
+  intent: Use an Arrow source in a query
+  profile: python-installed-54.0-25.0.1
+  family: interchange
+  bindings:
+  - api:python-installed-54.0-25.0.1:datafusion:datafusion.SessionContext.from_arrow
+  claims:
+  - claim:from-arrow
+  facets:
+  - name: representation
+    value: Arrow C Stream or struct-array protocol
+    claims:
+    - claim:from-arrow
+  synonyms: []
+  realizations: []
+- id: cap:rust-import
+  title: Import an Arrow C Stream into Rust
+  intent: Import an Arrow C Stream into Rust
+  profile: rust-docsrs-54.1-58.4
+  family: interchange
+  bindings:
+  - api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::from_arrow_pycapsule
+  claims:
+  - claim:rust-import
+  facets:
+  - name: representation
+    value: Arrow C Stream capsule to Rust reader
+    claims:
+    - claim:rust-import
+  synonyms: []
+  realizations: []
+- id: cap:rust-export
+  title: Export a Rust reader into PyArrow
+  intent: Export a Rust reader into PyArrow
+  profile: rust-docsrs-54.1-58.4
+  family: interchange
+  bindings:
+  - api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow
+  claims:
+  - claim:rust-export
+  facets:
+  - name: representation
+    value: Rust reader to PyArrow RecordBatchReader
+    claims:
+    - claim:rust-export
+  synonyms: []
+  realizations: []
+- id: cap:validate-object
+  title: Validate an existing Python object
+  intent: Validate an existing Python object
+  profile: pydantic-2.13.4
+  family: validation
+  bindings:
+  - api:pydantic-2.13.4:pydantic:pydantic.BaseModel.model_validate
+  claims:
+  - claim:validate-object
+  facets:
+  - name: input_mode
+    value: Python object
+    claims:
+    - claim:validate-object
+  synonyms: []
+  realizations: []
+- id: cap:validate-json
+  title: Validate JSON data
+  intent: Validate JSON data
+  profile: pydantic-2.13.4
+  family: validation
+  bindings:
+  - api:pydantic-2.13.4:pydantic:pydantic.BaseModel.model_validate_json
+  claims:
+  - claim:validate-json
+  facets:
+  - name: input_mode
+    value: JSON data
+    claims:
+    - claim:validate-json
+  synonyms: []
+  realizations: []
+- id: cap:json-text
+  title: Deserialize JSON text
+  intent: Deserialize JSON text
+  profile: serde-json-1.0.151
+  family: validation
+  bindings:
+  - api:serde-json-1.0.151:serde_json:function:serde_json::de::from_str
+  claims:
+  - claim:json-text
+  facets:
+  - name: input_mode
+    value: String slice
+    claims:
+    - claim:json-text
+  synonyms: []
+  realizations: []
+- id: cap:json-reader
+  title: Deserialize from an IO stream
+  intent: Deserialize from an IO stream
+  profile: serde-json-1.0.151
+  family: validation
+  bindings:
+  - api:serde-json-1.0.151:serde_json:function:serde_json::de::from_reader
+  claims:
+  - claim:json-reader
+  facets:
+  - name: input_mode
+    value: IO stream ending after the object
+    claims:
+    - claim:json-reader
+  synonyms: []
+  realizations: []
+- id: cap:rust-join
+  title: Join existing relations
+  intent: Join two existing DataFrames under explicit predicate and join-kind rules.
+  profile: rust-docsrs-54.1-58.4
+  family: enrichment
+  bindings:
+  - api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::join
+  claims:
+  - claim:rust-join
+  facets:
+  - name: placement
+    value: Join two existing DataFrames under explicit predicate and join-kind rules.
+    claims:
+    - claim:rust-join
+  synonyms: []
+  realizations: []
+- id: cap:rust-provider
+  title: Expose a source through a provider
+  intent: Implement a source scan contract when the source needs an execution plan
+    and declared pushdown behavior.
+  profile: rust-docsrs-54.1-58.4
+  family: enrichment
+  bindings:
+  - api:rust-docsrs-54.1-58.4:datafusion-catalog:function:datafusion_catalog::table::TableProvider::scan
+  claims:
+  - claim:rust-provider
+  facets:
+  - name: placement
+    value: Implement a source scan contract when the source needs an execution plan
+      and declared pushdown behavior.
+    claims:
+    - claim:rust-provider
+  synonyms: []
+  realizations: []
+- id: cap:rust-async
+  title: Invoke a remote scalar function asynchronously
+  intent: Use the async scalar extension mechanism when remote scalar invocation is
+    itself required.
+  profile: rust-docsrs-54.1-58.4
+  family: enrichment
+  bindings:
+  - api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::async_udf::AsyncScalarUDFImpl
+  claims:
+  - claim:rust-async
+  facets:
+  - name: placement
+    value: Use the async scalar extension mechanism when remote scalar invocation
+      is itself required.
+    claims:
+    - claim:rust-async
+  synonyms: []
+  realizations: []
+- id: cap:rust-aggregate
+  title: Aggregate grouped rows
+  intent: Use group and aggregate expressions for a grouped result.
+  profile: rust-docsrs-54.1-58.4
+  family: aggregation
+  bindings:
+  - api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::aggregate
+  claims:
+  - claim:rust-aggregate
+  facets:
+  - name: placement
+    value: Use group and aggregate expressions for a grouped result.
+    claims:
+    - claim:rust-aggregate
+  synonyms: []
+  realizations: []
+- id: cap:rust-window
+  title: Attach window results
+  intent: Use window expressions when a calculation is attached to existing rows.
+  profile: rust-docsrs-54.1-58.4
+  family: aggregation
+  bindings:
+  - api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::window
+  claims:
+  - claim:rust-window
+  facets:
+  - name: placement
+    value: Use window expressions when a calculation is attached to existing rows.
+    claims:
+    - claim:rust-window
+  synonyms: []
+  realizations: []
+- id: cap:rust-udaf
+  title: Implement a custom aggregate
+  intent: Implement accumulator and state behavior when required aggregate semantics
+    are not expressible through available registered functions.
+  profile: rust-docsrs-54.1-58.4
+  family: aggregation
+  bindings:
+  - api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::udaf::AggregateUDFImpl
+  claims:
+  - claim:rust-udaf
+  facets:
+  - name: placement
+    value: Implement accumulator and state behavior when required aggregate semantics
+      are not expressible through available registered functions.
+    claims:
+    - claim:rust-udaf
+  synonyms: []
+  realizations: []
+- id: cap:rust-udf
+  title: Implement a custom scalar function
+  intent: Implement scalar behavior after a scoped search leaves required semantics
+    unexpressed by existing functions.
+  profile: rust-docsrs-54.1-58.4
+  family: transformation
+  bindings:
+  - api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::udf::ScalarUDFImpl
+  claims:
+  - claim:rust-udf
+  facets:
+  - name: placement
+    value: Implement scalar behavior after a scoped search leaves required semantics
+      unexpressed by existing functions.
+    claims:
+    - claim:rust-udf
+  synonyms: []
+  realizations: []
+- id: cap:python-scanner
+  title: Plan a projected and filtered dataset scan
+  intent: Plan dataset consumption with explicit columns, predicates and batch controls.
+  profile: python-installed-54.0-25.0.1
+  family: dataset
+  bindings:
+  - api:python-installed-54.0-25.0.1:pyarrow:pyarrow.dataset.Dataset.scanner
+  claims:
+  - claim:python-scanner
+  facets:
+  - name: placement
+    value: Plan dataset consumption with explicit columns, predicates and batch controls.
+    claims:
+    - claim:python-scanner
+  synonyms: []
+  realizations: []
+- id: cap:python-parquet
+  title: Materialize a Parquet table
+  intent: Read a Parquet source directly when the consumer requires a materialized
+    Table.
+  profile: python-installed-54.0-25.0.1
+  family: dataset
+  bindings:
+  - api:python-installed-54.0-25.0.1:pyarrow:pyarrow.parquet.read_table
+  claims:
+  - claim:python-parquet
+  facets:
+  - name: placement
+    value: Read a Parquet source directly when the consumer requires a materialized
+      Table.
+    claims:
+    - claim:python-parquet
+  synonyms: []
+  realizations: []
+decisions:
+- id: decision:rust-placement
+  stack: pilot
+  profile: rust-docsrs-54.1-58.4
+  task: Choose query-plan projection or a direct Arrow addition
+  requirements:
+  - Match representation and execution placement to the stated consumer.
+  candidates:
+  - capability: cap:rust-project
+    when: Need to combine the transform with relational query operations.
+    claims:
+    - claim:rust-project
+  - capability: cap:rust-add
+    when: Need a direct Arrow operation on already materialized values.
+    claims:
+    - claim:rust-add
+  - capability: cap:rust-udf
+    when: Required scalar semantics remain unexpressed after a scoped catalog search.
+    claims:
+    - claim:rust-udf
+  comparison: A query projection composes expressions into a DataFrame plan. The direct
+    kernel accepts Arrow operands and specifically reports overflow. Select based
+    on where the values currently live, and check the arithmetic policy separately.
+    ScalarUDFImpl supplies extension hooks when the required semantics are still missing;
+    do not infer blanket optimizer opacity from its being a UDF.
+  claims:
+  - claim:rust-project
+  - claim:rust-add
+  - claim:rust-udf
+  reversing_conditions:
+  - Need a direct Arrow operation on already materialized values.
+  - Required scalar semantics remain unexpressed after a scoped catalog search.
+  family: transformation
+  examples:
+  - rust-behavior
+- id: decision:python-placement
+  stack: pilot
+  profile: python-installed-54.0-25.0.1
+  task: Choose Python query projection or Arrow compute
+  requirements:
+  - Match representation and execution placement to the stated consumer.
+  candidates:
+  - capability: cap:python-project
+    when: The values belong to a query pipeline.
+    claims:
+    - claim:python-project
+  - capability: cap:python-add
+    when: Already materialized arrays or a different overflow policy are required.
+    claims:
+    - claim:python-add
+  comparison: Projection remains in a query plan until execution. Arrow compute.add
+    acts on supplied array-like or scalar-like arguments and wraps integer overflow;
+    choose add_checked for an error policy.
+  claims:
+  - claim:python-project
+  - claim:python-add
+  reversing_conditions:
+  - Already materialized arrays or a different overflow policy are required.
+  family: transformation
+  examples:
+  - python-behavior
+- id: decision:rust-results
+  stack: pilot
+  profile: rust-docsrs-54.1-58.4
+  task: Choose buffered or streaming Rust query results
+  requirements:
+  - Match representation and execution placement to the stated consumer.
+  candidates:
+  - capability: cap:rust-collect
+    when: All output batches must be retained together.
+    claims:
+    - claim:rust-collect
+  - capability: cap:rust-stream
+    when: Incremental consumption or drop-driven cancellation is required.
+    claims:
+    - claim:rust-stream
+  comparison: Collect buffers all result batches. execute_stream exposes a single-partition
+    stream whose drop aborts execution. This does not prove that every upstream operator
+    uses bounded memory.
+  claims:
+  - claim:rust-collect
+  - claim:rust-stream
+  reversing_conditions:
+  - Incremental consumption or drop-driven cancellation is required.
+  family: lifecycle
+  examples:
+  - rust-behavior
+- id: decision:python-results
+  stack: pilot
+  profile: python-installed-54.0-25.0.1
+  task: Choose Python result materialization
+  requirements:
+  - Match representation and execution placement to the stated consumer.
+  candidates:
+  - capability: cap:python-collect
+    when: The consumer needs the complete list of batches.
+    claims:
+    - claim:python-collect
+  - capability: cap:python-stream
+    when: The consumer can process a record-batch stream.
+    claims:
+    - claim:python-stream
+  comparison: Collect returns a list of batches in memory; execute_stream returns
+    a stream. Rust cancellation documentation is not automatically a guarantee about
+    the Python wrapper.
+  claims:
+  - claim:python-collect
+  - claim:python-stream
+  reversing_conditions:
+  - The consumer can process a record-batch stream.
+  family: lifecycle
+  examples:
+  - python-behavior
+- id: decision:python-representation
+  stack: pilot
+  profile: python-installed-54.0-25.0.1
+  task: Choose Table or RecordBatchReader representation
+  requirements:
+  - Match representation and execution placement to the stated consumer.
+  candidates:
+  - capability: cap:table-reader
+    when: A downstream API consumes a RecordBatchReader.
+    claims:
+    - claim:table-reader
+  - capability: cap:reader-all
+    when: The caller requires a materialized Table.
+    claims:
+    - claim:reader-all
+  comparison: to_reader exposes an existing Table through a zero-copy reader; read_all
+    collects a reader into a Table. These operations point in different directions
+    and are not a blanket zero-copy guarantee for an arbitrary downstream consumer.
+  claims:
+  - claim:table-reader
+  - claim:reader-all
+  reversing_conditions:
+  - The caller requires a materialized Table.
+  family: interchange
+  examples:
+  - python-behavior
+- id: decision:pydantic-input
+  stack: pilot
+  profile: pydantic-2.13.4
+  task: Choose object or JSON validation
+  requirements:
+  - Match representation and execution placement to the stated consumer.
+  candidates:
+  - capability: cap:validate-object
+    when: The input is already a Python object.
+    claims:
+    - claim:validate-object
+  - capability: cap:validate-json
+    when: The input is JSON data.
+    claims:
+    - claim:validate-json
+  comparison: Choose the entry point matching the input representation. Both expose
+    strictness controls, but this comparison does not assert identical validation
+    semantics for every Python and JSON type.
+  claims:
+  - claim:validate-object
+  - claim:validate-json
+  reversing_conditions:
+  - The input is JSON data.
+  family: validation
+  examples:
+  - pydantic-behavior
+- id: decision:serde-input
+  stack: pilot
+  profile: serde-json-1.0.151
+  task: Choose JSON text or IO deserialization
+  requirements:
+  - Match representation and execution placement to the stated consumer.
+  candidates:
+  - capability: cap:json-text
+    when: JSON text is already available.
+    claims:
+    - claim:json-text
+  - capability: cap:json-reader
+    when: Input is an IO stream; consider EOF and buffering requirements.
+    claims:
+    - claim:json-reader
+  comparison: from_str consumes JSON text; from_reader reads an IO stream and expects
+    EOF. Add buffering for inefficient short reads and manage a Deserializer for a
+    persistent connection.
+  claims:
+  - claim:json-text
+  - claim:json-reader
+  reversing_conditions:
+  - Input is an IO stream; consider EOF and buffering requirements.
+  family: validation
+  examples:
+  - rust-behavior
+- id: decision:rust-enrichment
+  stack: pilot
+  profile: rust-docsrs-54.1-58.4
+  task: Choose where to integrate external enrichment
+  requirements:
+  - Declare reference-key uniqueness or a duplicate rule.
+  - Specify required source freshness and who owns acquisition.
+  - Keep provider filter semantics and remote scalar policies explicit.
+  candidates:
+  - capability: cap:rust-join
+    when: The source has already been acquired as a relation and a join expresses
+      the matching rule.
+    claims:
+    - claim:rust-join
+  - capability: cap:rust-provider
+    when: The source needs a reusable scan plan with explicit projection, filters
+      and limit contracts.
+    claims:
+    - claim:rust-provider
+  - capability: cap:rust-async
+    when: Remote scalar invocation itself is required under an explicit caller-owned
+      consistency and retry policy.
+    claims:
+    - claim:rust-async
+  comparison: 'Compare the source acquisition boundary before choosing the extension.
+    A join combines relations, a provider builds a source scan plan, and an async
+    scalar extension invokes remote functions. A left join does not establish key
+    uniqueness: the fixture multiplies the duplicate right key. None of these interface
+    descriptions establishes snapshot consistency for an arbitrary external service.'
+  claims:
+  - claim:rust-join
+  - claim:rust-provider
+  - claim:rust-async
+  - claim:relational-observation
+  reversing_conditions:
+  - The source needs a reusable scan plan with explicit projection, filters and limit
+    contracts.
+  - Remote scalar invocation itself is required under an explicit caller-owned consistency
+    and retry policy.
+  family: enrichment
+  examples:
+  - rust-behavior
+- id: decision:rust-rows
+  stack: pilot
+  profile: rust-docsrs-54.1-58.4
+  task: Choose aggregate, window or a custom accumulator
+  requirements:
+  - Choose output cardinality.
+  - Specify null, empty-input and frame policies for the selected functions.
+  candidates:
+  - capability: cap:rust-aggregate
+    when: A grouped result is wanted and existing expressions represent the statistic.
+    claims:
+    - claim:rust-aggregate
+  - capability: cap:rust-window
+    when: Results should be attached to existing rows with an explicit frame and ordering.
+    claims:
+    - claim:rust-window
+  - capability: cap:rust-udaf
+    when: A required statistic remains unexpressed after searching the scoped aggregate
+      catalog.
+    claims:
+    - claim:rust-udaf
+  comparison: Use grouped aggregation for a grouped result or a window to attach results
+    to the existing columns. The fixture demonstrates the differing row counts. The
+    custom aggregate API requires an accumulator and state contract; its existence
+    does not demonstrate that a custom aggregate is needed.
+  claims:
+  - claim:rust-aggregate
+  - claim:rust-window
+  - claim:rust-udaf
+  - claim:relational-observation
+  reversing_conditions:
+  - Results should be attached to existing rows with an explicit frame and ordering.
+  - A required statistic remains unexpressed after searching the scoped aggregate
+    catalog.
+  family: aggregation
+  examples:
+  - rust-behavior
+- id: decision:python-dataset
+  stack: pilot
+  profile: python-installed-54.0-25.0.1
+  task: Choose Scanner or direct Parquet table reading
+  requirements:
+  - Choose required output representation.
+  - State filter and column selection.
+  - Treat pruning and total memory separately from batch sizing.
+  candidates:
+  - capability: cap:python-scanner
+    when: Consumption needs a scan object, batch/readahead controls or advanced projection
+      expressions.
+    claims:
+    - claim:python-scanner
+  - capability: cap:python-parquet
+    when: The consumer wants a Table directly from a Parquet source.
+    claims:
+    - claim:python-parquet
+  comparison: Both mechanisms support projection and filters. Scanner defers loading
+    and exposes consumption controls; read_table directly materializes a Table. Metadata-based
+    pruning is conditional. The fixture compares the same filtered projection through
+    both paths without claiming physical IO savings.
+  claims:
+  - claim:python-scanner
+  - claim:python-parquet
+  reversing_conditions:
+  - The consumer wants a Table directly from a Parquet source.
+  family: dataset
+  examples:
+  - python-behavior
+integrations:
+- id: integration:c-stream
+  profile: interop-pilot
+  producer: cap:table-reader
+  consumer: cap:rust-import
+  representation: Arrow C Stream capsule; the Rust reader can be re-exported through
+    into_pyarrow
+  ownership: The declared fixture remains readable after its Python producers are
+    deleted; this is witnessed behavior for this fixture.
+  lifecycle: The declared fixture rejects a second import of the same consumed capsule.
+  failures:
+  - Second import of the consumed capsule is rejected in the declared fixture.
+  claims:
+  - claim:table-reader
+  - claim:rust-import
+  - claim:rust-export
+  - claim:interop-observation
+  examples:
+  - interop-behavior
+obligations:
+- id: surface:api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::select
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::select
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:arrow-arith:function:arrow_arith::numeric::add
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:arrow-arith:function:arrow_arith::numeric::add
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::collect
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::collect
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::execute_stream
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::execute_stream
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.select
+  axis: surface
+  profile: python-installed-54.0-25.0.1
+  target: api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.select
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:python-installed-54.0-25.0.1:pyarrow:pyarrow.compute.add
+  axis: surface
+  profile: python-installed-54.0-25.0.1
+  target: api:python-installed-54.0-25.0.1:pyarrow:pyarrow.compute.add
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.collect
+  axis: surface
+  profile: python-installed-54.0-25.0.1
+  target: api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.collect
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.execute_stream
+  axis: surface
+  profile: python-installed-54.0-25.0.1
+  target: api:python-installed-54.0-25.0.1:datafusion:datafusion.DataFrame.execute_stream
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:python-installed-54.0-25.0.1:pyarrow:pyarrow.Table.to_reader
+  axis: surface
+  profile: python-installed-54.0-25.0.1
+  target: api:python-installed-54.0-25.0.1:pyarrow:pyarrow.Table.to_reader
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:python-installed-54.0-25.0.1:pyarrow:pyarrow.RecordBatchReader.read_all
+  axis: surface
+  profile: python-installed-54.0-25.0.1
+  target: api:python-installed-54.0-25.0.1:pyarrow:pyarrow.RecordBatchReader.read_all
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:python-installed-54.0-25.0.1:datafusion:datafusion.SessionContext.from_arrow
+  axis: surface
+  profile: python-installed-54.0-25.0.1
+  target: api:python-installed-54.0-25.0.1:datafusion:datafusion.SessionContext.from_arrow
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::from_arrow_pycapsule
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::from_arrow_pycapsule
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:pydantic-2.13.4:pydantic:pydantic.BaseModel.model_validate
+  axis: surface
+  profile: pydantic-2.13.4
+  target: api:pydantic-2.13.4:pydantic:pydantic.BaseModel.model_validate
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:pydantic-2.13.4:pydantic:pydantic.BaseModel.model_validate_json
+  axis: surface
+  profile: pydantic-2.13.4
+  target: api:pydantic-2.13.4:pydantic:pydantic.BaseModel.model_validate_json
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:serde-json-1.0.151:serde_json:function:serde_json::de::from_str
+  axis: surface
+  profile: serde-json-1.0.151
+  target: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_str
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:serde-json-1.0.151:serde_json:function:serde_json::de::from_reader
+  axis: surface
+  profile: serde-json-1.0.151
+  target: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_reader
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: use-case:cap:rust-project
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-project
+  required_facets:
+  - execution_placement
+  disposition: required
+  reason: ''
+- id: use-case:cap:rust-add
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-add
+  required_facets:
+  - overflow
+  disposition: required
+  reason: ''
+- id: use-case:cap:rust-collect
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-collect
+  required_facets:
+  - materialization
+  disposition: required
+  reason: ''
+- id: use-case:cap:rust-stream
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-stream
+  required_facets:
+  - lifecycle
+  disposition: required
+  reason: ''
+- id: use-case:cap:python-project
+  axis: use_case
+  profile: python-installed-54.0-25.0.1
+  target: cap:python-project
+  required_facets:
+  - execution_placement
+  disposition: required
+  reason: ''
+- id: use-case:cap:python-add
+  axis: use_case
+  profile: python-installed-54.0-25.0.1
+  target: cap:python-add
+  required_facets:
+  - overflow
+  disposition: required
+  reason: ''
+- id: use-case:cap:python-collect
+  axis: use_case
+  profile: python-installed-54.0-25.0.1
+  target: cap:python-collect
+  required_facets:
+  - materialization
+  disposition: required
+  reason: ''
+- id: use-case:cap:python-stream
+  axis: use_case
+  profile: python-installed-54.0-25.0.1
+  target: cap:python-stream
+  required_facets:
+  - materialization
+  disposition: required
+  reason: ''
+- id: use-case:cap:table-reader
+  axis: use_case
+  profile: python-installed-54.0-25.0.1
+  target: cap:table-reader
+  required_facets:
+  - representation
+  disposition: required
+  reason: ''
+- id: use-case:cap:reader-all
+  axis: use_case
+  profile: python-installed-54.0-25.0.1
+  target: cap:reader-all
+  required_facets:
+  - representation
+  disposition: required
+  reason: ''
+- id: use-case:cap:from-arrow
+  axis: use_case
+  profile: python-installed-54.0-25.0.1
+  target: cap:from-arrow
+  required_facets:
+  - representation
+  disposition: required
+  reason: ''
+- id: use-case:cap:rust-import
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-import
+  required_facets:
+  - representation
+  disposition: required
+  reason: ''
+- id: use-case:cap:rust-export
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-export
+  required_facets:
+  - representation
+  disposition: required
+  reason: ''
+- id: use-case:cap:validate-object
+  axis: use_case
+  profile: pydantic-2.13.4
+  target: cap:validate-object
+  required_facets:
+  - input_mode
+  disposition: required
+  reason: ''
+- id: use-case:cap:validate-json
+  axis: use_case
+  profile: pydantic-2.13.4
+  target: cap:validate-json
+  required_facets:
+  - input_mode
+  disposition: required
+  reason: ''
+- id: use-case:cap:json-text
+  axis: use_case
+  profile: serde-json-1.0.151
+  target: cap:json-text
+  required_facets:
+  - input_mode
+  disposition: required
+  reason: ''
+- id: use-case:cap:json-reader
+  axis: use_case
+  profile: serde-json-1.0.151
+  target: cap:json-reader
+  required_facets:
+  - input_mode
+  disposition: required
+  reason: ''
+- id: obligation:decision:rust-placement
+  axis: decision
+  profile: rust-docsrs-54.1-58.4
+  target: decision:rust-placement
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: obligation:decision:python-placement
+  axis: decision
+  profile: python-installed-54.0-25.0.1
+  target: decision:python-placement
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: obligation:decision:rust-results
+  axis: decision
+  profile: rust-docsrs-54.1-58.4
+  target: decision:rust-results
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: obligation:decision:python-results
+  axis: decision
+  profile: python-installed-54.0-25.0.1
+  target: decision:python-results
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: obligation:decision:python-representation
+  axis: decision
+  profile: python-installed-54.0-25.0.1
+  target: decision:python-representation
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: obligation:decision:pydantic-input
+  axis: decision
+  profile: pydantic-2.13.4
+  target: decision:pydantic-input
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: obligation:decision:serde-input
+  axis: decision
+  profile: serde-json-1.0.151
+  target: decision:serde-input
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: composition:c-stream
+  axis: composition
+  profile: interop-pilot
+  target: integration:c-stream
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::join
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::join
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:datafusion-catalog:function:datafusion_catalog::table::TableProvider::scan
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:datafusion-catalog:function:datafusion_catalog::table::TableProvider::scan
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::async_udf::AsyncScalarUDFImpl
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::async_udf::AsyncScalarUDFImpl
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::aggregate
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::aggregate
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::window
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::window
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::udaf::AggregateUDFImpl
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::udaf::AggregateUDFImpl
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::udf::ScalarUDFImpl
+  axis: surface
+  profile: rust-docsrs-54.1-58.4
+  target: api:rust-docsrs-54.1-58.4:datafusion-expr:trait:datafusion_expr::udf::ScalarUDFImpl
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:python-installed-54.0-25.0.1:pyarrow:pyarrow.dataset.Dataset.scanner
+  axis: surface
+  profile: python-installed-54.0-25.0.1
+  target: api:python-installed-54.0-25.0.1:pyarrow:pyarrow.dataset.Dataset.scanner
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: surface:api:python-installed-54.0-25.0.1:pyarrow:pyarrow.parquet.read_table
+  axis: surface
+  profile: python-installed-54.0-25.0.1
+  target: api:python-installed-54.0-25.0.1:pyarrow:pyarrow.parquet.read_table
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: use_case:cap:rust-join
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-join
+  required_facets:
+  - placement
+  disposition: required
+  reason: ''
+- id: use_case:cap:rust-provider
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-provider
+  required_facets:
+  - placement
+  disposition: required
+  reason: ''
+- id: use_case:cap:rust-async
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-async
+  required_facets:
+  - placement
+  disposition: required
+  reason: ''
+- id: use_case:cap:rust-aggregate
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-aggregate
+  required_facets:
+  - placement
+  disposition: required
+  reason: ''
+- id: use_case:cap:rust-window
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-window
+  required_facets:
+  - placement
+  disposition: required
+  reason: ''
+- id: use_case:cap:rust-udaf
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-udaf
+  required_facets:
+  - placement
+  disposition: required
+  reason: ''
+- id: use_case:cap:rust-udf
+  axis: use_case
+  profile: rust-docsrs-54.1-58.4
+  target: cap:rust-udf
+  required_facets:
+  - placement
+  disposition: required
+  reason: ''
+- id: use_case:cap:python-scanner
+  axis: use_case
+  profile: python-installed-54.0-25.0.1
+  target: cap:python-scanner
+  required_facets:
+  - placement
+  disposition: required
+  reason: ''
+- id: use_case:cap:python-parquet
+  axis: use_case
+  profile: python-installed-54.0-25.0.1
+  target: cap:python-parquet
+  required_facets:
+  - placement
+  disposition: required
+  reason: ''
+- id: decision:decision:rust-enrichment
+  axis: decision
+  profile: rust-docsrs-54.1-58.4
+  target: decision:rust-enrichment
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: decision:decision:rust-rows
+  axis: decision
+  profile: rust-docsrs-54.1-58.4
+  target: decision:rust-rows
+  required_facets: []
+  disposition: required
+  reason: ''
+- id: decision:decision:python-dataset
+  axis: decision
+  profile: python-installed-54.0-25.0.1
+  target: decision:python-dataset
+  required_facets: []
+  disposition: required
+  reason: ''
+reviews:
+- subject: claim:rust-project
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: b9b1525be2a4a5dbf70d5dd40f4d5d5a088ff3e667261ed81dede64841f77d99
+  disposition: accepted
+- subject: claim:rust-add
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 83dae4c3dcf8488fd1334ddfc35d5a4e671f7852c906a129785c3d898bf46d1c
+  disposition: accepted
+- subject: claim:rust-collect
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 8f43dfb8df2f1763d6c0fc03f85093883bce8b37b5fe4c398e0cdba56608ba83
+  disposition: accepted
+- subject: claim:rust-stream
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 04058fc5f40ac9bb0e285c71f2f009b05086b37ea1770956d488172d290b3dc5
+  disposition: accepted
+- subject: claim:python-project
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 0790020353a936de68d497aeece9639f529a4dea4bfaa331dc45c5b0d2f1b822
+  disposition: accepted
+- subject: claim:python-add
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: b3c5c36b1b21d134a375c8693af3f9d98b43997115e20fc30db310d2ca86fd1a
+  disposition: accepted
+- subject: claim:python-collect
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: c221878c75db22cd00702771103c6fe430bd06b87fb1048c4b5a9b74665e0e91
+  disposition: accepted
+- subject: claim:python-stream
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 4241abc3f4bc0c924858ae14f9bb9164cf2444cb15f4a763ea21ce3dd05a2fb4
+  disposition: accepted
+- subject: claim:table-reader
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: c5fe796f646014f96832416b82d2fc96c97807db543cbe660dc84addfe1787d1
+  disposition: accepted
+- subject: claim:reader-all
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 54b5755a315d6f0409cd0d4117eb44a68458652f90c6899a88eb75a8808a2bfb
+  disposition: accepted
+- subject: claim:from-arrow
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: feb340919df6299b8f14646fd90b15f3a225daf652e46ce10727ee7949531253
+  disposition: accepted
+- subject: claim:rust-import
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: c2a95239e481023b54a7b455922bca5f479e2f4607a1bc7175d82deede2a5179
+  disposition: accepted
+- subject: claim:rust-export
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 227f5046d028a9e34dda6e86dac7cfb94a7acaaf6799cdd6d1c1f45912fb5672
+  disposition: accepted
+- subject: claim:validate-object
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: dba0255484a4974ddee35552f4f872eb05f355cc47f79db385a520a0d2ad2206
+  disposition: accepted
+- subject: claim:validate-json
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 10433373879c13ea54d719890d63398d5cfd84fcccb166e83fc8fd99afe82175
+  disposition: accepted
+- subject: claim:json-text
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 065a91bb43b75487caadbb8076765b89b327336bc4bb35b7d70ded8ad139622a
+  disposition: accepted
+- subject: claim:json-reader
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 6902055262d5d439d6b90c1382dda180aa76457d21e85b30fedbff63ceaf9c55
+  disposition: accepted
+- subject: claim:interop-observation
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Executed the real PyArrow/pyo3-arrow round trip. Checked schema metadata,
+    data-buffer address, producer deletion and second capsule import. Acceptance is
+    limited to the declared fixture and build. Refreshed after exact source/type and
+    example-input fingerprint checks; interop fixture rerun successfully.
+  digest: 77d01fb66e5bd5d2455905fef3e7b5fe5ca514baae59133f670bea2b859230cf
+  disposition: accepted
+- subject: claim:rust-join
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 5845e77877811e90c2d63e4b43954753159868af2e8d41e04cf813ee14274f25
+  disposition: accepted
+- subject: claim:rust-provider
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 6f85932fb14585cd4904c53171cb1f87618e943804fc6f9dd7339c12d9cb96e0
+  disposition: accepted
+- subject: claim:rust-async
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 7062c393c80547f08cd4d31f85536ca5540dace7bd1c4786ad0b015b4baa4b03
+  disposition: accepted
+- subject: claim:rust-aggregate
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: b24cd9f77c72215af98372824b77f0bdf16eb6649b1f264dc99784eea09b12b9
+  disposition: accepted
+- subject: claim:rust-window
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 20a737efba9f0d4603533dd7b7a030e1cfb53587f585fd0143d52606b1fd1a40
+  disposition: accepted
+- subject: claim:rust-udaf
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 3cc574ba1e47ad6a5cdb2ecd5856da9c12d6e655adfa1fbd10b54e51a2203ddb
+  disposition: accepted
+- subject: claim:rust-udf
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: dd1305d356cba7cb982684108a974afd646adf7399b48a0800e013dcfbcd6f0d
+  disposition: accepted
+- subject: claim:python-scanner
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 2c3a37b9366f63aacb20c1b9fd85c430606561915512a9a75aa830ffaf84ed26
+  disposition: accepted
+- subject: claim:python-parquet
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: e9673e437e6faac7d5f7958bfdabd0c69d6595deb3de3193f19ef0f8178485cc
+  disposition: accepted
+- subject: claim:relational-observation
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: f6414ba058194b2e0399845bb056806dd22dc914ea0c83fb6abdba2e37b09565
+  disposition: accepted
+- subject: cap:rust-project
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: afe3db4eb80cded2386170a5e319b39eed44aa6f0b4fa60cb26e1599965b098b
+  disposition: accepted
+- subject: cap:rust-add
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 4644cf3e4511bd8d94d502114f6bb45339ac8994a0fb7759c3dd446add780260
+  disposition: accepted
+- subject: cap:rust-collect
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: d23740326f31a3f9d09eccac0605d472dfe1bf3f331cfdbc4285a9aa65e96677
+  disposition: accepted
+- subject: cap:rust-stream
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 6e839dd0d70ac2730cfea0de9dacf48415313f6b9a3d530a64abc09098e18a6e
+  disposition: accepted
+- subject: cap:python-project
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 7c6c9557f13f379a876275e62899d66c62da712f80029e3919959e90f66e8a2a
+  disposition: accepted
+- subject: cap:python-add
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 4adc520e8b9434752f7ff55d8b0e147f21c0cc67ecc5f869290c46ff85005157
+  disposition: accepted
+- subject: cap:python-collect
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 542a8bab701a516b5aa43ffa6caaf2b9ee73bc2eae2e24e1005b84f9c24aaf27
+  disposition: accepted
+- subject: cap:python-stream
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: c84ed0b7a557205995280fffa47101b36406d10c38d552e1273a8402dc47a732
+  disposition: accepted
+- subject: cap:table-reader
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 70c12f106bce7489443d387c995d9735e00f348ff992aec1ab99e27daf0df7b3
+  disposition: accepted
+- subject: cap:reader-all
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: a55919ff3bff601756a873f9661c23f80322dc2af184fa79f3f0c2d6cd4313db
+  disposition: accepted
+- subject: cap:from-arrow
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: cee2e21860e385bafce6fac9a5c221d6477667eaf7e30307a2cbc375344c2456
+  disposition: accepted
+- subject: cap:rust-import
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: d6d619a86212b9a3de5d62665d7b3ca02be56b8a65394070f279840b4bde7dac
+  disposition: accepted
+- subject: cap:rust-export
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: a3475cf96c1b5d6223873efff9da43de20bf6f23bc34a5fa3b6998fdc6093534
+  disposition: accepted
+- subject: cap:validate-object
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 204024264e7e3762a3f9b81f27915e75eb65a40e5c1e4a0b55dc8afd9560c5f7
+  disposition: accepted
+- subject: cap:validate-json
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 3ea913897983b043836c22ff59532d07753b824a43a06f3adbab0a27c81d9b23
+  disposition: accepted
+- subject: cap:json-text
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: afb8f8180a3493ccf41a65e0358f8ae96e58e5b5db00d55f4228ece842ecd55b
+  disposition: accepted
+- subject: cap:json-reader
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 022f6e8bb92fa6669c8a058da7927b7b4b0d32356b0d9b9e259e648a2355fcd6
+  disposition: accepted
+- subject: cap:rust-join
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 215ea1a70849d2f21539ca42b40c2ad3a5baf8736345a64a50aea10f2e8b37fb
+  disposition: accepted
+- subject: cap:rust-provider
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 2c3a36a0bbbe1437b121492a1484db701e2528bce3b0bd22ec0dfd0ef33e56e7
+  disposition: accepted
+- subject: cap:rust-async
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 9e0daf5477b701e0081b9291a575c7ab11b30d56f0ab9eefff23500a2c96de47
+  disposition: accepted
+- subject: cap:rust-aggregate
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: c5a3a06212e53daaeb979fa994b08507c09c79dbad02b26aa1260deed9525651
+  disposition: accepted
+- subject: cap:rust-window
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 9a98105da16ee50144b626d55ce4b0f5ca3e2d85021fab7600fc0bf69f7ca572
+  disposition: accepted
+- subject: cap:rust-udaf
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: c0512820b3e752d98339d4be5a75b6d9184965c29fbc56d37e27fa7a19a18aa1
+  disposition: accepted
+- subject: cap:rust-udf
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: fbfd8c55bf8c005deb9ebee4fec022190d33d4368bf95471aa9233310ae40ec7
+  disposition: accepted
+- subject: cap:python-scanner
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 6e8a0e8f6108ae087085b4b4fa11954aed0e65d46f1a23f8dc964bf0a55f87dd
+  disposition: accepted
+- subject: cap:python-parquet
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: ae06671da1e1c38adef5d0ad511c32c765cf3ae5ee1504bded95e5b0a0a98749
+  disposition: accepted
+- subject: decision:rust-placement
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 29095af86a9d9823a8f82a9e7ab45cdf9d6155f1015752339fd6eaaf16fa93d0
+  disposition: accepted
+- subject: decision:python-placement
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: f04b5b226095d35ad8f19eaedef70cd4e017fc3451fc865004ae065d9124d8e3
+  disposition: accepted
+- subject: decision:rust-results
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 95e0ab5efd61cdd87a9e00d2d1c02a3f1aaf9bd9e4799335939651123f445b27
+  disposition: accepted
+- subject: decision:python-results
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 286c218f237d466817404f87d1a36df0aef260a984d8f406d5e23d5c8f322e20
+  disposition: accepted
+- subject: decision:python-representation
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 059b486fef9f95d44585a014da7f9c8bf986b58b238d7ea389783daf1fba98a0
+  disposition: accepted
+- subject: decision:pydantic-input
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 1eb0f56c9b614b9c73a75abd520e795e1f2404dc8c4e9231671200c3d60d5722
+  disposition: accepted
+- subject: decision:serde-input
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact selected upstream statements and checked that the wording
+    stays within their scope. Conditional choice statements are tied to the declared
+    representation or execution requirements. No blanket memory, copy, cancellation,
+    or validation equivalence is asserted. Refreshed after exact source/type and example-input
+    fingerprint checks; interop fixture rerun successfully.
+  digest: 292e36270ac0276a53012ac75e86eed220d41c3ca5ac15ae213e9ec539f30cc7
+  disposition: accepted
+- subject: decision:rust-enrichment
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 2eb903edf5bb024713bf4de8fd7796c0ec056a0a8d95b5abbce77ada22e97087
+  disposition: accepted
+- subject: decision:rust-rows
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 84bf4ae0cd87f98e32fbb50399c0518352475f4e7e4d5f6f53539cae6d08726b
+  disposition: accepted
+- subject: decision:python-dataset
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Read the exact upstream selections in this session and checked mechanism,
+    conditions and exceptions; relational and dataset assertions executed where declared.
+    Remote IO and snapshot guarantees remain unasserted.
+  digest: 2279f45b864fb6f4a88a9f4a0b29af00206f95b052921dc75c860c7dd74a54df
+  disposition: accepted
+- subject: integration:c-stream
+  reviewer: Codex qualitative evidence review 2026-09-11
+  rationale: Executed the real PyArrow/pyo3-arrow round trip. Checked schema metadata,
+    data-buffer address, producer deletion and second capsule import. Acceptance is
+    limited to the declared fixture and build. Refreshed after exact source/type and
+    example-input fingerprint checks; interop fixture rerun successfully.
+  digest: 514aa36118aa15f5ef6a22f7774ac332075590c0a5cf8ccb0a59787592ee40b1
+  disposition: accepted
+examples:
+- id: rust-build
+  profile: rust-example-pilot
+  argv:
+  - cargo
+  - build
+  - --offline
+  - --locked
+  - --manifest-path
+  - examples/rust/Cargo.toml
+  - --target-dir
+  - '{cache}/columnar-rust'
+  inputs:
+  - examples/rust/Cargo.toml
+  - examples/rust/Cargo.lock
+  - examples/rust/src/main.rs
+  - examples/rust/src/lib.rs
+  claims:
+  - claim:rust-import
+  timeout_seconds: 300
+  requirements: []
+  cacheable: false
+- id: rust-behavior
+  profile: rust-example-pilot
+  argv:
+  - '{cache}/columnar-rust/debug/library-guides-columnar-pilot'
+  inputs:
+  - examples/rust/Cargo.toml
+  - examples/rust/Cargo.lock
+  - examples/rust/src/main.rs
+  - examples/rust/src/lib.rs
+  claims:
+  - claim:rust-collect
+  - claim:rust-stream
+  - claim:rust-add
+  - claim:json-text
+  - claim:json-reader
+  - claim:relational-observation
+  timeout_seconds: 60
+  requirements: []
+  cacheable: true
+- id: python-behavior
+  profile: python-installed-54.0-25.0.1
+  argv:
+  - '{python}'
+  - examples/python_example.py
+  inputs:
+  - examples/python_example.py
+  claims:
+  - claim:python-project
+  - claim:python-add
+  - claim:python-collect
+  - claim:table-reader
+  - claim:reader-all
+  - claim:from-arrow
+  - claim:python-scanner
+  - claim:python-parquet
+  timeout_seconds: 60
+  requirements:
+  - - datafusion
+    - 54.0.0
+  - - pyarrow
+    - 25.0.1
+  cacheable: true
+- id: pydantic-behavior
+  profile: pydantic-2.13.4
+  argv:
+  - '{python}'
+  - examples/transfer_example.py
+  inputs:
+  - examples/transfer_example.py
+  claims:
+  - claim:validate-object
+  - claim:validate-json
+  timeout_seconds: 60
+  requirements:
+  - - pydantic
+    - 2.13.4
+  cacheable: true
+- id: interop-behavior
+  profile: interop-pilot
+  argv:
+  - '{python}'
+  - examples/interop_example.py
+  - '{cache}/columnar-rust/debug/liblibrary_guides_interop.so'
+  inputs:
+  - examples/interop_example.py
+  - examples/rust/Cargo.toml
+  - examples/rust/Cargo.lock
+  - examples/rust/src/main.rs
+  - examples/rust/src/lib.rs
+  claims:
+  - claim:table-reader
+  - claim:rust-import
+  - claim:rust-export
+  timeout_seconds: 60
+  requirements:
+  - - pyarrow
+    - 25.0.1
+  cacheable: true
+relations:
+- source: api:rust-docsrs-54.1-58.4:arrow-arith:function:arrow_arith::numeric::add
+  target: core::result::Result
+  kind: produces
+  evidence: evidence:arrow-arith-58.4.0:100:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:arrow-arith:function:arrow_arith::numeric::add
+  target: arrow_schema::error::ArrowError
+  kind: produces
+  evidence: evidence:arrow-arith-58.4.0:100:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:arrow-arith:function:arrow_arith::numeric::add
+  target: arrow_array::array::ArrayRef
+  kind: produces
+  evidence: evidence:arrow-arith-58.4.0:100:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::execute_stream
+  target: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::collect
+  kind: intradoc_link
+  evidence: evidence:datafusion-54.1.0:124:api
+  resolution: resolved
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::execute_stream
+  target: datafusion_execution::stream::SendableRecordBatchStream
+  kind: produces
+  evidence: evidence:datafusion-54.1.0:124:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::execute_stream
+  target: datafusion_common::error::Result
+  kind: produces
+  evidence: evidence:datafusion-54.1.0:124:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::select
+  target: datafusion_expr::select_expr::SelectExpr
+  kind: consumes
+  evidence: evidence:datafusion-54.1.0:76:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::select
+  target: api:rust-docsrs-54.1-58.4:datafusion:struct:datafusion::dataframe::DataFrame
+  kind: produces
+  evidence: evidence:datafusion-54.1.0:76:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::select
+  target: datafusion_common::error::Result
+  kind: produces
+  evidence: evidence:datafusion-54.1.0:76:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::collect
+  target: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::execute_stream
+  kind: intradoc_link
+  evidence: evidence:datafusion-54.1.0:80:api
+  resolution: resolved
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::collect
+  target: alloc::vec::Vec
+  kind: produces
+  evidence: evidence:datafusion-54.1.0:80:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::collect
+  target: arrow_array::record_batch::RecordBatch
+  kind: produces
+  evidence: evidence:datafusion-54.1.0:80:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:datafusion:function:datafusion::dataframe::DataFrame::collect
+  target: datafusion_common::error::Result
+  kind: produces
+  evidence: evidence:datafusion-54.1.0:80:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::from_arrow_pycapsule
+  target: pyo3::instance::Bound
+  kind: consumes
+  evidence: evidence:pyo3-arrow-0.17.0:1284:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::from_arrow_pycapsule
+  target: pyo3::types::capsule::PyCapsule
+  kind: consumes
+  evidence: evidence:pyo3-arrow-0.17.0:1284:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::from_arrow_pycapsule
+  target: pyo3::err::PyResult
+  kind: produces
+  evidence: evidence:pyo3-arrow-0.17.0:1284:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow
+  target: pyo3::marker::Python
+  kind: consumes
+  evidence: evidence:pyo3-arrow-0.17.0:1291:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow
+  target: pyo3::instance::Bound
+  kind: produces
+  evidence: evidence:pyo3-arrow-0.17.0:1291:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow
+  target: pyo3::err::PyResult
+  kind: produces
+  evidence: evidence:pyo3-arrow-0.17.0:1291:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:rust-docsrs-54.1-58.4:pyo3-arrow:function:pyo3_arrow::record_batch_reader::PyRecordBatchReader::into_pyarrow
+  target: pyo3::types::any::PyAny
+  kind: produces
+  evidence: evidence:pyo3-arrow-0.17.0:1291:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_str
+  target: api:serde-json-1.0.151:serde_json:type_alias:serde_json::error::Result
+  kind: produces
+  evidence: evidence:serde_json-1.0.151:145:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_reader
+  target: api:serde-json-1.0.151:serde_json:struct:serde_json::de::Deserializer
+  kind: intradoc_link
+  evidence: evidence:serde_json-1.0.151:147:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_reader
+  target: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_str
+  kind: intradoc_link
+  evidence: evidence:serde_json-1.0.151:147:api
+  resolution: resolved
+  source_symbol: ''
+  target_symbol: ''
+- source: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_reader
+  target: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_slice
+  kind: intradoc_link
+  evidence: evidence:serde_json-1.0.151:147:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_reader
+  target: std::fs::File
+  kind: intradoc_link
+  evidence: evidence:serde_json-1.0.151:147:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_reader
+  target: std::io::buffered::bufreader::BufReader
+  kind: intradoc_link
+  evidence: evidence:serde_json-1.0.151:147:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+- source: api:serde-json-1.0.151:serde_json:function:serde_json::de::from_reader
+  target: api:serde-json-1.0.151:serde_json:type_alias:serde_json::error::Result
+  kind: produces
+  evidence: evidence:serde_json-1.0.151:147:api
+  resolution: external
+  source_symbol: ''
+  target_symbol: ''
+profiles:
+- id: rust-docsrs-54.1-58.4
+  description: docs.rs source build for locked Rust library versions; consumer features
+    are separate
+  components: []
+- id: python-installed-54.0-25.0.1
+  description: DataFusion Python 54.0.0 and PyArrow 25.0.1
+  components: []
+- id: pydantic-2.13.4
+  description: Pydantic 2.13.4
+  components: []
+- id: serde-json-1.0.151
+  description: serde_json 1.0.151
+  components: []
+- id: interop-pilot
+  description: Explicit Python and Rust component profiles; no dependency-version
+    unification inferred
+  components:
+  - rust-docsrs-54.1-58.4
+  - python-installed-54.0-25.0.1
+- id: rust-example-pilot
+  description: 'Executable Cargo.lock fixture: DataFusion 54.1 with SQL enabled, Arrow
+    58.4, serde_json 1.0.151; this does not qualify other docs.rs features.'
+  components:
+  - rust-docsrs-54.1-58.4
+  - serde-json-1.0.151
+principles:
+- id: principle:execution-placement
+  statement: Choose the operation whose execution boundary matches the consumer requirement.
+  exceptions:
+  - A separate materialization or interoperability boundary may be required by the
+    downstream API.

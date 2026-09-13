@@ -1,0 +1,8 @@
+{
+  "manifest": "38a45cc74a0bf023134fd1344840d78e61a301d9e0bc959f2858576000131db9",
+  "manifest_count": 1452822,
+  "sample_size": 64,
+  "sample_selection_seconds": 0.2105499699999882,
+  "individual_seconds": 2.235688145999916,
+  "batched_seconds": 0.03160193999997318
+}

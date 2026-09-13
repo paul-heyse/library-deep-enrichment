@@ -1,0 +1,38 @@
+{
+  "logical_id": "task:integer-add-wrap",
+  "profile": "python-installed-54-25",
+  "goal": "elementwise-add",
+  "profiles": [
+    "python-installed-54-25"
+  ],
+  "requirements": [
+    {
+      "predicate": "f55ae4479ebf9cc0e175de94fb2d8c7983d855c3a2ca6591dedfac3f9030664d",
+      "value": {
+        "kind": "text",
+        "text": "add"
+      },
+      "operator": "equal",
+      "interpretations": [
+        "upstream_contract"
+      ],
+      "mandatory": true
+    },
+    {
+      "predicate": "b1ec9d65234efc5166c38d1b26412c545bcad69d8396b6e3892419417e16776f",
+      "value": {
+        "kind": "text",
+        "text": "wrap"
+      },
+      "operator": "equal",
+      "interpretations": [
+        "upstream_contract"
+      ],
+      "mandatory": true
+    }
+  ],
+  "context": [],
+  "inputs": [],
+  "preferences": [],
+  "description": "Choose element-wise integer addition with documented overflow behavior: wrap"
+}

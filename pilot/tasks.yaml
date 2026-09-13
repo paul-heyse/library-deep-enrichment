@@ -1,0 +1,163 @@
+mode: qualitative
+tasks:
+- id: rust-placement
+  prompt: Choose expression composition, direct Arrow compute, or a scalar extension
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Execution placement
+  - Overflow policy
+  - Conditional extension use
+- id: python-placement
+  prompt: Transform an already materialized Arrow column or a query column
+  profile: python-installed-54.0-25.0.1
+  requirements:
+  - Representation
+  - Query versus kernel
+  - Checked versus wrapping overflow
+- id: rust-results
+  prompt: Consume a large Rust query result incrementally
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Stream versus collect
+  - Drop behavior
+  - No blanket operator-memory guarantee
+- id: python-results
+  prompt: Choose a Python batch stream or collected results
+  profile: python-installed-54.0-25.0.1
+  requirements:
+  - Result type
+  - No borrowed Rust cancellation guarantee
+- id: python-representation
+  prompt: Adapt Table and RecordBatchReader consumers
+  profile: python-installed-54.0-25.0.1
+  requirements:
+  - Conversion direction
+  - Materialization
+  - Scoped copy claims
+- id: pydantic-input
+  prompt: Validate Python objects or JSON input
+  profile: pydantic-2.13.4
+  requirements:
+  - Representation
+  - Strictness caveat
+- id: serde-input
+  prompt: Deserialize JSON text or a persistent IO connection
+  profile: serde-json-1.0.151
+  requirements:
+  - from_str versus from_reader
+  - EOF
+  - Buffering
+- id: c-stream
+  prompt: Transfer a nullable Arrow reader through Rust and back
+  profile: interop-pilot
+  requirements:
+  - Schema and metadata
+  - Ownership lifetime
+  - Capsule single use
+  - Fixture-scoped buffer evidence
+- id: rust-enrichment
+  prompt: Choose relation join, source provider, or remote scalar integration
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Source acquisition
+  - Duplicate-key cardinality
+  - Explicit freshness policy
+- id: rust-rows
+  prompt: Choose grouped, window or custom aggregate placement
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Output cardinality
+  - Function-specific empty/null rules
+  - Conditional custom accumulator
+- id: python-dataset
+  prompt: Read selected Parquet columns and filtered rows
+  profile: python-installed-54.0-25.0.1
+  requirements:
+  - Scanner versus Table
+  - Shared filter support
+  - Conditional physical pruning
+- id: reverse-rust-placement
+  prompt: Change the consumer to an already materialized array
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Decision reverses to a direct kernel under the changed requirement
+- id: reverse-python-overflow
+  prompt: Require an error on integer overflow
+  profile: python-installed-54.0-25.0.1
+  requirements:
+  - Checked operation
+  - No accidental wrapping
+- id: duplicate-reference
+  prompt: Keep unmatched enrichment rows with duplicate reference keys
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Unmatched null
+  - Duplicate multiplication
+  - No invented uniqueness
+- id: provider-limit
+  prompt: A provider receives inexact filters and a limit
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Limit pushdown condition
+  - Filter-before-limit-before-projection
+- id: rust-schema
+  prompt: Reconcile evolving Rust Arrow schemas
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Metadata precedence
+  - Nested compatibility
+  - Nullability policy
+- id: python-schema
+  prompt: Govern Python dataset schema evolution
+  profile: python-installed-54.0-25.0.1
+  requirements:
+  - Fragment versus dataset schema
+  - Evolution conditions
+- id: custom-scalar
+  prompt: Implement a custom scalar operation after a failed built-in search
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Concrete missing semantics
+  - Signature and null behavior
+  - Working custom extension
+- id: custom-aggregate
+  prompt: Implement a statistic with a nonstandard empty-group policy
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Accumulator state
+  - Merge behavior
+  - Empty/null fixture
+- id: conditional-store
+  prompt: Choose conditional object-store writes
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Concurrency preconditions
+  - Failure semantics
+  - Backend applicability
+- id: flight-ipc
+  prompt: Choose IPC or Flight for a remote Arrow boundary
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Transport
+  - Serialization
+  - Ownership and failures
+- id: async-consistency
+  prompt: Guarantee live service consistency during async enrichment
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Freshness model
+  - Call multiplicity
+  - Retries
+- id: numpy-dlpack
+  prompt: Move arrays across NumPy and DLPack consumers
+  profile: python-installed-54.0-25.0.1
+  requirements:
+  - Null representation
+  - Ownership
+  - Copy conditions
+- id: feature-profile
+  prompt: Use a docs.rs-only optional API in a reduced Cargo build
+  profile: rust-docsrs-54.1-58.4
+  requirements:
+  - Feature/target applicability
+  - Compiler verification

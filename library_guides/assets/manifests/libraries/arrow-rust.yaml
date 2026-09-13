@@ -1,0 +1,32 @@
+schema_version: library-guides.library_manifest.v1
+library_id: arrow-rust
+ecosystem: rust
+packages:
+  - name: arrow
+    public_root: arrow
+surface_packages: ['arrow', 'arrow_*', 'parquet', 'object_store']
+profiles:
+  - profile_id: arrow-rust-docsrs
+    version_source: cargo_workspace_dependency
+    version_key: arrow
+    scope: docs.rs default documentation build; not every consumer feature set
+    api_source:
+      kind: docs_rs_rustdoc_json
+      crate: arrow
+      additional_crates:
+        - arrow-arith
+        - arrow-array
+        - arrow-avro
+        - arrow-buffer
+        - arrow-cast
+        - arrow-csv
+        - arrow-data
+        - arrow-ipc
+        - arrow-json
+        - arrow-ord
+        - arrow-pyarrow
+        - arrow-row
+        - arrow-schema
+        - arrow-select
+        - arrow-string
+registry_probes: []

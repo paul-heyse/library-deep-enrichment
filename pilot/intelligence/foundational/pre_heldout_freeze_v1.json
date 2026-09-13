@@ -1,0 +1,633 @@
+{
+  "kind": "library-guides.pre-heldout-transfer-freeze.v1",
+  "utc": "2026-09-13T17:23:33.678589+00:00",
+  "checkpoint": "/home/paul/smartref/.cache/library-guides-foundational/20260913T101230Z/checkpoints/20260913T172156Z",
+  "checkpoint_manifest_sha256": "36f42d82b55764564e729d82f4a8d068f8be02003a61078c5e19aa0987c5994e",
+  "critical_sources": [
+    {
+      "path": "library_guides/analyses/__init__.py",
+      "sha256": "9f7329d38c567b9bd99aa125a8b6cd50c4e1d00796c44b626ade63a1674816ce"
+    },
+    {
+      "path": "library_guides/analyses/behavior/__init__.py",
+      "sha256": "1f2cc1e4c33d4d02747b632db67132a88bbccc5b61679a983143dd7ef6d8673c"
+    },
+    {
+      "path": "library_guides/analyses/behavior/builder.py",
+      "sha256": "78f37ff7f0ec78ac0de1b7bab97a0708d91a5db75b8700e814d67071f04c357a"
+    },
+    {
+      "path": "library_guides/analyses/behavior/contracts.py",
+      "sha256": "11d410bb88a99858b949972f6ee0b35bdf1fa4ee5467f31f48e78af04088945c"
+    },
+    {
+      "path": "library_guides/analyses/behavior/control.py",
+      "sha256": "c73c21fe94df92acb240a9c397760bf29db49f300440f16557a42887996feaa0"
+    },
+    {
+      "path": "library_guides/analyses/behavior/coverage.py",
+      "sha256": "16889923004a1fcff4887c3fd918225946eab58f409ed886e783b809ea3b722d"
+    },
+    {
+      "path": "library_guides/analyses/behavior/engine.py",
+      "sha256": "6930ab883dde5da420b9252c27f609bd6840af053f6bc31d82c2ea9d536ee0c4"
+    },
+    {
+      "path": "library_guides/analyses/behavior/fixedpoints.py",
+      "sha256": "07ab13964557c6f2679c881c80803ec7d28cae5fcb564975824a33a4add8d72d"
+    },
+    {
+      "path": "library_guides/analyses/behavior/integrity.py",
+      "sha256": "7f46d58536f0718ef37f95794363dd56e745dc71daf29e0a914b7e15c26bca00"
+    },
+    {
+      "path": "library_guides/analyses/behavior/iterators.py",
+      "sha256": "98480db257e522280686ee4175c600a927c21d8b2d95729c8aa559c96e61c908"
+    },
+    {
+      "path": "library_guides/analyses/behavior/locations.py",
+      "sha256": "e91ded8130f060a80511c913891414601f05642b325ea7b0ac91d8fe387664a1"
+    },
+    {
+      "path": "library_guides/analyses/behavior/memory.py",
+      "sha256": "5d99335ce39559842c0379894a7e066c9ceff95ac6e1bbd69729e8fbaf0c0ad6"
+    },
+    {
+      "path": "library_guides/analyses/behavior/mir.py",
+      "sha256": "5d751ce5f063ffbb2978440994a9da66d24312f115a19e988e92af5d431572b9"
+    },
+    {
+      "path": "library_guides/analyses/behavior/mir_types.py",
+      "sha256": "1538e96a18188d994d5fb21ef29152887c323d24de4382722974aa89706989fc"
+    },
+    {
+      "path": "library_guides/analyses/behavior/numeric.py",
+      "sha256": "52359b3b03e98a74e48f7baf3bec7c5af30b5c588541d7e2c601c6c148eb2650"
+    },
+    {
+      "path": "library_guides/analyses/behavior/origins.py",
+      "sha256": "d100c4f4b25711c655f95194bb9380cc754af2b0c2c834b346e600857c2fc336"
+    },
+    {
+      "path": "library_guides/analyses/behavior/predicates.py",
+      "sha256": "88bd6b460086f4cfbbffc98c5a5dcebebb5ac36d32232df4ae83532fc27f61ab"
+    },
+    {
+      "path": "library_guides/analyses/behavior/python.py",
+      "sha256": "531a888c8f43955885530e0982da3852a96178ab24878e3fd3bb274de74b8fb1"
+    },
+    {
+      "path": "library_guides/analyses/behavior/python_comprehensions.py",
+      "sha256": "e83860aae25cf92ba7fd5b38ede1bd675eecbd1e213813753cb41be014648626"
+    },
+    {
+      "path": "library_guides/analyses/behavior/python_contexts.py",
+      "sha256": "898c7178ffe660f94c6a62bb74adf886a0c8f90dfde856ce5962922b655159a5"
+    },
+    {
+      "path": "library_guides/analyses/behavior/python_expr.py",
+      "sha256": "49641c838f803c77b43ba880be05e434423bb81a0d6883585028a382e521ee00"
+    },
+    {
+      "path": "library_guides/analyses/behavior/python_graph.py",
+      "sha256": "f2a9c8b2034aaed5bbd845beaa6f5a82dd453e4e7745d4aa4a7b8327d73b9ccf"
+    },
+    {
+      "path": "library_guides/analyses/behavior/python_match.py",
+      "sha256": "73db61680266437dcc4c45633257808320bce530b57879866cafcccc3520bb89"
+    },
+    {
+      "path": "library_guides/analyses/behavior/python_nodes.py",
+      "sha256": "b34a777b5649669e6cb7cea713f6f7d75cf761c5a6e707d897027064856e0cc2"
+    },
+    {
+      "path": "library_guides/analyses/behavior/python_stmt.py",
+      "sha256": "b8298e425960bd7a34714300e7dfdd1e587a5f1bdeb825b272bf38165b4f5dcf"
+    },
+    {
+      "path": "library_guides/analyses/behavior/regions.py",
+      "sha256": "92b9979c2c308e37f0119dafa931b1ba2f4ef158ab46c9fd913bfcae4520bc3b"
+    },
+    {
+      "path": "library_guides/analyses/behavior/schemas.py",
+      "sha256": "8431620c30d58bc56c5ad4e0234f95a9dc31220b94448138379ce4a4b91184bd"
+    },
+    {
+      "path": "library_guides/analyses/behavior/sequence_values.py",
+      "sha256": "69225c6df6a0ddd2993d593bae3d66e3cecdcb5a410c6309273f1f51d5bf551a"
+    },
+    {
+      "path": "library_guides/analyses/behavior/sequences.py",
+      "sha256": "2886a18fb83a31b693ec12ec9fb6f70a4c547fe1c19294640d242ac608a3c93c"
+    },
+    {
+      "path": "library_guides/analyses/behavior/service.py",
+      "sha256": "dfbc66dfba68c2e884c0f0142655e61be2923cb10e4d7185117a51d1b5a4e3be"
+    },
+    {
+      "path": "library_guides/analyses/behavior/solver.py",
+      "sha256": "295b9b18b5f190a70d741f48cb1d3dacd9ec847dc3135446619676db2737aa06"
+    },
+    {
+      "path": "library_guides/analyses/behavior/state.py",
+      "sha256": "4c5078bef7e6a8c6d53b6e5167a276ed238668210ad2f0de854b7c0f5a32d155"
+    },
+    {
+      "path": "library_guides/analyses/behavior/typing_contracts.py",
+      "sha256": "57e4966fbb8f3a8593ad33a74adb1f36c47fe33bd69a2b53370f77225466c3a3"
+    },
+    {
+      "path": "library_guides/analyses/behavior/typing_evidence.py",
+      "sha256": "b60dca9eb25e17e0dfeeeb3623bac64b470b4054de5fbccddfedf0a7ec24b9b0"
+    },
+    {
+      "path": "library_guides/analyses/behavior/typing_locations.py",
+      "sha256": "3012a597435994f73c0b87bce458778d38f61995a903081295ba46560f35eaba"
+    },
+    {
+      "path": "library_guides/analyses/behavior/typing_schemas.py",
+      "sha256": "d0641238f64ef707c911c8789fd304a4d13fab7e0f2c6b1210a48a77415e6e8c"
+    },
+    {
+      "path": "library_guides/analyses/behavior/values.py",
+      "sha256": "1766e1d81142f48ec6f122f362fab6bb7dc83fdd19b1cdd7d099ddfc78cc31c3"
+    },
+    {
+      "path": "library_guides/analyses/behavior/witness_checks.py",
+      "sha256": "0f7dc86cc7d9b4e78fa39bfbd745413f12aacb17a07f482a57528b5ff4618eca"
+    },
+    {
+      "path": "library_guides/analyses/behavior/witness_context.py",
+      "sha256": "441c9f182238d794aa516bcd15a9d5827d996904cf6210d37d5f376a182e1df9"
+    },
+    {
+      "path": "library_guides/analyses/behavior/witness_contracts.py",
+      "sha256": "520bbd31062264e4106a92da8adfc72d0c71c0d333a5f532e4a1e975d7170114"
+    },
+    {
+      "path": "library_guides/analyses/behavior/witness_eval.py",
+      "sha256": "3efa9c274a5bfac65faced831b40e4dd70c46518fb51e1fa9b29a075653f9a74"
+    },
+    {
+      "path": "library_guides/analyses/behavior/witness_generation.py",
+      "sha256": "12f9af73c0d205b41ed5832e51e8144c0797d1bda6c08c46d336dd1db7fdc9f3"
+    },
+    {
+      "path": "library_guides/analyses/behavior/witness_inputs.py",
+      "sha256": "a7d31efb0835ce699319ab307c5ae7a19574757a0c68287b63fb7070cf42a91b"
+    },
+    {
+      "path": "library_guides/analyses/behavior/witness_operators.py",
+      "sha256": "84d2e796117c6361f2e31cb1715e89f77b41143035f979c641404838589b68fb"
+    },
+    {
+      "path": "library_guides/analyses/behavior/witness_schemas.py",
+      "sha256": "759f5cac42e4288f5bfafe0cbb74a3fdc7d739eaaff988d01c3afd475f7223be"
+    },
+    {
+      "path": "library_guides/analyses/behavior/witness_service.py",
+      "sha256": "8176d4ec2eb42bc83c9fbb2b97f223cb029e8f8a22bda823dbd2b822bc9b39de"
+    },
+    {
+      "path": "library_guides/analyses/behavior/witness_values.py",
+      "sha256": "57669600177bbd9c5a071843004f91e7e53cc9d525d0c3b0fada3cbccc7c0c7d"
+    },
+    {
+      "path": "library_guides/analyses/callable_contracts.py",
+      "sha256": "d3ce6a6ef4bc03f45de076163e95a9f09dc7a2428e5b565884e645f28d57068a"
+    },
+    {
+      "path": "library_guides/analyses/callable_population.py",
+      "sha256": "8ad081d93c26d53c9e70d9f982dc402218b05853bc1c2a6455a7d87f0cf18ef2"
+    },
+    {
+      "path": "library_guides/analyses/callable_schemas.py",
+      "sha256": "bf7b95feb7e9bcc955cf80602595bffbf548270bba6abda01d7148d02bf379d4"
+    },
+    {
+      "path": "library_guides/analyses/callable_sources.py",
+      "sha256": "ef91d8fc141b321bd43c07f61918f3b0c6e1b951d88e6866a9163940bfff6f6b"
+    },
+    {
+      "path": "library_guides/analyses/compilation.py",
+      "sha256": "e6f9046a7f47625362e99122f172e1aa318329fab3cfed1b9d1aa2efc9d3bb81"
+    },
+    {
+      "path": "library_guides/analyses/compilation_contracts.py",
+      "sha256": "85dede574c9238cbc006e3a6dcd24037825c3e419d126d30a3e1f0adf24dc25d"
+    },
+    {
+      "path": "library_guides/analyses/compilation_inputs.py",
+      "sha256": "aedfb3230708ff4fc331ef061097ab7269f4c87b4b87b6b642c945b06b343fa0"
+    },
+    {
+      "path": "library_guides/analyses/compilation_join.py",
+      "sha256": "16aa60b46066e656d1f216d3f9c8fe532741dc4265db559311aca977fd05cdec"
+    },
+    {
+      "path": "library_guides/analyses/compilation_schemas.py",
+      "sha256": "5fd1e636fafcc1363d6c835c869a8871934b7f86d4e09f91c5bdb539a4961b81"
+    },
+    {
+      "path": "library_guides/analyses/contracts.py",
+      "sha256": "eb7f05f86878ecbef51ef100dcd5b57f0d0d28ae4ec6e2f4d7d94f2f4f74f971"
+    },
+    {
+      "path": "library_guides/analyses/declarations.py",
+      "sha256": "7b956fa4c7a270c436d681f3136a5f12c5928a419e72370f2e3c13388ea97859"
+    },
+    {
+      "path": "library_guides/analyses/effects.py",
+      "sha256": "562c8a7428c521535e5c36d5dcc3e67fbb5819664e5ef5616c7e529ce9dab4eb"
+    },
+    {
+      "path": "library_guides/analyses/fabric.py",
+      "sha256": "b52bff02e9a4fbe166e4fd6a7c6cd4a2bcf089f9217b93ce4554eb2d9cd4405a"
+    },
+    {
+      "path": "library_guides/analyses/fabric_contracts.py",
+      "sha256": "c38f5c7a07159ecfd1ebb597c8c85f44dd800a63dcc752849af3b7e210fc72bd"
+    },
+    {
+      "path": "library_guides/analyses/fabric_schemas.py",
+      "sha256": "ad889d21c8f5be25fe93a1d6af63f3f5037e379979bdd2ef9466eb1401847c4a"
+    },
+    {
+      "path": "library_guides/analyses/flow.py",
+      "sha256": "3ed6a444e829f2a3b89643a6ed12be3c0edbe1773a3ed25cc81d814db7745be4"
+    },
+    {
+      "path": "library_guides/analyses/pipeline.py",
+      "sha256": "9973833160c6fbe82d2f85909b87fb045aa2a09c0c32a2297fe690e9f9886620"
+    },
+    {
+      "path": "library_guides/analyses/python_boundaries.py",
+      "sha256": "abe413c2049a880908d3159860d218cad3c855d54067688f2981b8ad3f740087"
+    },
+    {
+      "path": "library_guides/analyses/python_fabric.py",
+      "sha256": "ae547a3c5dd008ad1000b335c5abdb404c6e29a8ee53d3c30ed57ca4a31e100f"
+    },
+    {
+      "path": "library_guides/analyses/source_capabilities.py",
+      "sha256": "6eae80bb97058d01c60bff0cf19da3f1b77fdff8161b538f6a311e585b620dc9"
+    },
+    {
+      "path": "library_guides/analyses/universes.py",
+      "sha256": "7ba26a8de5d5a713b65a38e54f110a14aea94b7baa84e3d2b8685cb9ec04411a"
+    },
+    {
+      "path": "library_guides/assets/schemas/cargo-messages.v1.schema.json",
+      "sha256": "f2bfa8fad7cd7bdf27b7634fc974c3c33ddc24a404ca7f7af20e5b34b969ed5a"
+    },
+    {
+      "path": "library_guides/assets/schemas/cargo.v1.schema.json",
+      "sha256": "6d9d566abe0e697c63498a184cbdf5d55d20e6b16d601a91df620d0c57f6b29f"
+    },
+    {
+      "path": "library_guides/assets/schemas/declaration.v1.schema.json",
+      "sha256": "792ecae69d3983cd7356ffdcf115c934f49b4922d61e34166c04e4b53decda70"
+    },
+    {
+      "path": "library_guides/assets/schemas/knowledge.v2.schema.json",
+      "sha256": "051e1d12ec5dc5dad473c97411307c7aa231b9d93b8886d6c76a98905403632a"
+    },
+    {
+      "path": "library_guides/assets/schemas/knowledge.v3.schema.json",
+      "sha256": "c49d0ca71bb2f9bca70fdc35b5d2a6a6b021a78a11aab08a3a177f4a665de5aa"
+    },
+    {
+      "path": "library_guides/assets/schemas/mir-execution.v1.schema.json",
+      "sha256": "95def15fcf3a06aac08626ff9e312335a8d5502fc724122a67ef3201454f581c"
+    },
+    {
+      "path": "library_guides/assets/schemas/mir.v1.schema.json",
+      "sha256": "25f6798ce2b325a8fe704fc663bf419937bba5fede653c95af297e87df4d43ad"
+    },
+    {
+      "path": "library_guides/assets/schemas/python-semantics.v1.schema.json",
+      "sha256": "9c4f1492845aaae37986bd3aea3bf3d2b3005b1708e528b734432b89e767eba4"
+    },
+    {
+      "path": "library_guides/assets/schemas/source-execution.v1.schema.json",
+      "sha256": "f91f8dfa2a3be1648819cd229f37b15078f50d5d61fc58c17c9bbb6c5cce409f"
+    },
+    {
+      "path": "library_guides/assets/schemas/source-facts.v1.schema.json",
+      "sha256": "46c50098f8cc6f28017d0bbf9698edb9747b5cb2a6eafd847aa207eb4e9b9438"
+    },
+    {
+      "path": "library_guides/corpus/__init__.py",
+      "sha256": "255ac1414dfb575c8d58990f20218e2767e5bdcd6367190ee4bf49869938d53b"
+    },
+    {
+      "path": "library_guides/corpus/admission.py",
+      "sha256": "138b1a70983ff64bbcaee35c553aa0e8d28ea0bd9003799b3b5e71e7fd73896b"
+    },
+    {
+      "path": "library_guides/corpus/backend.py",
+      "sha256": "4c0a28cb70fad57585a1d57728421b773e6b7b4cee88af6cda105c42c0800012"
+    },
+    {
+      "path": "library_guides/corpus/cache.py",
+      "sha256": "8d1273b375714d579c397dd2d6a104ef119a294c1269fccd99ec09e287afb10b"
+    },
+    {
+      "path": "library_guides/corpus/catalog.py",
+      "sha256": "5bb0ba06658993a18ccd759d0a16879dbda7ff4043220e6645eae59fec96e770"
+    },
+    {
+      "path": "library_guides/corpus/checker_epochs.py",
+      "sha256": "15e0ce94459b85f75ab83ecc4fab7d6238d242a267507ae3425edca01d06ac58"
+    },
+    {
+      "path": "library_guides/corpus/contracts.py",
+      "sha256": "207636c1462d66d0a6d0bbceebadd036ada4528df7010e12329ad4999808e041"
+    },
+    {
+      "path": "library_guides/corpus/declarations.py",
+      "sha256": "8d34a490d58372b14ce00bce90c95c3d24d4603adb9537a07ab223f8bd34ebd8"
+    },
+    {
+      "path": "library_guides/corpus/direct_dependencies.py",
+      "sha256": "5b9d76881f41be04fde3b539a673982f86b67844b7854e6e57b6829b4ac33a12"
+    },
+    {
+      "path": "library_guides/corpus/encoding.py",
+      "sha256": "61c8188e9bdb5993808e45822cb6afaf4c57311e5118674905ffb7622335df3f"
+    },
+    {
+      "path": "library_guides/corpus/evidence.py",
+      "sha256": "5cbeb54f6c5a1e0860bfa81527d6cada75c00d5cfa4f5ec9ef5eb7e6884d7330"
+    },
+    {
+      "path": "library_guides/corpus/identities.py",
+      "sha256": "237e601010d03d90fd505daebb9a3bfd3fa915e573fb36191a9e3a5f08a6f5a5"
+    },
+    {
+      "path": "library_guides/corpus/invalidation.py",
+      "sha256": "adeb990d986d9765361c2594a2ec863e2b81a5dc6054d0483e9be95d35e1103b"
+    },
+    {
+      "path": "library_guides/corpus/lanes.py",
+      "sha256": "fb9e0f2d95aa95ba99d47ac493967c241aad638369e1188ad8751faa2299fc87"
+    },
+    {
+      "path": "library_guides/corpus/manifests.py",
+      "sha256": "f18f9265a5f3249bd98f102501b9c47c6df0119b8c43ade953305192fda9d02e"
+    },
+    {
+      "path": "library_guides/corpus/migration.py",
+      "sha256": "794792016676c7c10a61261168f5cd7d1ee82080d73b1dd0ec41488068eb8cfa"
+    },
+    {
+      "path": "library_guides/corpus/native_contracts.py",
+      "sha256": "33bd9e503fd77c7962c331fa3ebd32262b71c81c257c9694a7f0ebba6f9543f0"
+    },
+    {
+      "path": "library_guides/corpus/native_schemas.py",
+      "sha256": "f93a470886ffb4f2e6be069089155db23e2faab88e426e005bd644c0a472600a"
+    },
+    {
+      "path": "library_guides/corpus/native_validation.py",
+      "sha256": "0fc5d8c1ec95cf74b6076299386260c19092cd9f9f8846e8a96a974361fabe5c"
+    },
+    {
+      "path": "library_guides/corpus/normalization.py",
+      "sha256": "ad78a06c4fd80d1b2f79ab6ec3823a0f1fb725d1d6011fdaae71dd7f1226ba98"
+    },
+    {
+      "path": "library_guides/corpus/ownership.py",
+      "sha256": "198197ca246c97cc38bb0d9c0b5e3d6d968e867b141bfd864992861073a0ebd1"
+    },
+    {
+      "path": "library_guides/corpus/paging.py",
+      "sha256": "49c6594b14a0124af2ff4a31d81aeabe026a3dac5ca6c0196cc69ef4401c2419"
+    },
+    {
+      "path": "library_guides/corpus/python_documents.py",
+      "sha256": "c4f6816c2031583ccf458da87f8c521b1d0b016870c179603833380b57b5b732"
+    },
+    {
+      "path": "library_guides/corpus/python_interfaces.py",
+      "sha256": "4f9c33f864c8a4dc010fc35a077d7c5b723fe96bf764c0d07036ca000b803a16"
+    },
+    {
+      "path": "library_guides/corpus/queries.py",
+      "sha256": "5672db77b324c7e0f5c3409bde226d25dabc6241ce1e20d237998b4cfb813255"
+    },
+    {
+      "path": "library_guides/corpus/schemas.py",
+      "sha256": "12b77f5ecf8cfbfe6e4124fca195982e9a4e460c88ee5648299127dd193cf7f5"
+    },
+    {
+      "path": "library_guides/corpus/sequence_pages.py",
+      "sha256": "593c49b3b6218c91bf2df815f419580810dc99e76d532c32c3721ec19d068ae5"
+    },
+    {
+      "path": "library_guides/corpus/signature_syntax.py",
+      "sha256": "42c80c6e88aadfc1dfe1f5b6ebf13abccdada161cb3005e49954e832779e2f8e"
+    },
+    {
+      "path": "library_guides/corpus/staging.py",
+      "sha256": "edbe14b844259ce73cd5189a56781a80832d0546f952728177645d24e90dcf82"
+    },
+    {
+      "path": "library_guides/corpus/store.py",
+      "sha256": "1093bb12308574d7bc906c47941221544b1452428365e21ee22ae37ecb9dac2c"
+    },
+    {
+      "path": "library_guides/corpus/validation.py",
+      "sha256": "f127319f4981c991b864e3913a771df677c4c77a0929d0d39e8a9d987ff06596"
+    },
+    {
+      "path": "library_guides/facts/__init__.py",
+      "sha256": "faf975d8f9a24b5def282f6c3aef23a5d11e2427727e2d3f84c7d25d24a33796"
+    },
+    {
+      "path": "library_guides/facts/compiler_invocation.py",
+      "sha256": "9a7b2182a8b09cc4ab5866107f0d509eab634f2c81eab185aa564627bbb4c1b2"
+    },
+    {
+      "path": "library_guides/facts/context.py",
+      "sha256": "9a2f8b1184401f1562fd3821f3be5e573810e5199aff0675279bed4fcf264178"
+    },
+    {
+      "path": "library_guides/facts/contracts.py",
+      "sha256": "4f75fdf38234e5e4e15c8c3d01c460782f9c9807167e9395dee51b4b6d635f83"
+    },
+    {
+      "path": "library_guides/facts/identity.py",
+      "sha256": "d34628757083bcda181571ac47b0de53a953a70473f59c70e8507dcfa3284eb3"
+    },
+    {
+      "path": "library_guides/facts/locations.py",
+      "sha256": "4055e997eb952d88bfbbfa50943aeb9aaa7626c31dba0dda262aa5cbda59e34c"
+    },
+    {
+      "path": "library_guides/facts/protocol.py",
+      "sha256": "4c50199e100fac5429fa7a0e724cfd44fce6ff51c860e4d25db2ad71b08b50bd"
+    },
+    {
+      "path": "library_guides/facts/store.py",
+      "sha256": "aa78d844884fd9267438c0c1972aac8da2e0d98f339f324d68da0c60de999440"
+    },
+    {
+      "path": "library_guides/facts/support.py",
+      "sha256": "f986c1a09660cccd8e928998fcfae595a6c653838dd4fbacddee186a060fa29e"
+    },
+    {
+      "path": "library_guides/facts/witness_origins.py",
+      "sha256": "d9fd1013428a188a58621862094f0ca513664679162bce61ea982c86517f894d"
+    },
+    {
+      "path": "native/README.md",
+      "sha256": "e88c8821a9f604e687205b14348996c9edbcffb818abc1ce8f9b8fee188cedce"
+    },
+    {
+      "path": "native/mir-facts/Cargo.lock",
+      "sha256": "ddd7aa65c95473e178a5346e921e90a83ec74a5085621ed22c01d9a83b31ebb9"
+    },
+    {
+      "path": "native/mir-facts/Cargo.toml",
+      "sha256": "d3c4aa2006a2bd85680af7bd0d611716ede8057adec9bc3de71907266aa22f5d"
+    },
+    {
+      "path": "native/mir-facts/build.rs",
+      "sha256": "3a334b130d7222edf70df015c6d38e0c6b60547589f595b349a08656259446f6"
+    },
+    {
+      "path": "native/mir-facts/rust-toolchain.toml",
+      "sha256": "ce125936f5b4d256a461a76bef37a6b7ffbe7c6e37f1166417c10843241ded43"
+    },
+    {
+      "path": "native/mir-facts/src/behavior.rs",
+      "sha256": "911020c7c9dee83f21648b0e644ab5a8fc85fb1461cbdd0cf68faa04d60e1791"
+    },
+    {
+      "path": "native/mir-facts/src/invocation.rs",
+      "sha256": "7558d87fc454a70abc9f55830f28efd94de141f79af062f8b58d40d38a90e4d0"
+    },
+    {
+      "path": "native/mir-facts/src/main.rs",
+      "sha256": "04c24b4ce3965b1e9537bb0389b671eef66dab09c99e90f38bc6045a0f0e7581"
+    },
+    {
+      "path": "native/mir-facts/src/projection.rs",
+      "sha256": "a1af91177f40857a5f919473b865f392db97d9caee482a64b58b0f6f596ec9e5"
+    },
+    {
+      "path": "native/mir-facts/src/shapes.rs",
+      "sha256": "343dc3aa1e17f73eb65cf13abd5c1de0579bef48c460f4981fe212e398b59ba2"
+    },
+    {
+      "path": "native/mir-facts/src/values.rs",
+      "sha256": "90574f9d7f6c120c7605da1da413332087bb96ed3f7c2df722e832ab8b15c5c6"
+    },
+    {
+      "path": "native/protocol/Cargo.lock",
+      "sha256": "e4f8c219226fe0b51be30497b5c84ac4f94ae559cf67c5fb18cc4069fa40305c"
+    },
+    {
+      "path": "native/protocol/Cargo.toml",
+      "sha256": "e14ab60175cb928ddc447e0c65b61950c7b1949ff3e1a944e48b61c5ca6a42c5"
+    },
+    {
+      "path": "native/protocol/src/lib.rs",
+      "sha256": "69683342e19ba79e228481a9b00c62568118129114ae4e00cc2581e019c17e92"
+    },
+    {
+      "path": "native/python-semantics/Cargo.lock",
+      "sha256": "be756add984c894e1420b86d60c4bff94c7067f4f30f13aaf956e0bf5a9a76bd"
+    },
+    {
+      "path": "native/python-semantics/Cargo.toml",
+      "sha256": "3947f009aa08128267a74db2403e3ada05d7d7b5520743fac24387c0fa5e89e6"
+    },
+    {
+      "path": "native/python-semantics/src/main.rs",
+      "sha256": "9dd8deab25971905f22a75409de1c872a8727f8ee483e3d32b992925454d7308"
+    },
+    {
+      "path": "native/python-semantics/src/targeted.rs",
+      "sha256": "53edee788f756bee04b9b31006a8fa360b8cd0fc694b57debee22e521bd1f463"
+    },
+    {
+      "path": "native/source-facts/Cargo.lock",
+      "sha256": "c015ee346be839d79863632ec4e7053c69b3a25f08ca25722d58d08d854cdcf4"
+    },
+    {
+      "path": "native/source-facts/Cargo.toml",
+      "sha256": "5d6093856b0321b7d75ddf2eb2b973559fe747d8dbf97396b4623ebedd1021a8"
+    },
+    {
+      "path": "native/source-facts/src/execution.rs",
+      "sha256": "f290db4b8c7c942c2805cfaeeb96fbabf14a58ae7449a10c2b3ad58e53761555"
+    },
+    {
+      "path": "native/source-facts/src/lexical.rs",
+      "sha256": "c939c980368a5afc82a8c5ac98a12ab8fb68cde0c81c4a27c3b3821e51cdb9ae"
+    },
+    {
+      "path": "native/source-facts/src/main.rs",
+      "sha256": "c0eea350b4943c9daeabab26d74eca628692b00b1301c6d6eff3b0bdb74ac0d7"
+    }
+  ],
+  "binaries": [
+    {
+      "path": "binaries/library-guides-mir-facts",
+      "sha256": "2ac4ae030f1592282d377f56fd38a46f5230338d3c77481237c507e06c2387c1",
+      "bytes": 4650392
+    },
+    {
+      "path": "binaries/library-guides-source-facts",
+      "sha256": "f3e4770996c9b9e621d639f33d53472e24844fcbbc5b3f3bf612e7b2d90ecc9c",
+      "bytes": 50838432
+    },
+    {
+      "path": "binaries/library-guides-python-semantics",
+      "sha256": "0779e38df7132ab3c4f0bc4da3cbccad1c704583f7198630fa8213bf49488597",
+      "bytes": 91430616
+    }
+  ],
+  "reservation": {
+    "kind": "library-guides.benchmark-reservation.v1",
+    "benchmark_sha256": "7489ecf78f7498c39f8d3773e95844a9b25946d9508bff4f8ea040554f012712",
+    "expectations_sha256": "cfe872ea69071c0fb65d8d90913deeed0596ea23ea1cdf15d940149b491d0716",
+    "owners": {
+      "arrow-schema": 86,
+      "pydantic": 44,
+      "serde_json": 60
+    },
+    "source_hashes": {
+      "arrow-schema": {
+        "src/schema.rs": "0ce39e9a147c98fff1adc1c93517904592a3d8e33dc542164227d7596dcd13e9",
+        "src/field.rs": "7aea498fb386d32b1aac87d2b08a9aff591c2f7e259d4c12ed5c8667828afae1"
+      },
+      "pydantic": {
+        "fields.py": "6bc66125f23c143e934030fbf9c58c9b5657950bdad3031d4f6132e55bd57be3",
+        "aliases.py": "be1087ca84969d7f8427ec166f9aa3e31c91b2c8065a74d07f3429e06499f6e8"
+      },
+      "serde_json": {
+        "src/value/mod.rs": "6331d59ea362a74b6cd3d302d08114a63a73a384ff56fef737de29edea2f8d91",
+        "src/value/from.rs": "ae4b5f93b27e578fa40e3a8d25d0df2032fe40b680cddb15963e47cbd56db613"
+      }
+    },
+    "timing": "before library abstract-transfer evaluation; only source/declaration collection has run"
+  },
+  "state": "frozen_before_first_heldout_transfer_evaluation",
+  "heldout_library": "serde_json 1.0.149",
+  "scope": "All 60 original selected public candidates; no task-specific semantic overrides. This freezes the current model for a qualification attempt, not acceptance of remaining development obligations.",
+  "retuning_policy": "Any transfer change prompted by heldout results converts this cohort to development and requires a new untouched holdout.",
+  "preexisting_limits": [
+    "Pydantic reversed-guard/sequence mutants remain inconclusive",
+    "Generic-instance and runtime dispatch obligations remain open",
+    "G1-G7 remain open"
+  ],
+  "development_evidence": [
+    "compilation-full-suite.log",
+    "development-population-portable-v1.json",
+    "context-reconciliation-v1.json",
+    "pydantic-operator-mutation-controls.json"
+  ]
+}

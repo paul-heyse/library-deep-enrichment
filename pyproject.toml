@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartref-library-guides"
+version = "0.2.0"
+description = "Library knowledge compiler: build and maintain agent-facing library guides"
+requires-python = ">=3.14"
+dependencies = [
+    "attrs>=26.1.0",
+    "cattrs>=26.1.0",
+    "docutils>=0.22.4",
+    "doit>=0.36",
+    "jsonschema>=4.26",
+    "filelock>=3.16",
+    "griffelib>=2.3.0",
+    "markdown-it-py>=4.2.0",
+    "pyyaml>=6.0.3",
+    "rich>=14.3.3",
+    "sphobjinv>=2.3.1",
+    "typer>=0.27.2",
+    "lancedb==0.38.0",
+    "pylance==11.0.0",
+    "pyarrow==25.0.1",
+    "networkx>=3.6.1",
+    "igraph>=1.0.0",
+    "leidenalg>=0.12.0",
+    "numpy",
+    "scipy>=1.18.1",
+    "scikit-learn>=1.9.1",
+    "fcapy>=0.1.4.5",
+    "scikit-mine==1.0.0+smartref.1",
+    "httpx>=0.28.1",
+    "transformers>=5.17.0",
+    "z3-solver>=5.1.0.0",
+    "huggingface-hub>=1.31.0",
+    "regex==2026.9.10",
+    "torch>=2.14.0",
+    "httpx2>=2.3.0",
+]
+
+[project.scripts]
+library-guides = "library_guides.cli:app"
+
+[project.optional-dependencies]
+pilot = ["datafusion==54.0.0", "pyarrow==25.0.1", "pydantic==2.13.4"]
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu132"
+explicit = true
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "library_guides",
+    "library_guides.*",
+]
+
+[tool.setuptools.package-data]
+library_guides = ["assets/**/*"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9",
+    "ruff>=0.15",
+    "pyrefly>=1.1",
+    "build>=1.2",
+    "types-PyYAML>=6",
+    "types-jsonschema>=4",
+    "types-docutils>=0.23.0.20260911",
+    "hypothesis>=6.168.0",
+    "types-networkx>=3.6.1.20260911",
+    "scipy-stubs>=1.18.1.0",
+    "types-regex>=2026.9.10.20260911",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["native_lanes: executable pinned upstream extraction canaries requiring built standalone workers"]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+scikit-mine = { path = "vendor/scikit_mine-1.0.0+smartref.1-py3-none-any.whl" }

@@ -1,0 +1,18 @@
+{
+  "author": "implementation-agent",
+  "reviewer": "same implementation-agent",
+  "independent_review": false,
+  "old_pack_sha256": "f4e5612365f076ec3d8981e01ea9f3fd9ca1620ede950c240aa516e53bc4557f",
+  "new_pack_sha256": "c6f23674596961c3bd350b3ac105ad6bea59e1cfe9cefde3aa559002149562fc",
+  "findings": [
+    {
+      "issue": "The initial input-form taxonomy separated JSON text from JSON bytes, incorrectly excluding the Pydantic JSON entry for bytes.",
+      "correction": "Treat JSON text as one semantic representation; string/byte storage stays in the declared call-shape contract. Do not claim invocation compatibility without input bindings."
+    },
+    {
+      "issue": "An IO decoder constructor shared the input-form capability with value-deserializing entries.",
+      "correction": "Require a separately source-derived decode-value action for decode-input capabilities. Constructor-only routes remain conditional and require a subsequent Deserialize step."
+    }
+  ],
+  "superseded": "Any earlier reuse report generated from the old pack is historical model evidence; current qualification must use the new pack hash."
+}

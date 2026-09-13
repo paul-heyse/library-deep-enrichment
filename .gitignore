@@ -1,0 +1,27 @@
+.venv/
+*.egg-info/
+__pycache__/
+dist/
+build/
+**/target/
+pilot/collection/
+pilot/intake.local.yaml
+pilot/qualified/build/
+pilot/qualified/verification/
+pilot/qualified/packets/
+pilot/reports/document-map/
+pilot/reports/nominations.json
+pilot/reports/*.sqlite
+native/python-semantics/upstream/
+native/source-facts/upstream/
+pilot/source_semantics/collection/
+pilot/source_semantics/build/
+# Reproducible extraction stores and native binaries; retain manifests/reports and authored packets.
+native/bin/
+pilot/source_semantics/python/facts/
+pilot/source_semantics/python/snapshots/
+pilot/source_semantics/python/requests/
+pilot/source_semantics/python/discovery/
+pilot/source_semantics/python/*.local.yaml
+pilot/source_semantics/m1/facts/
+pilot/source_semantics/m1/snapshots/

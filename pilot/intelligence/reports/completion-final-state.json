@@ -1,0 +1,14 @@
+{
+  "utc": "2026-09-13T03:57:40.071668+00:00",
+  "analysis_manifest": "f61eabbd4fe17866ca3bd5c6a3d7b1d8875e3f53ee32b204a693ce4292fa9913",
+  "counts": {
+    "native_artifacts": 67,
+    "operation_shapes": 31150,
+    "assertions": 4328,
+    "qualifications": 4328,
+    "capabilities": 3614
+  },
+  "task_owned_pilot_processes": [],
+  "preserved_gpu_container": "d9f62af21210dcf9aa262d494ee31681565f48ac63f6accdf48b7b587e0d306d true",
+  "source_freeze": "89cb8d1665f7d4e06a2cc48b80a19a936679aa1617500a4c36d8ad3444343b3e"
+}

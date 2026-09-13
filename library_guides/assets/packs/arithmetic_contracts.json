@@ -1,0 +1,300 @@
+{
+  "schema": "library-guides.semantic-pack.v1",
+  "rationale": "Reviewed full-field upstream templates with exact arithmetic action and integer overflow meaning. Tests cover the primary-versus-alternative clause distinction, reversed polarity, added exceptions, and finite regex budgets. No per-function semantic cards or function-name decision branches are used.",
+  "records": [
+    {
+      "family": "predicates",
+      "record": {
+        "logical_id": "predicate:documented-elementwise-operation",
+        "profile": "",
+        "name": "documented_elementwise_operation",
+        "description": "The exact upstream summary identifies an element-wise arithmetic operation; input domains and exception policies remain separate.",
+        "value_kind": "text",
+        "allowed_values": [
+          "add",
+          "subtract",
+          "multiply",
+          "divide"
+        ],
+        "exclusive": true,
+        "interpretations": [
+          "upstream_contract"
+        ],
+        "template": "Upstream documents {value}."
+      }
+    },
+    {
+      "family": "predicates",
+      "record": {
+        "logical_id": "predicate:documented-integer-overflow-policy",
+        "profile": "",
+        "name": "documented_integer_overflow_policy",
+        "description": "The upstream contract states what happens on integer overflow. This does not describe floating-point exceptional behavior or prove a different execution context.",
+        "value_kind": "text",
+        "allowed_values": [
+          "wrap",
+          "error"
+        ],
+        "exclusive": true,
+        "interpretations": [
+          "upstream_contract"
+        ],
+        "template": "Upstream documents {value}."
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "logical_id": "rule:elementwise-add",
+        "profile": "",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Add the arguments element-wise",
+        "predicate": {
+          "$ref": "predicate:documented-elementwise-operation"
+        },
+        "value": {
+          "kind": "text",
+          "text": "add"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "the exact selected upstream contract and profile",
+        "phase": "execution-contract",
+        "interpretation": "upstream_contract",
+        "description": "Complete source-field template; unmatched qualifiers remain unresolved. The alternative sentence identifies another function and does not negate the primary clause.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "capability_schemas",
+      "record": {
+        "logical_id": "capability-schema:elementwise-add",
+        "profile": "",
+        "name": "elementwise-add",
+        "description": "Find a built-in for element-wise add under explicit representation, null, overflow, and execution requirements.",
+        "requirements": [
+          {
+            "predicate": {
+              "$ref": "predicate:documented-elementwise-operation"
+            },
+            "value": {
+              "kind": "text",
+              "text": "add"
+            },
+            "operator": "equal",
+            "interpretations": [
+              "upstream_contract"
+            ],
+            "mandatory": true
+          }
+        ],
+        "any_qualified_support": false
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "logical_id": "rule:elementwise-subtract",
+        "profile": "",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Subtract the arguments element-wise",
+        "predicate": {
+          "$ref": "predicate:documented-elementwise-operation"
+        },
+        "value": {
+          "kind": "text",
+          "text": "subtract"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "the exact selected upstream contract and profile",
+        "phase": "execution-contract",
+        "interpretation": "upstream_contract",
+        "description": "Complete source-field template; unmatched qualifiers remain unresolved. The alternative sentence identifies another function and does not negate the primary clause.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "capability_schemas",
+      "record": {
+        "logical_id": "capability-schema:elementwise-subtract",
+        "profile": "",
+        "name": "elementwise-subtract",
+        "description": "Find a built-in for element-wise subtract under explicit representation, null, overflow, and execution requirements.",
+        "requirements": [
+          {
+            "predicate": {
+              "$ref": "predicate:documented-elementwise-operation"
+            },
+            "value": {
+              "kind": "text",
+              "text": "subtract"
+            },
+            "operator": "equal",
+            "interpretations": [
+              "upstream_contract"
+            ],
+            "mandatory": true
+          }
+        ],
+        "any_qualified_support": false
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "logical_id": "rule:elementwise-multiply",
+        "profile": "",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Multiply the arguments element-wise",
+        "predicate": {
+          "$ref": "predicate:documented-elementwise-operation"
+        },
+        "value": {
+          "kind": "text",
+          "text": "multiply"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "the exact selected upstream contract and profile",
+        "phase": "execution-contract",
+        "interpretation": "upstream_contract",
+        "description": "Complete source-field template; unmatched qualifiers remain unresolved. The alternative sentence identifies another function and does not negate the primary clause.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "capability_schemas",
+      "record": {
+        "logical_id": "capability-schema:elementwise-multiply",
+        "profile": "",
+        "name": "elementwise-multiply",
+        "description": "Find a built-in for element-wise multiply under explicit representation, null, overflow, and execution requirements.",
+        "requirements": [
+          {
+            "predicate": {
+              "$ref": "predicate:documented-elementwise-operation"
+            },
+            "value": {
+              "kind": "text",
+              "text": "multiply"
+            },
+            "operator": "equal",
+            "interpretations": [
+              "upstream_contract"
+            ],
+            "mandatory": true
+          }
+        ],
+        "any_qualified_support": false
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "logical_id": "rule:elementwise-divide",
+        "profile": "",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Divide the arguments element-wise",
+        "predicate": {
+          "$ref": "predicate:documented-elementwise-operation"
+        },
+        "value": {
+          "kind": "text",
+          "text": "divide"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "the exact selected upstream contract and profile",
+        "phase": "execution-contract",
+        "interpretation": "upstream_contract",
+        "description": "Complete source-field template; unmatched qualifiers remain unresolved. The alternative sentence identifies another function and does not negate the primary clause.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "capability_schemas",
+      "record": {
+        "logical_id": "capability-schema:elementwise-divide",
+        "profile": "",
+        "name": "elementwise-divide",
+        "description": "Find a built-in for element-wise divide under explicit representation, null, overflow, and execution requirements.",
+        "requirements": [
+          {
+            "predicate": {
+              "$ref": "predicate:documented-elementwise-operation"
+            },
+            "value": {
+              "kind": "text",
+              "text": "divide"
+            },
+            "operator": "equal",
+            "interpretations": [
+              "upstream_contract"
+            ],
+            "mandatory": true
+          }
+        ],
+        "any_qualified_support": false
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "logical_id": "rule:integer-overflow-wrap",
+        "profile": "",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "Results will wrap around on integer overflow\\.\\s+Use function \"[A-Za-z_][A-Za-z_0-9]*\" if you want overflow\\s+to return an error\\.",
+        "predicate": {
+          "$ref": "predicate:documented-integer-overflow-policy"
+        },
+        "value": {
+          "kind": "text",
+          "text": "wrap"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "the exact selected upstream contract and profile",
+        "phase": "execution-contract",
+        "interpretation": "upstream_contract",
+        "description": "Complete source-field template; unmatched qualifiers remain unresolved. The alternative sentence identifies another function and does not negate the primary clause.",
+        "version": "1"
+      }
+    },
+    {
+      "family": "rules",
+      "record": {
+        "logical_id": "rule:integer-overflow-error",
+        "profile": "",
+        "algorithm": "document-template",
+        "source_family": "passages",
+        "selector": "/text",
+        "pattern": "This function returns an error on overflow\\.\\s+For a variant that\\s+doesn't fail on overflow, use function \"[A-Za-z_][A-Za-z_0-9]*\"\\.",
+        "predicate": {
+          "$ref": "predicate:documented-integer-overflow-policy"
+        },
+        "value": {
+          "kind": "text",
+          "text": "error"
+        },
+        "condition": "",
+        "quantifier": "documented-contract",
+        "domain": "the exact selected upstream contract and profile",
+        "phase": "execution-contract",
+        "interpretation": "upstream_contract",
+        "description": "Complete source-field template; unmatched qualifiers remain unresolved. The alternative sentence identifies another function and does not negate the primary clause.",
+        "version": "1"
+      }
+    }
+  ]
+}

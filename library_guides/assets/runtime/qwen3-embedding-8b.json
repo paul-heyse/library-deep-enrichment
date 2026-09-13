@@ -1,0 +1,79 @@
+{
+  "files": {
+    ".gitattributes": {
+      "blob_id": "52373fe24473b1aa44333d318f578ae6bf04b49b",
+      "size": 1570
+    },
+    "1_Pooling/config.json": {
+      "blob_id": "c5dd8df913b71a207df20c856ba12cbf48e53013",
+      "size": 313
+    },
+    "LICENSE": {
+      "blob_id": "6634c8cc3133b3848ec74b9f275acaaa1ea618ab",
+      "size": 11343
+    },
+    "README.md": {
+      "blob_id": "a34687a28d7230e124c833063e9e5f682fd08711",
+      "size": 17253
+    },
+    "config.json": {
+      "blob_id": "39c68b7e1512f93926bf7439cee0e88d3437f0ce",
+      "size": 729
+    },
+    "config_sentence_transformers.json": {
+      "blob_id": "76aef3ade63553ebb698fe3c2a3264040ed093f8",
+      "size": 215
+    },
+    "generation_config.json": {
+      "blob_id": "d46f1983345269c582611bbedb3ca0a13f8e5f7b",
+      "size": 117
+    },
+    "merges.txt": {
+      "blob_id": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+      "size": 1671853
+    },
+    "model-00001-of-00004.safetensors": {
+      "blob_id": "2f0768fcea375c345662438a54f13367b058d5db",
+      "lfs_sha256": "99b343597fe840706146144699a8b9188dd3387e43eb61faf0231b70b249d451",
+      "size": 4900037024
+    },
+    "model-00002-of-00004.safetensors": {
+      "blob_id": "bc01ceb7957aae14a6f7c237553f6d006bb00cf5",
+      "lfs_sha256": "dff635b0f6dbbaad2a2d633ef037ec0a39bc165cc1806c712fbd6fcbcb4526c0",
+      "size": 4915959512
+    },
+    "model-00003-of-00004.safetensors": {
+      "blob_id": "add33559225ee97b915a04fc032f33ea7dfb3e31",
+      "lfs_sha256": "30b1d4c53d84eb018f642cad7b373f0aabf79699872d8702c1f38577c0a59a2f",
+      "size": 4983067656
+    },
+    "model-00004-of-00004.safetensors": {
+      "blob_id": "40279a78b40cd91d4f789dd0a35409bd755a33bc",
+      "lfs_sha256": "36cbc9c60375693629f25743c1e77ebb1724af58e671b2376463193c7fd21ef6",
+      "size": 335570376
+    },
+    "model.safetensors.index.json": {
+      "blob_id": "ccf940ee00f0f478e333660f274e770fbbfa5bab",
+      "size": 30432
+    },
+    "modules.json": {
+      "blob_id": "952a9b81c0bfd99800fabf352f69c7ccd46c5e43",
+      "size": 349
+    },
+    "tokenizer.json": {
+      "blob_id": "982862dae5cfde7feac135a6367874a81a4a9fd5",
+      "lfs_sha256": "83cdf8c3a34f68862319cb1810ee7b1e2c0a44e0864ae930194ddb76bb7feb8d",
+      "size": 11422947
+    },
+    "tokenizer_config.json": {
+      "blob_id": "df3a9d96759529ca1006eb6db024bbb099a97578",
+      "size": 7256
+    },
+    "vocab.json": {
+      "blob_id": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "size": 2776833
+    }
+  },
+  "repository": "Qwen/Qwen3-Embedding-8B",
+  "revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af"
+}

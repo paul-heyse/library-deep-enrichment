@@ -1,0 +1,43 @@
+# What a capability family must cover before its decision coverage counts.
+#
+# Obligations are declared per family *kind*, not per library, so a new library
+# reuses these. Demanding the same twelve fields of every capability regardless
+# of relevance produces busywork, not coverage.
+schema_version: library-guides.obligations.v1
+families:
+  elementwise_compute:
+    title: Element-wise value transformation
+    required_facets: [input_shape, null_behavior, output_type, execution_placement]
+    optional_facets: [precision, overflow, timezone, unicode_behavior]
+  aggregation:
+    title: Aggregation across rows
+    required_facets: [group_boundary, empty_input, output_cardinality, execution_placement]
+    optional_facets: [ordering_sensitivity, state_size, distinctness]
+  relational_op:
+    title: Relation-to-relation operation
+    required_facets: [cardinality_effect, null_matching, ordering_guarantee, execution_placement]
+    optional_facets: [duplicate_keys, pushdown_support]
+  storage_integration:
+    title: Reading or writing an external store
+    required_facets: [setup, consistency_assumption, resource_ownership, error_behavior, configuration]
+    optional_facets: [partitioning, pushdown_support, credentials]
+  interchange_boundary:
+    title: Moving data across a runtime boundary
+    required_facets: [representation, ownership, lifetime, schema_fidelity, copy_behavior]
+    optional_facets: [device_transfer, error_propagation]
+  extension_point:
+    title: Registering custom behavior with the library
+    required_facets: [registration, lifetime, execution_placement, failure_before_registration]
+    optional_facets: [optimizer_visibility, distributed_portability]
+  configuration:
+    title: Behavior controlled by a setting
+    required_facets: [default_value, scope, effect]
+    optional_facets: [interaction_with_other_settings]
+  lifecycle_service:
+    title: A long-lived component with setup and teardown
+    required_facets: [setup, ownership, cancellation, error_behavior]
+    optional_facets: [observability, concurrency]
+  validation_contract:
+    title: Declaring and enforcing a data contract
+    required_facets: [input_modes, strictness, error_model, serialization_difference]
+    optional_facets: [schema_generation, custom_types]

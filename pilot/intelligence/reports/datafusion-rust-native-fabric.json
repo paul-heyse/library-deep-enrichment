@@ -1,0 +1,60 @@
+{
+  "manifest": "728f1cfe34834ffd7b99b49476bac4a87357869cf6d93ac76a116f3dbd44e04e",
+  "request": "8b740a8e80c26871e78b9fa2654a4360245debe75e12c3634c38b1a5bd2b5a9f",
+  "reused": false,
+  "outputs": [
+    [
+      "blob_chunks",
+      492
+    ],
+    [
+      "blobs",
+      492
+    ],
+    [
+      "contexts",
+      1
+    ],
+    [
+      "entities",
+      851
+    ],
+    [
+      "native_artifacts",
+      1
+    ],
+    [
+      "native_facts",
+      1374
+    ],
+    [
+      "operations",
+      523
+    ],
+    [
+      "passages",
+      514
+    ],
+    [
+      "raw_observations",
+      1
+    ],
+    [
+      "relations",
+      2748
+    ],
+    [
+      "source_files",
+      1
+    ],
+    [
+      "type_nodes",
+      2748
+    ],
+    [
+      "type_uses",
+      1209
+    ]
+  ],
+  "elapsed_seconds": 7.435948257014388
+}

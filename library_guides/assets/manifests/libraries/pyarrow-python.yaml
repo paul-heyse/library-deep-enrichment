@@ -1,0 +1,16 @@
+schema_version: library-guides.library_manifest.v1
+library_id: pyarrow-python
+ecosystem: python
+packages:
+  - name: pyarrow
+    public_root: pyarrow
+surface_packages: ['pyarrow', 'pyarrow.*']
+profiles:
+  - profile_id: pyarrow-python-locked
+    version_source: python_locked_distribution
+    version_key: pyarrow
+    scope: the interpreter and lock this repository resolves
+    api_source:
+      kind: griffe_static
+      module: pyarrow
+registry_probes: [pyarrow_compute_functions]

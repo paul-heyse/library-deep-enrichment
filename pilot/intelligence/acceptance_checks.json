@@ -1,0 +1,441 @@
+{
+  "scope": "Finite implementation controls for the retained pilot. Semantic task gaps and native frontiers are accepted explicit outputs, not certified library guarantees.",
+  "checks": [
+    {
+      "id": "U01",
+      "check": "Legacy YAML/index/generation mutations leave the active corpus CLI unchanged; active writes require the coordinator.",
+      "tests": [
+        "test_fabric_application"
+      ]
+    },
+    {
+      "id": "U02",
+      "check": "Typed records, ordered declaration variants, exact bytes and unknowns survive Arrow/Lance and portable restoration.",
+      "tests": [
+        "test_corpus_fabric",
+        "test_native_fabric",
+        "test_declaration_formats",
+        "test_source_maps"
+      ]
+    },
+    {
+      "id": "U03",
+      "check": "Crashes at family, membership and manifest writes preserve the prior head and hide orphan rows.",
+      "tests": [
+        "test_corpus_fabric"
+      ]
+    },
+    {
+      "id": "U04",
+      "check": "Stale predecessors, mixed proposed membership and unauthorized output ownership are rejected.",
+      "tests": [
+        "test_batched_corpus_reads",
+        "test_fabric_application"
+      ]
+    },
+    {
+      "id": "U05",
+      "check": "Failed changed producers retire stale current outputs; interrupted pre-admission attempts remain failures.",
+      "tests": [
+        "test_discovery_fabric",
+        "test_semantic_intelligence",
+        "test_native_fabric"
+      ]
+    },
+    {
+      "id": "U06",
+      "check": "Forged consequences, changed predicate values and dropped source qualifiers fail replay.",
+      "tests": [
+        "test_semantic_intelligence",
+        "test_semantic_packs",
+        "test_input_contract_pack"
+      ]
+    },
+    {
+      "id": "U07",
+      "check": "Rules, schemas, invocation mappings and witnesses require their separate approval authority; source citations alone grant none.",
+      "tests": [
+        "test_semantic_intelligence",
+        "test_semantic_enrichment",
+        "test_corpus_fabric"
+      ]
+    },
+    {
+      "id": "U08",
+      "check": "Unknown/conflicting evidence and unobserved objective values cannot become favorable facts or solver assignments.",
+      "tests": [
+        "test_semantic_intelligence",
+        "test_task_applicability",
+        "test_mir_analyses"
+      ]
+    },
+    {
+      "id": "U09",
+      "check": "Negation, modality, exceptions, symbolic defaults, source identity and native wrappers retain narrow facts or explicit uncertainty.",
+      "tests": [
+        "test_semantic_intelligence",
+        "test_semantic_enrichment",
+        "test_native_lanes",
+        "test_python_boundaries"
+      ]
+    },
+    {
+      "id": "U10",
+      "check": "Representation/type/resource mismatches and unsupported invocation conditions are rejected or conditional; semantic eligibility has an explicit invocation limit.",
+      "tests": [
+        "test_task_applicability",
+        "test_operation_shapes",
+        "test_input_contract_pack"
+      ]
+    },
+    {
+      "id": "U11",
+      "check": "Comparison populations are independent of retrieval rank; newly admitted competitors invalidate prior choices, including empty scoped populations.",
+      "tests": [
+        "test_stage_inputs",
+        "test_discovery_fabric",
+        "test_native_lanes",
+        "test_task_applicability"
+      ]
+    },
+    {
+      "id": "U12",
+      "check": "Multi-input consumption, wrapper boundaries and unsupported transfer states remain explicit. The real schema composition rejects metadata loss and has compiler/execution witnesses.",
+      "tests": [
+        "test_composition_search",
+        "test_task_applicability",
+        "test_semantic_enrichment"
+      ],
+      "reports": [
+        "resume-generated-composition.json"
+      ]
+    },
+    {
+      "id": "U13",
+      "check": "Positive-support FCA preserves closure and unknowns; graphs retain isolates and labels cite actual source phrases without creating semantic authority.",
+      "tests": [
+        "test_discovery_fabric",
+        "test_scoped_discovery"
+      ],
+      "reports": [
+        "completion-final-discovery-maintenance.json"
+      ]
+    },
+    {
+      "id": "U14",
+      "check": "Finite witnesses cannot rewrite observations or promote open effect frontiers; strictness and EOF counterexamples constrain stronger claims.",
+      "tests": [
+        "test_semantic_enrichment",
+        "test_mir_analyses"
+      ],
+      "reports": [
+        "completion-reuse-witnesses.json",
+        "completion-result-mechanism.json"
+      ]
+    },
+    {
+      "id": "U15",
+      "check": "Exact selected input revisions, model changes, source replacement and new candidates invalidate dependents. Label completion preserves base extraction/embedding reuse. Field paths are declared, with conservative whole-record revision sensitivity.",
+      "tests": [
+        "test_stage_inputs",
+        "test_embedding_reuse",
+        "test_task_applicability",
+        "test_semantic_intelligence"
+      ],
+      "reports": [
+        "completion-final-discovery-maintenance.json",
+        "completion-four-library-chains.json"
+      ]
+    },
+    {
+      "id": "U16",
+      "check": "Actual Qwen vectors, hybrid reasons and recipe reuse are retained; malformed responses, recipe mismatch and runtime outage have controls.",
+      "tests": [
+        "test_embedding_reuse",
+        "test_runtime_lifecycle",
+        "test_discovery_fabric"
+      ],
+      "reports": [
+        "resume-real-embedding-reuse.json",
+        "resume-scoped-discovery.json"
+      ]
+    },
+    {
+      "id": "U17",
+      "check": "Native/analytical workers enforce declared process/output bounds; finite algorithms fail explicit limits. Record and nested candidate/proof pages retain denominators and pinned continuations without truncating stored evidence.",
+      "tests": [
+        "test_source_protocol",
+        "test_analytical_memory_setting",
+        "test_pinned_pages",
+        "test_batched_corpus_reads",
+        "test_task_applicability",
+        "test_scoped_discovery"
+      ]
+    },
+    {
+      "id": "U18",
+      "check": "The final installed wheel verifies every selected portable archive with source trees, native workers, network, GPU service and model cache unavailable, including actual CLI pages and an installed analytical worker.",
+      "tests": [
+        "test_historical_epochs"
+      ],
+      "reports": [
+        "completion-installed-delivery.json"
+      ]
+    },
+    {
+      "id": "U19",
+      "check": "Pydantic and serde_json use the same frozen core and shared input pack, with zero per-operation prose overrides. All core and model corrections are reported and requalified.",
+      "tests": [
+        "test_reuse_contract",
+        "test_input_contract_pack"
+      ],
+      "reports": [
+        "completion-pydantic-decision-reuse.json",
+        "completion-serde-decision-reuse.json",
+        "completion-reuse-findings.json",
+        "completion-model-findings.json"
+      ]
+    },
+    {
+      "id": "U20",
+      "check": "All 24 retained tasks have same-agent attributed supported/partial/gap assessments, exact baseline selections and generated releases, reversing conditions and remaining interpretation.",
+      "tests": [
+        "test_document_and_qualitative_tools"
+      ],
+      "reports": [
+        "completion-24-task-assessment.json",
+        "completion-nine-gap-dispositions.json",
+        "completion-four-library-chains.json"
+      ]
+    },
+    {
+      "id": "G01",
+      "check": "Concrete record/field/byte support and independent closure replay are required; uncited composites and arbitrary IDs do not qualify behavior.",
+      "tests": [
+        "test_native_fabric",
+        "test_evidence_derivation",
+        "test_semantic_intelligence"
+      ]
+    },
+    {
+      "id": "G02",
+      "check": "Real Rustdoc, Ruff, Pyrefly/TSP and MIR controls produce expected positive events and reject lookalikes; all 47 native jobs have explicit denominators.",
+      "tests": [
+        "test_native_lanes",
+        "test_recovery_regressions"
+      ],
+      "reports": [
+        "completion-native-final-producers.json"
+      ]
+    },
+    {
+      "id": "G03",
+      "check": "Source identity does not elevate heuristic dispatch or native equivalence; impl polarity and cross-artifact identities retain distinct evidence.",
+      "tests": [
+        "test_native_fabric",
+        "test_native_lanes",
+        "test_declaration_formats"
+      ],
+      "reports": [
+        "completion-four-library-chains.json"
+      ]
+    },
+    {
+      "id": "G04",
+      "check": "Any/generic/native/indirect and unmodeled effects remain unresolved through typed projections and released analyses.",
+      "tests": [
+        "test_native_lanes",
+        "test_mir_analyses",
+        "test_task_applicability"
+      ],
+      "reports": [
+        "completion-result-mechanism.json",
+        "completion-python-boundary.json"
+      ]
+    },
+    {
+      "id": "G05",
+      "check": "An enumerated body with open callees does not establish effect absence. Immediate async constructors and their later polled bodies are kept separate.",
+      "tests": [
+        "test_mir_analyses",
+        "test_native_lanes"
+      ],
+      "reports": [
+        "completion-result-mechanism.json",
+        "resume-native-source-analysis.json"
+      ]
+    },
+    {
+      "id": "G06",
+      "check": "Unicode/CRLF, doctest hidden lines, prompts and escaped literals preserve exact maps; unmapped/generated ranges retain uncertainty.",
+      "tests": [
+        "test_source_maps",
+        "test_native_lanes",
+        "test_python_documents"
+      ]
+    },
+    {
+      "id": "G07",
+      "check": "Fragmented frames, truncation, wrong digests/schema/context, missing terminal receipts, hanging/closed-output children and RSS excess cannot admit success.",
+      "tests": [
+        "test_source_protocol",
+        "test_native_fabric"
+      ]
+    },
+    {
+      "id": "G08",
+      "check": "Effective package/feature/stub/compiler profiles are distinct. The retained Python 54/25 profile mapping is explicit and FFI availability is demonstrated in separate consumer builds.",
+      "tests": [
+        "test_cargo_context",
+        "test_native_lanes",
+        "test_stage_inputs"
+      ],
+      "reports": [
+        "completion-profile-mapping.json",
+        "completion-feature-availability.json"
+      ]
+    },
+    {
+      "id": "G09",
+      "check": "Exact source/model prerequisites, uncited candidate changes and portable successors without original jobs reopen dependent products. Sensitivity is conservative at whole-record revision granularity.",
+      "tests": [
+        "test_native_lanes",
+        "test_stage_inputs",
+        "test_task_applicability",
+        "test_semantic_intelligence"
+      ],
+      "reports": [
+        "completion-four-library-chains.json"
+      ]
+    },
+    {
+      "id": "G10",
+      "check": "Byte-only review equivalence is separate from contract mutation; source tampering, changed qualifiers and incomplete support cannot reuse an old qualification.",
+      "tests": [
+        "test_native_lanes",
+        "test_recovery_regressions",
+        "test_semantic_intelligence"
+      ]
+    },
+    {
+      "id": "G11",
+      "check": "Actual native and analytical unchanged requests execute no producer. Corrupt receipts force execution or explicit failure; label work leaves base products warm.",
+      "tests": [
+        "test_native_lanes",
+        "test_stage_graph",
+        "test_embedding_reuse"
+      ],
+      "reports": [
+        "completion-native-final-warm.json",
+        "completion-final-discovery-maintenance.json"
+      ]
+    },
+    {
+      "id": "G12",
+      "check": "Authored/generated scopes cannot shrink the independent policy or candidate population, including failed or newly added entries.",
+      "tests": [
+        "test_recovery_regressions",
+        "test_native_lanes",
+        "test_stage_inputs",
+        "test_batched_corpus_reads"
+      ]
+    },
+    {
+      "id": "G13",
+      "check": "Under the target's explicit replacement authority, approved reusable rules plus replayed typed consequences qualify narrowly; arbitrary proposal import cannot approve itself.",
+      "tests": [
+        "test_fabric_application",
+        "test_semantic_intelligence",
+        "test_semantic_enrichment"
+      ]
+    },
+    {
+      "id": "G14",
+      "check": "The qualitative workflow uses zero automated model-judge runs or API keys; published decisions retain mechanisms, exact alternatives and explicit uncertainty.",
+      "tests": [
+        "test_document_and_qualitative_tools",
+        "test_guide_content"
+      ],
+      "reports": [
+        "completion-24-task-assessment.json"
+      ]
+    },
+    {
+      "id": "G15",
+      "check": "The final wheel contains all 36 asset files; five owned native workspaces build/test/lint independently. Two unrelated libraries and offline installed reading use the same standalone package.",
+      "tests": [
+        "test_reuse_contract",
+        "test_native_lanes"
+      ],
+      "reports": [
+        "completion-packaging-native-verification.json",
+        "completion-installed-delivery.json"
+      ]
+    },
+    {
+      "id": "G16",
+      "check": "Real Cargo fixtures retain virtual/single package identity, duplicate versions, aliases, normal/dev/build dependencies, host proc macros, target kinds, required features and no-deps omission. Metadata explicitly does not claim unobserved compilation units.",
+      "tests": [
+        "test_cargo_context",
+        "test_native_lanes"
+      ],
+      "reports": [
+        "completion-native-final-producers.json",
+        "completion-feature-availability.json"
+      ]
+    },
+    {
+      "id": "G17",
+      "check": "All 21 ItemEnum and 14 Type wire variants survive 57/59/60/61 native admission and restoration with ordering and explicit historical metadata frontiers. Real private-origin aliases, wrappers, impl polarity and unknown externals retain their distinctions.",
+      "tests": [
+        "test_declaration_formats",
+        "test_native_lanes",
+        "test_rust_semantics_v2",
+        "test_operation_shapes"
+      ],
+      "reports": [
+        "completion-declaration-format-matrix.json"
+      ]
+    },
+    {
+      "id": "G18",
+      "check": "Exact source/helper/context digests distinguish acquisition requests. Documentation/private/hidden surfaces do not certify ordinary consumer availability; paired disabled/enabled FFI compiler results are separate.",
+      "tests": [
+        "test_native_lanes",
+        "test_cargo_context",
+        "test_native_fabric"
+      ],
+      "reports": [
+        "completion-feature-availability.json"
+      ]
+    },
+    {
+      "id": "G19",
+      "check": "Numeric ID/key-order changes preserve all 166 fixture contract digests. Bound/default/associated-requirement/impl-polarity/stability/mutability/public-route mutations remain observable; exact source prerequisites reopen sensitive qualifications. No blanket semver verdict or equivalence across unresolved Rust contexts is claimed.",
+      "tests": [
+        "test_native_lanes",
+        "test_declaration_formats",
+        "test_rust_semantics_v2",
+        "test_recovery_regressions",
+        "test_declaration_identity"
+      ],
+      "reports": [
+        "completion-native-identity.json"
+      ]
+    },
+    {
+      "id": "G20",
+      "check": "Supported format decoding is strict, unknown formats fail, original native observations remain auditable and incomplete/budget-exceeded workers fail. Python receives owned per-record projections, never another whole raw Crate for semantic interpretation.",
+      "tests": [
+        "test_extraction",
+        "test_source_protocol",
+        "test_native_lanes",
+        "test_declaration_formats"
+      ],
+      "reports": [
+        "completion-native-final-producers.json",
+        "completion-packaging-native-verification.json"
+      ]
+    }
+  ]
+}

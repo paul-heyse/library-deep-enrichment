@@ -1,0 +1,36 @@
+{
+  "manifest": "89d2beff402850c2a2f3cb8dab7fafa32c5ba9343f1cdbc7727ce4c0bbfc06ff",
+  "request": "de68c7559981c7838e142a77f11a92b0d05ff87044305fb9c32441efb7c3af6d",
+  "reused": false,
+  "outputs": [
+    [
+      "blob_chunks",
+      891
+    ],
+    [
+      "blobs",
+      758
+    ],
+    [
+      "contexts",
+      3
+    ],
+    [
+      "native_artifacts",
+      3
+    ],
+    [
+      "native_facts",
+      568062
+    ],
+    [
+      "raw_observations",
+      3
+    ],
+    [
+      "source_files",
+      791
+    ]
+  ],
+  "elapsed_seconds": 76.80675584200071
+}
