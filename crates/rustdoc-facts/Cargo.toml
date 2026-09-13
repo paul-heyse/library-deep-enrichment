@@ -1,20 +1,25 @@
 [package]
 name = "lde-rustdoc-facts"
-version = "0.1.0"
-edition = "2024"
-publish = false
-
-[workspace]
+description = "Declaration, cargo-metadata and public-API facts from rustdoc JSON (stable toolchain)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
 
 [dependencies]
-rustdoc-types-57 = { package = "rustdoc-types", version = "=0.57.4" }
-rustdoc-types-59 = { package = "rustdoc-types", version = "=0.59.0" }
-rustdoc-types-60 = { package = "rustdoc-types", version = "=0.60.0" }
-rustdoc-types-61 = { package = "rustdoc-types", version = "=0.61.0" }
-public-api = "=0.52.1"
-serde_json = "1"
-serde = { version = "1", features = ["derive"] }
-schemars = "=1.2.2"
-sha2 = "0.10"
-cargo_metadata = "=0.23.1"
-lde-protocol = { path = "../protocol" }
+rustdoc-types-57.workspace = true
+rustdoc-types-59.workspace = true
+rustdoc-types-60.workspace = true
+rustdoc-types-61.workspace = true
+public-api.workspace = true
+serde_json.workspace = true
+serde.workspace = true
+schemars.workspace = true
+sha2.workspace = true
+cargo_metadata.workspace = true
+lde-protocol.workspace = true
+
+[lints]
+workspace = true

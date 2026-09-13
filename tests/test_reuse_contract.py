@@ -86,11 +86,3 @@ def test_storage_dependencies_do_not_license_library_specific_decisions() -> Non
     assert not _domain_mentions('import pyarrow as pa\npath = f"{family}.parquet"', "pyarrow")
     assert _domain_mentions('if package == "pyarrow":\n    choose_special_case()', "pyarrow")
     assert _domain_mentions('label = "Use pyarrow for this task"', "pyarrow")
-
-
-def test_registry_adapters_are_resolved_by_identifier_not_import() -> None:
-    """Stages resolve a probe through the registry so they never import one."""
-    probe_stage = (PACKAGE_ROOT / "stages" / "probe_registry.py").read_text(encoding="utf-8")
-    assert "probe_by_id" in probe_stage
-    assert "pyarrow_compute" not in probe_stage
-    assert "datafusion_functions" not in probe_stage

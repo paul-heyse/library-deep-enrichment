@@ -1,0 +1,140 @@
+{
+  "env": {
+    "BASH_DEFAULT_TIMEOUT_MS": "300000",
+    "BASH_MAX_TIMEOUT_MS": "1800000",
+    "BASH_MAX_OUTPUT_LENGTH": "60000",
+    "CARGO_TERM_COLOR": "never",
+    "RUST_BACKTRACE": "1"
+  },
+  "enabledPlugins": {
+    "context7@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": false
+  },
+  "permissions": {
+    "allow": [
+      "Bash(just *)",
+      "Bash(cargo check*)",
+      "Bash(cargo build*)",
+      "Bash(cargo clippy*)",
+      "Bash(cargo fmt*)",
+      "Bash(cargo metadata*)",
+      "Bash(cargo tree*)",
+      "Bash(cargo nextest run*)",
+      "Bash(cargo test*)",
+      "Bash(cargo deny check*)",
+      "Bash(cargo doc*)",
+      "Bash(cargo rustdoc*)",
+      "Bash(cargo +nightly-2026-08-18 *)",
+      "Bash(rustup check*)",
+      "Bash(rustup show*)",
+      "Bash(rustup toolchain list*)",
+      "Bash(rustc --version*)",
+      "Bash(rustfmt *)",
+      "Bash(uv sync*)",
+      "Bash(uv lock*)",
+      "Bash(uv tree*)",
+      "Bash(uv python*)",
+      "Bash(uv run pytest*)",
+      "Bash(uv run ruff*)",
+      "Bash(uv run pyrefly*)",
+      "Bash(uv run python*)",
+      "Bash(pyrefly check*)",
+      "Bash(pyrefly --version*)",
+      "Bash(ruff check*)",
+      "Bash(ruff format*)",
+      "Bash(pytest*)",
+      "Bash(python3 *)",
+      "Bash(.venv/bin/*)",
+      "Bash(library-deep-enrichment *)",
+      "Bash(lde-rustdoc-facts *)",
+      "Bash(lde-source-facts *)",
+      "Bash(lde-python-semantics *)",
+      "Bash(lde-mir-facts *)",
+      "Bash(direnv *)",
+      "Bash(sccache --show-stats*)",
+      "Bash(ast-grep *)",
+      "Bash(taplo *)",
+      "Bash(typos*)",
+      "Bash(bwrap *)",
+      "Bash(rg *)",
+      "Bash(fd *)",
+      "Bash(jq *)",
+      "Bash(sed -n *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(cat *)",
+      "Bash(ls *)",
+      "Bash(wc *)",
+      "Bash(diff *)",
+      "Bash(sha256sum *)",
+      "Bash(find *)",
+      "Bash(tree *)",
+      "Bash(file *)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git show*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git restore*)",
+      "Bash(git branch*)",
+      "Bash(git rev-parse*)",
+      "Bash(git ls-files*)",
+      "Bash(./scripts/*)",
+      "Bash(bash scripts/*)",
+      "Read(//home/paul/library-deep-enrichment/**)",
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "mcp__plugin_context7_context7__query-docs",
+      "WebFetch(domain:docs.rs)",
+      "WebFetch(domain:doc.rust-lang.org)",
+      "WebFetch(domain:crates.io)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:docs.astral.sh)",
+      "WebFetch(domain:lancedb.github.io)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:context7.com)"
+    ],
+    "deny": [
+      "Bash(pip install*)",
+      "Bash(pip3 install*)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git reset --hard*)",
+      "Bash(git filter-branch*)",
+      "Bash(git filter-repo*)",
+      "Bash(cargo publish*)",
+      "Bash(uv publish*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(//home/paul/.ssh/**)",
+      "Read(//home/paul/.aws/**)",
+      "Read(//home/paul/.config/gh/**)",
+      "Read(//home/paul/smartref/docs/library_ref/**)",
+      "Read(//home/paul/smartref/.claude/skills/**)",
+      "Read(//home/paul/smartref/.codex/skills/**)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/scripts/hooks/session_env.sh", "timeout": 10, "statusMessage": "Isolating service state" },
+          { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/scripts/hooks/session_start.sh", "timeout": 20, "statusMessage": "Loading library-deep-enrichment environment" }
+        ]
+      }
+    ],
+    "CwdChanged": [
+      { "hooks": [ { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/scripts/hooks/session_env.sh", "timeout": 10 } ] }
+    ],
+    "PreToolUse": [
+      { "matcher": "Bash", "hooks": [ { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/scripts/hooks/pre_bash.sh", "timeout": 15 } ] },
+      { "matcher": "Edit|Write|NotebookEdit", "hooks": [ { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/scripts/hooks/pre_edit.sh", "timeout": 15 } ] }
+    ],
+    "PostToolUse": [
+      { "matcher": "Edit|Write", "hooks": [ { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/scripts/hooks/post_edit.sh", "timeout": 60, "statusMessage": "Formatting and rule-scanning" } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/scripts/hooks/stop_guard.sh", "timeout": 30, "statusMessage": "Checking for suppressions and state leaks" } ] }
+    ]
+  }
+}

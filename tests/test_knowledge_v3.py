@@ -15,7 +15,7 @@ from library_deep_enrichment.migrations.knowledge_v2_to_v3 import migrate
 from library_deep_enrichment.schemas import schema_for, validate_document
 from library_deep_enrichment.store.digests import canonical_bytes, digest_file
 
-from .test_knowledge_v2 import _sample
+from tests.support.knowledge import _sample
 
 
 def test_explicit_migration_preserves_original_bytes(tmp_path: Path) -> None:

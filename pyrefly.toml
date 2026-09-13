@@ -1,3 +1,18 @@
-project-includes = ["library_deep_enrichment/**/*.py", "tests/**/*.py", "pilot/*.py", "pilot/qualified/examples/*.py"]
-search-path = ["."]
-python-interpreter = ".venv/bin/python"
+# pyrefly is this project's Python semantic engine. Strictness mirrors what the code was
+# written against; do not relax an [errors] entry to make a diagnostic go away.
+project-includes = ["src/**/*.py", "tests/**/*.py", "pilot/*.py", "pilot/intelligence/*.py"]
+project-excludes = ["**/.venv/**", "**/target/**", "crates/**", "docs/**", "pilot/qualified/**", "pilot/source_semantics/**"]
+search-path = ["src", "."]
+python-interpreter-path = ".venv/bin/python"
+python-version = "3.14.7"
+infer-with-first-use = true
+untyped-def-behavior = "check-and-infer-return-type"
+permissive-ignores = false
+ignore-errors-in-generated-code = false
+
+[errors]
+missing-source = true
+implicit-any = true
+implicitly-defined-attribute = true
+implicit-abstract-class = true
+assert-type = true

@@ -1,0 +1,17 @@
+[default.extend-words]
+crate = "crate"
+ser = "ser"
+nd = "nd"
+datas = "datas"
+
+[files]
+extend-exclude = [
+  "docs/**",
+  "pilot/**",
+  "tests/fixtures/**",
+  "crates/*/upstream/**",
+  "crates/*/upstream.patch",
+  "Cargo.lock",
+  "uv.lock",
+  "*.whl",
+]

@@ -1,0 +1,18 @@
+# Cargo aliases and build settings. The task surface is the justfile; these are the shorthands
+# worth having when iterating inside one crate.
+
+[alias]
+c = "check --workspace --all-targets"
+t = "nextest run --workspace"
+lint = "clippy --workspace --all-targets --all-features -- -D warnings"
+
+[target.x86_64-unknown-linux-gnu]
+# mold is present on this workstation; scripts/env.sh only enables this flag when it is.
+# Nothing here forces target-cpu=native: worker binaries must run wherever the wheel runs.
+rustflags = []
+
+[term]
+color = "never"
+
+[net]
+retry = 2

@@ -10,7 +10,7 @@ from library_deep_enrichment.adapters.rust.semantic import extract
 from library_deep_enrichment.evidence_graph import EvidenceGraph
 from library_deep_enrichment.linking import link
 
-from .test_knowledge_v2 import _sample
+from tests.support.knowledge import _sample
 
 
 def test_index_keeps_associated_methods_fields_and_item_namespaces(tmp_path: Path) -> None:

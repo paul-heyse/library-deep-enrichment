@@ -22,7 +22,7 @@ from library_deep_enrichment.qualification import coverage, validate
 from library_deep_enrichment.schemas import validate_document
 from library_deep_enrichment.store.digests import canonical_bytes, digest_bytes
 
-from .test_knowledge_v2 import _sample
+from tests.support.knowledge import _sample
 
 
 def test_withdrawn_dependency_review_removes_capability_coverage(tmp_path: Path) -> None:

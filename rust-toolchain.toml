@@ -1,0 +1,18 @@
+# LOAD-BEARING PIN.
+#
+# This workstation's rustup DEFAULT toolchain is nightly. Without this file every bare `cargo`
+# invocation in this repository silently compiles against nightly, and the stable workers
+# (protocol, rustdoc-facts, source-facts, python-semantics) stop being reproducible.
+#
+# 1.98.1 is the current stable release (verified with `rustup check` on 2026-09-13). It is
+# written as an exact version rather than `stable` so the pin cannot float. Re-check with
+# `rustup check` and bump deliberately.
+#
+# crates/mir-facts carries its OWN rust-toolchain.toml pinning nightly-2026-08-18: it links
+# rustc_private and its build.rs asserts the exact compiler commit. That is a recorded producer
+# identity, not a second build domain for the rest of the repository.
+
+[toolchain]
+channel = "1.98.1"
+components = ["rustfmt", "clippy", "rust-analyzer", "rust-src"]
+profile = "minimal"

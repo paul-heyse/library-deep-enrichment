@@ -1,0 +1,59 @@
+# Root workspace: the light, stable, CI-buildable crates.
+#
+# Three worker crates are deliberately NOT members and are built by `just native-build`:
+#   crates/source-facts      path-deps into a vendored astral-sh/ruff clone (its own workspace)
+#   crates/python-semantics  path-deps into a vendored facebook/pyrefly clone (its own workspace)
+#   crates/mir-facts         nightly-2026-08-18 + rustc_private; cannot share a stable workspace
+# Each keeps its own Cargo.lock so its dependency universe is pinned independently of ours.
+[workspace]
+resolver = "3"
+members = ["crates/protocol", "crates/rustdoc-facts"]
+exclude = [
+  "crates/source-facts",
+  "crates/python-semantics",
+  "crates/mir-facts",
+  "pilot/rust-example",
+  "pilot/qualified/examples/rust",
+  "tests/fixtures/rust_declarations",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.98.1"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/paul-heyse/library-deep-enrichment"
+publish = false
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+schemars = "=1.2.2"
+cargo_metadata = "=0.23.1"
+public-api = "=0.52.1"
+# One binary reads every rustdoc JSON format version we can be handed, so all four crates are
+# pinned side by side under distinct names. Add a new pin when a new format_version ships.
+rustdoc-types-57 = { package = "rustdoc-types", version = "=0.57.4" }
+rustdoc-types-59 = { package = "rustdoc-types", version = "=0.59.0" }
+rustdoc-types-60 = { package = "rustdoc-types", version = "=0.60.0" }
+rustdoc-types-61 = { package = "rustdoc-types", version = "=0.61.0" }
+# Internal crates carry an explicit version alongside the path: a bare `{ path = ... }` is a
+# wildcard requirement and deny.toml sets `wildcards = "deny"`.
+lde-protocol = { path = "crates/protocol", version = "0.1.0" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+# `just lint` runs clippy with `-D warnings`, so these are errors at the gate while a plain
+# `cargo build` still succeeds for local iteration.
+unwrap_used = "warn"
+expect_used = "warn"
+
+[profile.dev]
+debug = 0
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

@@ -15,9 +15,7 @@ mod rendering;
 mod wire;
 
 fn run() -> Result<(), Box<dyn std::error::Error>> {
-    let path = env::args()
-        .nth(1)
-        .ok_or("usage: lde-rustdoc-facts FILE")?;
+    let path = env::args().nth(1).ok_or("usage: lde-rustdoc-facts FILE")?;
     if path == "schema" {
         serde_json::to_writer(
             io::stdout().lock(),

@@ -59,6 +59,29 @@ class WorkerRequest:
     address_space_bytes: int | None = None
 
 
+def _interpreter_roots() -> tuple[Path, ...]:
+    """Bind every directory the interpreter symlink chain passes through.
+
+    A uv-managed virtual environment links ``.venv/bin/python`` to a versioned alias directory
+    that is itself a symlink; binding only the endpoint and the venv leaves the alias unbound
+    and ``execvp`` fails inside the sandbox.
+
+    Returns:
+        Two-levels-up roots for the executable and each intermediate link target.
+
+    """
+    found: list[Path] = []
+    current = Path(sys.executable)
+    while True:
+        root = current.parent.parent
+        if root not in found:
+            found.append(root)
+        if not current.is_symlink():
+            return tuple(found)
+        target = Path(os.readlink(current))
+        current = target if target.is_absolute() else current.parent / target
+
+
 def command(request: WorkerRequest) -> tuple[str, ...]:
     """Construct the limited command; isolation has no silent fallback.
 
@@ -112,13 +135,7 @@ def command(request: WorkerRequest) -> tuple[str, ...]:
         "--tmpfs",
         "/tmp",
     ]
-    for path in (
-        *roots,
-        *request.read_roots,
-        entry.parent,
-        Path(sys.executable).parent.parent,
-        Path(sys.executable).resolve().parent.parent,
-    ):
+    for path in (*roots, *request.read_roots, entry.parent, *_interpreter_roots()):
         if path.exists():
             bindings.extend(("--ro-bind", str(path), str(path)))
     for path in request.write_roots:
