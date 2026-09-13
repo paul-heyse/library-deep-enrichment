@@ -23,7 +23,7 @@ dependencies = [
   "cattrs==26.2.0",
   "docutils==0.23",
   "fcapy==0.1.4.5",
-  "filelock==3.32.3",
+  "filelock==3.32.6",
   "griffelib==2.3.0",
   "httpx==0.28.1",
   "httpx2==2.3.0",
