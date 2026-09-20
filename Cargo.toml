@@ -32,7 +32,7 @@ serde_json = "1"
 sha2 = "0.10"
 schemars = "=1.2.2"
 cargo_metadata = "=0.23.1"
-public-api = "=0.52.1"
+public-api = "=0.52.2"
 # One binary reads every rustdoc JSON format version we can be handed, so all four crates are
 # pinned side by side under distinct names. Add a new pin when a new format_version ships.
 rustdoc-types-57 = { package = "rustdoc-types", version = "=0.57.4" }

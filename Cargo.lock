@@ -180,12 +180,12 @@ dependencies = [
 
 [[package]]
 name = "public-api"
-version = "0.52.1"
+version = "0.52.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d410e0b50432be9a8708e0bab4f5e0ddfde07236cc7f9481476aa9c5ef60ece3"
+checksum = "d102ca8df9d07fa01215671136dd188312ebdd901b7f7e70765c51df87dd35e1"
 dependencies = [
  "hashbag",
- "rustdoc-types 0.57.4",
+ "rustdoc-types 0.59.0",
  "serde",
  "serde_json",
  "snapshot-testing",
